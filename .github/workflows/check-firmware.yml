@@ -38,7 +38,7 @@ jobs:
         if: ${{ vars.IROBOT_ARCHIVE_ENABLED == 'true' || inputs.archive_now == true }}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: irobot-fw archive --repo "$GITHUB_REPOSITORY" --limit 6
+        run: irobot-fw archive --repo "$GITHUB_REPOSITORY"
       - name: Commit catalog and manifests
         run: |
           git config user.name "irobot-firmware-bot"
