@@ -37,11 +37,14 @@ function renderInitial() {
   const knownBytes = list.reduce((sum, x) => sum + Number(x.archive?.size || x.size || 0), 0);
   const archivedCount = list.filter(archived).length;
   const auxCount = state.auxiliary?.summary?.bundle_count || 0;
-  $("#summary").textContent = `${list.length} builds · ${families.length} platforms · ${archivedCount} archived · ${auxCount} auxiliary bundles · ${fmtBytes(knownBytes)} indexed`;
+  const nestedFirmwareCount = state.auxiliary?.summary?.unique_firmware_payload_sha256_count || 0;
+  $("#summary").textContent = `${list.length} builds · ${families.length} platforms · ${archivedCount} archived · ${auxCount} auxiliary bundles · ${nestedFirmwareCount} nested firmware payloads · ${fmtBytes(knownBytes)} indexed`;
 
   $("#platformFilter").innerHTML = `<option value="">All platforms</option>` + families.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const auxFamilies = Object.keys(state.auxiliary?.summary?.families || {}).sort();
   $("#auxFamilyFilter").innerHTML = `<option value="">All platforms</option>` + auxFamilies.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+  const auxRoles = [...new Set(auxFirmwarePayloads().map(x => x.role).filter(Boolean))].sort();
+  $("#auxRoleFilter").innerHTML = `<option value="">All roles</option>` + auxRoles.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const options = list.map((f,i)=>`<option value="${i}">${esc(f.family)} ${esc(f.version)} · ${esc(deviceTitle(f))}${archived(f)?" · archived":""}</option>`).join("");
   $("#leftSelect").innerHTML = options;
   $("#rightSelect").innerHTML = options;
@@ -49,6 +52,18 @@ function renderInitial() {
   if (list.length > 2) $("#leftSelect").value = String(list.length - 2);
   renderCatalog();
   renderAuxiliary();
+  renderAuxiliaryPayloads();
+}
+
+function auxFirmwarePayloads() {
+  const out = [];
+  for (const bundle of state.auxiliary?.bundles || []) {
+    for (const payload of bundle.payloads || []) {
+      if (!["encrypted-firmware", "firmware-image"].includes(payload.kind)) continue;
+      out.push({...payload, bundle});
+    }
+  }
+  return out;
 }
 
 function filteredAuxiliary() {
@@ -70,14 +85,52 @@ function renderAuxiliary() {
     const releaseUrl = x.parent_release_tag
       ? `https://github.com/BookCatKid/irobot-firmware-archive/releases/tag/${encodeURIComponent(x.parent_release_tag)}`
       : x.parent_asset_url;
+    const firmwarePayloads = (x.payloads || []).filter(p => ["encrypted-firmware", "firmware-image"].includes(p.kind));
+    const nestedState = x.nested_analysis_available ? `${firmwarePayloads.length} nested firmware ${firmwarePayloads.length === 1 ? 'image' : 'images'}` : 'nested inventory pending';
     return `<tr>
       <td><span class="model-primary"><span class="mono">${esc(x.family)} ${esc(x.parent_version)}</span></span><span class="model-secondary">parent robot firmware</span></td>
-      <td><span class="mono">${esc(x.filename)}</span></td>
+      <td><span class="mono">${esc(x.filename)}</span><span class="model-secondary">${esc(nestedState)}</span></td>
       <td>${esc(fmtBytes(x.size))}</td>
       <td class="mono">${esc(String(x.sha256 || '').slice(0, 16))}…</td>
       <td>${releaseUrl ? `<a href="${esc(releaseUrl)}">parent release ↗</a>` : 'archived parent'}</td>
     </tr>`;
   }).join("") || `<tr><td colspan="5" class="muted">No matching auxiliary firmware.</td></tr>`;
+}
+
+function filteredAuxiliaryPayloads() {
+  const q = $("#auxPayloadSearch").value.trim().toLowerCase();
+  const role = $("#auxRoleFilter").value;
+  return auxFirmwarePayloads().filter(x => {
+    if (role && x.role !== role) return false;
+    if (!q) return true;
+    const version = x.reported_version || x.descriptor_version || "";
+    return [x.role, x.filename, x.path, x.sha256, version, x.bundle.family, x.bundle.parent_version]
+      .filter(Boolean).join(" ").toLowerCase().includes(q);
+  });
+}
+
+function renderAuxiliaryPayloads() {
+  const filtered = filteredAuxiliaryPayloads();
+  const summary = state.auxiliary?.summary || {};
+  const analyzed = summary.nested_analyzed_bundle_count || 0;
+  const bundles = summary.bundle_count || 0;
+  $("#auxPayloadSummary").textContent = `Nested firmware payloads · ${summary.unique_firmware_payload_sha256_count || 0} unique · ${analyzed}/${bundles} bundles analyzed`;
+  $("#auxPayloadResultCount").textContent = `${filtered.length} ${filtered.length === 1 ? 'image' : 'images'}`;
+  $("#auxPayloadCatalog").innerHTML = filtered.map(x => {
+    const b = x.bundle;
+    const releaseUrl = b.parent_release_tag
+      ? `https://github.com/BookCatKid/irobot-firmware-archive/releases/tag/${encodeURIComponent(b.parent_release_tag)}`
+      : b.parent_asset_url;
+    const version = x.reported_version || x.descriptor_version || '—';
+    return `<tr>
+      <td>${esc(x.role || 'auxiliary')}</td>
+      <td>${releaseUrl ? `<a class="mono" href="${esc(releaseUrl)}">${esc(b.family)} ${esc(b.parent_version)} ↗</a>` : `<span class="mono">${esc(b.family)} ${esc(b.parent_version)}</span>`}</td>
+      <td><span class="mono">${esc(x.filename)}</span><span class="model-secondary">${esc(x.path)}</span></td>
+      <td class="mono">${esc(version)}</td>
+      <td>${esc(fmtBytes(x.size))}</td>
+      <td class="mono">${esc(String(x.sha256 || '').slice(0, 16))}…</td>
+    </tr>`;
+  }).join("") || `<tr><td colspan="6" class="muted">No matching nested firmware payloads.</td></tr>`;
 }
 
 function filteredCatalog() {
@@ -225,6 +278,7 @@ async function compare() {
 
 ["#search", "#platformFilter", "#statusFilter"].forEach(sel => $(sel).addEventListener(sel === "#search" ? "input" : "change", renderCatalog));
 ["#auxSearch", "#auxFamilyFilter"].forEach(sel => $(sel).addEventListener(sel === "#auxSearch" ? "input" : "change", renderAuxiliary));
+["#auxPayloadSearch", "#auxRoleFilter"].forEach(sel => $(sel).addEventListener(sel === "#auxPayloadSearch" ? "input" : "change", renderAuxiliaryPayloads));
 $("#compareButton").addEventListener("click", compare);
 $("#swap").addEventListener("click",()=>{const a=$("#leftSelect"),b=$("#rightSelect");[a.value,b.value]=[b.value,a.value];});
 load().catch(err => { $("#summary").textContent = `Failed to load catalog: ${err.message}`; });

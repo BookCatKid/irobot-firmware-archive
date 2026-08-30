@@ -8,6 +8,8 @@ import shutil
 import struct
 import stat
 import subprocess
+import tarfile
+import tempfile
 from pathlib import Path
 from typing import Any
 
@@ -29,6 +31,10 @@ KEY_TYPE_NAMES = {
     "M": "STORSEC",
     "N": "UEFI_SEC",
 }
+
+AUXILIARY_BUNDLE_MARKER = "auxboard_firmware"
+AUXILIARY_TEXT_SUFFIXES = (".txt", ".cfg", ".version", ".json", ".conf", ".ini")
+AUXILIARY_RECURSION_LIMIT = 8
 
 TEXT_SNAPSHOT_PATHS = {
     "opt/irobot/identity.env",
@@ -405,6 +411,83 @@ def _swupdate_identity(cpio: dict[str, Any]) -> dict[str, Any]:
     return result
 
 
+def _tar_kind(name: str) -> str:
+    lower = name.lower()
+    if lower.endswith((".tar.gz", ".tgz", ".tar", ".tar.bz2", ".tar.xz")):
+        return "tar"
+    if lower.endswith((".pkg.enc", ".enc")):
+        return "encrypted-firmware"
+    if lower.endswith((".bin", ".hex", ".fw", ".img")):
+        return "firmware-image"
+    if lower.endswith(AUXILIARY_TEXT_SUFFIXES):
+        return "descriptor"
+    return "file"
+
+
+def _tar_members_from_fileobj(fileobj: Any, depth: int = 0) -> dict[str, Any]:
+    """Inventory a firmware tar without extracting member paths to disk.
+
+    Aux-board bundles contain additional mobility/safety/power/dock payloads and,
+    in several generations, nested tarballs.  Hashing members in place preserves
+    exact provenance while avoiding path traversal concerns from extraction.
+    """
+    result: dict[str, Any] = {"format": "tar", "members": []}
+    try:
+        with tarfile.open(fileobj=fileobj, mode="r:*") as tf:
+            for member in tf.getmembers():
+                item: dict[str, Any] = {
+                    "path": member.name,
+                    "type": "file" if member.isfile() else "dir" if member.isdir() else "symlink" if member.issym() else "other",
+                    "size": int(member.size),
+                }
+                if member.issym() or member.islnk():
+                    item["target"] = member.linkname
+                if member.isfile():
+                    extracted = tf.extractfile(member)
+                    if extracted is not None:
+                        digest = hashlib.sha256()
+                        is_nested_tar = depth < AUXILIARY_RECURSION_LIMIT and _tar_kind(member.name) == "tar"
+                        spool = tempfile.SpooledTemporaryFile(max_size=8 * 1024 * 1024) if is_nested_tar else None
+                        text_chunks: list[bytes] | None = [] if (
+                            member.size <= 1024 * 1024 and _tar_kind(member.name) == "descriptor"
+                        ) else None
+                        while True:
+                            chunk = extracted.read(1024 * 1024)
+                            if not chunk:
+                                break
+                            digest.update(chunk)
+                            if spool is not None:
+                                spool.write(chunk)
+                            if text_chunks is not None:
+                                text_chunks.append(chunk)
+                        item["sha256"] = digest.hexdigest()
+                        item["kind"] = _tar_kind(member.name)
+                        if text_chunks is not None:
+                            item["text"] = b"".join(text_chunks).decode("utf-8", "replace")
+                        if spool is not None:
+                            try:
+                                spool.seek(0)
+                                nested = _tar_members_from_fileobj(spool, depth + 1)
+                            except (tarfile.TarError, OSError, EOFError):
+                                nested = None
+                            finally:
+                                spool.close()
+                            if nested is not None:
+                                item["nested"] = nested
+                result["members"].append(item)
+    except (tarfile.TarError, OSError, EOFError) as exc:
+        result["error"] = f"{type(exc).__name__}: {exc}"
+        result["format"] = "unknown"
+    result["member_count"] = len(result["members"])
+    result["file_count"] = sum(1 for x in result["members"] if x.get("type") == "file")
+    return result
+
+
+def _analyze_auxiliary_bundle(path: Path) -> dict[str, Any]:
+    with path.open("rb") as fh:
+        return _tar_members_from_fileobj(fh)
+
+
 def _file_manifest(root: Path) -> tuple[list[dict[str, Any]], dict[str, str]]:
     files: list[dict[str, Any]] = []
     snapshots: dict[str, str] = {}
@@ -416,6 +499,8 @@ def _file_manifest(root: Path) -> tuple[list[dict[str, Any]], dict[str, str]]:
             elif path.is_file():
                 size = path.stat().st_size
                 entry = {"path": rel, "type": "file", "size": size, "sha256": sha256_file(path)}
+                if AUXILIARY_BUNDLE_MARKER in path.name.lower():
+                    entry["auxiliary_firmware"] = _analyze_auxiliary_bundle(path)
                 files.append(entry)
                 if rel in TEXT_SNAPSHOT_PATHS and size <= 256 * 1024:
                     try:

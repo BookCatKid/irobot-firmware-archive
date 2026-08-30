@@ -93,6 +93,31 @@
           <tbody id="auxCatalog"></tbody>
         </table>
       </div>
+
+      <details class="evidence auxiliary-payloads" open>
+        <summary id="auxPayloadSummary">Nested firmware payloads</summary>
+        <p class="muted">Exact leaf firmware images recovered from analyzed aux-board bundles. Versions are shown only when an embedded iRobot manifest or descriptor states them.</p>
+        <div class="toolbar">
+          <input id="auxPayloadSearch" type="search" autocomplete="off" placeholder="Search dock, mobility, image, version, hash…">
+          <select id="auxRoleFilter" aria-label="Filter nested auxiliary firmware by role"><option value="">All roles</option></select>
+          <span id="auxPayloadResultCount" class="result-count"></span>
+        </div>
+        <div class="table-wrap">
+          <table class="firmware-table auxiliary-payload-table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Parent build</th>
+                <th>Firmware image</th>
+                <th>Reported version</th>
+                <th>Size</th>
+                <th>SHA-256</th>
+              </tr>
+            </thead>
+            <tbody id="auxPayloadCatalog"></tbody>
+          </table>
+        </div>
+      </details>
     </section>
 
     <section id="compare-section" class="content-section compare-section">

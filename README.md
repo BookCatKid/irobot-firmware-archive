@@ -17,7 +17,7 @@ So the project uses:
 
 The Pages diff does not need to download two 250 MiB packages. The archive action extracts a compact file manifest (path/type/size/SHA-256) from SquashFS components once, and the browser compares those manifests client-side.
 
-Deep filesystem analysis also exposes firmware that iRobot ships *inside* the robot OTA for subordinate hardware. `data/auxiliary-firmware.json` is a generated index of those aux-board bundles, including mobility, safety, power, confinement, and dock firmware packages where present. At the current archive snapshot it identifies **200 distinct auxiliary bundle SHA-256s across 8 firmware families**. Their bytes are already preserved inside the corresponding parent firmware Release; the auxiliary index makes that embedded firmware searchable without pretending it came from an independent public download URL.
+Deep filesystem analysis also exposes firmware that iRobot ships *inside* the robot OTA for subordinate hardware. `data/auxiliary-firmware.json` is a generated index of those aux-board bundles, including mobility, safety, power, confinement, and dock firmware packages where present. At the current archive snapshot it identifies **200 distinct auxiliary bundle SHA-256s across 8 firmware families**. The analyzer recursively inventories nested tarballs without extracting their paths, hashes leaf firmware images, and preserves explicit image versions from iRobot `download-manifest.cfg` files and dock descriptors where available. Their bytes are already preserved inside the corresponding parent firmware Release; the auxiliary index makes that embedded firmware searchable without pretending it came from an independent public download URL.
 
 ## Firmware platform names vs retail models
 
@@ -85,6 +85,8 @@ The archive workflow does **not** impose a package-count cap. It processes every
 ## Historical backfill
 
 The **Historical firmware backfill** workflow is manual on purpose so different naming families can be searched deliberately. `max_probes=0` means the requested search space is not truncated, and `archive_found` can immediately preserve every object found by the scan.
+
+The **Enrich embedded auxiliary firmware** workflow reanalyzes already-preserved parent Release assets whose aux-board bundles predate recursive nested analysis. Jobs verify the parent archive SHA-256 before analysis and the finalize step merges only nested aux metadata back into the existing manifest, so catalog/discovery provenance is not rewritten.
 
 Example local dry discovery of the classic `sapphire` naming space:
 

@@ -6,8 +6,8 @@ import unittest
 from unittest.mock import patch
 from pathlib import Path
 
-from irobot_firmware.analyze import analyze, _extract_reported_identity
-from irobot_firmware.auxiliary import build_auxiliary_index
+from irobot_firmware.analyze import analyze, _analyze_auxiliary_bundle, _extract_reported_identity
+from irobot_firmware.auxiliary import build_auxiliary_index, iter_auxiliary_payloads
 from irobot_firmware.backfill import classic_versions, numeric_versions
 from irobot_firmware.discover import (
     api_probe, api_probe_response, direct_probe, extract_metapackage_urls,
@@ -27,6 +27,57 @@ class CatalogTests(unittest.TestCase):
         self.assertNotIn(">>>>>>>", text)
         parsed = json.loads(text)
         self.assertIsInstance(parsed.get("firmwares"), list)
+
+    def test_auxiliary_bundle_inventory_hashes_and_recurses_without_extracting(self):
+        import io
+        import tarfile
+
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            nested_bytes = io.BytesIO()
+            with tarfile.open(fileobj=nested_bytes, mode="w:gz") as nested:
+                payload = b"nested-firmware"
+                info = tarfile.TarInfo("board.pkg.enc")
+                info.size = len(payload)
+                nested.addfile(info, io.BytesIO(payload))
+                descriptor = b"IMAGE 1 board.pkg.enc 9.8.7+build-test+4\nMD5SUM 0123456789abcdef0123456789abcdef\n"
+                info = tarfile.TarInfo("download-manifest.cfg")
+                info.size = len(descriptor)
+                nested.addfile(info, io.BytesIO(descriptor))
+
+            bundle = root / "auxboard_firmware_test.tar.gz"
+            with tarfile.open(bundle, mode="w:gz") as outer:
+                dock = b"dock-image"
+                info = tarfile.TarInfo("packages/dock/dock_hw1.pkg.enc")
+                info.size = len(dock)
+                outer.addfile(info, io.BytesIO(dock))
+                descriptor = b"# This file is auto-generated - do not edit\n[ 1, 2, 3 ]\n"
+                info = tarfile.TarInfo("packages/dock/dock_hw1.txt")
+                info.size = len(descriptor)
+                outer.addfile(info, io.BytesIO(descriptor))
+                inner = nested_bytes.getvalue()
+                info = tarfile.TarInfo("packages/mobility.tar.gz")
+                info.size = len(inner)
+                outer.addfile(info, io.BytesIO(inner))
+
+            result = _analyze_auxiliary_bundle(bundle)
+            self.assertEqual(result["format"], "tar")
+            self.assertEqual(result["file_count"], 3)
+            dock_item = next(x for x in result["members"] if x["path"].endswith("dock_hw1.pkg.enc"))
+            self.assertEqual(dock_item["kind"], "encrypted-firmware")
+            self.assertEqual(dock_item["sha256"], hashlib.sha256(b"dock-image").hexdigest())
+            text_item = next(x for x in result["members"] if x["path"].endswith("dock_hw1.txt"))
+            self.assertEqual(text_item["text"], "# This file is auto-generated - do not edit\n[ 1, 2, 3 ]\n")
+            nested_item = next(x for x in result["members"] if x["path"].endswith("mobility.tar.gz"))
+            payloads = list(iter_auxiliary_payloads(result))
+            board = next(x for x in payloads if x["filename"] == "board.pkg.enc")
+            self.assertEqual(board["sha256"], hashlib.sha256(b"nested-firmware").hexdigest())
+            self.assertEqual(board["reported_version"], "9.8.7+build-test+4")
+            self.assertEqual(board["reported_md5"], "0123456789abcdef0123456789abcdef")
+            dock_payload = next(x for x in payloads if x["filename"] == "dock_hw1.pkg.enc")
+            self.assertEqual(dock_payload["descriptor_version"], "1.2.3")
+            self.assertEqual(dock_payload["role"], "dock")
+            self.assertFalse((root / "packages").exists())
 
     def test_auxiliary_index_deduplicates_catalog_aliases_of_same_parent(self):
         with tempfile.TemporaryDirectory() as td:
