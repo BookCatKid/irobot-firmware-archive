@@ -259,6 +259,106 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.0.8-298fbf973905/lewis-1.0.8.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.0.8-298fbf973905.json",
+        "release_tag": "firmware-lewis-1.0.8-298fbf973905",
+        "sha256": "298fbf9739053345cb6ccfe02f1a7c0e9a81fec87fe5b3a3d6392ecaad3dd0ea",
+        "size": 144381360
+      },
+      "discovered_at": "2026-08-30T03:05:02.391138+00:00",
+      "etag": "d093d936a427facce983d5839527656a-18",
+      "family": "lewis",
+      "last_modified": "Fri, 17 Aug 2018 11:41:05 GMT",
+      "size": 144381360,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.0.8.signed",
+      "version": "1.0.8"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.3-7b944668c7a4/lewis-1.2.3.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.2.3-7b944668c7a4.json",
+        "release_tag": "firmware-lewis-1.2.3-7b944668c7a4",
+        "sha256": "7b944668c7a459cb143cd7fb2393e48f6e0d076d6aaa6415a2c1997b91416123",
+        "size": 144306775
+      },
+      "discovered_at": "2026-08-30T03:05:03.683397+00:00",
+      "etag": "e5a9e9244aa237bc95101d8707b9f1ce-18",
+      "family": "lewis",
+      "last_modified": "Fri, 17 Aug 2018 11:39:02 GMT",
+      "size": 144306775,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.3.signed",
+      "version": "1.2.3"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.4-31d177d9acb8/lewis-1.2.4.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.2.4-31d177d9acb8.json",
+        "release_tag": "firmware-lewis-1.2.4-31d177d9acb8",
+        "sha256": "31d177d9acb84e7b404225292347f18800970c126581b140bedeb1e9693d9124",
+        "size": 144310871
+      },
+      "discovered_at": "2026-08-30T03:05:03.716127+00:00",
+      "etag": "9aab05b2bb95ca718326f2902490ff1e-9",
+      "family": "lewis",
+      "last_modified": "Fri, 24 Aug 2018 16:13:53 GMT",
+      "size": 144310871,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.4.signed",
+      "version": "1.2.4"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.5-c0a6e998ddce/lewis-1.2.5.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.2.5-c0a6e998ddce.json",
+        "release_tag": "firmware-lewis-1.2.5-c0a6e998ddce",
+        "sha256": "c0a6e998ddcefdd31f6f348eaa3e45934f50f615e142b7e2727e4c3068a5d64a",
+        "size": 144327255
+      },
+      "discovered_at": "2026-08-30T03:05:03.686160+00:00",
+      "etag": "7e08ea430bb40bfe87ae6bb6d779b033-9",
+      "family": "lewis",
+      "last_modified": "Thu, 30 Aug 2018 19:42:22 GMT",
+      "size": 144327255,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.5.signed",
+      "version": "1.2.5"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.6-70491614fdea/lewis-1.2.6.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.2.6-70491614fdea.json",
+        "release_tag": "firmware-lewis-1.2.6-70491614fdea",
+        "sha256": "70491614fdeaea10a7518ce2864a4785f76df113db8653ef7a8459be0d3162b5",
+        "size": 144327255
+      },
+      "discovered_at": "2026-08-30T03:05:03.729078+00:00",
+      "etag": "8f988af1ef3b57940c3f3217f8aa6ce1-9",
+      "family": "lewis",
+      "last_modified": "Tue, 04 Sep 2018 21:14:47 GMT",
+      "size": 144327255,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.6.signed",
+      "version": "1.2.6"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.7-ee62b87fe045/lewis-1.2.7.signed",
         "component_count": 7,
         "format": "irobot-otps",
@@ -267,17 +367,57 @@
         "sha256": "ee62b87fe0451538b10cebabaeed7410916cbc1411385a9c7f7937ff8a314750",
         "size": 144331351
       },
-      "discovered_at": "2026-08-30T03:03:50.648062+00:00",
+      "discovered_at": "2026-08-30T03:05:03.833605+00:00",
       "etag": "7a0b3ec16715b132faf342855b669717-18",
       "family": "lewis",
       "last_modified": "Fri, 07 Sep 2018 16:16:45 GMT",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
       "release_notes_version": "1.2.7",
       "size": 144331351,
-      "source": "release-notes-probe",
+      "source": "direct-probe",
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.7.signed",
       "version": "1.2.7"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.3.1-12ac4e86bc9c/lewis-1.3.1.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.3.1-12ac4e86bc9c.json",
+        "release_tag": "firmware-lewis-1.3.1-12ac4e86bc9c",
+        "sha256": "12ac4e86bc9c0775a9bebca60e1546e84bcd9ba1971ae6400363336dbb57a9d4",
+        "size": 142791256
+      },
+      "discovered_at": "2026-08-30T03:05:04.366394+00:00",
+      "etag": "f37472e84fa4bb3d90c3144f628f910a-9",
+      "family": "lewis",
+      "last_modified": "Fri, 28 Sep 2018 21:10:52 GMT",
+      "size": 142791256,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.3.1.signed",
+      "version": "1.3.1"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.5.3-eb9c4d948541/lewis-1.5.3.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.5.3-eb9c4d948541.json",
+        "release_tag": "firmware-lewis-1.5.3-eb9c4d948541",
+        "sha256": "eb9c4d9485416fd836fc0c1d1575a6a59b17d4778e6dbde65dd7cfaae4010481",
+        "size": 151716440
+      },
+      "discovered_at": "2026-08-30T03:05:05.641649+00:00",
+      "etag": "13aa7c2b873269737a4aec2bd5504c39-10",
+      "family": "lewis",
+      "last_modified": "Fri, 02 Nov 2018 18:13:05 GMT",
+      "size": 151716440,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.5.3.signed",
+      "version": "1.5.3"
     },
     {
       "archive": {
@@ -289,17 +429,57 @@
         "sha256": "44f7bad36e3899fbea2ca72cbd22663dc8f58475590751719dfbbd317bc1e857",
         "size": 151716440
       },
-      "discovered_at": "2026-08-30T03:03:50.654848+00:00",
+      "discovered_at": "2026-08-30T03:05:05.617714+00:00",
       "etag": "3751c47492381417f5f3e9572e8b545f-10",
       "family": "lewis",
       "last_modified": "Tue, 13 Nov 2018 19:08:03 GMT",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
       "release_notes_version": "1.5.4",
       "size": 151716440,
-      "source": "release-notes-probe",
+      "source": "direct-probe",
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.5.4.signed",
       "version": "1.5.4"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.6.2-35b5876e8f9d/lewis-1.6.2.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.6.2-35b5876e8f9d.json",
+        "release_tag": "firmware-lewis-1.6.2-35b5876e8f9d",
+        "sha256": "35b5876e8f9dc1b7666726a35dcd62a8c0bf125acc7ae412786a926a12dd28dc",
+        "size": 151622233
+      },
+      "discovered_at": "2026-08-30T03:05:06.210751+00:00",
+      "etag": "9540d643496384e70469d03b799b5e19-19",
+      "family": "lewis",
+      "last_modified": "Wed, 13 Feb 2019 14:35:55 GMT",
+      "size": 151622233,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.6.2.signed",
+      "version": "1.6.2"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.6.5-e26b0b4d61ef/lewis-1.6.5.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.6.5-e26b0b4d61ef.json",
+        "release_tag": "firmware-lewis-1.6.5-e26b0b4d61ef",
+        "sha256": "e26b0b4d61ef7d6b952c7f4ed69da86edafdf93e62893bb9db8d816834621a92",
+        "size": 151704153
+      },
+      "discovered_at": "2026-08-30T03:05:06.256074+00:00",
+      "etag": "1d29f93d218352bdca37873388f86689-19",
+      "family": "lewis",
+      "last_modified": "Wed, 13 Feb 2019 14:36:20 GMT",
+      "size": 151704153,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.6.5.signed",
+      "version": "1.6.5"
     },
     {
       "archive": {
@@ -311,14 +491,14 @@
         "sha256": "23985f330e9ac989add820fb495d774fd4e39b2564d08d133c175c9e8722055c",
         "size": 151704153
       },
-      "discovered_at": "2026-08-30T03:03:50.657228+00:00",
+      "discovered_at": "2026-08-30T03:05:06.246123+00:00",
       "etag": "7093502a727d2696260665e5938217b2-19",
       "family": "lewis",
       "last_modified": "Wed, 13 Feb 2019 21:26:54 GMT",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
       "release_notes_version": "1.6.6",
       "size": 151704153,
-      "source": "release-notes-probe",
+      "source": "direct-probe",
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.6.6.signed",
       "version": "1.6.6"
@@ -333,14 +513,14 @@
         "sha256": "8b9149a01e01600b8eb062023b4ed4c8243f29c28aa56d9f0482f48649bd4a59",
         "size": 158499273
       },
-      "discovered_at": "2026-08-30T03:03:50.656281+00:00",
+      "discovered_at": "2026-08-30T03:05:39.467693+00:00",
       "etag": "7a9fe6ac5e5c5391ed2d2dd7890a213c-19",
       "family": "lewis",
       "last_modified": "Mon, 15 Apr 2019 14:26:47 GMT",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
       "release_notes_version": "2.0.6",
       "size": 158499273,
-      "source": "release-notes-probe",
+      "source": "direct-probe",
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-2.0.6.signed",
       "version": "2.0.6"
@@ -1232,5 +1412,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T03:03:53.997279+00:00"
+  "updated_at": "2026-08-30T03:07:03.288854+00:00"
 }
