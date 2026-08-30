@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "method": "strings scan of official iRobot Android native libraries",
+  "hits": [
+    {
+      "library": "libcore_base.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "text": "_ZN4core17RoombaSchemaField15kDeploymentMpkgE",
+      "codenames": []
+    },
+    {
+      "library": "libcore_base.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "text": "_ZN4core21FirmwareUpdateJsonKey12kMetaPackageE",
+      "codenames": []
+    },
+    {
+      "library": "libcore_base.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "text": "marconiv327.signed",
+      "codenames": [
+        "marconi"
+      ]
+    },
+    {
+      "library": "libcore_base.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "text": "roomba9xxv2444.signed",
+      "codenames": []
+    },
+    {
+      "library": "libcore_base.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "text": "deploymentMpkg",
+      "codenames": []
+    },
+    {
+      "library": "libcore_base.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "text": "mMetaPackage",
+      "codenames": []
+    },
+    {
+      "library": "libcore_base.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "text": "mDeploymentMpkg",
+      "codenames": []
+    },
+    {
+      "library": "libcore_jni.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_jni.so",
+      "text": "_ZN4core17RoombaSchemaField15kDeploymentMpkgE",
+      "codenames": []
+    },
+    {
+      "library": "libcore_jni.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_jni.so",
+      "text": "_ZN4core21FirmwareUpdateJsonKey12kMetaPackageE",
+      "codenames": []
+    },
+    {
+      "library": "libcore_jni.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_jni.so",
+      "text": "Failed to parse track firmware deployment metapackage from cloud.",
+      "codenames": []
+    },
+    {
+      "library": "libcore_jni.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_jni.so",
+      "text": "deploymentMpkg",
+      "codenames": []
+    },
+    {
+      "library": "libdata_jni.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libdata_jni.so",
+      "text": "mMetaPackageUrl",
+      "codenames": []
+    },
+    {
+      "library": "libdata_jni.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libdata_jni.so",
+      "text": "mMetaPackage",
+      "codenames": []
+    },
+    {
+      "library": "libdata_jni.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libdata_jni.so",
+      "text": "mDeploymentMpkg",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "_ZN4core21LocalOtaSubsystemImpl27startMetaPackageDownloadingEv",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "_ZN4core21FirmwareUpdateJsonKey15kMetaPackageURLE",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "_ZN4core25WiFiLocalOtaSubsystemImpl15sendMetaPackageEv",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "_ZN4core17RoombaSchemaField15kDeploymentMpkgE",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "_ZN4core21FirmwareUpdateJsonKey12kMetaPackageE",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "MetaPackage",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "Failed to parse track firmware deployment metapackage from cloud.",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "FirmwareUpdateItem is nullptr for MetaPackage sending.",
+      "codenames": []
+    },
+    {
+      "library": "liblegacyCore.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so",
+      "text": "deploymentMpkg",
+      "codenames": []
+    },
+    {
+      "library": "libcorebase.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libcorebase.so",
+      "text": "_ZN4core21FirmwareUpdateJsonKey15kMetaPackageURLE",
+      "codenames": []
+    },
+    {
+      "library": "libcorebase.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libcorebase.so",
+      "text": "_ZN4core21FirmwareUpdateJsonKey12kMetaPackageE",
+      "codenames": []
+    },
+    {
+      "library": "libcorebase.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libcorebase.so",
+      "text": "_ZN4core17RoombaSchemaField15kDeploymentMpkgE",
+      "codenames": []
+    },
+    {
+      "library": "libcorebase.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libcorebase.so",
+      "text": "marconiv327.signed",
+      "codenames": [
+        "marconi"
+      ]
+    },
+    {
+      "library": "libcorebase.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libcorebase.so",
+      "text": "roomba9xxv2444.signed",
+      "codenames": []
+    },
+    {
+      "library": "libcorebase.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libcorebase.so",
+      "text": "deploymentMpkg",
+      "codenames": []
+    },
+    {
+      "library": "libcorebase.so",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libcorebase.so",
+      "text": "metapackageUrl",
+      "codenames": []
+    }
+  ]
+}
