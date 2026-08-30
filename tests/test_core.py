@@ -94,6 +94,15 @@ class CatalogTests(unittest.TestCase):
             direct_probe("sanmarino", "22.29.6", "https://example.invalid/{family}{padded_compact}.signed")
         self.assertEqual(exists.call_args.args[0], "https://example.invalid/sanmarino222906.signed")
 
+    def test_release_note_two_part_version_expands_patches(self):
+        from irobot_firmware.discover import version_filename_candidates
+        values = version_filename_candidates("22.52", 2)
+        self.assertIn("22.52.0", values)
+        self.assertIn("22.52.00", values)
+        self.assertIn("22.52.2", values)
+        self.assertIn("22.52.02", values)
+        self.assertNotIn("22.52.3", values)
+
     def test_release_note_legacy_catalog_token_uses_vcompact(self):
         from unittest.mock import patch
         from irobot_firmware.discover import discover_from_config

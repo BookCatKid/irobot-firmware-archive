@@ -390,10 +390,39 @@
           "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
         },
         {
+          "family": "sapphire",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{compact}.signed"
+        },
+        {
+          "family": "sapphire",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{padded_compact}.signed"
+        },
+        {
           "family": "stingray",
           "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        },
+        {
+          "family": "stingray",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{compact}.signed"
+        },
+        {
+          "family": "stingray",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{padded_compact}.signed"
+        },
+        {
+          "family": "ruby",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        },
+        {
+          "family": "ruby",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{compact}.signed"
+        },
+        {
+          "family": "ruby",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{padded_compact}.signed"
         }
-      ]
+      ],
+      "patch_expansion_max": 30
     },
     {
       "name": "s-series",
@@ -402,8 +431,17 @@
         {
           "family": "soho",
           "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        },
+        {
+          "family": "soho",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{compact}.signed"
+        },
+        {
+          "family": "soho",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{padded_compact}.signed"
         }
-      ]
+      ],
+      "patch_expansion_max": 30
     },
     {
       "name": "i-series",
@@ -412,8 +450,17 @@
         {
           "family": "lewis",
           "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        },
+        {
+          "family": "lewis",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{compact}.signed"
+        },
+        {
+          "family": "lewis",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{padded_compact}.signed"
         }
-      ]
+      ],
+      "patch_expansion_max": 30
     },
     {
       "name": "braava-m-series",
@@ -422,8 +469,17 @@
         {
           "family": "sanmarino",
           "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        },
+        {
+          "family": "sanmarino",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{compact}.signed"
+        },
+        {
+          "family": "sanmarino",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}{padded_compact}.signed"
         }
-      ]
+      ],
+      "patch_expansion_max": 30
     },
     {
       "name": "roomba-100",

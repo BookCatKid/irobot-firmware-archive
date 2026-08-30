@@ -193,12 +193,16 @@ def release_note_versions(url: str, timeout: int = 20) -> list[str]:
     return sorted(found)
 
 
-def version_filename_candidates(version: str) -> list[str]:
+def version_filename_candidates(version: str, patch_expansion_max: int | None = None) -> list[str]:
     parts = version.split(".")
     candidates = {version}
     if len(parts) >= 3 and all(p.isdigit() for p in parts):
         candidates.add(".".join([parts[0], parts[1], parts[2].zfill(2), *parts[3:]]))
         candidates.add(".".join([parts[0], parts[1].zfill(2), parts[2].zfill(2), *parts[3:]]))
+    elif len(parts) == 2 and all(p.isdigit() for p in parts) and patch_expansion_max is not None:
+        for patch in range(max(0, patch_expansion_max) + 1):
+            candidates.add(f"{parts[0]}.{parts[1]}.{patch}")
+            candidates.add(f"{parts[0]}.{parts[1]}.{patch:02d}")
     return sorted(candidates)
 
 def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[str]]:
@@ -246,7 +250,7 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
         api_tasks = []
         for sku in notes.get("api_skus", []):
             for release_version in versions:
-                for candidate in version_filename_candidates(release_version):
+                for candidate in version_filename_candidates(release_version, notes.get("patch_expansion_max")):
                     api_tasks.append((sku, release_version, candidate))
         if api_tasks:
             def _notes_api_task(task):
@@ -271,7 +275,7 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
         for family in notes.get("families", []):
             template = family["template"]
             for release_version in versions:
-                for candidate in version_filename_candidates(release_version):
+                for candidate in version_filename_candidates(release_version, notes.get("patch_expansion_max")):
                     direct_tasks.append((family["family"], template, release_version, candidate, family.get("catalog_version")))
         if direct_tasks:
             def _notes_direct_task(task):
