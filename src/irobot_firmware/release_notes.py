@@ -41,6 +41,7 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
     )
     source_heading = "Original app source" if record.get("source") == "app-embedded" else "Original OTA source"
     source_link_label = "source app" if record.get("source") == "app-embedded" else "original iRobot package"
+    reported = analysis.get("reported_identity") or {}
     lines = [
         origin_blurb,
         "",
@@ -54,6 +55,9 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
         f"| Associated retail models | {_value(', '.join(models))} |",
         f"| Known / observed SKUs | {_value(', '.join(skus))} |",
         f"| Firmware version | {_code(record.get('version'))} |",
+        f"| Package-reported version | {_code(reported.get('version'))} |",
+        f"| Package-reported product version | {_code(reported.get('product_version'))} |",
+        f"| Package-reported model | {_code(reported.get('model'))} |",
         f"| Release date | {_value(record.get('release_date'))} |",
         f"| Track | {_code(record.get('track'))} |",
         f"| Signing channel | {_code(record.get('signing'))} |",

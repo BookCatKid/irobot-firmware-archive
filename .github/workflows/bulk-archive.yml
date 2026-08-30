@@ -1,0 +1,106 @@
+name: Bulk archive pending firmware
+
+on:
+  workflow_dispatch:
+    inputs:
+      family:
+        description: "Optional firmware family; blank archives every pending build"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: firmware-catalog
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+      count: ${{ steps.matrix.outputs.count }}
+      head_sha: ${{ steps.matrix.outputs.head_sha }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - run: python -m pip install -e .
+      - id: matrix
+        run: python scripts/archive_matrix.py prepare --family '${{ inputs.family }}' --github-output "$GITHUB_OUTPUT"
+
+  archive:
+    needs: prepare
+    if: needs.prepare.outputs.count != '0'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        item: ${{ fromJSON(needs.prepare.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ needs.prepare.outputs.head_sha }}
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Install extractor and archive CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y squashfs-tools
+          python -m pip install -e .
+      - name: Archive one firmware
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python scripts/archive_matrix.py archive
+          --index '${{ matrix.item.index }}'
+          --expected-id '${{ matrix.item.id }}'
+          --repo "$GITHUB_REPOSITORY"
+      - uses: actions/upload-artifact@v5
+        with:
+          name: firmware-result-${{ matrix.item.id }}
+          path: _bulk_result
+          if-no-files-found: error
+          retention-days: 3
+
+  finalize:
+    needs: [prepare, archive]
+    if: always() && needs.prepare.outputs.count != '0'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - run: python -m pip install -e .
+      - uses: actions/download-artifact@v6
+        with:
+          pattern: firmware-result-*
+          path: _bulk_results
+          merge-multiple: true
+      - name: Merge successful archive results
+        run: python scripts/archive_matrix.py merge --results-dir _bulk_results
+      - name: Commit manifests and archive metadata
+        run: |
+          git config user.name "irobot-firmware-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog.json data/firmware
+          if git diff --cached --quiet; then
+            echo "No archive results to commit"
+          else
+            git commit -m "archive: bulk preserve firmware"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi

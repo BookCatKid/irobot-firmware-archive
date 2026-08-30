@@ -46,6 +46,7 @@ def archive_blob(
             "manifest": manifest_rel.as_posix(),
             "format": analysis.get("format"),
             "component_count": len(analysis.get("components", [])),
+            "reported_identity": analysis.get("reported_identity"),
             "deduplicated": True,
         }
     if upload_release:
@@ -68,6 +69,7 @@ def archive_blob(
         "manifest": manifest_rel.as_posix(),
         "format": analysis.get("format"),
         "component_count": len(analysis.get("components", [])),
+        "reported_identity": analysis.get("reported_identity"),
     }
 
 

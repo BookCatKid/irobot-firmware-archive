@@ -6,9 +6,9 @@ import unittest
 from unittest.mock import patch
 from pathlib import Path
 
-from irobot_firmware.analyze import analyze
+from irobot_firmware.analyze import analyze, _extract_reported_identity
 from irobot_firmware.backfill import classic_versions, numeric_versions
-from irobot_firmware.discover import api_probe, api_probe_response
+from irobot_firmware.discover import api_probe, api_probe_response, direct_probe
 from irobot_firmware.catalog import empty_catalog, merge_records
 from irobot_firmware.release_notes import render_release_notes
 
@@ -73,6 +73,27 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(list(numeric_versions(326, 328)), ["326", "327", "328"])
         self.assertEqual(list(numeric_versions(7, 9, 4)), ["0007", "0008", "0009"])
 
+    def test_reported_identity_resolves_compact_filename_ambiguity(self):
+        components = [
+            {"name": "SYSTEM", "filesystem_analysis": {"text_snapshots": {
+                "build.prop": "ro.build.version.release=lewis+3.12.6+lewis-release-420+7\n",
+                "opt/irobot/version.env": "OS_VERSION=linux+3.8.0+lewis-release-420+7\nPRODUCT_VERSION=3.12.6+lewis-release-420+7\n",
+            }}},
+            {"name": "CMNLIB", "filesystem_analysis": {"text_snapshots": {
+                "opt/irobot/identity.env": "MODEL=lewis\nPRODUCT_VERSION=3.12.6+lewis-release-420+7\n",
+            }}},
+        ]
+        identity = _extract_reported_identity(components)
+        self.assertEqual(identity["model"], "lewis")
+        self.assertEqual(identity["version"], "3.12.6")
+        self.assertEqual(identity["product_version"], "3.12.6+lewis-release-420+7")
+        self.assertEqual(identity["evidence"]["opt/irobot/identity.env"], "CMNLIB")
+
+    def test_direct_probe_supports_padded_compact_versions(self):
+        with patch("irobot_firmware.discover._exists", return_value=(False, {})) as exists:
+            direct_probe("sanmarino", "22.29.6", "https://example.invalid/{family}{padded_compact}.signed")
+        self.assertEqual(exists.call_args.args[0], "https://example.invalid/sanmarino222906.signed")
+
     def test_release_note_legacy_catalog_token_uses_vcompact(self):
         from unittest.mock import patch
         from irobot_firmware.discover import discover_from_config
@@ -108,6 +129,7 @@ class CatalogTests(unittest.TestCase):
         }
         analysis = {
             "filename": "sapphire-24.29.03.signed", "format": "irobot-otps",
+            "reported_identity": {"model": "sapphire", "version": "24.29.3", "product_version": "24.29.3+build"},
             "components": [{
                 "name": "SYSTEM", "kind": "squashfs", "size": 42,
                 "sha256": "a" * 64, "metadata_hash_verified": True,
@@ -118,6 +140,8 @@ class CatalogTests(unittest.TestCase):
         self.assertIn("Raw discovery metadata", notes)
         self.assertIn("Roomba j7", notes)
         self.assertIn("SYSTEM", notes)
+        self.assertIn("Package-reported version", notes)
+        self.assertIn("24.29.3+build", notes)
         self.assertIn("https://example.invalid/sapphire-24.29.03.signed", notes)
 
 

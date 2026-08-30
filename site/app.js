@@ -114,6 +114,7 @@ function showDetail(f, row) {
       ${kv("Platform identifier type", esc(p.type || 'unknown'))}
       ${kv("Hardware mapping", esc(p.confidence || 'unmapped'))}
       ${kv("Version", `<span class="mono">${esc(f.version)}</span>`)}
+      ${kv("Package-reported version", archive.reported_identity?.version ? `<span class="mono">${esc(archive.reported_identity.version)}</span>` : '—')}
       ${kv("Release date", esc(f.release_date || '—'))}
       ${kv("Package size", esc(fmtBytes(archive.size || f.size)))}
       ${kv("Discovery method", `<span class="mono">${esc(f.source || '—')}</span>`)}

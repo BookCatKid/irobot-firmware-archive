@@ -130,11 +130,19 @@ def direct_probe(family: str, version: str, template: str) -> dict[str, Any] | N
     # packages generally preserve dots (``sapphire-24.29.03.signed``), while
     # older families such as Marconi embed a compact dotted release version
     # (``marconiv327.signed`` for 3.2.7).  Templates may opt into either form.
+    parts = version.split(".")
+    padded_compact = (
+        "".join(part.zfill(2) for part in parts)
+        if parts and all(part.isdigit() for part in parts)
+        else version.replace(".", "")
+    )
     url = template.format(
         family=family,
         version=version,
         compact=version.replace(".", ""),
         version_compact=version.replace(".", ""),
+        padded_compact=padded_compact,
+        version_padded_compact=padded_compact,
     )
     exists, headers = _exists(url)
     if not exists:

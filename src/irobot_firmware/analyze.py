@@ -41,6 +41,83 @@ TEXT_SNAPSHOT_PATHS = {
 }
 
 
+def _parse_env(text: str) -> dict[str, str]:
+    values: dict[str, str] = {}
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        value = value.strip().strip('"').strip("'")
+        if key and value:
+            values[key.strip()] = value
+    return values
+
+
+def _version_prefix(value: str | None) -> str | None:
+    if not value:
+        return None
+    match = re.search(r"(?:^|\+)(\d+(?:\.\d+){1,3})(?:\+|$)", value)
+    return match.group(1) if match else None
+
+
+def _extract_reported_identity(components: list[dict[str, Any]]) -> dict[str, Any]:
+    """Recover authoritative product/version identity from extracted filesystems.
+
+    Compact legacy OTA filenames can be ambiguous (for example ``lewis3126``).
+    The filesystem itself is authoritative, so preserve both the source evidence
+    and normalized version rather than guessing how a compact token is segmented.
+    """
+    snapshots: dict[str, str] = {}
+    sources: dict[str, str] = {}
+    for component in components:
+        fs = component.get("filesystem_analysis") or {}
+        for path, text in (fs.get("text_snapshots") or {}).items():
+            if path not in snapshots:
+                snapshots[path] = text
+                sources[path] = str(component.get("name") or "unknown")
+
+    identity = _parse_env(snapshots.get("opt/irobot/identity.env", ""))
+    version_env = _parse_env(snapshots.get("opt/irobot/version.env", ""))
+    build_prop = _parse_env(snapshots.get("build.prop", ""))
+    if not build_prop:
+        build_prop = _parse_env(snapshots.get("etc/build.prop", ""))
+    os_release = _parse_env(snapshots.get("etc/os-release", ""))
+
+    product_version = identity.get("PRODUCT_VERSION") or version_env.get("PRODUCT_VERSION")
+    software_version = (
+        build_prop.get("ro.build.version.release")
+        or os_release.get("VERSION_ID")
+        or os_release.get("VERSION")
+        or product_version
+    )
+    normalized_version = _version_prefix(product_version) or _version_prefix(software_version)
+    model = identity.get("MODEL") or version_env.get("MODEL")
+    os_version = version_env.get("OS_VERSION")
+
+    result = {
+        "model": model,
+        "version": normalized_version,
+        "product_version": product_version,
+        "software_version": software_version,
+        "os_version": os_version,
+    }
+    result = {k: v for k, v in result.items() if v not in (None, "")}
+    if result:
+        result["evidence"] = {
+            path: sources[path]
+            for path in (
+                "opt/irobot/identity.env",
+                "opt/irobot/version.env",
+                "build.prop",
+                "etc/build.prop",
+                "etc/os-release",
+            )
+            if path in snapshots
+        }
+    return result
+
+
 def _ascii_strings(data: bytes, minimum: int = 4) -> list[str]:
     return [m.group().decode("ascii", "replace") for m in re.finditer(rb"[ -~]{%d,}" % minimum, data)]
 
@@ -250,5 +327,8 @@ def analyze(path: Path, output: Path, work_dir: Path, deep: bool = True) -> dict
                         out.write(mm[item["_start"] : item["_end"]])
                     public["filesystem_analysis"] = _analyze_squashfs(comp_path, work_dir / f"component-{item['index']:02d}")
                 result["components"].append(public)
+            reported_identity = _extract_reported_identity(result["components"])
+            if reported_identity:
+                result["reported_identity"] = reported_identity
     save_json(output, result)
     return result
