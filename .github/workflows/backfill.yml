@@ -26,8 +26,8 @@ on:
         description: "Highest patch number to probe"
         default: "15"
       max_probes:
-        description: "Safety cap; 0 means no cap"
-        default: "5000"
+        description: "Maximum object probes; 0 means unlimited"
+        default: "0"
       archive_found:
         description: "Also download/analyze/upload found packages"
         type: boolean
@@ -43,7 +43,6 @@ concurrency:
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v7
         with:
