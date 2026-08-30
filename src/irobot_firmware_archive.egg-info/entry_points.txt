@@ -1,2 +1,0 @@
-[console_scripts]
-irobot-fw = irobot_firmware.cli:main

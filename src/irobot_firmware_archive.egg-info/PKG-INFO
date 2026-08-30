@@ -1,9 +1,0 @@
-Metadata-Version: 2.4
-Name: irobot-firmware-archive
-Version: 0.1.0
-Summary: Discover, archive, fingerprint, and compare publicly available iRobot firmware packages
-Author: BookCatKid
-License: MIT
-Requires-Python: >=3.11
-License-File: LICENSE
-Dynamic: license-file
