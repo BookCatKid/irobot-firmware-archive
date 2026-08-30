@@ -53,6 +53,25 @@
       "source_file": "com/irobot/core/SkuUtils.java, com/irobot/core/SkuType.java, arm64-v8a/libcorebase.so",
       "xapk_sha256": "922c699994958d34ee1f429f1a6d7353b4f810cfa9f30d8aa98703b3da07c3dc",
       "source_archive": "com.irobot.home.prime@1.0.0.xapk"
+    },
+    {
+      "package": "com.irobot.home",
+      "version": "7.10.0",
+      "method": "APKPure APK + targeted JADX 1.5.6 + in-place ZIP/native string analysis",
+      "source_file": "com/irobot/core/SkuUtils.java, com/irobot/core/SkuType.java, res/raw simulator fixtures, arm64-v8a/libcore_base.so and libcore_jni.so",
+      "apk_sha256": "59e2d6eff9fa204e2b83eae3139bff9bfee288142a2ddabac4afa403c248a62a",
+      "source_archive": "com.irobot.home@7.10.0.apk",
+      "note": "Historical timeline sample. Congo is present as a generic SkuType by this release. Native core repeats the known marconiv327.signed and roomba9xxv2444.signed constants; uppercase X010020 is also present as a SKU-like native literal but returned no V1 or V2 firmware in 2026-08-30 probes."
+    },
+    {
+      "package": "com.irobot.home.prime",
+      "version": "1.3.5",
+      "version_code": 1030501,
+      "method": "APKPure XAPK + targeted JADX 1.5.6 + arm64 native string analysis",
+      "source_file": "com/irobot/core/SkuUtils.java, com/irobot/core/SkuType.java, arm64-v8a/libcorebase.so and liblegacyCore.so",
+      "xapk_sha256": "6f64290c14287c275059afd190d5fe62eb8deac3ca72f96d7c5488b7e18c5125",
+      "source_archive": "com.irobot.home.prime@1.3.5.xapk",
+      "note": "Historical timeline sample. EnhancedMaxVac with default SKU W155020 is present by Prime 1.3.5. Native firmware constants are still the known Marconi and Roomba 9xx filenames; no additional exact OTA filename was found."
     }
   ],
   "sku_types_classic": [
@@ -565,7 +584,8 @@
       "s510820",
       "s910880",
       "s915880",
-      "s955880"
+      "s955880",
+      "X010020"
     ],
     "legacy_v1_live_skus": [
       "B241080",
@@ -635,6 +655,37 @@
           "note": "The V1 row version is v3.4.67 while deploymentMpkg names 03.05.62; the reconstructed 3.4.67 object was accepted only because the public CDN independently returned the object. The metadata discrepancy is preserved."
         }
       ]
+    },
+    "observations": [
+      {
+        "literal": "X010020",
+        "source": "com.irobot.home 7.10.0 arm64-v8a/libcore_jni.so",
+        "note": "Case-distinct native literal. Both X010020 and the later/default x010020 returned no rows/offers from public V1/V2 firmware probes on 2026-08-30; no family inference is made from case alone."
+      }
+    ]
+  },
+  "official_release_note_evidence": [
+    {
+      "product": "Roomba e Series",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "versions": [
+        "3.4.42",
+        "3.4.46",
+        "3.4.49",
+        "3.4.62"
+      ],
+      "note": "Official release-note candidate feed. Matching Aero object naming is accepted only after live CDN verification; the page itself is not treated as proof of an OTA filename."
+    },
+    {
+      "product": "Braava jet",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "versions": [
+        "4.50",
+        "4.54",
+        "4.60",
+        "4.63"
+      ],
+      "note": "Official release-note candidate feed. Known Altadena 4.60/4.63 evidence connects this page to candidate generation, but 4.50/4.54 are not promoted unless a public object is verified."
     }
-  }
+  ]
 }

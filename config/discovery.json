@@ -548,6 +548,39 @@
           "catalog_version": "vcompact"
         }
       ]
+    },
+    {
+      "name": "roomba-e-series",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "families": [
+        {
+          "family": "aero",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/aero{compact}.signed"
+        },
+        {
+          "family": "aero",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/aerov{compact}.signed"
+        },
+        {
+          "family": "aero",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/aero-{version}.signed"
+        }
+      ]
+    },
+    {
+      "name": "braava-jet",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "families": [
+        {
+          "family": "altadena",
+          "template": "https://content-prod.iot.irobotapi.com/media/files/firmware/B240080/package/altadenad{compact}.enc"
+        },
+        {
+          "family": "altadena",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/altadenad{compact}.enc"
+        }
+      ],
+      "patch_expansion_max": 0
     }
   ],
   "legacy_v1_skus": [

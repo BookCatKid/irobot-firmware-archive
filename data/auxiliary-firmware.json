@@ -60415,7 +60415,7 @@
       "source_manifest": "firmware/wichita/1.2.6-0852f1a80d31.json"
     }
   ],
-  "catalog_updated_at": "2026-08-30T07:25:12.164576+00:00",
+  "catalog_updated_at": "2026-08-30T07:38:41.679106+00:00",
   "schema": 1,
   "source": "deep filesystem analysis of archived iRobot robot firmware",
   "summary": {

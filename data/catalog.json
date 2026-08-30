@@ -382,6 +382,29 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.46-a074f63a1830/aero3446.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/aero/3.4.46-a074f63a1830.json",
+        "release_tag": "firmware-aero-3.4.46-a074f63a1830",
+        "reported_identity": null,
+        "sha256": "a074f63a183052986a29592b27bfb02faa3c9fa4bade32e6e8b18f2ddd145ead",
+        "size": 954560
+      },
+      "discovered_at": "2026-08-30T07:38:39.618434+00:00",
+      "etag": "b53e333c4307404e981ba04ced97da4b",
+      "family": "aero",
+      "last_modified": "Fri, 10 May 2019 18:50:09 GMT",
+      "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "release_notes_version": "3.4.46",
+      "size": 954560,
+      "source": "release-notes-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3446.signed",
+      "version": "3.4.46"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.49-604f788c2715/aerov3449.signed",
         "component_count": 0,
         "format": "irobot-apkg",
@@ -526,12 +549,17 @@
       },
       "deployment_mpkg": "",
       "discovered_at": "2026-08-30T05:20:44.886790+00:00",
+      "etag": "82acbbe23a3a662f9e916ffe62f601d6",
       "family": "altadena",
+      "last_modified": "Mon, 17 Jun 2019 18:54:30 GMT",
       "legacy_v1_catalog_version": "4.63.0",
       "legacy_v1_original_download_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/B240080/package/altadenad4630.enc",
       "legacy_v1_original_metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/B240080/metapackage/altadenad4630.enc",
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/B240080/metapackage/altadenad4630.enc",
       "release_date": "2016-06-04",
+      "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "release_notes_version": "4.63",
+      "size": 245784,
       "source": "legacy-v1-api",
       "source_sku": "B240080",
       "track": "prod",
@@ -9004,5 +9032,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T07:25:12.164576+00:00"
+  "updated_at": "2026-08-30T07:38:41.679106+00:00"
 }
