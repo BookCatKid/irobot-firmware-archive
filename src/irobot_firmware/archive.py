@@ -7,7 +7,7 @@ from typing import Any
 
 from .analyze import analyze
 from .download import download
-from .discover import extract_metapackage_urls
+from .discover import extract_metapackage_urls, firmware_urls_from_metapackage_urls
 from .util import sha256_file, slug
 from .release_notes import render_release_notes
 
@@ -124,22 +124,51 @@ def archive_metapackage(
     dl = download(str(url), blob)
     sha = str(dl["sha256"])
     size = int(dl["size"])
+    same_as_firmware = bool(archive_data.get("sha256")) and sha == archive_data.get("sha256")
+    tag = archive_data.get("release_tag")
+    base = f"https://github.com/{repo}/releases/download/{tag}/" if tag else None
+
+    if same_as_firmware:
+        # Several legacy V1 responses call a URL a metapackage even though that
+        # endpoint serves byte-for-byte the same full firmware payload. Preserve
+        # the endpoint as provenance, but do not create a second analysis artifact
+        # or mine random URL strings from the firmware body as metapackage fields.
+        firmware_manifest = archive_data.get("manifest")
+        return {
+            "role": "legacy-metapackage-endpoint-alias",
+            "same_as_firmware": True,
+            "url": str(url),
+            "filename": blob.name,
+            "sha256": sha,
+            "size": size,
+            "asset_url": archive_data.get("asset_url"),
+            "manifest": firmware_manifest,
+            "manifest_asset_url": (
+                base + urllib.parse.quote(Path(str(firmware_manifest)).name)
+                if base and firmware_manifest else None
+            ),
+            "format": archive_data.get("format"),
+            "embedded_urls": [],
+            "firmware_urls": [],
+        }
+
     manifest_rel = Path("metapackages") / family / f"{version}-{sha[:12]}.json"
     manifest_path = data_root / manifest_rel
     analysis = analyze(blob, manifest_path, work / "analysis", deep=False)
     embedded_urls = extract_metapackage_urls(blob.read_bytes())
+    firmware_urls = firmware_urls_from_metapackage_urls(embedded_urls)
     asset_url = None
     manifest_asset_url = None
-    tag = archive_data.get("release_tag")
     if upload_release and tag:
         subprocess.run(
             ["gh", "release", "upload", str(tag), str(blob), str(manifest_path), "--repo", repo, "--clobber"],
             check=True,
         )
-        base = f"https://github.com/{repo}/releases/download/{tag}/"
         asset_url = base + urllib.parse.quote(blob.name)
         manifest_asset_url = base + urllib.parse.quote(manifest_path.name)
     return {
+        "role": "signed-metapackage",
+        "same_as_firmware": False,
         "url": str(url),
         "filename": blob.name,
         "sha256": sha,
@@ -149,6 +178,7 @@ def archive_metapackage(
         "manifest_asset_url": manifest_asset_url,
         "format": analysis.get("format"),
         "embedded_urls": embedded_urls,
+        "firmware_urls": firmware_urls,
     }
 
 

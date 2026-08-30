@@ -45,10 +45,30 @@ def metapackage_embedded_urls(url: str, timeout: int = 20) -> list[str]:
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         body = resp.read(1024 * 1024 + 1)
     if len(body) > 1024 * 1024:
-        # Metapackages observed in production are tiny. Refuse to silently scan
-        # an unexpectedly large response as though it were the same format.
+        # True metapackages observed in production are tiny. Some legacy V1
+        # responses expose the full firmware again under a /metapackage/ path;
+        # do not mine arbitrary firmware strings as though they were metapackage
+        # header fields.
         return []
     return extract_metapackage_urls(body)
+
+
+def firmware_urls_from_metapackage_urls(urls: Iterable[str]) -> list[str]:
+    """Keep only self-describing iRobot firmware-object URLs from metapackage strings."""
+    result: list[str] = []
+    for url in urls:
+        try:
+            parsed = urllib.parse.urlsplit(url)
+        except ValueError:
+            continue
+        host = (parsed.hostname or "").lower()
+        path = parsed.path.lower()
+        if not host.endswith("irobotapi.com"):
+            continue
+        if not path.endswith((".signed", ".prodsigned", ".enc")):
+            continue
+        result.append(url)
+    return list(dict.fromkeys(result))
 
 
 def _exists(url: str, timeout: int = 20) -> tuple[bool, dict[str, str]]:

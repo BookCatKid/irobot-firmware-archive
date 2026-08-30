@@ -45,6 +45,13 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
     source_heading = "Original app source" if record.get("source") == "app-embedded" else "Original OTA source"
     source_link_label = "source app" if record.get("source") == "app-embedded" else "original iRobot package"
     reported = analysis.get("reported_identity") or {}
+    meta_archive = (record.get("archive") or {}).get("metapackage") or {}
+    metapackage_is_alias = bool(
+        meta_archive.get("same_as_firmware")
+        or meta_archive.get("role") == "legacy-metapackage-endpoint-alias"
+    )
+    metapackage_field = "Legacy metapackage endpoint URL" if metapackage_is_alias else "Metapackage URL"
+    metapackage_link_label = "iRobot legacy endpoint" if metapackage_is_alias else "iRobot metapackage"
     lines = [
         origin_blurb,
         "",
@@ -79,7 +86,7 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
         f"| Source app package | {_code(record.get('source_package'))} |",
         f"| Source app version | {_code(record.get('source_app_version'))} |",
         f"| Embedded resource | {_code(record.get('source_resource'))} |",
-        f"| Metapackage URL | {_link('iRobot metapackage', record.get('metapackage_url'))} |",
+        f"| {metapackage_field} | {_link(metapackage_link_label, record.get('metapackage_url'))} |",
         f"| Deployment package | {_code(record.get('deployment_mpkg'))} |",
         f"| Discovery method | {_code(record.get('source'))} |",
         f"| Discovery SKU | {_code(record.get('source_sku'))} |",
@@ -93,15 +100,27 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
         "",
     ]
 
-    meta_archive = (record.get("archive") or {}).get("metapackage") or {}
     if meta_archive:
         embedded = meta_archive.get("embedded_urls") or []
+        firmware_urls = meta_archive.get("firmware_urls") or []
+        is_alias = meta_archive.get("same_as_firmware") or meta_archive.get("role") == "legacy-metapackage-endpoint-alias"
+        heading = "Legacy metapackage endpoint alias" if is_alias else "Signed metapackage"
+        asset_label = "download firmware bytes" if is_alias else "download metapackage"
         lines += [
-            "## Signed metapackage",
+            f"## {heading}",
             "",
+        ]
+        if is_alias:
+            lines += [
+                "The legacy backend labels this URL as a metapackage endpoint, but it resolves to "
+                "**exactly the same bytes and SHA-256 as the archived firmware payload**. It is "
+                "preserved as endpoint provenance, not represented as a separate metapackage file.",
+                "",
+            ]
+        lines += [
             "| Field | Value |",
             "| --- | --- |",
-            f"| Archived asset | {_link('download metapackage', meta_archive.get('asset_url'))} |",
+            f"| Archived asset | {_link(asset_label, meta_archive.get('asset_url'))} |",
             f"| Filename | {_code(meta_archive.get('filename'))} |",
             f"| Size | **{int(meta_archive.get('size') or 0):,} bytes** |",
             f"| SHA-256 | {_code(meta_archive.get('sha256'))} |",
@@ -109,8 +128,12 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
             f"| Analysis manifest | {_link('download manifest', meta_archive.get('manifest_asset_url'))} |",
             "",
         ]
-        if embedded:
-            lines += ["Embedded absolute URLs:", ""]
+        if firmware_urls:
+            lines += ["Embedded firmware object URLs:", ""]
+            lines += [f"- `{url}`" for url in firmware_urls]
+            lines.append("")
+        elif embedded and not is_alias:
+            lines += ["Other embedded absolute URLs:", ""]
             lines += [f"- `{url}`" for url in embedded]
             lines.append("")
 

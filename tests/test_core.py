@@ -8,7 +8,10 @@ from pathlib import Path
 
 from irobot_firmware.analyze import analyze, _extract_reported_identity
 from irobot_firmware.backfill import classic_versions, numeric_versions
-from irobot_firmware.discover import api_probe, api_probe_response, direct_probe, extract_metapackage_urls
+from irobot_firmware.discover import (
+    api_probe, api_probe_response, direct_probe, extract_metapackage_urls,
+    firmware_urls_from_metapackage_urls,
+)
 from irobot_firmware.catalog import empty_catalog, merge_records
 from irobot_firmware.release_notes import render_release_notes
 
@@ -323,6 +326,44 @@ class CatalogTests(unittest.TestCase):
             "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed",
             "https://example.invalid/other.bin",
         ])
+
+    def test_metapackage_firmware_url_filter_rejects_unrelated_strings(self):
+        urls = [
+            "http://gcc.gnu.org/bugs.html):",
+            "https://disc-%s.iot.irobotapi.com/v1/robot/discover?robot_id=%s",
+            "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed",
+            "https://content-prod.iot.irobotapi.com/media/files/firmware/x/package/fw.enc",
+            "https://example.invalid/fake.signed",
+        ]
+        self.assertEqual(firmware_urls_from_metapackage_urls(urls), [
+            "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed",
+            "https://content-prod.iot.irobotapi.com/media/files/firmware/x/package/fw.enc",
+        ])
+
+    def test_release_notes_distinguish_legacy_metapackage_endpoint_alias(self):
+        record = {
+            "family": "roomba9xx", "version": "v2444",
+            "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2444.signed",
+            "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/metapackage/roomba9xxv2444.signed",
+            "archive": {
+                "metapackage": {
+                    "role": "legacy-metapackage-endpoint-alias",
+                    "same_as_firmware": True,
+                    "filename": "roomba9xxv2444.signed",
+                    "sha256": "a" * 64,
+                    "size": 2865992,
+                    "format": "irobot-apkg",
+                    "asset_url": "https://example.invalid/fw",
+                    "manifest_asset_url": "https://example.invalid/manifest",
+                }
+            },
+        }
+        analysis = {"filename": "roomba9xxv2444.signed", "format": "irobot-apkg", "components": []}
+        notes = render_release_notes(record, analysis, "a" * 64, 2865992, Path("data"))
+        self.assertIn("## Legacy metapackage endpoint alias", notes)
+        self.assertIn("Legacy metapackage endpoint URL", notes)
+        self.assertIn("exactly the same bytes and SHA-256", notes)
+        self.assertNotIn("## Signed metapackage", notes)
 
     def test_api_probe_preserves_metapackage_embedded_urls(self):
         response = {
