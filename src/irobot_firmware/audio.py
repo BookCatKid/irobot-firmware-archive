@@ -120,6 +120,7 @@ def build_audio_index(catalog: dict[str, Any], data_root: Path) -> dict[str, Any
                     "sha256": sha256,
                     "size": int(entry.get("size") or 0),
                     "source_path": path,
+                    "download_url": f"audio/{sha256}.{extension}",
                     "parent_family": str(record.get("family") or ""),
                     "parent_version": str(record.get("version") or ""),
                     "parent_release_tag": str(archive.get("release_tag") or ""),
@@ -207,9 +208,9 @@ def build_audio_index(catalog: dict[str, Any], data_root: Path) -> dict[str, Any
         "source": "deep filesystem analysis of archived iRobot robot firmware",
         "catalog_updated_at": catalog.get("updated_at"),
         "note": (
-            "Semantic metadata index plus one directly extractable representative per sound. Exact per-file "
-            "SHA-256/path provenance remains in each firmware analysis manifest. Representatives point back to "
-            "the original archived firmware so the selected file can be locally extracted and hash-verified."
+            "Semantic metadata index plus one directly downloadable representative per sound. Each "
+            "representative is published as a static file under audio/<sha256>.<ext> for direct "
+            "play/download. Exact per-file provenance remains in each firmware analysis manifest."
         ),
         "summary": {
             "audio_file_occurrence_count": occurrence_count,

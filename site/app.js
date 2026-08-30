@@ -55,7 +55,7 @@ async function loadAudio() {
     state.audio = null;
     summary.textContent = `Audio index unavailable: ${err.message}`;
     $("#audioResultCount").textContent = "";
-    $("#audioCatalog").innerHTML = `<tr><td colspan="7" class="muted">Could not load embedded-audio metadata. The firmware catalog is still available.</td></tr>`;
+    $("#audioCatalog").innerHTML = `<tr><td colspan="5" class="muted">Could not load embedded-audio metadata. The firmware catalog is still available.</td></tr>`;
   }
 }
 
@@ -122,53 +122,24 @@ function renderAudio() {
   $("#audioResultCount").textContent = filtered.length > shown.length
     ? `${filtered.length.toLocaleString()} matches · showing ${shown.length}`
     : `${filtered.length.toLocaleString()} ${filtered.length === 1 ? 'sound' : 'sounds'}`;
-  $("#audioCatalog").innerHTML = shown.map((x, index) => {
+  $("#audioCatalog").innerHTML = shown.map((x) => {
     const d = x.representative || {};
-    const parent = d.parent_asset_url
-      ? `<a href="${esc(d.parent_asset_url)}">${esc(d.parent_family)} ${esc(d.parent_version)} ↓</a>`
-      : '—';
-    const provenance = d.source_path
-      ? `<span class="mono model-primary">${esc(d.source_path)}</span><span class="model-secondary mono">${esc(String(d.sha256 || '').slice(0, 20))}… · ${esc(fmtBytes(d.size))}</span>`
-      : '—';
-    const action = d.parent_asset_url && d.component_payload_offset != null && d.component_size
-      ? `<button class="small-button audio-extract-button" type="button" data-audio-index="${index}">copy extract</button>`
-      : '—';
+    const downloadUrl = esc(d.download_url || `audio/${String(d.sha256 || '')}.${esc(x.extension)}`);
+    const filename = `${x.name}.${x.extension}`;
+    const preview = d.sha256
+      ? `<audio controls preload="none" src="${downloadUrl}"></audio>`
+      : '<span class="muted">—</span>';
+    const download = d.sha256
+      ? `<a class="small-button" href="${downloadUrl}" download="${esc(filename)}">Download ↓</a>`
+      : '<span class="muted">—</span>';
     return `<tr>
     <td><span class="mono">${esc(x.name)}</span><span class="model-secondary">.${esc(x.extension)}</span></td>
     <td>${esc(x.category)}</td>
     <td class="mono">${esc(x.language || '—')}</td>
-    <td>${Number(x.unique_variant_count || 0).toLocaleString()}</td>
-    <td>${parent}<span class="model-secondary">${Number(x.parent_firmware_count || 0).toLocaleString()} parent builds · ${(x.families || []).map(esc).join(', ')}</span></td>
-    <td>${provenance}</td>
-    <td>${action}</td>
+    <td>${preview}</td>
+    <td>${download}</td>
   </tr>`;
-  }).join("") || `<tr><td colspan="7" class="muted">No matching embedded audio.</td></tr>`;
-
-  $("#audioCatalog").querySelectorAll("button[data-audio-index]").forEach(button => {
-    button.addEventListener("click", async () => {
-      const sound = shown[Number(button.dataset.audioIndex)];
-      if (!sound?.representative) return;
-      const d = sound.representative;
-      const quote = value => `'${String(value).replace(/\\/g, '\\\\').replace(/'/g, "\\'")}'`;
-      const output = `${sound.name}.${sound.extension}`;
-      const command = [
-        "python3 scripts/extract_audio_from_firmware.py",
-        `--asset-url ${quote(d.parent_asset_url)}`,
-        `--component-offset ${Number(d.component_payload_offset)}`,
-        `--component-size ${Number(d.component_size)}`,
-        d.component_sha256 ? `--component-sha256 ${quote(d.component_sha256)}` : "",
-        `--path ${quote(d.source_path)}`,
-        `--sha256 ${quote(d.sha256)}`,
-        `--output ${quote(output)}`,
-      ].filter(Boolean).join(" ");
-      try {
-        await navigator.clipboard.writeText(command);
-        $("#audioActionStatus").textContent = `Copied extraction command for ${sound.name}.${sound.extension}. Run it from a clone of this repository (requires unsquashfs).`;
-      } catch (err) {
-        $("#audioActionStatus").textContent = `Could not access clipboard: ${err.message}`;
-      }
-    });
-  });
+  }).join("") || `<tr><td colspan="5" class="muted">No matching embedded audio.</td></tr>`;
 }
 
 function auxFirmwarePayloads() {

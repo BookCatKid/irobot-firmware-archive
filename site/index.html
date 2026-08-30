@@ -127,7 +127,7 @@
       <div class="section-head">
         <div>
           <h2>Embedded audio</h2>
-          <p>Robot songs and multilingual voice prompts found in archived firmware. Every result links to a hash-verified representative inside its original signed firmware package.</p>
+          <p>Robot songs and multilingual voice prompts found in archived firmware. Play directly in your browser or download the clip.</p>
         </div>
       </div>
 
@@ -138,7 +138,6 @@
         <select id="audioCategoryFilter" aria-label="Filter embedded audio by category"><option value="">All audio</option></select>
         <span id="audioResultCount" class="result-count"></span>
       </div>
-      <div id="audioActionStatus" class="summary-line audio-action-status">Use “copy extract” on a result to copy a local, SHA-256-verified extraction command.</div>
 
       <div class="table-wrap">
         <table class="firmware-table audio-table">
@@ -147,10 +146,8 @@
               <th>Sound</th>
               <th>Type</th>
               <th>Language</th>
-              <th>Variants</th>
-              <th>Representative source</th>
-              <th>Path / SHA-256</th>
-              <th>Get file</th>
+              <th>Preview</th>
+              <th>Download</th>
             </tr>
           </thead>
           <tbody id="audioCatalog"></tbody>

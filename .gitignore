@@ -10,5 +10,6 @@ downloads/
 *.tar.gz
 *.squashfs
 !data/**/*.json
+site/audio/
 
 *.egg-info/
