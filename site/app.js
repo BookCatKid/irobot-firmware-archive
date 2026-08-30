@@ -1,4 +1,4 @@
-const state = { catalog: null, auxiliary: null, platforms: {}, selected: null };
+const state = { catalog: null, auxiliary: null, audio: null, platforms: {}, selected: null };
 
 const $ = (q) => document.querySelector(q);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -19,15 +19,17 @@ const sourceUrl = (f) => f.archive?.asset_url || f.url;
 const kv = (key, value, mono=false) => `<div class="kv"><span class="key">${esc(key)}</span><span class="value${mono?' mono':''}">${value ?? '—'}</span></div>`;
 
 async function load() {
-  const [catRes, platformRes, auxRes] = await Promise.all([
+  const [catRes, platformRes, auxRes, audioRes] = await Promise.all([
     fetch("data/catalog.json", {cache:"no-store"}),
     fetch("data/platforms.json", {cache:"no-store"}),
-    fetch("data/auxiliary-firmware.json", {cache:"no-store"})
+    fetch("data/auxiliary-firmware.json", {cache:"no-store"}),
+    fetch("data/audio-assets.json", {cache:"no-store"})
   ]);
   if (!catRes.ok) throw new Error(`catalog HTTP ${catRes.status}`);
   state.catalog = await catRes.json();
   if (platformRes.ok) state.platforms = (await platformRes.json()).platforms || {};
   if (auxRes.ok) state.auxiliary = await auxRes.json();
+  if (audioRes.ok) state.audio = await audioRes.json();
   renderInitial();
 }
 
@@ -38,13 +40,18 @@ function renderInitial() {
   const archivedCount = list.filter(archived).length;
   const auxCount = state.auxiliary?.summary?.bundle_count || 0;
   const nestedFirmwareCount = state.auxiliary?.summary?.unique_firmware_payload_sha256_count || 0;
-  $("#summary").textContent = `${list.length} builds · ${families.length} platforms · ${archivedCount} archived · ${auxCount} auxiliary bundles · ${nestedFirmwareCount} nested firmware payloads · ${fmtBytes(knownBytes)} indexed`;
+  const audioVariantCount = state.audio?.summary?.unique_sha256_count || 0;
+  $("#summary").textContent = `${list.length} builds · ${families.length} platforms · ${archivedCount} archived · ${auxCount} auxiliary bundles · ${nestedFirmwareCount} nested firmware payloads · ${audioVariantCount.toLocaleString()} audio variants · ${fmtBytes(knownBytes)} indexed`;
 
   $("#platformFilter").innerHTML = `<option value="">All platforms</option>` + families.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const auxFamilies = Object.keys(state.auxiliary?.summary?.families || {}).sort();
   $("#auxFamilyFilter").innerHTML = `<option value="">All platforms</option>` + auxFamilies.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const auxRoles = [...new Set(auxFirmwarePayloads().map(x => x.role).filter(Boolean))].sort();
   $("#auxRoleFilter").innerHTML = `<option value="">All roles</option>` + auxRoles.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+  const audioLanguages = Object.keys(state.audio?.summary?.languages || {}).sort();
+  $("#audioLanguageFilter").innerHTML = `<option value="">All languages</option>` + audioLanguages.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+  const audioCategories = Object.keys(state.audio?.summary?.categories || {}).sort();
+  $("#audioCategoryFilter").innerHTML = `<option value="">All audio</option>` + audioCategories.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const options = list.map((f,i)=>`<option value="${i}">${esc(f.family)} ${esc(f.version)} · ${esc(deviceTitle(f))}${archived(f)?" · archived":""}</option>`).join("");
   $("#leftSelect").innerHTML = options;
   $("#rightSelect").innerHTML = options;
@@ -53,6 +60,39 @@ function renderInitial() {
   renderCatalog();
   renderAuxiliary();
   renderAuxiliaryPayloads();
+  renderAudio();
+}
+
+function filteredAudio() {
+  const list = state.audio?.sounds || [];
+  const q = $("#audioSearch").value.trim().toLowerCase();
+  const language = $("#audioLanguageFilter").value;
+  const category = $("#audioCategoryFilter").value;
+  return list.filter(x => {
+    if (language && x.language !== language) return false;
+    if (category && x.category !== category) return false;
+    if (!q) return true;
+    return [x.name, x.category, x.language, x.extension, ...(x.families || [])]
+      .filter(Boolean).join(" ").toLowerCase().includes(q);
+  });
+}
+
+function renderAudio() {
+  const filtered = filteredAudio();
+  const shown = filtered.slice(0, 500);
+  const summary = state.audio?.summary || {};
+  $("#audioSummary").textContent = `${Number(summary.unique_sha256_count || 0).toLocaleString()} unique file hashes · ${Number(summary.semantic_sound_count || 0).toLocaleString()} named/language combinations · ${summary.language_count || 0} locale directories · ${summary.unique_song_name_count || 0} robot-song names`;
+  $("#audioResultCount").textContent = filtered.length > shown.length
+    ? `${filtered.length.toLocaleString()} matches · showing ${shown.length}`
+    : `${filtered.length.toLocaleString()} ${filtered.length === 1 ? 'sound' : 'sounds'}`;
+  $("#audioCatalog").innerHTML = shown.map(x => `<tr>
+    <td><span class="mono">${esc(x.name)}</span><span class="model-secondary">.${esc(x.extension)}</span></td>
+    <td>${esc(x.category)}</td>
+    <td class="mono">${esc(x.language || '—')}</td>
+    <td>${Number(x.unique_variant_count || 0).toLocaleString()}</td>
+    <td>${Number(x.parent_firmware_count || 0).toLocaleString()}</td>
+    <td><span class="model-primary">${esc((x.families || []).join(', ') || '—')}</span></td>
+  </tr>`).join("") || `<tr><td colspan="6" class="muted">No matching embedded audio.</td></tr>`;
 }
 
 function auxFirmwarePayloads() {
@@ -279,6 +319,7 @@ async function compare() {
 ["#search", "#platformFilter", "#statusFilter"].forEach(sel => $(sel).addEventListener(sel === "#search" ? "input" : "change", renderCatalog));
 ["#auxSearch", "#auxFamilyFilter"].forEach(sel => $(sel).addEventListener(sel === "#auxSearch" ? "input" : "change", renderAuxiliary));
 ["#auxPayloadSearch", "#auxRoleFilter"].forEach(sel => $(sel).addEventListener(sel === "#auxPayloadSearch" ? "input" : "change", renderAuxiliaryPayloads));
+["#audioSearch", "#audioLanguageFilter", "#audioCategoryFilter"].forEach(sel => $(sel).addEventListener(sel === "#audioSearch" ? "input" : "change", renderAudio));
 $("#compareButton").addEventListener("click", compare);
 $("#swap").addEventListener("click",()=>{const a=$("#leftSelect"),b=$("#rightSelect");[a.value,b.value]=[b.value,a.value];});
 load().catch(err => { $("#summary").textContent = `Failed to load catalog: ${err.message}`; });

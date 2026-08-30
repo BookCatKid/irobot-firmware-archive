@@ -1,7 +1,76 @@
 {
   "components": [],
+  "cpio": {
+    "embedded_filesystems": [],
+    "entries": [
+      {
+        "mode": "0o644",
+        "mtime": 1729973739,
+        "offset": 128,
+        "ordinal": 0,
+        "path": "sw-description",
+        "sha256": "8aa2dfe54dad9211b5cfaae627024690de1b2458ca8c8c39314605eb487103c1",
+        "size": 1881,
+        "type": "file"
+      },
+      {
+        "mode": "0o644",
+        "mtime": 1729973739,
+        "offset": 2144,
+        "ordinal": 1,
+        "path": "sw-description.sig",
+        "sha256": "466cc358de2e4c7bafc83198f7238e4c5864925baaecea7333034e2a6611ce5a",
+        "size": 2197,
+        "type": "file"
+      },
+      {
+        "mode": "0o644",
+        "mtime": 1729973737,
+        "offset": 4464,
+        "ordinal": 2,
+        "path": "uboot.img",
+        "sha256": "0418ab471a029010c9be3b3767c973b32a747730d80fb58e7ae72d50a1e1d646",
+        "size": 2228224,
+        "type": "file"
+      },
+      {
+        "mode": "0o644",
+        "mtime": 1729973737,
+        "offset": 2232808,
+        "ordinal": 3,
+        "path": "fitImage",
+        "sha256": "7bb9ea658383071ebcc689481edf58009f44c213a61341312c87da151596d1d7",
+        "size": 7130112,
+        "type": "file"
+      },
+      {
+        "mode": "0o644",
+        "mtime": 1729973738,
+        "offset": 9363044,
+        "ordinal": 4,
+        "path": "rootfs.img",
+        "sha256": "65b67be943f8532ea1b5a3d3f0617c46d05ee7044edcd0e8995d441a6baca4b0",
+        "size": 175026176,
+        "type": "file"
+      }
+    ],
+    "entry_count": 5,
+    "parsed_bytes": 184389344,
+    "text_snapshots": {
+      "sw-description": "software : \n{\n  version = \"24.29.3+2024-10-26-b2780d6e18c+Firmware-Production+241\";\n  osversion = \"linux+flint-1.30.0_release+Firmware-Production+241\";\n  robot = \"ruby\";\n  description = \"flint-emmc - BOOTLOADER + SWUPDATE OTA - 24.29.3+2024-10-26-b2780d6e18c+Firmware-Production+241\";\n  rv1126-flint-emmc : \n  {\n    hardware-compatibility = [ \"1.0\" ];\n    files = ( \n      {\n        filename = \"uboot.img\";\n        path = \"/tmp/partition_uboot_inactive\";\n        installed-directly = true;\n        sha256 = \"0418ab471a029010c9be3b3767c973b32a747730d80fb58e7ae72d50a1e1d646\";\n      }, \n      {\n        filename = \"fitImage\";\n        path = \"/tmp/partition_boot_inactive\";\n        installed-directly = true;\n        sha256 = \"7bb9ea658383071ebcc689481edf58009f44c213a61341312c87da151596d1d7\";\n      }, \n      {\n        filename = \"rootfs.img\";\n        path = \"/tmp/partition_system_inactive\";\n        installed-directly = true;\n        sha256 = \"65b67be943f8532ea1b5a3d3f0617c46d05ee7044edcd0e8995d441a6baca4b0\";\n      } );\n    scripts = ( \n      {\n        device = \"/tmp/partition_uboot_inactive\";\n        type = \"readback\";\n        properties : \n        {\n          sha256 = \"0418ab471a029010c9be3b3767c973b32a747730d80fb58e7ae72d50a1e1d646\";\n          size = \"2228224\";\n          offset = \"0\";\n        };\n      }, \n      {\n        device = \"/tmp/partition_boot_inactive\";\n        type = \"readback\";\n        properties : \n        {\n          sha256 = \"7bb9ea658383071ebcc689481edf58009f44c213a61341312c87da151596d1d7\";\n          size = \"7130112\";\n          offset = \"0\";\n        };\n      }, \n      {\n        device = \"/tmp/partition_system_inactive\";\n        type = \"readback\";\n        properties : \n        {\n          sha256 = \"65b67be943f8532ea1b5a3d3f0617c46d05ee7044edcd0e8995d441a6baca4b0\";\n          size = \"175026176\";\n          offset = \"0\";\n        };\n      } );\n  };\n};\n"
+    },
+    "trailer_found": true,
+    "variant": "crc"
+  },
   "filename": "ruby-24.29.03.signed",
-  "format": "unknown",
+  "format": "swupdate-cpio",
+  "reported_identity": {
+    "evidence": "sw-description",
+    "model": "ruby",
+    "os_version": "linux+flint-1.30.0_release+Firmware-Production+241",
+    "software_version": "24.29.3+2024-10-26-b2780d6e18c+Firmware-Production+241",
+    "version": "24.29.3"
+  },
   "schema": 1,
   "sha256": "65cc657f29e7b6fc6eb0c72b220c9bd690c561209956dcf8a3932037b5deb71b",
   "size": 184389344

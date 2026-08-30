@@ -350,7 +350,7 @@
       ],
       "source_package": "com.irobot.home",
       "source_version": "7.18.0",
-      "note": "The app fixture softwareVer has no platform prefix, so no firmware family is inferred."
+      "note": "The app fixture softwareVer has no platform prefix, so no firmware family is inferred. Current V2 probing returns no firmware recommendation for R111840 at 3.2.10, and the same 3.2.10+32 string is independently documented on older Roomba 690 hardware; this fixture is therefore not evidence of a distinct Atlantis OTA blob."
     },
     {
       "platform": "wichita",
@@ -371,6 +371,14 @@
       "note": "Official app simulator/dev-fixture evidence only. Four plausible production CDN filename forms were probed on 2026-08-30 and returned 403, so this is not catalogued as a retrievable OTA package."
     }
   ],
+  "historical_software_state_reconciliation": {
+    "as_of": "2026-08-30",
+    "evidence_file": "data/research/historical-software-state-reconciliation-2026-08-30.json",
+    "conclusion": "Historical softwareVer values from official app fixtures are robot/app software-state evidence, not automatically evidence of separately published OTA objects. The current V2 API returns already archived upgrade deployments for seven older Lewis inputs and Ruby 1.2.12, but a control probe shows it also accepts and echoes arbitrary softwareVer strings; those responses are routing context, not validation that the queried versions were published as OTA artifacts. The remaining unresolved fixture states likewise have no separate OTA artifact established by the current V2 API, legacy V1 snapshot, or evidence-derived public filename probes.",
+    "separate_ota_artifacts_proven_missing": 0,
+    "rule": "Do not count a historical software state as a missing firmware blob unless independent OTA evidence identifies a distinct artifact.",
+    "v2_target_software_ver_warning": "The V2 API accepted softwareVer=definitely-not-a-version and echoed it in targetSoftwareVer; do not use that field as existence validation."
+  },
   "native_firmware_constants": [
     {
       "symbol": "core::util::Constants::kMarconiFirmwareFilename",

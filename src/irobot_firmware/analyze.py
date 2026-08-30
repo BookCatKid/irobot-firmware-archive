@@ -213,13 +213,18 @@ def _analyze_apkg_header(mm: mmap.mmap) -> dict[str, Any]:
         return {}
 
     name_raw = bytes(mm[16:48]).split(b"\0", 1)[0]
-    entry_count = struct.unpack_from("<I", mm, 0x30)[0]
+    # Two materially different aPKG layouts are present in the archive. Older
+    # Marconi packages place an entry count/table at 0x30. Newer SigmaStar-based
+    # robots place a gzip member there instead (observed original filename:
+    # SStarOta.bin). Do not interpret gzip header bytes as an entry count.
+    modern_gzip = bytes(mm[0x30:0x32]) == b"\x1f\x8b"
+    entry_count = None if modern_gzip else struct.unpack_from("<I", mm, 0x30)[0]
     entries: list[dict[str, Any]] = []
     entry_size = 0x58
     table_start = 0x34
 
     # Bound the count so malformed input cannot turn into a huge parse loop.
-    if entry_count <= 64 and table_start + entry_count * entry_size <= len(mm):
+    if entry_count is not None and entry_count <= 64 and table_start + entry_count * entry_size <= len(mm):
         for ordinal in range(entry_count):
             pos = table_start + ordinal * entry_size
             entry_id, offset, size = struct.unpack_from("<III", mm, pos)
@@ -241,16 +246,34 @@ def _analyze_apkg_header(mm: mmap.mmap) -> dict[str, Any]:
 
     raw_end = struct.unpack_from("<I", mm, 8)[0]
     trailer = len(mm) - raw_end if 0 <= raw_end <= len(mm) else None
-    return {
+    result: dict[str, Any] = {
         "magic": "aPKG",
         "container_version": struct.unpack_from("<I", mm, 4)[0],
         "header_u32_08": raw_end,
         "header_u32_0c": struct.unpack_from("<I", mm, 12)[0],
         "name_hint": name_raw.decode("ascii", "replace"),
-        "entry_count": entry_count,
-        "entries": entries,
         "trailing_bytes_after_header_u32_08": trailer,
     }
+    if modern_gzip:
+        result["variant"] = "sigmastar-gzip"
+        result["payload_offset"] = 0x30
+        result["payload_format"] = "gzip"
+        # RFC 1952: when FNAME is set, the zero-terminated original filename
+        # follows the fixed ten-byte header (after FEXTRA, if present).
+        flags = mm[0x33] if len(mm) > 0x33 else 0
+        cursor = 0x30 + 10
+        if flags & 0x04 and cursor + 2 <= len(mm):
+            extra_len = struct.unpack_from("<H", mm, cursor)[0]
+            cursor += 2 + extra_len
+        if flags & 0x08 and cursor < len(mm):
+            end = mm.find(b"\0", cursor, min(len(mm), cursor + 4096))
+            if end >= 0:
+                result["gzip_original_filename"] = bytes(mm[cursor:end]).decode("utf-8", "replace")
+    else:
+        result["variant"] = "legacy-entry-table"
+        result["entry_count"] = entry_count
+        result["entries"] = entries
+    return result
 
 
 def _align4(value: int) -> int:
@@ -567,6 +590,41 @@ def analyze(path: Path, output: Path, work_dir: Path, deep: bool = True) -> dict
             identity = _swupdate_identity(result["cpio"])
             if identity:
                 result["reported_identity"] = identity
+        elif path.suffix.lower() == ".enc":
+            # Some legacy iRobot artifacts (currently the Altadena/Braava jet
+            # packages in this archive) are published with an explicit .enc
+            # suffix but expose none of the supported cleartext container
+            # magics. Describe only what is observable; do not guess a cipher,
+            # keying scheme, or inner container format.
+            result["format"] = "opaque-enc"
+            opaque: dict[str, Any] = {
+                "classification_basis": "source filename ends in .enc and no supported cleartext container magic was recognized",
+                "magic_hex": bytes(mm[:16]).hex(),
+            }
+            # The decompiled official Altadena updater sends bytes 0..23 as a
+            # separate preamble, then transfers bytes 24..EOF and verifies that
+            # payload with a 24-bit additive checksum. Both preserved Altadena
+            # samples also store their exact total file size as LE u32 at offset
+            # 0 and share bytes 0x17 0x10 at offsets 4..5. Preserve these directly
+            # observed fields while leaving bytes 6..23 explicitly opaque.
+            if (
+                path.name.lower().startswith("altadena")
+                and len(mm) >= 24
+                and struct.unpack_from("<I", mm, 0)[0] == len(mm)
+                and bytes(mm[4:6]) == b"\x17\x10"
+            ):
+                payload_checksum = sum(mm[24:]) & 0xFFFFFF
+                opaque["altadena_preamble"] = {
+                    "size": 24,
+                    "declared_file_size_u32_le": struct.unpack_from("<I", mm, 0)[0],
+                    "declared_file_size_matches": True,
+                    "tag_hex": bytes(mm[4:6]).hex(),
+                    "opaque_bytes_06_23_hex": bytes(mm[6:24]).hex(),
+                    "payload_offset": 24,
+                    "payload_size": len(mm) - 24,
+                    "payload_additive_checksum_u24": payload_checksum,
+                }
+            result["opaque_container"] = opaque
         items = _find_otie_items(mm)
         if items:
             result["format"] = "irobot-otps"

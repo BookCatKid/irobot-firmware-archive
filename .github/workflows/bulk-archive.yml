@@ -93,11 +93,17 @@ jobs:
         run: python scripts/archive_matrix.py merge --results-dir _bulk_results
       - name: Rebuild embedded auxiliary firmware index
         run: python scripts/build_auxiliary_index.py
+      - name: Rebuild embedded audio index
+        run: python scripts/build_audio_index.py
+      - name: Verify archived Release integrity
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/audit_release_integrity.py --repo "$GITHUB_REPOSITORY"
       - name: Commit manifests and archive metadata
         run: |
           git config user.name "irobot-firmware-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json data/firmware data/auxiliary-firmware.json
+          git add data/catalog.json data/firmware data/auxiliary-firmware.json data/audio-assets.json
           if git diff --cached --quiet; then
             echo "No archive results to commit"
           else

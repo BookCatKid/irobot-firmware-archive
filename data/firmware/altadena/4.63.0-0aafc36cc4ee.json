@@ -1,7 +1,21 @@
 {
   "components": [],
   "filename": "altadenad4630.enc",
-  "format": "unknown",
+  "format": "opaque-enc",
+  "opaque_container": {
+    "altadena_preamble": {
+      "declared_file_size_matches": true,
+      "declared_file_size_u32_le": 245784,
+      "opaque_bytes_06_23_hex": "71b7b15c807cbbecd0078314c3046bc62aae",
+      "payload_additive_checksum_u24": 14507204,
+      "payload_offset": 24,
+      "payload_size": 245760,
+      "size": 24,
+      "tag_hex": "1710"
+    },
+    "classification_basis": "source filename ends in .enc and no supported cleartext container magic was recognized",
+    "magic_hex": "18c00300171071b7b15c807cbbecd007"
+  },
   "schema": 1,
   "sha256": "0aafc36cc4ee59b34b5b73ab7301e8a397be9029b9b37202bd2d6825e2ce797d",
   "size": 245784

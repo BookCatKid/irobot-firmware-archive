@@ -1,0 +1,83 @@
+{
+  "app_bundle_evidence": [
+    {
+      "embedded_resource": "res/raw/altadena_d_4_60_0.enc",
+      "embedded_resource_sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
+      "version": "5.2.4-release",
+      "xapk_sha256": "491564d38d2ee6202e1d470ce0eaa0cc0503e328b025e6779fc4fa167cbfac5c"
+    },
+    {
+      "embedded_resource": "res/raw/altadena_d_4_60_0.enc",
+      "embedded_resource_sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
+      "version": "7.2.0",
+      "xapk_sha256": "136276358154746ae140460e03f685021718e0e245211da1a874ff96b70ea972"
+    },
+    {
+      "embedded_resource": "res/raw/altadena_d_4_60_0.enc",
+      "embedded_resource_sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
+      "version": "7.18.0",
+      "xapk_sha256": "bb51bad03dc532514f1f66d91c7e45378cdf0089d918b9824b7c946da00858c1"
+    }
+  ],
+  "app_code_evidence": {
+    "decompiled_version": "7.18.0",
+    "decompiler": "JADX 1.5.6",
+    "files": [
+      {
+        "evidence": "updateFirmware(byte[]) passes the complete byte array to ALFswUpdateStateMachine.initFirmwareImage().",
+        "path": "com/irobot/altadenalib/ALRobot.java"
+      },
+      {
+        "evidence": "XFER_PREAMBLE copies bytes 0..23; XFER_IMAGE transfers bytes 24..EOF; RESET sums bytes 24..EOF; XFER_END sends checksum masked with 0xFFFFFF.",
+        "path": "com/irobot/altadenalib/ALFswUpdateStateMachine.java"
+      }
+    ],
+    "package": "com.irobot.home"
+  },
+  "conclusions": [
+    "Official app code treats the first 24 bytes as a separate firmware preamble and transfers bytes 24 through EOF as the firmware image payload.",
+    "Official app code computes an unsigned byte sum over bytes 24 through EOF and sends the low 24 bits as the transfer-end checksum.",
+    "Both preserved 245784-byte Altadena samples store 245784 as a little-endian u32 at offset 0 and share bytes 17 10 at offsets 4..5.",
+    "Bytes 6..23 differ between the two samples and remain semantically opaque; no cipher, key, signature, or field meanings are inferred."
+  ],
+  "generated_at": "2026-08-30T08:39:14.319689+00:00",
+  "parser_policy": {
+    "altadena_preamble_detection": "filename begins altadena; file length >= 24; LE u32 at offset 0 equals exact file length; offsets 4..5 equal 17 10",
+    "format": "opaque-enc",
+    "intent": "Expose only transport/layout facts supported by preserved samples plus official app code; keep bytes 6..23 opaque."
+  },
+  "samples": [
+    {
+      "bytes_04_05_hex": "1710",
+      "declared_file_size_matches": true,
+      "declared_file_size_u32_le": 245784,
+      "opaque_bytes_06_23_hex": "00005fa7690ad0003b27ccb652e90e8d1b33",
+      "payload_additive_checksum_u24": 14603044,
+      "payload_crc32_for_comparison_only": "de1773d1",
+      "payload_offset": 24,
+      "payload_sha256": "24ac5abaf33eaef76643ac5c631742be68b41e9b473064c983fb1bb2b20e8372",
+      "payload_size": 245760,
+      "preamble_hex": "18c00300171000005fa7690ad0003b27ccb652e90e8d1b33",
+      "sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
+      "size": 245784,
+      "version": "4.60.0"
+    },
+    {
+      "bytes_04_05_hex": "1710",
+      "declared_file_size_matches": true,
+      "declared_file_size_u32_le": 245784,
+      "opaque_bytes_06_23_hex": "71b7b15c807cbbecd0078314c3046bc62aae",
+      "payload_additive_checksum_u24": 14507204,
+      "payload_crc32_for_comparison_only": "e415c93f",
+      "payload_offset": 24,
+      "payload_sha256": "711e32e2a70c8be428bf4af7ab45bc052a18866ffb1539eba3d7533661c8ecbb",
+      "payload_size": 245760,
+      "preamble_hex": "18c00300171071b7b15c807cbbecd0078314c3046bc62aae",
+      "sha256": "0aafc36cc4ee59b34b5b73ab7301e8a397be9029b9b37202bd2d6825e2ce797d",
+      "size": 245784,
+      "version": "4.63.0"
+    }
+  ],
+  "schema": 1,
+  "subject": "Altadena/Braava jet opaque .enc firmware transport structure"
+}

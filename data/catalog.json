@@ -5,7 +5,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.3.0-870b20b4fba8/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/105/9.3.0-870b20b4fba8.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.3.0-870b20b4fba8/metapackage-C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
@@ -53,7 +53,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.3.0-3b2b7f5296d3/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/105v/9.3.0-3b2b7f5296d3.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.3.0-3b2b7f5296d3/metapackage-V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
@@ -101,7 +101,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.0-73d30de4c331/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/205/9.3.0-73d30de4c331.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.0-73d30de4c331/metapackage-CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
@@ -149,7 +149,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.0-8f1d7fd48467/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/405/9.3.0-8f1d7fd48467.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.0-8f1d7fd48467/metapackage-C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
@@ -201,7 +201,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-8.6.2-7ea399e73628/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/505/8.6.2-7ea399e73628.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-8.6.2-7ea399e73628/metapackage-C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
@@ -254,7 +254,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-8.6.2-432492ac01ca/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/705/8.6.2-432492ac01ca.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-8.6.2-432492ac01ca/metapackage-V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
@@ -308,7 +308,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.6-06074402987a/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/705/9.3.6-06074402987a.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.6-06074402987a/metapackage-C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
@@ -506,7 +506,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-altadena-4.60.0-e1fde01f2db7/altadena_d_4_60_0.enc",
         "component_count": 0,
-        "format": "unknown",
+        "format": "opaque-enc",
         "manifest": "firmware/altadena/4.60.0-e1fde01f2db7.json",
         "release_tag": "firmware-altadena-4.60.0-e1fde01f2db7",
         "sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
@@ -526,14 +526,14 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-altadena-4.63.0-0aafc36cc4ee/altadenad4630.enc",
         "component_count": 0,
-        "format": "unknown",
+        "format": "opaque-enc",
         "manifest": "firmware/altadena/4.63.0-0aafc36cc4ee.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-altadena-4.63.0-0aafc36cc4ee/altadenad4630.enc",
           "embedded_urls": [],
           "filename": "altadenad4630.enc",
           "firmware_urls": [],
-          "format": "unknown",
+          "format": "opaque-enc",
           "manifest": "firmware/altadena/4.63.0-0aafc36cc4ee.json",
           "manifest_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-altadena-4.63.0-0aafc36cc4ee/4.63.0-0aafc36cc4ee.json",
           "role": "legacy-metapackage-endpoint-alias",
@@ -543,7 +543,6 @@
           "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/B240080/metapackage/altadenad4630.enc"
         },
         "release_tag": "firmware-altadena-4.63.0-0aafc36cc4ee",
-        "reported_identity": null,
         "sha256": "0aafc36cc4ee59b34b5b73ab7301e8a397be9029b9b37202bd2d6825e2ce797d",
         "size": 245784
       },
@@ -571,7 +570,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/congo-01.01.18-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/congo/1.1.18-9a40cbfdc6b2.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/metapackage-congo-01.01.18-prod.meta.signed",
@@ -623,7 +622,7 @@
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/congo-01.01.18-prod.meta.signed",
         "component_count": 0,
         "deduplicated": true,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/congo/1.1.18-9a40cbfdc6b2.json",
         "release_tag": "firmware-congo-1.1.18-9a40cbfdc6b2",
         "sha256": "9a40cbfdc6b24fe32df2a1e0abdec3e727f1fe5bf53fe71c07b01ac198f61303",
@@ -3963,7 +3962,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-0.7.12-eda059be52f6/ruby-00.07.12-prod.meta.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/0.7.12-eda059be52f6.json",
         "metapackage": {
           "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-0.7.12-eda059be52f6/metapackage-ruby-00.07.12-prod.meta.signed",
@@ -3984,6 +3983,13 @@
           "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/0.7.12-j9/metapackage/ruby-00.07.12-prod.meta.signed"
         },
         "release_tag": "firmware-ruby-0.7.12-eda059be52f6",
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.7.4.1_release+Firmware-Build+4625",
+          "software_version": "0.7.12+Firmware-Build+4625",
+          "version": "0.7.12"
+        },
         "sha256": "eda059be52f6e03d6692cf91f1ee6693024e67c7a71b908a826d61db62e0d5e9",
         "size": 165524132
       },
@@ -4021,10 +4027,16 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.37.5-ee3689994c25/ruby-23.37.05.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/23.37.5-ee3689994c25.json",
         "release_tag": "firmware-ruby-23.37.5-ee3689994c25",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.16.0_release+Firmware-Production+167",
+          "software_version": "23.37.5+2023-10-17-5245d211fc3+Firmware-Production+167",
+          "version": "23.37.5"
+        },
         "sha256": "ee3689994c257ac7a930d6ff60e4e911b2b00dff0a514373b1db8a299e9d5485",
         "size": 179536608
       },
@@ -4106,10 +4118,15 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.53.06-ff93c3932e1e/ruby-23.53.06.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/23.53.06-ff93c3932e1e.json",
         "release_tag": "firmware-ruby-23.53.06-ff93c3932e1e",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.23.0_release+Release+24",
+          "software_version": "23.53.6-2024-03-22-545c1b52ecf+Release+24"
+        },
         "sha256": "ff93c3932e1e93dbb625e5579d0062c134bef91b51f6da1a54709b967f038e42",
         "size": 181516472
       },
@@ -4130,10 +4147,15 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-24.29.01-12b7f9517018/ruby-24.29.01.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/24.29.01-12b7f9517018.json",
         "release_tag": "firmware-ruby-24.29.01-12b7f9517018",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.30.0_release+Release+54",
+          "software_version": "24.29.1-2024-08-01-9510a0d1e65+Release+54"
+        },
         "sha256": "12b7f9517018fa0837d63ac17f0ba43e82d438efbdf593ab6bb3d2cdbdc1a8ac",
         "size": 184397496
       },
@@ -4154,10 +4176,16 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-24.29.03-65cc657f29e7/ruby-24.29.03.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/24.29.03-65cc657f29e7.json",
         "release_tag": "firmware-ruby-24.29.03-65cc657f29e7",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.30.0_release+Firmware-Production+241",
+          "software_version": "24.29.3+2024-10-26-b2780d6e18c+Firmware-Production+241",
+          "version": "24.29.3"
+        },
         "sha256": "65cc657f29e7b6fc6eb0c72b220c9bd690c561209956dcf8a3932037b5deb71b",
         "size": 184389344
       },
@@ -4208,10 +4236,16 @@
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-0.7.12-eda059be52f6/ruby-00.07.12-prod.meta.signed",
         "component_count": 0,
         "deduplicated": true,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/v0712-eda059be52f6.json",
         "release_tag": "firmware-ruby-0.7.12-eda059be52f6",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.7.4.1_release+Firmware-Build+4625",
+          "software_version": "0.7.12+Firmware-Build+4625",
+          "version": "0.7.12"
+        },
         "sha256": "eda059be52f6e03d6692cf91f1ee6693024e67c7a71b908a826d61db62e0d5e9",
         "size": 165524132
       },
@@ -4234,10 +4268,16 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v0713-be30d64a6531/ruby0713.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/v0713-be30d64a6531.json",
         "release_tag": "firmware-ruby-v0713-be30d64a6531",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.7.4.2_release+Firmware-Build+4638",
+          "software_version": "0.7.13+Firmware-Build+4638",
+          "version": "0.7.13"
+        },
         "sha256": "be30d64a6531dc7e7d8da17a16a741e1fdb44418e28bd56140adfbe8a25c8a16",
         "size": 165524132
       },
@@ -4260,10 +4300,16 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v0714-b9e31dd2d1cd/ruby0714.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/v0714-b9e31dd2d1cd.json",
         "release_tag": "firmware-ruby-v0714-b9e31dd2d1cd",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.7.4.3_release+Firmware-Build+4766",
+          "software_version": "0.7.14+Firmware-Build+4766",
+          "version": "0.7.14"
+        },
         "sha256": "b9e31dd2d1cd58b221bcc2a4e1633d4373b762301bf12262fad574020e0acba4",
         "size": 165532324
       },
@@ -4286,10 +4332,16 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v089-f5a3a6a46b27/ruby089.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/v089-f5a3a6a46b27.json",
         "release_tag": "firmware-ruby-v089-f5a3a6a46b27",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.7.6_release+Firmware-Build+4344",
+          "software_version": "0.8.9+Firmware-Build+4344",
+          "version": "0.8.9"
+        },
         "sha256": "f5a3a6a46b27c288354fd591b2f9e897c4a403b7f2e10e10e43a7c3807255023",
         "size": 171282080
       },
@@ -4312,10 +4364,16 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v098-8c21eb2d4914/ruby098.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/v098-8c21eb2d4914.json",
         "release_tag": "firmware-ruby-v098-8c21eb2d4914",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.7.6_release+Firmware-Build+4582",
+          "software_version": "0.9.8+Firmware-Build+4582",
+          "version": "0.9.8"
+        },
         "sha256": "8c21eb2d491408415965be496677c46b68aa7dce38f8e195fd420618ddddebde",
         "size": 176795296
       },
@@ -4338,10 +4396,16 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v099-24db34566534/ruby099.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "swupdate-cpio",
         "manifest": "firmware/ruby/v099-24db34566534.json",
         "release_tag": "firmware-ruby-v099-24db34566534",
-        "reported_identity": null,
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.7.8_release+Firmware-Build+4646",
+          "software_version": "0.9.9+Firmware-Build+4646",
+          "version": "0.9.9"
+        },
         "sha256": "24db34566534525a95362a526b7070869eec54d18562864b56c7957eb878b6aa",
         "size": 176894624
       },

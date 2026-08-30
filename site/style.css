@@ -84,6 +84,8 @@ main { width: min(1100px, calc(100% - 36px)); margin: 0 auto; padding: 52px 0 78
 }
 .lede { margin: 0 auto; max-width: 680px; color: var(--muted); line-height: 1.55; font-size: 15px; }
 .summary-line { color: var(--faint); font-size: 11px; margin-top: 12px; }
+.audio-summary { margin: 0 0 12px; }
+.audio-toolbar { grid-template-columns: minmax(260px, 1fr) 150px 150px auto; }
 
 section { scroll-margin-top: 28px; }
 .content-section + .content-section { margin-top: 76px; }

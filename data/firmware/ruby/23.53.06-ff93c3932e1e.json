@@ -1,7 +1,75 @@
 {
   "components": [],
+  "cpio": {
+    "embedded_filesystems": [],
+    "entries": [
+      {
+        "mode": "0o644",
+        "mtime": 1711142749,
+        "offset": 128,
+        "ordinal": 0,
+        "path": "sw-description",
+        "sha256": "6ee98c066106308a15ccdcd53ec6ee1511e67274a604a74366f98ef695be4b1f",
+        "size": 1842,
+        "type": "file"
+      },
+      {
+        "mode": "0o644",
+        "mtime": 1711142749,
+        "offset": 2104,
+        "ordinal": 1,
+        "path": "sw-description.sig",
+        "sha256": "84d858ec08a5d3cb75ae1ab7f3056adfc063826b44a45eda196b8f9799e7b6c4",
+        "size": 2197,
+        "type": "file"
+      },
+      {
+        "mode": "0o644",
+        "mtime": 1711142747,
+        "offset": 4424,
+        "ordinal": 2,
+        "path": "uboot.img",
+        "sha256": "3b615c7cd3b520e90fa4437dd92e6eec8060fae10a4ac85e4cb55cda22d457db",
+        "size": 2228224,
+        "type": "file"
+      },
+      {
+        "mode": "0o644",
+        "mtime": 1711142747,
+        "offset": 2232768,
+        "ordinal": 3,
+        "path": "fitImage",
+        "sha256": "7c8fa134de18bfa195a09d247b54996f6c8d8bdaa54871e4140aa941259f5a66",
+        "size": 7112192,
+        "type": "file"
+      },
+      {
+        "mode": "0o644",
+        "mtime": 1711142747,
+        "offset": 9345084,
+        "ordinal": 4,
+        "path": "rootfs.img",
+        "sha256": "b24f4faf56ec85eb9aea8679031ab161d25bbbe84a016c1b45ec6685e2d436aa",
+        "size": 172171264,
+        "type": "file"
+      }
+    ],
+    "entry_count": 5,
+    "parsed_bytes": 181516472,
+    "text_snapshots": {
+      "sw-description": "software : \n{\n  version = \"23.53.6-2024-03-22-545c1b52ecf+Release+24\";\n  osversion = \"linux+flint-1.23.0_release+Release+24\";\n  robot = \"ruby\";\n  description = \"flint-emmc - BOOTLOADER + SWUPDATE OTA - 23.53.6-2024-03-22-545c1b52ecf+Release+24\";\n  rv1126-flint-emmc : \n  {\n    hardware-compatibility = [ \"1.0\" ];\n    files = ( \n      {\n        filename = \"uboot.img\";\n        path = \"/tmp/partition_uboot_inactive\";\n        installed-directly = true;\n        sha256 = \"3b615c7cd3b520e90fa4437dd92e6eec8060fae10a4ac85e4cb55cda22d457db\";\n      }, \n      {\n        filename = \"fitImage\";\n        path = \"/tmp/partition_boot_inactive\";\n        installed-directly = true;\n        sha256 = \"7c8fa134de18bfa195a09d247b54996f6c8d8bdaa54871e4140aa941259f5a66\";\n      }, \n      {\n        filename = \"rootfs.img\";\n        path = \"/tmp/partition_system_inactive\";\n        installed-directly = true;\n        sha256 = \"b24f4faf56ec85eb9aea8679031ab161d25bbbe84a016c1b45ec6685e2d436aa\";\n      } );\n    scripts = ( \n      {\n        device = \"/tmp/partition_uboot_inactive\";\n        type = \"readback\";\n        properties : \n        {\n          sha256 = \"3b615c7cd3b520e90fa4437dd92e6eec8060fae10a4ac85e4cb55cda22d457db\";\n          size = \"2228224\";\n          offset = \"0\";\n        };\n      }, \n      {\n        device = \"/tmp/partition_boot_inactive\";\n        type = \"readback\";\n        properties : \n        {\n          sha256 = \"7c8fa134de18bfa195a09d247b54996f6c8d8bdaa54871e4140aa941259f5a66\";\n          size = \"7112192\";\n          offset = \"0\";\n        };\n      }, \n      {\n        device = \"/tmp/partition_system_inactive\";\n        type = \"readback\";\n        properties : \n        {\n          sha256 = \"b24f4faf56ec85eb9aea8679031ab161d25bbbe84a016c1b45ec6685e2d436aa\";\n          size = \"172171264\";\n          offset = \"0\";\n        };\n      } );\n  };\n};\n"
+    },
+    "trailer_found": true,
+    "variant": "crc"
+  },
   "filename": "ruby-23.53.06.signed",
-  "format": "unknown",
+  "format": "swupdate-cpio",
+  "reported_identity": {
+    "evidence": "sw-description",
+    "model": "ruby",
+    "os_version": "linux+flint-1.23.0_release+Release+24",
+    "software_version": "23.53.6-2024-03-22-545c1b52ecf+Release+24"
+  },
   "schema": 1,
   "sha256": "ff93c3932e1e93dbb625e5579d0062c134bef91b51f6da1a54709b967f038e42",
   "size": 181516472

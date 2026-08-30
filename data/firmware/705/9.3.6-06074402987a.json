@@ -1,7 +1,19 @@
 {
   "components": [],
   "filename": "C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
-  "format": "unknown",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "gzip_original_filename": "SStarOta.bin",
+    "header_u32_08": 156551482,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "C11m_705_OTA1_MxEmmc-KEY_sdk-v9.",
+    "payload_format": "gzip",
+    "payload_offset": 48,
+    "trailing_bytes_after_header_u32_08": 304,
+    "variant": "sigmastar-gzip"
+  },
   "schema": 1,
   "sha256": "06074402987a9f6e43cbba34225eb05fa749918d8e1bb86eb3af3ddb6557a576",
   "size": 156551786

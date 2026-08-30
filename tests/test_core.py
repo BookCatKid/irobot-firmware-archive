@@ -1,4 +1,6 @@
+import gzip
 import hashlib
+import io
 import json
 import struct
 import tempfile
@@ -7,6 +9,8 @@ from unittest.mock import patch
 from pathlib import Path
 
 from irobot_firmware.analyze import analyze, _analyze_auxiliary_bundle, _extract_reported_identity
+from irobot_firmware.audio import audio_path_metadata, build_audio_index
+from irobot_firmware.integrity import audit_release_assets
 from irobot_firmware.auxiliary import build_auxiliary_index, iter_auxiliary_payloads
 from irobot_firmware.backfill import classic_versions, numeric_versions
 from irobot_firmware.discover import (
@@ -19,6 +23,61 @@ from irobot_firmware.archive import metapackage_asset_name
 
 
 class CatalogTests(unittest.TestCase):
+    def test_release_integrity_audit_checks_size_digest_and_separate_metapackage(self):
+        fw_sha = "a" * 64
+        meta_sha = "b" * 64
+        catalog = {"firmwares": [{
+            "family": "test", "version": "1",
+            "archive": {
+                "release_tag": "firmware-test-1",
+                "asset_url": "https://example/releases/download/firmware-test-1/fw.signed",
+                "size": 100, "sha256": fw_sha,
+                "metapackage": {
+                    "asset_url": "https://example/releases/download/firmware-test-1/metapackage-fw.signed",
+                    "size": 10, "sha256": meta_sha, "same_as_firmware": False,
+                },
+            },
+        }]}
+        releases = [{"tag_name": "firmware-test-1", "assets": [
+            {"name": "fw.signed", "size": 100, "digest": f"sha256:{fw_sha}"},
+            {"name": "metapackage-fw.signed", "size": 10, "digest": f"sha256:{meta_sha}"},
+        ]}]
+        result = audit_release_assets(catalog, releases)
+        self.assertEqual(result["firmware_checked"], 1)
+        self.assertEqual(result["metapackages_checked"], 1)
+        self.assertEqual(result["issues"], [])
+        releases[0]["assets"][0]["digest"] = "sha256:" + "c" * 64
+        bad = audit_release_assets(catalog, releases)
+        self.assertEqual(bad["issue_count"], 1)
+        self.assertEqual(bad["issues"][0]["issue"], "digest-mismatch")
+
+    def test_audio_index_tracks_languages_and_deduplicates_catalog_aliases(self):
+        with tempfile.TemporaryDirectory() as td:
+            data_root = Path(td)
+            manifest_rel = "firmware/sapphire/example.json"
+            manifest_path = data_root / manifest_rel
+            manifest_path.parent.mkdir(parents=True)
+            manifest_path.write_text(json.dumps({"components": [{"filesystem_analysis": {"files": [
+                {"path": "opt/irobot/audio/songs/startup.opus", "type": "file", "size": 10, "sha256": "a" * 64},
+                {"path": "opt/irobot/audio/languages/de-DE/bin-full.opus", "type": "file", "size": 20, "sha256": "b" * 64},
+                {"path": "etc/not-audio.txt", "type": "file", "size": 2, "sha256": "c" * 64},
+            ]}}]}))
+            archive = {"manifest": manifest_rel, "sha256": "d" * 64, "release_tag": "firmware-sapphire-example"}
+            catalog = {"updated_at": "stamp", "firmwares": [
+                {"family": "sapphire", "version": "1", "archive": dict(archive)},
+                {"family": "sapphire", "version": "alias", "archive": dict(archive)},
+            ]}
+            index = build_audio_index(catalog, data_root)
+        self.assertEqual(index["summary"]["audio_file_occurrence_count"], 2)
+        self.assertEqual(index["summary"]["semantic_sound_count"], 2)
+        self.assertEqual(index["summary"]["language_count"], 1)
+        self.assertEqual(index["summary"]["languages"], {"de-DE": 1})
+        self.assertEqual(index["summary"]["song_names"], ["startup"])
+        startup = next(x for x in index["sounds"] if x["name"] == "startup")
+        self.assertEqual(startup["unique_variant_count"], 1)
+        self.assertEqual(startup["families"], ["sapphire"])
+        self.assertEqual(audio_path_metadata("opt/irobot/audio/languages/zh-CN_2/error.opus")["language"], "zh-CN_2")
+
     def test_metapackage_release_asset_name_avoids_firmware_collision(self):
         archive = {
             "asset_url": (
@@ -127,6 +186,12 @@ class CatalogTests(unittest.TestCase):
         catalog = json.loads(Path("data/catalog.json").read_text())
         expected = build_auxiliary_index(catalog, Path("data"))
         actual = json.loads(Path("data/auxiliary-firmware.json").read_text())
+        self.assertEqual(actual, expected)
+
+    def test_repository_audio_index_is_current(self):
+        catalog = json.loads(Path("data/catalog.json").read_text())
+        expected = build_audio_index(catalog, Path("data"))
+        actual = json.loads(Path("data/audio-assets.json").read_text())
         self.assertEqual(actual, expected)
 
     def test_merge_preserves_archive(self):
@@ -549,6 +614,65 @@ class CatalogTests(unittest.TestCase):
             self.assertTrue(legacy["entries"][0]["bounds_valid"])
             self.assertEqual(legacy["entries"][0]["sha256"], hashlib.sha256(b"0123456789abcdef").hexdigest())
             self.assertEqual(legacy["trailing_bytes_after_header_u32_08"], 0x80)
+
+    def test_modern_apkg_recognizes_gzip_payload_without_fake_entry_count(self):
+        payload_io = io.BytesIO()
+        with gzip.GzipFile(filename="SStarOta.bin", mode="wb", fileobj=payload_io, mtime=0) as gz:
+            gz.write(b"sigmastar ota payload")
+        gz_payload = payload_io.getvalue()
+        header = bytearray(0x30)
+        header[:4] = b"aPKG"
+        struct.pack_into("<I", header, 4, 1)
+        raw_end = len(header) + len(gz_payload)
+        struct.pack_into("<I", header, 8, raw_end)
+        header[16:16 + len(b"C3_105_OTA1")] = b"C3_105_OTA1"
+        blob = bytes(header) + gz_payload + b"T" * 304
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            path = root / "modern.meta.signed"
+            out = root / "manifest.json"
+            path.write_bytes(blob)
+            result = analyze(path, out, root / "work", deep=False)
+        container = result["legacy_container"]
+        self.assertEqual(result["format"], "irobot-apkg")
+        self.assertEqual(container["variant"], "sigmastar-gzip")
+        self.assertEqual(container["payload_offset"], 0x30)
+        self.assertEqual(container["gzip_original_filename"], "SStarOta.bin")
+        self.assertNotIn("entry_count", container)
+        self.assertEqual(container["trailing_bytes_after_header_u32_08"], 304)
+
+    def test_enc_without_known_magic_is_classified_as_opaque_not_guessed(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            path = root / "mystery.enc"
+            out = root / "manifest.json"
+            path.write_bytes(bytes.fromhex("18c00300171071b7b15c807cbbecd007") + bytes(range(256)))
+            result = analyze(path, out, root / "work", deep=False)
+        self.assertEqual(result["format"], "opaque-enc")
+        self.assertIn("no supported cleartext container magic", result["opaque_container"]["classification_basis"])
+        self.assertEqual(result["opaque_container"]["magic_hex"], "18c00300171071b7b15c807cbbecd007")
+        self.assertNotIn("altadena_preamble", result["opaque_container"])
+
+    def test_altadena_enc_exposes_only_evidence_backed_preamble_fields(self):
+        payload = bytes(range(32))
+        total_size = 24 + len(payload)
+        preamble = struct.pack("<I", total_size) + bytes.fromhex("1710") + b"X" * 18
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            path = root / "altadena_d_test.enc"
+            out = root / "manifest.json"
+            path.write_bytes(preamble + payload)
+            result = analyze(path, out, root / "work", deep=False)
+        self.assertEqual(result["format"], "opaque-enc")
+        meta = result["opaque_container"]["altadena_preamble"]
+        self.assertEqual(meta["size"], 24)
+        self.assertEqual(meta["declared_file_size_u32_le"], total_size)
+        self.assertTrue(meta["declared_file_size_matches"])
+        self.assertEqual(meta["tag_hex"], "1710")
+        self.assertEqual(meta["opaque_bytes_06_23_hex"], (b"X" * 18).hex())
+        self.assertEqual(meta["payload_offset"], 24)
+        self.assertEqual(meta["payload_size"], len(payload))
+        self.assertEqual(meta["payload_additive_checksum_u24"], sum(payload) & 0xFFFFFF)
 
     def test_synthetic_otps_component(self):
         payload = b"hello firmware"

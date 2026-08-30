@@ -19,6 +19,8 @@ The Pages diff does not need to download two 250 MiB packages. The archive actio
 
 Deep filesystem analysis also exposes firmware that iRobot ships *inside* the robot OTA for subordinate hardware. `data/auxiliary-firmware.json` is a generated index of those aux-board bundles, including mobility, safety, power, confinement, and dock firmware packages where present. At the current archive snapshot it identifies **200 distinct auxiliary bundle SHA-256s across 8 firmware families**. The analyzer recursively inventories nested tarballs without extracting their paths, hashes leaf firmware images, and preserves explicit image versions from iRobot `download-manifest.cfg` files and dock descriptors where available. Their bytes are already preserved inside the corresponding parent firmware Release; the auxiliary index makes that embedded firmware searchable without pretending it came from an independent public download URL.
 
+Robot audio is indexed the same way. `data/audio-assets.json` summarizes embedded songs and multilingual voice prompts without duplicating the media files into Git. At the current snapshot it covers **137,447 unique audio SHA-256s**, **9,148 semantic sound/language combinations**, **52 locale directories**, and **22 robot-song names** across **200 unique parent firmware packages**. Exact paths, hashes, and bytes remain traceable through the parent firmware manifests/Releases; the Pages site exposes a searchable metadata view.
+
 ## Firmware platform names vs retail models
 
 Names such as `sapphire`, `lewis`, `sanmarino`, `soho`, `ruby`, and `stingray` are **internal firmware/platform identifiers observed in iRobot software strings and OTA packages**. They are not retail model names. Newer API results can also expose deployment identifiers such as `405`, `505`, and `705`; those are treated as backend/OTA family identifiers rather than consumer models.
@@ -77,6 +79,8 @@ When archiving is enabled, each pending build is:
 6. the original package **and its machine-readable analysis manifest** are uploaded as GitHub Release assets;
 7. the compact manifest is committed to `data/firmware/`;
 8. `data/auxiliary-firmware.json` is regenerated from deep filesystem manifests so newly preserved embedded aux-board firmware is indexed automatically.
+9. `data/audio-assets.json` is regenerated so embedded robot songs and voice-prompt variants stay searchable.
+10. a Release-integrity audit checks the published firmware and distinct metapackage assets against catalog byte counts and GitHub's SHA-256 digests before the metadata commit is pushed.
 
 Every GitHub Release body is generated from the catalog + parsed package and includes the firmware platform, associated retail models/SKUs and mapping confidence, version/release date, original package URL, metapackage URL, discovery method and probe SKU, track/signing/fused fields, ETag/Last-Modified, archive SHA-256/size/format, a complete top-level signed-component table with integrity results, SquashFS file counts and key identity/version files, platform↔hardware evidence, and the raw discovery JSON.
 
@@ -106,6 +110,8 @@ config/discovery.json       recurring API/direct probes
 data/catalog.json           canonical firmware catalog
 data/firmware/...           analyzed build manifests
 data/auxiliary-firmware.json generated embedded aux-board firmware index
+data/audio-assets.json      generated embedded robot-audio metadata index
+data/research/...           provenance-heavy completeness/reconciliation evidence
 src/irobot_firmware/        discovery/downloader/analyzer CLI
 site/                       static comparison site
 .github/workflows/          daily check, backfill, Pages deployment

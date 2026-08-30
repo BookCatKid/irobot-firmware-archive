@@ -1,0 +1,367 @@
+{
+  "generated_at": "2026-08-30T08:30:25.186897+00:00",
+  "purpose": "Separate historical robot software-state evidence from evidence of independently published OTA artifacts, so archive-completeness claims do not inflate the denominator with simulator/history values.",
+  "rules": [
+    "A softwareVer value proves a software state existed only when it comes from independent official-app fixture/history evidence; the current V2 API itself does not validate arbitrary softwareVer inputs.",
+    "A version becomes an archive gap only when independent OTA evidence exists (for example an API/release record, deployment metadata, exact filename/URL, or a verified live object).",
+    "Guessed filenames are never promoted to catalog records unless the remote object independently verifies as live."
+  ],
+  "schema": 1,
+  "sources": [
+    "data/app-product-intelligence.json historical_software_versions (official iRobot app resources)",
+    "live https://content-prod.iot.irobotapi.com/v2/firmware probes on 2026-08-30",
+    "data/legacy-v1-firmware-catalog.json (no listed rows for these unresolved state-version strings)",
+    "evidence-derived public filename probes performed on 2026-08-30",
+    "control probe: V2 API accepted softwareVer=definitely-not-a-version for i855020 and j915020 and echoed it in targetSoftwareVer, proving that field is not version-validation evidence"
+  ],
+  "states": [
+    {
+      "current_v2_content_api": {
+        "firmware": [
+          {
+            "deploymentMpkg": "lewis/lewis-22.52.08-prod.meta.signed",
+            "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+            "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
+            "releaseDate": "2023-08-02",
+            "signing": "production",
+            "targetSoftwareVer": [
+              "2.0.2"
+            ],
+            "track": "prod",
+            "version": "22.52.08"
+          }
+        ],
+        "status": "recommendation-returned"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "compact, v-compact, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "2.0.2",
+      "interpretation": "Official app data preserves this historical software state. The current V2 API returns an already-archived deployment for this input, but a control probe shows the API also accepts arbitrary softwareVer strings, so the response is routing context rather than proof of a separate OTA artifact.",
+      "platform": "lewis",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [
+          {
+            "deploymentMpkg": "lewis/lewis-22.52.08-prod.meta.signed",
+            "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+            "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
+            "releaseDate": "2023-08-02",
+            "signing": "production",
+            "targetSoftwareVer": [
+              "3.0.2"
+            ],
+            "track": "prod",
+            "version": "22.52.08"
+          }
+        ],
+        "status": "recommendation-returned"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "compact, v-compact, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "3.0.2",
+      "interpretation": "Official app data preserves this historical software state. The current V2 API returns an already-archived deployment for this input, but a control probe shows the API also accepts arbitrary softwareVer strings, so the response is routing context rather than proof of a separate OTA artifact.",
+      "platform": "lewis",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [
+          {
+            "deploymentMpkg": "lewis/lewis-22.52.08-prod.meta.signed",
+            "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+            "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
+            "releaseDate": "2023-08-02",
+            "signing": "production",
+            "targetSoftwareVer": [
+              "3.0.3"
+            ],
+            "track": "prod",
+            "version": "22.52.08"
+          }
+        ],
+        "status": "recommendation-returned"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "compact, v-compact, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "3.0.3",
+      "interpretation": "Official app data preserves this historical software state. The current V2 API returns an already-archived deployment for this input, but a control probe shows the API also accepts arbitrary softwareVer strings, so the response is routing context rather than proof of a separate OTA artifact.",
+      "platform": "lewis",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [
+          {
+            "deploymentMpkg": "lewis/lewis-22.52.08-prod.meta.signed",
+            "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+            "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
+            "releaseDate": "2023-08-02",
+            "signing": "production",
+            "targetSoftwareVer": [
+              "3.0.4"
+            ],
+            "track": "prod",
+            "version": "22.52.08"
+          }
+        ],
+        "status": "recommendation-returned"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "compact, v-compact, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "3.0.4",
+      "interpretation": "Official app data preserves this historical software state. The current V2 API returns an already-archived deployment for this input, but a control probe shows the API also accepts arbitrary softwareVer strings, so the response is routing context rather than proof of a separate OTA artifact.",
+      "platform": "lewis",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [
+          {
+            "deploymentMpkg": "lewis/lewis-22.52.08-prod.meta.signed",
+            "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+            "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
+            "releaseDate": "2023-08-02",
+            "signing": "production",
+            "targetSoftwareVer": [
+              "3.0.6"
+            ],
+            "track": "prod",
+            "version": "22.52.08"
+          }
+        ],
+        "status": "recommendation-returned"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "compact, v-compact, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "3.0.6",
+      "interpretation": "Official app data preserves this historical software state. The current V2 API returns an already-archived deployment for this input, but a control probe shows the API also accepts arbitrary softwareVer strings, so the response is routing context rather than proof of a separate OTA artifact.",
+      "platform": "lewis",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [
+          {
+            "deploymentMpkg": "lewis/lewis-22.52.08-prod.meta.signed",
+            "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+            "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
+            "releaseDate": "2023-08-02",
+            "signing": "production",
+            "targetSoftwareVer": [
+              "3.0.7"
+            ],
+            "track": "prod",
+            "version": "22.52.08"
+          }
+        ],
+        "status": "recommendation-returned"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "compact, v-compact, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "3.0.7",
+      "interpretation": "Official app data preserves this historical software state. The current V2 API returns an already-archived deployment for this input, but a control probe shows the API also accepts arbitrary softwareVer strings, so the response is routing context rather than proof of a separate OTA artifact.",
+      "platform": "lewis",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [
+          {
+            "deploymentMpkg": "lewis/lewis-22.52.08-prod.meta.signed",
+            "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+            "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
+            "releaseDate": "2023-08-02",
+            "signing": "production",
+            "targetSoftwareVer": [
+              "3.0.9"
+            ],
+            "track": "prod",
+            "version": "22.52.08"
+          }
+        ],
+        "status": "recommendation-returned"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "compact, v-compact, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "3.0.9",
+      "interpretation": "Official app data preserves this historical software state. The current V2 API returns an already-archived deployment for this input, but a control probe shows the API also accepts arbitrary softwareVer strings, so the response is routing context rather than proof of a separate OTA artifact.",
+      "platform": "lewis",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [
+          {
+            "deploymentMpkg": "ruby/ruby-00.07.12-prod.meta.signed",
+            "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/0.7.12-j9/package/ruby-00.07.12-prod.meta.signed",
+            "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/0.7.12-j9/metapackage/ruby-00.07.12-prod.meta.signed",
+            "releaseDate": "2023-09-12",
+            "signing": "production",
+            "targetSoftwareVer": [
+              "1.2.12"
+            ],
+            "track": "prod",
+            "version": "0.7.12"
+          }
+        ],
+        "status": "recommendation-returned"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "1212, v1212, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "1.2.12",
+      "interpretation": "Official app data preserves this historical software state. The current V2 API returns an already-archived deployment for this input, but a control probe shows the API also accepts arbitrary softwareVer strings, so the response is routing context rather than proof of a separate OTA artifact.",
+      "platform": "ruby",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "j915020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [],
+        "status": "no-firmware-recommendation"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "266, v266, and dashed prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "2.6.6",
+      "interpretation": "Historical software state is preserved as evidence, but no separate downloadable OTA artifact is established by the current API, legacy V1 snapshot, or tested public filename forms.",
+      "platform": "sanmarino",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "m611020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [],
+        "status": "no-firmware-recommendation"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "22.52.0, 22.52.00, and compact prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "22.52.0",
+      "interpretation": "Historical software state is preserved as evidence, but no separate downloadable OTA artifact is established by the current API, legacy V1 snapshot, or tested public filename forms.",
+      "platform": "soho",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "s955020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [],
+        "status": "no-firmware-recommendation"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "0106, v0106, dashed, and padded prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "0.10.6",
+      "interpretation": "Historical software state is preserved as evidence, but no separate downloadable OTA artifact is established by the current API, legacy V1 snapshot, or tested public filename forms.",
+      "platform": "stingray",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "xst0020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [],
+        "status": "no-firmware-recommendation"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "169, v169, dashed, and padded prod-ota filename forms",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "historical_software_version": "1.6.9",
+      "interpretation": "Historical software state is preserved as evidence, but no separate downloadable OTA artifact is established by the current API, legacy V1 snapshot, or tested public filename forms.",
+      "platform": "topaz",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "x010020"
+    },
+    {
+      "current_v2_content_api": {
+        "firmware": [],
+        "status": "no-firmware-recommendation"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "atlantis 3210, v3210, and dashed prod-ota filename leads only; no platform is inferred from the app fixture",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "external_context": {
+        "independent_version_observation": "A 2018 Roomba 690 owner report records software 3.2.10+32, showing that the unprefixed fixture version is not uniquely identifying evidence for an Atlantis/R111840 OTA artifact.",
+        "independent_version_report_url": "https://forum.universal-devices.com/topic/21202-integrating-isy-994i-with-irobot-roomba-980/",
+        "official_product_sku_observation": "iRobot identifies R111840 as the Roomba Combo Robot Vacuum & Mop.",
+        "official_product_sku_url": "https://www.irobot.de/en_IE/roomba-combo/R111840.html"
+      },
+      "historical_software_version": "3.2.10",
+      "interpretation": "The app fixture binds SKU R111840 to an unprefixed 3.2.10+32 software state, but does not identify a firmware platform or OTA filename. Current V2 returns no firmware recommendation, and the same version string is independently documented on older Roomba 690 hardware; do not infer a missing Atlantis OTA artifact from this fixture alone.",
+      "platform": null,
+      "separate_ota_artifact_proven": false,
+      "source_sku": "R111840"
+    },
+    {
+      "current_v2_content_api": {
+        "status": "not-promoted-to-production-probe-target"
+      },
+      "direct_public_filename_probe": {
+        "forms_tested": "four plausible production CDN filename forms; all returned 403 on 2026-08-30",
+        "result": "no-live-object-found"
+      },
+      "evidence_class": "official-app-development-simulator-fixture",
+      "historical_software_version": "1.1.1-dev",
+      "interpretation": "Development fixture only; not counted as a missing production OTA artifact.",
+      "platform": "wichita",
+      "separate_ota_artifact_proven": false,
+      "source_sku": null
+    }
+  ],
+  "summary": {
+    "historical_states_without_separate_ota_evidence_count": 6,
+    "separate_ota_artifacts_proven_missing": 0,
+    "state_count": 14,
+    "states_with_current_upgrade_recommendation_count": 8
+  },
+  "v2_probe_semantics": {
+    "conclusion": "targetSoftwareVer echo is not evidence that a queried softwareVer existed or that a same-version OTA artifact was published",
+    "control_input": "definitely-not-a-version",
+    "observed_on_skus": [
+      "i855020",
+      "j915020"
+    ],
+    "result": "API returned the same current deployment and echoed the arbitrary input in targetSoftwareVer"
+  }
+}

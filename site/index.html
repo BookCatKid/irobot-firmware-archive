@@ -14,6 +14,8 @@
     <span>·</span>
     <a href="#auxiliary-section">Auxiliary</a>
     <span>·</span>
+    <a href="#audio-section">Audio</a>
+    <span>·</span>
     <a href="#compare-section">Compare</a>
     <span>·</span>
     <a href="https://github.com/BookCatKid/irobot-firmware-archive">Source on GitHub ↗</a>
@@ -118,6 +120,39 @@
           </table>
         </div>
       </details>
+    </section>
+
+    <section id="audio-section" class="content-section">
+      <div class="section-head">
+        <div>
+          <h2>Embedded audio</h2>
+          <p>Robot songs and multilingual voice prompts found in archived firmware. This is a metadata index; the exact audio bytes remain inside their original signed firmware packages.</p>
+        </div>
+      </div>
+
+      <div id="audioSummary" class="summary-line audio-summary">Loading audio index…</div>
+      <div class="toolbar audio-toolbar">
+        <input id="audioSearch" type="search" autocomplete="off" placeholder="Search sound, language, platform…">
+        <select id="audioLanguageFilter" aria-label="Filter embedded audio by language"><option value="">All languages</option></select>
+        <select id="audioCategoryFilter" aria-label="Filter embedded audio by category"><option value="">All audio</option></select>
+        <span id="audioResultCount" class="result-count"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="firmware-table audio-table">
+          <thead>
+            <tr>
+              <th>Sound</th>
+              <th>Type</th>
+              <th>Language</th>
+              <th>Variants</th>
+              <th>Parent firmware</th>
+              <th>Platforms</th>
+            </tr>
+          </thead>
+          <tbody id="audioCatalog"></tbody>
+        </table>
+      </div>
     </section>
 
     <section id="compare-section" class="content-section compare-section">

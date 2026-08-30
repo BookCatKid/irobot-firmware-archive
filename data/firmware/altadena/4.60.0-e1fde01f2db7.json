@@ -1,7 +1,21 @@
 {
   "components": [],
   "filename": "altadena_d_4_60_0.enc",
-  "format": "unknown",
+  "format": "opaque-enc",
+  "opaque_container": {
+    "altadena_preamble": {
+      "declared_file_size_matches": true,
+      "declared_file_size_u32_le": 245784,
+      "opaque_bytes_06_23_hex": "00005fa7690ad0003b27ccb652e90e8d1b33",
+      "payload_additive_checksum_u24": 14603044,
+      "payload_offset": 24,
+      "payload_size": 245760,
+      "size": 24,
+      "tag_hex": "1710"
+    },
+    "classification_basis": "source filename ends in .enc and no supported cleartext container magic was recognized",
+    "magic_hex": "18c00300171000005fa7690ad0003b27"
+  },
   "schema": 1,
   "sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
   "size": 245784

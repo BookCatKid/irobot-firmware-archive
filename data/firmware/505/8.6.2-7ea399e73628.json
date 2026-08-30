@@ -1,7 +1,19 @@
 {
   "components": [],
   "filename": "C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
-  "format": "unknown",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "gzip_original_filename": "SStarOta.bin",
+    "header_u32_08": 159504313,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "C11e_505_OTA1_MxEmmc-KEY_sdk-v8.",
+    "payload_format": "gzip",
+    "payload_offset": 48,
+    "trailing_bytes_after_header_u32_08": 304,
+    "variant": "sigmastar-gzip"
+  },
   "schema": 1,
   "sha256": "7ea399e7362891d69199947ebcbffe91766a3ab35c87856b66236c296c7d0877",
   "size": 159504617

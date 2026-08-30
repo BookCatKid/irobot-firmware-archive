@@ -1,7 +1,19 @@
 {
   "components": [],
   "filename": "C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
-  "format": "unknown",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "gzip_original_filename": "SStarOta.bin",
+    "header_u32_08": 38824185,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "C4_405_OTA1-KEY_sdk-v9.3.0-ssc92",
+    "payload_format": "gzip",
+    "payload_offset": 48,
+    "trailing_bytes_after_header_u32_08": 304,
+    "variant": "sigmastar-gzip"
+  },
   "schema": 1,
   "sha256": "8f1d7fd48467e8db88ff446691452c65d3dba87288ce69ff715366760277563e",
   "size": 38824489
