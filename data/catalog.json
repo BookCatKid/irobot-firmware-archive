@@ -187,6 +187,10 @@
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "G185020",
+      "source_skus": [
+        "G185020",
+        "g100000"
+      ],
       "source_software_ver": "6.2.05",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-g10-g18/package/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
@@ -235,6 +239,11 @@
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "N185020",
+      "source_skus": [
+        "N185020",
+        "N186020",
+        "n100000"
+      ],
       "source_software_ver": "6.3.1",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/package/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
@@ -283,6 +292,12 @@
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "K155020",
+      "source_skus": [
+        "K155020",
+        "W155020",
+        "W155220",
+        "w100000"
+      ],
       "source_software_ver": "6.04.03",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/package/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
@@ -331,10 +346,116 @@
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "X185020",
+      "source_skus": [
+        "X185020",
+        "X186020"
+      ],
       "source_software_ver": "6.4.3",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.6-x1/package/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
       "version": "9.3.6"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.38-611d2d80b504/aerov3438.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/aero/3.4.38-611d2d80b504.json",
+        "release_tag": "firmware-aero-3.4.38-611d2d80b504",
+        "reported_identity": null,
+        "sha256": "611d2d80b5040e8cd74656b6600bf6c1b4d1db684b7c7091046ba412448805bb",
+        "size": 918720
+      },
+      "deployment_mpkg": "e5/aerov3438-prod.meta.signed",
+      "discovered_at": "2026-08-30T07:22:34.354420+00:00",
+      "family": "aero",
+      "legacy_v1_catalog_version": "v3.4.38",
+      "legacy_v1_original_download_url": "http://www.google.com",
+      "legacy_v1_original_metapackage_url": "http://www.google.com",
+      "legacy_v1_recovered_from_deployment_metadata": true,
+      "release_date": "2018-07-06",
+      "source": "legacy-v1-api",
+      "source_sku": "e510080",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3438.signed",
+      "version": "3.4.38"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.49-604f788c2715/aerov3449.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/aero/3.4.49-604f788c2715.json",
+        "release_tag": "firmware-aero-3.4.49-604f788c2715",
+        "reported_identity": null,
+        "sha256": "604f788c27156529473f1a60062b63bc6fac82666ff794b9a89f2281c452656a",
+        "size": 954560
+      },
+      "deployment_mpkg": "e5/aerov3449-cn.meta.signed",
+      "discovered_at": "2026-08-30T07:22:34.354420+00:00",
+      "family": "aero",
+      "legacy_v1_catalog_version": "v3.4.49",
+      "legacy_v1_original_download_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/e510080/package/www.irobot.cn",
+      "legacy_v1_original_download_url_mismatch": true,
+      "legacy_v1_original_metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/e510080/metapackage/www.irobot.cn",
+      "legacy_v1_original_metapackage_url_mismatch": true,
+      "legacy_v1_recovered_from_deployment_metadata": true,
+      "release_date": "2019-12-18",
+      "source": "legacy-v1-api",
+      "source_sku": "e510080",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3449.signed",
+      "version": "3.4.49"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.59-35dd77b532fc/aero3459.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/aero/3.4.59-35dd77b532fc.json",
+        "release_tag": "firmware-aero-3.4.59-35dd77b532fc",
+        "reported_identity": null,
+        "sha256": "35dd77b532fcff5d08993835ac633dcd865ac65fa27a911eea6dbf27c9bbbfe9",
+        "size": 959680
+      },
+      "deployment_mpkg": "e5/aero3459-cn.meta.signed",
+      "discovered_at": "2026-08-30T07:22:34.354420+00:00",
+      "family": "aero",
+      "legacy_v1_catalog_version": "v3.4.59",
+      "legacy_v1_original_download_url": "http://www.irobot.com",
+      "legacy_v1_original_metapackage_url": "http://www.irobot.com",
+      "legacy_v1_recovered_from_deployment_metadata": true,
+      "release_date": "2020-03-24",
+      "source": "legacy-v1-api",
+      "source_sku": "e510080",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3459.signed",
+      "version": "3.4.59"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.67-6904413db61c/aerov3467.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/aero/3.4.67-6904413db61c.json",
+        "release_tag": "firmware-aero-3.4.67-6904413db61c",
+        "reported_identity": null,
+        "sha256": "6904413db61c0af0d2e75537fa37c5d73c252f75509ab08012266965039c1d66",
+        "size": 972992
+      },
+      "deployment_mpkg": "aero/aero-03.05.62-cn.meta.signed",
+      "discovered_at": "2026-08-30T07:22:34.354420+00:00",
+      "family": "aero",
+      "legacy_v1_catalog_version": "v3.4.67",
+      "legacy_v1_original_download_url": "http://www.irobot.com",
+      "legacy_v1_original_metapackage_url": "http://www.irobot.com",
+      "legacy_v1_recovered_from_deployment_metadata": true,
+      "release_date": "2023-03-21",
+      "source": "legacy-v1-api",
+      "source_sku": "e510080",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3467.signed",
+      "version": "3.4.67"
     },
     {
       "archive": {
@@ -460,6 +581,10 @@
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "Q012020",
+      "source_skus": [
+        "Q012020",
+        "Y014020"
+      ],
       "source_software_ver": "1.2.02",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/1.1.18-congo/package/congo-01.01.18-prod.meta.signed",
@@ -744,6 +869,12 @@
       "release_date": "2023-07-14",
       "source": "legacy-v1-api",
       "source_sku": "i115020",
+      "source_skus": [
+        "i115020",
+        "i310020",
+        "i310080",
+        "i315080"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil247.signed",
       "version": "2.4.7"
@@ -1053,7 +1184,9 @@
       "last_modified": "Tue, 13 Nov 2018 19:08:03 GMT",
       "legacy_v1_catalog_version": "v1.5.4",
       "legacy_v1_original_download_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/i710020/package/marconiv3210.signed",
+      "legacy_v1_original_download_url_mismatch": true,
       "legacy_v1_original_metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/i710020/metapackage/marconiv3210.signed",
+      "legacy_v1_original_metapackage_url_mismatch": true,
       "legacy_v1_recovered_from_deployment_metadata": true,
       "release_date": "2018-11-30",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
@@ -1061,6 +1194,17 @@
       "size": 151716440,
       "source": "direct-probe",
       "source_sku": "i710020",
+      "source_skus": [
+        "i710020",
+        "i710080",
+        "i715020",
+        "i715080",
+        "i715680",
+        "i715840",
+        "i715880",
+        "i755480",
+        "i755840"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.5.4.signed",
       "version": "1.5.4"
@@ -1122,7 +1266,9 @@
       "last_modified": "Wed, 13 Feb 2019 21:26:54 GMT",
       "legacy_v1_catalog_version": "v1.6.6",
       "legacy_v1_original_download_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/i710020/package/marconiv3210.signed",
+      "legacy_v1_original_download_url_mismatch": true,
       "legacy_v1_original_metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/i710020/metapackage/marconiv3210.signed",
+      "legacy_v1_original_metapackage_url_mismatch": true,
       "legacy_v1_recovered_from_deployment_metadata": true,
       "release_date": "2019-04-29",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
@@ -1130,6 +1276,17 @@
       "size": 151704153,
       "source": "direct-probe",
       "source_sku": "i710020",
+      "source_skus": [
+        "i710020",
+        "i710080",
+        "i715020",
+        "i715080",
+        "i715680",
+        "i715840",
+        "i715880",
+        "i755480",
+        "i755840"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.6.6.signed",
       "version": "1.6.6"
@@ -1550,6 +1707,12 @@
       "size": 161948114,
       "source": "release-notes-object-probe",
       "source_sku": "i710020",
+      "source_skus": [
+        "i710020",
+        "i715020",
+        "i715840",
+        "i755840"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3011.signed",
       "version": "3.0.11",
@@ -1799,6 +1962,12 @@
       "size": 160129489,
       "source": "release-notes-object-probe",
       "source_sku": "i710020",
+      "source_skus": [
+        "i710020",
+        "i715020",
+        "i715840",
+        "i755840"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis324.signed",
       "version": "3.2.4",
@@ -1847,6 +2016,17 @@
       "size": 160129497,
       "source": "release-notes-object-probe",
       "source_sku": "i710020",
+      "source_skus": [
+        "i710020",
+        "i710080",
+        "i715020",
+        "i715080",
+        "i715680",
+        "i715840",
+        "i715880",
+        "i755480",
+        "i755840"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis329.signed",
       "version": "3.2.9",
@@ -2922,13 +3102,28 @@
       "legacy_v1_catalog_version": "v3.2.40",
       "legacy_v1_deployment_mpkg": "R890R690/marconi-3.2.40-prod.meta.signed",
       "legacy_v1_original_download_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/R690020/package/marconiv3210.signed",
+      "legacy_v1_original_download_url_mismatch": true,
       "legacy_v1_original_metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/R690020/metapackage/marconiv3210.signed",
+      "legacy_v1_original_metapackage_url_mismatch": true,
       "legacy_v1_recovered_from_deployment_metadata": true,
       "legacy_v1_version": "v3.2.40",
       "release_date": "2018-09-14",
       "size": 936128,
       "source": "incremental-v1-cross-family-sweep",
       "source_sku": "R690020",
+      "source_skus": [
+        "R690000",
+        "R690020",
+        "R890020",
+        "R890080",
+        "R891020",
+        "R891040",
+        "R891080",
+        "R894080",
+        "R895020",
+        "R895040",
+        "R899080"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/marconi-3.2.40.signed",
       "version": "3.2.40"
@@ -2961,6 +3156,23 @@
       "source": "legacy-v1-version-recovery",
       "source_filename_token": "3562",
       "source_sku": "R690020",
+      "source_skus": [
+        "R690000",
+        "R690020",
+        "R690080",
+        "R691080",
+        "R694080",
+        "R699080",
+        "R890020",
+        "R890080",
+        "R891020",
+        "R891040",
+        "R891080",
+        "R894080",
+        "R895020",
+        "R895040",
+        "R899080"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/marconi3562.signed",
       "version": "3.5.62"
@@ -3082,6 +3294,23 @@
       "size": 970944,
       "source": "exhaustive-numeric-backfill",
       "source_sku": "R690020",
+      "source_skus": [
+        "R690000",
+        "R690020",
+        "R690080",
+        "R691080",
+        "R694080",
+        "R699080",
+        "R890020",
+        "R890080",
+        "R891020",
+        "R891040",
+        "R891080",
+        "R894080",
+        "R895020",
+        "R895040",
+        "R899080"
+      ],
       "track": "legacy-public-cdn",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3247.signed",
       "version": "v3247"
@@ -3210,7 +3439,9 @@
       "last_modified": "Thu, 17 Jan 2019 20:46:01 GMT",
       "legacy_v1_catalog_version": "v3.3.43",
       "legacy_v1_original_download_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/R671020/package/marconiv3210.signed",
+      "legacy_v1_original_download_url_mismatch": true,
       "legacy_v1_original_metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/R671020/metapackage/marconiv3210.signed",
+      "legacy_v1_original_metapackage_url_mismatch": true,
       "legacy_v1_recovered_from_deployment_metadata": true,
       "namespace_scan": {
         "range_complete": true,
@@ -3224,6 +3455,13 @@
       "size": 936128,
       "source": "exhaustive-numeric-backfill",
       "source_sku": "R671020",
+      "source_skus": [
+        "R671020",
+        "R671080",
+        "R675020",
+        "R677020",
+        "R679080"
+      ],
       "track": "legacy-public-cdn",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3343.signed",
       "version": "v3343"
@@ -3317,6 +3555,13 @@
       "size": 989376,
       "source": "incremental-v1-cross-family-sweep",
       "source_sku": "R671020",
+      "source_skus": [
+        "R671020",
+        "R671080",
+        "R675020",
+        "R677020",
+        "R679080"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo3562.signed",
       "version": "3.5.62"
@@ -3357,6 +3602,21 @@
       "release_date": "2017-08-23",
       "source": "legacy-v1-api",
       "source_sku": "R980020",
+      "source_skus": [
+        "R960020",
+        "R960040",
+        "R960080",
+        "R961080",
+        "R964080",
+        "R965040",
+        "R969080",
+        "R970080",
+        "R971040",
+        "R975040",
+        "R980020",
+        "R980080",
+        "R989080"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv22114.signed",
       "version": "v22114"
@@ -3406,6 +3666,21 @@
       "size": 2829800,
       "source": "exhaustive-numeric-backfill",
       "source_sku": "R980020",
+      "source_skus": [
+        "R960020",
+        "R960040",
+        "R960080",
+        "R961080",
+        "R964080",
+        "R965040",
+        "R969080",
+        "R970080",
+        "R971040",
+        "R975040",
+        "R980020",
+        "R980080",
+        "R989080"
+      ],
       "track": "legacy-public-cdn",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2291.signed",
       "version": "v2291"
@@ -3610,6 +3885,21 @@
       "size": 2865992,
       "source": "direct-probe",
       "source_sku": "R980020",
+      "source_skus": [
+        "R960020",
+        "R960040",
+        "R960080",
+        "R961080",
+        "R964080",
+        "R965040",
+        "R969080",
+        "R970080",
+        "R971040",
+        "R975040",
+        "R980020",
+        "R980080",
+        "R989080"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2444.signed",
       "version": "v2444"
@@ -3681,6 +3971,10 @@
       "signing": "production",
       "source": "content-api",
       "source_sku": "j900000",
+      "source_skus": [
+        "j900000",
+        "j915020"
+      ],
       "source_software_ver": "0.0.0",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/0.7.12-j9/package/ruby-00.07.12-prod.meta.signed",
@@ -4078,6 +4372,11 @@
       "size": 156041682,
       "source": "release-notes-object-probe",
       "source_sku": "m610820",
+      "source_skus": [
+        "m610820",
+        "m611020",
+        "m613440"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino281.signed",
       "version": "2.8.1",
@@ -4165,6 +4464,11 @@
       "size": 156070353,
       "source": "release-notes-object-probe",
       "source_sku": "m610820",
+      "source_skus": [
+        "m610820",
+        "m611020",
+        "m613440"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino283.signed",
       "version": "2.8.3",
@@ -4448,6 +4752,11 @@
       "size": 156815834,
       "source": "release-notes-object-probe",
       "source_sku": "m610820",
+      "source_skus": [
+        "m610820",
+        "m611020",
+        "m613440"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3011.signed",
       "version": "3.0.11",
@@ -4696,6 +5005,11 @@
       "size": 156926425,
       "source": "release-notes-object-probe",
       "source_sku": "m610820",
+      "source_skus": [
+        "m610820",
+        "m611020",
+        "m613440"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino325.signed",
       "version": "3.2.5",
@@ -4744,6 +5058,14 @@
       "size": 156922337,
       "source": "release-notes-object-probe",
       "source_sku": "m610820",
+      "source_skus": [
+        "m610820",
+        "m610880",
+        "m611020",
+        "m612680",
+        "m612880",
+        "m613440"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino329.signed",
       "version": "3.2.9",
@@ -6266,6 +6588,11 @@
       "size": 156520908,
       "source": "release-notes-object-probe",
       "source_sku": "s910020",
+      "source_skus": [
+        "s510820",
+        "s910020",
+        "s955020"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/soho11417.signed",
       "version": "1.14.17",
@@ -6353,6 +6680,11 @@
       "size": 156520909,
       "source": "release-notes-object-probe",
       "source_sku": "s910020",
+      "source_skus": [
+        "s510820",
+        "s910020",
+        "s955020"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/soho11422.signed",
       "version": "1.14.22",
@@ -6708,6 +7040,10 @@
       "size": 157991376,
       "source": "release-notes-object-probe",
       "source_sku": "s910020",
+      "source_skus": [
+        "s910020",
+        "s955020"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3011.signed",
       "version": "3.0.11",
@@ -6956,6 +7292,13 @@
       "size": 159695311,
       "source": "release-notes-object-probe",
       "source_sku": "s910020",
+      "source_skus": [
+        "s910020",
+        "s910880",
+        "s915880",
+        "s955020",
+        "s955880"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/soho324.signed",
       "version": "3.2.4",
@@ -6994,6 +7337,7 @@
       "filename_token": "soho329",
       "last_modified": "Mon, 10 Feb 2020 23:25:53 GMT",
       "legacy_v1_catalog_version": "v3.2.9",
+      "legacy_v1_notes": "RT4",
       "legacy_v1_original_download_url": "http://www.irobot.com",
       "legacy_v1_original_metapackage_url": "http://www.irobot.com",
       "legacy_v1_recovered_from_deployment_metadata": true,
@@ -7003,6 +7347,13 @@
       "size": 159691223,
       "source": "release-notes-object-probe",
       "source_sku": "s910020",
+      "source_skus": [
+        "s910020",
+        "s910880",
+        "s915880",
+        "s955020",
+        "s955880"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/soho329.signed",
       "version": "3.2.9",
@@ -7254,6 +7605,10 @@
       "size": 157987280,
       "source": "compact-semantic-sweep",
       "source_sku": "s910020",
+      "source_skus": [
+        "s910020",
+        "s955020"
+      ],
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3012.signed",
       "version": "v3012",
@@ -8649,5 +9004,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T06:18:03.608603+00:00"
+  "updated_at": "2026-08-30T07:25:12.164576+00:00"
 }

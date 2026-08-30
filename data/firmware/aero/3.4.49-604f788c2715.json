@@ -1,0 +1,49 @@
+{
+  "components": [],
+  "filename": "aerov3449.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": true,
+        "id": 1,
+        "label": "version1",
+        "magic": "00000000000000000000000000000000",
+        "offset": 1024,
+        "ordinal": 0,
+        "sha256": "be3d50c1dc54947e4c5b5cc8145c4224f17f353cfa899a02f03d8c1acf6c298c",
+        "size": 253976
+      },
+      {
+        "bounds_valid": true,
+        "id": 2,
+        "label": "version2",
+        "magic": "00000000000000000000000000000000",
+        "offset": 256000,
+        "ordinal": 1,
+        "sha256": "e999b01aaefcf0252333528608f60222a0a49602ce211c48a55594287333ef8b",
+        "size": 444868
+      },
+      {
+        "bounds_valid": true,
+        "id": 3,
+        "label": "version2",
+        "magic": "00000000000000000000000000000000",
+        "offset": 701440,
+        "ordinal": 2,
+        "sha256": "53654eca035dcdc176321cf97ae8a84e7cacb04f47b1e93d6e5345ad7bdba718",
+        "size": 252816
+      }
+    ],
+    "entry_count": 3,
+    "header_u32_08": 954256,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "marconi-ota-aero-101.bin",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "604f788c27156529473f1a60062b63bc6fac82666ff794b9a89f2281c452656a",
+  "size": 954560
+}

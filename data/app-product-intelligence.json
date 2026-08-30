@@ -25,6 +25,34 @@
       "libapp_sha256": "8953b951bd3b1051a9751eafb345474a857965ed2f0c6d9c29eac26a1e939602",
       "source_archive": "APKMirror Roomba Home 3.1.0 bundle downloaded 2026-08-29",
       "note": "3.1.0 is Flutter/AOT; the older com.irobot.core.SkuUtils/SkuType Java wrappers are no longer present in the base APK."
+    },
+    {
+      "package": "com.irobot.home",
+      "version": "5.2.4-release",
+      "version_code": 1605020400,
+      "method": "APKPure XAPK extraction + targeted JADX 1.5.6 + arm64 native string scan",
+      "source_file": "com/irobot/core/SkuUtils.java, com/irobot/core/SkuType.java, res/raw simulator fixtures, arm64-v8a/libcore_jni.so",
+      "xapk_sha256": "491564d38d2ee6202e1d470ce0eaa0cc0503e328b025e6779fc4fa167cbfac5c",
+      "source_archive": "com.irobot.home@5.2.4-release.xapk",
+      "note": "Historical app evidence. In particular, this build uses s510820 as the default Soho SKU and contains older production SKU literals useful for the legacy V1 firmware catalog."
+    },
+    {
+      "package": "com.irobot.home",
+      "version": "7.2.0",
+      "version_code": 1607020099,
+      "method": "APKPure XAPK extraction + targeted JADX 1.5.6 + arm64 native string scan",
+      "source_file": "com/irobot/core/SkuUtils.java, com/irobot/core/SkuType.java, res/raw simulator fixtures, arm64-v8a/libcore_jni.so",
+      "xapk_sha256": "136276358154746ae140460e03f685021718e0e245211da1a874ff96b70ea972",
+      "source_archive": "com.irobot.home@7.2.0.xapk"
+    },
+    {
+      "package": "com.irobot.home.prime",
+      "version": "1.0.0",
+      "version_code": 1000010,
+      "method": "APKPure XAPK extraction + targeted JADX 1.5.6 + arm64 native string scan",
+      "source_file": "com/irobot/core/SkuUtils.java, com/irobot/core/SkuType.java, arm64-v8a/libcorebase.so",
+      "xapk_sha256": "922c699994958d34ee1f429f1a6d7353b4f810cfa9f30d8aa98703b3da07c3dc",
+      "source_archive": "com.irobot.home.prime@1.0.0.xapk"
     }
   ],
   "sku_types_classic": [
@@ -304,6 +332,24 @@
       "source_package": "com.irobot.home",
       "source_version": "7.18.0",
       "note": "The app fixture softwareVer has no platform prefix, so no firmware family is inferred."
+    },
+    {
+      "platform": "wichita",
+      "versions": [
+        "1.1.1-dev"
+      ],
+      "source_resources": [
+        "res/raw/wichita_apigw_sim_responses.json",
+        "res/raw/wichita_iot_sim_responses.json",
+        "res/raw/wichita_local_sim_responses.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_versions": [
+        "5.2.4-release",
+        "7.2.0"
+      ],
+      "softwareVer": "wichita+1.1.1-dev+wichita-dev-build+68",
+      "note": "Official app simulator/dev-fixture evidence only. Four plausible production CDN filename forms were probed on 2026-08-30 and returned 403, so this is not catalogued as a retrievable OTA package."
     }
   ],
   "native_firmware_constants": [
@@ -436,5 +482,159 @@
       "evidence": "SKU literal appears in official Lewis/SanMarino pmap fixtures.",
       "legacy_v1_result": "i755840 returns five i7/Lewis firmware rows."
     }
-  ]
+  ],
+  "historical_default_sku_evidence": [
+    {
+      "sku_type": "Soho",
+      "sku": "s510820",
+      "source_package": "com.irobot.home",
+      "source_version": "5.2.4-release",
+      "source_class": "com/irobot/core/SkuUtils.java",
+      "note": "DEFAULT_SOHO_SKU in the older official Classic app. Later Classic builds use s915820, preserving evidence of historical SKU evolution rather than replacing the current mapping."
+    },
+    {
+      "sku_type": "Soho",
+      "sku": "s915820",
+      "source_package": "com.irobot.home",
+      "source_version": "7.2.0",
+      "source_class": "com/irobot/core/SkuUtils.java",
+      "note": "DEFAULT_SOHO_SKU in Classic 7.2.0; retained alongside the older s510820 evidence."
+    }
+  ],
+  "historical_native_sku_evidence": {
+    "source_apps": [
+      "com.irobot.home 5.2.4-release",
+      "com.irobot.home 7.2.0",
+      "com.irobot.home.prime 1.0.0"
+    ],
+    "method": "Extract one-letter-plus-digit SKU-like literals from official app native cores, then corroborate candidates against the public legacy V1 firmware catalog. A native literal alone is not treated as a retail-model mapping.",
+    "sku_like_literals": [
+      "B241080",
+      "B244080",
+      "B249080",
+      "B249980",
+      "C15315",
+      "R671080",
+      "R679080",
+      "R690000",
+      "R690080",
+      "R691080",
+      "R694080",
+      "R699080",
+      "R890080",
+      "R891080",
+      "R894080",
+      "R899080",
+      "R960080",
+      "R961080",
+      "R964080",
+      "R969080",
+      "R970080",
+      "R980080",
+      "R989080",
+      "a211580",
+      "a211680",
+      "a211880",
+      "e510080",
+      "i110080",
+      "i115080",
+      "i115680",
+      "i115880",
+      "i310080",
+      "i315080",
+      "i315680",
+      "i315880",
+      "i710080",
+      "i715080",
+      "i715680",
+      "i715880",
+      "i755480",
+      "m610880",
+      "m612680",
+      "m612880",
+      "p111580",
+      "p111680",
+      "p111880",
+      "p211580",
+      "p211680",
+      "p211880",
+      "p311580",
+      "p311680",
+      "p311880",
+      "r416183",
+      "s510820",
+      "s910880",
+      "s915880",
+      "s955880"
+    ],
+    "legacy_v1_live_skus": [
+      "B241080",
+      "B244080",
+      "B249080",
+      "B249980",
+      "R671080",
+      "R679080",
+      "R690000",
+      "R690080",
+      "R691080",
+      "R694080",
+      "R699080",
+      "R894080",
+      "R899080",
+      "R964080",
+      "R969080",
+      "R980080",
+      "R989080",
+      "e510080",
+      "i310080",
+      "i315080",
+      "i710080",
+      "i715080",
+      "i715680",
+      "i715880",
+      "i755480",
+      "m610880",
+      "m612680",
+      "m612880",
+      "s510820",
+      "s910880",
+      "s915880",
+      "s955880"
+    ],
+    "recovery": {
+      "sku": "e510080",
+      "result": "The legacy V1 catalog exposes historical Aero deployment rows. Evidence-driven reconstruction plus live Range GET recovered four public OTA objects not present in the archive at discovery time.",
+      "public_objects": [
+        {
+          "version": "3.4.38",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3438.signed",
+          "size": 918720,
+          "last_modified": "Tue, 24 Jul 2018 13:29:52 GMT",
+          "deployment_mpkg": "e5/aerov3438-prod.meta.signed"
+        },
+        {
+          "version": "3.4.49",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3449.signed",
+          "size": 954560,
+          "last_modified": "Thu, 03 Oct 2019 17:47:31 GMT",
+          "deployment_mpkg": "e5/aerov3449-cn.meta.signed"
+        },
+        {
+          "version": "3.4.59",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3459.signed",
+          "size": 959680,
+          "last_modified": "Wed, 04 Mar 2020 20:25:32 GMT",
+          "deployment_mpkg": "e5/aero3459-cn.meta.signed"
+        },
+        {
+          "version": "3.4.67",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3467.signed",
+          "size": 972992,
+          "last_modified": "Tue, 13 Jul 2021 16:59:37 GMT",
+          "deployment_mpkg": "aero/aero-03.05.62-cn.meta.signed",
+          "note": "The V1 row version is v3.4.67 while deploymentMpkg names 03.05.62; the reconstructed 3.4.67 object was accepted only because the public CDN independently returned the object. The metadata discrepancy is preserved."
+        }
+      ]
+    }
+  }
 }

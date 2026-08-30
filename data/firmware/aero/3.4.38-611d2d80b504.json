@@ -1,0 +1,49 @@
+{
+  "components": [],
+  "filename": "aerov3438.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": true,
+        "id": 1,
+        "label": "version1",
+        "magic": "00000000000000000000000000000000",
+        "offset": 1024,
+        "ordinal": 0,
+        "sha256": "a320f6c64ca39d62e7b035d87fc8760768d2e262c70a0cb6a485b9d60fe65f24",
+        "size": 221208
+      },
+      {
+        "bounds_valid": true,
+        "id": 2,
+        "label": "version2",
+        "magic": "00000000000000000000000000000000",
+        "offset": 223232,
+        "ordinal": 1,
+        "sha256": "ee030c8ceeb28622814701df422a1c808a3ad5a03145aea96d01e1f202bb9708",
+        "size": 441492
+      },
+      {
+        "bounds_valid": true,
+        "id": 3,
+        "label": "version2",
+        "magic": "00000000000000000000000000000000",
+        "offset": 665600,
+        "ordinal": 2,
+        "sha256": "53654eca035dcdc176321cf97ae8a84e7cacb04f47b1e93d6e5345ad7bdba718",
+        "size": 252816
+      }
+    ],
+    "entry_count": 3,
+    "header_u32_08": 918416,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "aerov3438.bin",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "611d2d80b5040e8cd74656b6600bf6c1b4d1db684b7c7091046ba412448805bb",
+  "size": 918720
+}

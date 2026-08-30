@@ -102,6 +102,7 @@
         "Roomba s9+"
       ],
       "known_skus": [
+        "s510820",
         "s910020",
         "s915820",
         "s955020",
@@ -114,6 +115,22 @@
           "model": "Roomba s9+",
           "software_prefix": "soho",
           "url": "https://github.com/home-assistant/core/issues/108169"
+        },
+        {
+          "kind": "android-app-default-sku",
+          "sku": "s510820",
+          "sku_type": "Soho",
+          "app": "com.irobot.home 5.2.4-release",
+          "note": "Historical default Soho SKU. Later Classic builds use s915820."
+        },
+        {
+          "kind": "legacy-v1-api",
+          "sku": "s510820",
+          "versions": [
+            "1.14.17",
+            "1.14.22"
+          ],
+          "note": "Public legacy V1 backend corroborates Soho firmware deployments for this historical app-derived SKU."
         }
       ]
     },
@@ -526,10 +543,12 @@
     "aero": {
       "type": "internal firmware platform/codename",
       "display_name": "Aero",
-      "description": "Aero is present in the official Classic app SkuType enum and now has a live historical OTA object on iRobot production infrastructure. Retail-model mapping is not yet established.",
+      "description": "Aero is an internal firmware platform/codename present in the official Classic app. Historical official-app native SKU evidence links e510080 to legacy V1 Aero deployments, and multiple corresponding OTA objects remain live on iRobot production infrastructure. Retail model naming remains intentionally separate from this firmware-family mapping.",
       "models": [],
-      "known_skus": [],
-      "confidence": "confirmed-app+cdn",
+      "known_skus": [
+        "e510080"
+      ],
+      "confidence": "confirmed-app+backend+cdn",
       "evidence": [
         {
           "kind": "android-app-sku-type",
@@ -540,6 +559,38 @@
           "kind": "public-ota-object-sweep",
           "version": "3.5.62",
           "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3562.signed"
+        },
+        {
+          "kind": "legacy-v1-api",
+          "sku": "e510080",
+          "versions": [
+            "3.4.38",
+            "3.4.49",
+            "3.4.59",
+            "3.4.67",
+            "3.5.62"
+          ],
+          "note": "SKU literal recovered from official historical Android native cores. The public legacy V1 firmware catalog returns Aero deployment history; four additional live production OTA objects were recovered from those rows on 2026-08-30."
+        },
+        {
+          "kind": "public-ota-object",
+          "version": "3.4.38",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3438.signed"
+        },
+        {
+          "kind": "public-ota-object",
+          "version": "3.4.49",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3449.signed"
+        },
+        {
+          "kind": "public-ota-object",
+          "version": "3.4.59",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3459.signed"
+        },
+        {
+          "kind": "public-ota-object",
+          "version": "3.4.67",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3467.signed"
         }
       ]
     },
