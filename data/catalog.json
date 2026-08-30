@@ -527,6 +527,26 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.05-5de7ffd08b2a/lewis-22.52.05.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/22.52.05-5de7ffd08b2a.json",
+        "release_tag": "firmware-lewis-22.52.05-5de7ffd08b2a",
+        "sha256": "5de7ffd08b2ab69f20a66dc7f1ec4158ad39df2788641aa16cb3bf4d33397946",
+        "size": 237519274
+      },
+      "discovered_at": "2026-08-30T03:53:51.170480+00:00",
+      "etag": "8cac073035b6874d5a3884202d9250be-14",
+      "family": "lewis",
+      "last_modified": "Tue, 21 Feb 2023 17:27:12 GMT",
+      "size": 237519274,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.05.signed",
+      "version": "22.52.05"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.08-81b1ddf542d4/lewis-22.52.08-prod.meta.signed",
         "component_count": 7,
         "format": "irobot-otps",
@@ -547,6 +567,27 @@
       "source_software_ver": "0.0.0",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+      "version": "22.52.08"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.08-81b1ddf542d4/lewis-22.52.08-prod.meta.signed",
+        "component_count": 7,
+        "deduplicated": true,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/22.52.08-81b1ddf542d4.json",
+        "release_tag": "firmware-lewis-22.52.08-81b1ddf542d4",
+        "sha256": "81b1ddf542d445b88589a3567645ffa81ec1d9e01ab34440249b5f67c92ffbe3",
+        "size": 237519274
+      },
+      "discovered_at": "2026-08-30T03:53:51.223592+00:00",
+      "etag": "518617fda36cb528f86c3d08c01ca3fb-14",
+      "family": "lewis",
+      "last_modified": "Tue, 27 Jun 2023 17:42:31 GMT",
+      "size": 237519274,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed",
       "version": "22.52.08"
     },
     {
@@ -1412,5 +1453,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T03:07:03.288854+00:00"
+  "updated_at": "2026-08-30T04:23:27.888792+00:00"
 }
