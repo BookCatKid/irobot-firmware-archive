@@ -1,0 +1,827 @@
+{
+  "entries": [
+    {
+      "candidate_families": [
+        "ruby",
+        "sapphire",
+        "stingray"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json",
+        "android-historical-app-ota-followup-2026-08-30.json"
+      ],
+      "note": "Official release evidence remains, but established Ruby/Sapphire/Stingray public filename forms and targeted historical-app strings yielded no recoverable exact object.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "j-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/32666",
+      "version": "1.4.8"
+    },
+    {
+      "candidate_families": [
+        "ruby",
+        "sapphire",
+        "stingray"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json",
+        "android-historical-app-ota-followup-2026-08-30.json"
+      ],
+      "note": "Official release evidence remains, but established Ruby/Sapphire/Stingray public filename forms and targeted historical-app strings yielded no recoverable exact object.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "j-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/32666",
+      "version": "1.4.6"
+    },
+    {
+      "candidate_families": [
+        "daredevil",
+        "lewis"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "i-series-release-note-gap-probes-2026-08-30.json",
+        "android-historical-app-ota-followup-2026-08-30.json"
+      ],
+      "note": "Official release evidence remains; established Lewis/Daredevil filename forms and targeted historical-app evidence did not identify live public bytes.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "i-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "version": "1.0.3"
+    },
+    {
+      "candidate_families": [
+        "daredevil",
+        "lewis"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "i-series-release-note-gap-probes-2026-08-30.json",
+        "android-historical-app-ota-followup-2026-08-30.json"
+      ],
+      "note": "Official release evidence remains; established Lewis/Daredevil filename forms and targeted historical-app evidence did not identify live public bytes.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "i-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "version": "1.4"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "3.1.19"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "3.1.16"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "3.1.19"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "3.1.16"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "8.6.2"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "8.6.8"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "8.6.5"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "6.4.3"
+    },
+    {
+      "candidate_families": [
+        "congo"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json"
+      ],
+      "note": "The zero-padded Congo naming form that recovered 1.1.14 and 1.1.22 was tested for the remaining official release and is not live at that exact object name.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-essential-original",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.1.5"
+    },
+    {
+      "candidate_families": [],
+      "disposition": "unresolved-hardware-family",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Official Essential 2 release versions are known, but the app/default-SKU evidence does not establish their OTA family or package grammar. They are intentionally not mapped to Congo.",
+      "release_evidence_classification": "official-ota-release-evidence-unresolved-family",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.6"
+    },
+    {
+      "candidate_families": [],
+      "disposition": "unresolved-hardware-family",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Official Essential 2 release versions are known, but the app/default-SKU evidence does not establish their OTA family or package grammar. They are intentionally not mapped to Congo.",
+      "release_evidence_classification": "official-ota-release-evidence-unresolved-family",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.4"
+    },
+    {
+      "candidate_families": [],
+      "disposition": "unresolved-hardware-family",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Official Essential 2 release versions are known, but the app/default-SKU evidence does not establish their OTA family or package grammar. They are intentionally not mapped to Congo.",
+      "release_evidence_classification": "official-ota-release-evidence-unresolved-family",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.2"
+    },
+    {
+      "candidate_families": [
+        "marconi",
+        "ningbo"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json"
+      ],
+      "note": "Established Marconi/Ningbo public naming variants were tested for the official versions without a live object. Other historical naming remains possible if new evidence emerges.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "wifi-600-800-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "version": "3.2.0"
+    },
+    {
+      "candidate_families": [
+        "marconi",
+        "ningbo"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json"
+      ],
+      "note": "Established Marconi/Ningbo public naming variants were tested for the official versions without a live object. Other historical naming remains possible if new evidence emerges.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "wifi-600-800-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "version": "3.1.0"
+    },
+    {
+      "candidate_families": [
+        "aero"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json",
+        "legacy-v1-deployment-object-probe-2026-08-29.json",
+        "e-series-3.4.62-real-device-evidence-2026-08-30.json"
+      ],
+      "note": "Official e-series release evidence and historical deployment metadata exist, but tested Aero public object forms for these exact versions are not live. aero3562.signed is separately archived as 3.5.62 and is not evidence for 3.4.62.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-e-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "version": "3.4.62"
+    },
+    {
+      "candidate_families": [
+        "aero"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json",
+        "legacy-v1-deployment-object-probe-2026-08-29.json",
+        "e-series-3.4.62-real-device-evidence-2026-08-30.json"
+      ],
+      "note": "Official e-series release evidence and historical deployment metadata exist, but tested Aero public object forms for these exact versions are not live. aero3562.signed is separately archived as 3.5.62 and is not evidence for 3.4.62.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-e-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "version": "3.4.42"
+    },
+    {
+      "candidate_families": [
+        "altadena"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json"
+      ],
+      "note": "Exact Altadena filename forms derived from preserved 4.63 and app-bundled 4.60 conventions were tested for 4.50/4.54 with no live object.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "braava-jet",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "version": "4.54"
+    },
+    {
+      "candidate_families": [
+        "altadena"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json"
+      ],
+      "note": "Exact Altadena filename forms derived from preserved 4.63 and app-bundled 4.60 conventions were tested for 4.50/4.54 with no live object.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "braava-jet",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "version": "4.50"
+    }
+  ],
+  "generated_at": "2026-08-30T20:15:17.056272+00:00",
+  "method": "Every official release-note entry whose bytes are not currently recovered receives a separate evidence-backed disposition. A tested filename/skeleton disposition means only that the documented search space has been exhausted; it is not proof that a historical artifact never existed.",
+  "schema": 1,
+  "summary": {
+    "dispositioned_gap_entry_count": 51,
+    "gap_entry_count": 51,
+    "known_evidence_disposition_coverage_percent": 100.0,
+    "undispositioned_gap_entry_count": 0
+  }
+}

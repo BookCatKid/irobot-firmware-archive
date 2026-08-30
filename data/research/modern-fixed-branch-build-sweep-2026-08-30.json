@@ -1,0 +1,161 @@
+{
+  "hits": [
+    {
+      "branch": "3.6",
+      "build": 152,
+      "family": "105v",
+      "last_modified": "Tue, 11 Aug 2026 15:35:10 GMT",
+      "name": "V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.6.152.signed",
+      "size": 38150742,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.6.152.signed",
+      "version": "9.4.8"
+    },
+    {
+      "branch": "3.7",
+      "build": 152,
+      "family": "105",
+      "last_modified": "Tue, 11 Aug 2026 15:27:46 GMT",
+      "name": "C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.7.152.signed",
+      "size": 37886004,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.7.152.signed",
+      "version": "9.4.8"
+    },
+    {
+      "branch": "3.6",
+      "build": 124,
+      "family": "105v",
+      "last_modified": "Tue, 26 Aug 2025 17:44:52 GMT",
+      "name": "V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.6.124.signed",
+      "size": 38360968,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.6.124.signed",
+      "version": "8.6.0"
+    },
+    {
+      "branch": "3.7",
+      "build": 124,
+      "family": "105",
+      "last_modified": "Tue, 26 Aug 2025 19:02:39 GMT",
+      "name": "C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.7.124.signed",
+      "size": 38350094,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.7.124.signed",
+      "version": "8.6.0"
+    },
+    {
+      "branch": "3.6",
+      "build": 113,
+      "family": "105v",
+      "last_modified": "Fri, 27 Jun 2025 19:20:51 GMT",
+      "name": "V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.6.113.signed",
+      "size": 38732066,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.6.113.signed",
+      "version": "7.5.2"
+    },
+    {
+      "branch": "3.7",
+      "build": 113,
+      "family": "105",
+      "last_modified": "Fri, 27 Jun 2025 19:28:21 GMT",
+      "name": "C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.7.113.signed",
+      "size": 38723672,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.7.113.signed",
+      "version": "7.5.2"
+    },
+    {
+      "branch": "3.6",
+      "build": 109,
+      "family": "105v",
+      "last_modified": "Fri, 13 Jun 2025 07:39:03 GMT",
+      "name": "V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.6.109.signed",
+      "size": 38709061,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.6.109.signed",
+      "version": "7.3.6"
+    },
+    {
+      "branch": "3.7",
+      "build": 109,
+      "family": "105",
+      "last_modified": "Fri, 13 Jun 2025 08:02:32 GMT",
+      "name": "C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.7.109.signed",
+      "size": 38703684,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.7.109.signed",
+      "version": "7.3.6"
+    },
+    {
+      "branch": "3.6",
+      "build": 105,
+      "family": "105v",
+      "last_modified": "Sat, 31 May 2025 09:10:06 GMT",
+      "name": "V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.6.105.signed",
+      "size": 38707356,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.6.105.signed",
+      "version": "7.3.3"
+    },
+    {
+      "branch": "3.7",
+      "build": 105,
+      "family": "105",
+      "last_modified": "Sat, 31 May 2025 08:42:19 GMT",
+      "name": "C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.7.105.signed",
+      "size": 38698495,
+      "source": "roomba-100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.7.105.signed",
+      "version": "7.3.3"
+    },
+    {
+      "branch": "4.6",
+      "build": 150,
+      "family": "205",
+      "last_modified": "Sun, 14 Dec 2025 13:01:11 GMT",
+      "name": "CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-4.6.150.signed",
+      "size": 39383947,
+      "source": "roomba-200",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-4.6.150.signed",
+      "version": "9.3.7"
+    },
+    {
+      "branch": "4.6",
+      "build": 146,
+      "family": "205",
+      "last_modified": "Thu, 06 Nov 2025 18:21:52 GMT",
+      "name": "CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-4.6.146.signed",
+      "size": 39883188,
+      "source": "roomba-200",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-4.6.146.signed",
+      "version": "9.3.4"
+    },
+    {
+      "branch": "4.6",
+      "build": 125,
+      "family": "205",
+      "last_modified": "Fri, 05 Sep 2025 15:39:43 GMT",
+      "name": "CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-4.6.125.signed",
+      "size": 39862480,
+      "source": "roomba-200",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-4.6.125.signed",
+      "version": "8.6.2"
+    },
+    {
+      "branch": "4.6",
+      "build": 146,
+      "family": "405",
+      "last_modified": "Thu, 06 Nov 2025 18:00:13 GMT",
+      "name": "C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-4.6.146.signed",
+      "size": 38847001,
+      "source": "roomba-plus-400",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-4.6.146.signed",
+      "version": "9.3.4"
+    }
+  ],
+  "method": "For official unrecovered versions, vary only the final numeric build counter within fixed filename branch skeletons already verified by recovered packages for the same hardware family.",
+  "probe_count": 7406,
+  "schema": 1
+}

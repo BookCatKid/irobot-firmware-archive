@@ -1,0 +1,53 @@
+{
+  "errors": [],
+  "hits": [
+    {
+      "base": 22,
+      "build": 113,
+      "last_modified": "Fri, 27 Jun 2025 18:59:37 GMT",
+      "name": "C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base22-ota-release-3.8.113.signed",
+      "size": 161956235,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base22-ota-release-3.8.113.signed",
+      "version": "7.5.2"
+    },
+    {
+      "base": 23,
+      "build": 118,
+      "last_modified": "Thu, 07 Aug 2025 16:13:19 GMT",
+      "name": "C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-3.8.118.signed",
+      "size": 159766444,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-3.8.118.signed",
+      "version": "8.4.1"
+    },
+    {
+      "base": 24,
+      "build": 146,
+      "last_modified": "Thu, 06 Nov 2025 18:08:36 GMT",
+      "name": "C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base24-ota-release-3.8.146.signed",
+      "size": 161692653,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base24-ota-release-3.8.146.signed",
+      "version": "9.3.4"
+    },
+    {
+      "base": 24,
+      "build": 148,
+      "last_modified": "Mon, 17 Nov 2025 18:11:14 GMT",
+      "name": "C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base24-ota-release-3.8.148.signed",
+      "size": 161346579,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base24-ota-release-3.8.148.signed",
+      "version": "9.3.5"
+    },
+    {
+      "base": 24,
+      "build": 149,
+      "last_modified": "Wed, 03 Dec 2025 14:57:04 GMT",
+      "name": "C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base24-ota-release-3.8.149.signed",
+      "size": 160594341,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base24-ota-release-3.8.149.signed",
+      "version": "9.3.6"
+    }
+  ],
+  "method": "Bounded 505 field scan: official support-page versions only; verified C11e_505_OTA1_MxEmmc + ssu9383-mcu35 + branch 3.8; base15-30/build80-155.",
+  "probe_count": 13376,
+  "schema": 1
+}

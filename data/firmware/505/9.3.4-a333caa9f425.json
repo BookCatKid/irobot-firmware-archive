@@ -1,0 +1,27 @@
+{
+  "components": [],
+  "filename": "C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base24-ota-release-3.8.146.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "gzip_member_compressed_size": 161691325,
+    "gzip_original_filename": "SStarOta.bin",
+    "gzip_uncompressed_prefix_hex": "9345db556ca085452ac6f934ea3574fc4f9006b688e4b26e609c5bee20832768",
+    "gzip_uncompressed_sha256": "03c880a2e9c5c38f1b1a3cf5081f809c7a7b0c0114a6704af0c3175203242659",
+    "gzip_uncompressed_size": 410174810,
+    "header_u32_08": 161692349,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "C11e_505_OTA1_MxEmmc-KEY_sdk-v9.",
+    "payload_format": "gzip",
+    "payload_offset": 48,
+    "post_gzip_payload_prefix_hex": "6361306237356463363565623764383535633634633730636435373631353062",
+    "post_gzip_payload_sha256": "d7d9f32e97955cd625b6a09e6c36f3f17e3a7e05649694a24c35f420abde6331",
+    "post_gzip_payload_size": 976,
+    "trailing_bytes_after_header_u32_08": 304,
+    "variant": "sigmastar-gzip"
+  },
+  "schema": 1,
+  "sha256": "a333caa9f425a42c811fe65d0e2c245fd19556028e7afaf7a19354c603ceb5e8",
+  "size": 161692653
+}

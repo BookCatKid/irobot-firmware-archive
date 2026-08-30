@@ -1,0 +1,68 @@
+{
+  "errors": [],
+  "hits": [
+    {
+      "base": 13,
+      "branch": "3.8",
+      "build": 146,
+      "last_modified": "Thu, 06 Nov 2025 17:17:39 GMT",
+      "mcu": 34,
+      "name": "V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base13-ota-release-3.8.146.signed",
+      "prefix": "V11",
+      "size": 156865948,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base13-ota-release-3.8.146.signed",
+      "version": "9.3.4"
+    },
+    {
+      "base": 12,
+      "branch": "3.8",
+      "build": 113,
+      "last_modified": "Fri, 27 Jun 2025 19:10:57 GMT",
+      "mcu": 34,
+      "name": "V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-3.8.113.signed",
+      "prefix": "V11",
+      "size": 156938241,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-3.8.113.signed",
+      "version": "7.5.2"
+    },
+    {
+      "base": 42,
+      "branch": "5.3",
+      "build": 148,
+      "last_modified": "Fri, 14 Nov 2025 19:30:36 GMT",
+      "mcu": 20,
+      "name": "C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-5.3.148.signed",
+      "prefix": "C11m",
+      "size": 157265935,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-5.3.148.signed",
+      "version": "9.3.5"
+    },
+    {
+      "base": 42,
+      "branch": "5.3",
+      "build": 146,
+      "last_modified": "Thu, 06 Nov 2025 18:14:51 GMT",
+      "mcu": 20,
+      "name": "C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-5.3.146.signed",
+      "prefix": "C11m",
+      "size": 157638094,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-5.3.146.signed",
+      "version": "9.3.4"
+    },
+    {
+      "base": 36,
+      "branch": "5.3",
+      "build": 122,
+      "last_modified": "Fri, 08 Aug 2025 17:42:49 GMT",
+      "mcu": 20,
+      "name": "C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base36-ota-release-5.3.122.signed",
+      "prefix": "C11m",
+      "size": 155452934,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base36-ota-release-5.3.122.signed",
+      "version": "8.4.4"
+    }
+  ],
+  "method": "Bounded 705 field scan using globally evidenced build counters and two verified 705 hardware skeletons; V11 mcu34 base5-17 branch3.8 and C11m mcu20 base35-47 branch5.3.",
+  "probe_count": 702,
+  "schema": 1
+}

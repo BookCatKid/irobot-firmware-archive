@@ -6,7 +6,7 @@
   <meta name="color-scheme" content="light dark">
   <meta name="description" content="An unofficial archive and diff browser for publicly reachable iRobot firmware packages.">
   <title>iRobot Firmware Archive</title>
-  <link rel="stylesheet" href="style.css?v=20260830-2">
+  <link rel="stylesheet" href="style.css?v=20260830-4">
 </head>
 <body>
   <header class="top-links" aria-label="Site navigation">
@@ -27,6 +27,7 @@
       <p class="subtitle">firmware packages, metadata, and diffs</p>
       <p class="lede">Original signed iRobot OTA packages with technical metadata, hardware associations, and filesystem-level comparisons.</p>
       <div id="summary" class="summary-line">Loading catalog…</div>
+      <div id="completenessSummary" class="summary-line">Loading completeness evidence…</div>
     </section>
 
     <section id="catalog-section" class="content-section">
@@ -126,7 +127,7 @@
       <div class="section-head">
         <div>
           <h2>Embedded audio</h2>
-          <p>Robot songs and multilingual voice prompts found in archived firmware. This is a metadata index; the exact audio bytes remain inside their original signed firmware packages.</p>
+          <p>Robot songs and multilingual voice prompts found in archived firmware. Every result links to a hash-verified representative inside its original signed firmware package.</p>
         </div>
       </div>
 
@@ -137,6 +138,7 @@
         <select id="audioCategoryFilter" aria-label="Filter embedded audio by category"><option value="">All audio</option></select>
         <span id="audioResultCount" class="result-count"></span>
       </div>
+      <div id="audioActionStatus" class="summary-line audio-action-status">Use “copy extract” on a result to copy a local, SHA-256-verified extraction command.</div>
 
       <div class="table-wrap">
         <table class="firmware-table audio-table">
@@ -146,8 +148,9 @@
               <th>Type</th>
               <th>Language</th>
               <th>Variants</th>
-              <th>Parent firmware</th>
-              <th>Platforms</th>
+              <th>Representative source</th>
+              <th>Path / SHA-256</th>
+              <th>Get file</th>
             </tr>
           </thead>
           <tbody id="audioCatalog"></tbody>
@@ -178,6 +181,6 @@
     <a href="https://github.com/BookCatKid/irobot-firmware-archive">Source</a>
   </footer>
 
-  <script src="app.js?v=20260830-2"></script>
+  <script src="app.js?v=20260830-4"></script>
 </body>
 </html>

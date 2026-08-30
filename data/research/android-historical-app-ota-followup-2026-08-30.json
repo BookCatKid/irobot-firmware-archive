@@ -5,6 +5,35 @@
     "swu1567436507",
     "aryb2109021809qr"
   ],
+  "direct_artifact_scan_note": "A targeted scan of printable .signed/.enc artifact strings in the 5.2.4 and 7.2.0 XAPK base/native payloads found only these already-preserved or already-covered artifacts; it yielded no new exact unresolved OTA filename.",
+  "direct_artifact_strings": {
+    "classic-5.2.4-and-7.2.0": [
+      {
+        "family": "roomba9xx",
+        "status": "already-archived",
+        "value": "roomba9xxv2444.signed",
+        "version": "v2444"
+      },
+      {
+        "family": "marconi",
+        "status": "already-archived",
+        "value": "marconiv327.signed",
+        "version": "v327"
+      },
+      {
+        "family": "altadena",
+        "status": "already-archived-app-embedded",
+        "value": "res/raw/altadena_d_4_60_0.enc",
+        "version": "4.60.0"
+      },
+      {
+        "family": "soho",
+        "status": "already-covered-by-archived-soho-release",
+        "value": "s9/soho11417-prod.meta.signed",
+        "version": "1.14.17"
+      }
+    ]
+  },
   "exact_unresolved_ota_urls_found": [],
   "generated_at": "2026-08-30T09:23:37.385598+00:00",
   "method": "Targeted in-place scans of official XAPK base APK contents for historical softwareVer strings, deployment identifiers, and firmware/OTA URLs; no simulator softwareVer is promoted to a distinct OTA artifact without independent artifact evidence.",

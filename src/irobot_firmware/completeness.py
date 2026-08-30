@@ -85,7 +85,18 @@ def build_completeness_ledger(
 
     release_evidence_path = research_root / "official-release-note-artifact-gaps-current.json"
     release_evidence = load_json(release_evidence_path, {})
+    gap_dispositions_path = research_root / "official-gap-dispositions-current.json"
+    gap_dispositions_data = load_json(gap_dispositions_path, {})
+    gap_dispositions = [
+        item for item in (gap_dispositions_data.get("entries") or [])
+        if isinstance(item, dict)
+    ]
+    explicit_undispositioned_gaps = [
+        item for item in gap_dispositions
+        if item.get("disposition") == "unresolved-no-completed-disposition-rule"
+    ]
     official_release_gaps = []
+    official_release_unresolved_family = []
     official_factory_states = []
     for entry in release_evidence.get("entries") or []:
         if not isinstance(entry, dict):
@@ -100,6 +111,8 @@ def build_completeness_ledger(
         }
         if entry.get("classification") == "official-ota-release-evidence-unrecovered":
             official_release_gaps.append(compact)
+        elif entry.get("classification") == "official-ota-release-evidence-unresolved-family":
+            official_release_unresolved_family.append(compact)
         elif entry.get("classification") == "factory-state-only":
             compact["factory_reason"] = entry.get("factory_reason")
             official_factory_states.append(compact)
@@ -129,6 +142,18 @@ def build_completeness_ledger(
 
     proven_missing = [s for s in states if s["separate_ota_artifact_proven"]]
     state_only = [s for s in states if not s["separate_ota_artifact_proven"]]
+    current_gap_count = len(official_release_gaps) + len(official_release_unresolved_family)
+    # Treat a stale/missing disposition file as incomplete rather than silently
+    # reporting 100%. The normal workflows rebuild dispositions immediately
+    # before this ledger, but this keeps the metric honest in isolation too.
+    missing_disposition_entries = max(0, current_gap_count - len(gap_dispositions))
+    undispositioned_gap_count = len(explicit_undispositioned_gaps) + missing_disposition_entries
+    disposition_coverage = (
+        100.0 if current_gap_count == 0 else round(
+            100.0 * max(0, current_gap_count - undispositioned_gap_count) / current_gap_count,
+            2,
+        )
+    )
     return {
         "schema": 1,
         "catalog_updated_at": catalog.get("updated_at"),
@@ -156,8 +181,12 @@ def build_completeness_ledger(
             "historical_state_only_count": len(state_only),
             "independently_proven_missing_ota_artifact_count": len(proven_missing),
             "official_release_evidence_gap_count": len(official_release_gaps),
+            "official_release_unresolved_family_count": len(official_release_unresolved_family),
             "official_factory_state_only_count": len(official_factory_states),
             "recorded_negative_probe_count": negative_probe_total,
+            "official_gap_disposition_count": len(gap_dispositions),
+            "official_gap_undispositioned_count": undispositioned_gap_count,
+            "known_evidence_disposition_coverage_percent": disposition_coverage,
             "exhausted_or_unrecoverable_count": 0,
             "platform_mapping_gap_count": len(mapping_gaps),
             "formats": dict(sorted(formats.items())),
@@ -166,8 +195,10 @@ def build_completeness_ledger(
         "historical_state_only": state_only,
         "independently_proven_missing_ota_artifacts": proven_missing,
         "official_release_evidence_gaps": official_release_gaps,
+        "official_release_unresolved_family": official_release_unresolved_family,
         "official_factory_state_only": official_factory_states,
         "exhausted_or_unrecoverable": [],
+        "official_gap_dispositions": gap_dispositions,
         "platform_mapping_gaps": mapping_gaps,
         "research_sources": research_sources,
     }

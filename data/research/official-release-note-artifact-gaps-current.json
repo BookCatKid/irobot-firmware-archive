@@ -1351,10 +1351,23 @@
         "105",
         "105v"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "a24f1c9469098509850777a020bd3b89cf28420c48a88718cf940bfa162ce300",
+          "family": "105",
+          "release_tag": "firmware-105-9.4.8-a24f1c946909",
+          "version": "9.4.8"
+        },
+        {
+          "archive_sha256": "f56b4f9b5eadfcd6eb87fafbb4b0cd6796ec1af83ef4d8ba2b0790751e94c778",
+          "family": "105v",
+          "release_tag": "firmware-105v-9.4.8-f56b4f9b5ead",
+          "version": "9.4.8"
+        }
+      ],
       "release_date_text": "8/18/2026",
       "source_name": "roomba-100",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
@@ -1365,10 +1378,23 @@
         "105",
         "105v"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "3c30d2c7e550832044674f0d22193d1379764f742eb3004be354441415e39ca3",
+          "family": "105",
+          "release_tag": "firmware-105-9.3.6-3c30d2c7e550",
+          "version": "9.3.6"
+        },
+        {
+          "archive_sha256": "f9edcdef5abff5e67fefeadf0025c0411050e2a85ed8deaf6df8a968f84799e9",
+          "family": "105v",
+          "release_tag": "firmware-105v-9.3.6-f9edcdef5abf",
+          "version": "9.3.6"
+        }
+      ],
       "release_date_text": "01.28.2026",
       "source_name": "roomba-100",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
@@ -1406,10 +1432,23 @@
         "105",
         "105v"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "7e2b56bd9096777e8c61d197cab8edfab3eeac946d7e5604114ec8817582468f",
+          "family": "105",
+          "release_tag": "firmware-105-8.6.0-7e2b56bd9096",
+          "version": "8.6.0"
+        },
+        {
+          "archive_sha256": "5e6880a97e71d0618dd0316e2fc95c316dee57f087ecd74341ba4404a5f36605",
+          "family": "105v",
+          "release_tag": "firmware-105v-8.6.0-5e6880a97e71",
+          "version": "8.6.0"
+        }
+      ],
       "release_date_text": "09.05.2025",
       "source_name": "roomba-100",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
@@ -1434,10 +1473,23 @@
         "105",
         "105v"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "8cc70155cebeff5f633245f914dba993ef44598f23e8badded8a25b39ae2945d",
+          "family": "105",
+          "release_tag": "firmware-105-7.5.2-8cc70155cebe",
+          "version": "7.5.2"
+        },
+        {
+          "archive_sha256": "6b854399257ac5e40bd74282d6030c50544b249960d1d883855fdc02039dde9f",
+          "family": "105v",
+          "release_tag": "firmware-105v-7.5.2-6b854399257a",
+          "version": "7.5.2"
+        }
+      ],
       "release_date_text": "07.02.2025",
       "source_name": "roomba-100",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
@@ -1448,10 +1500,23 @@
         "105",
         "105v"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "affbbeb3a2b941ce3eda2ccce1fd9534e11cfa92eb85f05abe31eae1d30d1beb",
+          "family": "105",
+          "release_tag": "firmware-105-7.3.6-affbbeb3a2b9",
+          "version": "7.3.6"
+        },
+        {
+          "archive_sha256": "c0241b979f3fad218cd46917fa30a3289dbd90efcf7c3c3d0a81bb2cf5769262",
+          "family": "105v",
+          "release_tag": "firmware-105v-7.3.6-c0241b979f3f",
+          "version": "7.3.6"
+        }
+      ],
       "release_date_text": "06/16/25",
       "source_name": "roomba-100",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
@@ -1462,10 +1527,23 @@
         "105",
         "105v"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "f0ea758336a6a528c96c427ae2a4f333ea5ce41949304fe879fa2deb38eae0af",
+          "family": "105",
+          "release_tag": "firmware-105-7.3.3-f0ea758336a6",
+          "version": "7.3.3"
+        },
+        {
+          "archive_sha256": "9e2eea36ab66e59a830914ddb1ae7788aac1a3480176c145d3debef1ccf20408",
+          "family": "105v",
+          "release_tag": "firmware-105v-7.3.3-9e2eea36ab66",
+          "version": "7.3.3"
+        }
+      ],
       "release_date_text": "06/2/25",
       "source_name": "roomba-100",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
@@ -1559,10 +1637,17 @@
       "candidate_families": [
         "205"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "8e890bd4dc3a2b1015e04f11326db2bc39f60d93477325d90e45d501c70bdd0f",
+          "family": "205",
+          "release_tag": "firmware-205-9.3.7-8e890bd4dc3a",
+          "version": "9.3.7"
+        }
+      ],
       "release_date_text": "1/5/2026",
       "source_name": "roomba-200",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
@@ -1572,10 +1657,17 @@
       "candidate_families": [
         "205"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "46aa97fbf54bdb94a37a52015a5fe01acad50e5af9095ece1a065fcd4e88417c",
+          "family": "205",
+          "release_tag": "firmware-205-9.3.4-46aa97fbf54b",
+          "version": "9.3.4"
+        }
+      ],
       "release_date_text": "11.21.2025",
       "source_name": "roomba-200",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
@@ -1605,10 +1697,17 @@
       "candidate_families": [
         "205"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "d413606402af5b92dd7906951a42ff00b80da9cf583b5dfa6b84d16fb38c529d",
+          "family": "205",
+          "release_tag": "firmware-205-8.6.2-d413606402af",
+          "version": "8.6.2"
+        }
+      ],
       "release_date_text": "09.17.2025",
       "source_name": "roomba-200",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
@@ -1735,10 +1834,17 @@
       "candidate_families": [
         "405"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "503d4bc4024e6515aa27b805bb369b49f1b5c3a2a2507d592a17f837dca00f03",
+          "family": "405",
+          "release_tag": "firmware-405-9.3.7-503d4bc4024e",
+          "version": "9.3.7"
+        }
+      ],
       "release_date_text": "01.05.2026",
       "source_name": "roomba-plus-400",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
@@ -1748,10 +1854,17 @@
       "candidate_families": [
         "405"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "354b6f680214fecce070ee2078300b5319effe84e7f3cf81f624835c70a9a91b",
+          "family": "405",
+          "release_tag": "firmware-405-9.3.4-354b6f680214",
+          "version": "9.3.4"
+        }
+      ],
       "release_date_text": "11.21.2025",
       "source_name": "roomba-plus-400",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
@@ -1898,10 +2011,17 @@
       "candidate_families": [
         "505"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "414a62446f87ee6fb3a4140be2951e8c7cebdcedbc33e982f244a5836aef2feb",
+          "family": "505",
+          "release_tag": "firmware-505-9.3.6-414a62446f87",
+          "version": "9.3.6"
+        }
+      ],
       "release_date_text": "12.08.25",
       "source_name": "roomba-plus-500",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
@@ -1911,10 +2031,17 @@
       "candidate_families": [
         "505"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "112b9e10bfcc7d2fa074b9a51510fd7f70ed0281e721cc1dac777fa55a7ee9f8",
+          "family": "505",
+          "release_tag": "firmware-505-9.3.5-112b9e10bfcc",
+          "version": "9.3.5"
+        }
+      ],
       "release_date_text": "11.21.25",
       "source_name": "roomba-plus-500",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
@@ -1924,10 +2051,17 @@
       "candidate_families": [
         "505"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "a333caa9f425a42c811fe65d0e2c245fd19556028e7afaf7a19354c603ceb5e8",
+          "family": "505",
+          "release_tag": "firmware-505-9.3.4-a333caa9f425",
+          "version": "9.3.4"
+        }
+      ],
       "release_date_text": "11.21.25",
       "source_name": "roomba-plus-500",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
@@ -1957,10 +2091,17 @@
       "candidate_families": [
         "505"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "c6923e29e55f2875549837746b999ec12f7075b007c77659fbe80b46be726adb",
+          "family": "505",
+          "release_tag": "firmware-505-8.4.1-c6923e29e55f",
+          "version": "8.4.1"
+        }
+      ],
       "release_date_text": "08.18.2025",
       "source_name": "roomba-plus-500",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
@@ -1970,10 +2111,17 @@
       "candidate_families": [
         "505"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "f9bee32f197fa619f8de01eb753628467e57d005512daff07c349b84850518fc",
+          "family": "505",
+          "release_tag": "firmware-505-7.5.2-f9bee32f197f",
+          "version": "7.5.2"
+        }
+      ],
       "release_date_text": "07.02.2025",
       "source_name": "roomba-plus-500",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
@@ -2081,10 +2229,17 @@
       "candidate_families": [
         "705"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "5eadf5d91ce4647bbd0b8f4538d00d7129163f6947b99e91152206537d16a7df",
+          "family": "705",
+          "release_tag": "firmware-705-9.3.5-5eadf5d91ce4",
+          "version": "9.3.5"
+        }
+      ],
       "release_date_text": "11.21.25",
       "source_name": "roomba-max-700",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
@@ -2094,10 +2249,23 @@
       "candidate_families": [
         "705"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "4d36275f80a8d6612eae52dc670548c6878b3c2da121cbf03899dfb4826cf8b9",
+          "family": "705",
+          "release_tag": "firmware-705-9.3.4-4d36275f80a8",
+          "version": "9.3.4"
+        },
+        {
+          "archive_sha256": "3a6d005cb07ce60db77bcfe986558b718cff259466d5706d0e692f0288cac090",
+          "family": "705",
+          "release_tag": "firmware-705-9.3.4-3a6d005cb07c",
+          "version": "9.3.4"
+        }
+      ],
       "release_date_text": "11.21.25",
       "source_name": "roomba-max-700",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
@@ -2153,10 +2321,17 @@
       "candidate_families": [
         "705"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "f02f7683f10b459c952f187f81d9164644b00079644e9fe026b3136193782557",
+          "family": "705",
+          "release_tag": "firmware-705-8.4.4-f02f7683f10b",
+          "version": "8.4.4"
+        }
+      ],
       "release_date_text": "08.08.2025",
       "source_name": "roomba-max-700",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
@@ -2166,10 +2341,17 @@
       "candidate_families": [
         "705"
       ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "classification": "recovered-release",
       "factory_only": false,
       "factory_reason": null,
-      "matching_catalog_rows": [],
+      "matching_catalog_rows": [
+        {
+          "archive_sha256": "ccd0d0d79ea1a0b72fd1fdfae5e3201e99f5db5f4199c5b0c1ddb8dee1281d73",
+          "family": "705",
+          "release_tag": "firmware-705-7.5.2-ccd0d0d79ea1",
+          "version": "7.5.2"
+        }
+      ],
       "release_date_text": "07.02.2025",
       "source_name": "roomba-max-700",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
@@ -2282,7 +2464,7 @@
         }
       ],
       "release_date_text": "09.25.2024",
-      "source_name": "roomba-essential",
+      "source_name": "roomba-essential-original",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
       "version": "1.1.22"
     },
@@ -2302,7 +2484,7 @@
         }
       ],
       "release_date_text": "04.04.2024",
-      "source_name": "roomba-essential",
+      "source_name": "roomba-essential-original",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
       "version": "1.1.14"
     },
@@ -2315,46 +2497,40 @@
       "factory_reason": null,
       "matching_catalog_rows": [],
       "release_date_text": "04.04.2024",
-      "source_name": "roomba-essential",
+      "source_name": "roomba-essential-original",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
       "version": "1.1.5"
     },
     {
-      "candidate_families": [
-        "congo"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "candidate_families": [],
+      "classification": "official-ota-release-evidence-unresolved-family",
       "factory_only": false,
       "factory_reason": null,
       "matching_catalog_rows": [],
       "release_date_text": "10.1.2024",
-      "source_name": "roomba-essential",
+      "source_name": "roomba-essential-2",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
       "version": "1.2.6"
     },
     {
-      "candidate_families": [
-        "congo"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "candidate_families": [],
+      "classification": "official-ota-release-evidence-unresolved-family",
       "factory_only": false,
       "factory_reason": null,
       "matching_catalog_rows": [],
       "release_date_text": "09.25.2024",
-      "source_name": "roomba-essential",
+      "source_name": "roomba-essential-2",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
       "version": "1.2.4"
     },
     {
-      "candidate_families": [
-        "congo"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
+      "candidate_families": [],
+      "classification": "official-ota-release-evidence-unresolved-family",
       "factory_only": false,
       "factory_reason": null,
       "matching_catalog_rows": [],
       "release_date_text": "9.25.2024",
-      "source_name": "roomba-essential",
+      "source_name": "roomba-essential-2",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
       "version": "1.2.2"
     },
@@ -2729,7 +2905,7 @@
     }
   ],
   "errors": [],
-  "generated_at": "2026-08-30T18:05:46.656838+00:00",
+  "generated_at": "2026-08-30T20:15:16.978621+00:00",
   "method": "Explicit iRobot support-page Version headings are treated as independent release evidence. Dotted dates are ignored. Entries explicitly identified as factory-only/no-OTA are software-state evidence only and are excluded from unrecovered OTA-artifact counts.",
   "schema": 1,
   "sources": [
@@ -2813,8 +2989,14 @@
       "candidate_families": [
         "congo"
       ],
-      "entry_count": 6,
-      "name": "roomba-essential",
+      "entry_count": 3,
+      "name": "roomba-essential-original",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052"
+    },
+    {
+      "candidate_families": [],
+      "entry_count": 3,
+      "name": "roomba-essential-2",
       "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052"
     },
     {
@@ -2846,9 +3028,10 @@
   "summary": {
     "entry_count": 158,
     "factory_state_only_count": 6,
-    "official_ota_release_evidence_unrecovered_count": 71,
-    "recovered_release_count": 81,
-    "source_count": 13,
+    "official_ota_release_evidence_unrecovered_count": 48,
+    "official_ota_release_evidence_unresolved_family_count": 3,
+    "recovered_release_count": 101,
+    "source_count": 14,
     "source_error_count": 0
   }
 }

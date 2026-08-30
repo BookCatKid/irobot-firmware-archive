@@ -1,5 +1,5 @@
 {
-  "catalog_updated_at": "2026-08-30T18:02:01.423718+00:00",
+  "catalog_updated_at": "2026-08-30T19:20:58.724907+00:00",
   "claim": "Every currently catalogued artifact has archival metadata, but the complete historical set of iRobot OTA artifacts is not knowable from the surviving public evidence. Historical software-state evidence, explicit official release evidence, recovered byte-identical aliases, and negative probes are therefore tracked as separate evidence classes.",
   "exhausted_or_unrecoverable": [],
   "historical_state_only": [
@@ -188,6 +188,822 @@
       "version": "3.2.19"
     }
   ],
+  "official_gap_dispositions": [
+    {
+      "candidate_families": [
+        "ruby",
+        "sapphire",
+        "stingray"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json",
+        "android-historical-app-ota-followup-2026-08-30.json"
+      ],
+      "note": "Official release evidence remains, but established Ruby/Sapphire/Stingray public filename forms and targeted historical-app strings yielded no recoverable exact object.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "j-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/32666",
+      "version": "1.4.8"
+    },
+    {
+      "candidate_families": [
+        "ruby",
+        "sapphire",
+        "stingray"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json",
+        "android-historical-app-ota-followup-2026-08-30.json"
+      ],
+      "note": "Official release evidence remains, but established Ruby/Sapphire/Stingray public filename forms and targeted historical-app strings yielded no recoverable exact object.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "j-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/32666",
+      "version": "1.4.6"
+    },
+    {
+      "candidate_families": [
+        "daredevil",
+        "lewis"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "i-series-release-note-gap-probes-2026-08-30.json",
+        "android-historical-app-ota-followup-2026-08-30.json"
+      ],
+      "note": "Official release evidence remains; established Lewis/Daredevil filename forms and targeted historical-app evidence did not identify live public bytes.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "i-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "version": "1.0.3"
+    },
+    {
+      "candidate_families": [
+        "daredevil",
+        "lewis"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "i-series-release-note-gap-probes-2026-08-30.json",
+        "android-historical-app-ota-followup-2026-08-30.json"
+      ],
+      "note": "Official release evidence remains; established Lewis/Daredevil filename forms and targeted historical-app evidence did not identify live public bytes.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "i-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "version": "1.4"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "3.1.19"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C3/V3 modern branch grammar was searched with bounded evidence-derived builds/suffixes. Remaining releases require a different historical skeleton/build identity or a new source lead.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "3.1.16"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "3.1.19"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known CC_205 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "3.1.16"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "8.6.2"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "modern-fixed-branch-build-sweep-2026-08-30.json",
+        "modern-release-gap-known-suffix-probes-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Known C4 modern package grammar recovered newer releases but not these official older states; a prior hardware/package skeleton is not yet evidenced.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "505-older-official-gap-field-sweep-2026-08-30.json",
+        "505-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "The observed C11e/mcu35/branch-3.8 family was bounded across evidence-derived fields; remaining older versions produced no live object and require a different skeleton or exact device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "8.6.8"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "8.6.5"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "disposition": "unresolved-package-skeleton-after-bounded-search",
+      "evidence_files": [
+        "705-expanded-official-gap-field-sweep-2026-08-30.json",
+        "705-official-gap-field-sweep-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json",
+        "705-public-device-state-evidence-2026-08-30.json"
+      ],
+      "note": "Observed V11/C11m hardware grammars were exhaustively bounded over the evidenced field ranges; remaining versions require another skeleton or exact real-device identity.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "6.4.3"
+    },
+    {
+      "candidate_families": [
+        "congo"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json"
+      ],
+      "note": "The zero-padded Congo naming form that recovered 1.1.14 and 1.1.22 was tested for the remaining official release and is not live at that exact object name.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-essential-original",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.1.5"
+    },
+    {
+      "candidate_families": [],
+      "disposition": "unresolved-hardware-family",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Official Essential 2 release versions are known, but the app/default-SKU evidence does not establish their OTA family or package grammar. They are intentionally not mapped to Congo.",
+      "release_evidence_classification": "official-ota-release-evidence-unresolved-family",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.6"
+    },
+    {
+      "candidate_families": [],
+      "disposition": "unresolved-hardware-family",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Official Essential 2 release versions are known, but the app/default-SKU evidence does not establish their OTA family or package grammar. They are intentionally not mapped to Congo.",
+      "release_evidence_classification": "official-ota-release-evidence-unresolved-family",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.4"
+    },
+    {
+      "candidate_families": [],
+      "disposition": "unresolved-hardware-family",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json",
+        "official-release-gap-v2-matrix-2026-08-30.json"
+      ],
+      "note": "Official Essential 2 release versions are known, but the app/default-SKU evidence does not establish their OTA family or package grammar. They are intentionally not mapped to Congo.",
+      "release_evidence_classification": "official-ota-release-evidence-unresolved-family",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.2"
+    },
+    {
+      "candidate_families": [
+        "marconi",
+        "ningbo"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json"
+      ],
+      "note": "Established Marconi/Ningbo public naming variants were tested for the official versions without a live object. Other historical naming remains possible if new evidence emerges.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "wifi-600-800-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "version": "3.2.0"
+    },
+    {
+      "candidate_families": [
+        "marconi",
+        "ningbo"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json"
+      ],
+      "note": "Established Marconi/Ningbo public naming variants were tested for the official versions without a live object. Other historical naming remains possible if new evidence emerges.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "wifi-600-800-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "version": "3.1.0"
+    },
+    {
+      "candidate_families": [
+        "aero"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json",
+        "legacy-v1-deployment-object-probe-2026-08-29.json",
+        "e-series-3.4.62-real-device-evidence-2026-08-30.json"
+      ],
+      "note": "Official e-series release evidence and historical deployment metadata exist, but tested Aero public object forms for these exact versions are not live. aero3562.signed is separately archived as 3.5.62 and is not evidence for 3.4.62.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-e-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "version": "3.4.62"
+    },
+    {
+      "candidate_families": [
+        "aero"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "official-release-gap-exact-object-probes-2026-08-30.json",
+        "legacy-v1-deployment-object-probe-2026-08-29.json",
+        "e-series-3.4.62-real-device-evidence-2026-08-30.json"
+      ],
+      "note": "Official e-series release evidence and historical deployment metadata exist, but tested Aero public object forms for these exact versions are not live. aero3562.signed is separately archived as 3.5.62 and is not evidence for 3.4.62.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "roomba-e-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "version": "3.4.42"
+    },
+    {
+      "candidate_families": [
+        "altadena"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json"
+      ],
+      "note": "Exact Altadena filename forms derived from preserved 4.63 and app-bundled 4.60 conventions were tested for 4.50/4.54 with no live object.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "braava-jet",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "version": "4.54"
+    },
+    {
+      "candidate_families": [
+        "altadena"
+      ],
+      "disposition": "tested-known-filename-skeleton-no-live-object",
+      "evidence_files": [
+        "essential2-altadena-and-listing-followup-2026-08-30.json"
+      ],
+      "note": "Exact Altadena filename forms derived from preserved 4.63 and app-bundled 4.60 conventions were tested for 4.50/4.54 with no live object.",
+      "release_evidence_classification": "official-ota-release-evidence-unrecovered",
+      "source_name": "braava-jet",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "version": "4.50"
+    }
+  ],
   "official_release_evidence_gaps": [
     {
       "candidate_families": [
@@ -241,76 +1057,10 @@
         "105v"
       ],
       "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "8/18/2026",
-      "source_name": "roomba-100",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
-      "version": "9.4.8"
-    },
-    {
-      "candidate_families": [
-        "105",
-        "105v"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "01.28.2026",
-      "source_name": "roomba-100",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
-      "version": "9.3.6"
-    },
-    {
-      "candidate_families": [
-        "105",
-        "105v"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "09.05.2025",
-      "source_name": "roomba-100",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
-      "version": "8.6.0"
-    },
-    {
-      "candidate_families": [
-        "105",
-        "105v"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
       "release_date_text": "08.18.2025",
       "source_name": "roomba-100",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
       "version": "8.4.1"
-    },
-    {
-      "candidate_families": [
-        "105",
-        "105v"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "07.02.2025",
-      "source_name": "roomba-100",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
-      "version": "7.5.2"
-    },
-    {
-      "candidate_families": [
-        "105",
-        "105v"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "06/16/25",
-      "source_name": "roomba-100",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
-      "version": "7.3.6"
-    },
-    {
-      "candidate_families": [
-        "105",
-        "105v"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "06/2/25",
-      "source_name": "roomba-100",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
-      "version": "7.3.3"
     },
     {
       "candidate_families": [
@@ -377,36 +1127,6 @@
       "source_name": "roomba-100",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
       "version": "3.1.16"
-    },
-    {
-      "candidate_families": [
-        "205"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "1/5/2026",
-      "source_name": "roomba-200",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
-      "version": "9.3.7"
-    },
-    {
-      "candidate_families": [
-        "205"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "11.21.2025",
-      "source_name": "roomba-200",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
-      "version": "9.3.4"
-    },
-    {
-      "candidate_families": [
-        "205"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "09.17.2025",
-      "source_name": "roomba-200",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
-      "version": "8.6.2"
     },
     {
       "candidate_families": [
@@ -497,26 +1217,6 @@
       "source_name": "roomba-200",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
       "version": "3.1.16"
-    },
-    {
-      "candidate_families": [
-        "405"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "01.05.2026",
-      "source_name": "roomba-plus-400",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
-      "version": "9.3.7"
-    },
-    {
-      "candidate_families": [
-        "405"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "11.21.2025",
-      "source_name": "roomba-plus-400",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
-      "version": "9.3.4"
     },
     {
       "candidate_families": [
@@ -613,56 +1313,6 @@
         "505"
       ],
       "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "12.08.25",
-      "source_name": "roomba-plus-500",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
-      "version": "9.3.6"
-    },
-    {
-      "candidate_families": [
-        "505"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "11.21.25",
-      "source_name": "roomba-plus-500",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
-      "version": "9.3.5"
-    },
-    {
-      "candidate_families": [
-        "505"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "11.21.25",
-      "source_name": "roomba-plus-500",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
-      "version": "9.3.4"
-    },
-    {
-      "candidate_families": [
-        "505"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "08.18.2025",
-      "source_name": "roomba-plus-500",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
-      "version": "8.4.1"
-    },
-    {
-      "candidate_families": [
-        "505"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "07.02.2025",
-      "source_name": "roomba-plus-500",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
-      "version": "7.5.2"
-    },
-    {
-      "candidate_families": [
-        "505"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
       "release_date_text": "06.16.2025",
       "source_name": "roomba-plus-500",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
@@ -723,26 +1373,6 @@
         "705"
       ],
       "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "11.21.25",
-      "source_name": "roomba-max-700",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
-      "version": "9.3.5"
-    },
-    {
-      "candidate_families": [
-        "705"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "11.21.25",
-      "source_name": "roomba-max-700",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
-      "version": "9.3.4"
-    },
-    {
-      "candidate_families": [
-        "705"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
       "release_date_text": "10.23.2025",
       "source_name": "roomba-max-700",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
@@ -757,26 +1387,6 @@
       "source_name": "roomba-max-700",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
       "version": "8.6.5"
-    },
-    {
-      "candidate_families": [
-        "705"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "08.08.2025",
-      "source_name": "roomba-max-700",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
-      "version": "8.4.4"
-    },
-    {
-      "candidate_families": [
-        "705"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "07.02.2025",
-      "source_name": "roomba-max-700",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
-      "version": "7.5.2"
     },
     {
       "candidate_families": [
@@ -824,39 +1434,9 @@
       ],
       "classification": "official-ota-release-evidence-unrecovered",
       "release_date_text": "04.04.2024",
-      "source_name": "roomba-essential",
+      "source_name": "roomba-essential-original",
       "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
       "version": "1.1.5"
-    },
-    {
-      "candidate_families": [
-        "congo"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "10.1.2024",
-      "source_name": "roomba-essential",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
-      "version": "1.2.6"
-    },
-    {
-      "candidate_families": [
-        "congo"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "09.25.2024",
-      "source_name": "roomba-essential",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
-      "version": "1.2.4"
-    },
-    {
-      "candidate_families": [
-        "congo"
-      ],
-      "classification": "official-ota-release-evidence-unrecovered",
-      "release_date_text": "9.25.2024",
-      "source_name": "roomba-essential",
-      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
-      "version": "1.2.2"
     },
     {
       "candidate_families": [
@@ -921,11 +1501,37 @@
       "version": "4.50"
     }
   ],
+  "official_release_unresolved_family": [
+    {
+      "candidate_families": [],
+      "classification": "official-ota-release-evidence-unresolved-family",
+      "release_date_text": "10.1.2024",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.6"
+    },
+    {
+      "candidate_families": [],
+      "classification": "official-ota-release-evidence-unresolved-family",
+      "release_date_text": "09.25.2024",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.4"
+    },
+    {
+      "candidate_families": [],
+      "classification": "official-ota-release-evidence-unresolved-family",
+      "release_date_text": "9.25.2024",
+      "source_name": "roomba-essential-2",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.2"
+    }
+  ],
   "platform_mapping_gaps": [
     {
       "confidence": "app+backend",
       "family": "105",
-      "known_sku_count": 1,
+      "known_sku_count": 2,
       "models": [
         "Roomba 100 (1000) Series combo family"
       ]
@@ -957,7 +1563,7 @@
     {
       "confidence": "backend-only",
       "family": "505",
-      "known_sku_count": 4,
+      "known_sku_count": 5,
       "models": [
         "Roomba Plus 500 Series family"
       ]
@@ -965,7 +1571,7 @@
     {
       "confidence": "backend-only",
       "family": "705",
-      "known_sku_count": 4,
+      "known_sku_count": 5,
       "models": [
         "Roomba Max 700 Series family"
       ]
@@ -1285,6 +1891,20 @@
       "release_tag": "firmware-sanmarino-3.2.5-1067b4ef49ef",
       "sha256": "1067b4ef49efd09f92cca0064f8a6a3fda555bb41510b3d0c1b61ddb81f47e9e",
       "size": 156926425
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-9.3.5-112b9e10bfcc/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base24-ota-release-3.8.148.signed",
+      "catalog_records": [
+        {
+          "family": "505",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base24-ota-release-3.8.148.signed",
+          "version": "9.3.5"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-505-9.3.5-112b9e10bfcc",
+      "sha256": "112b9e10bfcc7d2fa074b9a51510fd7f70ed0281e721cc1dac777fa55a7ee9f8",
+      "size": 161346579
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.01-124d7e74a841/stingray-24.29.01.signed",
@@ -1838,6 +2458,20 @@
       "size": 300451619
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.4-354b6f680214/C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-4.6.146.signed",
+      "catalog_records": [
+        {
+          "family": "405",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-4.6.146.signed",
+          "version": "9.3.4"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-405-9.3.4-354b6f680214",
+      "sha256": "354b6f680214fecce070ee2078300b5319effe84e7f3cf81f624835c70a9a91b",
+      "size": 38847001
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.29.3-35779c441650/lewis222903.signed",
       "catalog_records": [
         {
@@ -1936,6 +2570,20 @@
       "size": 936128
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.4-3a6d005cb07c/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base13-ota-release-3.8.146.signed",
+      "catalog_records": [
+        {
+          "family": "705",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base13-ota-release-3.8.146.signed",
+          "version": "9.3.4"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-705-9.3.4-3a6d005cb07c",
+      "sha256": "3a6d005cb07ce60db77bcfe986558b718cff259466d5706d0e692f0288cac090",
+      "size": 156865948
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.3.0-3b2b7f5296d3/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
       "catalog_records": [
         {
@@ -1948,6 +2596,34 @@
       "release_tag": "firmware-105v-9.3.0-3b2b7f5296d3",
       "sha256": "3b2b7f5296d35a467385015935fd1da4264089562784c05fc2bf140bd70d579d",
       "size": 38363998
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.3.6-3c30d2c7e550/C3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.7.149.signed",
+      "catalog_records": [
+        {
+          "family": "105",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.7.149.signed",
+          "version": "9.3.6"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105-9.3.6-3c30d2c7e550",
+      "sha256": "3c30d2c7e550832044674f0d22193d1379764f742eb3004be354441415e39ca3",
+      "size": 37886893
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-9.3.6-414a62446f87/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base24-ota-release-3.8.149.signed",
+      "catalog_records": [
+        {
+          "family": "505",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base24-ota-release-3.8.149.signed",
+          "version": "9.3.6"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-505-9.3.6-414a62446f87",
+      "sha256": "414a62446f87ee6fb3a4140be2951e8c7cebdcedbc33e982f244a5836aef2feb",
+      "size": 160594341
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31412-41a490c5756c/soho31412.signed",
@@ -2118,6 +2794,20 @@
       "size": 156922329
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.4-46aa97fbf54b/CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-4.6.146.signed",
+      "catalog_records": [
+        {
+          "family": "205",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-4.6.146.signed",
+          "version": "9.3.4"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-205-9.3.4-46aa97fbf54b",
+      "sha256": "46aa97fbf54bdb94a37a52015a5fe01acad50e5af9095ece1a065fcd4e88417c",
+      "size": 39883188
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.7.2-4797f22515bb/sanmarino220702.signed",
       "catalog_records": [
         {
@@ -2216,6 +2906,20 @@
       "size": 156520909
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.4-4d36275f80a8/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-5.3.146.signed",
+      "catalog_records": [
+        {
+          "family": "705",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-5.3.146.signed",
+          "version": "9.3.4"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-705-9.3.4-4d36275f80a8",
+      "sha256": "4d36275f80a8d6612eae52dc670548c6878b3c2da121cbf03899dfb4826cf8b9",
+      "size": 157638094
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3612-4e089459e7e5/lewis3612.signed",
       "catalog_records": [
         {
@@ -2228,6 +2932,20 @@
       "release_tag": "firmware-lewis-v3612-4e089459e7e5",
       "sha256": "4e089459e7e573557bc33874ceb60f421494c44c5a412b5c8ee27aada09adb3b",
       "size": 160092626
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.7-503d4bc4024e/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-4.6.150.signed",
+      "catalog_records": [
+        {
+          "family": "405",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-4.6.150.signed",
+          "version": "9.3.7"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-405-9.3.7-503d4bc4024e",
+      "sha256": "503d4bc4024e6515aa27b805bb369b49f1b5c3a2a2507d592a17f837dca00f03",
+      "size": 38347039
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-elpaso-2.4.6-3-50759ba5ff90/elpasov2463.signed",
@@ -2438,6 +3156,34 @@
       "release_tag": "firmware-stingray-24.29.03-5e258f35a202",
       "sha256": "5e258f35a202fb6752e004eba4b3f0c2d0d39cd254db6e8a93668cd796b9799a",
       "size": 259696429
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-8.6.0-5e6880a97e71/V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.6.124.signed",
+      "catalog_records": [
+        {
+          "family": "105v",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.6.124.signed",
+          "version": "8.6.0"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105v-8.6.0-5e6880a97e71",
+      "sha256": "5e6880a97e71d0618dd0316e2fc95c316dee57f087ecd74341ba4404a5f36605",
+      "size": 38360968
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.5-5eadf5d91ce4/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-5.3.148.signed",
+      "catalog_records": [
+        {
+          "family": "705",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-5.3.148.signed",
+          "version": "9.3.5"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-705-9.3.5-5eadf5d91ce4",
+      "sha256": "5eadf5d91ce4647bbd0b8f4538d00d7129163f6947b99e91152206537d16a7df",
+      "size": 157265935
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.29.5-5f26fa8ae8e2/sanmarino222905.signed",
@@ -2676,6 +3422,20 @@
       "release_tag": "firmware-soho-v383-69a4bc47f857",
       "sha256": "69a4bc47f85738b80d6a53e0dfbd47e292149403cc88b62f65a6612d3c7e6fe3",
       "size": 160297423
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-7.5.2-6b854399257a/V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.6.113.signed",
+      "catalog_records": [
+        {
+          "family": "105v",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.6.113.signed",
+          "version": "7.5.2"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105v-7.5.2-6b854399257a",
+      "sha256": "6b854399257ac5e40bd74282d6030c50544b249960d1d883855fdc02039dde9f",
+      "size": 38732066
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.10.7-6be30ffab555/lewis3107.signed",
@@ -2958,6 +3718,20 @@
       "size": 250287910
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-8.6.0-7e2b56bd9096/C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.7.124.signed",
+      "catalog_records": [
+        {
+          "family": "105",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.7.124.signed",
+          "version": "8.6.0"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105-8.6.0-7e2b56bd9096",
+      "sha256": "7e2b56bd9096777e8c61d197cab8edfab3eeac946d7e5604114ec8817582468f",
+      "size": 38350094
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-8.6.2-7ea399e73628/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
       "catalog_records": [
         {
@@ -3145,6 +3919,34 @@
       "size": 176795296
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-7.5.2-8cc70155cebe/C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.7.113.signed",
+      "catalog_records": [
+        {
+          "family": "105",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.7.113.signed",
+          "version": "7.5.2"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105-7.5.2-8cc70155cebe",
+      "sha256": "8cc70155cebeff5f633245f914dba993ef44598f23e8badded8a25b39ae2945d",
+      "size": 38723672
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.7-8e890bd4dc3a/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-4.6.150.signed",
+      "catalog_records": [
+        {
+          "family": "205",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-4.6.150.signed",
+          "version": "9.3.7"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-205-9.3.7-8e890bd4dc3a",
+      "sha256": "8e890bd4dc3a2b1015e04f11326db2bc39f60d93477325d90e45d501c70bdd0f",
+      "size": 39383947
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.0-8f1d7fd48467/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
       "catalog_records": [
         {
@@ -3290,6 +4092,20 @@
       "size": 936128
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-7.3.3-9e2eea36ab66/V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.6.105.signed",
+      "catalog_records": [
+        {
+          "family": "105v",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.6.105.signed",
+          "version": "7.3.3"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105v-7.3.3-9e2eea36ab66",
+      "sha256": "9e2eea36ab66e59a830914ddb1ae7788aac1a3480176c145d3debef1ccf20408",
+      "size": 38707356
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3187-a06d9cd7b9b7/sanmarino3187.signed",
       "catalog_records": [
         {
@@ -3346,6 +4162,20 @@
       "size": 252076463
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.4.8-a24f1c946909/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.7.152.signed",
+      "catalog_records": [
+        {
+          "family": "105",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.7.152.signed",
+          "version": "9.4.8"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105-9.4.8-a24f1c946909",
+      "sha256": "a24f1c9469098509850777a020bd3b89cf28420c48a88718cf940bfa162ce300",
+      "size": 37886004
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.6-a2f64b0a5063/soho222906.signed",
       "catalog_records": [
         {
@@ -3358,6 +4188,20 @@
       "release_tag": "firmware-soho-22.29.6-a2f64b0a5063",
       "sha256": "a2f64b0a5063ca2ed72578a73de4455723d780fb0b8b76307b1ed6f5456b0c18",
       "size": 259387818
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-9.3.4-a333caa9f425/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base24-ota-release-3.8.146.signed",
+      "catalog_records": [
+        {
+          "family": "505",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base24-ota-release-3.8.146.signed",
+          "version": "9.3.4"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-505-9.3.4-a333caa9f425",
+      "sha256": "a333caa9f425a42c811fe65d0e2c245fd19556028e7afaf7a19354c603ceb5e8",
+      "size": 161692653
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.53.06-a3af213e0cea/stingray-23.53.06.signed",
@@ -3484,6 +4328,20 @@
       "release_tag": "firmware-lewis-v3127-ac5ef37b91ee",
       "sha256": "ac5ef37b91eea9cfb1dfae2479634c8e890a7c4b73577e2567341f5f42ba9831",
       "size": 163545551
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-7.3.6-affbbeb3a2b9/C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.7.109.signed",
+      "catalog_records": [
+        {
+          "family": "105",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.7.109.signed",
+          "version": "7.3.6"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105-7.3.6-affbbeb3a2b9",
+      "sha256": "affbbeb3a2b941ce3eda2ccce1fd9534e11cfa92eb85f05abe31eae1d30d1beb",
+      "size": 38703684
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.8.3-b016ee8fc5f3/lewis383.signed",
@@ -3766,6 +4624,20 @@
       "size": 234272548
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-7.3.6-c0241b979f3f/V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.6.109.signed",
+      "catalog_records": [
+        {
+          "family": "105v",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.6.109.signed",
+          "version": "7.3.6"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105v-7.3.6-c0241b979f3f",
+      "sha256": "c0241b979f3fad218cd46917fa30a3289dbd90efcf7c3c3d0a81bb2cf5769262",
+      "size": 38709061
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v366-c064c87b3c91/soho366.signed",
       "catalog_records": [
         {
@@ -3839,6 +4711,20 @@
       "release_tag": "firmware-lewis-v3206-c384bdc09faf",
       "sha256": "c384bdc09faf1ed10a2e33564cd66d5f704250f7e4a839e643b1ede7d37cd181",
       "size": 206733780
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-8.4.1-c6923e29e55f/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-3.8.118.signed",
+      "catalog_records": [
+        {
+          "family": "505",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-3.8.118.signed",
+          "version": "8.4.1"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-505-8.4.1-c6923e29e55f",
+      "sha256": "c6923e29e55f2875549837746b999ec12f7075b007c77659fbe80b46be726adb",
+      "size": 159766444
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31412-c71f8fab9b7f/sanmarino31412.signed",
@@ -3939,6 +4825,20 @@
       "size": 199643584
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-7.5.2-ccd0d0d79ea1/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-3.8.113.signed",
+      "catalog_records": [
+        {
+          "family": "705",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-3.8.113.signed",
+          "version": "7.5.2"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-705-7.5.2-ccd0d0d79ea1",
+      "sha256": "ccd0d0d79ea1a0b72fd1fdfae5e3201e99f5db5f4199c5b0c1ddb8dee1281d73",
+      "size": 156938241
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.2.2-cda4b2af92e1/daredevil222.signed",
       "catalog_records": [
         {
@@ -3993,6 +4893,20 @@
       "release_tag": "firmware-stingray-23.37.71-d3f45ea42fba",
       "sha256": "d3f45ea42fbab53d92b5e60d340764ad1c9aaef467e1660851a87a907197a775",
       "size": 250287910
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-8.6.2-d413606402af/CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-4.6.125.signed",
+      "catalog_records": [
+        {
+          "family": "205",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-4.6.125.signed",
+          "version": "8.6.2"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-205-8.6.2-d413606402af",
+      "sha256": "d413606402af5b92dd7906951a42ff00b80da9cf583b5dfa6b84d16fb38c529d",
+      "size": 39862480
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3148-d4306294aaca/soho3148.signed",
@@ -4392,6 +5306,34 @@
       "size": 144331351
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-8.4.4-f02f7683f10b/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base36-ota-release-5.3.122.signed",
+      "catalog_records": [
+        {
+          "family": "705",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base36-ota-release-5.3.122.signed",
+          "version": "8.4.4"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-705-8.4.4-f02f7683f10b",
+      "sha256": "f02f7683f10b459c952f187f81d9164644b00079644e9fe026b3136193782557",
+      "size": 155452934
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-7.3.3-f0ea758336a6/C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.7.105.signed",
+      "catalog_records": [
+        {
+          "family": "105",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.7.105.signed",
+          "version": "7.3.3"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105-7.3.3-f0ea758336a6",
+      "sha256": "f0ea758336a6a528c96c427ae2a4f333ea5ce41949304fe879fa2deb38eae0af",
+      "size": 38698495
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2410-f1dd6e0d77cf/roomba9xxv2410.signed",
       "catalog_records": [
         {
@@ -4446,6 +5388,20 @@
       "release_tag": "firmware-roomba9xx-v2415-f4f4712f6e77",
       "sha256": "f4f4712f6e77a328ba607a2fff50016d2e0206be0eb3c35d95b98b37a9e6cdcd",
       "size": 2826856
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.4.8-f56b4f9b5ead/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.6.152.signed",
+      "catalog_records": [
+        {
+          "family": "105v",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.6.152.signed",
+          "version": "9.4.8"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105v-9.4.8-f56b4f9b5ead",
+      "sha256": "f56b4f9b5eadfcd6eb87fafbb4b0cd6796ec1af83ef4d8ba2b0790751e94c778",
+      "size": 38150742
     },
     {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v089-f5a3a6a46b27/ruby089.signed",
@@ -4518,6 +5474,34 @@
       "size": 156844505
     },
     {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-7.5.2-f9bee32f197f/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base22-ota-release-3.8.113.signed",
+      "catalog_records": [
+        {
+          "family": "505",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base22-ota-release-3.8.113.signed",
+          "version": "7.5.2"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-505-7.5.2-f9bee32f197f",
+      "sha256": "f9bee32f197fa619f8de01eb753628467e57d005512daff07c349b84850518fc",
+      "size": 161956235
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.3.6-f9edcdef5abf/V3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.6.149.signed",
+      "catalog_records": [
+        {
+          "family": "105v",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.6.149.signed",
+          "version": "9.3.6"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105v-9.3.6-f9edcdef5abf",
+      "sha256": "f9edcdef5abff5e67fefeadf0025c0411050e2a85ed8deaf6df8a968f84799e9",
+      "size": 37899311
+    },
+    {
       "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.05-fa399823e009/stingray-24.29.05.signed",
       "catalog_records": [
         {
@@ -4576,6 +5560,33 @@
   ],
   "research_sources": [
     {
+      "file": "505-official-gap-field-sweep-2026-08-30.json",
+      "hit_count": 5,
+      "negative_probe_count": 13371,
+      "probe_count": 13376
+    },
+    {
+      "file": "505-older-official-gap-field-sweep-2026-08-30.json",
+      "hit_count": 0,
+      "negative_probe_count": 12425,
+      "probe_count": 12425
+    },
+    {
+      "file": "705-expanded-official-gap-field-sweep-2026-08-30.json",
+      "hit_count": 5,
+      "negative_probe_count": 11443,
+      "probe_count": 11448
+    },
+    {
+      "file": "705-official-gap-field-sweep-2026-08-30.json",
+      "hit_count": 5,
+      "negative_probe_count": 697,
+      "probe_count": 702
+    },
+    {
+      "file": "705-public-device-state-evidence-2026-08-30.json"
+    },
+    {
       "file": "altadena-enc-structure-2026-08-30.json"
     },
     {
@@ -4609,6 +5620,9 @@
       "probe_count": 17015
     },
     {
+      "file": "e-series-3.4.62-real-device-evidence-2026-08-30.json"
+    },
+    {
       "file": "essential2-altadena-and-listing-followup-2026-08-30.json"
     },
     {
@@ -4635,10 +5649,19 @@
       "probe_count": 16
     },
     {
+      "file": "modern-fixed-branch-build-sweep-2026-08-30.json",
+      "hit_count": 14,
+      "negative_probe_count": 7392,
+      "probe_count": 7406
+    },
+    {
       "file": "modern-release-gap-known-suffix-probes-2026-08-30.json",
       "hit_count": 0,
       "negative_probe_count": 400,
       "probe_count": 400
+    },
+    {
+      "file": "official-gap-dispositions-current.json"
     },
     {
       "file": "official-irobot-accessories-sku-api-probe-2026-08-29.json"
@@ -4648,6 +5671,9 @@
       "hit_count": 2,
       "negative_probe_count": 40,
       "probe_count": 42
+    },
+    {
+      "file": "official-release-gap-v2-matrix-2026-08-30.json"
     },
     {
       "file": "official-release-note-artifact-gaps-current.json"
@@ -4679,11 +5705,11 @@
   "schema": 1,
   "summary": {
     "byte_identical_alias_catalog_record_count": 5,
-    "catalog_record_count": 256,
-    "catalog_records_with_archive_sha256": 256,
+    "catalog_record_count": 283,
+    "catalog_records_with_archive_sha256": 283,
     "exhausted_or_unrecoverable_count": 0,
     "formats": {
-      "irobot-apkg": 42,
+      "irobot-apkg": 69,
       "irobot-otps": 186,
       "opaque-enc": 2,
       "swupdate-cpio": 26
@@ -4691,11 +5717,15 @@
     "historical_software_state_count": 14,
     "historical_state_only_count": 14,
     "independently_proven_missing_ota_artifact_count": 0,
+    "known_evidence_disposition_coverage_percent": 100.0,
     "official_factory_state_only_count": 6,
-    "official_release_evidence_gap_count": 71,
+    "official_gap_disposition_count": 51,
+    "official_gap_undispositioned_count": 0,
+    "official_release_evidence_gap_count": 48,
+    "official_release_unresolved_family_count": 3,
     "platform_mapping_gap_count": 15,
-    "recorded_negative_probe_count": 59342,
+    "recorded_negative_probe_count": 104670,
     "unarchived_catalog_record_count": 0,
-    "unique_recovered_artifact_sha256_count": 251
+    "unique_recovered_artifact_sha256_count": 278
   }
 }

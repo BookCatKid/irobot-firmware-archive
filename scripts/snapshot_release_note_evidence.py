@@ -52,6 +52,10 @@ def _matching_catalog_rows(catalog: dict[str, Any], families: list[str], version
     for row in catalog.get("firmwares", []):
         if families and str(row.get("family")) not in families:
             continue
+        # Discovery alone is not recovery. Only count a release-note entry as
+        # recovered after the exact firmware bytes have archival metadata.
+        if not (row.get("archive") or {}).get("sha256"):
+            continue
         row_versions = _row_versions(row)
         exact = version in row_versions
         numeric = bool(
@@ -81,6 +85,12 @@ def build_snapshot(config: dict[str, Any], catalog: dict[str, Any]) -> dict[str,
         }
         try:
             parsed = release_note_entries(str(notes["url"]))
+            include_versions = {str(value) for value in notes.get("include_versions", [])}
+            exclude_versions = {str(value) for value in notes.get("exclude_versions", [])}
+            if include_versions:
+                parsed = [entry for entry in parsed if str(entry.get("version")) in include_versions]
+            if exclude_versions:
+                parsed = [entry for entry in parsed if str(entry.get("version")) not in exclude_versions]
         except Exception as exc:
             source["error"] = f"{type(exc).__name__}: {exc}"
             errors.append({"name": notes.get("name"), "url": notes.get("url"), "error": source["error"]})
@@ -90,11 +100,17 @@ def build_snapshot(config: dict[str, Any], catalog: dict[str, Any]) -> dict[str,
         sources.append(source)
         for entry in parsed:
             version = str(entry["version"])
-            matches = _matching_catalog_rows(catalog, families, version)
+            # An empty family set means the release is independently evidenced
+            # but its OTA/deployment family has not been resolved yet. Do not
+            # accidentally match an unrelated catalog row that happens to use
+            # the same numeric version.
+            matches = _matching_catalog_rows(catalog, families, version) if families else []
             if entry.get("factory_only"):
                 classification = "factory-state-only"
             elif matches:
                 classification = "recovered-release"
+            elif not families:
+                classification = "official-ota-release-evidence-unresolved-family"
             else:
                 classification = "official-ota-release-evidence-unrecovered"
             entries.append({
@@ -125,6 +141,9 @@ def build_snapshot(config: dict[str, Any], catalog: dict[str, Any]) -> dict[str,
             "entry_count": len(entries),
             "recovered_release_count": sum(x["classification"] == "recovered-release" for x in entries),
             "factory_state_only_count": sum(x["classification"] == "factory-state-only" for x in entries),
+            "official_ota_release_evidence_unresolved_family_count": sum(
+                x["classification"] == "official-ota-release-evidence-unresolved-family" for x in entries
+            ),
             "official_ota_release_evidence_unrecovered_count": sum(
                 x["classification"] == "official-ota-release-evidence-unrecovered" for x in entries
             ),
@@ -161,6 +180,7 @@ def main() -> int:
         f"{summary['entry_count']} official release-note entries; "
         f"{summary['recovered_release_count']} recovered; "
         f"{summary['factory_state_only_count']} factory-only; "
+        f"{summary['official_ota_release_evidence_unresolved_family_count']} unresolved-family; "
         f"{summary['official_ota_release_evidence_unrecovered_count']} unrecovered OTA-release evidence; "
         f"errors={summary['source_error_count']}"
     )

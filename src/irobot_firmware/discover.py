@@ -578,12 +578,42 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
             except Exception as exc:
                 errors.append(f"direct {family.get('family')} {version}: {exc}")
 
+    # Exact object probes preserve evidence that includes the complete OTA
+    # filename (for example a real robot's p25 build identity mapped onto the
+    # already verified iRobot CDN filename skeleton).  Keeping these separate
+    # from version-template scans makes the provenance explicit and avoids
+    # turning one exact lead into a speculative combinatorial search.
+    for probe in cfg.get("exact_object_probes", []):
+        try:
+            hit = direct_probe(str(probe["family"]), str(probe["version"]), str(probe["url"]))
+            if hit:
+                hit["source"] = "exact-object-probe"
+                for key in (
+                    "evidence",
+                    "evidence_url",
+                    "source_sku",
+                    "software_identity",
+                    "release_notes_url",
+                    "release_notes_version",
+                ):
+                    if probe.get(key) is not None:
+                        hit[key] = probe[key]
+                records.append(hit)
+        except Exception as exc:
+            errors.append(f"exact {probe.get('family')} {probe.get('version')}: {exc}")
+
     # Official release notes act as a low-cost candidate-version feed. This matters for families
     # such as sapphire where the content API may return an empty eligibility list even though
     # a newer firmware version exists publicly.
     for notes in cfg.get("release_note_probes", []):
         try:
             note_entries = release_note_entries(notes["url"])
+            include_versions = {str(value) for value in notes.get("include_versions", [])}
+            exclude_versions = {str(value) for value in notes.get("exclude_versions", [])}
+            if include_versions:
+                note_entries = [entry for entry in note_entries if str(entry.get("version")) in include_versions]
+            if exclude_versions:
+                note_entries = [entry for entry in note_entries if str(entry.get("version")) not in exclude_versions]
             # Factory-only/no-OTA states are valuable completeness evidence but
             # are not useful inputs for direct OTA-object filename probing.
             versions = sorted({entry["version"] for entry in note_entries if not entry["factory_only"]})

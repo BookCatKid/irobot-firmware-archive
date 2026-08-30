@@ -1,0 +1,21 @@
+{
+  "artifact_conclusion": "No exact OTA filename, p25 build suffix, or downloadable object is established by this device-state report. It must not be promoted to a missing artifact URL by inference.",
+  "evidence": [
+    {
+      "dock_version": "41",
+      "kind": "public-real-device-report",
+      "model": "Roomba Max 705 Combo",
+      "observation": "Multiple owners report robot software 8.6.8 on 705 Combo hardware; one later reports 9.3.4. This corroborates deployment of the official 8.6.8 software state but does not expose a package filename/build identity.",
+      "observed_date": "2025-11-02",
+      "software_version": "8.6.8",
+      "url": "https://www.reddit.com/r/roomba/comments/1ommsyn/705_combo_dock_software_version/"
+    }
+  ],
+  "generated_at": "2026-08-30T19:57:08.463240+00:00",
+  "related_research": [
+    "705-expanded-official-gap-field-sweep-2026-08-30.json",
+    "official-release-gap-v2-matrix-2026-08-30.json"
+  ],
+  "schema": 1,
+  "subject": "Roomba Max 705 public installed-version evidence"
+}

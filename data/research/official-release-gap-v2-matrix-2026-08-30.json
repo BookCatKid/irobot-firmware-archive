@@ -1,0 +1,115 @@
+{
+  "conclusion": "The current public V2 API routes these historical/current release-note inputs only to already archived firmware deployments; it does not expose exact package objects for the remaining support-page versions.",
+  "error_count": 0,
+  "generated_at": "2026-08-30T18:31:48.640571+00:00",
+  "method": "Every official unrecovered modern support-page version was queried against every configured evidence-backed SKU for that support family using prod, beta, and blank track. targetSoftwareVer echo is not used as validation; only returned firmware deployment objects are recorded.",
+  "responses_with_firmware": 238,
+  "schema": 1,
+  "task_count": 648,
+  "unique_returned_deployments": [
+    {
+      "deploymentMpkg": "105v/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-q31-q35/package/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-q31-q35/metapackage/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
+      "returned_version": "9.3.0",
+      "sku": "Q352020",
+      "source": "roomba-100"
+    },
+    {
+      "deploymentMpkg": "105/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-y31-y35/package/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-y31-y35/metapackage/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
+      "returned_version": "9.3.0",
+      "sku": "Y351020",
+      "source": "roomba-100"
+    },
+    {
+      "deploymentMpkg": "205/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-l11-l12-u11/package/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-l11-l12-u11/metapackage/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
+      "returned_version": "9.3.0",
+      "sku": "L124020",
+      "source": "roomba-200"
+    },
+    {
+      "deploymentMpkg": "405/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-g10-g18/package/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-g10-g18/metapackage/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
+      "returned_version": "9.3.0",
+      "sku": "G185020",
+      "source": "roomba-plus-400"
+    },
+    {
+      "deploymentMpkg": "505/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/package/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/metapackage/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+      "returned_version": "8.6.2",
+      "sku": "N185020",
+      "source": "roomba-plus-500"
+    },
+    {
+      "deploymentMpkg": "505/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/package/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/metapackage/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+      "returned_version": "8.6.2",
+      "sku": "N186020",
+      "source": "roomba-plus-500"
+    },
+    {
+      "deploymentMpkg": "705/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/package/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/metapackage/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "returned_version": "8.6.2",
+      "sku": "K155020",
+      "source": "roomba-max-700"
+    },
+    {
+      "deploymentMpkg": "705/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/package/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/metapackage/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "returned_version": "8.6.2",
+      "sku": "W155020",
+      "source": "roomba-max-700"
+    },
+    {
+      "deploymentMpkg": "705/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/package/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/metapackage/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "returned_version": "8.6.2",
+      "sku": "W155220",
+      "source": "roomba-max-700"
+    },
+    {
+      "deploymentMpkg": "705/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.6-x1/package/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.6-x1/metapackage/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+      "returned_version": "9.3.6",
+      "sku": "X185020",
+      "source": "roomba-max-700"
+    },
+    {
+      "deploymentMpkg": "705/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.6-x1/package/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.6-x1/metapackage/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+      "returned_version": "9.3.6",
+      "sku": "X186020",
+      "source": "roomba-max-700"
+    },
+    {
+      "deploymentMpkg": "congo/congo-01.01.18-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/1.1.18-congo/package/congo-01.01.18-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/1.1.18-congo/metapackage/congo-01.01.18-prod.meta.signed",
+      "returned_version": "1.1.18",
+      "sku": "Q012020",
+      "source": "roomba-essential"
+    },
+    {
+      "deploymentMpkg": "congo/congo-01.01.18-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/1.1.18-congo/package/congo-01.01.18-prod.meta.signed",
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/1.1.18-congo/metapackage/congo-01.01.18-prod.meta.signed",
+      "returned_version": "1.1.18",
+      "sku": "Y014020",
+      "source": "roomba-essential"
+    }
+  ]
+}

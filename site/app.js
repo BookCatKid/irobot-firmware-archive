@@ -1,4 +1,4 @@
-const state = { catalog: null, auxiliary: null, audio: null, platforms: {}, selected: null };
+const state = { catalog: null, auxiliary: null, audio: null, completeness: null, platforms: {}, selected: null };
 
 const $ = (q) => document.querySelector(q);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -19,15 +19,17 @@ const sourceUrl = (f) => f.archive?.asset_url || f.url;
 const kv = (key, value, mono=false) => `<div class="kv"><span class="key">${esc(key)}</span><span class="value${mono?' mono':''}">${value ?? '—'}</span></div>`;
 
 async function load() {
-  const [catRes, platformRes, auxRes] = await Promise.all([
+  const [catRes, platformRes, auxRes, completenessRes] = await Promise.all([
     fetch("data/catalog.json", {cache:"no-store"}),
     fetch("data/platforms.json", {cache:"no-store"}),
-    fetch("data/auxiliary-firmware.json", {cache:"no-store"})
+    fetch("data/auxiliary-firmware.json", {cache:"no-store"}),
+    fetch("data/completeness.json", {cache:"no-store"})
   ]);
   if (!catRes.ok) throw new Error(`catalog HTTP ${catRes.status}`);
   state.catalog = await catRes.json();
   if (platformRes.ok) state.platforms = (await platformRes.json()).platforms || {};
   if (auxRes.ok) state.auxiliary = await auxRes.json();
+  if (completenessRes.ok) state.completeness = await completenessRes.json();
   renderInitial();
 
   // The audio index is several megabytes and is deliberately non-critical to
@@ -53,7 +55,7 @@ async function loadAudio() {
     state.audio = null;
     summary.textContent = `Audio index unavailable: ${err.message}`;
     $("#audioResultCount").textContent = "";
-    $("#audioCatalog").innerHTML = `<tr><td colspan="6" class="muted">Could not load embedded-audio metadata. The firmware catalog is still available.</td></tr>`;
+    $("#audioCatalog").innerHTML = `<tr><td colspan="7" class="muted">Could not load embedded-audio metadata. The firmware catalog is still available.</td></tr>`;
   }
 }
 
@@ -66,6 +68,16 @@ function renderArchiveSummary() {
   const nestedFirmwareCount = state.auxiliary?.summary?.unique_firmware_payload_sha256_count || 0;
   const audioVariantCount = state.audio?.summary?.unique_sha256_count || 0;
   $("#summary").textContent = `${list.length} builds · ${families.length} platforms · ${archivedCount} archived · ${auxCount} auxiliary bundles · ${nestedFirmwareCount} nested firmware payloads · ${audioVariantCount.toLocaleString()} audio variants · ${fmtBytes(knownBytes)} indexed`;
+  const c = state.completeness?.summary;
+  if (c) {
+    const coverage = Number(c.known_evidence_disposition_coverage_percent ?? 0);
+    const unresolved = Number(c.official_release_evidence_gap_count || 0);
+    const unresolvedFamily = Number(c.official_release_unresolved_family_count || 0);
+    const unresolvedTotal = unresolved + unresolvedFamily;
+    $("#completenessSummary").textContent = `${coverage.toFixed(coverage % 1 ? 1 : 0)}% of ${unresolvedTotal.toLocaleString()} known unresolved release clues dispositioned · ${unresolvedTotal.toLocaleString()} official OTA releases still unrecovered · ${unresolvedFamily.toLocaleString()} unresolved family mappings`;
+  } else {
+    $("#completenessSummary").textContent = "Completeness evidence unavailable.";
+  }
 }
 
 function renderInitial() {
@@ -110,14 +122,53 @@ function renderAudio() {
   $("#audioResultCount").textContent = filtered.length > shown.length
     ? `${filtered.length.toLocaleString()} matches · showing ${shown.length}`
     : `${filtered.length.toLocaleString()} ${filtered.length === 1 ? 'sound' : 'sounds'}`;
-  $("#audioCatalog").innerHTML = shown.map(x => `<tr>
+  $("#audioCatalog").innerHTML = shown.map((x, index) => {
+    const d = x.representative || {};
+    const parent = d.parent_asset_url
+      ? `<a href="${esc(d.parent_asset_url)}">${esc(d.parent_family)} ${esc(d.parent_version)} ↓</a>`
+      : '—';
+    const provenance = d.source_path
+      ? `<span class="mono model-primary">${esc(d.source_path)}</span><span class="model-secondary mono">${esc(String(d.sha256 || '').slice(0, 20))}… · ${esc(fmtBytes(d.size))}</span>`
+      : '—';
+    const action = d.parent_asset_url && d.component_payload_offset != null && d.component_size
+      ? `<button class="small-button audio-extract-button" type="button" data-audio-index="${index}">copy extract</button>`
+      : '—';
+    return `<tr>
     <td><span class="mono">${esc(x.name)}</span><span class="model-secondary">.${esc(x.extension)}</span></td>
     <td>${esc(x.category)}</td>
     <td class="mono">${esc(x.language || '—')}</td>
     <td>${Number(x.unique_variant_count || 0).toLocaleString()}</td>
-    <td>${Number(x.parent_firmware_count || 0).toLocaleString()}</td>
-    <td><span class="model-primary">${esc((x.families || []).join(', ') || '—')}</span></td>
-  </tr>`).join("") || `<tr><td colspan="6" class="muted">No matching embedded audio.</td></tr>`;
+    <td>${parent}<span class="model-secondary">${Number(x.parent_firmware_count || 0).toLocaleString()} parent builds · ${(x.families || []).map(esc).join(', ')}</span></td>
+    <td>${provenance}</td>
+    <td>${action}</td>
+  </tr>`;
+  }).join("") || `<tr><td colspan="7" class="muted">No matching embedded audio.</td></tr>`;
+
+  $("#audioCatalog").querySelectorAll("button[data-audio-index]").forEach(button => {
+    button.addEventListener("click", async () => {
+      const sound = shown[Number(button.dataset.audioIndex)];
+      if (!sound?.representative) return;
+      const d = sound.representative;
+      const quote = value => `'${String(value).replace(/\\/g, '\\\\').replace(/'/g, "\\'")}'`;
+      const output = `${sound.name}.${sound.extension}`;
+      const command = [
+        "python3 scripts/extract_audio_from_firmware.py",
+        `--asset-url ${quote(d.parent_asset_url)}`,
+        `--component-offset ${Number(d.component_payload_offset)}`,
+        `--component-size ${Number(d.component_size)}`,
+        d.component_sha256 ? `--component-sha256 ${quote(d.component_sha256)}` : "",
+        `--path ${quote(d.source_path)}`,
+        `--sha256 ${quote(d.sha256)}`,
+        `--output ${quote(output)}`,
+      ].filter(Boolean).join(" ");
+      try {
+        await navigator.clipboard.writeText(command);
+        $("#audioActionStatus").textContent = `Copied extraction command for ${sound.name}.${sound.extension}. Run it from a clone of this repository (requires unsquashfs).`;
+      } catch (err) {
+        $("#audioActionStatus").textContent = `Could not access clipboard: ${err.message}`;
+      }
+    });
+  });
 }
 
 function auxFirmwarePayloads() {

@@ -215,10 +215,18 @@
         "N185020",
         "N285020",
         "R185020",
-        "n100000"
+        "n100000",
+        "N185040"
       ],
       "confidence": "backend-only",
-      "evidence": []
+      "evidence": [
+        {
+          "kind": "real-device-discovery-log",
+          "sku": "N185040",
+          "softwareVer": "p25-505+9.3.6+I3.8.149",
+          "source": "https://community.jeedom.com/t/fresh-install-erreur-lors-de-lajout-du-robot/146507"
+        }
+      ]
     },
     "705": {
       "type": "OTA deployment family identifier",
@@ -231,10 +239,18 @@
         "K155020",
         "W155020",
         "X185020",
-        "w100000"
+        "w100000",
+        "X185240"
       ],
       "confidence": "backend-only",
-      "evidence": []
+      "evidence": [
+        {
+          "kind": "real-device-discovery-log",
+          "sku": "X185240",
+          "softwareVer": "p25-705+9.3.6+I5.3.149",
+          "source": "https://community.jeedom.com/t/decouverte-qui-echoue-a-chaque-fois/146889"
+        }
+      ]
     },
     "congo": {
       "type": "internal firmware platform/codename",
@@ -319,7 +335,8 @@
         "Roomba 100 (1000) Series combo family"
       ],
       "known_skus": [
-        "Y351020"
+        "Y351020",
+        "Y311240"
       ],
       "confidence": "app+backend",
       "evidence": [
@@ -332,6 +349,12 @@
           "kind": "content-api",
           "sku": "Y351020",
           "deployment_family": "105"
+        },
+        {
+          "kind": "real-device-discovery-log",
+          "sku": "Y311240",
+          "softwareVer": "p25-105+9.3.6+I3.7.149",
+          "source": "https://community.jeedom.com/t/roomba-105-bien-vu-par-le-plugin-mais-nest-pas-cree/148506"
         }
       ]
     },

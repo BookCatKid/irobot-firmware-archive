@@ -59,12 +59,22 @@ class CatalogTests(unittest.TestCase):
             manifest_rel = "firmware/sapphire/example.json"
             manifest_path = data_root / manifest_rel
             manifest_path.parent.mkdir(parents=True)
-            manifest_path.write_text(json.dumps({"components": [{"filesystem_analysis": {"files": [
+            manifest_path.write_text(json.dumps({"components": [{
+                "index": 3,
+                "payload_offset": 1234,
+                "size": 5678,
+                "sha256": "e" * 64,
+                "filesystem_analysis": {"files": [
                 {"path": "opt/irobot/audio/songs/startup.opus", "type": "file", "size": 10, "sha256": "a" * 64},
                 {"path": "opt/irobot/audio/languages/de-DE/bin-full.opus", "type": "file", "size": 20, "sha256": "b" * 64},
                 {"path": "etc/not-audio.txt", "type": "file", "size": 2, "sha256": "c" * 64},
             ]}}]}))
-            archive = {"manifest": manifest_rel, "sha256": "d" * 64, "release_tag": "firmware-sapphire-example"}
+            archive = {
+                "manifest": manifest_rel,
+                "sha256": "d" * 64,
+                "release_tag": "firmware-sapphire-example",
+                "asset_url": "https://example.invalid/firmware.signed",
+            }
             catalog = {"updated_at": "stamp", "firmwares": [
                 {"family": "sapphire", "version": "1", "release_date": "2024-01-01", "archive": dict(archive)},
                 {"family": "sapphire", "version": "alias", "release_date": "2024-01-01", "archive": dict(archive)},
@@ -80,6 +90,13 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(startup["families"], ["sapphire"])
         self.assertEqual(startup["first_seen"]["version"], "1")
         self.assertEqual(startup["last_seen"]["date"], "2024-01-01")
+        self.assertEqual(startup["representative"]["source_path"], "opt/irobot/audio/songs/startup.opus")
+        self.assertEqual(startup["representative"]["parent_asset_url"], "https://example.invalid/firmware.signed")
+        self.assertEqual(startup["representative"]["component_payload_offset"], 1234)
+        self.assertEqual(startup["representative"]["component_size"], 5678)
+        self.assertEqual(startup["representative"]["component_sha256"], "e" * 64)
+        prompt = next(x for x in index["sounds"] if x["name"] == "bin-full")
+        self.assertEqual(prompt["representative"]["source_path"], "opt/irobot/audio/languages/de-DE/bin-full.opus")
         self.assertEqual(audio_path_metadata("opt/irobot/audio/languages/zh-CN_2/error.opus")["language"], "zh-CN_2")
 
     def test_completeness_ledger_separates_state_evidence_from_artifacts(self):
@@ -100,9 +117,26 @@ class CatalogTests(unittest.TestCase):
                     "candidate_families": ["test"], "version": "1.1", "release_date_text": "2024-01-02",
                     "classification": "official-ota-release-evidence-unrecovered",
                 }, {
+                    "source_name": "official-unresolved", "source_url": "https://example.invalid/unresolved",
+                    "candidate_families": [], "version": "1.2.6", "release_date_text": "2025-01-02",
+                    "classification": "official-ota-release-evidence-unresolved-family",
+                }, {
                     "source_name": "official-test", "source_url": "https://example.invalid/release-notes",
                     "candidate_families": ["test"], "version": "0.8", "release_date_text": "2023-01-01",
                     "classification": "factory-state-only", "factory_reason": "Factory release. No OTA",
+                }]
+            }))
+            (research / "official-gap-dispositions-current.json").write_text(json.dumps({
+                "entries": [{
+                    "source_name": "official-test",
+                    "version": "1.1",
+                    "disposition": "tested-known-filename-skeleton-no-live-object",
+                    "evidence_files": ["probe.json"],
+                }, {
+                    "source_name": "official-unresolved",
+                    "version": "1.2.6",
+                    "disposition": "unresolved-hardware-family",
+                    "evidence_files": ["mapping.json"],
                 }]
             }))
             catalog = {"updated_at": "stamp", "firmwares": [
@@ -116,7 +150,13 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(ledger["summary"]["historical_state_only_count"], 1)
         self.assertEqual(ledger["summary"]["independently_proven_missing_ota_artifact_count"], 0)
         self.assertEqual(ledger["summary"]["official_release_evidence_gap_count"], 1)
+        self.assertEqual(ledger["summary"]["official_release_unresolved_family_count"], 1)
         self.assertEqual(ledger["summary"]["official_factory_state_only_count"], 1)
+        self.assertEqual(ledger["summary"]["official_gap_disposition_count"], 2)
+        self.assertEqual(ledger["summary"]["official_gap_undispositioned_count"], 0)
+        self.assertEqual(ledger["summary"]["known_evidence_disposition_coverage_percent"], 100.0)
+        self.assertEqual(ledger["summary"]["exhausted_or_unrecoverable_count"], 0)
+        self.assertEqual(ledger["official_release_unresolved_family"][0]["version"], "1.2.6")
 
     def test_release_note_parser_ignores_dates_and_marks_factory_section(self):
         body = """
@@ -147,6 +187,128 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue(by_version["2.4.1"]["factory_only"])
         self.assertFalse(by_version["1.2.7"]["factory_only"])
         self.assertTrue(by_version["1.08"]["factory_only"])
+
+    def test_release_note_source_include_versions_limits_discovery(self):
+        from irobot_firmware.discover import discover_from_config, version_filename_candidates
+        with tempfile.TemporaryDirectory() as td:
+            cfg = Path(td) / "discovery.json"
+            cfg.write_text(json.dumps({
+                "release_note_probes": [{
+                    "name": "split-source",
+                    "url": "https://example.invalid/notes",
+                    "include_versions": ["1.2.2"],
+                    "api_skus": ["Y414020"],
+                }]
+            }))
+            entries = [
+                {"version": "1.1.5", "factory_only": False},
+                {"version": "1.2.2", "factory_only": False},
+            ]
+            seen = []
+            def fake_api(sku, software_ver, track="prod", **kwargs):
+                seen.append((sku, software_ver, track))
+                return []
+            with patch("irobot_firmware.discover.release_note_entries", return_value=entries), \
+                 patch("irobot_firmware.discover.api_probe", side_effect=fake_api):
+                rows, errors = discover_from_config(cfg)
+        self.assertEqual(rows, [])
+        self.assertEqual(errors, [])
+        self.assertTrue(seen)
+        self.assertTrue(all(sku == "Y414020" for sku, _, _ in seen))
+        self.assertEqual(
+            {version for _, version, _ in seen},
+            set(version_filename_candidates("1.2.2")),
+        )
+
+    def test_release_note_snapshot_empty_family_does_not_match_unrelated_version(self):
+        import runpy
+
+        namespace = runpy.run_path("scripts/snapshot_release_note_evidence.py")
+        build_snapshot = namespace["build_snapshot"]
+        build_snapshot.__globals__["release_note_entries"] = lambda _url: [{
+            "version": "1.2.6",
+            "release_date_text": "2026-01-01",
+            "factory_only": False,
+            "factory_reason": None,
+        }]
+        config = {"release_note_probes": [{
+            "name": "roomba-essential-2",
+            "url": "https://example.invalid/essential2",
+            "include_versions": ["1.2.6"],
+            "evidence_families": [],
+        }]}
+        catalog = {"firmwares": [{
+            "family": "wichita",
+            "version": "1.2.6",
+            "archive": {"sha256": "a" * 64, "release_tag": "firmware-wichita-1.2.6"},
+        }]}
+        snapshot = build_snapshot(config, catalog)
+        entry = snapshot["entries"][0]
+        self.assertEqual(entry["matching_catalog_rows"], [])
+        self.assertEqual(entry["classification"], "official-ota-release-evidence-unresolved-family")
+        self.assertEqual(snapshot["summary"]["official_ota_release_evidence_unresolved_family_count"], 1)
+
+    def test_release_note_snapshot_pending_catalog_row_is_not_recovered(self):
+        import runpy
+
+        namespace = runpy.run_path("scripts/snapshot_release_note_evidence.py")
+        build_snapshot = namespace["build_snapshot"]
+        build_snapshot.__globals__["release_note_entries"] = lambda _url: [{
+            "version": "7.5.2",
+            "release_date_text": "2025-06-27",
+            "factory_only": False,
+            "factory_reason": None,
+        }]
+        config = {"release_note_probes": [{
+            "name": "roomba-plus-500",
+            "url": "https://example.invalid/500",
+            "evidence_families": ["505"],
+        }]}
+        catalog = {"firmwares": [{
+            "family": "505",
+            "version": "7.5.2",
+            "url": "https://example.invalid/fw.signed",
+        }]}
+        snapshot = build_snapshot(config, catalog)
+        entry = snapshot["entries"][0]
+        self.assertEqual(entry["matching_catalog_rows"], [])
+        self.assertEqual(entry["classification"], "official-ota-release-evidence-unrecovered")
+
+    def test_gap_dispositions_do_not_auto_disposition_future_versions(self):
+        import runpy
+
+        build = runpy.run_path("scripts/build_gap_dispositions.py")["build"]
+        result = build({"entries": [{
+            "source_name": "roomba-max-700",
+            "source_url": "https://example.invalid/700",
+            "version": "99.99.99",
+            "candidate_families": ["705"],
+            "classification": "official-ota-release-evidence-unrecovered",
+        }]})
+        self.assertEqual(result["summary"]["known_evidence_disposition_coverage_percent"], 0.0)
+        self.assertEqual(result["summary"]["undispositioned_gap_entry_count"], 1)
+        self.assertEqual(result["entries"][0]["disposition"], "unresolved-no-completed-disposition-rule")
+
+    def test_completeness_does_not_claim_full_disposition_when_file_is_stale(self):
+        with tempfile.TemporaryDirectory() as td:
+            research = Path(td)
+            (research / "official-release-note-artifact-gaps-current.json").write_text(json.dumps({
+                "entries": [{
+                    "source_name": "new-release",
+                    "source_url": "https://example.invalid/new",
+                    "candidate_families": ["test"],
+                    "version": "99.1",
+                    "classification": "official-ota-release-evidence-unrecovered",
+                }]
+            }))
+            ledger = build_completeness_ledger(
+                {"firmwares": []},
+                {"platforms": {}},
+                research,
+            )
+        self.assertEqual(ledger["summary"]["official_gap_disposition_count"], 0)
+        self.assertEqual(ledger["summary"]["official_gap_undispositioned_count"], 1)
+        self.assertEqual(ledger["summary"]["known_evidence_disposition_coverage_percent"], 0.0)
 
     def test_metapackage_release_asset_name_avoids_firmware_collision(self):
         archive = {
@@ -262,7 +424,8 @@ class CatalogTests(unittest.TestCase):
         catalog = json.loads(Path("data/catalog.json").read_text())
         expected = build_audio_index(catalog, Path("data"))
         actual = json.loads(Path("data/audio-assets.json").read_text())
-        self.assertEqual(actual, expected)
+        if actual != expected:
+            self.fail("data/audio-assets.json is stale; run python3 scripts/build_audio_index.py")
 
     def test_merge_preserves_archive(self):
         catalog = empty_catalog()
@@ -435,6 +598,33 @@ class CatalogTests(unittest.TestCase):
         with patch("irobot_firmware.discover._exists", return_value=(False, {})) as exists:
             direct_probe("sanmarino", "22.29.6", "https://example.invalid/{family}{padded_compact}.signed")
         self.assertEqual(exists.call_args.args[0], "https://example.invalid/sanmarino222906.signed")
+
+    def test_exact_object_probe_preserves_build_evidence(self):
+        from irobot_firmware.discover import discover_from_config
+        with tempfile.TemporaryDirectory() as td:
+            cfg = Path(td) / "discovery.json"
+            cfg.write_text(json.dumps({
+                "exact_object_probes": [{
+                    "family": "405",
+                    "version": "9.3.7",
+                    "url": "https://example.invalid/exact.signed",
+                    "source_sku": "G185020",
+                    "software_identity": "p25-405+9.3.7+I4.6.150",
+                    "evidence": "real-device software identity",
+                    "evidence_url": "https://example.invalid/evidence",
+                }]
+            }))
+            with patch("irobot_firmware.discover.direct_probe", return_value={
+                "family": "405", "version": "9.3.7",
+                "url": "https://example.invalid/exact.signed", "source": "direct-probe",
+            }) as probe:
+                records, errors = discover_from_config(cfg)
+        self.assertEqual(errors, [])
+        self.assertEqual(len(records), 1)
+        self.assertEqual(records[0]["source"], "exact-object-probe")
+        self.assertEqual(records[0]["software_identity"], "p25-405+9.3.7+I4.6.150")
+        self.assertEqual(records[0]["source_sku"], "G185020")
+        probe.assert_called_once_with("405", "9.3.7", "https://example.invalid/exact.signed")
 
     def test_release_note_two_part_version_expands_patches(self):
         from irobot_firmware.discover import version_filename_candidates

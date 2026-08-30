@@ -1,0 +1,26 @@
+{
+  "artifact_conclusion": "No exact OTA object is promoted from these reports. Established Aero candidates aerov3462.signed, aero3462.signed, and aero-3.4.62.signed were already probed and were not live.",
+  "evidence": [
+    {
+      "kind": "public-real-device-report",
+      "model": "Roomba e5",
+      "observation": "A public e5 owner reports installed software 3.4.62-95. This establishes build suffix 95 as historical software-state evidence, not an OTA filename or recoverable object by itself.",
+      "software_identity": "3.4.62-95",
+      "url": "https://forum.iobroker.net/topic/7657/irobot-roomba-adapter?page=33"
+    },
+    {
+      "kind": "public-real-device-report",
+      "model": "Roomba e6",
+      "observation": "A January 2022 e6 discussion independently reports 3.4.62-95; another reply later reports 3.4.67-100.",
+      "software_identity": "3.4.62-95",
+      "url": "https://www.reddit.com/r/roomba/comments/seul2i/for_those_with_an_e6_what_is_the_latest_software/"
+    }
+  ],
+  "generated_at": "2026-08-30T19:56:01.661380+00:00",
+  "related_research": [
+    "official-release-gap-exact-object-probes-2026-08-30.json",
+    "official-irobot-accessories-sku-api-probe-2026-08-29.json"
+  ],
+  "schema": 1,
+  "subject": "Roomba e-series 3.4.62 historical installed-build evidence"
+}

@@ -97,6 +97,8 @@ jobs:
         run: python scripts/build_audio_index.py
       - name: Snapshot official release-note evidence
         run: python scripts/snapshot_release_note_evidence.py
+      - name: Disposition unresolved official release evidence
+        run: python scripts/build_gap_dispositions.py --allow-undispositioned
       - name: Rebuild completeness ledger
         run: python scripts/build_completeness_ledger.py
       - name: Verify archived Release integrity
@@ -107,7 +109,7 @@ jobs:
         run: |
           git config user.name "irobot-firmware-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json data/firmware data/auxiliary-firmware.json data/audio-assets.json data/completeness.json data/research/official-release-note-artifact-gaps-current.json
+          git add data/catalog.json data/firmware data/auxiliary-firmware.json data/audio-assets.json data/completeness.json data/research/official-release-note-artifact-gaps-current.json data/research/official-gap-dispositions-current.json
           if git diff --cached --quiet; then
             echo "No archive results to commit"
           else
