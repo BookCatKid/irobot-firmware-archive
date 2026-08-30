@@ -1,0 +1,49 @@
+{
+  "components": [],
+  "filename": "marconi-3.2.40.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": true,
+        "id": 1,
+        "label": "version1",
+        "magic": "00000000000000000000000000000000",
+        "offset": 1024,
+        "ordinal": 0,
+        "sha256": "1d3b5b278976439356861bcaa19e6d776ede3a78c92f91be56feb9e9f8d3a024",
+        "size": 237592
+      },
+      {
+        "bounds_valid": true,
+        "id": 2,
+        "label": "version2",
+        "magic": "00000000000000000000000000000000",
+        "offset": 239616,
+        "ordinal": 1,
+        "sha256": "873831636afad06308bad263e232cadff54926560285ef636ef9e44312432eb7",
+        "size": 443284
+      },
+      {
+        "bounds_valid": true,
+        "id": 3,
+        "label": "version2",
+        "magic": "00000000000000000000000000000000",
+        "offset": 683008,
+        "ordinal": 2,
+        "sha256": "53654eca035dcdc176321cf97ae8a84e7cacb04f47b1e93d6e5345ad7bdba718",
+        "size": 252816
+      }
+    ],
+    "entry_count": 3,
+    "header_u32_08": 935824,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "marconi-3.2.40.bin",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "9b592f62dffafdf9a182f0d7b18a5d3cffcf6d287f7a33f34da65970bdb4d2f9",
+  "size": 936128
+}

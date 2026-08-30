@@ -303,6 +303,28 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.5.62-4b698e97b872/aero3562.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/aero/3.5.62-4b698e97b872.json",
+        "release_tag": "firmware-aero-3.5.62-4b698e97b872",
+        "reported_identity": null,
+        "sha256": "4b698e97b872837c4c68ba13b998f676cb336da3050e69d84a543e03fc3b5066",
+        "size": 956608
+      },
+      "discovered_at": "2026-08-30T05:48:59.248953+00:00",
+      "discovery_research": "research/incremental-v1-cross-family-sweep-2026-08-29.json",
+      "etag": "7fc9183af70691c43d539d87daa4a4c6",
+      "family": "aero",
+      "last_modified": "Wed, 03 Jun 2020 17:55:54 GMT",
+      "size": 956608,
+      "source": "incremental-v1-cross-family-sweep",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3562.signed",
+      "version": "3.5.62"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-altadena-4.60.0-e1fde01f2db7/altadena_d_4_60_0.enc",
         "component_count": 0,
         "format": "unknown",
@@ -2519,6 +2541,32 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-3.2.40-9b592f62dffa/marconi-3.2.40.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/3.2.40-9b592f62dffa.json",
+        "release_tag": "firmware-marconi-3.2.40-9b592f62dffa",
+        "reported_identity": null,
+        "sha256": "9b592f62dffafdf9a182f0d7b18a5d3cffcf6d287f7a33f34da65970bdb4d2f9",
+        "size": 936128
+      },
+      "discovered_at": "2026-08-30T05:48:59.248953+00:00",
+      "discovery_research": "research/incremental-v1-cross-family-sweep-2026-08-29.json",
+      "etag": "1965e4dbbd5d8c9637fbc23cc4b2c525",
+      "family": "marconi",
+      "last_modified": "Thu, 13 Sep 2018 20:37:01 GMT",
+      "legacy_v1_deployment_mpkg": "R890R690/marconi-3.2.40-prod.meta.signed",
+      "legacy_v1_version": "v3.2.40",
+      "release_date": "2018-09-14",
+      "size": 936128,
+      "source": "incremental-v1-cross-family-sweep",
+      "source_sku": "R690020",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconi-3.2.40.signed",
+      "version": "3.2.40"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-3.5.62-1666ce6ac8a8/marconi3562.signed",
         "component_count": 0,
         "format": "irobot-apkg",
@@ -2838,6 +2886,29 @@
       "track": "legacy-public-cdn",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3552.signed",
       "version": "v3552"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-3.5.62-1666ce6ac8a8/marconi3562.signed",
+        "component_count": 0,
+        "deduplicated": true,
+        "format": "irobot-apkg",
+        "manifest": "firmware/ningbo/3.5.62-1666ce6ac8a8.json",
+        "release_tag": "firmware-marconi-3.5.62-1666ce6ac8a8",
+        "reported_identity": null,
+        "sha256": "1666ce6ac8a833d13c05d60e81d709f3e5fd637c9283f3b72be6ba30b9941048",
+        "size": 989376
+      },
+      "discovered_at": "2026-08-30T05:48:59.248953+00:00",
+      "discovery_research": "research/incremental-v1-cross-family-sweep-2026-08-29.json",
+      "etag": "e36e02e156571f029bf294b943b4f5a3",
+      "family": "ningbo",
+      "last_modified": "Fri, 19 Jun 2020 18:36:39 GMT",
+      "size": 989376,
+      "source": "incremental-v1-cross-family-sweep",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo3562.signed",
+      "version": "3.5.62"
     },
     {
       "archive": {
@@ -8126,5 +8197,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T05:46:38.086513+00:00"
+  "updated_at": "2026-08-30T05:48:59.251079+00:00"
 }

@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "versions": [
+    "3.2.40",
+    "3.2.47",
+    "3.5.62"
+  ],
+  "probe_count": 502,
+  "hits": [
+    {
+      "family": "ningbo",
+      "evidence_version": "3.5.62",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo3562.signed",
+      "size": 989376,
+      "etag": "e36e02e156571f029bf294b943b4f5a3",
+      "last_modified": "Fri, 19 Jun 2020 18:36:39 GMT"
+    },
+    {
+      "family": "aero",
+      "evidence_version": "3.5.62",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3562.signed",
+      "size": 956608,
+      "etag": "7fc9183af70691c43d539d87daa4a4c6",
+      "last_modified": "Wed, 03 Jun 2020 17:55:54 GMT"
+    },
+    {
+      "family": "marconi",
+      "evidence_version": "3.2.40",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconi-3.2.40.signed",
+      "size": 936128,
+      "etag": "1965e4dbbd5d8c9637fbc23cc4b2c525",
+      "last_modified": "Thu, 13 Sep 2018 20:37:01 GMT"
+    }
+  ]
+}

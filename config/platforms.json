@@ -480,6 +480,46 @@
           "note": "Multiple Marconi numeric-token OTA objects remain publicly retrievable from iRobot production infrastructure."
         }
       ]
+    },
+    "ningbo": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Ningbo",
+      "description": "Ningbo is present in the official Classic app SkuType enum and now has a live historical OTA object on iRobot production infrastructure. Retail-model mapping is not yet established.",
+      "models": [],
+      "known_skus": [],
+      "confidence": "confirmed-app+cdn",
+      "evidence": [
+        {
+          "kind": "android-app-sku-type",
+          "sku_type": "Ningbo",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "public-ota-object-sweep",
+          "version": "3.5.62",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo3562.signed"
+        }
+      ]
+    },
+    "aero": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Aero",
+      "description": "Aero is present in the official Classic app SkuType enum and now has a live historical OTA object on iRobot production infrastructure. Retail-model mapping is not yet established.",
+      "models": [],
+      "known_skus": [],
+      "confidence": "confirmed-app+cdn",
+      "evidence": [
+        {
+          "kind": "android-app-sku-type",
+          "sku_type": "Aero",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "public-ota-object-sweep",
+          "version": "3.5.62",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3562.signed"
+        }
+      ]
     }
   }
 }
