@@ -3,31 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="color-scheme" content="dark">
+  <meta name="color-scheme" content="light dark">
   <meta name="description" content="An unofficial archive and diff browser for publicly reachable iRobot firmware packages.">
   <title>iRobot Firmware Archive</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="./">iRobot Firmware Archive</a>
-    <nav>
-      <a href="#catalog-section">Catalog</a>
-      <a href="#compare-section">Compare</a>
-      <a href="https://github.com/BookCatKid/irobot-firmware-archive">GitHub ↗</a>
-    </nav>
+  <header class="top-links" aria-label="Site navigation">
+    <a href="#catalog-section">Catalog</a>
+    <span>·</span>
+    <a href="#compare-section">Compare</a>
+    <span>·</span>
+    <a href="https://github.com/BookCatKid/irobot-firmware-archive">Source on GitHub ↗</a>
   </header>
 
   <main>
     <section class="intro">
-      <div>
-        <h1>Firmware, preserved.</h1>
-        <p>Original signed iRobot OTA packages, technical metadata, hardware associations, and filesystem-level diffs.</p>
-      </div>
+      <h1>iRobot Firmware Archive</h1>
+      <p class="subtitle">firmware packages, metadata, and diffs</p>
+      <p class="lede">Original signed iRobot OTA packages with technical metadata, hardware associations, and filesystem-level comparisons.</p>
       <div id="summary" class="summary-line">Loading catalog…</div>
     </section>
 
-    <section id="catalog-section">
+    <section id="catalog-section" class="content-section">
       <div class="section-head">
         <div>
           <h2>Firmware catalog</h2>
@@ -65,7 +63,7 @@
       <aside id="detail" class="detail" hidden></aside>
     </section>
 
-    <section id="compare-section" class="compare-section">
+    <section id="compare-section" class="content-section compare-section">
       <div class="section-head compare-head">
         <div>
           <h2>Compare builds</h2>
