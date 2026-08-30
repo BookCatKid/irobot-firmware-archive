@@ -422,5 +422,19 @@
       "W155220": "Max 705 white retail variant: family 705 version 8.6.2.",
       "new_2026_revision_note": "G285020/N285020/R285020/R285220/W255020/X285020 returned no robot firmware in the tested current-version candidates. This is an observed empty eligibility response, not evidence that the SKUs are unsupported."
     }
-  }
+  },
+  "additional_sku_evidence": [
+    {
+      "sku": "R690020",
+      "source": "com.irobot.home 7.18.0 native core",
+      "evidence": "Fallback SKU literal: \"Detected a robot with no sku, defaulting it to use R690020\"",
+      "legacy_v1_result": "R690020 returns marconi_hertz v3.5.62 plus R890R690 Marconi releases."
+    },
+    {
+      "sku": "i755840",
+      "source": "com.irobot.home 7.18.0 simulator/map fixtures",
+      "evidence": "SKU literal appears in official Lewis/SanMarino pmap fixtures.",
+      "legacy_v1_result": "i755840 returns five i7/Lewis firmware rows."
+    }
+  ]
 }

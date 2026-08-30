@@ -2519,6 +2519,33 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-3.5.62-1666ce6ac8a8/marconi3562.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/3.5.62-1666ce6ac8a8.json",
+        "release_tag": "firmware-marconi-3.5.62-1666ce6ac8a8",
+        "reported_identity": null,
+        "sha256": "1666ce6ac8a833d13c05d60e81d709f3e5fd637c9283f3b72be6ba30b9941048",
+        "size": 989376
+      },
+      "discovered_at": "2026-08-30T05:46:38.086297+00:00",
+      "etag": "e36e02e156571f029bf294b943b4f5a3",
+      "family": "marconi",
+      "last_modified": "Fri, 19 Jun 2020 18:36:38 GMT",
+      "legacy_v1_deployment_mpkg": "marconi_hertz/marconi_hertz-03.05.62-prod.meta.signed",
+      "legacy_v1_version": "v3.5.62",
+      "note": "V1 backend labels the deployment marconi_hertz; the live public OTA object is named marconi3562.signed.",
+      "release_date": "2023-03-21",
+      "size": 989376,
+      "source": "legacy-v1-version-recovery",
+      "source_filename_token": "3562",
+      "source_sku": "R690020",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconi3562.signed",
+      "version": "3.5.62"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3210-f48dee1dcb5e/marconiv3210.signed",
         "component_count": 0,
         "format": "irobot-apkg",
@@ -8099,5 +8126,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T05:39:07.006862+00:00"
+  "updated_at": "2026-08-30T05:46:38.086513+00:00"
 }

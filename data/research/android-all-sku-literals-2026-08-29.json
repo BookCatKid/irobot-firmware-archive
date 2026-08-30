@@ -1,0 +1,1071 @@
+{
+  "schema": 1,
+  "method": "exact one-letter + six-digit literal scan across official Android app extracted files <=100MiB",
+  "skus": {
+    "B000000": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_jni.so"
+    ],
+    "B240080": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes3.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "C031010": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "F155040": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "G185020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/arm64/lib/arm64-v8a/libapp.so"
+    ],
+    "G285020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "I222222": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/bundle/base.apk",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/flutter_assets/assets/flutter_assets/packages/module_resource/assets/images/device/common/map_build_window_image.png"
+    ],
+    "J715020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/base_apigw_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/base_apigw_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/base_apigw_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/base_apigw_sim_responses.json"
+    ],
+    "K155020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "L124020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "M222222": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/bundle/base.apk",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/flutter_assets/assets/flutter_assets/packages/module_resource/assets/images/device/common/map_build_window_image.png"
+    ],
+    "N185020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "N285020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "Q012020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "Q352020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "R111840": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/atlantis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/atlantis_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/atlantis_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/atlantis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/atlantis_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/atlantis_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/atlantis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/atlantis_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/atlantis_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/atlantis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/atlantis_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/atlantis_iot_sim_responses.json"
+    ],
+    "R185020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "R690020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/liblegacyCore.so"
+    ],
+    "R980020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes3.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/model/RobotV3.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/model/RobotV2.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/model/RobotV1.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes2.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/arm64/lib/arm64-v8a/libapp.so"
+    ],
+    "W155020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "X185020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "Y014020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "Y351020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "Y414020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "Y888888": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes6.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes3.dex"
+    ],
+    "a211620": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "d102436": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/bundle/base.apk",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/flutter_assets/assets/flutter_assets/packages/module_resource/assets/themes/default/image/img_google_home_opreation_8.png"
+    ],
+    "i101110": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101111": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101112": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101113": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101114": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101115": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101116": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101117": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101118": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i101119": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/internal/measurement/zznk.java"
+    ],
+    "i111110": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111111": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111112": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111113": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111114": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111115": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111116": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111117": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111118": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i111119": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "i115020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "i310020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "i710020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/lewis_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/base_apigw_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/lewis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/left_wheel_stucked_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/lewis_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/bin_full_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/lewis_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/base_apigw_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/lewis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/left_wheel_stucked_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/lewis_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/bin_full_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/lewis_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/base_apigw_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/lewis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/left_wheel_stucked_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/lewis_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/bin_full_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/lewis_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/base_apigw_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/lewis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/left_wheel_stucked_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/lewis_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/bin_full_discovery_config.json"
+    ],
+    "i755840": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/san_marino_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/lewis_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/san_marino_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/lewis_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/san_marino_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/lewis_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/san_marino_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/lewis_pmap_umf_responses.json"
+    ],
+    "j111110": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/preferences/protobuf/BinaryWriter.java"
+    ],
+    "j111111": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/preferences/protobuf/BinaryWriter.java"
+    ],
+    "j715020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "j755840": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/san_marino_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/sapphire_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/sapphire_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/lewis_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/sapphire_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/sapphire_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/san_marino_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/sapphire_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/sapphire_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/lewis_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/sapphire_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/sapphire_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/san_marino_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/sapphire_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/sapphire_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/lewis_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/sapphire_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/sapphire_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/san_marino_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/sapphire_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/sapphire_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/lewis_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/sapphire_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/sapphire_discovery_config.json"
+    ],
+    "j915020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/clean_score_json_data.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/ruby_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/ruby_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/ruby_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/ruby_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/clean_score_json_data.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/ruby_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/ruby_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/ruby_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/ruby_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/clean_score_json_data.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/ruby_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/ruby_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/ruby_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/ruby_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/clean_score_json_data.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/ruby_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/ruby_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/ruby_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/ruby_local_sim_responses.json"
+    ],
+    "m610820": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "m611020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/san_marino_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/san_marino_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/san_marino_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/tank_empty_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/san_marino_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/san_marino_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/san_marino_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/tank_empty_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/san_marino_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/san_marino_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/san_marino_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/tank_empty_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/san_marino_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/san_marino_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/san_marino_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/tank_empty_discovery_config.json"
+    ],
+    "p111620": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "r522817": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libc++_shared.so",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/abi/lib/armeabi-v7a/libc++_shared.so",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/arm64/lib/arm64-v8a/libflutter.so",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/arm64/lib/arm64-v8a/libdartjni.so"
+    ],
+    "s910020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/atlantis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/soho_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/soho_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/soho_vmrs_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/atlantis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/soho_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/soho_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/soho_vmrs_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/atlantis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/soho_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/soho_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/soho_vmrs_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/atlantis_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/soho_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/soho_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/soho_vmrs_discovery_config.json"
+    ],
+    "s915820": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "s955020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/soho_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/soho_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/res/raw/soho_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/resources/res/raw/soho_iot_sim_responses.json"
+    ],
+    "t721820": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/classes5.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "u000020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/data/maps/datamodels/mission/MissionTimeEstimateDetail.java"
+    ],
+    "u000021": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/core/DataStoreImpl.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/core/InitializerApi.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/core/DataStoreImpl$InitDataStore$doRun$initData$1$api$1.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/core/DataStore.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/datastore/core/InitializerApi.java"
+    ],
+    "u000027": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/FadeInFadeOutAnimationItem.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/FadeInFadeOutAnimationItem.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/compose/material3/FadeInFadeOutAnimationItem.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/compose/material/FadeInFadeOutAnimationItem.java"
+    ],
+    "u000100": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/NodeCoordinator.java"
+    ],
+    "u000101": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/coaching/commonsurvey/SurveyTransitionView.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/maps/renderer/RenderableTracker.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/unsigned/UArraysKt___UArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/TextStyle.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobot/irobotdata/mission/internal/data/MissionHistoryItemResponse.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/JsonElementKt.java"
+    ],
+    "u000102": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/maps/ui/customization/MapCustomizationViewModel.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/HexExtensionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/json/JsonElementKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/navigation/NavController.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobox/datasdk/data_sdk_irobot_impl/channel/mission/MissionCommandMapperKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobox/datasdk/data_sdk_irobot_impl/channel/login/LoginServiceHandler.java"
+    ],
+    "u000103": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/CancellableContinuationImpl.java"
+    ],
+    "u000104": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/TextStyle.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/tooling/data/SlotTreeKt.java"
+    ],
+    "u000105": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/maps/ui/MapViewModel.java"
+    ],
+    "u000106": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/TextStyle.java"
+    ],
+    "u000107": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/SharedFlowImpl.java"
+    ],
+    "u000108": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/JsonElementKt.java"
+    ],
+    "u000109": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt___CollectionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/TextStyle.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/platform/extensions/SpannableExtensions_androidKt.java"
+    ],
+    "u000120": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__ZipKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/LintKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/FlowKt__CollectionKt.java"
+    ],
+    "u000122": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/modifier/ModifierLocalNodeKt.java"
+    ],
+    "u000123": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__TransformKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/TabRowKt.java"
+    ],
+    "u000124": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__ZipKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/FlowKt__ErrorsKt.java"
+    ],
+    "u000125": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__TransformKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/internal/FlowCoroutineKt.java"
+    ],
+    "u000126": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/layout/RelocationModifierKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/LintKt.java"
+    ],
+    "u000128": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt___CollectionsKt.java"
+    ],
+    "u000200": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/common/ui/view/BottomSheetLayout.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/common/ui/view/InfoScreenViewV2.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/core/platform/base/IRobotBaseFragment.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/view/FloatPanelView.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/path/PathsKt__PathUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/navigation/NavDestinationBuilder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/AndroidEdgeEffectOverscrollEffect.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/ColorSchemeKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/tokens/FilledAutocompleteTokens.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/tokens/OutlinedAutocompleteTokens.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/layout/RowColumnImplKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/gestures/DragGestureDetectorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/ParagraphInfo.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/LayoutNode.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/draw/PainterModifierNodeElement.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobot/perimeter/common/statemachine/StateMachine.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/LintKt.java"
+    ],
+    "u000201": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/FileSystem.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/coaching/commonsurvey/SurveyTransitionView.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/unsigned/UArraysKt___UArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/tokens/FilledButtonTokens.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/tokens/NavigationDrawerTokens.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/tokens/FilledTonalButtonTokens.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/view/ViewKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobot/perimeter/account/gigya/IRobotAccountManager.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/JsonElementKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/AbstractJsonTreeDecoder.java"
+    ],
+    "u000202": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/StringsKt__StringsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/HexExtensionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/json/JsonElementKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/Composer.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/SlotWriter.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/SimpleGraphicsLayerModifier.java"
+    ],
+    "u000203": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/common/ui/view/ProgressIndicator.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/view/airpurifier/OptionListView.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/generics/genericForm/GenericFormFragment.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/time/DurationKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/tokens/ElevatedButtonTokens.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/input/pointer/SuspendingPointerInputFilter.java"
+    ],
+    "u000204": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/tokens/ListTokens.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/semantics/SemanticsActions.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/NodeCoordinator.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/Float16.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/Color.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/compose/material3/tokens/OutlinedSegmentedButtonTokens.java"
+    ],
+    "u000205": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/gestures/ScrollingLogic.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/semantics/SemanticsPropertiesKt.java"
+    ],
+    "u000206": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/common/ui/view/builder/InfoScreenBuilder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/time/Duration.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/debug/internal/DebugProbesImpl.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/builtins/BuiltinSerializersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/AlignmentLines.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/example/lib_sweeper_map_plus/LibSweeperMapPlusPlugin.java"
+    ],
+    "u000207": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/ScrollState.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/staggeredgrid/LazyStaggeredGridMeasureContext.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/ParagraphInfo.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobot/irobotdata/foundation/mocks/HTTPClientMock.java"
+    ],
+    "u000208": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/history/airpurifier/SimpleChart.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/home/ui/mission/BaseSingleMissionInitiationFragment.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/ranges/URangesKt___URangesKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/FilesKt__FileReadWriteKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/MarqueeModifier.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/text/TextFieldState.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/JsonElementKt.java"
+    ],
+    "u000209": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt___CollectionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/path/PathsKt__PathReadWriteKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/builtins/BuiltinSerializersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material3/tokens/SliderTokens.java"
+    ],
+    "u000220": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/FlowKt__EmittersKt.java"
+    ],
+    "u000221": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__CollectKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/preferences/core/PreferenceDataStore.java"
+    ],
+    "u000223": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__CollectKt.java"
+    ],
+    "u000224": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/unsigned/UArraysKt___UArraysKt.java"
+    ],
+    "u000226": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/comparisons/ComparisonsKt__ComparisonsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/external/kotlinx/collections/immutable/internal/ForEachOneBitKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/util/SparseIntArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/util/SparseBooleanArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/util/SparseLongArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/compose/runtime/external/kotlinx/collections/immutable/internal/ForEachOneBitKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/PolymorphicKt.java"
+    ],
+    "u000228": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/StringsKt___StringsKt.java"
+    ],
+    "u000309": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/channels/BufferedChannel.java"
+    ],
+    "u000320": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/FlowKt__CollectionKt.java"
+    ],
+    "u000321": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__MigrationKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/pullrefresh/PullRefreshKt.java"
+    ],
+    "u000322": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java"
+    ],
+    "u000323": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__LimitKt.java"
+    ],
+    "u000324": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__MigrationKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/FlowKt__ZipKt.java"
+    ],
+    "u000326": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/FilesKt__FileReadWriteKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/GroupingKt__GroupingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/path/FileVisitorBuilder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/collection/SparseArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/collection/LongSparseArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/layout/LookaheadLayoutScope.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/util/SparseArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/util/LongSparseArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/view/ViewGroupKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/view/MenuKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/collections/GroupingKt__GroupingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/io/path/FileVisitorBuilder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/FlowKt__ZipKt.java"
+    ],
+    "u000327": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__MigrationKt.java"
+    ],
+    "u000328": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/comparisons/ComparisonsKt__ComparisonsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/sequences/SequencesKt___SequencesKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt___CollectionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/path/FileVisitorBuilder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/io/path/FileVisitorBuilder.java"
+    ],
+    "u000389": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/maps/domain/Geometry.java"
+    ],
+    "u000400": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java"
+    ],
+    "u000406": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okhttp3/HttpUrl.java"
+    ],
+    "u000420": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/FlowKt__EmittersKt.java"
+    ],
+    "u000422": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/MapsKt___MapsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/saveable/ListSaverKt.java"
+    ],
+    "u000424": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/FlowKt__MigrationKt.java"
+    ],
+    "u000426": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/fragment/app/FragmentKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/StreamingJsonEncoder.java"
+    ],
+    "u000503": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/FlowKt__ZipKt.java"
+    ],
+    "u000526": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/GroupingKt__GroupingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/collections/GroupingKt__GroupingKt.java"
+    ],
+    "u000620": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridScope.java"
+    ],
+    "u000621": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridScope.java"
+    ],
+    "u000622": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/MapsKt___MapsJvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java"
+    ],
+    "u000624": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/coroutines/flow/internal/CombineKt.java"
+    ],
+    "u000628": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/collection/LruCacheKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/core/util/LruCacheKt.java"
+    ],
+    "u000720": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/data/maps/datamodels/mission/MissionTimeEstimateDetail.java"
+    ],
+    "u000724": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/unsigned/UArraysKt___UArraysKt.java"
+    ],
+    "u000726": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/internal/ComposableLambda.java"
+    ],
+    "u001002": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/builtins/BuiltinSerializersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/Snapshot.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/input/pointer/SuspendingPointerInputFilter.java"
+    ],
+    "u001012": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/MutableSnapshot.java"
+    ],
+    "u001022": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/input/pointer/SuspendingPointerInputFilter.java"
+    ],
+    "u001026": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/GroupingKt__GroupingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/gestures/DragGestureDetectorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/collections/GroupingKt__GroupingKt.java"
+    ],
+    "u001032": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/debug/internal/DebugProbesImpl.java"
+    ],
+    "u001042": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/Composer.java"
+    ],
+    "u001052": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okhttp3/Request.java"
+    ],
+    "u001062": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/internal/TaggedEncoder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/core/DataStoreImpl.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/SnapshotStateList.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/AbstractJsonTreeEncoder.java"
+    ],
+    "u001072": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/internal/TaggedDecoder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/collection/MutableVector.java"
+    ],
+    "u001082": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlin/collections/builders/ListBuilder.java"
+    ],
+    "u001092": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/SnapshotStateMap.java"
+    ],
+    "u001100": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/gestures/DraggableKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/gestures/DragGestureDetectorKt.java"
+    ],
+    "u001103": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/CancellableContinuationImpl.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/SlotTable.java"
+    ],
+    "u001105": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/SlotTable.java"
+    ],
+    "u001124": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/unsigned/UArraysKt___UArraysKt.java"
+    ],
+    "u001126": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/path/FileVisitorBuilderImpl.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlin/uuid/Uuid.java"
+    ],
+    "u001128": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/path/FileVisitorBuilderImpl.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/AbstractJsonLexer.java"
+    ],
+    "u001222": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java"
+    ],
+    "u001226": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/ModalBottomSheetKt.java"
+    ],
+    "u001328": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/internal/ConcurrentLinkedListKt.java"
+    ],
+    "u001329": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/flow/internal/CombineKt.java"
+    ],
+    "u001401": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/unsigned/UArraysKt___UArraysKt.java"
+    ],
+    "u001420": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "u001422": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java"
+    ],
+    "u001423": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java"
+    ],
+    "u001626": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/collection/IdentityArrayMap.java"
+    ],
+    "u001700": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java"
+    ],
+    "u001703": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java"
+    ],
+    "u001706": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java"
+    ],
+    "u001726": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/internal/ConcurrentLinkedListKt.java"
+    ],
+    "u001800": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/coroutines/AbstractCoroutine.java"
+    ],
+    "u001826": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/uuid/Uuid.java"
+    ],
+    "u008333": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/android/gms/common/zzi.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/google/android/gms/common/zzi.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/x3/o.java"
+    ],
+    "u009920": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/FileSystem.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/AsyncTimeout.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/Timeout.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/Utf8.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/Okio__OkioKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/_JvmPlatformKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/StandardKt__StandardKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/PreconditionsKt__AssertionsJVMKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/ResultKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/UShortArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/PreconditionsKt__PreconditionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/StandardKt__SynchronizedKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/ULongArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/UIntArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/UByteArrayKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okhttp3/Interceptor.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okhttp3/OkHttpClient.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/firebase/messaging/MessagingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/firebase/analytics/AnalyticsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/firebase/analytics/ktx/AnalyticsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/google/firebase/messaging/ktx/MessagingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/common/ui/utils/ViewUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/maps/ui/ViewModelUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/maps/renderer/geometry/PolygonGeometry.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/maps/renderer/material/UnlitColorMaterial.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/com/irobot/maps/renderer/material/FillMaterial.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okhttp3/internal/Util.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okhttp3/internal/concurrent/TaskLoggerKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okhttp3/internal/concurrent/TaskQueue.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/jdk7/AutoCloseableKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/comparisons/ComparisonsKt__ComparisonsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/contracts/ContractBuilderKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/FilesKt__FileReadWriteKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/CloseableKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/TextStreamsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/time/Duration.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/time/MeasureTimeKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/system/TimingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/properties/Delegates.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/sequences/SequencesKt___SequencesKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/sequences/SequencesKt__SequencesKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/sequences/SequencesKt___SequencesJvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/concurrent/ThreadsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/concurrent/LocksKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/concurrent/TimersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/coroutines/ContinuationKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/StringsKt___StringsJvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/StringsKt___StringsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/StringsKt__StringsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/HexFormat.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/StringsKt__StringBuilderKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/text/HexFormatKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt__MutableCollectionsJVMKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt__CollectionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/MapsKt__MapsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysJvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/GroupingKt__GroupingJVMKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/MapsKt__MapsJVMKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt___CollectionsJvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/MapsKt___MapsJvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/ArraysKt___ArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt___CollectionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/GroupingKt__GroupingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt__CollectionsJVMKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/SetsKt__SetsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/MapsKt___MapsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt__IteratorsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/CollectionsKt__IterablesKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/SetsKt__SetsJVMKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/uuid/Uuid.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/collections/unsigned/UArraysKt___UArraysKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/jvm/optionals/OptionalsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/path/PathsKt__PathReadWriteKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlin/io/path/PathsKt__PathUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/internal/Platform_commonKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/internal/PluginGeneratedSerialDescriptorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/encoding/EncodingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/encoding/DecodingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/json/JsonElementBuildersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/modules/SerializersModuleBuildersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/json/internal/WriteModeKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/json/internal/AbstractJsonLexer.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/kotlinx/serialization/json/internal/JsonNamesMapKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/tracing/TraceKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/lifecycle/LiveDataKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/navigation/NavGraphBuilderKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/navigation/ActivityNavigatorDestinationBuilderKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/fragment/app/FragmentManagerKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/core/MutexUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/core/CloseableKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/datastore/core/okio/Synchronizer.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/lifecycle/viewmodel/InitializerViewModelFactoryKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/TempListUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/EffectsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/TraceKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/SlotTable.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/SkippableUpdater.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/Updater.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/Latch.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/ActualJvm_jvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/DisposableEffectScope.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/ComposerKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/TempListUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/icons/IconsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/gestures/BringIntoViewRequestPriorityQueue.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/text/selection/BaseTextPreparedSelection.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/foundation/lazy/grid/LazyGridDslKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/collection/MutableVectorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/collection/IdentityArrayMap.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/collection/IdentityArraySet.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/collection/IdentityScopeMap.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/collection/IdentityArrayIntMap.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/collection/MutableVector.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/SnapshotKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/StateMapMutableIterator.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/SnapshotIdSet.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/Snapshot.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/ListUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/SnapshotStateMap.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/snapshots/MutableSnapshot.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/external/kotlinx/collections/immutable/ExtensionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/external/kotlinx/collections/immutable/internal/ForEachOneBitKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/runtime/external/kotlinx/collections/immutable/implementations/immutableMap/TrieNode.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/unit/TextUnitKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/unit/DpKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/util/ListUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/util/AndroidTrace_androidKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/layout/Placeable.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/layout/ScaleFactorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/platform/JvmActuals_jvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/platform/InspectableValueKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/platform/DebugUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/geometry/OffsetKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/geometry/SizeKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/TempListUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/AnnotatedStringKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/HitTestResult.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/DepthSortedSet.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/DelegatableNodeKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/MutableVectorWithMutationTracking.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/NodeCoordinator.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/MergedViewAdapter.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/node/LayoutNode.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/ColorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/CanvasKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/CanvasHolder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/drawscope/CanvasDrawScope.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/drawscope/DrawScopeKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/vector/ImageVectorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/graphics/vector/VectorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/platform/Synchronization_jvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/android/TempListUtilsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/font/AsyncTypefaceCache.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/ui/text/caches/LruCache.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/internal/SegmentedByteString.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/okio/internal/Buffer.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/okio/Timeout.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/okio/Utf8.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/okio/_JvmPlatformKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/PreconditionsKt__AssertionsJVMKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/PreconditionsKt__PreconditionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/StandardKt__SynchronizedKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/system/TimingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/concurrent/ThreadsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/concurrent/LocksKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/concurrent/TimersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/text/HexFormatKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/collections/GroupingKt__GroupingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlin/collections/SetsKt__SetsJVMKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlinx/serialization/internal/ClassValueReferences.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/kotlinx/serialization/json/internal/InternalJsonWriter.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/savedstate/internal/SynchronizedObject_jvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/savedstate/internal/SynchronizedObjectKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/datastore/core/okio/Synchronizer.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/lifecycle/viewmodel/internal/SynchronizedObject_jvmKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/lifecycle/viewmodel/internal/SynchronizedObjectKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/collection/internal/Lock.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/androidx/collection/internal/RuntimeHelpersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobox/datasdk/data_sdk_irobot_impl/channel/startup/StartupServiceHandlerKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobot/irobotdata/foundation/util/FlowMappingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/irobot/irobotdata/maps/internal/helpers/P2MapBundleContentHolder.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlin/uuid/Uuid.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/internal/Platform_commonKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/internal/PluginGeneratedSerialDescriptorKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/internal/ClassValueReferences.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/internal/ParametrizedCacheEntry.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/encoding/EncodingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/encoding/DecodingKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/JsonElementBuildersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/modules/SerializersModuleBuildersKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/WriteModeKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/PolymorphicKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/TreeJsonEncoderKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/AbstractJsonLexer.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/JsonExceptionsKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/JsonNamesMapKt.java",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/kotlinx/serialization/json/internal/InternalJsonWriter.java"
+    ],
+    "v091188": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/bundle/base.apk",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/flutter_assets/assets/flutter_assets/packages/module_resource/assets/themes/irobot_light/image/add_device_logo_575.png"
+    ],
+    "v161000": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/bundle/base.apk",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime310/jadx/sources/com/google/android/gms/measurement/internal/h2.java"
+    ],
+    "x010020": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/topaz_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/topaz_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/topaz_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/raw/res/raw/topaz_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/topaz_iot_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/topaz_discovery_config.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/topaz_pmap_umf_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/resources/res/raw/topaz_local_sim_responses.json",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/abi/lib/armeabi-v7a/libcore_base.so",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/raw/classes7.dex",
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/prime/jadx/sources/com/irobot/core/SkuUtils.java"
+    ],
+    "z111110": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111111": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111112": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111113": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111114": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111115": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111116": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111117": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111118": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ],
+    "z111119": [
+      "/Users/simon/MyDocuments/gpt/irobot-android-re/classic/jadx/sources/androidx/compose/material/MenuKt.java"
+    ]
+  }
+}

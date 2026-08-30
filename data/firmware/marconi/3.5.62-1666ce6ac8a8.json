@@ -1,0 +1,49 @@
+{
+  "components": [],
+  "filename": "marconi3562.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": true,
+        "id": 1,
+        "label": "version1",
+        "magic": "00000000000000000000000000000000",
+        "offset": 1024,
+        "ordinal": 0,
+        "sha256": "8f4c9dbb8ef6617aed1509bc0aa31eee1ca5f299b1135e6f8311aa42f43050a0",
+        "size": 286744
+      },
+      {
+        "bounds_valid": true,
+        "id": 2,
+        "label": "version2",
+        "magic": "00000000000000000000000000000000",
+        "offset": 288768,
+        "ordinal": 1,
+        "sha256": "8aa7e4a07fbf0796f2ebd6ae0a3fdec9b7eac2bdaae5bef4ad273ebf55d2b9b9",
+        "size": 447100
+      },
+      {
+        "bounds_valid": true,
+        "id": 3,
+        "label": "version2",
+        "magic": "00000000000000000000000000000000",
+        "offset": 736256,
+        "ordinal": 2,
+        "sha256": "53654eca035dcdc176321cf97ae8a84e7cacb04f47b1e93d6e5345ad7bdba718",
+        "size": 252816
+      }
+    ],
+    "entry_count": 3,
+    "header_u32_08": 989072,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "marconi-ota-r3-robot-26.pkg.bin",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "1666ce6ac8a833d13c05d60e81d709f3e5fd637c9283f3b72be6ba30b9941048",
+  "size": 989376
+}
