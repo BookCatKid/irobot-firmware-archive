@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "generated_at": "2026-08-30T05:52:28.581805+00:00",
+  "method": "replacement scan for GitHub-concurrency-cancelled Wichita/Daredevil backfills",
+  "probe_count": 41346,
+  "hits": [
+    {
+      "family": "wichita",
+      "scheme": "vnumeric",
+      "token": "100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/wichitav100.signed",
+      "size": 134385864,
+      "etag": "e26a0513fd2e29c644d0d9c050095910-8",
+      "last_modified": "Wed, 28 Aug 2019 16:26:54 GMT"
+    },
+    {
+      "family": "wichita",
+      "scheme": "vnumeric",
+      "token": "126",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/wichitav126.signed",
+      "size": 153708198,
+      "etag": "3622f80d81babbed2366d3961746f39f-9",
+      "last_modified": "Wed, 23 Oct 2019 18:16:12 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "127",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil127.signed",
+      "size": 20081228,
+      "etag": "d735b92c747e82d2c99be17135247bd3-2",
+      "last_modified": "Wed, 16 Sep 2020 18:54:06 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "129",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil129.signed",
+      "size": 20098588,
+      "etag": "cacc758ca3aa5340b9b129bde0a4c139-2",
+      "last_modified": "Thu, 17 Jun 2021 19:20:16 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "222",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil222.signed",
+      "size": 25056108,
+      "etag": "f9e939656f2d1f78341dbdc4214f52f7-2",
+      "last_modified": "Mon, 31 Jan 2022 21:41:37 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "223",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil223.signed",
+      "size": 25059760,
+      "etag": "4de3d5395b1ba2cf9df862d326872a10-2",
+      "last_modified": "Mon, 14 Feb 2022 22:29:55 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "247",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil247.signed",
+      "size": 24924616,
+      "etag": "2539d81bd54266b87e5b037f856a845e-2",
+      "last_modified": "Wed, 20 Jul 2022 20:38:07 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "260",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil260.signed",
+      "size": 25526136,
+      "etag": "bec31d1da79e81ba27253c7ad024a166-2",
+      "last_modified": "Wed, 19 Apr 2023 17:13:48 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "1231",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil1231.signed",
+      "size": 20128500,
+      "etag": "74fe52cf018147c67c65e77e98408516-2",
+      "last_modified": "Mon, 31 Jan 2022 21:41:37 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "1810",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil1810.signed",
+      "size": 22817688,
+      "etag": "bc3108e8c3c5704b8ae6f71e5075cd65-2",
+      "last_modified": "Thu, 17 Jun 2021 19:20:16 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "2015",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil2015.signed",
+      "size": 24424688,
+      "etag": "35b2a6b18babc6ca721cad40b0191618-2",
+      "last_modified": "Thu, 28 Oct 2021 22:03:37 GMT"
+    },
+    {
+      "family": "daredevil",
+      "scheme": "numeric",
+      "token": "2019",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil2019.signed",
+      "size": 24439052,
+      "etag": "ada9dc059a282157e5088e1f50c3c940-2",
+      "last_modified": "Fri, 19 Nov 2021 19:58:59 GMT"
+    }
+  ]
+}

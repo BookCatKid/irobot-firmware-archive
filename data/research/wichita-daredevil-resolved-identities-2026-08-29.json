@@ -1,0 +1,168 @@
+{
+  "generated_at": "2026-08-30T05:58:10.268856+00:00",
+  "method": "download + repository analyzer identity extraction for direct objects recovered after cancelled backfills",
+  "results": [
+    {
+      "etag": "74fe52cf018147c67c65e77e98408516-2",
+      "family": "daredevil",
+      "format": "swupdate-cpio",
+      "last_modified": "Mon, 31 Jan 2022 21:41:37 GMT",
+      "reported_identity": {
+        "evidence": "sw-description",
+        "model": "daredevil",
+        "software_version": "daredevil+1.2.31+daredevil-day0-ota-branch+28",
+        "version": "1.2.31"
+      },
+      "scheme": "numeric",
+      "sha256": "b257757969f2c3dfeadc8bfaa4f7b1ba3df7272d1acd614a974486c002de190a",
+      "size": 20128500,
+      "token": "1231",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil1231.signed"
+    },
+    {
+      "etag": "cacc758ca3aa5340b9b129bde0a4c139-2",
+      "family": "daredevil",
+      "format": "swupdate-cpio",
+      "last_modified": "Thu, 17 Jun 2021 19:20:16 GMT",
+      "reported_identity": {
+        "evidence": "sw-description",
+        "model": "daredevil",
+        "software_version": "daredevil+1.2.9+daredevil-release+35",
+        "version": "1.2.9"
+      },
+      "scheme": "numeric",
+      "sha256": "5aea479c0ec8184d593843730b054de2aa33c2f61d33ff5bbebd6980424a830f",
+      "size": 20098588,
+      "token": "129",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil129.signed"
+    },
+    {
+      "etag": "bc3108e8c3c5704b8ae6f71e5075cd65-2",
+      "family": "daredevil",
+      "format": "swupdate-cpio",
+      "last_modified": "Thu, 17 Jun 2021 19:20:16 GMT",
+      "reported_identity": {
+        "evidence": "sw-description",
+        "model": "daredevil",
+        "software_version": "daredevil+1.8.10+daredevil-release+71",
+        "version": "1.8.10"
+      },
+      "scheme": "numeric",
+      "sha256": "d6847d692cc5b16a3eab432ba675b114ca78f051e395d328bc77df4b3a6abf81",
+      "size": 22817688,
+      "token": "1810",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil1810.signed"
+    },
+    {
+      "etag": "35b2a6b18babc6ca721cad40b0191618-2",
+      "family": "daredevil",
+      "format": "swupdate-cpio",
+      "last_modified": "Thu, 28 Oct 2021 22:03:37 GMT",
+      "reported_identity": {
+        "evidence": "sw-description",
+        "model": "daredevil",
+        "software_version": "daredevil+2.0.15+daredevil-release+101",
+        "version": "2.0.15"
+      },
+      "scheme": "numeric",
+      "sha256": "ec48c5e1737a947c9d56f5f007a4abe25e447274e5cbd444d860b180c8420e09",
+      "size": 24424688,
+      "token": "2015",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil2015.signed"
+    },
+    {
+      "etag": "ada9dc059a282157e5088e1f50c3c940-2",
+      "family": "daredevil",
+      "format": "swupdate-cpio",
+      "last_modified": "Fri, 19 Nov 2021 19:58:59 GMT",
+      "reported_identity": {
+        "evidence": "sw-description",
+        "model": "daredevil",
+        "software_version": "daredevil+2.0.19+daredevil-release+105",
+        "version": "2.0.19"
+      },
+      "scheme": "numeric",
+      "sha256": "bcb80ca3152549b81df2480332747f2a925d13aab0ef6af51672b522fecb5a96",
+      "size": 24439052,
+      "token": "2019",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil2019.signed"
+    },
+    {
+      "etag": "f9e939656f2d1f78341dbdc4214f52f7-2",
+      "family": "daredevil",
+      "format": "swupdate-cpio",
+      "last_modified": "Mon, 31 Jan 2022 21:41:37 GMT",
+      "reported_identity": {
+        "evidence": "sw-description",
+        "model": "daredevil",
+        "software_version": "daredevil+2.2.2+daredevil-release+112",
+        "version": "2.2.2"
+      },
+      "scheme": "numeric",
+      "sha256": "cda4b2af92e1c1bd79a8e80737c621d3fc49f6009da873596d7cc58b2ee0d90f",
+      "size": 25056108,
+      "token": "222",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil222.signed"
+    },
+    {
+      "etag": "4de3d5395b1ba2cf9df862d326872a10-2",
+      "family": "daredevil",
+      "format": "swupdate-cpio",
+      "last_modified": "Mon, 14 Feb 2022 22:29:55 GMT",
+      "reported_identity": {
+        "evidence": "sw-description",
+        "model": "daredevil",
+        "software_version": "daredevil+2.2.3+daredevil-release+113",
+        "version": "2.2.3"
+      },
+      "scheme": "numeric",
+      "sha256": "8c03ebc765dd9dcd062d623bff4b20d8f0300defb9ccb1b6d49c2bcde9dbf0b6",
+      "size": 25059760,
+      "token": "223",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil223.signed"
+    },
+    {
+      "etag": "bec31d1da79e81ba27253c7ad024a166-2",
+      "family": "daredevil",
+      "format": "swupdate-cpio",
+      "last_modified": "Wed, 19 Apr 2023 17:13:48 GMT",
+      "reported_identity": {
+        "evidence": "sw-description",
+        "model": "daredevil",
+        "software_version": "daredevil+2.6.0+daredevil-release+163",
+        "version": "2.6.0"
+      },
+      "scheme": "numeric",
+      "sha256": "5fa39dcb8fc1fc42f1aa4358150a19b5b49beb65775dd3ee495ab54e28e228f3",
+      "size": 25526136,
+      "token": "260",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil260.signed"
+    },
+    {
+      "etag": "e26a0513fd2e29c644d0d9c050095910-8",
+      "family": "wichita",
+      "format": "irobot-otps",
+      "last_modified": "Wed, 28 Aug 2019 16:26:54 GMT",
+      "reported_identity": {
+        "evidence": {
+          "build.prop": "SYSTEM",
+          "etc/os-release": "SYSTEM",
+          "opt/irobot/identity.env": "CMNLIB",
+          "opt/irobot/version.env": "SYSTEM"
+        },
+        "model": "wichita",
+        "os_version": "linux+2.1.6+wichita-sl-1+2",
+        "product_version": "1.0.0+wichita-sl-1+2",
+        "software_version": "wichita+1.0.0+wichita-sl-1+2",
+        "version": "1.0.0"
+      },
+      "scheme": "vnumeric",
+      "sha256": "37811592134b87232edab6b1d1bf4d24e8259df265f6f6ac3ceffe92506a098a",
+      "size": 134385864,
+      "token": "100",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/wichitav100.signed"
+    }
+  ],
+  "schema": 1,
+  "source_research": "research/wichita-daredevil-cancelled-backfill-recovery-2026-08-29.json"
+}
