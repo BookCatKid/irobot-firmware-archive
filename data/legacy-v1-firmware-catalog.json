@@ -1,9 +1,9 @@
 {
   "schema": 1,
   "source": "https://content-prod.iot.irobotapi.com/v1/app/firmware/{sku}",
-  "retrieved_at": "2026-08-30T05:51:40.893259+00:00",
-  "sku_count": 61,
-  "item_count": 120,
+  "retrieved_at": "2026-08-30T06:10:59.210616+00:00",
+  "sku_count": 64,
+  "item_count": 129,
   "items": [
     {
       "sku": "B240080",
@@ -460,6 +460,114 @@
       "priority": 1,
       "releaseDate": "2019-05-24",
       "version": "v2.8.1"
+    },
+    {
+      "sku": "R671020",
+      "deploymentMpkg": "ningbo/ningbo-03.05.62-prod.meta.signed",
+      "downloadUrl": "http://www.irobot.com",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "http://www.irobot.com",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2023-03-21",
+      "version": "v3.5.62"
+    },
+    {
+      "sku": "R671020",
+      "deploymentMpkg": "R670/ningbov3347-prod.meta.signed",
+      "downloadUrl": "http://www.irobot.com",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "http://www.irobot.com",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2019-10-16",
+      "version": "v3.3.47"
+    },
+    {
+      "sku": "R671020",
+      "deploymentMpkg": "R890R690/marconi-3.3.43-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R671020/package/marconiv3210.signed",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R671020/metapackage/marconiv3210.signed",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2019-01-17",
+      "version": "v3.3.43"
+    },
+    {
+      "sku": "R675020",
+      "deploymentMpkg": "ningbo/ningbo-03.05.62-prod.meta.signed",
+      "downloadUrl": "http://www.irobot.com",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "http://www.irobot.com",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2023-03-21",
+      "version": "v3.5.62"
+    },
+    {
+      "sku": "R675020",
+      "deploymentMpkg": "R670/ningbov3347-prod.meta.signed",
+      "downloadUrl": "http://www.irobot.com",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "http://www.irobot.com",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2019-10-16",
+      "version": "v3.3.47"
+    },
+    {
+      "sku": "R675020",
+      "deploymentMpkg": "R890R690/marconi-3.3.43-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R675020/package/marconiv3210.signed",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R675020/metapackage/marconiv3210.signed",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2019-01-17",
+      "version": "v3.3.43"
+    },
+    {
+      "sku": "R677020",
+      "deploymentMpkg": "ningbo/ningbo-03.05.62-prod.meta.signed",
+      "downloadUrl": "http://www.irobot.com",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "http://www.irobot.com",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2023-03-21",
+      "version": "v3.5.62"
+    },
+    {
+      "sku": "R677020",
+      "deploymentMpkg": "R670/ningbov3347-prod.meta.signed",
+      "downloadUrl": "http://www.irobot.com",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "http://www.irobot.com",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2019-10-16",
+      "version": "v3.3.47"
+    },
+    {
+      "sku": "R677020",
+      "deploymentMpkg": "R890R690/marconi-3.3.43-prod.meta.signed",
+      "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R677020/package/marconiv3210.signed",
+      "expectedDownloadTime": 3,
+      "expectedInstallationTime": 2,
+      "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R677020/metapackage/marconiv3210.signed",
+      "notes": " ",
+      "priority": 1,
+      "releaseDate": "2019-01-17",
+      "version": "v3.3.43"
     },
     {
       "sku": "R690020",

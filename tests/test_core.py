@@ -107,6 +107,90 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(identity["product_version"], "3.12.6+lewis-release-420+7")
         self.assertEqual(identity["evidence"]["opt/irobot/identity.env"], "CMNLIB")
 
+    def test_legacy_recovery_candidates_follow_deployment_metadata(self):
+        from irobot_firmware.discover import _legacy_recovery_urls
+        cases = [
+            ({"deploymentMpkg": "R670/ningbov3347-prod.meta.signed", "version": "v3.3.47"}, "ningbov3347.signed"),
+            ({"deploymentMpkg": "i7/lewis-1.6.6-prod.meta.signed", "version": "v1.6.6"}, "lewis-1.6.6.signed"),
+            ({"deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed", "version": "v2.4.4-4"}, "roomba9xxv2444.signed"),
+            ({"deploymentMpkg": "elpaso/elpaso-02.04.06-prod.meta.signed", "version": "v2.4.6-3"}, "elpasov2463.signed"),
+        ]
+        for item, filename in cases:
+            urls = _legacy_recovery_urls(item)
+            self.assertTrue(any(url.endswith("/" + filename) for url in urls), (item, urls))
+
+    def test_legacy_v1_prefers_live_deployment_candidate_over_stale_download_url(self):
+        from irobot_firmware.discover import legacy_v1_probe
+        stale = "https://content-prod.iot.irobotapi.com/media/files/firmware/R671020/package/marconiv3210.signed"
+        recovered = "https://prod-ota-firmware.iot.irobotapi.com/ningbov3347.signed"
+        response = {"firmwareUpdateItems": [{
+            "version": "v3.3.47",
+            "deploymentMpkg": "R670/ningbov3347-prod.meta.signed",
+            "downloadUrl": stale,
+            "metapackageUrl": "http://www.irobot.com",
+            "releaseDate": "2019-10-16",
+        }]}
+        def exists(url):
+            return (url in {stale, recovered}, {})
+        with patch("irobot_firmware.discover.legacy_v1_response", return_value=response), \
+             patch("irobot_firmware.discover._exists", side_effect=exists):
+            rows = legacy_v1_probe("R671020")
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["url"], recovered)
+        self.assertEqual(rows[0]["family"], "ningbo")
+        self.assertEqual(rows[0]["version"], "3.3.47")
+        self.assertEqual(rows[0]["legacy_v1_catalog_version"], "v3.3.47")
+
+    def test_discovery_parallel_legacy_v1_preserves_config_order(self):
+        from irobot_firmware.discover import discover_from_config
+        with tempfile.TemporaryDirectory() as td:
+            cfg = Path(td) / "discovery.json"
+            cfg.write_text(json.dumps({"legacy_v1_skus": ["B", "A"], "legacy_v1_workers": 2}))
+            def fake_probe(sku):
+                return [{"family": "legacy", "version": sku, "url": f"https://example.invalid/{sku}"}]
+            with patch("irobot_firmware.discover.legacy_v1_probe", side_effect=fake_probe):
+                rows, errors = discover_from_config(cfg)
+        self.assertFalse(errors)
+        self.assertEqual([row["version"] for row in rows], ["B", "A"])
+
+    def test_legacy_v1_rejects_live_stale_url_when_deployment_disagrees(self):
+        from irobot_firmware.discover import legacy_v1_probe
+        stale = "https://content-prod.iot.irobotapi.com/media/files/firmware/i710020/package/marconiv3210.signed"
+        response = {"firmwareUpdateItems": [{
+            "version": "v9.9.9",
+            "deploymentMpkg": "i7/lewis-9.9.9-prod.meta.signed",
+            "downloadUrl": stale,
+            "metapackageUrl": stale.replace("/package/", "/metapackage/"),
+            "releaseDate": "2099-01-01",
+        }]}
+        seen = []
+        def exists(url):
+            seen.append(url)
+            return (url == stale, {})
+        with patch("irobot_firmware.discover.legacy_v1_response", return_value=response), \
+             patch("irobot_firmware.discover._exists", side_effect=exists):
+            rows = legacy_v1_probe("i710020")
+        self.assertEqual(rows, [])
+        self.assertNotIn(stale, seen)
+
+    def test_discovery_exact_record_aggregates_source_skus(self):
+        from irobot_firmware.discover import discover_from_config
+        with tempfile.TemporaryDirectory() as td:
+            cfg = Path(td) / "discovery.json"
+            cfg.write_text(json.dumps({"legacy_v1_skus": ["B", "A"], "legacy_v1_workers": 2}))
+            def fake_probe(sku):
+                return [{"family": "same", "version": "1", "url": "https://example.invalid/same", "source_sku": sku}]
+            with patch("irobot_firmware.discover.legacy_v1_probe", side_effect=fake_probe):
+                rows, errors = discover_from_config(cfg)
+        self.assertFalse(errors)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["source_sku"], "B")
+        self.assertEqual(rows[0]["source_skus"], ["A", "B"])
+
+    def test_legacy_dotted_version_preserves_numeric_build_suffix(self):
+        from irobot_firmware.discover import _legacy_dotted_version
+        self.assertEqual(_legacy_dotted_version("v2.4.6-3"), "2.4.6-3")
+
     def test_direct_probe_supports_padded_compact_versions(self):
         with patch("irobot_firmware.discover._exists", return_value=(False, {})) as exists:
             direct_probe("sanmarino", "22.29.6", "https://example.invalid/{family}{padded_compact}.signed")

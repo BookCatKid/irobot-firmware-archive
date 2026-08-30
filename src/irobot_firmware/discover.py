@@ -100,7 +100,7 @@ def legacy_v1_response(sku: str) -> dict[str, Any]:
 def _legacy_item_family(item: dict[str, Any]) -> str | None:
     deployment = str(item.get("deploymentMpkg") or "")
     filename = deployment.rsplit("/", 1)[-1].lower()
-    for family in ("roomba9xx", "marconi", "daredevil", "elpaso", "lewis", "sanmarino", "soho", "wichita", "altadena"):
+    for family in ("roomba9xx", "marconi", "ningbo", "aero", "daredevil", "elpaso", "lewis", "sanmarino", "soho", "wichita", "altadena"):
         if family in filename:
             return family
     prefix = deployment.split("/", 1)[0].lower() if "/" in deployment else ""
@@ -112,7 +112,7 @@ def _legacy_item_family(item: dict[str, Any]) -> str | None:
 
 def _legacy_dotted_version(value: Any) -> str | None:
     raw = str(value or "").lstrip("vV")
-    match = re.match(r"(\d+\.\d+\.\d+)", raw)
+    match = re.match(r"(\d+\.\d+\.\d+(?:-\d+)?)", raw)
     return match.group(1) if match else None
 
 
@@ -135,15 +135,63 @@ def _legacy_identity_from_url(item: dict[str, Any], url: str) -> tuple[str | Non
 
 
 def _legacy_recovery_urls(item: dict[str, Any]) -> list[str]:
+    """Generate evidence-backed legacy OTA candidates from V1 deployment metadata.
+
+    The V1 API frequently keeps a stale but live ``downloadUrl`` (notably
+    ``marconiv3210.signed``) after the deployment metadata has moved on.  The
+    deploymentMpkg basename is stronger evidence for the intended artifact, so
+    generate candidates from it first and only accept a candidate after a live
+    range probe in ``legacy_v1_probe``.
+    """
     family = _legacy_item_family(item)
     if not family:
         return []
+
+    deployment = str(item.get("deploymentMpkg") or "")
+    filename = deployment.rsplit("/", 1)[-1]
+    stem = filename
+    for suffix in (
+        "-prod.meta.prodsigned", "-cn.meta.prodsigned",
+        "-prod.meta.signed", "-cn.meta.signed",
+        ".meta.prodsigned", ".meta.signed",
+    ):
+        if stem.lower().endswith(suffix):
+            stem = stem[: -len(suffix)]
+            break
+
     raw = str(item.get("version") or "").lstrip("vV")
     dotted = _legacy_dotted_version(raw)
-    compact = "".join(dotted.split(".")) if dotted else ""
+    dotted_base = dotted.split("-", 1)[0] if dotted else ""
+    compact = "".join(dotted_base.split(".")) if dotted_base else ""
     all_digits = re.sub(r"\D", "", raw)
-    tokens = [x for x in dict.fromkeys((compact, all_digits)) if x]
-    return [f"https://prod-ota-firmware.iot.irobotapi.com/{family}{token}.signed" for token in tokens]
+
+    names: list[str] = []
+    if stem and stem != filename and re.fullmatch(r"[A-Za-z0-9+_.-]+", stem):
+        names.append(stem + ".signed")
+    for token in dict.fromkeys((all_digits, compact)):
+        if not token:
+            continue
+        names.extend((f"{family}v{token}.signed", f"{family}{token}.signed"))
+    if dotted_base:
+        names.append(f"{family}-{dotted_base}.signed")
+
+    base = "https://prod-ota-firmware.iot.irobotapi.com/"
+    return [base + name for name in dict.fromkeys(names)]
+
+
+def _legacy_url_matches_deployment(item: dict[str, Any], url: str) -> bool:
+    """Return whether a V1 URL basename is consistent with deployment metadata."""
+    name = urllib.parse.urlsplit(str(url or "")).path.rsplit("/", 1)[-1].lower()
+    if not name:
+        return False
+    deployment_name = str(item.get("deploymentMpkg") or "").rsplit("/", 1)[-1].lower()
+    if name == deployment_name:
+        return True
+    candidate_names = {
+        urllib.parse.urlsplit(candidate).path.rsplit("/", 1)[-1].lower()
+        for candidate in _legacy_recovery_urls(item)
+    }
+    return name in candidate_names
 
 
 def legacy_v1_probe(sku: str) -> list[dict[str, Any]]:
@@ -160,20 +208,26 @@ def legacy_v1_probe(sku: str) -> list[dict[str, Any]]:
     for item in data.get("firmwareUpdateItems", []):
         original_url = str(item.get("downloadUrl") or "")
         chosen_url: str | None = None
-        if "irobotapi.com" in original_url:
+        recovery_urls = _legacy_recovery_urls(item)
+        # The deployment metadata is the historical selection record. Prefer a
+        # live object reconstructed from it over a stale-but-live downloadUrl.
+        for candidate in recovery_urls:
+            try:
+                if _exists(candidate)[0]:
+                    chosen_url = candidate
+                    break
+            except Exception:
+                continue
+        # Only fall back to the V1 URL when its basename is structurally
+        # consistent with the deployment metadata. Several V1 rows point at a
+        # live marconiv3210.signed object while describing unrelated Lewis or
+        # later Marconi deployments; status=200/206 alone is not identity proof.
+        if chosen_url is None and "irobotapi.com" in original_url and _legacy_url_matches_deployment(item, original_url):
             try:
                 if _exists(original_url)[0]:
                     chosen_url = original_url
             except Exception:
                 pass
-        if chosen_url is None:
-            for candidate in _legacy_recovery_urls(item):
-                try:
-                    if _exists(candidate)[0]:
-                        chosen_url = candidate
-                        break
-                except Exception:
-                    continue
         if chosen_url is None:
             continue
         family, version = _legacy_identity_from_url(item, chosen_url)
@@ -192,7 +246,7 @@ def legacy_v1_probe(sku: str) -> list[dict[str, Any]]:
                 pass
         meta_original = str(item.get("metapackageUrl") or "")
         meta_url = None
-        if "irobotapi.com" in meta_original:
+        if "irobotapi.com" in meta_original and _legacy_url_matches_deployment(item, meta_original):
             try:
                 if _exists(meta_original)[0]:
                     meta_url = meta_original
@@ -212,6 +266,10 @@ def legacy_v1_probe(sku: str) -> list[dict[str, Any]]:
             "legacy_v1_original_metapackage_url": item.get("metapackageUrl"),
             "discovered_at": now,
         }
+        if "irobotapi.com" in original_url and not _legacy_url_matches_deployment(item, original_url):
+            record["legacy_v1_original_download_url_mismatch"] = True
+        if "irobotapi.com" in meta_original and not _legacy_url_matches_deployment(item, meta_original):
+            record["legacy_v1_original_metapackage_url_mismatch"] = True
         if item.get("notes") not in (None, "", " "):
             record["legacy_v1_notes"] = item.get("notes")
         if meta_url:
@@ -405,11 +463,25 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
     records: list[dict[str, Any]] = []
     errors: list[str] = []
 
-    for sku in cfg.get("legacy_v1_skus", []):
-        try:
-            records.extend(legacy_v1_probe(str(sku)))
-        except Exception as exc:
-            errors.append(f"legacy-v1 {sku}: {exc}")
+    legacy_skus = [str(sku) for sku in cfg.get("legacy_v1_skus", [])]
+    if legacy_skus:
+        # Each SKU is independent network I/O. Run them concurrently but append
+        # results back in config order so catalog provenance remains deterministic.
+        legacy_results: dict[str, list[dict[str, Any]]] = {}
+        legacy_errors: dict[str, Exception] = {}
+        workers = max(1, min(int(cfg.get("legacy_v1_workers", 12)), len(legacy_skus)))
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+            futures = {pool.submit(legacy_v1_probe, sku): sku for sku in legacy_skus}
+            for future in concurrent.futures.as_completed(futures):
+                sku = futures[future]
+                try:
+                    legacy_results[sku] = future.result()
+                except Exception as exc:
+                    legacy_errors[sku] = exc
+        for sku in legacy_skus:
+            records.extend(legacy_results.get(sku, []))
+            if sku in legacy_errors:
+                errors.append(f"legacy-v1 {sku}: {legacy_errors[sku]}")
 
     for probe in cfg.get("api_probes", []):
         for software_ver in probe.get("software_versions", ["0.0.0"]):
@@ -504,6 +576,23 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
     merged: dict[tuple[str, str, str], dict[str, Any]] = {}
     for record in records:
         key = (record["family"], record["version"], record["url"])
-        if key not in merged or len(record) > len(merged[key]):
-            merged[key] = record
+        existing = merged.get(key)
+        if existing is None:
+            merged[key] = dict(record)
+            existing = merged[key]
+        else:
+            first_source_sku = existing.get("source_sku")
+            if len(record) > len(existing):
+                replacement = dict(record)
+                if first_source_sku:
+                    replacement["source_sku"] = first_source_sku
+                merged[key] = replacement
+                existing = replacement
+        skus = set(existing.get("source_skus") or [])
+        for candidate in (existing.get("source_sku"), record.get("source_sku")):
+            if candidate:
+                skus.add(str(candidate))
+        skus.update(str(value) for value in (record.get("source_skus") or []) if value)
+        if len(skus) > 1:
+            existing["source_skus"] = sorted(skus)
     return list(merged.values()), errors

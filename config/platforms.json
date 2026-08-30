@@ -484,10 +484,14 @@
     "ningbo": {
       "type": "internal firmware platform/codename",
       "display_name": "Ningbo",
-      "description": "Ningbo is present in the official Classic app SkuType enum and now has a live historical OTA object on iRobot production infrastructure. Retail-model mapping is not yet established.",
+      "description": "Ningbo is present in the official Classic app SkuType enum and in the legacy v1 firmware catalog for several 600-series SKUs. Public Ningbo OTA objects remain live; at least one historical Ningbo object is byte-identical to a Marconi-named object, so the names are retained as separate provenance labels rather than treated as equivalent platforms.",
       "models": [],
-      "known_skus": [],
-      "confidence": "confirmed-app+cdn",
+      "known_skus": [
+        "R671020",
+        "R675020",
+        "R677020"
+      ],
+      "confidence": "confirmed-app+backend+cdn",
       "evidence": [
         {
           "kind": "android-app-sku-type",
@@ -498,6 +502,24 @@
           "kind": "public-ota-object-sweep",
           "version": "3.5.62",
           "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo3562.signed"
+        },
+        {
+          "kind": "legacy-v1-api",
+          "skus": [
+            "R671020",
+            "R675020",
+            "R677020"
+          ],
+          "deployment_family": "R670",
+          "deployment_mpkg": "R670/ningbov3347-prod.meta.signed",
+          "version": "v3.3.47",
+          "release_date": "2019-10-16"
+        },
+        {
+          "kind": "public-ota-object",
+          "version": "3.3.47",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbov3347.signed",
+          "note": "Byte-identical to marconiv3247.signed; separate family provenance intentionally preserved."
         }
       ]
     },
@@ -518,6 +540,53 @@
           "kind": "public-ota-object-sweep",
           "version": "3.5.62",
           "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3562.signed"
+        }
+      ]
+    },
+    "elpaso": {
+      "type": "internal firmware platform/codename",
+      "display_name": "El Paso",
+      "description": "ElPaso appears in the official Classic app SkuType enum and in the legacy v1 backend for 900-series SKUs. The backend deployment names elpaso-02.04.06 and a distinct live elpasov2463.signed object is still publicly retrievable.",
+      "models": [
+        "Roomba 900-series hardware (exact coverage incomplete)"
+      ],
+      "known_skus": [
+        "R960020",
+        "R960040",
+        "R960080",
+        "R961080",
+        "R965040",
+        "R970080",
+        "R971040",
+        "R975040",
+        "R980020"
+      ],
+      "confidence": "confirmed-app+backend+cdn",
+      "evidence": [
+        {
+          "kind": "android-app-sku-type",
+          "sku_type": "ElPaso",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "legacy-v1-api",
+          "skus": [
+            "R960020",
+            "R960040",
+            "R965040",
+            "R971040",
+            "R975040",
+            "R980020"
+          ],
+          "deployment_family": "elpaso",
+          "deployment_mpkg": "elpaso/elpaso-02.04.06-prod.meta.signed",
+          "version": "v2.4.6-3",
+          "release_date": "2018-01-10"
+        },
+        {
+          "kind": "public-ota-object",
+          "version": "2.4.6-3",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/elpasov2463.signed"
         }
       ]
     }

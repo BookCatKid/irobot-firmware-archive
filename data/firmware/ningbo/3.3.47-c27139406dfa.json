@@ -1,6 +1,6 @@
 {
   "components": [],
-  "filename": "marconiv3210.signed",
+  "filename": "ningbov3347.signed",
   "format": "irobot-apkg",
   "legacy_container": {
     "container_version": 1,
@@ -12,38 +12,38 @@
         "magic": "00000000000000000000000000000000",
         "offset": 1024,
         "ordinal": 0,
-        "sha256": "d075f90104a2af7c87e344426a6f449e84d0b7c835463f5dd3a74af9d9345599",
-        "size": 237592
+        "sha256": "92594d0190e2143581c5b2ba28c483ee095a28c00f724ae0066fbe61d5864e40",
+        "size": 270360
       },
       {
         "bounds_valid": true,
         "id": 2,
         "label": "version2",
         "magic": "00000000000000000000000000000000",
-        "offset": 239616,
+        "offset": 272384,
         "ordinal": 1,
-        "sha256": "5091ff86a645080d1c0d54507113b971fd52f909960ebb2e300ee44d712fde6e",
-        "size": 432076
+        "sha256": "332caf98da0290c4259e5769d8501c1d192fa41bce340ae27eeb79563118a9c6",
+        "size": 444908
       },
       {
         "bounds_valid": true,
         "id": 3,
         "label": "version2",
         "magic": "00000000000000000000000000000000",
-        "offset": 671744,
+        "offset": 717824,
         "ordinal": 2,
         "sha256": "53654eca035dcdc176321cf97ae8a84e7cacb04f47b1e93d6e5345ad7bdba718",
         "size": 252816
       }
     ],
     "entry_count": 3,
-    "header_u32_08": 924560,
+    "header_u32_08": 970640,
     "header_u32_0c": 256,
     "magic": "aPKG",
-    "name_hint": "marconiv3210.bin",
+    "name_hint": "marconi-ota-r3-robot-13.bin",
     "trailing_bytes_after_header_u32_08": 304
   },
   "schema": 1,
-  "sha256": "f48dee1dcb5ea0c63b493f80ad73e0ee7f041f41e91a838665370af6d42f1129",
-  "size": 924864
+  "sha256": "c27139406dfa41511500ea99f698a72762e374a193b6547cb95360c3bd6d25b5",
+  "size": 970944
 }

@@ -1,0 +1,18 @@
+{
+  "components": [],
+  "filename": "elpasov2463.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [],
+    "entry_count": 2865688,
+    "header_u32_08": 2865688,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "elpasov2463",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "50759ba5ff904d32386053750906f0ac0d38064a70a79dcdce9d7dd571394d08",
+  "size": 2865992
+}

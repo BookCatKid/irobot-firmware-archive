@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-08-30T06:10:30.998614+00:00",
+  "hits": [
+    {
+      "byte_identical_to": {
+        "family": "marconi",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3247.signed",
+        "version": "v3247"
+      },
+      "deploymentMpkg": "R670/ningbov3347-prod.meta.signed",
+      "etag": "4efcf65e0a98671d02b564a6efdab269",
+      "family": "ningbo",
+      "last_modified": "Thu, 12 Sep 2019 21:35:32 GMT",
+      "legacy_v1_version": "v3.3.47",
+      "releaseDate": "2019-10-16",
+      "sha256": "c27139406dfa41511500ea99f698a72762e374a193b6547cb95360c3bd6d25b5",
+      "size": 970944,
+      "source_skus": [
+        "R671020",
+        "R675020",
+        "R677020"
+      ],
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbov3347.signed",
+      "version": "3.3.47"
+    },
+    {
+      "deploymentMpkg": "elpaso/elpaso-02.04.06-prod.meta.signed",
+      "etag": "bf35d98136f12df511ebcbeddd318dc6",
+      "family": "elpaso",
+      "last_modified": "Tue, 05 Jun 2018 14:19:49 GMT",
+      "legacy_v1_version": "v2.4.6-3",
+      "regional_skus": [
+        "R960080",
+        "R961080",
+        "R970080"
+      ],
+      "releaseDate": "2018-01-10",
+      "sha256": "50759ba5ff904d32386053750906f0ac0d38064a70a79dcdce9d7dd571394d08",
+      "size": 2865992,
+      "source_skus": [
+        "R960020",
+        "R960040",
+        "R965040",
+        "R971040",
+        "R975040",
+        "R980020"
+      ],
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/elpasov2463.signed",
+      "version": "2.4.6-3"
+    }
+  ],
+  "method": "Evidence-driven reconstruction from official legacy v1 deploymentMpkg values; HTTP Range bytes=0-0",
+  "negative_notes": [
+    {
+      "lead": "roomba9xx v2.2.8-1",
+      "result": "obvious roomba9xxv2283.signed candidate returned 403; exact public object name remains unresolved"
+    },
+    {
+      "lead": "Wichita beta v0.8.5",
+      "result": "obvious direct OTA filename candidates and reconstructed T72 content paths returned 403; object remains unresolved"
+    }
+  ],
+  "probes": [
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo3347.signed"
+    },
+    {
+      "status": 206,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbov3347.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo-3.3.47.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo-03.03.47.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2283.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/elpaso246.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/elpasov246.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/elpaso2463.signed"
+    },
+    {
+      "status": 206,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/elpasov2463.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/elpaso-2.4.6.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/elpaso-02.04.06.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/wichita085.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/wichitav085.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/wichitav85.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/wichita-0.8.5.signed"
+    },
+    {
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/wichita0085.signed"
+    }
+  ],
+  "schema": 1,
+  "sources": [
+    "data/legacy-v1-firmware-catalog.json",
+    "data/research/official-irobot-accessories-sku-api-probe-2026-08-29.json"
+  ]
+}

@@ -33,7 +33,10 @@ def _link(label: str, url: Any) -> str:
 def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha256: str, size: int, data_root: Path) -> str:
     platform = platform_metadata(record, data_root)
     models = platform.get("models") or []
-    skus = sorted(set((platform.get("known_skus") or []) + ([record["source_sku"]] if record.get("source_sku") else [])))
+    record_skus = list(record.get("source_skus") or [])
+    if record.get("source_sku"):
+        record_skus.append(record["source_sku"])
+    skus = sorted(set((platform.get("known_skus") or []) + record_skus))
     origin_blurb = (
         "This release preserves an **unmodified iRobot firmware payload embedded in an official iRobot app**."
         if record.get("source") == "app-embedded"
@@ -80,6 +83,7 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
         f"| Deployment package | {_code(record.get('deployment_mpkg'))} |",
         f"| Discovery method | {_code(record.get('source'))} |",
         f"| Discovery SKU | {_code(record.get('source_sku'))} |",
+        f"| All source SKUs | {_value(', '.join(sorted(set(record_skus))))} |",
         f"| Discovery software version | {_code(record.get('source_software_ver'))} |",
         f"| Release notes candidate | {_code(record.get('release_notes_version'))} |",
         f"| Release notes source | {_link('iRobot support article', record.get('release_notes_url'))} |",
