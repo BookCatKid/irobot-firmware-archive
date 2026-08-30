@@ -1,8 +1,17 @@
 {
   "firmwares": [
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.0-8f1d7fd48467/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/405/9.3.0-8f1d7fd48467.json",
+        "release_tag": "firmware-405-9.3.0-8f1d7fd48467",
+        "sha256": "8f1d7fd48467e8db88ff446691452c65d3dba87288ce69ff715366760277563e",
+        "size": 38824489
+      },
       "deployment_mpkg": "405/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
-      "discovered_at": "2026-08-30T00:39:00.276256+00:00",
+      "discovered_at": "2026-08-30T01:04:22.154463+00:00",
       "family": "405",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-g10-g18/metapackage/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
@@ -16,8 +25,17 @@
       "version": "9.3.0"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-8.6.2-7ea399e73628/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/505/8.6.2-7ea399e73628.json",
+        "release_tag": "firmware-505-8.6.2-7ea399e73628",
+        "sha256": "7ea399e7362891d69199947ebcbffe91766a3ab35c87856b66236c296c7d0877",
+        "size": 159504617
+      },
       "deployment_mpkg": "505/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
-      "discovered_at": "2026-08-30T00:39:00.524722+00:00",
+      "discovered_at": "2026-08-30T01:04:23.752499+00:00",
       "family": "505",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/metapackage/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
@@ -31,8 +49,17 @@
       "version": "8.6.2"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-8.6.2-432492ac01ca/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/705/8.6.2-432492ac01ca.json",
+        "release_tag": "firmware-705-8.6.2-432492ac01ca",
+        "sha256": "432492ac01ca5182e1f39c9433890013387510d8bbbca3bd5c7b3fa51060511d",
+        "size": 154677454
+      },
       "deployment_mpkg": "705/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
-      "discovered_at": "2026-08-30T00:39:00.854048+00:00",
+      "discovered_at": "2026-08-30T01:04:28.588349+00:00",
       "family": "705",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/metapackage/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
@@ -46,7 +73,16 @@
       "version": "8.6.2"
     },
     {
-      "discovered_at": "2026-08-30T00:39:57.407848+00:00",
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.7-ee62b87fe045/lewis-1.2.7.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.2.7-ee62b87fe045.json",
+        "release_tag": "firmware-lewis-1.2.7-ee62b87fe045",
+        "sha256": "ee62b87fe0451538b10cebabaeed7410916cbc1411385a9c7f7937ff8a314750",
+        "size": 144331351
+      },
+      "discovered_at": "2026-08-30T01:05:07.025354+00:00",
       "etag": "7a0b3ec16715b132faf342855b669717-18",
       "family": "lewis",
       "last_modified": "Fri, 07 Sep 2018 16:16:45 GMT",
@@ -59,7 +95,16 @@
       "version": "1.2.7"
     },
     {
-      "discovered_at": "2026-08-30T00:39:58.701394+00:00",
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.5.4-44f7bad36e38/lewis-1.5.4.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.5.4-44f7bad36e38.json",
+        "release_tag": "firmware-lewis-1.5.4-44f7bad36e38",
+        "sha256": "44f7bad36e3899fbea2ca72cbd22663dc8f58475590751719dfbbd317bc1e857",
+        "size": 151716440
+      },
+      "discovered_at": "2026-08-30T01:05:07.797066+00:00",
       "etag": "3751c47492381417f5f3e9572e8b545f-10",
       "family": "lewis",
       "last_modified": "Tue, 13 Nov 2018 19:08:03 GMT",
@@ -72,7 +117,16 @@
       "version": "1.5.4"
     },
     {
-      "discovered_at": "2026-08-30T00:39:59.715275+00:00",
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.6.6-23985f330e9a/lewis-1.6.6.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/1.6.6-23985f330e9a.json",
+        "release_tag": "firmware-lewis-1.6.6-23985f330e9a",
+        "sha256": "23985f330e9ac989add820fb495d774fd4e39b2564d08d133c175c9e8722055c",
+        "size": 151704153
+      },
+      "discovered_at": "2026-08-30T01:05:08.333753+00:00",
       "etag": "7093502a727d2696260665e5938217b2-19",
       "family": "lewis",
       "last_modified": "Wed, 13 Feb 2019 21:26:54 GMT",
@@ -85,7 +139,7 @@
       "version": "1.6.6"
     },
     {
-      "discovered_at": "2026-08-30T00:40:00.552251+00:00",
+      "discovered_at": "2026-08-30T01:05:08.617163+00:00",
       "etag": "7a9fe6ac5e5c5391ed2d2dd7890a213c-19",
       "family": "lewis",
       "last_modified": "Mon, 15 Apr 2019 14:26:47 GMT",
@@ -99,7 +153,7 @@
     },
     {
       "deployment_mpkg": "lewis/lewis-22.52.08-prod.meta.signed",
-      "discovered_at": "2026-08-30T00:38:59.609122+00:00",
+      "discovered_at": "2026-08-30T01:04:16.066048+00:00",
       "family": "lewis",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
@@ -114,7 +168,7 @@
     },
     {
       "deployment_mpkg": "ruby/ruby-00.07.12-prod.meta.signed",
-      "discovered_at": "2026-08-30T00:38:59.926362+00:00",
+      "discovered_at": "2026-08-30T01:04:21.019859+00:00",
       "family": "ruby",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/0.7.12-j9/metapackage/ruby-00.07.12-prod.meta.signed",
@@ -128,7 +182,7 @@
       "version": "0.7.12"
     },
     {
-      "discovered_at": "2026-08-30T00:39:17.062573+00:00",
+      "discovered_at": "2026-08-30T01:04:44.921413+00:00",
       "etag": "acd2d807ce25b6ac9a04ec36b82ecffa-15",
       "family": "sapphire",
       "last_modified": "Fri, 27 Oct 2023 13:40:09 GMT",
@@ -141,7 +195,7 @@
       "version": "23.37.05"
     },
     {
-      "discovered_at": "2026-08-30T00:39:19.135388+00:00",
+      "discovered_at": "2026-08-30T01:04:45.761504+00:00",
       "etag": "222932c998a81eaba31e9113453b077d-15",
       "family": "sapphire",
       "last_modified": "Thu, 22 Feb 2024 22:15:39 GMT",
@@ -154,7 +208,7 @@
       "version": "23.53.04"
     },
     {
-      "discovered_at": "2026-08-30T00:39:18.167467+00:00",
+      "discovered_at": "2026-08-30T01:04:45.482238+00:00",
       "etag": "10672e8d88b09fc3c7a35fe915cb6898-15",
       "family": "sapphire",
       "last_modified": "Tue, 02 Apr 2024 15:58:25 GMT",
@@ -167,7 +221,7 @@
       "version": "23.53.06"
     },
     {
-      "discovered_at": "2026-08-30T00:39:20.565847+00:00",
+      "discovered_at": "2026-08-30T01:04:46.551966+00:00",
       "etag": "614dc8c20b2d62a3ecf186b0a39d801c-15",
       "family": "sapphire",
       "last_modified": "Fri, 09 Aug 2024 14:38:51 GMT",
@@ -180,7 +234,7 @@
       "version": "24.29.01"
     },
     {
-      "discovered_at": "2026-08-30T00:39:20.706460+00:00",
+      "discovered_at": "2026-08-30T01:04:46.584200+00:00",
       "etag": "d29872a8838254963b6943df48213866-15",
       "family": "sapphire",
       "last_modified": "Thu, 05 Sep 2024 09:50:12 GMT",
@@ -193,7 +247,7 @@
       "version": "24.29.02"
     },
     {
-      "discovered_at": "2026-08-30T00:39:20.772096+00:00",
+      "discovered_at": "2026-08-30T01:04:46.618686+00:00",
       "etag": "d8b50a123b1bed1b2961290fb95f2518",
       "family": "sapphire",
       "last_modified": "Tue, 17 Dec 2024 13:19:34 GMT",
@@ -206,7 +260,7 @@
       "version": "24.29.03"
     },
     {
-      "discovered_at": "2026-08-30T00:39:34.863904+00:00",
+      "discovered_at": "2026-08-30T01:04:54.780673+00:00",
       "etag": "b00cfea26bd388866376bb9fd77e2b2b-15",
       "family": "stingray",
       "last_modified": "Fri, 27 Oct 2023 13:40:09 GMT",
@@ -219,7 +273,7 @@
       "version": "23.37.05"
     },
     {
-      "discovered_at": "2026-08-30T00:39:33.093967+00:00",
+      "discovered_at": "2026-08-30T01:04:54.661696+00:00",
       "etag": "ad502f223977be87665249a2b7a67d02-15",
       "family": "stingray",
       "last_modified": "Thu, 30 Nov 2023 14:02:56 GMT",
@@ -232,7 +286,7 @@
       "version": "23.37.12"
     },
     {
-      "discovered_at": "2026-08-30T00:39:33.536895+00:00",
+      "discovered_at": "2026-08-30T01:04:54.700655+00:00",
       "etag": "2d85a757cc506a015a91e1c03118277a-15",
       "family": "stingray",
       "last_modified": "Thu, 01 Feb 2024 21:48:36 GMT",
@@ -245,7 +299,7 @@
       "version": "23.37.13"
     },
     {
-      "discovered_at": "2026-08-30T00:39:34.239063+00:00",
+      "discovered_at": "2026-08-30T01:04:54.741104+00:00",
       "etag": "8c21dc66e62a1d7a4589b55008412257-15",
       "family": "stingray",
       "last_modified": "Thu, 01 Feb 2024 21:48:36 GMT",
@@ -258,7 +312,7 @@
       "version": "23.37.14"
     },
     {
-      "discovered_at": "2026-08-30T00:39:35.670578+00:00",
+      "discovered_at": "2026-08-30T01:04:55.048482+00:00",
       "etag": "9f29dd7a0a8a2df192c540afcb46df02-15",
       "family": "stingray",
       "last_modified": "Tue, 06 Feb 2024 17:44:55 GMT",
@@ -271,7 +325,7 @@
       "version": "23.37.71"
     },
     {
-      "discovered_at": "2026-08-30T00:39:37.008487+00:00",
+      "discovered_at": "2026-08-30T01:04:55.169577+00:00",
       "etag": "9b014fc06f50f8be637e46726a4c8d4d-15",
       "family": "stingray",
       "last_modified": "Thu, 22 Feb 2024 22:15:39 GMT",
@@ -284,7 +338,7 @@
       "version": "23.53.04"
     },
     {
-      "discovered_at": "2026-08-30T00:39:36.160569+00:00",
+      "discovered_at": "2026-08-30T01:04:55.091364+00:00",
       "etag": "87ca47c9d0dcef977c21c92c2c068976-15",
       "family": "stingray",
       "last_modified": "Tue, 02 Apr 2024 15:58:25 GMT",
@@ -297,7 +351,7 @@
       "version": "23.53.06"
     },
     {
-      "discovered_at": "2026-08-30T00:39:37.762574+00:00",
+      "discovered_at": "2026-08-30T01:04:55.464016+00:00",
       "etag": "b648b6781c68ed97b343f2e53f657a56-15",
       "family": "stingray",
       "last_modified": "Mon, 23 Sep 2024 14:00:10 GMT",
@@ -310,7 +364,7 @@
       "version": "23.53.07"
     },
     {
-      "discovered_at": "2026-08-30T00:39:36.579775+00:00",
+      "discovered_at": "2026-08-30T01:04:55.131950+00:00",
       "etag": "231c4b0b346f93fed434373dd03cf39d-15",
       "family": "stingray",
       "last_modified": "Fri, 18 Oct 2024 07:30:29 GMT",
@@ -323,7 +377,7 @@
       "version": "23.53.08"
     },
     {
-      "discovered_at": "2026-08-30T00:39:38.533952+00:00",
+      "discovered_at": "2026-08-30T01:04:55.771274+00:00",
       "etag": "026f881a9f07e1a753f3bf09cf533fc0-16",
       "family": "stingray",
       "last_modified": "Mon, 21 Oct 2024 08:23:03 GMT",
@@ -336,7 +390,7 @@
       "version": "24.29.01"
     },
     {
-      "discovered_at": "2026-08-30T00:39:39.058094+00:00",
+      "discovered_at": "2026-08-30T01:04:55.810871+00:00",
       "etag": "12ab0b37456f08fa9803ff35652d2a68-16",
       "family": "stingray",
       "last_modified": "Thu, 05 Sep 2024 10:03:57 GMT",
@@ -349,7 +403,7 @@
       "version": "24.29.02"
     },
     {
-      "discovered_at": "2026-08-30T00:39:39.467260+00:00",
+      "discovered_at": "2026-08-30T01:04:55.849103+00:00",
       "etag": "2f9dd6ee42330c2ca0d376c744bb5538-16",
       "family": "stingray",
       "last_modified": "Mon, 21 Oct 2024 08:50:53 GMT",
@@ -362,7 +416,7 @@
       "version": "24.29.03"
     },
     {
-      "discovered_at": "2026-08-30T00:39:39.620010+00:00",
+      "discovered_at": "2026-08-30T01:04:55.881776+00:00",
       "etag": "da847252ca6e355a7bae632c6cca1336-16",
       "family": "stingray",
       "last_modified": "Tue, 03 Dec 2024 14:44:34 GMT",
@@ -375,7 +429,7 @@
       "version": "24.29.05"
     },
     {
-      "discovered_at": "2026-08-30T00:39:40.106998+00:00",
+      "discovered_at": "2026-08-30T01:04:55.921110+00:00",
       "etag": "88fce6ed7235105ef2ec30dc69e3ff68-16",
       "family": "stingray",
       "last_modified": "Sat, 08 Mar 2025 17:23:11 GMT",
@@ -389,5 +443,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T00:40:32.013230+00:00"
+  "updated_at": "2026-08-30T01:05:29.222485+00:00"
 }
