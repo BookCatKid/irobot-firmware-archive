@@ -313,7 +313,14 @@
       "source_library": "libcore_base.so",
       "source_package": "com.irobot.home",
       "source_version": "7.18.0",
-      "note": "Hard-coded legacy firmware filename in the official app native core. The filename alone is not treated as proof of an archived payload or retail-model mapping."
+      "note": "Hard-coded legacy firmware filename in the official app native core. The filename alone is not treated as proof of an archived payload or retail-model mapping.",
+      "live_verification": {
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv327.signed",
+        "status": 206,
+        "size": 922816,
+        "last_modified": "Tue, 06 Jun 2017 19:24:01 GMT",
+        "note": "Live Range GET on 2026-08-29 proved the object remains publicly retrievable. Version is catalogued as literal filename token v327 rather than guessing its semantic formatting."
+      }
     },
     {
       "symbol": "core::util::Constants::kRoomba9xxFirmwareFilename",
@@ -321,7 +328,14 @@
       "source_library": "libcore_base.so",
       "source_package": "com.irobot.home",
       "source_version": "7.18.0",
-      "note": "Hard-coded legacy 9xx firmware filename in the official app native core. The filename alone is not treated as proof that the blob is bundled in the APK."
+      "note": "Hard-coded legacy 9xx firmware filename in the official app native core. The filename alone is not treated as proof that the blob is bundled in the APK.",
+      "live_verification": {
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2444.signed",
+        "status": 206,
+        "size": 2865992,
+        "last_modified": "Tue, 09 Jan 2018 20:34:11 GMT",
+        "note": "Live Range GET on 2026-08-29 proved the object remains publicly retrievable. Version is catalogued as literal filename token v2444 rather than guessing its semantic formatting."
+      }
     }
   ],
   "prime_3_1_0_flutter": {

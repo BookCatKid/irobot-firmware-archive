@@ -370,6 +370,28 @@
       "version": "22.52.08"
     },
     {
+      "discovered_at": "2026-08-30T03:01:59.478779+00:00",
+      "etag": "38b0ab6f88b11aaa283ceacd54ce44ed",
+      "family": "marconi",
+      "last_modified": "Tue, 06 Jun 2017 19:24:01 GMT",
+      "size": 922816,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv327.signed",
+      "version": "v327"
+    },
+    {
+      "discovered_at": "2026-08-30T03:01:59.596110+00:00",
+      "etag": "dd06be978be124b07c04395c568b1a2a",
+      "family": "roomba9xx",
+      "last_modified": "Tue, 09 Jan 2018 20:34:11 GMT",
+      "size": 2865992,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2444.signed",
+      "version": "v2444"
+    },
+    {
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-0.7.12-eda059be52f6/ruby-00.07.12-prod.meta.signed",
         "component_count": 0,
@@ -1192,5 +1214,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T02:53:21.703630+00:00"
+  "updated_at": "2026-08-30T03:03:06.566253+00:00"
 }

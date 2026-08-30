@@ -362,6 +362,22 @@
       "versions": [
         "1.1.18"
       ]
+    },
+    {
+      "family": "marconi",
+      "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv327.signed",
+      "versions": [
+        "v327"
+      ],
+      "evidence": "Exact filename recovered from iRobot Home Classic 7.18.0 native constant and live-verified on iRobot OTA origin."
+    },
+    {
+      "family": "roomba9xx",
+      "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2444.signed",
+      "versions": [
+        "v2444"
+      ],
+      "evidence": "Exact filename recovered from iRobot Home Classic 7.18.0 native constant and live-verified on iRobot OTA origin."
     }
   ],
   "release_note_probes": [
