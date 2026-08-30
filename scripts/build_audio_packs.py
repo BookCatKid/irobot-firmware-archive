@@ -29,11 +29,25 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def range_download(url: str, offset: int, size: int, destination: Path) -> None:
+    # Prefer curl (faster, handles redirects + Range correctly) if available
+    if shutil.which("curl"):
+        # curl -L follows GitHub's 302 to release-assets, -r is Range, --retry for transient
+        end = offset + size - 1
+        proc = subprocess.run(
+            ["curl", "-L", "-s", "--retry", "2", "--max-time", "300", "-H", "User-Agent: irobot-firmware-archive-audio-pack/1",
+             "-r", f"{offset}-{end}", "-o", str(destination), url],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        )
+        if proc.returncode == 0 and destination.exists() and destination.stat().st_size == size:
+            return
+        # Fall through to urllib on failure / size mismatch
+        if destination.exists():
+            destination.unlink(missing_ok=True)
     request = urllib.request.Request(
         url,
         headers={"User-Agent": "irobot-firmware-archive-audio-pack/1", "Range": f"bytes={offset}-{offset+size-1}"},
     )
-    with urllib.request.urlopen(request, timeout=120) as response, destination.open("wb") as out:
+    with urllib.request.urlopen(request, timeout=300) as response, destination.open("wb") as out:
         status = getattr(response, "status", None)
         content_range = response.headers.get("Content-Range", "")
         if status == 206 or content_range.lower().startswith("bytes "):
@@ -52,6 +66,8 @@ def range_download(url: str, offset: int, size: int, destination: Path) -> None:
                 raise RuntimeError("component range ended early")
             out.write(chunk)
             remaining -= len(chunk)
+    if destination.stat().st_size != size:
+        raise RuntimeError(f"range download size mismatch: got {destination.stat().st_size} expected {size}")
 
 
 def extract_member(image: Path, member: str) -> bytes:
