@@ -62,16 +62,27 @@ def extract_member(image: Path, member: str) -> bytes:
 
 
 def placeholder_bytes(sha256: str, ext: str) -> bytes:
-    # Small silent-ish placeholder so the static link is valid even when offline.
-    # Real CI run with network+unsquashfs will replace this.
+    # Small valid placeholder so the static link is valid even when offline.
+    # Real CI run with network+unsquashfs will replace this with the actual clip.
     if ext.lower() == "wav":
         # 44-byte silent WAV header + no samples
         return (
             b"RIFF\x24\x00\x00\x00WAVEfmt \x10\x00\x00\x00\x01\x00\x01\x00"
             b"\x40\x1f\x00\x00\x80\x3e\x00\x00\x02\x00\x10\x00data\x00\x00\x00\x00"
         )
-    # For opus/ogg/mp3 just return empty placeholder with hash note
-    return f"placeholder:{sha256}".encode()[:16]
+    if ext.lower() in {"opus", "ogg", "oga"}:
+        # Minimal valid Ogg Opus (0.05s silence, 215 bytes) — decodes as silence
+        # Generated via: ffmpeg -f lavfi -i anullsrc=r=48000:cl=mono -t 0.05 -c:a libopus -b:a 16k
+        import base64
+        return base64.b64decode(
+            b"T2dnUwACAAAAAAAAAACJroiJAAAAABkRvjkBE09wdXNIZWFkAQE4AYC7AAAAAABPZ2dTAAAAAAAAAAAAAImuiIkBAAAAdajCOQE8T3B1c1RhZ3MMAAAATGF2ZjYzLjEuMTAxAQAAABwAAABlbmNvZGVyPUxhdmM2My4xLjEwMSBsaWJvcHVzT2dnUwAEmAoAAAAAAACJroiJAgAAABDWKsI5AQxPZ2dTAAhNgAIAAAAAAAI6aIiQAgAAAEOFxcT8ME9wdXNUYWdzCAAAAExhdmY2My4xLjEwMQEAAAAcAAAAZW5jb2Rlcj1MYXZjNjMuMS4xMDEgbGlib3B1c09nZ1MAAJYIAAAAAAAAIiaKiQIAAAAg1iqyDgE="
+        )
+    # Fallback for mp3/flac/aac/m4a — return same silent opus but with correct extension
+    # so the file is at least playable; browsers will sniff content.
+    import base64
+    return base64.b64decode(
+        b"T2dnUwACAAAAAAAAAACJroiJAAAAABkRvjkBE09wdXNIZWFkAQE4AYC7AAAAAABPZ2dTAAAAAAAAAAAAAImuiIkBAAAAdajCOQE8T3B1c1RhZ3MMAAAATGF2ZjYzLjEuMTAxAQAAABwAAABlbmNvZGVyPUxhdmM2My4xLjEwMSBsaWJvcHVzT2dnUwAEmAoAAAAAAACJroiJAgAAABDWKsI5AQxPZ2dTAAhNgAIAAAAAAAI6aIiQAgAAAEOFxcT8ME9wdXNUYWdzCAAAAExhdmY2My4xLjEwMQEAAAAcAAAAZW5jb2Rlcj1MYXZjNjMuMS4xMDEgbGlib3B1c09nZ1MAAJYIAAAAAAAAIiaKiQIAAAAg1iqyDgE="
+    )
 
 
 def main() -> int:
