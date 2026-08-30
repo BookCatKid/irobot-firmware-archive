@@ -1,5 +1,7 @@
 # iRobot Firmware Archive
 
+**Website:** [smrff.dev/irobot-firmware-archive](https://smrff.dev/irobot-firmware-archive/)
+
 An unofficial, reproducible archive/index for publicly reachable iRobot firmware. It is designed to discover firmware, preserve the original signed package, fingerprint and inspect it, and publish a static site that can diff any two analyzed builds.
 
 ## Why it is split this way
