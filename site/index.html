@@ -12,6 +12,8 @@
   <header class="top-links" aria-label="Site navigation">
     <a href="#catalog-section">Catalog</a>
     <span>·</span>
+    <a href="#auxiliary-section">Auxiliary</a>
+    <span>·</span>
     <a href="#compare-section">Compare</a>
     <span>·</span>
     <a href="https://github.com/BookCatKid/irobot-firmware-archive">Source on GitHub ↗</a>
@@ -61,6 +63,36 @@
       </div>
 
       <aside id="detail" class="detail" hidden></aside>
+    </section>
+
+    <section id="auxiliary-section" class="content-section">
+      <div class="section-head">
+        <div>
+          <h2>Embedded auxiliary firmware</h2>
+          <p>Aux-board firmware bundles found inside archived robot OTA filesystems. Their exact bytes are preserved inside the linked parent firmware release.</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input id="auxSearch" type="search" autocomplete="off" placeholder="Search bundle, platform, parent version…">
+        <select id="auxFamilyFilter" aria-label="Filter auxiliary firmware by platform"><option value="">All platforms</option></select>
+        <span id="auxResultCount" class="result-count"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="firmware-table auxiliary-table">
+          <thead>
+            <tr>
+              <th>Parent build</th>
+              <th>Embedded bundle</th>
+              <th>Size</th>
+              <th>SHA-256</th>
+              <th>Preserved in</th>
+            </tr>
+          </thead>
+          <tbody id="auxCatalog"></tbody>
+        </table>
+      </div>
     </section>
 
     <section id="compare-section" class="content-section compare-section">

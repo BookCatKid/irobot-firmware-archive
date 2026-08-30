@@ -17,6 +17,8 @@ So the project uses:
 
 The Pages diff does not need to download two 250 MiB packages. The archive action extracts a compact file manifest (path/type/size/SHA-256) from SquashFS components once, and the browser compares those manifests client-side.
 
+Deep filesystem analysis also exposes firmware that iRobot ships *inside* the robot OTA for subordinate hardware. `data/auxiliary-firmware.json` is a generated index of those aux-board bundles, including mobility, safety, power, confinement, and dock firmware packages where present. At the current archive snapshot it identifies **200 distinct auxiliary bundle SHA-256s across 8 firmware families**. Their bytes are already preserved inside the corresponding parent firmware Release; the auxiliary index makes that embedded firmware searchable without pretending it came from an independent public download URL.
+
 ## Firmware platform names vs retail models
 
 Names such as `sapphire`, `lewis`, `sanmarino`, `soho`, `ruby`, and `stingray` are **internal firmware/platform identifiers observed in iRobot software strings and OTA packages**. They are not retail model names. Newer API results can also expose deployment identifiers such as `405`, `505`, and `705`; those are treated as backend/OTA family identifiers rather than consumer models.
@@ -73,7 +75,8 @@ When archiving is enabled, each pending build is:
 4. checked against component hashes embedded in the package where available;
 5. SquashFS components are extracted and file-hashed;
 6. the original package **and its machine-readable analysis manifest** are uploaded as GitHub Release assets;
-7. the compact manifest is committed to `data/firmware/`.
+7. the compact manifest is committed to `data/firmware/`;
+8. `data/auxiliary-firmware.json` is regenerated from deep filesystem manifests so newly preserved embedded aux-board firmware is indexed automatically.
 
 Every GitHub Release body is generated from the catalog + parsed package and includes the firmware platform, associated retail models/SKUs and mapping confidence, version/release date, original package URL, metapackage URL, discovery method and probe SKU, track/signing/fused fields, ETag/Last-Modified, archive SHA-256/size/format, a complete top-level signed-component table with integrity results, SquashFS file counts and key identity/version files, platform↔hardware evidence, and the raw discovery JSON.
 
@@ -100,6 +103,7 @@ irobot-fw backfill \
 config/discovery.json       recurring API/direct probes
 data/catalog.json           canonical firmware catalog
 data/firmware/...           analyzed build manifests
+data/auxiliary-firmware.json generated embedded aux-board firmware index
 src/irobot_firmware/        discovery/downloader/analyzer CLI
 site/                       static comparison site
 .github/workflows/          daily check, backfill, Pages deployment

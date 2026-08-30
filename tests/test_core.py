@@ -7,6 +7,7 @@ from unittest.mock import patch
 from pathlib import Path
 
 from irobot_firmware.analyze import analyze, _extract_reported_identity
+from irobot_firmware.auxiliary import build_auxiliary_index
 from irobot_firmware.backfill import classic_versions, numeric_versions
 from irobot_firmware.discover import (
     api_probe, api_probe_response, direct_probe, extract_metapackage_urls,
@@ -26,6 +27,38 @@ class CatalogTests(unittest.TestCase):
         self.assertNotIn(">>>>>>>", text)
         parsed = json.loads(text)
         self.assertIsInstance(parsed.get("firmwares"), list)
+
+    def test_auxiliary_index_deduplicates_catalog_aliases_of_same_parent(self):
+        with tempfile.TemporaryDirectory() as td:
+            data_root = Path(td)
+            manifest_rel = "firmware/lewis/example.json"
+            manifest_path = data_root / manifest_rel
+            manifest_path.parent.mkdir(parents=True)
+            manifest_path.write_text(json.dumps({
+                "nested": {"files": [{
+                    "path": "opt/irobot/firmware/auxboard_firmware_lewis.tar.gz",
+                    "type": "file", "size": 123, "sha256": "a" * 64,
+                }]}
+            }))
+            archive = {
+                "manifest": manifest_rel, "sha256": "b" * 64,
+                "release_tag": "firmware-lewis-example",
+                "asset_url": "https://example.invalid/fw.signed",
+            }
+            catalog = {"updated_at": "stamp", "firmwares": [
+                {"family": "lewis", "version": "1.2.3", "url": "https://a.invalid/fw", "archive": dict(archive)},
+                {"family": "lewis", "version": "1.2.3", "url": "https://b.invalid/fw", "archive": dict(archive)},
+            ]}
+            index = build_auxiliary_index(catalog, data_root)
+            self.assertEqual(index["summary"]["bundle_count"], 1)
+            self.assertEqual(index["summary"]["unique_sha256_count"], 1)
+            self.assertEqual(index["bundles"][0]["parent_release_tag"], "firmware-lewis-example")
+
+    def test_repository_auxiliary_index_is_current(self):
+        catalog = json.loads(Path("data/catalog.json").read_text())
+        expected = build_auxiliary_index(catalog, Path("data"))
+        actual = json.loads(Path("data/auxiliary-firmware.json").read_text())
+        self.assertEqual(actual, expected)
 
     def test_merge_preserves_archive(self):
         catalog = empty_catalog()

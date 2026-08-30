@@ -1,4 +1,4 @@
-const state = { catalog: null, platforms: {}, selected: null };
+const state = { catalog: null, auxiliary: null, platforms: {}, selected: null };
 
 const $ = (q) => document.querySelector(q);
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -19,13 +19,15 @@ const sourceUrl = (f) => f.archive?.asset_url || f.url;
 const kv = (key, value, mono=false) => `<div class="kv"><span class="key">${esc(key)}</span><span class="value${mono?' mono':''}">${value ?? '—'}</span></div>`;
 
 async function load() {
-  const [catRes, platformRes] = await Promise.all([
+  const [catRes, platformRes, auxRes] = await Promise.all([
     fetch("data/catalog.json", {cache:"no-store"}),
-    fetch("data/platforms.json", {cache:"no-store"})
+    fetch("data/platforms.json", {cache:"no-store"}),
+    fetch("data/auxiliary-firmware.json", {cache:"no-store"})
   ]);
   if (!catRes.ok) throw new Error(`catalog HTTP ${catRes.status}`);
   state.catalog = await catRes.json();
   if (platformRes.ok) state.platforms = (await platformRes.json()).platforms || {};
+  if (auxRes.ok) state.auxiliary = await auxRes.json();
   renderInitial();
 }
 
@@ -34,15 +36,48 @@ function renderInitial() {
   const families = [...new Set(list.map(x => x.family))].sort();
   const knownBytes = list.reduce((sum, x) => sum + Number(x.archive?.size || x.size || 0), 0);
   const archivedCount = list.filter(archived).length;
-  $("#summary").textContent = `${list.length} builds · ${families.length} platforms · ${archivedCount} archived · ${fmtBytes(knownBytes)} indexed`;
+  const auxCount = state.auxiliary?.summary?.bundle_count || 0;
+  $("#summary").textContent = `${list.length} builds · ${families.length} platforms · ${archivedCount} archived · ${auxCount} auxiliary bundles · ${fmtBytes(knownBytes)} indexed`;
 
   $("#platformFilter").innerHTML = `<option value="">All platforms</option>` + families.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+  const auxFamilies = Object.keys(state.auxiliary?.summary?.families || {}).sort();
+  $("#auxFamilyFilter").innerHTML = `<option value="">All platforms</option>` + auxFamilies.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const options = list.map((f,i)=>`<option value="${i}">${esc(f.family)} ${esc(f.version)} · ${esc(deviceTitle(f))}${archived(f)?" · archived":""}</option>`).join("");
   $("#leftSelect").innerHTML = options;
   $("#rightSelect").innerHTML = options;
   if (list.length > 1) $("#rightSelect").value = String(list.length - 1);
   if (list.length > 2) $("#leftSelect").value = String(list.length - 2);
   renderCatalog();
+  renderAuxiliary();
+}
+
+function filteredAuxiliary() {
+  const list = state.auxiliary?.bundles || [];
+  const q = $("#auxSearch").value.trim().toLowerCase();
+  const family = $("#auxFamilyFilter").value;
+  return list.filter(x => {
+    if (family && x.family !== family) return false;
+    if (!q) return true;
+    return [x.family, x.parent_version, x.filename, x.path, x.sha256, x.parent_release_tag]
+      .filter(Boolean).join(" ").toLowerCase().includes(q);
+  });
+}
+
+function renderAuxiliary() {
+  const filtered = filteredAuxiliary();
+  $("#auxResultCount").textContent = `${filtered.length} ${filtered.length === 1 ? 'bundle' : 'bundles'}`;
+  $("#auxCatalog").innerHTML = filtered.map(x => {
+    const releaseUrl = x.parent_release_tag
+      ? `https://github.com/BookCatKid/irobot-firmware-archive/releases/tag/${encodeURIComponent(x.parent_release_tag)}`
+      : x.parent_asset_url;
+    return `<tr>
+      <td><span class="model-primary"><span class="mono">${esc(x.family)} ${esc(x.parent_version)}</span></span><span class="model-secondary">parent robot firmware</span></td>
+      <td><span class="mono">${esc(x.filename)}</span></td>
+      <td>${esc(fmtBytes(x.size))}</td>
+      <td class="mono">${esc(String(x.sha256 || '').slice(0, 16))}…</td>
+      <td>${releaseUrl ? `<a href="${esc(releaseUrl)}">parent release ↗</a>` : 'archived parent'}</td>
+    </tr>`;
+  }).join("") || `<tr><td colspan="5" class="muted">No matching auxiliary firmware.</td></tr>`;
 }
 
 function filteredCatalog() {
@@ -189,6 +224,7 @@ async function compare() {
 }
 
 ["#search", "#platformFilter", "#statusFilter"].forEach(sel => $(sel).addEventListener(sel === "#search" ? "input" : "change", renderCatalog));
+["#auxSearch", "#auxFamilyFilter"].forEach(sel => $(sel).addEventListener(sel === "#auxSearch" ? "input" : "change", renderAuxiliary));
 $("#compareButton").addEventListener("click", compare);
 $("#swap").addEventListener("click",()=>{const a=$("#leftSelect"),b=$("#rightSelect");[a.value,b.value]=[b.value,a.value];});
 load().catch(err => { $("#summary").textContent = `Failed to load catalog: ${err.message}`; });
