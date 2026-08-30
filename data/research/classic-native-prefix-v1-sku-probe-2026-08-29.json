@@ -1,0 +1,985 @@
+{
+  "schema": 1,
+  "method": "V1 representative SKU probe from official Classic native supported-prefix regexes",
+  "candidate_count": 181,
+  "hits": [
+    {
+      "sku": "R890020",
+      "items": [
+        {
+          "deploymentMpkg": "marconi_hertz/marconi_hertz-03.05.62-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "R890020",
+          "version": "v3.5.62"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3247-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-10-16",
+          "sku": "R890020",
+          "version": "v3.2.47"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconi-3.2.40-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R890020/package/marconiv3210.signed",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R890020/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-09-14",
+          "sku": "R890020",
+          "version": "v3.2.40"
+        }
+      ]
+    },
+    {
+      "sku": "R890080",
+      "items": [
+        {
+          "deploymentMpkg": "marconi_hertz/marconi_hertz-03.05.62-cn.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "R890080",
+          "version": "v3.5.62"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3247-cn.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-10-16",
+          "sku": "R890080",
+          "version": "v3.2.47"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3240-cn.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R890080/package/marconiv3210.signed",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R890080/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 2,
+          "releaseDate": "2018-09-28",
+          "sku": "R890080",
+          "version": "v3.2.40"
+        }
+      ]
+    },
+    {
+      "sku": "R891020",
+      "items": [
+        {
+          "deploymentMpkg": "marconi_hertz/marconi_hertz-03.05.62-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "R891020",
+          "version": "v3.5.62"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3247-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-10-16",
+          "sku": "R891020",
+          "version": "v3.2.47"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconi-3.2.40-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R891020/package/marconiv3210.signed",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R891020/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-09-14",
+          "sku": "R891020",
+          "version": "v3.2.40"
+        }
+      ]
+    },
+    {
+      "sku": "R891040",
+      "items": [
+        {
+          "deploymentMpkg": "marconi_hertz/marconi_hertz-03.05.62-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "R891040",
+          "version": "v3.5.62"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3247-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-10-16",
+          "sku": "R891040",
+          "version": "v3.2.47"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconi-3.2.40-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R891040/package/marconiv3210.signed",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R891040/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-09-14",
+          "sku": "R891040",
+          "version": "v3.2.40"
+        }
+      ]
+    },
+    {
+      "sku": "R891080",
+      "items": [
+        {
+          "deploymentMpkg": "marconi_hertz/marconi_hertz-03.05.62-cn.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "R891080",
+          "version": "v3.5.62"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3247-cn.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-10-16",
+          "sku": "R891080",
+          "version": "v3.2.47"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3240-cn.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R891080/package/marconiv3210.signed",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R891080/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 2,
+          "releaseDate": "2018-09-28",
+          "sku": "R891080",
+          "version": "v3.2.40"
+        }
+      ]
+    },
+    {
+      "sku": "R895020",
+      "items": [
+        {
+          "deploymentMpkg": "marconi_hertz/marconi_hertz-03.05.62-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "R895020",
+          "version": "v3.5.62"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3247-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-10-16",
+          "sku": "R895020",
+          "version": "v3.2.47"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconi-3.2.40-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R895020/package/marconiv3210.signed",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R895020/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-09-14",
+          "sku": "R895020",
+          "version": "v3.2.40"
+        }
+      ]
+    },
+    {
+      "sku": "R895040",
+      "items": [
+        {
+          "deploymentMpkg": "marconi_hertz/marconi_hertz-03.05.62-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "R895040",
+          "version": "v3.5.62"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3247-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-10-16",
+          "sku": "R895040",
+          "version": "v3.2.47"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconi-3.2.40-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R895040/package/marconiv3210.signed",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R895040/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-09-14",
+          "sku": "R895040",
+          "version": "v3.2.40"
+        }
+      ]
+    },
+    {
+      "sku": "R960020",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R960020",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960020/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960020/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R960020",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960020/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960020/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R960020",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960020/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960020/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R960020",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2283-prod.meta.prodsigned",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960020/package/roomba9xxv2283.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960020/metapackage/roomba9xxv2283.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-01",
+          "sku": "R960020",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "R960040",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R960040",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960040/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960040/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R960040",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960040/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960040/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R960040",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960040/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960040/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R960040",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2283-prod.meta.prodsigned",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960040/package/roomba9xxv2283.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960040/metapackage/roomba9xxv2283.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-01",
+          "sku": "R960040",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "R960080",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-cn.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R960080",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960080/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960080/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R960080",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960080/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960080/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R960080",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960080/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960080/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R960080",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-cn.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960080/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R960080/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 2,
+          "releaseDate": "2017-05-01",
+          "sku": "R960080",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "R961080",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-cn.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R961080",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R961080/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R961080/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R961080",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R961080/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R961080/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R961080",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R961080/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R961080/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R961080",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-cn.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R961080/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R961080/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 2,
+          "releaseDate": "2017-05-01",
+          "sku": "R961080",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "R965040",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R965040",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R965040/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R965040/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R965040",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R965040/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R965040/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R965040",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R965040/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R965040/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R965040",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2283-prod.meta.prodsigned",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R965040/package/roomba9xxv2283.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R965040/metapackage/roomba9xxv2283.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-01",
+          "sku": "R965040",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "R970080",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-cn.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R970080",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R970080/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R970080/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R970080",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R970080/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R970080/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R970080",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R970080/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R970080/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R970080",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-cn.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R970080/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R970080/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 2,
+          "releaseDate": "2017-05-01",
+          "sku": "R970080",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "R971040",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R971040",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R971040/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R971040/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R971040",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R971040/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R971040/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R971040",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R971040/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R971040/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R971040",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2283-prod.meta.prodsigned",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R971040/package/roomba9xxv2283.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R971040/metapackage/roomba9xxv2283.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-01",
+          "sku": "R971040",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "R975040",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R975040",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R975040/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R975040/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R975040",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R975040/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R975040/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R975040",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R975040/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R975040/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R975040",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2283-prod.meta.prodsigned",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R975040/package/roomba9xxv2283.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R975040/metapackage/roomba9xxv2283.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-01",
+          "sku": "R975040",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "R690020",
+      "items": [
+        {
+          "deploymentMpkg": "marconi_hertz/marconi_hertz-03.05.62-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "R690020",
+          "version": "v3.5.62"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconiv3247-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-10-16",
+          "sku": "R690020",
+          "version": "v3.2.47"
+        },
+        {
+          "deploymentMpkg": "R890R690/marconi-3.2.40-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R690020/package/marconiv3210.signed",
+          "expectedDownloadTime": 3,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R690020/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-09-14",
+          "sku": "R690020",
+          "version": "v3.2.40"
+        }
+      ]
+    },
+    {
+      "sku": "R980020",
+      "items": [
+        {
+          "deploymentMpkg": "elpaso/elpaso-02.04.06-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R980020",
+          "version": "v2.4.6-3"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/package/roomba9xxv2444.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/metapackage/roomba9xxv2444.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-01-10",
+          "sku": "R980020",
+          "version": "v2.4.4-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv22114-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/package/roomba9xxv22114.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/metapackage/roomba9xxv22114.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-08-23",
+          "sku": "R980020",
+          "version": "v2.2.11-4"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2291-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/package/roomba9xxv2291.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/metapackage/roomba9xxv2291.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-20",
+          "sku": "R980020",
+          "version": "v2.2.9-1"
+        },
+        {
+          "deploymentMpkg": "R980R960/roomba9xxv2283-prod.meta.prodsigned",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/package/roomba9xxv2283.signed",
+          "expectedDownloadTime": 10,
+          "expectedInstallationTime": 4,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/R980020/metapackage/roomba9xxv2283.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2017-05-01",
+          "sku": "R980020",
+          "version": "v2.2.8-1"
+        }
+      ]
+    },
+    {
+      "sku": "i715020",
+      "items": [
+        {
+          "deploymentMpkg": "lewis/lewis-03.02.09-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 7,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": "RT4",
+          "priority": 1,
+          "releaseDate": "2023-03-21",
+          "sku": "i715020",
+          "version": "v3.2.9"
+        },
+        {
+          "deploymentMpkg": "i7/lewis324-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 7,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": "RT4",
+          "priority": 1,
+          "releaseDate": "2019-12-18",
+          "sku": "i715020",
+          "version": "v3.2.4"
+        },
+        {
+          "deploymentMpkg": "i7/lewis3011-prod.meta.signed",
+          "downloadUrl": "http://www.irobot.com",
+          "expectedDownloadTime": 7,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "http://www.irobot.com",
+          "notes": "RT3",
+          "priority": 1,
+          "releaseDate": "2019-10-03",
+          "sku": "i715020",
+          "version": "v3.0.11"
+        },
+        {
+          "deploymentMpkg": "i7/lewis-1.6.6-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/i715020/package/marconiv3210.signed",
+          "expectedDownloadTime": 7,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/i715020/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2019-04-29",
+          "sku": "i715020",
+          "version": "v1.6.6"
+        },
+        {
+          "deploymentMpkg": "i7/lewis-1.5.4-prod.meta.signed",
+          "downloadUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/i715020/package/marconiv3210.signed",
+          "expectedDownloadTime": 7,
+          "expectedInstallationTime": 6,
+          "metapackageUrl": "https://content-prod.iot.irobotapi.com/media/files/firmware/i715020/metapackage/marconiv3210.signed",
+          "notes": " ",
+          "priority": 1,
+          "releaseDate": "2018-11-30",
+          "sku": "i715020",
+          "version": "v1.5.4"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "probe_count": 59,
+  "hits": [
+    {
+      "sku": "R890080",
+      "version": "v3.2.47",
+      "deploymentMpkg": "R890R690/marconiv3247-cn.meta.signed",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3247.signed",
+      "size": 970944,
+      "etag": "4efcf65e0a98671d02b564a6efdab269",
+      "last_modified": "Thu, 12 Sep 2019 21:35:18 GMT"
+    },
+    {
+      "sku": "R891080",
+      "version": "v3.2.47",
+      "deploymentMpkg": "R890R690/marconiv3247-cn.meta.signed",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3247.signed",
+      "size": 970944,
+      "etag": "4efcf65e0a98671d02b564a6efdab269",
+      "last_modified": "Thu, 12 Sep 2019 21:35:18 GMT"
+    },
+    {
+      "sku": "R960080",
+      "version": "v2.2.8-1",
+      "deploymentMpkg": "R980R960/roomba9xxv2291-cn.meta.signed",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2291.signed",
+      "size": 2829800,
+      "etag": "baaf34c2a4adb12ab3b6182c465ec6b2",
+      "last_modified": "Thu, 18 May 2017 20:07:26 GMT"
+    },
+    {
+      "sku": "R961080",
+      "version": "v2.2.8-1",
+      "deploymentMpkg": "R980R960/roomba9xxv2291-cn.meta.signed",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2291.signed",
+      "size": 2829800,
+      "etag": "baaf34c2a4adb12ab3b6182c465ec6b2",
+      "last_modified": "Thu, 18 May 2017 20:07:26 GMT"
+    },
+    {
+      "sku": "R970080",
+      "version": "v2.2.8-1",
+      "deploymentMpkg": "R980R960/roomba9xxv2291-cn.meta.signed",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2291.signed",
+      "size": 2829800,
+      "etag": "baaf34c2a4adb12ab3b6182c465ec6b2",
+      "last_modified": "Thu, 18 May 2017 20:07:26 GMT"
+    }
+  ]
+}
