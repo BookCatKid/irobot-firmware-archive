@@ -12,6 +12,16 @@ from irobot_firmware.release_notes import render_release_notes
 
 
 class CatalogTests(unittest.TestCase):
+    def test_repository_catalog_json_is_valid(self):
+        # This specifically guards the machine-readable catalog against an accidental
+        # unresolved Git merge being committed by either a human or an Action run.
+        path = Path("data/catalog.json")
+        text = path.read_text()
+        self.assertNotIn("<<<<<<<", text)
+        self.assertNotIn(">>>>>>>", text)
+        parsed = json.loads(text)
+        self.assertIsInstance(parsed.get("firmwares"), list)
+
     def test_merge_preserves_archive(self):
         catalog = empty_catalog()
         old = {"family": "sapphire", "version": "1", "url": "u", "archive": {"sha256": "abc"}}

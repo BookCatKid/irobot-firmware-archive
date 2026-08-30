@@ -77,11 +77,11 @@ When archiving is enabled, each pending build is:
 
 Every GitHub Release body is generated from the catalog + parsed package and includes the firmware platform, associated retail models/SKUs and mapping confidence, version/release date, original package URL, metapackage URL, discovery method and probe SKU, track/signing/fused fields, ETag/Last-Modified, archive SHA-256/size/format, a complete top-level signed-component table with integrity results, SquashFS file counts and key identity/version files, platform↔hardware evidence, and the raw discovery JSON.
 
-The daily job processes at most six pending builds per run to keep Actions/runtime/storage bursts under control.
+The archive workflow does **not** impose a package-count cap. It processes every pending catalog record in the run; GitHub's own hosted-run/storage/network constraints are the only external limits.
 
 ## Historical backfill
 
-The **Historical firmware backfill** workflow is manual on purpose. It lets you scan one family/range at a time before deciding how much storage to consume. The default safety cap is 5,000 object probes per invocation, and `archive_found` defaults to false.
+The **Historical firmware backfill** workflow is manual on purpose so different naming families can be searched deliberately. `max_probes=0` means the requested search space is not truncated, and `archive_found` can immediately preserve every object found by the scan.
 
 Example local dry discovery of the classic `sapphire` naming space:
 
@@ -91,7 +91,7 @@ irobot-fw backfill \
   --template 'https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed' \
   --scheme classic \
   --year-start 23 --year-end 24 \
-  --patch-max 10 --max-probes 5000
+  --patch-max 15
 ```
 
 ## Repository layout

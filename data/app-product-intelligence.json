@@ -169,5 +169,146 @@
       "size": 245784,
       "note": "Braava jet 240 update payload embedded in the Classic Android app; filename supplies version."
     }
+  ],
+  "historical_software_versions": [
+    {
+      "platform": "lewis",
+      "versions": [
+        "1.5.4",
+        "2.0.2",
+        "2.6.13",
+        "3.0.2",
+        "3.0.3",
+        "3.0.4",
+        "3.0.6",
+        "3.0.7",
+        "3.0.9",
+        "3.0.10",
+        "3.0.11",
+        "3.10.8",
+        "3.14.12",
+        "3.14.16",
+        "3.18.11",
+        "3.20.7"
+      ],
+      "source_resources": [
+        "res/raw/base_pmap_umf_responses.json",
+        "res/raw/lewis_pmap_umf_responses.json",
+        "res/raw/lewis_iot_sim_responses.json",
+        "res/raw/lewis_local_sim_responses.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0",
+      "note": "Unique softwareVer values preserved from official app simulator/history fixtures; these are evidence of historical software versions, not proof the corresponding OTA object is still public."
+    },
+    {
+      "platform": "ruby",
+      "versions": [
+        "1.2.12"
+      ],
+      "source_resources": [
+        "res/raw/ruby_discovery_config.json",
+        "res/raw/ruby_iot_sim_responses.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0"
+    },
+    {
+      "platform": "sanmarino",
+      "versions": [
+        "2.6.6",
+        "3.0.10"
+      ],
+      "source_resources": [
+        "res/raw/san_marino_discovery_config.json",
+        "res/raw/san_marino_iot_sim_responses.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0"
+    },
+    {
+      "platform": "sapphire",
+      "versions": [
+        "1.2.12"
+      ],
+      "source_resources": [
+        "res/raw/sapphire_discovery_config.json",
+        "res/raw/sapphire_iot_sim_responses.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0"
+    },
+    {
+      "platform": "soho",
+      "versions": [
+        "1.14.17",
+        "22.52.0"
+      ],
+      "source_resources": [
+        "res/raw/soho_discovery_config.json",
+        "res/raw/soho_local_sim_responses.json",
+        "res/raw/soho_iot_sim_responses.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0"
+    },
+    {
+      "platform": "stingray",
+      "versions": [
+        "0.10.6"
+      ],
+      "source_resources": [
+        "res/raw/stingray_iot_sim_responses.json",
+        "res/raw/stingray_vmrs_discovery_config.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0"
+    },
+    {
+      "platform": "topaz",
+      "versions": [
+        "1.6.9"
+      ],
+      "source_resources": [
+        "res/raw/topaz_discovery_config.json",
+        "res/raw/topaz_iot_sim_responses.json",
+        "res/raw/topaz_local_sim_responses.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0"
+    },
+    {
+      "platform": null,
+      "versions": [
+        "3.2.10"
+      ],
+      "sku": "R111840",
+      "sku_type": "Atlantis",
+      "source_resources": [
+        "res/raw/atlantis_discovery_config.json",
+        "res/raw/atlantis_iot_sim_responses.json"
+      ],
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0",
+      "note": "The app fixture softwareVer has no platform prefix, so no firmware family is inferred."
+    }
+  ],
+  "native_firmware_constants": [
+    {
+      "symbol": "core::util::Constants::kMarconiFirmwareFilename",
+      "value": "marconiv327.signed",
+      "source_library": "libcore_base.so",
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0",
+      "note": "Hard-coded legacy firmware filename in the official app native core. The filename alone is not treated as proof of an archived payload or retail-model mapping."
+    },
+    {
+      "symbol": "core::util::Constants::kRoomba9xxFirmwareFilename",
+      "value": "roomba9xxv2444.signed",
+      "source_library": "libcore_base.so",
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0",
+      "note": "Hard-coded legacy 9xx firmware filename in the official app native core. The filename alone is not treated as proof that the blob is bundled in the APK."
+    }
   ]
 }
