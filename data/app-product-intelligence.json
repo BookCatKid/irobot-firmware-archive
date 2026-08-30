@@ -13,6 +13,18 @@
       "method": "JADX 1.5.6",
       "source_file": "com/irobot/core/SkuUtils.java",
       "note": "Newest Prime build retrievable from APKPure via apkeep during analysis; newer 3.x exists publicly but was unavailable as a mirror binary."
+    },
+    {
+      "package": "com.irobot.home.prime",
+      "version": "3.1.0",
+      "version_code": 3010006,
+      "method": "APKMirror APKM extraction + JADX 1.5.6 (Android shell) + Flutter AOT libapp.so/assets string analysis",
+      "source_file": "arm64-v8a/libapp.so and assets/flutter_assets/packages/module_locale/assets/common/en_US.odt",
+      "apkm_sha256": "d5c6b268ae4917ff0168694334642fb229e8176cf01b342c1df7e8d0d0e91de3",
+      "base_apk_sha256": "63f7d438faf3ac39f74b75efeec43cf12452a62ed08e8309133c7ebce3725a1c",
+      "libapp_sha256": "8953b951bd3b1051a9751eafb345474a857965ed2f0c6d9c29eac26a1e939602",
+      "source_archive": "APKMirror Roomba Home 3.1.0 bundle downloaded 2026-08-29",
+      "note": "3.1.0 is Flutter/AOT; the older com.irobot.core.SkuUtils/SkuType Java wrappers are no longer present in the base APK."
     }
   ],
   "sku_types_classic": [
@@ -108,7 +120,8 @@
     "Prime505": "Roomba Plus 500 Series Combo robot",
     "Prime705": "Roomba Max 700 Series Vac robot",
     "Prime705Combo": "Roomba Max 700 Series Combo robot",
-    "PrimeMini": "Roomba Mini"
+    "PrimeMini": "Roomba Mini",
+    "Prime605_1_7_2": "Roomba Plus 600 Series Combo robot (Prime 1.7.2 resource card; not present in the Prime 3.1.0 model-subtitle set)"
   },
   "software_evidence": [
     {
@@ -310,5 +323,54 @@
       "source_version": "7.18.0",
       "note": "Hard-coded legacy 9xx firmware filename in the official app native core. The filename alone is not treated as proof that the blob is bundled in the APK."
     }
-  ]
+  ],
+  "prime_3_1_0_flutter": {
+    "architecture": "Flutter AOT (product/OTA logic compiled into arm64-v8a/libapp.so; Java SkuUtils/SkuType wrappers absent)",
+    "hardcoded_sku_literals": [
+      "G185020",
+      "R980020"
+    ],
+    "hardcoded_sku_literal_note": "These are the only one-letter-plus-six-digit SKU-looking literals found by exhaustive strings scan of the arm64 libapp.so; context is not inferred from adjacency alone.",
+    "model_subtitle_codes": {
+      "105C": "Roomba 105 Series Robot",
+      "105V": "Roomba 105 Series Robot",
+      "115C": "Roomba 110 Series Robot",
+      "205C": "Roomba 200 DustCompactor Series Robot",
+      "205V": "Roomba 200 DustCompactor Series Robot",
+      "405C": "Roomba Plus 400 Series Robot",
+      "415C": "Roomba Plus 410 Series Robot",
+      "507C": "Roomba Plus 500 Series Robot",
+      "517C": "Roomba Plus 510 Series Robot",
+      "575C": "Roomba Plus 570 Series Robot",
+      "705C": "Roomba Max 700 Series Robot",
+      "705V": "Roomba Max 700 Series Robot",
+      "715V": "Roomba Max 715 Series Robot",
+      "775C": "Roomba Max 770 Series Robot",
+      "815C": "Roomba Max 810 Series Robot",
+      "MiniC": "Roomba Mini Series Robot"
+    },
+    "model_name_source": "assets/flutter_assets/packages/module_locale/assets/common/en_US.odt keys deviceSetting_aboutDevice_deviceModelSubTitle*",
+    "mini_asset_evidence": [
+      "robot_mini_black.png",
+      "robot_mini_green.png",
+      "robot_mini_pink.png",
+      "robot_mini_white.png",
+      "charge_mini_base_*",
+      "charge_mini_no_base_*"
+    ],
+    "ota_logic_strings": [
+      "fetchFirmware request sku=",
+      "fetchFirmware response sku=",
+      "checkUpdate skipped: empty sku or softwareVer assetId=",
+      "deploymentMpkg",
+      "metapackageUrl",
+      "downloadUrl",
+      "softwareVer",
+      "soldAsSku"
+    ],
+    "version_delta": {
+      "prime_1_7_2_605": "Prime 1.7.2 resources contain prime_roomba_605_card_title = Roomba Plus 600 Series Combo robot.",
+      "prime_3_1_0_605": "No 605 model-subtitle key or 605 text was found in en_US.odt in Prime 3.1.0; do not treat 605 as current without independent evidence."
+    }
+  }
 }

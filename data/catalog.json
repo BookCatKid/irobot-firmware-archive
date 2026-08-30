@@ -394,6 +394,90 @@
       "version": "0.7.12"
     },
     {
+      "discovered_at": "2026-08-30T02:51:43.777782+00:00",
+      "etag": "3a80c2600c85b2356136eae0b7c3d2b2-14",
+      "family": "sapphire",
+      "last_modified": "Fri, 10 Feb 2023 16:16:22 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 234866468,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-22.52.04.signed",
+      "version": "22.52.04"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:44.226713+00:00",
+      "etag": "ad6303ce75b60b10c9429306fd2b0690-14",
+      "family": "sapphire",
+      "last_modified": "Tue, 21 Feb 2023 17:04:15 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 234866468,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-22.52.05.signed",
+      "version": "22.52.05"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:44.748326+00:00",
+      "etag": "a147087338ee12b016ee5b9b8bcceff6-14",
+      "family": "sapphire",
+      "last_modified": "Wed, 12 Apr 2023 17:47:38 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 234866468,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-22.52.07.signed",
+      "version": "22.52.07"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:45.202351+00:00",
+      "etag": "4ec6d8a6042aa060940ec7492ab4731e-14",
+      "family": "sapphire",
+      "last_modified": "Thu, 23 Mar 2023 13:31:31 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 238683940,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.07.02.signed",
+      "version": "23.07.02"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:45.750409+00:00",
+      "etag": "ee5e1821043b61eb68a331dd063ef3fc-14",
+      "family": "sapphire",
+      "last_modified": "Tue, 13 Jun 2023 12:36:21 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 238589733,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.12.04.signed",
+      "version": "23.12.04"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:46.159613+00:00",
+      "etag": "47c0c2275785537750d1bb92e24ea629-15",
+      "family": "sapphire",
+      "last_modified": "Mon, 21 Aug 2023 15:34:04 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 244012837,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.24.07.signed",
+      "version": "23.24.07"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:46.667671+00:00",
+      "etag": "c71d921d11a9f549c5a1e3eb6f446331-15",
+      "family": "sapphire",
+      "last_modified": "Mon, 21 Aug 2023 18:38:51 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 244008741,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.24.08.signed",
+      "version": "23.24.08"
+    },
+    {
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.37.05-47d9041d8f4b/sapphire-23.37.05.signed",
         "component_count": 13,
@@ -414,6 +498,18 @@
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.37.05.signed",
       "version": "23.37.05"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:47.120668+00:00",
+      "etag": "8fda8b6c2af6ae6f09a81e5c09da6f3c-15",
+      "family": "sapphire",
+      "last_modified": "Tue, 20 Feb 2024 20:50:23 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 250308390,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.53.03.signed",
+      "version": "23.53.03"
     },
     {
       "archive": {
@@ -526,6 +622,78 @@
       "version": "24.29.03"
     },
     {
+      "discovered_at": "2026-08-30T02:51:47.660033+00:00",
+      "etag": "08c71696ab89eb0a25dace3b2df5f1b8-14",
+      "family": "stingray",
+      "last_modified": "Fri, 10 Feb 2023 16:16:22 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 234870564,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-22.52.04.signed",
+      "version": "22.52.04"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:48.144355+00:00",
+      "etag": "cc8c8896bd5ebcfb6f1a4b262e1a34a0-14",
+      "family": "stingray",
+      "last_modified": "Tue, 28 Feb 2023 21:55:25 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 234874660,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-22.52.06.signed",
+      "version": "22.52.06"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:48.678432+00:00",
+      "etag": "f370055c9305aca71651f2b2fc1db067-14",
+      "family": "stingray",
+      "last_modified": "Thu, 23 Mar 2023 13:31:31 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 234272548,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.07.02.signed",
+      "version": "23.07.02"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:49.122746+00:00",
+      "etag": "8611f6d71be40bc9f52cd0bbd79bd01a-14",
+      "family": "stingray",
+      "last_modified": "Tue, 13 Jun 2023 12:36:21 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 235104037,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.12.04.signed",
+      "version": "23.12.04"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:49.645869+00:00",
+      "etag": "1d78c40cdb26fb99c493af2617c33308-15",
+      "family": "stingray",
+      "last_modified": "Mon, 21 Aug 2023 15:34:04 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 246859557,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.24.07.signed",
+      "version": "23.24.07"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:50.117250+00:00",
+      "etag": "cc725233454aa315708ebe1411c795f4-15",
+      "family": "stingray",
+      "last_modified": "Tue, 29 Aug 2023 16:29:42 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 246859544,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.24.10.signed",
+      "version": "23.24.10"
+    },
+    {
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.37.05-7400bfa1b237/stingray-23.37.05.signed",
         "component_count": 13,
@@ -614,6 +782,18 @@
       "version": "23.37.14"
     },
     {
+      "discovered_at": "2026-08-30T02:51:51.005131+00:00",
+      "etag": "6144d0eea2544409f97ec8d78f1f193f-15",
+      "family": "stingray",
+      "last_modified": "Fri, 02 Feb 2024 18:50:58 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 250292006,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.37.15.signed",
+      "version": "23.37.15"
+    },
+    {
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.37.71-d3f45ea42fba/stingray-23.37.71.signed",
         "component_count": 13,
@@ -634,6 +814,18 @@
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.37.71.signed",
       "version": "23.37.71"
+    },
+    {
+      "discovered_at": "2026-08-30T02:51:51.544219+00:00",
+      "etag": "53362df8f225aa9f0b170de2c1bdaa1a-15",
+      "family": "stingray",
+      "last_modified": "Tue, 20 Feb 2024 20:25:39 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 254015270,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.53.03.signed",
+      "version": "23.53.03"
     },
     {
       "archive": {
@@ -790,6 +982,18 @@
       "version": "24.29.03"
     },
     {
+      "discovered_at": "2026-08-30T02:51:52.108650+00:00",
+      "etag": "fdf6cd6ee3a257b517211cce7d02facf-16",
+      "family": "stingray",
+      "last_modified": "Thu, 21 Nov 2024 10:44:50 GMT",
+      "recovery_note": "Originally found by exhaustive GitHub Actions backfill; release asset uploaded successfully, but the generated catalog/manifests commit was rejected as non-fast-forward.",
+      "size": 259729197,
+      "source": "historical-backfill-release-recovery",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-24.29.04.signed",
+      "version": "24.29.04"
+    },
+    {
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.05-fa399823e009/stingray-24.29.05.signed",
         "component_count": 13,
@@ -835,5 +1039,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T01:38:01.803907+00:00"
+  "updated_at": "2026-08-30T02:51:52.109661+00:00"
 }

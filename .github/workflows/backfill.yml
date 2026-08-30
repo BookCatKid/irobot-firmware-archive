@@ -52,6 +52,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
+          ref: main
           fetch-depth: 0
       - name: Validate catalog JSON
         run: python -m json.tool data/catalog.json >/dev/null
@@ -91,5 +92,7 @@ jobs:
           git add data/catalog.json data/firmware
           if ! git diff --cached --quiet; then
             git commit -m "archive: backfill ${{ inputs.family }} firmware"
-            git push
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
