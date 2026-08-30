@@ -66,11 +66,7 @@
         "size": 38824489
       },
       "deployment_mpkg": "405/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:29:50.181193+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:30.707698+00:00",
->>>>>>> Stashed changes
       "family": "405",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-g10-g18/metapackage/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
@@ -97,11 +93,7 @@
         "size": 159504617
       },
       "deployment_mpkg": "505/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:29:50.286377+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:32.262404+00:00",
->>>>>>> Stashed changes
       "family": "505",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/metapackage/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
@@ -128,11 +120,7 @@
         "size": 154677454
       },
       "deployment_mpkg": "705/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:29:50.394815+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:39.299813+00:00",
->>>>>>> Stashed changes
       "family": "705",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/metapackage/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
@@ -224,11 +212,7 @@
         "sha256": "ee62b87fe0451538b10cebabaeed7410916cbc1411385a9c7f7937ff8a314750",
         "size": 144331351
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:28.474671+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:23.518231+00:00",
->>>>>>> Stashed changes
       "etag": "7a0b3ec16715b132faf342855b669717-18",
       "family": "lewis",
       "last_modified": "Fri, 07 Sep 2018 16:16:45 GMT",
@@ -250,11 +234,7 @@
         "sha256": "44f7bad36e3899fbea2ca72cbd22663dc8f58475590751719dfbbd317bc1e857",
         "size": 151716440
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:29.497428+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:23.502939+00:00",
->>>>>>> Stashed changes
       "etag": "3751c47492381417f5f3e9572e8b545f-10",
       "family": "lewis",
       "last_modified": "Tue, 13 Nov 2018 19:08:03 GMT",
@@ -276,11 +256,7 @@
         "sha256": "23985f330e9ac989add820fb495d774fd4e39b2564d08d133c175c9e8722055c",
         "size": 151704153
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:30.328776+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:23.518537+00:00",
->>>>>>> Stashed changes
       "etag": "7093502a727d2696260665e5938217b2-19",
       "family": "lewis",
       "last_modified": "Wed, 13 Feb 2019 21:26:54 GMT",
@@ -302,11 +278,7 @@
         "sha256": "8b9149a01e01600b8eb062023b4ed4c8243f29c28aa56d9f0482f48649bd4a59",
         "size": 158499273
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:30.947335+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:23.518771+00:00",
->>>>>>> Stashed changes
       "etag": "7a9fe6ac5e5c5391ed2d2dd7890a213c-19",
       "family": "lewis",
       "last_modified": "Mon, 15 Apr 2019 14:26:47 GMT",
@@ -329,11 +301,7 @@
         "size": 237519274
       },
       "deployment_mpkg": "lewis/lewis-22.52.08-prod.meta.signed",
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:29:49.785943+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:03.462262+00:00",
->>>>>>> Stashed changes
       "family": "lewis",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
@@ -357,11 +325,7 @@
         "size": 165524132
       },
       "deployment_mpkg": "ruby/ruby-00.07.12-prod.meta.signed",
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:29:50.056733+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:03.752019+00:00",
->>>>>>> Stashed changes
       "family": "ruby",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/0.7.12-j9/metapackage/ruby-00.07.12-prod.meta.signed",
@@ -384,11 +348,7 @@
         "sha256": "47d9041d8f4b40b20b1770856885deec573fb9bdf9a06815c3416a89dc964958",
         "size": 246933285
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:01.726003+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.052284+00:00",
->>>>>>> Stashed changes
       "etag": "acd2d807ce25b6ac9a04ec36b82ecffa-15",
       "family": "sapphire",
       "last_modified": "Fri, 27 Oct 2023 13:40:09 GMT",
@@ -410,11 +370,7 @@
         "sha256": "cdb0024891d028f7041d6b7e190c5c85f54aba50206f3b0b1e873820645365ad",
         "size": 250308390
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:03.141493+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.030715+00:00",
->>>>>>> Stashed changes
       "etag": "222932c998a81eaba31e9113453b077d-15",
       "family": "sapphire",
       "last_modified": "Thu, 22 Feb 2024 22:15:39 GMT",
@@ -436,11 +392,7 @@
         "sha256": "e069b1a65d413dd9dbf8d60bc1e1fd14d8e323438be10265b9b86cb0cd4cc668",
         "size": 250332939
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:02.484870+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:19.907539+00:00",
->>>>>>> Stashed changes
       "etag": "10672e8d88b09fc3c7a35fe915cb6898-15",
       "family": "sapphire",
       "last_modified": "Tue, 02 Apr 2024 15:58:25 GMT",
@@ -462,11 +414,7 @@
         "sha256": "f6da51da305b3cc4f6e964fbf51c3805a1e3d0591c7cf0a3986ffebf1cd0261b",
         "size": 253662995
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:04.226828+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.076255+00:00",
->>>>>>> Stashed changes
       "etag": "614dc8c20b2d62a3ecf186b0a39d801c-15",
       "family": "sapphire",
       "last_modified": "Fri, 09 Aug 2024 14:38:51 GMT",
@@ -488,11 +436,7 @@
         "sha256": "d4feb7ab543346dcfebb98f9191d7bec2994cd928e6abb431df5a3eb63021960",
         "size": 253687571
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:04.241897+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.133527+00:00",
->>>>>>> Stashed changes
       "etag": "d29872a8838254963b6943df48213866-15",
       "family": "sapphire",
       "last_modified": "Thu, 05 Sep 2024 09:50:12 GMT",
@@ -514,11 +458,7 @@
         "sha256": "017dbfa4578541228c3503348e8d13920c3bf93351373d49faa087fe4ae43e0a",
         "size": 253699885
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:04.252982+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.103539+00:00",
->>>>>>> Stashed changes
       "etag": "d8b50a123b1bed1b2961290fb95f2518",
       "family": "sapphire",
       "last_modified": "Tue, 17 Dec 2024 13:19:34 GMT",
@@ -540,11 +480,7 @@
         "sha256": "7400bfa1b23769a9b37daa2f4ee676a972ede62d24ea801ce12675b1a0d42286",
         "size": 250210085
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:13.764011+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.720216+00:00",
->>>>>>> Stashed changes
       "etag": "b00cfea26bd388866376bb9fd77e2b2b-15",
       "family": "stingray",
       "last_modified": "Fri, 27 Oct 2023 13:40:09 GMT",
@@ -566,11 +502,7 @@
         "sha256": "0199658c9054c235a9a8f261f8ce3a5dcde376ed14afd8d2e13493db6fa119b3",
         "size": 250287910
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:12.673814+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.638041+00:00",
->>>>>>> Stashed changes
       "etag": "ad502f223977be87665249a2b7a67d02-15",
       "family": "stingray",
       "last_modified": "Thu, 30 Nov 2023 14:02:56 GMT",
@@ -592,11 +524,7 @@
         "sha256": "d7389e6443b950e4344e618bdb2177186c2085829c5ba80f3f83c2f40306388c",
         "size": 250287910
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:13.033480+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.664450+00:00",
->>>>>>> Stashed changes
       "etag": "2d85a757cc506a015a91e1c03118277a-15",
       "family": "stingray",
       "last_modified": "Thu, 01 Feb 2024 21:48:36 GMT",
@@ -618,11 +546,7 @@
         "sha256": "7d6f2ab040e15c1a77b52064964583d0b93ee6eb45a1bb5ca8190c52e6af78f6",
         "size": 250287910
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:13.395333+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.692420+00:00",
->>>>>>> Stashed changes
       "etag": "8c21dc66e62a1d7a4589b55008412257-15",
       "family": "stingray",
       "last_modified": "Thu, 01 Feb 2024 21:48:36 GMT",
@@ -644,11 +568,7 @@
         "sha256": "d3f45ea42fbab53d92b5e60d340764ad1c9aaef467e1660851a87a907197a775",
         "size": 250287910
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:14.420442+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.723141+00:00",
->>>>>>> Stashed changes
       "etag": "9f29dd7a0a8a2df192c540afcb46df02-15",
       "family": "stingray",
       "last_modified": "Tue, 06 Feb 2024 17:44:55 GMT",
@@ -670,11 +590,7 @@
         "sha256": "2ecf62cd2c7555aca80e5fb4af49cedf2bee11c4abae549c9c8ee7e01a173c48",
         "size": 254015270
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:15.523729+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.744488+00:00",
->>>>>>> Stashed changes
       "etag": "9b014fc06f50f8be637e46726a4c8d4d-15",
       "family": "stingray",
       "last_modified": "Thu, 22 Feb 2024 22:15:39 GMT",
@@ -696,11 +612,7 @@
         "sha256": "a3af213e0cea015576751161c8eeea00bd85a0949a83848f0da0b4e8a751534f",
         "size": 254007051
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:14.818149+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.741241+00:00",
->>>>>>> Stashed changes
       "etag": "87ca47c9d0dcef977c21c92c2c068976-15",
       "family": "stingray",
       "last_modified": "Tue, 02 Apr 2024 15:58:25 GMT",
@@ -722,11 +634,7 @@
         "sha256": "7d46d09ad6452e65a74a2aa774fef8c1250f8bfde08d45bf0e0ce1a34844f1c1",
         "size": 254002981
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:16.119961+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.763115+00:00",
->>>>>>> Stashed changes
       "etag": "b648b6781c68ed97b343f2e53f657a56-15",
       "family": "stingray",
       "last_modified": "Mon, 23 Sep 2024 14:00:10 GMT",
@@ -748,11 +656,7 @@
         "sha256": "ba523b78d6ec242f4dccbe391969ae4a9d32faa3add830ff781c4976897cca9e",
         "size": 254007077
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:15.187026+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.734575+00:00",
->>>>>>> Stashed changes
       "etag": "231c4b0b346f93fed434373dd03cf39d-15",
       "family": "stingray",
       "last_modified": "Fri, 18 Oct 2024 07:30:29 GMT",
@@ -774,11 +678,7 @@
         "sha256": "124d7e74a8419de5f9fe3ec01550848f28762ebab0835bdf59af75c2a431a1de",
         "size": 259663635
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:16.714935+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.787377+00:00",
->>>>>>> Stashed changes
       "etag": "026f881a9f07e1a753f3bf09cf533fc0-16",
       "family": "stingray",
       "last_modified": "Mon, 21 Oct 2024 08:23:03 GMT",
@@ -800,11 +700,7 @@
         "sha256": "5785dc6a5820bdd532a0fde674173f4ef0c0a8c4f49d9a62a2ff243cc577c766",
         "size": 259692307
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:17.205534+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.795150+00:00",
->>>>>>> Stashed changes
       "etag": "12ab0b37456f08fa9803ff35652d2a68-16",
       "family": "stingray",
       "last_modified": "Thu, 05 Sep 2024 10:03:57 GMT",
@@ -826,11 +722,7 @@
         "sha256": "5e258f35a202fb6752e004eba4b3f0c2d0d39cd254db6e8a93668cd796b9799a",
         "size": 259696429
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:17.539557+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.796739+00:00",
->>>>>>> Stashed changes
       "etag": "2f9dd6ee42330c2ca0d376c744bb5538-16",
       "family": "stingray",
       "last_modified": "Mon, 21 Oct 2024 08:50:53 GMT",
@@ -852,11 +744,7 @@
         "sha256": "fa399823e00954342d887974faf284adaccf382ea00edaafcd86416ec1f26a1c",
         "size": 259733293
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:17.553482+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.816814+00:00",
->>>>>>> Stashed changes
       "etag": "da847252ca6e355a7bae632c6cca1336-16",
       "family": "stingray",
       "last_modified": "Tue, 03 Dec 2024 14:44:34 GMT",
@@ -878,11 +766,7 @@
         "sha256": "424a61e90e9fefd1fa6a3971fa541fecf3a2b98acd73f5f18bdb11e18d620fd6",
         "size": 259733293
       },
-<<<<<<< Updated upstream
-      "discovered_at": "2026-08-30T01:30:17.953524+00:00",
-=======
       "discovered_at": "2026-08-30T01:33:20.811448+00:00",
->>>>>>> Stashed changes
       "etag": "88fce6ed7235105ef2ec30dc69e3ff68-16",
       "family": "stingray",
       "last_modified": "Sat, 08 Mar 2025 17:23:11 GMT",
@@ -896,9 +780,5 @@
     }
   ],
   "schema": 1,
-<<<<<<< Updated upstream
-  "updated_at": "2026-08-30T01:30:51.060335+00:00"
-=======
-  "updated_at": "2026-08-30T01:34:55.365153+00:00"
->>>>>>> Stashed changes
+  "updated_at": "2026-08-30T01:36:24.357837+00:00"
 }
