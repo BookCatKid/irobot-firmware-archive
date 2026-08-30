@@ -504,6 +504,32 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.6.3-4a3cd105ca65/daredevil-2.6.3.signed",
+        "component_count": 0,
+        "format": "swupdate-cpio",
+        "manifest": "firmware/daredevil/2.6.3-4a3cd105ca65.json",
+        "release_tag": "firmware-daredevil-2.6.3-4a3cd105ca65",
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "daredevil",
+          "software_version": "daredevil+2.6.3+daredevil-release+168",
+          "version": "2.6.3"
+        },
+        "sha256": "4a3cd105ca65bdc8fc5fa1d0ee4d211a9e6626706357ac1c8eb9de6320dd35fb",
+        "size": 25525116
+      },
+      "discovered_at": "2026-08-30T05:55:18.360850+00:00",
+      "etag": "63b006633d0a1e226bbae0ffcf543f56-2",
+      "family": "daredevil",
+      "last_modified": "Wed, 20 Dec 2023 22:40:37 GMT",
+      "size": 25525116,
+      "source": "direct-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil-2.6.3.signed",
+      "version": "2.6.3"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.6.6-b52dcff5ccfa/daredevil-2.6.6.signed",
         "component_count": 0,
         "format": "swupdate-cpio",
@@ -8197,5 +8223,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T05:48:59.251079+00:00"
+  "updated_at": "2026-08-30T05:57:25.924109+00:00"
 }
