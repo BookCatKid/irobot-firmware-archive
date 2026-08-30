@@ -21,6 +21,22 @@ Deep filesystem analysis also exposes firmware that iRobot ships *inside* the ro
 
 Robot audio is indexed the same way. `data/audio-assets.json` summarizes embedded songs and multilingual voice prompts without duplicating the media files into Git. At the current snapshot it covers **137,447 unique audio SHA-256s**, **9,148 semantic sound/language combinations**, **52 locale directories**, and **22 robot-song names** across **200 unique parent firmware packages**. Exact paths, hashes, and bytes remain traceable through the parent firmware manifests/Releases; the Pages site exposes a searchable metadata view.
 
+## Completeness is evidence-based, not a fake percentage
+
+`data/completeness.json` is the machine-readable completeness ledger. It deliberately separates:
+
+- preserved byte-identical firmware artifacts;
+- catalog aliases that point at the same SHA-256 payload;
+- historical software states seen in official apps but not independently proven to have been separate OTA downloads;
+- explicit software releases listed on official iRobot support pages whose exact package bytes have not yet been recovered;
+- factory-only/no-OTA software states;
+- SKU/platform mapping gaps; and
+- already-run negative public-object probes.
+
+At the current snapshot the 256 catalog rows represent **251 unique preserved firmware payload SHA-256s** plus **5 byte-identical aliases**. All 256 catalog rows have archived bytes. Separately, official release-note reconciliation currently leaves **71 rollout-version evidence gaps** and **6 explicitly factory-only states**. The 71 gap entries are *not* claimed to be 71 distinct missing blobs: some support pages cover multiple internal hardware branches, and an official version heading proves that a rollout existed without revealing its exact package filename or byte identity.
+
+The archive therefore does not claim a literal historical “100%” unless the surviving public evidence can actually justify it. The goal is instead to drive every evidence-backed recoverable gap to zero while keeping uncertainty explicit.
+
 ## Firmware platform names vs retail models
 
 Names such as `sapphire`, `lewis`, `sanmarino`, `soho`, `ruby`, and `stingray` are **internal firmware/platform identifiers observed in iRobot software strings and OTA packages**. They are not retail model names. Newer API results can also expose deployment identifiers such as `405`, `505`, and `705`; those are treated as backend/OTA family identifiers rather than consumer models.
@@ -40,10 +56,11 @@ The archive also statically analyzes official iRobot Android apps to recover pro
 
 ## Current discovery sources
 
-The tool supports two complementary mechanisms:
+The tool supports three complementary mechanisms:
 
 1. iRobot's content firmware API (`content-prod.iot.irobotapi.com/v2/firmware`) using known/synthetic SKU probes.
 2. Direct 1-byte probes of known OTA naming schemes such as `prod-ota-firmware.iot.irobotapi.com/sapphire-24.29.03.signed`.
+3. Official iRobot software-release pages as an independent version-evidence feed. These are parsed conservatively: dates and app-version prose are excluded, and entries explicitly marked factory-only/no-OTA are not treated as missing OTA packages.
 
 There does not appear to be a public "list every object/version" endpoint, so **exhaustive historical coverage is a backfill/search problem rather than a single API call**. `irobot-fw backfill` exists specifically for that. The classic scanner generates padded and unpadded `YY.WW.patch` variants and can be chunked in Actions.
 
@@ -80,7 +97,8 @@ When archiving is enabled, each pending build is:
 7. the compact manifest is committed to `data/firmware/`;
 8. `data/auxiliary-firmware.json` is regenerated from deep filesystem manifests so newly preserved embedded aux-board firmware is indexed automatically.
 9. `data/audio-assets.json` is regenerated so embedded robot songs and voice-prompt variants stay searchable.
-10. a Release-integrity audit checks the published firmware and distinct metapackage assets against catalog byte counts and GitHub's SHA-256 digests before the metadata commit is pushed.
+10. official release-note evidence and `data/completeness.json` are refreshed so newly published versions become explicit research/backfill leads even when the firmware API does not yet return them.
+11. a Release-integrity audit checks the published firmware and distinct metapackage assets against catalog byte counts and GitHub's SHA-256 digests before the metadata commit is pushed.
 
 Every GitHub Release body is generated from the catalog + parsed package and includes the firmware platform, associated retail models/SKUs and mapping confidence, version/release date, original package URL, metapackage URL, discovery method and probe SKU, track/signing/fused fields, ETag/Last-Modified, archive SHA-256/size/format, a complete top-level signed-component table with integrity results, SquashFS file counts and key identity/version files, platform↔hardware evidence, and the raw discovery JSON.
 
@@ -111,6 +129,7 @@ data/catalog.json           canonical firmware catalog
 data/firmware/...           analyzed build manifests
 data/auxiliary-firmware.json generated embedded aux-board firmware index
 data/audio-assets.json      generated embedded robot-audio metadata index
+data/completeness.json      evidence-based archive/research completeness ledger
 data/research/...           provenance-heavy completeness/reconciliation evidence
 src/irobot_firmware/        discovery/downloader/analyzer CLI
 site/                       static comparison site

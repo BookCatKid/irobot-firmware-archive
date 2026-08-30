@@ -566,6 +566,52 @@
       "version": "4.63.0"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-01.01.14-b93cfe9887b3/congo-01.01.14.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/congo/01.01.14-b93cfe9887b3.json",
+        "release_tag": "firmware-congo-01.01.14-b93cfe9887b3",
+        "reported_identity": null,
+        "sha256": "b93cfe9887b3114b66df4fe4e3bee1057acc9011ba6086c97dd9e703c8ee5ef8",
+        "size": 1747824
+      },
+      "discovered_at": "2026-08-30T18:01:55.560352+00:00",
+      "etag": "f84a55441610d1e51a8fcfcfc8f6c2d4",
+      "family": "congo",
+      "last_modified": "Wed, 27 Mar 2024 19:31:26 GMT",
+      "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "release_notes_version": "1.1.14",
+      "size": 1747824,
+      "source": "release-notes-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/congo-01.01.14.signed",
+      "version": "01.01.14"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-01.01.22-261b8c611760/congo-01.01.22.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/congo/01.01.22-261b8c611760.json",
+        "release_tag": "firmware-congo-01.01.22-261b8c611760",
+        "reported_identity": null,
+        "sha256": "261b8c6117606a8073682f84d4ec618ae7084db991649c648e5c58a40035c8d4",
+        "size": 1817360
+      },
+      "discovered_at": "2026-08-30T18:01:55.561559+00:00",
+      "etag": "c860d8bd2e8b3fb4518ac4bf67bf0757",
+      "family": "congo",
+      "last_modified": "Thu, 05 Sep 2024 12:27:33 GMT",
+      "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "release_notes_version": "1.1.22",
+      "size": 1817360,
+      "source": "release-notes-probe",
+      "track": "prod",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/congo-01.01.22.signed",
+      "version": "01.01.22"
+    },
+    {
       "app_derived_sku": true,
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/congo-01.01.18-prod.meta.signed",
@@ -9096,5 +9142,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T07:38:41.679106+00:00"
+  "updated_at": "2026-08-30T18:02:01.423718+00:00"
 }

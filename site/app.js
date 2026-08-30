@@ -19,21 +19,45 @@ const sourceUrl = (f) => f.archive?.asset_url || f.url;
 const kv = (key, value, mono=false) => `<div class="kv"><span class="key">${esc(key)}</span><span class="value${mono?' mono':''}">${value ?? '—'}</span></div>`;
 
 async function load() {
-  const [catRes, platformRes, auxRes, audioRes] = await Promise.all([
+  const [catRes, platformRes, auxRes] = await Promise.all([
     fetch("data/catalog.json", {cache:"no-store"}),
     fetch("data/platforms.json", {cache:"no-store"}),
-    fetch("data/auxiliary-firmware.json", {cache:"no-store"}),
-    fetch("data/audio-assets.json", {cache:"no-store"})
+    fetch("data/auxiliary-firmware.json", {cache:"no-store"})
   ]);
   if (!catRes.ok) throw new Error(`catalog HTTP ${catRes.status}`);
   state.catalog = await catRes.json();
   if (platformRes.ok) state.platforms = (await platformRes.json()).platforms || {};
   if (auxRes.ok) state.auxiliary = await auxRes.json();
-  if (audioRes.ok) state.audio = await audioRes.json();
   renderInitial();
+
+  // The audio index is several megabytes and is deliberately non-critical to
+  // the rest of the archive browser. Load it independently so a slow/failed
+  // audio request can never prevent the firmware catalog from rendering, and
+  // always replace the initial loading text with either data or a real error.
+  loadAudio();
 }
 
-function renderInitial() {
+async function loadAudio() {
+  const summary = $("#audioSummary");
+  try {
+    const res = await fetch("data/audio-assets.json", {cache:"no-store"});
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    state.audio = await res.json();
+    const audioLanguages = Object.keys(state.audio?.summary?.languages || {}).sort();
+    $("#audioLanguageFilter").innerHTML = `<option value="">All languages</option>` + audioLanguages.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+    const audioCategories = Object.keys(state.audio?.summary?.categories || {}).sort();
+    $("#audioCategoryFilter").innerHTML = `<option value="">All audio</option>` + audioCategories.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
+    renderAudio();
+    renderArchiveSummary();
+  } catch (err) {
+    state.audio = null;
+    summary.textContent = `Audio index unavailable: ${err.message}`;
+    $("#audioResultCount").textContent = "";
+    $("#audioCatalog").innerHTML = `<tr><td colspan="6" class="muted">Could not load embedded-audio metadata. The firmware catalog is still available.</td></tr>`;
+  }
+}
+
+function renderArchiveSummary() {
   const list = state.catalog.firmwares || [];
   const families = [...new Set(list.map(x => x.family))].sort();
   const knownBytes = list.reduce((sum, x) => sum + Number(x.archive?.size || x.size || 0), 0);
@@ -42,16 +66,18 @@ function renderInitial() {
   const nestedFirmwareCount = state.auxiliary?.summary?.unique_firmware_payload_sha256_count || 0;
   const audioVariantCount = state.audio?.summary?.unique_sha256_count || 0;
   $("#summary").textContent = `${list.length} builds · ${families.length} platforms · ${archivedCount} archived · ${auxCount} auxiliary bundles · ${nestedFirmwareCount} nested firmware payloads · ${audioVariantCount.toLocaleString()} audio variants · ${fmtBytes(knownBytes)} indexed`;
+}
+
+function renderInitial() {
+  const list = state.catalog.firmwares || [];
+  const families = [...new Set(list.map(x => x.family))].sort();
+  renderArchiveSummary();
 
   $("#platformFilter").innerHTML = `<option value="">All platforms</option>` + families.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const auxFamilies = Object.keys(state.auxiliary?.summary?.families || {}).sort();
   $("#auxFamilyFilter").innerHTML = `<option value="">All platforms</option>` + auxFamilies.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const auxRoles = [...new Set(auxFirmwarePayloads().map(x => x.role).filter(Boolean))].sort();
   $("#auxRoleFilter").innerHTML = `<option value="">All roles</option>` + auxRoles.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
-  const audioLanguages = Object.keys(state.audio?.summary?.languages || {}).sort();
-  $("#audioLanguageFilter").innerHTML = `<option value="">All languages</option>` + audioLanguages.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
-  const audioCategories = Object.keys(state.audio?.summary?.categories || {}).sort();
-  $("#audioCategoryFilter").innerHTML = `<option value="">All audio</option>` + audioCategories.map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join("");
   const options = list.map((f,i)=>`<option value="${i}">${esc(f.family)} ${esc(f.version)} · ${esc(deviceTitle(f))}${archived(f)?" · archived":""}</option>`).join("");
   $("#leftSelect").innerHTML = options;
   $("#rightSelect").innerHTML = options;
@@ -60,7 +86,6 @@ function renderInitial() {
   renderCatalog();
   renderAuxiliary();
   renderAuxiliaryPayloads();
-  renderAudio();
 }
 
 function filteredAudio() {

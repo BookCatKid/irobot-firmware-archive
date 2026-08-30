@@ -1,0 +1,195 @@
+{
+  "explicit_ambiguities": [
+    {
+      "issue": "Official app evidence conflicts between Stingray default-SKU use and a Topaz simulator fixture. Keep the mappings separate/conflicting until independent evidence resolves them.",
+      "sku": "x010020"
+    },
+    {
+      "issue": "App SkuType calls this Atlantis, but the fixture softwareVer is unprefixed 3.2.10+32 and its sdiscUrl is suspiciously copied from a Soho fixture. Do not infer an Atlantis OTA family or blob.",
+      "sku": "R111840"
+    },
+    {
+      "families": [
+        "405",
+        "505",
+        "705"
+      ],
+      "issue": "Retail series names are corroborated by app resources and backend SKU behavior, but config intentionally retains backend-only confidence until exact SKU-to-retail-variant coverage is fully evidenced."
+    }
+  ],
+  "gaps": [
+    {
+      "confidence": "app+backend",
+      "family": "105",
+      "known_skus": [
+        "Y351020"
+      ],
+      "models": [
+        "Roomba 100 (1000) Series combo family"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "app+backend",
+      "family": "105v",
+      "known_skus": [
+        "Q352020"
+      ],
+      "models": [
+        "Roomba 100 (1000) Series vacuum family"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "app+backend",
+      "family": "205",
+      "known_skus": [
+        "L124020"
+      ],
+      "models": [
+        "Roomba 200 (2000) Series / related compact combo hardware"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "backend-only",
+      "family": "405",
+      "known_skus": [
+        "G185020",
+        "G285020",
+        "g100000"
+      ],
+      "models": [
+        "Roomba Plus 400 Series Combo family"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "backend-only",
+      "family": "505",
+      "known_skus": [
+        "N185020",
+        "N285020",
+        "R185020",
+        "n100000"
+      ],
+      "models": [
+        "Roomba Plus 500 Series family"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "backend-only",
+      "family": "705",
+      "known_skus": [
+        "K155020",
+        "W155020",
+        "X185020",
+        "w100000"
+      ],
+      "models": [
+        "Roomba Max 700 Series family"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "confirmed-app+backend+cdn",
+      "family": "aero",
+      "known_skus": [
+        "e510080"
+      ],
+      "models": [],
+      "reason": "no retail model label in current mapping"
+    },
+    {
+      "confidence": "confirmed-backend",
+      "family": "daredevil",
+      "known_skus": [
+        "i115020",
+        "i310020"
+      ],
+      "models": [
+        "Roomba i-series hardware (coverage incomplete)"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "confirmed-app+cdn",
+      "family": "marconi",
+      "known_skus": [],
+      "models": [],
+      "reason": "no retail model label in current mapping"
+    },
+    {
+      "confidence": "confirmed-app+backend+cdn",
+      "family": "ningbo",
+      "known_skus": [
+        "R671020",
+        "R675020",
+        "R677020"
+      ],
+      "models": [],
+      "reason": "no retail model label in current mapping"
+    },
+    {
+      "confidence": "confirmed-backend",
+      "family": "roomba9xx",
+      "known_skus": [
+        "R980020"
+      ],
+      "models": [
+        "Roomba 960 / 980 family"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "partial",
+      "family": "ruby",
+      "known_skus": [
+        "j915020",
+        "j955020"
+      ],
+      "models": [
+        "Roomba j9-series hardware (coverage incomplete)"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "partial",
+      "family": "stingray",
+      "known_skus": [
+        "x010020",
+        "xst0020"
+      ],
+      "models": [
+        "Roomba j9-series hardware (coverage incomplete)"
+      ],
+      "reason": "mapping confidence remains below confirmed threshold"
+    },
+    {
+      "confidence": "conflicting",
+      "family": "topaz",
+      "known_skus": [
+        "x010020"
+      ],
+      "models": [],
+      "reason": "no retail model label in current mapping"
+    },
+    {
+      "confidence": "confirmed-backend",
+      "family": "wichita",
+      "known_skus": [
+        "t721820"
+      ],
+      "models": [],
+      "reason": "no retail model label in current mapping"
+    }
+  ],
+  "generated_at": "2026-08-30T09:23:37.385598+00:00",
+  "method": "Audit config/platforms.json against official-app/default-SKU evidence and existing backend/CDN corroboration. No mapping is promoted merely because a SKU-like string occurs in an app binary.",
+  "result": {
+    "catalog_mapping_changes_made": 0,
+    "gap_count": 15
+  },
+  "schema": 1
+}

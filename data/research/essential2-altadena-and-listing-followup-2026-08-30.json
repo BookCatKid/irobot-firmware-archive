@@ -1,0 +1,92 @@
+{
+  "altadena_release_gaps": {
+    "official_versions": [
+      "4.54",
+      "4.50"
+    ],
+    "probes": [
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadenad4540.enc",
+        "version": "4.54"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadenad454.enc",
+        "version": "4.54"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadena4540.enc",
+        "version": "4.54"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadena-4.54.0.enc",
+        "version": "4.54"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadena_d_4_54_0.enc",
+        "version": "4.54"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadenad4500.enc",
+        "version": "4.50"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadenad450.enc",
+        "version": "4.50"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadena4500.enc",
+        "version": "4.50"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadena-4.50.0.enc",
+        "version": "4.50"
+      },
+      {
+        "live": false,
+        "observed_result": "no-live-object-found",
+        "url": "https://prod-ota-firmware.iot.irobotapi.com/altadena_d_4_50_0.enc",
+        "version": "4.50"
+      }
+    ],
+    "result": "No live object found under exact filename forms derived from the preserved altadenad4630.enc and app-bundled altadena_d_4_60_0.enc conventions."
+  },
+  "cdn_listing": {
+    "result": "All returned HTTP 403 AccessDenied; no public object-listing/index route was exposed.",
+    "tested": [
+      "https://prod-ota-firmware.iot.irobotapi.com/",
+      "https://prod-ota-firmware.iot.irobotapi.com/?list-type=2",
+      "https://prod-ota-firmware.iot.irobotapi.com/?prefix=congo-",
+      "https://content-prod.iot.irobotapi.com/media/files/firmware/"
+    ]
+  },
+  "essential_2": {
+    "app_evidence": [
+      "Classic app store description explicitly lists Essential 2 as a supported series.",
+      "Prime SkuType contains EssentialComboPlus.",
+      "Prime SkuUtils DEFAULT_ESSENTIAL_COMBO_PLUS_SKU is Y414020."
+    ],
+    "conclusion": "Do not infer that the Essential 2 support-page releases use Congo packaging or that Y414020 is the exact Essential 2 retail SKU without independent mapping/deployment evidence.",
+    "v1_probe_result": "Y414020 returned zero firmwareUpdateItems.",
+    "v2_probe_result": "Y414020 returned no firmware rows for 0.0.0, 1.1.5, 1.1.14, 1.1.18, 1.1.22, 1.2.2, 1.2.4, or 1.2.6."
+  },
+  "generated_at": "2026-08-30T18:08:15.758238+00:00",
+  "schema": 1
+}

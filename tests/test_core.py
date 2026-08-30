@@ -10,12 +10,14 @@ from pathlib import Path
 
 from irobot_firmware.analyze import analyze, _analyze_auxiliary_bundle, _extract_reported_identity
 from irobot_firmware.audio import audio_path_metadata, build_audio_index
+from irobot_firmware.completeness import build_completeness_ledger
 from irobot_firmware.integrity import audit_release_assets
 from irobot_firmware.auxiliary import build_auxiliary_index, iter_auxiliary_payloads
 from irobot_firmware.backfill import classic_versions, numeric_versions
 from irobot_firmware.discover import (
     api_probe, api_probe_response, direct_probe, extract_metapackage_urls,
     firmware_urls_from_metapackage_urls,
+    release_note_entries_from_html,
 )
 from irobot_firmware.catalog import empty_catalog, merge_records
 from irobot_firmware.release_notes import render_release_notes
@@ -64,8 +66,8 @@ class CatalogTests(unittest.TestCase):
             ]}}]}))
             archive = {"manifest": manifest_rel, "sha256": "d" * 64, "release_tag": "firmware-sapphire-example"}
             catalog = {"updated_at": "stamp", "firmwares": [
-                {"family": "sapphire", "version": "1", "archive": dict(archive)},
-                {"family": "sapphire", "version": "alias", "archive": dict(archive)},
+                {"family": "sapphire", "version": "1", "release_date": "2024-01-01", "archive": dict(archive)},
+                {"family": "sapphire", "version": "alias", "release_date": "2024-01-01", "archive": dict(archive)},
             ]}
             index = build_audio_index(catalog, data_root)
         self.assertEqual(index["summary"]["audio_file_occurrence_count"], 2)
@@ -76,7 +78,75 @@ class CatalogTests(unittest.TestCase):
         startup = next(x for x in index["sounds"] if x["name"] == "startup")
         self.assertEqual(startup["unique_variant_count"], 1)
         self.assertEqual(startup["families"], ["sapphire"])
+        self.assertEqual(startup["first_seen"]["version"], "1")
+        self.assertEqual(startup["last_seen"]["date"], "2024-01-01")
         self.assertEqual(audio_path_metadata("opt/irobot/audio/languages/zh-CN_2/error.opus")["language"], "zh-CN_2")
+
+    def test_completeness_ledger_separates_state_evidence_from_artifacts(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            research = root / "research"
+            research.mkdir()
+            (research / "historical-software-state-reconciliation-2026-08-30.json").write_text(json.dumps({
+                "states": [{
+                    "platform": "test", "historical_software_version": "0.9", "source_sku": "X",
+                    "evidence_class": "official-app-history", "separate_ota_artifact_proven": False,
+                    "direct_public_filename_probe": {"result": "no-live-object-found"},
+                }]
+            }))
+            (research / "official-release-note-artifact-gaps-current.json").write_text(json.dumps({
+                "entries": [{
+                    "source_name": "official-test", "source_url": "https://example.invalid/release-notes",
+                    "candidate_families": ["test"], "version": "1.1", "release_date_text": "2024-01-02",
+                    "classification": "official-ota-release-evidence-unrecovered",
+                }, {
+                    "source_name": "official-test", "source_url": "https://example.invalid/release-notes",
+                    "candidate_families": ["test"], "version": "0.8", "release_date_text": "2023-01-01",
+                    "classification": "factory-state-only", "factory_reason": "Factory release. No OTA",
+                }]
+            }))
+            catalog = {"updated_at": "stamp", "firmwares": [
+                {"family": "test", "version": "1.0", "archive": {"sha256": "a" * 64, "size": 12, "format": "irobot-otps"}},
+                {"family": "alias", "version": "1.0", "archive": {"sha256": "a" * 64, "size": 12, "format": "irobot-otps"}},
+            ]}
+            platforms = {"platforms": {"test": {"models": [], "confidence": "partial", "known_skus": ["X"]}}}
+            ledger = build_completeness_ledger(catalog, platforms, research)
+        self.assertEqual(ledger["summary"]["catalog_record_count"], 2)
+        self.assertEqual(ledger["summary"]["unique_recovered_artifact_sha256_count"], 1)
+        self.assertEqual(ledger["summary"]["historical_state_only_count"], 1)
+        self.assertEqual(ledger["summary"]["independently_proven_missing_ota_artifact_count"], 0)
+        self.assertEqual(ledger["summary"]["official_release_evidence_gap_count"], 1)
+        self.assertEqual(ledger["summary"]["official_factory_state_only_count"], 1)
+
+    def test_release_note_parser_ignores_dates_and_marks_factory_section(self):
+        body = """
+        <h2>Version 9.3.6</h2><p>Release Date: 12.08.25</p>
+        <h2>Version 9.3.5/9.3.4</h2><p>Release Date: 11.21.25</p>
+        <h3>Factory Software Version:</h3>
+        <h2>Version 7.2.3</h2><p>Release Date: 05.18.2025</p>
+        <h2>Version 3.1.24</h2><p>Release Date: 04.01.2025</p>
+        """
+        entries = release_note_entries_from_html(body)
+        self.assertEqual(
+            [x["version"] for x in entries],
+            ["9.3.6", "9.3.5", "9.3.4", "7.2.3", "3.1.24"],
+        )
+        self.assertFalse(entries[0]["factory_only"])
+        self.assertFalse(entries[2]["factory_only"])
+        self.assertTrue(entries[3]["factory_only"])
+        self.assertTrue(entries[4]["factory_only"])
+
+    def test_release_note_parser_marks_inline_no_ota_and_initial_factory(self):
+        body = """
+        <h2>Version 2.4.1</h2><p>Release Date: 07.08.2022 Factory release. No OTA</p>
+        <h2>Version 1.2.7</h2><p>Release Date: 09.17.2020</p>
+        <h2>Version 1.08</h2><p>Release Date: 09.12.2018 Initial Factory Release</p>
+        """
+        entries = release_note_entries_from_html(body)
+        by_version = {x["version"]: x for x in entries}
+        self.assertTrue(by_version["2.4.1"]["factory_only"])
+        self.assertFalse(by_version["1.2.7"]["factory_only"])
+        self.assertTrue(by_version["1.08"]["factory_only"])
 
     def test_metapackage_release_asset_name_avoids_firmware_collision(self):
         archive = {
@@ -375,6 +445,12 @@ class CatalogTests(unittest.TestCase):
         self.assertIn("22.52.02", values)
         self.assertNotIn("22.52.3", values)
 
+    def test_release_note_semantic_candidates_include_fully_padded_form(self):
+        from irobot_firmware.discover import version_filename_candidates
+        values = version_filename_candidates("1.1.22")
+        self.assertIn("1.1.22", values)
+        self.assertIn("01.01.22", values)
+
     def test_release_note_legacy_catalog_token_uses_vcompact(self):
         from unittest.mock import patch
         from irobot_firmware.discover import discover_from_config
@@ -391,7 +467,10 @@ class CatalogTests(unittest.TestCase):
                     }]
                 }]
             }))
-            with patch("irobot_firmware.discover.release_note_versions", return_value=["3.2.7"]), \
+            with patch("irobot_firmware.discover.release_note_entries", return_value=[{
+                     "version": "3.2.7", "factory_only": False,
+                     "factory_reason": None, "release_date_text": "2017.05.22",
+                 }]), \
                  patch("irobot_firmware.discover.direct_probe", return_value={
                      "family": "marconi", "version": "3.2.7",
                      "url": "https://example.invalid/marconiv327.signed", "source": "direct-probe"
@@ -626,7 +705,10 @@ class CatalogTests(unittest.TestCase):
         raw_end = len(header) + len(gz_payload)
         struct.pack_into("<I", header, 8, raw_end)
         header[16:16 + len(b"C3_105_OTA1")] = b"C3_105_OTA1"
-        blob = bytes(header) + gz_payload + b"T" * 304
+        inner_tail = b"opaque-inner-tail"
+        raw_end += len(inner_tail)
+        struct.pack_into("<I", header, 8, raw_end)
+        blob = bytes(header) + gz_payload + inner_tail + b"T" * 304
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
             path = root / "modern.meta.signed"
@@ -638,6 +720,11 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(container["variant"], "sigmastar-gzip")
         self.assertEqual(container["payload_offset"], 0x30)
         self.assertEqual(container["gzip_original_filename"], "SStarOta.bin")
+        self.assertEqual(container["gzip_member_compressed_size"], len(gz_payload))
+        self.assertEqual(container["gzip_uncompressed_size"], len(b"sigmastar ota payload"))
+        self.assertEqual(container["gzip_uncompressed_sha256"], hashlib.sha256(b"sigmastar ota payload").hexdigest())
+        self.assertEqual(container["post_gzip_payload_size"], len(inner_tail))
+        self.assertEqual(container["post_gzip_payload_sha256"], hashlib.sha256(inner_tail).hexdigest())
         self.assertNotIn("entry_count", container)
         self.assertEqual(container["trailing_bytes_after_header_u32_08"], 304)
 

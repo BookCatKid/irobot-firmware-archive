@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-08-30T09:23:37.385598+00:00",
+  "probe_policy": "Only filename forms derived from the established Lewis/Daredevil public CDN conventions were tried. 404 results prove those exact URLs are not live now; they do not prove the release never had a different package name or endpoint.",
+  "probes": [
+    {
+      "family": "lewis",
+      "live": false,
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.4.signed",
+      "version": "1.4"
+    },
+    {
+      "family": "lewis",
+      "live": false,
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis14.signed",
+      "version": "1.4"
+    },
+    {
+      "family": "lewis",
+      "live": false,
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis140.signed",
+      "version": "1.4"
+    },
+    {
+      "family": "lewis",
+      "live": false,
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.4.0.signed",
+      "version": "1.4"
+    },
+    {
+      "family": "daredevil",
+      "live": false,
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil103.signed",
+      "version": "1.0.3"
+    },
+    {
+      "family": "daredevil",
+      "live": false,
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil-1.0.3.signed",
+      "version": "1.0.3"
+    }
+  ],
+  "reconciliation": [
+    {
+      "reason": "Official page labels this Initial Factory Release; not counted as a missing OTA artifact.",
+      "release_note_version": "1.08",
+      "status": "factory-state-only"
+    },
+    {
+      "catalog_match": [
+        {
+          "family": "daredevil",
+          "version": "2.6.0"
+        }
+      ],
+      "release_note_version": "2.6.0",
+      "status": "recovered"
+    },
+    {
+      "reason": "Official page explicitly says Factory release. No OTA.",
+      "release_note_version": "2.4.1",
+      "status": "factory-state-only"
+    },
+    {
+      "candidate_families": [
+        "lewis"
+      ],
+      "release_note_version": "1.4",
+      "status": "official-ota-release-evidence-unrecovered"
+    },
+    {
+      "candidate_families": [
+        "daredevil"
+      ],
+      "release_note_version": "1.0.3",
+      "status": "official-ota-release-evidence-unrecovered"
+    }
+  ],
+  "result": "No new public firmware bytes recovered from the 1.4 or 1.0.3 leads.",
+  "schema": 1,
+  "source": {
+    "evidence": "Official release-note page distinguishes i6/i7/i8 and i1/i2/i3/i4/i5 release histories.",
+    "name": "Roomba i Series Software Release Notes",
+    "url": "https://support.irobot.co.uk/articles/en_US/Knowledge/19549"
+  }
+}

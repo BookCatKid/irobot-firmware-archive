@@ -1,0 +1,63 @@
+{
+  "conclusion": "The older app samples corroborate already-known historical software states and deployment IDs but do not expose a new exact public OTA URL for the unresolved states.",
+  "deployment_ids_seen": [
+    "USER190523193642",
+    "swu1567436507",
+    "aryb2109021809qr"
+  ],
+  "exact_unresolved_ota_urls_found": [],
+  "generated_at": "2026-08-30T09:23:37.385598+00:00",
+  "method": "Targeted in-place scans of official XAPK base APK contents for historical softwareVer strings, deployment identifiers, and firmware/OTA URLs; no simulator softwareVer is promoted to a distinct OTA artifact without independent artifact evidence.",
+  "observed_state_evidence": {
+    "classic-5.2.4": [
+      "lewis 1.5.4",
+      "lewis 2.0.2",
+      "lewis 2.6.13",
+      "lewis 3.0.2",
+      "lewis 3.0.3",
+      "lewis 3.0.4",
+      "lewis 3.0.6",
+      "lewis 3.0.7",
+      "lewis 3.0.9",
+      "lewis 3.0.10",
+      "lewis 3.0.11",
+      "sanmarino 2.6.6",
+      "soho 1.14.17",
+      "wichita 1.1.1-dev"
+    ],
+    "classic-7.2.0": [
+      "lewis 3.10.8",
+      "lewis 3.14.12",
+      "lewis 3.14.16",
+      "lewis 3.18.11",
+      "lewis 3.20.7",
+      "sapphire 1.2.12",
+      "stingray 0.10.6"
+    ],
+    "prime-1.0.0": [
+      "ruby 1.2.12",
+      "soho 22.52.0"
+    ]
+  },
+  "schema": 1,
+  "source_archives": [
+    {
+      "package": "com.irobot.home",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic524/com.irobot.home@5.2.4-release.xapk",
+      "sha256": "491564d38d2ee6202e1d470ce0eaa0cc0503e328b025e6779fc4fa167cbfac5c",
+      "version": "5.2.4-release"
+    },
+    {
+      "package": "com.irobot.home",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/classic720/com.irobot.home@7.2.0.xapk",
+      "sha256": "136276358154746ae140460e03f685021718e0e245211da1a874ff96b70ea972",
+      "version": "7.2.0"
+    },
+    {
+      "package": "com.irobot.home.prime",
+      "path": "/Users/simon/MyDocuments/gpt/irobot-android-re/prime100/com.irobot.home.prime@1.0.0.xapk",
+      "sha256": "922c699994958d34ee1f429f1a6d7353b4f810cfa9f30d8aa98703b3da07c3dc",
+      "version": "1.0.0"
+    }
+  ]
+}

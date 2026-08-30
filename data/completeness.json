@@ -1,0 +1,4701 @@
+{
+  "catalog_updated_at": "2026-08-30T18:02:01.423718+00:00",
+  "claim": "Every currently catalogued artifact has archival metadata, but the complete historical set of iRobot OTA artifacts is not knowable from the surviving public evidence. Historical software-state evidence, explicit official release evidence, recovered byte-identical aliases, and negative probes are therefore tracked as separate evidence classes.",
+  "exhausted_or_unrecoverable": [],
+  "historical_state_only": [
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "lewis",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020",
+      "version": "2.0.2"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "lewis",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020",
+      "version": "3.0.2"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "lewis",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020",
+      "version": "3.0.3"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "lewis",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020",
+      "version": "3.0.4"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "lewis",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020",
+      "version": "3.0.6"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "lewis",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020",
+      "version": "3.0.7"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "lewis",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "i855020",
+      "version": "3.0.9"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "ruby",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "j915020",
+      "version": "1.2.12"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "sanmarino",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "m611020",
+      "version": "2.6.6"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "soho",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "s955020",
+      "version": "22.52.0"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "stingray",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "xst0020",
+      "version": "0.10.6"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": "topaz",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "x010020",
+      "version": "1.6.9"
+    },
+    {
+      "evidence_class": "official-app-simulator-or-history-software-state",
+      "platform": null,
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": "R111840",
+      "version": "3.2.10"
+    },
+    {
+      "evidence_class": "official-app-development-simulator-fixture",
+      "platform": "wichita",
+      "probe_result": "no-live-object-found",
+      "separate_ota_artifact_proven": false,
+      "source_sku": null,
+      "version": "1.1.1-dev"
+    }
+  ],
+  "independently_proven_missing_ota_artifacts": [],
+  "official_factory_state_only": [
+    {
+      "candidate_families": [
+        "daredevil",
+        "lewis"
+      ],
+      "classification": "factory-state-only",
+      "factory_reason": "Factory release. No OTA",
+      "release_date_text": "07.08.2022",
+      "source_name": "i-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "version": "2.4.1"
+    },
+    {
+      "candidate_families": [
+        "daredevil",
+        "lewis"
+      ],
+      "classification": "factory-state-only",
+      "factory_reason": "Initial Factory Release",
+      "release_date_text": "09.12.2018",
+      "source_name": "i-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "version": "1.08"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "factory-state-only",
+      "factory_reason": "listed under Factory Software Version section",
+      "release_date_text": "05.18.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "factory-state-only",
+      "factory_reason": "listed under Factory Software Version section",
+      "release_date_text": "04.01.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "3.1.24"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "factory-state-only",
+      "factory_reason": "listed under Factory Software Version section",
+      "release_date_text": "04.01.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "3.1.23"
+    },
+    {
+      "candidate_families": [
+        "marconi",
+        "ningbo"
+      ],
+      "classification": "factory-state-only",
+      "factory_reason": "not available as an over-the-air update",
+      "release_date_text": "2017.12.19",
+      "source_name": "wifi-600-800-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "version": "3.2.19"
+    }
+  ],
+  "official_release_evidence_gaps": [
+    {
+      "candidate_families": [
+        "ruby",
+        "sapphire",
+        "stingray"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "December 15, 2022",
+      "source_name": "j-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/32666",
+      "version": "1.4.8"
+    },
+    {
+      "candidate_families": [
+        "ruby",
+        "sapphire",
+        "stingray"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "November 17, 2022",
+      "source_name": "j-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/32666",
+      "version": "1.4.6"
+    },
+    {
+      "candidate_families": [
+        "daredevil",
+        "lewis"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "09.17.2020",
+      "source_name": "i-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "version": "1.0.3"
+    },
+    {
+      "candidate_families": [
+        "daredevil",
+        "lewis"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "10.12.2018",
+      "source_name": "i-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "version": "1.4"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "8/18/2026",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "9.4.8"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "01.28.2026",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "9.3.6"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "09.05.2025",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "8.6.0"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "08.18.2025",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "07.02.2025",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06/16/25",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06/2/25",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "05/19/25",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "05/5/25",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03/27/2025",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03/21/2025",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03/11/2025",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "3.1.19"
+    },
+    {
+      "candidate_families": [
+        "105",
+        "105v"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03/11/2025",
+      "source_name": "roomba-100",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "version": "3.1.16"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "1/5/2026",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "9.3.7"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "11.21.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "9.3.4"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "09.17.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "8.6.2"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "08.18.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "07.02.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06.16.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06.02.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "05.19.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03.27.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03.21.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03.11.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "3.1.19"
+    },
+    {
+      "candidate_families": [
+        "205"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03.11.2025",
+      "source_name": "roomba-200",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "version": "3.1.16"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "01.05.2026",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "9.3.7"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "11.21.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "9.3.4"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "09.05.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "8.6.2"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "08.18.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "07.02.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06.12.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06.02.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "05.19.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "05.05.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03.27.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "405"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03.21.2025",
+      "source_name": "roomba-plus-400",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "12.08.25",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "9.3.6"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "11.21.25",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "9.3.5"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "11.21.25",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "9.3.4"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "08.18.2025",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "8.4.1"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "07.02.2025",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06.16.2025",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06.02.2025",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "05.19.2025",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "05.05.2025",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "7.2.3"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03.27.2025",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "6.3.1"
+    },
+    {
+      "candidate_families": [
+        "505"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "03.21.2025",
+      "source_name": "roomba-plus-500",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "version": "6.2.5"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "11.21.25",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "9.3.5"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "11.21.25",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "9.3.4"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "10.23.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "8.6.8"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "10.14.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "8.6.5"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "08.08.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "8.4.4"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "07.02.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.5.2"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06.16.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.6"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "06.02.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.3"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "05.19.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "7.3.1"
+    },
+    {
+      "candidate_families": [
+        "705"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "04.16.2025",
+      "source_name": "roomba-max-700",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "version": "6.4.3"
+    },
+    {
+      "candidate_families": [
+        "congo"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "04.04.2024",
+      "source_name": "roomba-essential",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.1.5"
+    },
+    {
+      "candidate_families": [
+        "congo"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "10.1.2024",
+      "source_name": "roomba-essential",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.6"
+    },
+    {
+      "candidate_families": [
+        "congo"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "09.25.2024",
+      "source_name": "roomba-essential",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.4"
+    },
+    {
+      "candidate_families": [
+        "congo"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "9.25.2024",
+      "source_name": "roomba-essential",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "version": "1.2.2"
+    },
+    {
+      "candidate_families": [
+        "marconi",
+        "ningbo"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "2017.05.02",
+      "source_name": "wifi-600-800-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "version": "3.2.0"
+    },
+    {
+      "candidate_families": [
+        "marconi",
+        "ningbo"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "2017.05.02",
+      "source_name": "wifi-600-800-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "version": "3.1.0"
+    },
+    {
+      "candidate_families": [
+        "aero"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "2020.06.19",
+      "source_name": "roomba-e-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "version": "3.4.62"
+    },
+    {
+      "candidate_families": [
+        "aero"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "2018.10.22",
+      "source_name": "roomba-e-series",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/6345",
+      "version": "3.4.42"
+    },
+    {
+      "candidate_families": [
+        "altadena"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "2016.03.04",
+      "source_name": "braava-jet",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "version": "4.54"
+    },
+    {
+      "candidate_families": [
+        "altadena"
+      ],
+      "classification": "official-ota-release-evidence-unrecovered",
+      "release_date_text": "2016.01.07",
+      "source_name": "braava-jet",
+      "source_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/512",
+      "version": "4.50"
+    }
+  ],
+  "platform_mapping_gaps": [
+    {
+      "confidence": "app+backend",
+      "family": "105",
+      "known_sku_count": 1,
+      "models": [
+        "Roomba 100 (1000) Series combo family"
+      ]
+    },
+    {
+      "confidence": "app+backend",
+      "family": "105v",
+      "known_sku_count": 1,
+      "models": [
+        "Roomba 100 (1000) Series vacuum family"
+      ]
+    },
+    {
+      "confidence": "app+backend",
+      "family": "205",
+      "known_sku_count": 1,
+      "models": [
+        "Roomba 200 (2000) Series / related compact combo hardware"
+      ]
+    },
+    {
+      "confidence": "backend-only",
+      "family": "405",
+      "known_sku_count": 3,
+      "models": [
+        "Roomba Plus 400 Series Combo family"
+      ]
+    },
+    {
+      "confidence": "backend-only",
+      "family": "505",
+      "known_sku_count": 4,
+      "models": [
+        "Roomba Plus 500 Series family"
+      ]
+    },
+    {
+      "confidence": "backend-only",
+      "family": "705",
+      "known_sku_count": 4,
+      "models": [
+        "Roomba Max 700 Series family"
+      ]
+    },
+    {
+      "confidence": "confirmed-app+backend+cdn",
+      "family": "aero",
+      "known_sku_count": 1,
+      "models": []
+    },
+    {
+      "confidence": "confirmed-backend",
+      "family": "daredevil",
+      "known_sku_count": 2,
+      "models": [
+        "Roomba i-series hardware (coverage incomplete)"
+      ]
+    },
+    {
+      "confidence": "confirmed-app+cdn",
+      "family": "marconi",
+      "known_sku_count": 0,
+      "models": []
+    },
+    {
+      "confidence": "confirmed-app+backend+cdn",
+      "family": "ningbo",
+      "known_sku_count": 3,
+      "models": []
+    },
+    {
+      "confidence": "confirmed-backend",
+      "family": "roomba9xx",
+      "known_sku_count": 1,
+      "models": [
+        "Roomba 960 / 980 family"
+      ]
+    },
+    {
+      "confidence": "partial",
+      "family": "ruby",
+      "known_sku_count": 2,
+      "models": [
+        "Roomba j9-series hardware (coverage incomplete)"
+      ]
+    },
+    {
+      "confidence": "partial",
+      "family": "stingray",
+      "known_sku_count": 2,
+      "models": [
+        "Roomba j9-series hardware (coverage incomplete)"
+      ]
+    },
+    {
+      "confidence": "conflicting",
+      "family": "topaz",
+      "known_sku_count": 1,
+      "models": []
+    },
+    {
+      "confidence": "confirmed-backend",
+      "family": "wichita",
+      "known_sku_count": 1,
+      "models": []
+    }
+  ],
+  "recovered_artifacts": [
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3225-0133ade04a38/lewis3225.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3225.signed",
+          "version": "v3225"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3225-0133ade04a38",
+      "sha256": "0133ade04a3851a493e9ee5a9978801e980a23208fa864515cde44a37c6282d0",
+      "size": 200593856
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-24.29.03-017dbfa45785/sapphire-24.29.03.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-24.29.03.signed",
+          "version": "24.29.03"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-24.29.03-017dbfa45785",
+      "sha256": "017dbfa4578541228c3503348e8d13920c3bf93351373d49faa087fe4ae43e0a",
+      "size": 253699885
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.37.12-0199658c9054/stingray-23.37.12.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.37.12.signed",
+          "version": "23.37.12"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.37.12-0199658c9054",
+      "sha256": "0199658c9054c235a9a8f261f8ce3a5dcde376ed14afd8d2e13493db6fa119b3",
+      "size": 250287910
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v323-05907449ea06/soho323.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho323.signed",
+          "version": "v323"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v323-05907449ea06",
+      "sha256": "05907449ea06c0520e643fc1345870fd8c6e9e25f726aab186110fe06e8720be",
+      "size": 159695311
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.6-06074402987a/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "705",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.6-x1/package/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+          "version": "9.3.6"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-705-9.3.6-06074402987a",
+      "sha256": "06074402987a9f6e43cbba34225eb05fa749918d8e1bb86eb3af3ddb6557a576",
+      "size": 156551786
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.20.7-06635d7be86f/soho3207.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3207.signed",
+          "version": "3.20.7"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.20.7-06635d7be86f",
+      "sha256": "06635d7be86fac2c22cb532cb5791af89f6900d14a8845021e43143354d20e0e",
+      "size": 190898625
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.7.2-069a746201d9/lewis220702.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis220702.signed",
+          "version": "22.7.2"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-22.7.2-069a746201d9",
+      "sha256": "069a746201d947e64080a8a335379a9a39f45c34ebe8f9fc39fe4e296e72c717",
+      "size": 205636010
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-wichita-1.2.6-0852f1a80d31/wichitav126.signed",
+      "catalog_records": [
+        {
+          "family": "wichita",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/wichitav126.signed",
+          "version": "1.2.6"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-wichita-1.2.6-0852f1a80d31",
+      "sha256": "0852f1a80d31053205c17cc1bef1c083eb1c1f93e469d1ab8dd6d0300131cf7e",
+      "size": 153708198
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-0.8.16-08d8d2e8de99/sapphire0816.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire0816.signed",
+          "version": "0.8.16"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-0.8.16-08d8d2e8de99",
+      "sha256": "08d8d2e8de999bf363465df7823f595d409a9357bf5111423a1cb11c80964635",
+      "size": 170288666
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3226-097dafb00c4d/soho3226.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3226.signed",
+          "version": "v3226"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3226-097dafb00c4d",
+      "sha256": "097dafb00c4d343b0a531ad59de2fdf74bdc1156aadab6c1b67d2e4037540f35",
+      "size": 187470270
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.2.9-0a0eadaa54b3/soho329.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho329.signed",
+          "version": "3.2.9"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.2.9-0a0eadaa54b3",
+      "sha256": "0a0eadaa54b3284a7cb729162c0c2d4eea2c5fe8fbb48212559777a051380427",
+      "size": 159691223
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-altadena-4.63.0-0aafc36cc4ee/altadenad4630.enc",
+      "catalog_records": [
+        {
+          "family": "altadena",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/B240080/package/altadenad4630.enc",
+          "version": "4.63.0"
+        }
+      ],
+      "format": "opaque-enc",
+      "release_tag": "firmware-altadena-4.63.0-0aafc36cc4ee",
+      "sha256": "0aafc36cc4ee59b34b5b73ab7301e8a397be9029b9b37202bd2d6825e2ce797d",
+      "size": 245784
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v326-0b1560ea24e6/marconiv326.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv326.signed",
+          "version": "v326"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v326-0b1560ea24e6",
+      "sha256": "0b1560ea24e6c2998ad64d1d12945b267332a7f489556bd21841b5f8ec3806fb",
+      "size": 921792
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31813-0b6bf14903e7/lewis31813.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31813.signed",
+          "version": "v31813"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v31813-0b6bf14903e7",
+      "sha256": "0b6bf14903e7e844d860cb59caed19bba514f6ce652940d05d47420366f55b14",
+      "size": 196653529
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.21.01-0d06e1548819/sanmarino222101.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino222101.signed",
+          "version": "22.21.01"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-22.21.01-0d06e1548819",
+      "sha256": "0d06e1548819483857f071e2ed2ab9466a145720a46b8efe3c95de0d397ec895",
+      "size": 211534255
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-1.2.12-0d2ed0351390/sapphire1212.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire1212.signed",
+          "version": "1.2.12"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-1.2.12-0d2ed0351390",
+      "sha256": "0d2ed03513900ce1127f70d13411389600e0124c5fde355c7710e1b6f769ddfa",
+      "size": 161465883
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3206-0f5731ded34c/soho3206.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3206.signed",
+          "version": "v3206"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3206-0f5731ded34c",
+      "sha256": "0f5731ded34c40fc925579554003842876e7a273fd8c34c8d4bc98bb973b6ea4",
+      "size": 190861778
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.2.5-1067b4ef49ef/sanmarino325.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino325.signed",
+          "version": "3.2.5"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.2.5-1067b4ef49ef",
+      "sha256": "1067b4ef49efd09f92cca0064f8a6a3fda555bb41510b3d0c1b61ddb81f47e9e",
+      "size": 156926425
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.01-124d7e74a841/stingray-24.29.01.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-24.29.01.signed",
+          "version": "24.29.01"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-24.29.01-124d7e74a841",
+      "sha256": "124d7e74a8419de5f9fe3ec01550848f28762ebab0835bdf59af75c2a431a1de",
+      "size": 259663635
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.3.1-12ac4e86bc9c/lewis-1.3.1.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.3.1.signed",
+          "version": "1.3.1"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.3.1-12ac4e86bc9c",
+      "sha256": "12ac4e86bc9c0775a9bebca60e1546e84bcd9ba1971ae6400363336dbb57a9d4",
+      "size": 142791256
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-24.29.01-12b7f9517018/ruby-24.29.01.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby-24.29.01.signed",
+          "version": "24.29.01"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-24.29.01-12b7f9517018",
+      "sha256": "12b7f9517018fa0837d63ac17f0ba43e82d438efbdf593ab6bb3d2cdbdc1a8ac",
+      "size": 184397496
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.0.11-1463ce908f73/sanmarino3011.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3011.signed",
+          "version": "3.0.11"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.0.11-1463ce908f73",
+      "sha256": "1463ce908f7382ec6d0c186af2821e864a5444e859e548b1326ea62af3d1c10d",
+      "size": 156815834
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3225-15e3e93db141/soho3225.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3225.signed",
+          "version": "v3225"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3225-15e3e93db141",
+      "sha256": "15e3e93db141d7f6cd6e7f31bf77b0bd539a238ed6170d799dd2cc369db85f00",
+      "size": 188416446
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-3.5.62-1666ce6ac8a8/marconi3562.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconi3562.signed",
+          "version": "3.5.62"
+        },
+        {
+          "family": "ningbo",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbo3562.signed",
+          "version": "3.5.62"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-3.5.62-1666ce6ac8a8",
+      "sha256": "1666ce6ac8a833d13c05d60e81d709f3e5fd637c9283f3b72be6ba30b9941048",
+      "size": 989376
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31411-1670e26b5554/lewis31411.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31411.signed",
+          "version": "v31411"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v31411-1670e26b5554",
+      "sha256": "1670e26b5554d6ed4475b31c8da80e6ba5b8597007813b2bd380ea3a6b3cab41",
+      "size": 168915393
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.14.16-179333aa75fc/soho31416.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho31416.signed",
+          "version": "3.14.16"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.14.16-179333aa75fc",
+      "sha256": "179333aa75fc27bd689370da11412a8a0d5881c7fab61d1f42f9b11ee93748fd",
+      "size": 167870911
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.14.16-17dcdc7e14fc/sanmarino31416.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino31416.signed",
+          "version": "3.14.16"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.14.16-17dcdc7e14fc",
+      "sha256": "17dcdc7e14fc385c9992d0b024876bdf0fe29e0b2a56ce7851154f316680c67f",
+      "size": 165609929
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-2.8.3-194889238a0b/sanmarino283.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino283.signed",
+          "version": "2.8.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-2.8.3-194889238a0b",
+      "sha256": "194889238a0b272f0c571c33b67fcce26e80fc558a37a877f287d54bb29867b1",
+      "size": 156070353
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.6.8-1b96b63640ff/soho368.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho368.signed",
+          "version": "3.6.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.6.8-1b96b63640ff",
+      "sha256": "1b96b63640ff687b48b22c3d5be6b0c48789f3143e0de03f2e289ab33662667c",
+      "size": 159588816
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31810-1cbf3bb3213f/sanmarino31810.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino31810.signed",
+          "version": "v31810"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v31810-1cbf3bb3213f",
+      "sha256": "1cbf3bb3213f2eedd9c644df373fac184a671e5e3cc2fa446a4347f3ee469ff1",
+      "size": 181645778
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-22.52.06-1e276287aed9/stingray-22.52.06.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-22.52.06.signed",
+          "version": "22.52.06"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-22.52.06-1e276287aed9",
+      "sha256": "1e276287aed94822d01265303e04fc4c5574a1ef78208857dd1a0219098123ec",
+      "size": 234874660
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.37.2-2150e7d51dab/sapphire223702.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire223702.signed",
+          "version": "22.37.2"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-22.37.2-2150e7d51dab",
+      "sha256": "2150e7d51dab6057d30a08e6fa8f43001af2d26cb639db2896162ee9d6c8546e",
+      "size": 222246692
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.29.3-2184461d4946/sanmarino222903.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino222903.signed",
+          "version": "22.29.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-22.29.3-2184461d4946",
+      "sha256": "2184461d494607dc5d0c23a276e1b209378a5c36a983cb784c9f92e9ed863bb3",
+      "size": 291557807
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31610-22992f11a82d/sanmarino31610.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino31610.signed",
+          "version": "v31610"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v31610-22992f11a82d",
+      "sha256": "22992f11a82d592e3368b9457cc02d89f6b07d7f24e419b46e98c05e7014e52a",
+      "size": 176452042
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-2.8.2-229e193d9d3d/sanmarino282.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino282.signed",
+          "version": "2.8.2"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-2.8.2-229e193d9d3d",
+      "sha256": "229e193d9d3d179f38e831ae525088d6e583debd7080bfede76e6fe807e7ddc5",
+      "size": 156037586
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.6.6-23985f330e9a/lewis-1.6.6.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.6.6.signed",
+          "version": "1.6.6"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.6.6-23985f330e9a",
+      "sha256": "23985f330e9ac989add820fb495d774fd4e39b2564d08d133c175c9e8722055c",
+      "size": 151704153
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.2.9-23a5301c95a1/sanmarino329.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino329.signed",
+          "version": "3.2.9"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.2.9-23a5301c95a1",
+      "sha256": "23a5301c95a1b2816048e6d2fdcb7388f4342a912696e9013959221c85faa8f2",
+      "size": 156922337
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v099-24db34566534/ruby099.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby099.signed",
+          "version": "v099"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-v099-24db34566534",
+      "sha256": "24db34566534525a95362a526b7070869eec54d18562864b56c7957eb878b6aa",
+      "size": 176894624
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31812-25f469cb388f/lewis31812.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31812.signed",
+          "version": "v31812"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v31812-25f469cb388f",
+      "sha256": "25f469cb388f920131782b889ef1333b9bc7e8dd64d3e2f30732570c94e12d72",
+      "size": 196649433
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-01.01.22-261b8c611760/congo-01.01.22.signed",
+      "catalog_records": [
+        {
+          "family": "congo",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/congo-01.01.22.signed",
+          "version": "01.01.22"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-congo-01.01.22-261b8c611760",
+      "sha256": "261b8c6117606a8073682f84d4ec618ae7084db991649c648e5c58a40035c8d4",
+      "size": 1817360
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3127-26c7a72fdca1/soho3127.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3127.signed",
+          "version": "v3127"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3127-26c7a72fdca1",
+      "sha256": "26c7a72fdca1d63e3be1ee251f41f11043b80efd6edc796bb571bae0ef1315d7",
+      "size": 162505166
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2444-286848c17ef5/roomba9xxv2444.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2444.signed",
+          "version": "v2444"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2444-286848c17ef5",
+      "sha256": "286848c17ef5d19a2b98b14b11442f0408ca9eec7fc9c4a8e1e47295a5e21797",
+      "size": 2865992
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.0.8-298fbf973905/lewis-1.0.8.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.0.8.signed",
+          "version": "1.0.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.0.8-298fbf973905",
+      "sha256": "298fbf9739053345cb6ccfe02f1a7c0e9a81fec87fe5b3a3d6392ecaad3dd0ea",
+      "size": 144381360
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31810-2a73c43f5e6d/lewis31810.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31810.signed",
+          "version": "v31810"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v31810-2a73c43f5e6d",
+      "sha256": "2a73c43f5e6d310c445826ac89ced0400e09a1aea39a21327b88006296dd74de",
+      "size": 196645322
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2439-2b7707ca856e/roomba9xxv2439.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2439.signed",
+          "version": "v2439"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2439-2b7707ca856e",
+      "sha256": "2b7707ca856e80a1f7c8c172ad28cbb32a6925cc7fd481dc82090cb187860682",
+      "size": 2865768
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.5-2dd99b7f3e10/soho222905.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho222905.signed",
+          "version": "22.29.5"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-22.29.5-2dd99b7f3e10",
+      "sha256": "2dd99b7f3e1048f443299ec7399c2e8159270ba93234c33cacd2187d1c136e77",
+      "size": 259387818
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.53.04-2ecf62cd2c75/stingray-23.53.04.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.53.04.signed",
+          "version": "23.53.04"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.53.04-2ecf62cd2c75",
+      "sha256": "2ecf62cd2c7555aca80e5fb4af49cedf2bee11c4abae549c9c8ee7e01a173c48",
+      "size": 254015270
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3148-3016d7dd3cac/sanmarino3148.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3148.signed",
+          "version": "v3148"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v3148-3016d7dd3cac",
+      "sha256": "3016d7dd3cacfd204fda054ab2e90abb22393acda53fc4195dada64f6fc87478",
+      "size": 165605833
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.10.7-3037e0c60f72/sanmarino3107.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3107.signed",
+          "version": "3.10.7"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.10.7-3037e0c60f72",
+      "sha256": "3037e0c60f72da81eda97d15f3d055b19884adb24b77efd1726029c629c99c19",
+      "size": 159490522
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2291-304e69cf124b/roomba9xxv2291.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2291.signed",
+          "version": "v2291"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2291-304e69cf124b",
+      "sha256": "304e69cf124bb053cafe17ae2b3e7c0245cba952932058c037901063ec8ebfbc",
+      "size": 2829800
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-1.14.17-305de955b900/soho11417.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho11417.signed",
+          "version": "1.14.17"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-1.14.17-305de955b900",
+      "sha256": "305de955b9000191b1e70a45e2338b341175cf1be7f52e2c3606cd9caf5c97f4",
+      "size": 156520908
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v366-310a4aeda699/lewis366.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis366.signed",
+          "version": "v366"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v366-310a4aeda699",
+      "sha256": "310a4aeda699568a288eab03bbd8c073aceb2a18e4f0cad3c4504f5b82453a63",
+      "size": 160092625
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3204-314de7dcf370/sanmarino3204.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3204.signed",
+          "version": "v3204"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v3204-314de7dcf370",
+      "sha256": "314de7dcf3705c5923a92f27ce2f77e174e0911d72d01a097207d41cc0e43e1b",
+      "size": 188309979
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.4-31d177d9acb8/lewis-1.2.4.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.4.signed",
+          "version": "1.2.4"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.2.4-31d177d9acb8",
+      "sha256": "31d177d9acb84e7b404225292347f18800970c126581b140bedeb1e9693d9124",
+      "size": 144310871
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.24.07-32ff02d464ed/stingray-23.24.07.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.24.07.signed",
+          "version": "23.24.07"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.24.07-32ff02d464ed",
+      "sha256": "32ff02d464eda760b39dc88f7e980a17cef590f1f3ffc600228adb0a971ef5d3",
+      "size": 246859557
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.52.04-3438b782c07d/sapphire-22.52.04.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-22.52.04.signed",
+          "version": "22.52.04"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-22.52.04-3438b782c07d",
+      "sha256": "3438b782c07d40cd01c75e62c5d1c3bdf7391bfa9d5490cbe1c6c7da80cad900",
+      "size": 234866468
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.29.3-351223bc841c/sapphire222903.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire222903.signed",
+          "version": "22.29.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-22.29.3-351223bc841c",
+      "sha256": "351223bc841ce62076416aa31f4e6a92114ca1f6ac320b7923b49b5d0f7c2c71",
+      "size": 300451619
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.29.3-35779c441650/lewis222903.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis222903.signed",
+          "version": "22.29.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-22.29.3-35779c441650",
+      "sha256": "35779c441650b46498418a0535dbda3e6a0fb38d1f8f62b250a791c9db07a3ed",
+      "size": 301138347
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.6.2-35b5876e8f9d/lewis-1.6.2.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.6.2.signed",
+          "version": "1.6.2"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.6.2-35b5876e8f9d",
+      "sha256": "35b5876e8f9dc1b7666726a35dcd62a8c0bf125acc7ae412786a926a12dd28dc",
+      "size": 151622233
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.59-35dd77b532fc/aero3459.signed",
+      "catalog_records": [
+        {
+          "family": "aero",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3459.signed",
+          "version": "3.4.59"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-aero-3.4.59-35dd77b532fc",
+      "sha256": "35dd77b532fcff5d08993835ac633dcd865ac65fa27a911eea6dbf27c9bbbfe9",
+      "size": 959680
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.2.4-35f925143ca4/soho324.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho324.signed",
+          "version": "3.2.4"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.2.4-35f925143ca4",
+      "sha256": "35f925143ca41c3531041bdf6097aed3e88a7bcf9cf937e22b158b36cbcf557b",
+      "size": 159695311
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-wichita-1.0.0-37811592134b/wichitav100.signed",
+      "catalog_records": [
+        {
+          "family": "wichita",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/wichitav100.signed",
+          "version": "1.0.0"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-wichita-1.0.0-37811592134b",
+      "sha256": "37811592134b87232edab6b1d1bf4d24e8259df265f6f6ac3ceffe92506a098a",
+      "size": 134385864
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2413-3803e0c622a1/roomba9xxv2413.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2413.signed",
+          "version": "v2413"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2413-3803e0c622a1",
+      "sha256": "3803e0c622a1c371d11c64809847829d791a627aa8c33db2692433961f23e0a6",
+      "size": 2857064
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3343-3a5350eaf788/marconiv3343.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3343.signed",
+          "version": "v3343"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v3343-3a5350eaf788",
+      "sha256": "3a5350eaf7889283741698b540ee0a910d3a0fd388fb0a64da9cad935ec8b554",
+      "size": 936128
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.3.0-3b2b7f5296d3/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "105v",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-q31-q35/package/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
+          "version": "9.3.0"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105v-9.3.0-3b2b7f5296d3",
+      "sha256": "3b2b7f5296d35a467385015935fd1da4264089562784c05fc2bf140bd70d579d",
+      "size": 38363998
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31412-41a490c5756c/soho31412.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho31412.signed",
+          "version": "v31412"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v31412-41a490c5756c",
+      "sha256": "41a490c5756cd8eca9a66f02c2c5ba87c7b92796ceee6fef3b23f6594dbf34fc",
+      "size": 167858623
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v324-41b2e3ad33b0/sanmarino324.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino324.signed",
+          "version": "v324"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v324-41b2e3ad33b0",
+      "sha256": "41b2e3ad33b003187387a97b7f8c26032e57d09f08aa6bbb129811cfa70e33d0",
+      "size": 156922329
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31610-420cf93eef4d/soho31610.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho31610.signed",
+          "version": "v31610"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v31610-420cf93eef4d",
+      "sha256": "420cf93eef4d854b87a31b59bf45631da405f5998ca36d35ff2cb98a4617fcb4",
+      "size": 178721216
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3232-422c58bde6c2/marconiv3232.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3232.signed",
+          "version": "v3232"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v3232-422c58bde6c2",
+      "sha256": "422c58bde6c2f9f0696d162fd654e009425d881717ad4dd06055a3dcedd66690",
+      "size": 934080
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.06-424a61e90e9f/stingray-24.29.06.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-24.29.06.signed",
+          "version": "24.29.06"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-24.29.06-424a61e90e9f",
+      "sha256": "424a61e90e9fefd1fa6a3971fa541fecf3a2b98acd73f5f18bdb11e18d620fd6",
+      "size": 259733293
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31429-428f890afe3a/lewis31429.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31429.signed",
+          "version": "v31429"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v31429-428f890afe3a",
+      "sha256": "428f890afe3af39b45984c3a0fe18a1d021a029fd561c235ec73258c1d542e11",
+      "size": 168931779
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-8.6.2-432492ac01ca/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "705",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/package/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+          "version": "8.6.2"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-705-8.6.2-432492ac01ca",
+      "sha256": "432492ac01ca5182e1f39c9433890013387510d8bbbca3bd5c7b3fa51060511d",
+      "size": 154677454
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-1.2.10-43546d499f59/sapphire1210.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire1210.signed",
+          "version": "1.2.10"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-1.2.10-43546d499f59",
+      "sha256": "43546d499f59597f9c0fec851eabbefa10c7a1716d839589eeea444d8c31c4d8",
+      "size": 161326619
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v22114-44e43c312900/roomba9xxv22114.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv22114.signed",
+          "version": "v22114"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v22114-44e43c312900",
+      "sha256": "44e43c312900db582fe5f4f21d0380543e0ccdf75640e3ba0c62b12db0dc5e1c",
+      "size": 2831400
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.5.4-44f7bad36e38/lewis-1.5.4.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.5.4.signed",
+          "version": "1.5.4"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.5.4-44f7bad36e38",
+      "sha256": "44f7bad36e3899fbea2ca72cbd22663dc8f58475590751719dfbbd317bc1e857",
+      "size": 151716440
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v384-45484129251b/lewis384.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis384.signed",
+          "version": "v384"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v384-45484129251b",
+      "sha256": "45484129251ba455f7d59407850f25953620a5b31945e847babf6a2c0d356ced",
+      "size": 162533841
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v323-457b88919c01/sanmarino323.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino323.signed",
+          "version": "v323"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v323-457b88919c01",
+      "sha256": "457b88919c01566aecbfe246586801e2a5fa3ac6e90774b88a7cd468a77a1132",
+      "size": 156922329
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.7.2-4797f22515bb/sanmarino220702.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino220702.signed",
+          "version": "22.7.2"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-22.7.2-4797f22515bb",
+      "sha256": "4797f22515bb8bc72b07b25b17fe004d084a69515275af3835b53373db669808",
+      "size": 185495982
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.37.05-47d9041d8f4b/sapphire-23.37.05.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.37.05.signed",
+          "version": "23.37.05"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-23.37.05-47d9041d8f4b",
+      "sha256": "47d9041d8f4b40b20b1770856885deec573fb9bdf9a06815c3416a89dc964958",
+      "size": 246933285
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3010-49b38fea2fb8/sanmarino3010.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3010.signed",
+          "version": "v3010"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v3010-49b38fea2fb8",
+      "sha256": "49b38fea2fb893e6a41419f828baee1f844426fa71e30a6ece1b7f8c690666a1",
+      "size": 156815834
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.6.3-4a3cd105ca65/daredevil-2.6.3.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil-2.6.3.signed",
+          "version": "2.6.3"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-2.6.3-4a3cd105ca65",
+      "sha256": "4a3cd105ca65bdc8fc5fa1d0ee4d211a9e6626706357ac1c8eb9de6320dd35fb",
+      "size": 25525116
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.53.03-4b4aaeeb4fed/stingray-23.53.03.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.53.03.signed",
+          "version": "23.53.03"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.53.03-4b4aaeeb4fed",
+      "sha256": "4b4aaeeb4fedc4c8a820e96329f6d54d3be768bba60fc595e9d6cf3b0134bf42",
+      "size": 254015270
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.5.62-4b698e97b872/aero3562.signed",
+      "catalog_records": [
+        {
+          "family": "aero",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3562.signed",
+          "version": "3.5.62"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-aero-3.5.62-4b698e97b872",
+      "sha256": "4b698e97b872837c4c68ba13b998f676cb336da3050e69d84a543e03fc3b5066",
+      "size": 956608
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-1.14.19-4c425c8127b3/soho11419.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho11419.signed",
+          "version": "1.14.19"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-1.14.19-4c425c8127b3",
+      "sha256": "4c425c8127b3ba84a74a6a819dc9d74be0440dde792cb22ddbf7797f103ffe7f",
+      "size": 156520909
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3612-4e089459e7e5/lewis3612.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3612.signed",
+          "version": "v3612"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3612-4e089459e7e5",
+      "sha256": "4e089459e7e573557bc33874ceb60f421494c44c5a412b5c8ee27aada09adb3b",
+      "size": 160092626
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-elpaso-2.4.6-3-50759ba5ff90/elpasov2463.signed",
+      "catalog_records": [
+        {
+          "family": "elpaso",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/elpasov2463.signed",
+          "version": "2.4.6-3"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-elpaso-2.4.6-3-50759ba5ff90",
+      "sha256": "50759ba5ff904d32386053750906f0ac0d38064a70a79dcdce9d7dd571394d08",
+      "size": 2865992
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v368-5106a493bbdc/lewis368.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis368.signed",
+          "version": "v368"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v368-5106a493bbdc",
+      "sha256": "5106a493bbdc1525591c2f5bf38208a62900d8377f25089ae4d4bca55c9b5ea3",
+      "size": 160088530
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.12.04-52ed8fa2cb6e/sapphire-23.12.04.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.12.04.signed",
+          "version": "23.12.04"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-23.12.04-52ed8fa2cb6e",
+      "sha256": "52ed8fa2cb6e5166ac340949e367d3891bd8046f2757d72d0cb93e9711bd91ed",
+      "size": 238589733
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3248-532674fbda38/marconiv3248.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3248.signed",
+          "version": "v3248"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v3248-532674fbda38",
+      "sha256": "532674fbda3898672de541422dfe8f15fdd7e75f213b151cb9afe8322c8ae51a",
+      "size": 970944
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.10.8-53d3f79948b5/lewis3108.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3108.signed",
+          "version": "3.10.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.10.8-53d3f79948b5",
+      "sha256": "53d3f79948b5af318b9191500c3cbb690ca64c80296795442a434e6c2c7613a7",
+      "size": 162820562
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3126-55cc3741fa50/lewis3126.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3126.signed",
+          "version": "v3126"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3126-55cc3741fa50",
+      "sha256": "55cc3741fa5052c8da414d09f95f2eb65922ef4702fca27c0fd07fccbb7dc6ef",
+      "size": 163545551
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.18.11-55ef24fa7664/lewis31811.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31811.signed",
+          "version": "3.18.11"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.18.11-55ef24fa7664",
+      "sha256": "55ef24fa766455d7c1ceeb337bf6f1e590ff8708e86318cb25a12fccdcf0ef85",
+      "size": 196653514
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.10-56d4c99aa4ad/soho222910.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho222910.signed",
+          "version": "22.29.10"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-22.29.10-56d4c99aa4ad",
+      "sha256": "56d4c99aa4ad7854f0726c2d1b61ad5fbfad6c1f7a3a8d5db26a124279dbadf8",
+      "size": 259375530
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.12.8-572e134498a5/lewis3128.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3128.signed",
+          "version": "3.12.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.12.8-572e134498a5",
+      "sha256": "572e134498a5ebf37ec44943f823872e26e40fb24f034eacabf8b186df1c0e54",
+      "size": 163541458
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.02-5785dc6a5820/stingray-24.29.02.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-24.29.02.signed",
+          "version": "24.29.02"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-24.29.02-5785dc6a5820",
+      "sha256": "5785dc6a5820bdd532a0fde674173f4ef0c0a8c4f49d9a62a2ff243cc577c766",
+      "size": 259692307
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31414-58f750cc6b81/lewis31414.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31414.signed",
+          "version": "v31414"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v31414-58f750cc6b81",
+      "sha256": "58f750cc6b8169b8885fa52ba03976bf5efd47c7e36ebe95ad3d2087b7b0d0b5",
+      "size": 168919489
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-1.2.9-5aea479c0ec8/daredevil129.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil129.signed",
+          "version": "1.2.9"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-1.2.9-5aea479c0ec8",
+      "sha256": "5aea479c0ec8184d593843730b054de2aa33c2f61d33ff5bbebd6980424a830f",
+      "size": 20098588
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31414-5db4d2f29592/soho31414.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho31414.signed",
+          "version": "v31414"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v31414-5db4d2f29592",
+      "sha256": "5db4d2f295923170aa7a4880f6fc5e5308e68c3fe6cd8ab3bc30d93045153005",
+      "size": 167850431
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.05-5de7ffd08b2a/lewis-22.52.05.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.05.signed",
+          "version": "22.52.05"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-22.52.05-5de7ffd08b2a",
+      "sha256": "5de7ffd08b2ab69f20a66dc7f1ec4158ad39df2788641aa16cb3bf4d33397946",
+      "size": 237519274
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.03-5e258f35a202/stingray-24.29.03.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-24.29.03.signed",
+          "version": "24.29.03"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-24.29.03-5e258f35a202",
+      "sha256": "5e258f35a202fb6752e004eba4b3f0c2d0d39cd254db6e8a93668cd796b9799a",
+      "size": 259696429
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.29.5-5f26fa8ae8e2/sanmarino222905.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino222905.signed",
+          "version": "22.29.5"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-22.29.5-5f26fa8ae8e2",
+      "sha256": "5f26fa8ae8e2671f3bada25f90a06a877772bf36010c0b3490e75583b489d2f9",
+      "size": 252076463
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.6.0-5fa39dcb8fc1/daredevil260.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil260.signed",
+          "version": "2.6.0"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-2.6.0-5fa39dcb8fc1",
+      "sha256": "5fa39dcb8fc1fc42f1aa4358150a19b5b49beb65775dd3ee495ab54e28e228f3",
+      "size": 25526136
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2416-5fd8b21b3390/roomba9xxv2416.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2416.signed",
+          "version": "v2416"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2416-5fd8b21b3390",
+      "sha256": "5fd8b21b3390d5bfd474af08b779a93b200f876e0563eba99f1010afb4656101",
+      "size": 2826856
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.8.3-601fd578124c/sanmarino383.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino383.signed",
+          "version": "3.8.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.8.3-601fd578124c",
+      "sha256": "601fd578124c78cac568521fe80f10f7c9d69d25bd2e745646ec5671e5da7453",
+      "size": 157532634
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.49-604f788c2715/aerov3449.signed",
+      "catalog_records": [
+        {
+          "family": "aero",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3449.signed",
+          "version": "3.4.49"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-aero-3.4.49-604f788c2715",
+      "sha256": "604f788c27156529473f1a60062b63bc6fac82666ff794b9a89f2281c452656a",
+      "size": 954560
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.24.10-6110eb3a4012/stingray-23.24.10.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.24.10.signed",
+          "version": "23.24.10"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.24.10-6110eb3a4012",
+      "sha256": "6110eb3a4012929cd871ca021b77dba3bc820fd37208b2c7ad4da00958a12551",
+      "size": 246859544
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.38-611d2d80b504/aerov3438.signed",
+      "catalog_records": [
+        {
+          "family": "aero",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3438.signed",
+          "version": "3.4.38"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-aero-3.4.38-611d2d80b504",
+      "sha256": "611d2d80b5040e8cd74656b6600bf6c1b4d1db684b7c7091046ba412448805bb",
+      "size": 918720
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31411-62b21dabf517/sanmarino31411.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino31411.signed",
+          "version": "v31411"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v31411-62b21dabf517",
+      "sha256": "62b21dabf517a03000a1b3fd4885ad69391f8567248b4418620836ab9f67d4bd",
+      "size": 165605833
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.20.7-62e567598a3b/sanmarino3207.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3207.signed",
+          "version": "3.20.7"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.20.7-62e567598a3b",
+      "sha256": "62e567598a3be9ac9c151a4befe27f82264f44a2846fe35d609a853ac8d1576e",
+      "size": 188375499
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v327-658060c2ff16/marconiv327.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv327.signed",
+          "version": "v327"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v327-658060c2ff16",
+      "sha256": "658060c2ff16d0e0ac539410ad1ab92231336ac65d532e094ed413120927ec9d",
+      "size": 922816
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-24.29.03-65cc657f29e7/ruby-24.29.03.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby-24.29.03.signed",
+          "version": "24.29.03"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-24.29.03-65cc657f29e7",
+      "sha256": "65cc657f29e7b6fc6eb0c72b220c9bd690c561209956dcf8a3932037b5deb71b",
+      "size": 184389344
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-wichita-1.2.10-66504054d799/wichita1210.signed",
+      "catalog_records": [
+        {
+          "family": "wichita",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/wichita1210.signed",
+          "version": "1.2.10"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-wichita-1.2.10-66504054d799",
+      "sha256": "66504054d799ddf18a49e0e49763e7d58bb4016edde95d167805388f6916397b",
+      "size": 153753255
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3225-671bb2f7c7fd/sanmarino3225.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3225.signed",
+          "version": "v3225"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v3225-671bb2f7c7fd",
+      "sha256": "671bb2f7c7fd2915a397add8aecc3a7ef8b1ae94f1a8855f3926b2deb7891a2d",
+      "size": 182034888
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31412-671e440e227f/lewis31412.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31412.signed",
+          "version": "v31412"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v31412-671e440e227f",
+      "sha256": "671e440e227fbdca101cc04d5c8cccc23a5beed7c6a328011a140570c6582bfc",
+      "size": 168919489
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.24.08-67dce5823458/sapphire-23.24.08.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.24.08.signed",
+          "version": "23.24.08"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-23.24.08-67dce5823458",
+      "sha256": "67dce58234583bc8b5c06a9357d8558ea948cf24961f9742a5368e24c08d2e6e",
+      "size": 244008741
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.67-6904413db61c/aerov3467.signed",
+      "catalog_records": [
+        {
+          "family": "aero",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aerov3467.signed",
+          "version": "3.4.67"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-aero-3.4.67-6904413db61c",
+      "sha256": "6904413db61c0af0d2e75537fa37c5d73c252f75509ab08012266965039c1d66",
+      "size": 972992
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v383-69a4bc47f857/soho383.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho383.signed",
+          "version": "v383"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v383-69a4bc47f857",
+      "sha256": "69a4bc47f85738b80d6a53e0dfbd47e292149403cc88b62f65a6612d3c7e6fe3",
+      "size": 160297423
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.10.7-6be30ffab555/lewis3107.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3107.signed",
+          "version": "3.10.7"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.10.7-6be30ffab555",
+      "sha256": "6be30ffab555802377c3c618c7e390e6bbda018f02c2e87d5453c8b7832d5e3b",
+      "size": 162816466
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.18.11-6d2e0e313bba/sanmarino31811.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino31811.signed",
+          "version": "3.18.11"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.18.11-6d2e0e313bba",
+      "sha256": "6d2e0e313bbabafd60f638a2136797262c3085e2a6e3fac6ebfa5d7c8d6b8c9d",
+      "size": 181645778
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3206-6e1ac29a212f/sanmarino3206.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3206.signed",
+          "version": "v3206"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v3206-6e1ac29a212f",
+      "sha256": "6e1ac29a212f883becd5622712928498361db3ca00bd8923fa99b01dc041f3eb",
+      "size": 188322268
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-wichita-1.2.4-6e2470857b7f/wichita124.signed",
+      "catalog_records": [
+        {
+          "family": "wichita",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/wichita124.signed",
+          "version": "1.2.4"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-wichita-1.2.4-6e2470857b7f",
+      "sha256": "6e2470857b7f510241b157e3faa532ccc2635b1a917470a4f0cf87cf3bcc56b8",
+      "size": 153732768
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3010-70227f5f42aa/lewis3010.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3010.signed",
+          "version": "v3010"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3010-70227f5f42aa",
+      "sha256": "70227f5f42aa4d8f29e18191c2e0de94c488d2fe7f22fbaf2d7a1b7402a00408",
+      "size": 161952210
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.6-70491614fdea/lewis-1.2.6.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.6.signed",
+          "version": "1.2.6"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.2.6-70491614fdea",
+      "sha256": "70491614fdeaea10a7518ce2864a4785f76df113db8653ef7a8459be0d3162b5",
+      "size": 144327255
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.10.8-73288abe0396/soho3108.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3108.signed",
+          "version": "3.10.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.10.8-73288abe0396",
+      "sha256": "73288abe039672bfc6bf834263e1d5facd6210fa9d6eab1f7bd7984a6d018c61",
+      "size": 162296272
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.52.07-7367e036472d/sapphire-22.52.07.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-22.52.07.signed",
+          "version": "22.52.07"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-22.52.07-7367e036472d",
+      "sha256": "7367e036472d179b9b71c52daa18f9c2803431b415cecd362a6d171e573fdd8d",
+      "size": 234866468
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3204-73c72dc029f4/soho3204.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3204.signed",
+          "version": "v3204"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3204-73c72dc029f4",
+      "sha256": "73c72dc029f498b9c8095edb7c9d69c182de491130e26cb7684f49c2a99db5c3",
+      "size": 190849489
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.0-73d30de4c331/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "205",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-l11-l12-u11/package/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
+          "version": "9.3.0"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-205-9.3.0-73d30de4c331",
+      "sha256": "73d30de4c331e026ec0d0b1b6d4721ab7d149bb2f0aaaf651b7a6552671fcd97",
+      "size": 39864856
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.37.05-7400bfa1b237/stingray-23.37.05.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.37.05.signed",
+          "version": "23.37.05"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.37.05-7400bfa1b237",
+      "sha256": "7400bfa1b23769a9b37daa2f4ee676a972ede62d24ea801ce12675b1a0d42286",
+      "size": 250210085
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-2.6.13-774e84ee8b10/lewis2613.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis2613.signed",
+          "version": "2.6.13"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-2.6.13-774e84ee8b10",
+      "sha256": "774e84ee8b1019de994d1ea5179dc16a87a0fa0bf66cf79adf4165b7c2186e59",
+      "size": 164442587
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-2.8.1-779be24dfefa/sanmarino281.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino281.signed",
+          "version": "2.8.1"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-2.8.1-779be24dfefa",
+      "sha256": "779be24dfefaaaa5b578424bb31fad7c3a8e11b210017ccbb40cd07d326798d4",
+      "size": 156041682
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-v1020-77fcea6af825/sapphire1020.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire1020.signed",
+          "version": "v1020"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-v1020-77fcea6af825",
+      "sha256": "77fcea6af82510ec395034cb94437e77916c6bc71050bfdb141ace38e273a09b",
+      "size": 151184954
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.24.07-7a681daa2ac1/sapphire-23.24.07.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.24.07.signed",
+          "version": "23.24.07"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-23.24.07-7a681daa2ac1",
+      "sha256": "7a681daa2ac1eb1e78b5003fa39460a4aa9bfbcdb3753397ec06444a3610bc4f",
+      "size": 244012837
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.53.04-7b2bfc4d1778/ruby-23.53.04.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby-23.53.04.signed",
+          "version": "23.53.04"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-23.53.04-7b2bfc4d1778",
+      "sha256": "7b2bfc4d1778f049b9b03d6126a178cb4ec30b2d872cb6482b317737eb91f114",
+      "size": 181487840
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.3-7b944668c7a4/lewis-1.2.3.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.3.signed",
+          "version": "1.2.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.2.3-7b944668c7a4",
+      "sha256": "7b944668c7a459cb143cd7fb2393e48f6e0d076d6aaa6415a2c1997b91416123",
+      "size": 144306775
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.21.01-7bdd59f5f7f7/sapphire222101.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire222101.signed",
+          "version": "22.21.01"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-22.21.01-7bdd59f5f7f7",
+      "sha256": "7bdd59f5f7f7596df472306578513fd2f2d678a96d639d274009f2e604a0bf16",
+      "size": 218126114
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.53.07-7d46d09ad645/stingray-23.53.07.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.53.07.signed",
+          "version": "23.53.07"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.53.07-7d46d09ad645",
+      "sha256": "7d46d09ad6452e65a74a2aa774fef8c1250f8bfde08d45bf0e0ce1a34844f1c1",
+      "size": 254002981
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.37.14-7d6f2ab040e1/stingray-23.37.14.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.37.14.signed",
+          "version": "23.37.14"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.37.14-7d6f2ab040e1",
+      "sha256": "7d6f2ab040e15c1a77b52064964583d0b93ee6eb45a1bb5ca8190c52e6af78f6",
+      "size": 250287910
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-8.6.2-7ea399e73628/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "505",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/package/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+          "version": "8.6.2"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-505-8.6.2-7ea399e73628",
+      "sha256": "7ea399e7362891d69199947ebcbffe91766a3ab35c87856b66236c296c7d0877",
+      "size": 159504617
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v323-7fdb9b42f886/lewis323.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis323.signed",
+          "version": "v323"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v323-7fdb9b42f886",
+      "sha256": "7fdb9b42f886d9bf6bdf5fb77c21b39b2cb8a63ac8727c588779f85551d22774",
+      "size": 160113105
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.4.7-80970f007b4b/daredevil247.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil247.signed",
+          "version": "2.4.7"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-2.4.7-80970f007b4b",
+      "sha256": "80970f007b4bde384e2396fb0ef64a5ca356f3ebb3a7912f0a10682172a30320",
+      "size": 24924616
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.08-81b1ddf542d4/lewis-22.52.08-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/package/lewis-22.52.08-prod.meta.signed",
+          "version": "22.52.08"
+        },
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed",
+          "version": "22.52.08"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-22.52.08-81b1ddf542d4",
+      "sha256": "81b1ddf542d445b88589a3567645ffa81ec1d9e01ab34440249b5f67c92ffbe3",
+      "size": 237519274
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-22.52.04-81ddec923054/stingray-22.52.04.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-22.52.04.signed",
+          "version": "22.52.04"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-22.52.04-81ddec923054",
+      "sha256": "81ddec9230542a08bd3de5ccf65a2c333a5061418c1f737f402cea02ba093647",
+      "size": 234870564
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.20.7-857de53d7246/lewis3207.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3207.signed",
+          "version": "3.20.7"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.20.7-857de53d7246",
+      "sha256": "857de53d72461274f6f41174f6d2930ba588594c08599ddc8f89e9a163288ebe",
+      "size": 206856643
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.3.0-870b20b4fba8/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "105",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-y31-y35/package/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
+          "version": "9.3.0"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-105-9.3.0-870b20b4fba8",
+      "sha256": "870b20b4fba8a7b9eb2343122fd37b70ae293769a912ce3f698db1485ff3e0c4",
+      "size": 38353579
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v329-881df6614e49/marconiv329.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv329.signed",
+          "version": "v329"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v329-881df6614e49",
+      "sha256": "881df6614e490d1e8c2f87f274432144b35536fb15947ee062f90f4a5ab86f9d",
+      "size": 923840
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3552-88bcefc9e3a7/marconiv3552.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3552.signed",
+          "version": "v3552"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v3552-88bcefc9e3a7",
+      "sha256": "88bcefc9e3a7008669cbad2a7f2064aab6517aff910b88a740f8d273664181b1",
+      "size": 970944
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.0.11-8aa4fe901b20/soho3011.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3011.signed",
+          "version": "3.0.11"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.0.11-8aa4fe901b20",
+      "sha256": "8aa4fe901b2046c4288f49bf9e57b5500c323be6fa8307e0eac66a1473d81ff7",
+      "size": 157991376
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-2.0.6-8b9149a01e01/lewis-2.0.6.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-2.0.6.signed",
+          "version": "2.0.6"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-2.0.6-8b9149a01e01",
+      "sha256": "8b9149a01e01600b8eb062023b4ed4c8243f29c28aa56d9f0482f48649bd4a59",
+      "size": 158499273
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.2.3-8c03ebc765dd/daredevil223.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil223.signed",
+          "version": "2.2.3"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-2.2.3-8c03ebc765dd",
+      "sha256": "8c03ebc765dd9dcd062d623bff4b20d8f0300defb9ccb1b6d49c2bcde9dbf0b6",
+      "size": 25059760
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v098-8c21eb2d4914/ruby098.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby098.signed",
+          "version": "v098"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-v098-8c21eb2d4914",
+      "sha256": "8c21eb2d491408415965be496677c46b68aa7dce38f8e195fd420618ddddebde",
+      "size": 176795296
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.0-8f1d7fd48467/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "405",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-g10-g18/package/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
+          "version": "9.3.0"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-405-9.3.0-8f1d7fd48467",
+      "sha256": "8f1d7fd48467e8db88ff446691452c65d3dba87288ce69ff715366760277563e",
+      "size": 38824489
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.7.2-913bdbd614fd/soho220702.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho220702.signed",
+          "version": "22.7.2"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-22.7.2-913bdbd614fd",
+      "sha256": "913bdbd614fd658534a11d0ee8f1ee2226eb04db5bf776ab0c25cd8a892fe8e7",
+      "size": 191902121
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.53.03-95a85ad569e4/ruby-23.53.03.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby-23.53.03.signed",
+          "version": "23.53.03"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-23.53.03-95a85ad569e4",
+      "sha256": "95a85ad569e4ba0a3ca9f520aa664d072a5bd8710ee8c0de83ff81a336131c36",
+      "size": 181483744
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.2.9-98bee009e760/lewis329.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis329.signed",
+          "version": "3.2.9"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.2.9-98bee009e760",
+      "sha256": "98bee009e7601d2ff8ab5d4bf9c6e10c2fe453cafe51a22923467d0c731d39d4",
+      "size": 160129497
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.10.7-999f5c03e9a9/soho3107.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3107.signed",
+          "version": "3.10.7"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.10.7-999f5c03e9a9",
+      "sha256": "999f5c03e9a9ad60f3dae4aa667b0a16f92f42114d4517c075447bfd9fdf0d2c",
+      "size": 162292176
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3169-9a3b2cf2e075/lewis3169.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3169.signed",
+          "version": "v3169"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3169-9a3b2cf2e075",
+      "sha256": "9a3b2cf2e0753dd5c5a646f2ae339c6567722009fde7fbce5e622ac86a3d9d27",
+      "size": 203010496
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/congo-01.01.18-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "congo",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/1.1.18-congo/package/congo-01.01.18-prod.meta.signed",
+          "version": "1.1.18"
+        },
+        {
+          "family": "congo",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/congo-1.1.18.signed",
+          "version": "1.1.18"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-congo-1.1.18-9a40cbfdc6b2",
+      "sha256": "9a40cbfdc6b24fe32df2a1e0abdec3e727f1fe5bf53fe71c07b01ac198f61303",
+      "size": 1748240
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.53.03-9a49bc594475/sapphire-23.53.03.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.53.03.signed",
+          "version": "23.53.03"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-23.53.03-9a49bc594475",
+      "sha256": "9a49bc5944756131ea25a3a1b09b1b03b683b66fb008c97ac54abf4ad8b51811",
+      "size": 250308390
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.14.16-9aee28435848/lewis31416.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31416.signed",
+          "version": "3.14.16"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.14.16-9aee28435848",
+      "sha256": "9aee28435848c7d8381e5bba682684895376d1132fec08a2c38b66d2c98d0587",
+      "size": 168919489
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-3.2.40-9b592f62dffa/marconi-3.2.40.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconi-3.2.40.signed",
+          "version": "3.2.40"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-3.2.40-9b592f62dffa",
+      "sha256": "9b592f62dffafdf9a182f0d7b18a5d3cffcf6d287f7a33f34da65970bdb4d2f9",
+      "size": 936128
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3187-a06d9cd7b9b7/sanmarino3187.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3187.signed",
+          "version": "v3187"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v3187-a06d9cd7b9b7",
+      "sha256": "a06d9cd7b9b763739b71b2a7f4db4ae5e386af4a3be369799dfd42afca3e94c3",
+      "size": 181645770
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-aero-3.4.46-a074f63a1830/aero3446.signed",
+      "catalog_records": [
+        {
+          "family": "aero",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/aero3446.signed",
+          "version": "3.4.46"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-aero-3.4.46-a074f63a1830",
+      "sha256": "a074f63a183052986a29592b27bfb02faa3c9fa4bade32e6e8b18f2ddd145ead",
+      "size": 954560
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v323-a1ba42105bde/marconiv323.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv323.signed",
+          "version": "v323"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v323-a1ba42105bde",
+      "sha256": "a1ba42105bde76e6488e9d765f7cf0f2486aeee96ea2caea1f66f220a82010f4",
+      "size": 921792
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.29.6-a21a460698d4/sanmarino222906.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino222906.signed",
+          "version": "22.29.6"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-22.29.6-a21a460698d4",
+      "sha256": "a21a460698d4b2cb9d2ac8e2103054fe0bd7e983e172441f351f3e85b060fe06",
+      "size": 252076463
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.6-a2f64b0a5063/soho222906.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho222906.signed",
+          "version": "22.29.6"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-22.29.6-a2f64b0a5063",
+      "sha256": "a2f64b0a5063ca2ed72578a73de4455723d780fb0b8b76307b1ed6f5456b0c18",
+      "size": 259387818
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.53.06-a3af213e0cea/stingray-23.53.06.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.53.06.signed",
+          "version": "23.53.06"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.53.06-a3af213e0cea",
+      "sha256": "a3af213e0cea015576751161c8eeea00bd85a0949a83848f0da0b4e8a751534f",
+      "size": 254007051
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-24.29.06-a4a3a9ca52e4/ruby-24.29.06.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby-24.29.06.signed",
+          "version": "24.29.06"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-24.29.06-a4a3a9ca52e4",
+      "sha256": "a4a3a9ca52e4e41013d3f38acda58a07ad97be8b2ce41b56f193d5dc73d4c625",
+      "size": 184418016
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.10-a609b7646017/lewis225210.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis225210.signed",
+          "version": "22.52.10"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-22.52.10-a609b7646017",
+      "sha256": "a609b76460171966cf5aebd5d0549543f4223dee230b0d95c8b8d63adf2e6097",
+      "size": 237511082
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3012-a6bb699d0def/soho3012.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3012.signed",
+          "version": "v3012"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3012-a6bb699d0def",
+      "sha256": "a6bb699d0defb538ee828dbae8ce15699f2f81ab197ea9e1759898944f28f60a",
+      "size": 157987280
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31810-a7900b55c6d5/soho31810.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho31810.signed",
+          "version": "v31810"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v31810-a7900b55c6d5",
+      "sha256": "a7900b55c6d521a97ef7823dc8b171e93ceaba866f2f561824fd0cd426991afe",
+      "size": 184185288
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-1.14.22-a82d8b6d610b/soho11422.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho11422.signed",
+          "version": "1.14.22"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-1.14.22-a82d8b6d610b",
+      "sha256": "a82d8b6d610b9bceb9766b7328ca8b061f387d82e5588b9384e0168e658acfcf",
+      "size": 156520909
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-1.2.7-aa4cfd856c25/daredevil127.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil127.signed",
+          "version": "1.2.7"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-1.2.7-aa4cfd856c25",
+      "sha256": "aa4cfd856c25f46c93d0f5063d901056381d2745825d1bd87822fe22986af4f0",
+      "size": 20081228
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.8-ab14a6e3fd54/soho22298.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho22298.signed",
+          "version": "22.29.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-22.29.8-ab14a6e3fd54",
+      "sha256": "ab14a6e3fd5482d7e9fddb8dce7b25c17ac3a000b02f4d9b4191e1320ec3a54c",
+      "size": 259391914
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3127-ac5ef37b91ee/lewis3127.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3127.signed",
+          "version": "v3127"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3127-ac5ef37b91ee",
+      "sha256": "ac5ef37b91eea9cfb1dfae2479634c8e890a7c4b73577e2567341f5f42ba9831",
+      "size": 163545551
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.8.3-b016ee8fc5f3/lewis383.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis383.signed",
+          "version": "3.8.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.8.3-b016ee8fc5f3",
+      "sha256": "b016ee8fc5f350b1f4719ae863cb91423112d1339583bfb543bea9dcb29391f2",
+      "size": 160821713
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.12.8-b22657ff5668/soho3128.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3128.signed",
+          "version": "3.12.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.12.8-b22657ff5668",
+      "sha256": "b22657ff566837f5de26404c769e1cfba240823a93683ddcd0f66677f4be8d79",
+      "size": 162513360
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-1.2.31-b257757969f2/daredevil1231.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil1231.signed",
+          "version": "1.2.31"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-1.2.31-b257757969f2",
+      "sha256": "b257757969f2c3dfeadc8bfaa4f7b1ba3df7272d1acd614a974486c002de190a",
+      "size": 20128500
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.04-b3cd337d4ed3/stingray-24.29.04.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-24.29.04.signed",
+          "version": "24.29.04"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-24.29.04-b3cd337d4ed3",
+      "sha256": "b3cd337d4ed3c408e0a361cb531c1eb7de4744d9bcfd82e47fa33f9df4db16fb",
+      "size": 259729197
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3148-b51c07266bb4/lewis3148.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3148.signed",
+          "version": "v3148"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3148-b51c07266bb4",
+      "sha256": "b51c07266bb4f04f2c835e2f57c3dfc0392c4a984819b3c70a4b2cc63d752ffe",
+      "size": 168911297
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.6.6-b52dcff5ccfa/daredevil-2.6.6.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil-2.6.6.signed",
+          "version": "2.6.6"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-2.6.6-b52dcff5ccfa",
+      "sha256": "b52dcff5ccfa51873ad524495f6b4fc2ede0a02529c3705111f0a4eb1fa51af8",
+      "size": 25312220
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.37.1-b58258e55cf1/sapphire223701.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire223701.signed",
+          "version": "22.37.1"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-22.37.1-b58258e55cf1",
+      "sha256": "b58258e55cf12bd34227dd31480edf10a6cccb7f4accfc9276354ff142b682c3",
+      "size": 222246692
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-v0209-b79fe894d04b/stingray0209.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray0209.signed",
+          "version": "v0209"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-v0209-b79fe894d04b",
+      "sha256": "b79fe894d04b67d739db2ed21f95d527ca71cf66bcee65de4c72eb8c00cc32ee",
+      "size": 207877959
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2463-b8b394832d61/roomba9xxv2463.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2463.signed",
+          "version": "v2463"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2463-b8b394832d61",
+      "sha256": "b8b394832d6114343bad08986b12e4fc07dc379645110d92a6777d1eeab972f9",
+      "size": 2865992
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3010-b8f3935d4f38/soho3010.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3010.signed",
+          "version": "v3010"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3010-b8f3935d4f38",
+      "sha256": "b8f3935d4f38508584b9d4ed70b2befc9c3d007a4d96292247cbc7cbe35fbda0",
+      "size": 157987280
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-01.01.14-b93cfe9887b3/congo-01.01.14.signed",
+      "catalog_records": [
+        {
+          "family": "congo",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/congo-01.01.14.signed",
+          "version": "01.01.14"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-congo-01.01.14-b93cfe9887b3",
+      "sha256": "b93cfe9887b3114b66df4fe4e3bee1057acc9011ba6086c97dd9e703c8ee5ef8",
+      "size": 1747824
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v0714-b9e31dd2d1cd/ruby0714.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby0714.signed",
+          "version": "v0714"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-v0714-b9e31dd2d1cd",
+      "sha256": "b9e31dd2d1cd58b221bcc2a4e1633d4373b762301bf12262fad574020e0acba4",
+      "size": 165532324
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.53.08-ba523b78d6ec/stingray-23.53.08.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.53.08.signed",
+          "version": "23.53.08"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.53.08-ba523b78d6ec",
+      "sha256": "ba523b78d6ec242f4dccbe391969ae4a9d32faa3add830ff781c4976897cca9e",
+      "size": 254007077
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-1.2.8-bb36998bd4d6/stingray128.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray128.signed",
+          "version": "1.2.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-1.2.8-bb36998bd4d6",
+      "sha256": "bb36998bd4d6f06f5ff19f0c8c15a8ca5eb8b4d0ee090f8b7892856b9023213e",
+      "size": 201287443
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.0.19-bcb80ca31525/daredevil2019.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil2019.signed",
+          "version": "2.0.19"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-2.0.19-bcb80ca31525",
+      "sha256": "bcb80ca3152549b81df2480332747f2a925d13aab0ef6af51672b522fecb5a96",
+      "size": 24439052
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.07.02-bdb2a836b440/sapphire-23.07.02.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.07.02.signed",
+          "version": "23.07.02"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-23.07.02-bdb2a836b440",
+      "sha256": "bdb2a836b4408eb784b5ad02551589e67195a3cd62a3b7a3c2d6474aedf7c107",
+      "size": 238683940
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v0713-be30d64a6531/ruby0713.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby0713.signed",
+          "version": "v0713"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-v0713-be30d64a6531",
+      "sha256": "be30d64a6531dc7e7d8da17a16a741e1fdb44418e28bd56140adfbe8a25c8a16",
+      "size": 165524132
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3204-bed45c0137af/lewis3204.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3204.signed",
+          "version": "v3204"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3204-bed45c0137af",
+      "sha256": "bed45c0137afea1b07fb88ca99e5d9de064e85a819808f723871a97326b93fcd",
+      "size": 206713299
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.52.05-bef453ea9ce7/sapphire-22.52.05.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-22.52.05.signed",
+          "version": "22.52.05"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-22.52.05-bef453ea9ce7",
+      "sha256": "bef453ea9ce7658a7dcb1bbcd6f52588f7bfe51a357d0d5e69b7e12eb6cdb34c",
+      "size": 234866468
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.07.02-bf9e6f37dd35/stingray-23.07.02.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.07.02.signed",
+          "version": "23.07.02"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.07.02-bf9e6f37dd35",
+      "sha256": "bf9e6f37dd35e35654839150ba9535aeade14abd67c115da8ac681864dca0eae",
+      "size": 234272548
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v366-c064c87b3c91/soho366.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho366.signed",
+          "version": "v366"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v366-c064c87b3c91",
+      "sha256": "c064c87b3c91fcb0e038fde5c4711f5a4818b04bea0eb2bb56e7c2e0c51ffaf9",
+      "size": 159584719
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.5-c0a6e998ddce/lewis-1.2.5.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.5.signed",
+          "version": "1.2.5"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.2.5-c0a6e998ddce",
+      "sha256": "c0a6e998ddcefdd31f6f348eaa3e45934f50f615e142b7e2727e4c3068a5d64a",
+      "size": 144327255
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31411-c1202558ec91/soho31411.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho31411.signed",
+          "version": "v31411"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v31411-c1202558ec91",
+      "sha256": "c1202558ec91c0caaba494bcbf23aa1ae3dd2bcb002818ae4ad87722cf808b81",
+      "size": 167854527
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3247-c27139406dfa/marconiv3247.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3247.signed",
+          "version": "v3247"
+        },
+        {
+          "family": "ningbo",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbov3347.signed",
+          "version": "3.3.47"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v3247-c27139406dfa",
+      "sha256": "c27139406dfa41511500ea99f698a72762e374a193b6547cb95360c3bd6d25b5",
+      "size": 970944
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3206-c384bdc09faf/lewis3206.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3206.signed",
+          "version": "v3206"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3206-c384bdc09faf",
+      "sha256": "c384bdc09faf1ed10a2e33564cd66d5f704250f7e4a839e643b1ede7d37cd181",
+      "size": 206733780
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31412-c71f8fab9b7f/sanmarino31412.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino31412.signed",
+          "version": "v31412"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v31412-c71f8fab9b7f",
+      "sha256": "c71f8fab9b7f75dc1653f0d2e7bfa8ab2a11d4c07d8e59f87eb236d1f9c84c8e",
+      "size": 165609929
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v11418-c8178c1a9723/soho11418.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho11418.signed",
+          "version": "v11418"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v11418-c8178c1a9723",
+      "sha256": "c8178c1a9723f7ebb9b25b39d76f83b0f38bb9763c134e1e6c9cd86ca5485251",
+      "size": 156520908
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.18.11-c8573875ed3f/soho31811.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho31811.signed",
+          "version": "3.18.11"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.18.11-c8573875ed3f",
+      "sha256": "c8573875ed3f2b7f55a1a3d6d88925133410553bbcb1de787fa95d4b6d21484c",
+      "size": 184177096
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3126-c86a1375d574/sanmarino3126.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3126.signed",
+          "version": "v3126"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v3126-c86a1375d574",
+      "sha256": "c86a1375d574d8aa79dcafad3578d7899a73ebfedd6c728136926a3dac4c579a",
+      "size": 160260567
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31610-c8ab0f9d289e/lewis31610.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis31610.signed",
+          "version": "v31610"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v31610-c8ab0f9d289e",
+      "sha256": "c8ab0f9d289e029666cc06c6ac9cd8e41886fbc5fb3965049653784b2ac9bd9a",
+      "size": 203010498
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v209-cb45645ceb0b/lewis209.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis209.signed",
+          "version": "v209"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v209-cb45645ceb0b",
+      "sha256": "cb45645ceb0b1682363343baea69169bfaf08af7f9444e56ebf671caca5bb9f1",
+      "size": 158499273
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3226-cc0f4ab6eecf/lewis3226.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3226.signed",
+          "version": "v3226"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3226-cc0f4ab6eecf",
+      "sha256": "cc0f4ab6eecf1311de6e7b3b31722124745672fddb3707150aa9f41ad8eea618",
+      "size": 199643584
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.2.2-cda4b2af92e1/daredevil222.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil222.signed",
+          "version": "2.2.2"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-2.2.2-cda4b2af92e1",
+      "sha256": "cda4b2af92e1c1bd79a8e80737c621d3fc49f6009da873596d7cc58b2ee0d90f",
+      "size": 25056108
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.53.04-cdb0024891d0/sapphire-23.53.04.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.53.04.signed",
+          "version": "23.53.04"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-23.53.04-cdb0024891d0",
+      "sha256": "cdb0024891d028f7041d6b7e190c5c85f54aba50206f3b0b1e873820645365ad",
+      "size": 250308390
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.0.11-d2ed5709cf48/lewis3011.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3011.signed",
+          "version": "3.0.11"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.0.11-d2ed5709cf48",
+      "sha256": "d2ed5709cf4808cbab0d88ba1d9b8509c383d66864bb9bb4a810deb114e48ea5",
+      "size": 161948114
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.37.71-d3f45ea42fba/stingray-23.37.71.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.37.71.signed",
+          "version": "23.37.71"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.37.71-d3f45ea42fba",
+      "sha256": "d3f45ea42fbab53d92b5e60d340764ad1c9aaef467e1660851a87a907197a775",
+      "size": 250287910
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3148-d4306294aaca/soho3148.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3148.signed",
+          "version": "v3148"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3148-d4306294aaca",
+      "sha256": "d4306294aaca6144866100dc475f0a0a50d4beea4f0d0b5c8ce7c3e688fbdf20",
+      "size": 167846335
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-24.29.02-d4feb7ab5433/sapphire-24.29.02.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-24.29.02.signed",
+          "version": "24.29.02"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-24.29.02-d4feb7ab5433",
+      "sha256": "d4feb7ab543346dcfebb98f9191d7bec2994cd928e6abb431df5a3eb63021960",
+      "size": 253687571
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31414-d5f413d062a2/sanmarino31414.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino31414.signed",
+          "version": "v31414"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v31414-d5f413d062a2",
+      "sha256": "d5f413d062a293444109a617d3418de8fedbb2acea11a7ead70c441b125c117e",
+      "size": 165605833
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-1.8.10-d6847d692cc5/daredevil1810.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil1810.signed",
+          "version": "1.8.10"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-1.8.10-d6847d692cc5",
+      "sha256": "d6847d692cc5b16a3eab432ba675b114ca78f051e395d328bc77df4b3a6abf81",
+      "size": 22817688
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.2.4-d6f9ab6e5118/lewis324.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis324.signed",
+          "version": "3.2.4"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-3.2.4-d6f9ab6e5118",
+      "sha256": "d6f9ab6e5118a40102f077c2988aac66bf71ffd73d2c1cf3e5bf246bc831464a",
+      "size": 160129489
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.37.13-d7389e6443b9/stingray-23.37.13.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.37.13.signed",
+          "version": "23.37.13"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.37.13-d7389e6443b9",
+      "sha256": "d7389e6443b950e4344e618bdb2177186c2085829c5ba80f3f83c2f40306388c",
+      "size": 250287910
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.12.8-d75ab45ad60d/sanmarino3128.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3128.signed",
+          "version": "3.12.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.12.8-d75ab45ad60d",
+      "sha256": "d75ab45ad60d2c712f09c81e906dd8f43ee91b57b1872ddd3d387a3b87212028",
+      "size": 160244186
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.21.01-d7b31a2deda4/lewis222101.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis222101.signed",
+          "version": "22.21.01"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-22.21.01-d7b31a2deda4",
+      "sha256": "d7b31a2deda465f61af35c94a9b2838b4e3c7ccc2451178cedea0bc5150c5f9e",
+      "size": 231223723
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.12.04-d7e01c9c4f67/stingray-23.12.04.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.12.04.signed",
+          "version": "23.12.04"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.12.04-d7e01c9c4f67",
+      "sha256": "d7e01c9c4f676a760d9e2d6cb1849515bef20582dc45968d7b6843bd15e120b4",
+      "size": 235104037
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.21.01-d84afb15fd0d/soho222101.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho222101.signed",
+          "version": "22.21.01"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-22.21.01-d84afb15fd0d",
+      "sha256": "d84afb15fd0d0a2a82a34fa98025db2a137fcda05b12b7f10ae51e261c59d2f4",
+      "size": 218419626
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.3-d8d40d0aa81c/soho222903.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho222903.signed",
+          "version": "22.29.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-22.29.3-d8d40d0aa81c",
+      "sha256": "d8d40d0aa81c3da9b856da29b04c0e855dfe5d191111aa4c51f1725e1fb9e3be",
+      "size": 299053482
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-1.0.17-dd6d85f29df8/sapphire1017.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire1017.signed",
+          "version": "1.0.17"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-1.0.17-dd6d85f29df8",
+      "sha256": "dd6d85f29df89373cbe043b86f2ff446508ed91b559ef07f9b251488e82f5ab5",
+      "size": 152229434
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v386-de0d271f5c2e/lewis386.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis386.signed",
+          "version": "v386"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v386-de0d271f5c2e",
+      "sha256": "de0d271f5c2ec206bbe9a323c2949e5a0a2e729dc8ee85ef9cbe3d5fa6115b54",
+      "size": 162537963
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-23.53.06-e069b1a65d41/sapphire-23.53.06.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-23.53.06.signed",
+          "version": "23.53.06"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-23.53.06-e069b1a65d41",
+      "sha256": "e069b1a65d413dd9dbf8d60bc1e1fd14d8e323438be10265b9b86cb0cd4cc668",
+      "size": 250332939
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2411-e1e7cb238dc2/roomba9xxv2411.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2411.signed",
+          "version": "v2411"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2411-e1e7cb238dc2",
+      "sha256": "e1e7cb238dc2747fd2ca5fae543ee2bb8adc8d291842b941f449e9f2d665d798",
+      "size": 2856680
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3127-e1f8f77909ed/sanmarino3127.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3127.signed",
+          "version": "v3127"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-v3127-e1f8f77909ed",
+      "sha256": "e1f8f77909ed82ec810f389b2a1c387d3a6d4028b53422f5b1d3417c7922d6db",
+      "size": 160244184
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-altadena-4.60.0-e1fde01f2db7/altadena_d_4_60_0.enc",
+      "catalog_records": [
+        {
+          "family": "altadena",
+          "url": "https://play.google.com/store/apps/details?id=com.irobot.home",
+          "version": "4.60.0"
+        }
+      ],
+      "format": "opaque-enc",
+      "release_tag": "firmware-altadena-4.60.0-e1fde01f2db7",
+      "sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
+      "size": 245784
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3187-e253f722ac96/lewis3187.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis3187.signed",
+          "version": "v3187"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-v3187-e253f722ac96",
+      "sha256": "e253f722ac963bcd72235a221c5329961d485833e4ee7f905ee57a648f6e05f2",
+      "size": 196649410
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.6.5-e26b0b4d61ef/lewis-1.6.5.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.6.5.signed",
+          "version": "1.6.5"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.6.5-e26b0b4d61ef",
+      "sha256": "e26b0b4d61ef7d6b952c7f4ed69da86edafdf93e62893bb9db8d816834621a92",
+      "size": 151704153
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3126-e8a0630ad21a/soho3126.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3126.signed",
+          "version": "v3126"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3126-e8a0630ad21a",
+      "sha256": "e8a0630ad21ac83cfeafb08858ca8ef52ac5b91ab9160f8d2b4de42830036ff6",
+      "size": 162525645
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.37.1-e8a9faf1a32a/lewis223701.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis223701.signed",
+          "version": "22.37.1"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-22.37.1-e8a9faf1a32a",
+      "sha256": "e8a9faf1a32a2699fc9070f587c53f1f040acacac655631aeb05cee6e81095ec",
+      "size": 301191594
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3187-e9bc5e93f5ee/soho3187.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho3187.signed",
+          "version": "v3187"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-v3187-e9bc5e93f5ee",
+      "sha256": "e9bc5e93f5ee4d9d76ddb853e10da842373f619b79fa468a9b911f550f4fd9a8",
+      "size": 184181184
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.5.3-eb9c4d948541/lewis-1.5.3.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.5.3.signed",
+          "version": "1.5.3"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.5.3-eb9c4d948541",
+      "sha256": "eb9c4d9485416fd836fc0c1d1575a6a59b17d4778e6dbde65dd7cfaae4010481",
+      "size": 151716440
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.0.15-ec48c5e1737a/daredevil2015.signed",
+      "catalog_records": [
+        {
+          "family": "daredevil",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/daredevil2015.signed",
+          "version": "2.0.15"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-daredevil-2.0.15-ec48c5e1737a",
+      "sha256": "ec48c5e1737a947c9d56f5f007a4abe25e447274e5cbd444d860b180c8420e09",
+      "size": 24424688
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-0.7.12-eda059be52f6/ruby-00.07.12-prod.meta.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/0.7.12-j9/package/ruby-00.07.12-prod.meta.signed",
+          "version": "0.7.12"
+        },
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby0712.signed",
+          "version": "v0712"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-0.7.12-eda059be52f6",
+      "sha256": "eda059be52f6e03d6692cf91f1ee6693024e67c7a71b908a826d61db62e0d5e9",
+      "size": 165524132
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.37.5-ee3689994c25/ruby-23.37.05.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby-23.37.05.signed",
+          "version": "23.37.5"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-23.37.5-ee3689994c25",
+      "sha256": "ee3689994c257ac7a930d6ff60e4e911b2b00dff0a514373b1db8a299e9d5485",
+      "size": 179536608
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-v108-ee4acaddac5f/sapphire108.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire108.signed",
+          "version": "v108"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-v108-ee4acaddac5f",
+      "sha256": "ee4acaddac5f1ac36d5dccc1b364501ace2ab7b202fec4826cea7c62594b6ed7",
+      "size": 151586361
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.2.7-ee62b87fe045/lewis-1.2.7.signed",
+      "catalog_records": [
+        {
+          "family": "lewis",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/lewis-1.2.7.signed",
+          "version": "1.2.7"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-lewis-1.2.7-ee62b87fe045",
+      "sha256": "ee62b87fe0451538b10cebabaeed7410916cbc1411385a9c7f7937ff8a314750",
+      "size": 144331351
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2410-f1dd6e0d77cf/roomba9xxv2410.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2410.signed",
+          "version": "v2410"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2410-f1dd6e0d77cf",
+      "sha256": "f1dd6e0d77cf1d8ed5dd7dd9267e8738f13fdb1b213d3a8c713684e0a92100cd",
+      "size": 2856680
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.10.8-f41b6f2357a0/sanmarino3108.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino3108.signed",
+          "version": "3.10.8"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.10.8-f41b6f2357a0",
+      "sha256": "f41b6f2357a0e6578a1518e4f4f9dc9870f6910aff02674cf8a0e7276506cd69",
+      "size": 159486426
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3210-f48dee1dcb5e/marconiv3210.signed",
+      "catalog_records": [
+        {
+          "family": "marconi",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3210.signed",
+          "version": "v3210"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-marconi-v3210-f48dee1dcb5e",
+      "sha256": "f48dee1dcb5ea0c63b493f80ad73e0ee7f041f41e91a838665370af6d42f1129",
+      "size": 924864
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2415-f4f4712f6e77/roomba9xxv2415.signed",
+      "catalog_records": [
+        {
+          "family": "roomba9xx",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2415.signed",
+          "version": "v2415"
+        }
+      ],
+      "format": "irobot-apkg",
+      "release_tag": "firmware-roomba9xx-v2415-f4f4712f6e77",
+      "sha256": "f4f4712f6e77a328ba607a2fff50016d2e0206be0eb3c35d95b98b37a9e6cdcd",
+      "size": 2826856
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v089-f5a3a6a46b27/ruby089.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby089.signed",
+          "version": "v089"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-v089-f5a3a6a46b27",
+      "sha256": "f5a3a6a46b27c288354fd591b2f9e897c4a403b7f2e10e10e43a7c3807255023",
+      "size": 171282080
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-24.29.01-f6da51da305b/sapphire-24.29.01.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire-24.29.01.signed",
+          "version": "24.29.01"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-24.29.01-f6da51da305b",
+      "sha256": "f6da51da305b3cc4f6e964fbf51c3805a1e3d0591c7cf0a3986ffebf1cd0261b",
+      "size": 253662995
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-v129-f72613273e0a/stingray129.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray129.signed",
+          "version": "v129"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-v129-f72613273e0a",
+      "sha256": "f72613273e0aa68534af1e2226932f60e3cab39f0a0bef72923b635b66661b51",
+      "size": 201287445
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-23.37.15-f7aa9344906a/stingray-23.37.15.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-23.37.15.signed",
+          "version": "23.37.15"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-23.37.15-f7aa9344906a",
+      "sha256": "f7aa9344906a950ff936ac60faf4f35c84ca8d9423bbe4efa72b82848941ccbd",
+      "size": 250292006
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.6.6-f86a182eb62e/sanmarino366.signed",
+      "catalog_records": [
+        {
+          "family": "sanmarino",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sanmarino366.signed",
+          "version": "3.6.6"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sanmarino-3.6.6-f86a182eb62e",
+      "sha256": "f86a182eb62e56fc7400d541c876b8fc9ead46bfaf573df304386f2a6ff4e68a",
+      "size": 156844505
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.05-fa399823e009/stingray-24.29.05.signed",
+      "catalog_records": [
+        {
+          "family": "stingray",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/stingray-24.29.05.signed",
+          "version": "24.29.05"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-stingray-24.29.05-fa399823e009",
+      "sha256": "fa399823e00954342d887974faf284adaccf382ea00edaafcd86416ec1f26a1c",
+      "size": 259733293
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.7.2-fee7830b4d99/sapphire220702.signed",
+      "catalog_records": [
+        {
+          "family": "sapphire",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/sapphire220702.signed",
+          "version": "22.7.2"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-sapphire-22.7.2-fee7830b4d99",
+      "sha256": "fee7830b4d996ee6c84971332c1c8b670867793407d4788109802259828a5303",
+      "size": 176310049
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.8.5-ff6e8df70000/soho385.signed",
+      "catalog_records": [
+        {
+          "family": "soho",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/soho385.signed",
+          "version": "3.8.5"
+        }
+      ],
+      "format": "irobot-otps",
+      "release_tag": "firmware-soho-3.8.5-ff6e8df70000",
+      "sha256": "ff6e8df70000376d4b5b0304da911c2123c201cb62b4f8a50d46769c40db55fc",
+      "size": 160297424
+    },
+    {
+      "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.53.06-ff93c3932e1e/ruby-23.53.06.signed",
+      "catalog_records": [
+        {
+          "family": "ruby",
+          "url": "https://prod-ota-firmware.iot.irobotapi.com/ruby-23.53.06.signed",
+          "version": "23.53.06"
+        }
+      ],
+      "format": "swupdate-cpio",
+      "release_tag": "firmware-ruby-23.53.06-ff93c3932e1e",
+      "sha256": "ff93c3932e1e93dbb625e5579d0062c134bef91b51f6da1a54709b967f038e42",
+      "size": 181516472
+    }
+  ],
+  "research_sources": [
+    {
+      "file": "altadena-enc-structure-2026-08-30.json"
+    },
+    {
+      "file": "android-all-sku-literals-2026-08-29.json"
+    },
+    {
+      "file": "android-historical-app-ota-followup-2026-08-30.json"
+    },
+    {
+      "file": "android-native-ota-strings-2026-08-29.json",
+      "hit_count": 30
+    },
+    {
+      "file": "china-legacy-object-probe-2026-08-29.json",
+      "hit_count": 5,
+      "negative_probe_count": 54,
+      "probe_count": 59
+    },
+    {
+      "file": "classic-native-prefix-v1-sku-probe-2026-08-29.json",
+      "hit_count": 18
+    },
+    {
+      "file": "compact-object-sweep-2026-08-29.json",
+      "record_count": 173
+    },
+    {
+      "file": "cross-family-object-sweep-2026-08-29.json",
+      "hit_count": 6,
+      "negative_probe_count": 17009,
+      "probe_count": 17015
+    },
+    {
+      "file": "essential2-altadena-and-listing-followup-2026-08-30.json"
+    },
+    {
+      "file": "hash-otps-format-search-2026-08-30.json"
+    },
+    {
+      "file": "historical-software-state-reconciliation-2026-08-30.json"
+    },
+    {
+      "file": "i-series-release-note-gap-probes-2026-08-30.json",
+      "negative_probe_count": 6,
+      "probe_count": 6
+    },
+    {
+      "file": "incremental-v1-cross-family-sweep-2026-08-29.json",
+      "hit_count": 3,
+      "negative_probe_count": 499,
+      "probe_count": 502
+    },
+    {
+      "file": "legacy-v1-deployment-object-probe-2026-08-29.json",
+      "hit_count": 2,
+      "negative_probe_count": 0,
+      "probe_count": 16
+    },
+    {
+      "file": "modern-release-gap-known-suffix-probes-2026-08-30.json",
+      "hit_count": 0,
+      "negative_probe_count": 400,
+      "probe_count": 400
+    },
+    {
+      "file": "official-irobot-accessories-sku-api-probe-2026-08-29.json"
+    },
+    {
+      "file": "official-release-gap-exact-object-probes-2026-08-30.json",
+      "hit_count": 2,
+      "negative_probe_count": 40,
+      "probe_count": 42
+    },
+    {
+      "file": "official-release-note-artifact-gaps-current.json"
+    },
+    {
+      "file": "platform-sku-mapping-audit-2026-08-30.json"
+    },
+    {
+      "file": "sigmastar-sstarota-structure-2026-08-30.json"
+    },
+    {
+      "file": "wichita-daredevil-cancelled-backfill-recovery-2026-08-29.json",
+      "hit_count": 12,
+      "negative_probe_count": 41334,
+      "probe_count": 41346
+    },
+    {
+      "file": "wichita-daredevil-resolved-identities-2026-08-29.json"
+    }
+  ],
+  "rules": [
+    "A recovered artifact is identified by the SHA-256 of preserved firmware bytes; catalog aliases do not create extra artifacts.",
+    "Official-app softwareVer/history values prove software states, not independently published OTA objects.",
+    "An explicit software Version entry on an official rollout/release-note page is independent release evidence, but does not prove one exact package per candidate internal family.",
+    "Versions explicitly identified by iRobot as factory-only/no-OTA are software states, not missing OTA artifacts.",
+    "A missing OTA artifact requires independent artifact evidence such as deployment metadata, an exact URL/filename, a release/API row, or a verified live object.",
+    "Negative filename probes narrow recoverability but do not prove that an artifact never existed."
+  ],
+  "schema": 1,
+  "summary": {
+    "byte_identical_alias_catalog_record_count": 5,
+    "catalog_record_count": 256,
+    "catalog_records_with_archive_sha256": 256,
+    "exhausted_or_unrecoverable_count": 0,
+    "formats": {
+      "irobot-apkg": 42,
+      "irobot-otps": 186,
+      "opaque-enc": 2,
+      "swupdate-cpio": 26
+    },
+    "historical_software_state_count": 14,
+    "historical_state_only_count": 14,
+    "independently_proven_missing_ota_artifact_count": 0,
+    "official_factory_state_only_count": 6,
+    "official_release_evidence_gap_count": 71,
+    "platform_mapping_gap_count": 15,
+    "recorded_negative_probe_count": 59342,
+    "unarchived_catalog_record_count": 0,
+    "unique_recovered_artifact_sha256_count": 251
+  }
+}

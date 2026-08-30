@@ -1,0 +1,30 @@
+{
+  "analyzer_policy": "Report exact gzip-member boundaries, decompressed size/hash/prefix, first shell-script offset when visible, and opaque post-gzip byte range. Do not assign names to unknown SStarOta header integers or post-gzip fields without corroborating evidence.",
+  "generated_at": "2026-08-30T09:23:37.385598+00:00",
+  "sample": {
+    "catalog_family": "105",
+    "catalog_version": "9.3.0",
+    "firmware_sha256": "870b20b4fba8a7b9eb2343122fd37b70ae293769a912ce3f698db1485ff3e0c4",
+    "gzip_offset": 48,
+    "gzip_original_filename": "SStarOta.bin",
+    "outer_magic": "aPKG",
+    "outer_raw_end": 38353275,
+    "outer_signed_trailer_size": 304,
+    "post_gzip_observation": "Opaque bytes exist after the gzip member and before the outer signed trailer; observed printable data includes hash-like text and Y3510PPKEY. No undocumented field semantics are assigned.",
+    "post_gzip_payload_size": 976,
+    "sstarota_prefix_hex": "ada10100000000000300000005000000623149024800000013050000",
+    "sstarota_uncompressed_sha256": "e54002a22c4664c1f12eeafb633af01d4ad19231dbaffaa3b842aaa444211a13",
+    "sstarota_uncompressed_size": 38353981
+  },
+  "schema": 1,
+  "vendor_documentation": [
+    {
+      "evidence": "SigmaStar OTA documentation describes creating SStarOta.bin with otapack, optional begin/end scripts, appending partition/file updates, then gzip-compressing it.",
+      "url": "https://wx.comake.online/doc/d8clf27cnes2-SSD20X/customer/development/reference/ota.html"
+    },
+    {
+      "evidence": "SSC9381/9351 documentation describes header records with source/destination/size/update method and gzip packaging; exact iRobot field mapping is not inferred.",
+      "url": "https://wx.comake.online/doc/doc/SigmaStarDocs-SSC9381G_9351_Pudding-ULS00V040-20210913/customer/development/reference/ota.html"
+    }
+  ]
+}

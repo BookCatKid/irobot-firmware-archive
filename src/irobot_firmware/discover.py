@@ -446,24 +446,70 @@ def direct_probe(family: str, version: str, template: str) -> dict[str, Any] | N
 
 
 
-def release_note_versions(url: str, timeout: int = 20) -> list[str]:
-    """Extract dotted firmware versions from iRobot's static support article HTML."""
+_RELEASE_NOTE_VERSION_HEADING = re.compile(
+    r"\bVersion\s+((?:[0-9]{1,2}(?:\.[0-9]{1,2}){1,3})(?:\s*/\s*[0-9]{1,2}(?:\.[0-9]{1,2}){1,3})*)\b",
+    re.I,
+)
+_FACTORY_ONLY_PHRASES = re.compile(
+    r"(?:Factory\s+release\.\s*No\s+OTA|Initial\s+Factory\s+Release|not\s+available\s+as\s+an\s+over-the-air\s+update)",
+    re.I,
+)
+
+
+def release_note_entries_from_html(body: str) -> list[dict[str, Any]]:
+    """Extract explicit version headings while retaining factory/no-OTA context.
+
+    Release pages also contain dotted dates such as ``11.21.25``. Requiring a
+    ``Version`` heading prevents those dates from becoming bogus firmware
+    candidates. Versions explicitly described as factory-only remain useful
+    software-state evidence, but must not be counted as missing OTA artifacts.
+    """
+    text = html.unescape(re.sub(r"<[^>]+>", " ", body))
+    text = re.sub(r"\s+", " ", text)
+    matches = list(_RELEASE_NOTE_VERSION_HEADING.finditer(text))
+    factory_section = re.search(r"\bFactory\s+Software\s+Version\s*:", text, re.I)
+    entries: list[dict[str, Any]] = []
+    for index, match in enumerate(matches):
+        segment_end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        segment = text[match.start():segment_end]
+        in_factory_section = bool(factory_section and match.start() > factory_section.start())
+        inline_factory = _FACTORY_ONLY_PHRASES.search(segment)
+        date_match = re.search(
+            r"\bRelease\s+Date\s*:?\s*((?:[A-Za-z]+\s+[0-9]{1,2},\s+[0-9]{4})|(?:[0-9]{1,4}[./-][0-9]{1,2}[./-][0-9]{1,4}))\b",
+            segment,
+            re.I,
+        )
+        # Phrases such as "iRobot Home App version 7.0 or higher" occur in
+        # release-note prose. A real software-release heading on the supported
+        # pages carries its own Release Date before the next Version heading.
+        if not date_match:
+            continue
+        factory_reason = None
+        if in_factory_section:
+            factory_reason = "listed under Factory Software Version section"
+        elif inline_factory:
+            factory_reason = re.sub(r"\s+", " ", inline_factory.group(0)).strip()
+        for version in re.split(r"\s*/\s*", match.group(1)):
+            entries.append({
+                "version": version,
+                "factory_only": bool(in_factory_section or inline_factory),
+                "factory_reason": factory_reason,
+                "release_date_text": date_match.group(1),
+            })
+    return entries
+
+
+def release_note_entries(url: str, timeout: int = 20) -> list[dict[str, Any]]:
+    """Fetch and parse an iRobot software-release support article."""
     req = urllib.request.Request(url, headers={"User-Agent": DEFAULT_UA, "Accept": "text/html"})
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         body = resp.read().decode("utf-8", "replace")
-    text = html.unescape(re.sub(r"<[^>]+>", " ", body))
-    text = re.sub(r"\s+", " ", text)
-    # Release-note pages mix versions and dates. Limit segments to 1-2 digits so years like 2025
-    # are excluded, then require a nearby 'Version' token where possible.
-    found: set[str] = set()
-    for match in re.finditer(r"\bVersion\s+([0-9]{1,2}(?:\.[0-9]{1,2}){1,3})\b", text, re.I):
-        found.add(match.group(1))
-    # Some headings contain forms such as '24.29.02/24.29.03'. Capture those too.
-    for match in re.finditer(r"\b([0-9]{1,2}(?:\.[0-9]{1,2}){2})\b", text):
-        v = match.group(1)
-        if int(v.split(".", 1)[0]) <= 30:
-            found.add(v)
-    return sorted(found)
+    return release_note_entries_from_html(body)
+
+
+def release_note_versions(url: str, timeout: int = 20) -> list[str]:
+    """Return explicit software-version headings from an iRobot support article."""
+    return sorted({entry["version"] for entry in release_note_entries(url, timeout=timeout)})
 
 
 def version_filename_candidates(version: str, patch_expansion_max: int | None = None) -> list[str]:
@@ -472,6 +518,11 @@ def version_filename_candidates(version: str, patch_expansion_max: int | None = 
     if len(parts) >= 3 and all(p.isdigit() for p in parts):
         candidates.add(".".join([parts[0], parts[1], parts[2].zfill(2), *parts[3:]]))
         candidates.add(".".join([parts[0], parts[1].zfill(2), parts[2].zfill(2), *parts[3:]]))
+        # Some iRobot object families (notably Congo/Essential) zero-pad every
+        # semantic component in the CDN filename, e.g. release-note version
+        # 1.1.22 -> congo-01.01.22.signed. Keep the literal form too because
+        # other families use unpadded semantic versions.
+        candidates.add(".".join(part.zfill(2) for part in parts))
     elif len(parts) == 2 and all(p.isdigit() for p in parts) and patch_expansion_max is not None:
         for patch in range(max(0, patch_expansion_max) + 1):
             candidates.add(f"{parts[0]}.{parts[1]}.{patch}")
@@ -532,7 +583,10 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
     # a newer firmware version exists publicly.
     for notes in cfg.get("release_note_probes", []):
         try:
-            versions = release_note_versions(notes["url"])
+            note_entries = release_note_entries(notes["url"])
+            # Factory-only/no-OTA states are valuable completeness evidence but
+            # are not useful inputs for direct OTA-object filename probing.
+            versions = sorted({entry["version"] for entry in note_entries if not entry["factory_only"]})
         except Exception as exc:
             errors.append(f"release notes {notes.get('url')}: {exc}")
             continue

@@ -1,0 +1,23 @@
+{
+  "blocker": "No real #Otps byte sample was found in the local archive/app corpus. Field parsing would be speculative without one.",
+  "generated_at": "2026-08-30T09:23:37.385598+00:00",
+  "literal_sample_hits": 0,
+  "literal_search_terms": [
+    "#Otps",
+    "Otps"
+  ],
+  "next_evidence_needed": "A preserved firmware/deployment object whose first bytes actually identify the #Otps format, or updater code bytes/strings that document its exact framing.",
+  "parser_status": "not implemented",
+  "related_manifest_evidence": {
+    "note": "Deep firmware manifests show OTA manager and SEI helper paths in multiple Linux firmware filesystems, but the manifests do not contain the executable bytes needed to establish the #Otps container layout.",
+    "paths_seen": [
+      "opt/irobot/bin/ota_manager",
+      "usr/bin/sei.sh"
+    ]
+  },
+  "schema": 1,
+  "search_roots": [
+    "/Users/simon/MyDocuments/gpt/irobot-firmware-archive",
+    "/Users/simon/MyDocuments/gpt/irobot-android-re"
+  ]
+}

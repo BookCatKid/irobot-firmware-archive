@@ -1,0 +1,40 @@
+{
+  "components": [],
+  "filename": "congo-01.01.22.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": true,
+        "id": 2,
+        "label": "1.1.22+40",
+        "magic": "00000000000000000000000000000000",
+        "offset": 1024,
+        "ordinal": 0,
+        "sha256": "1e52844d43d4e97d0c305353ea7e586afe45ca63f73109988816e9d20fe97c3e",
+        "size": 1511424
+      },
+      {
+        "bounds_valid": true,
+        "id": 1,
+        "label": "2.1.48",
+        "magic": "00000000000000000000000000000000",
+        "offset": 1513472,
+        "ordinal": 1,
+        "sha256": "e6cb3c48e7dd414312e055e596ada1660b7d87b6a8dce80f62631981232d00f3",
+        "size": 303584
+      }
+    ],
+    "entry_count": 2,
+    "header_u32_08": 1817056,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "congo_ota_wifi1.1.22b40_mcu2.1.4",
+    "trailing_bytes_after_header_u32_08": 304,
+    "variant": "legacy-entry-table"
+  },
+  "schema": 1,
+  "sha256": "261b8c6117606a8073682f84d4ec618ae7084db991649c648e5c58a40035c8d4",
+  "size": 1817360
+}

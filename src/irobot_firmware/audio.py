@@ -94,6 +94,7 @@ def build_audio_index(catalog: dict[str, Any], data_root: Path) -> dict[str, Any
                 "_families": set(),
                 "_parents": set(),
                 "_sizes": set(),
+                "_observations": [],
             })
             if language:
                 sound["language"] = language
@@ -102,6 +103,14 @@ def build_audio_index(catalog: dict[str, Any], data_root: Path) -> dict[str, Any
             sound["_families"].add(str(record.get("family") or ""))
             sound["_parents"].add(parent_sha)
             sound["_sizes"].add(int(entry.get("size") or 0))
+            release_date = record.get("release_date")
+            if release_date:
+                sound["_observations"].append({
+                    "date": str(release_date),
+                    "family": str(record.get("family") or ""),
+                    "version": str(record.get("version") or ""),
+                    "release_tag": str(archive.get("release_tag") or ""),
+                })
 
     entries: list[dict[str, Any]] = []
     for sound in sounds.values():
@@ -109,6 +118,7 @@ def build_audio_index(catalog: dict[str, Any], data_root: Path) -> dict[str, Any
         hashes = sound.pop("_hashes")
         families = sound.pop("_families")
         parents = sound.pop("_parents")
+        observations = sound.pop("_observations")
         sound.update({
             "unique_variant_count": len(hashes),
             "parent_firmware_count": len(parents),
@@ -116,6 +126,10 @@ def build_audio_index(catalog: dict[str, Any], data_root: Path) -> dict[str, Any
             "min_size": min(sizes) if sizes else 0,
             "max_size": max(sizes) if sizes else 0,
         })
+        if observations:
+            observations.sort(key=lambda x: (x["date"], x["family"], x["version"]))
+            sound["first_seen"] = observations[0]
+            sound["last_seen"] = observations[-1]
         entries.append(sound)
     entries.sort(key=lambda x: (x["category"], x.get("language", ""), x["name"], x["extension"]))
     languages = Counter(x["language"] for x in entries if x.get("language"))

@@ -443,9 +443,13 @@
       ],
       "patch_expansion_max": 30
     },
-    {
-      "name": "i-series",
-      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+  {
+    "name": "i-series",
+    "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+    "evidence_families": [
+      "lewis",
+      "daredevil"
+    ],
       "families": [
         {
           "family": "lewis",
@@ -481,33 +485,46 @@
       ],
       "patch_expansion_max": 30
     },
-    {
-      "name": "roomba-100",
-      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+  {
+    "name": "roomba-100",
+    "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+    "evidence_families": [
+      "105",
+      "105v"
+    ],
       "api_skus": [
         "Q352020",
         "Y351020"
       ]
     },
-    {
-      "name": "roomba-200",
-      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+  {
+    "name": "roomba-200",
+    "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+    "evidence_families": [
+      "205"
+    ],
       "api_skus": [
         "L124020",
         "F155040"
       ]
     },
-    {
-      "name": "roomba-plus-400",
-      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+  {
+    "name": "roomba-plus-400",
+    "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+    "evidence_families": [
+      "405"
+    ],
       "api_skus": [
         "G185020",
         "G285020"
       ]
     },
-    {
-      "name": "roomba-plus-500",
-      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+  {
+    "name": "roomba-plus-500",
+    "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+    "evidence_families": [
+      "505"
+    ],
       "api_skus": [
         "N185020",
         "N285020",
@@ -517,9 +534,12 @@
         "R285220"
       ]
     },
-    {
-      "name": "roomba-max-700",
-      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+  {
+    "name": "roomba-max-700",
+    "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+    "evidence_families": [
+      "705"
+    ],
       "api_skus": [
         "K155020",
         "W155020",
@@ -533,6 +553,15 @@
     {
       "name": "roomba-essential",
       "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "evidence_families": [
+        "congo"
+      ],
+      "families": [
+        {
+          "family": "congo",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/congo-{version}.signed"
+        }
+      ],
       "api_skus": [
         "Q012020",
         "Y014020"
@@ -541,6 +570,10 @@
     {
       "name": "wifi-600-800-series",
       "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "evidence_families": [
+        "marconi",
+        "ningbo"
+      ],
       "families": [
         {
           "family": "marconi",

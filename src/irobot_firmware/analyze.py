@@ -10,6 +10,7 @@ import stat
 import subprocess
 import tarfile
 import tempfile
+import zlib
 from pathlib import Path
 from typing import Any
 
@@ -269,6 +270,57 @@ def _analyze_apkg_header(mm: mmap.mmap) -> dict[str, Any]:
             end = mm.find(b"\0", cursor, min(len(mm), cursor + 4096))
             if end >= 0:
                 result["gzip_original_filename"] = bytes(mm[cursor:end]).decode("utf-8", "replace")
+        # The gzip stream does not necessarily occupy the whole aPKG payload
+        # region: observed SigmaStar packages append a small opaque metadata
+        # region after the member and before the outer signed trailer. Walk the
+        # gzip member so we can report those byte ranges exactly without
+        # assigning undocumented meanings to either the inner header or tail.
+        payload_end = raw_end if 0x30 <= raw_end <= len(mm) else len(mm)
+        inflater = zlib.decompressobj(16 + zlib.MAX_WBITS)
+        pos = 0x30
+        decompressed_size = 0
+        decompressed_hash = hashlib.sha256()
+        prefix = bytearray()
+        gzip_error = None
+        try:
+            while pos < payload_end and not inflater.eof:
+                chunk_end = min(payload_end, pos + 1024 * 1024)
+                chunk = bytes(mm[pos:chunk_end])
+                output = inflater.decompress(chunk)
+                if output:
+                    decompressed_size += len(output)
+                    decompressed_hash.update(output)
+                    if len(prefix) < 4096:
+                        prefix.extend(output[: 4096 - len(prefix)])
+                if inflater.eof:
+                    consumed = len(chunk) - len(inflater.unused_data)
+                    pos += consumed
+                    break
+                pos = chunk_end
+            output = inflater.flush()
+            if output:
+                decompressed_size += len(output)
+                decompressed_hash.update(output)
+                if len(prefix) < 4096:
+                    prefix.extend(output[: 4096 - len(prefix)])
+        except zlib.error as exc:
+            gzip_error = str(exc)
+
+        if inflater.eof and gzip_error is None:
+            result["gzip_member_compressed_size"] = pos - 0x30
+            result["gzip_uncompressed_size"] = decompressed_size
+            result["gzip_uncompressed_sha256"] = decompressed_hash.hexdigest()
+            result["gzip_uncompressed_prefix_hex"] = bytes(prefix[:32]).hex()
+            shell_offset = bytes(prefix).find(b"#!/bin/sh")
+            if shell_offset >= 0:
+                result["inner_first_shell_script_offset"] = shell_offset
+            post_size = max(0, payload_end - pos)
+            result["post_gzip_payload_size"] = post_size
+            if post_size:
+                result["post_gzip_payload_sha256"] = _hash_mmap_range(mm, pos, payload_end)
+                result["post_gzip_payload_prefix_hex"] = bytes(mm[pos : min(payload_end, pos + 32)]).hex()
+        elif gzip_error is not None:
+            result["gzip_analysis_error"] = gzip_error
     else:
         result["variant"] = "legacy-entry-table"
         result["entry_count"] = entry_count

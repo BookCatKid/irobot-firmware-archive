@@ -1,0 +1,3218 @@
+{
+  "generated_at": "2026-08-30T18:04:35.803146+00:00",
+  "hit_count": 0,
+  "hits": [],
+  "interpretation": "Live hits prove retrievable bytes. A negative result only rules out that exact skeleton/suffix combination; MCU/base identifiers or release suffixes may have changed in unrecovered builds.",
+  "method": "For each official unrecovered modern rollout version, probe only exact prod-ota filename skeletons taken from preserved same-family packages and the five ota-release suffixes already observed in verified modern packages.",
+  "observed_release_suffixes": [
+    "3.6.137",
+    "3.7.137",
+    "3.8.126",
+    "4.6.137",
+    "5.3.149"
+  ],
+  "probe_count": 400,
+  "probes": [
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "9.4.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.3.6-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.6.0-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "8.6.0"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-3.6.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-3.7.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-3.8.126.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-4.6.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-100",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu32-ota-release-5.3.149.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.19-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "3.1.19"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu27-ota-release-3.6.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu27-ota-release-3.7.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu27-ota-release-3.8.126.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu27-ota-release-4.6.137.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-200",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v3.1.16-ssc9211d-mcu27-ota-release-5.3.149.signed",
+      "version": "3.1.16"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "9.3.7"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.4-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.6.2-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "8.6.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v8.4.1-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.5.2-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.6-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.3-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.3.1-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v7.2.3-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.3.1-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32_base20-ota-release-3.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32_base20-ota-release-3.7.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32_base20-ota-release-3.8.126.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32_base20-ota-release-4.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-400",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v6.2.5-ssc9211d-mcu32_base20-ota-release-5.3.149.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "9.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.4.1-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "8.4.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.2.3-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.2.3-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.2.3-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.2.3-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v7.2.3-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "7.2.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.3.1-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.3.1-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.3.1-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.3.1-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.3.1-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "6.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.2.5-ssu9383-mcu35_base23-ota-release-3.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.2.5-ssu9383-mcu35_base23-ota-release-3.7.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.2.5-ssu9383-mcu35_base23-ota-release-3.8.126.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.2.5-ssu9383-mcu35_base23-ota-release-4.6.137.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-plus-500",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v6.2.5-ssu9383-mcu35_base23-ota-release-5.3.149.signed",
+      "version": "6.2.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "9.3.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.4-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "9.3.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.8-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "8.6.8"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.6.5-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "8.6.5"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v8.4.4-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "8.4.4"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "7.5.2"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.6-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "7.3.6"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.3-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "7.3.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v7.3.1-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "7.3.1"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu34_base12-ota-release-3.6.137.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu34_base12-ota-release-3.7.137.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu34_base12-ota-release-3.8.126.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu34_base12-ota-release-4.6.137.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu34_base12-ota-release-5.3.149.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu20_base42-ota-release-3.6.137.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.7.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu20_base42-ota-release-3.7.137.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "3.8.126",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu20_base42-ota-release-3.8.126.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "4.6.137",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu20_base42-ota-release-4.6.137.signed",
+      "version": "6.4.3"
+    },
+    {
+      "live": false,
+      "release_suffix": "5.3.149",
+      "source_name": "roomba-max-700",
+      "status": 403,
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v6.4.3-ssu9383-mcu20_base42-ota-release-5.3.149.signed",
+      "version": "6.4.3"
+    }
+  ],
+  "schema": 1
+}
