@@ -1,0 +1,12 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+_dist/
+work/
+downloads/
+*.signed
+*.meta.signed
+*.tar.gz
+*.squashfs
+!data/**/*.json

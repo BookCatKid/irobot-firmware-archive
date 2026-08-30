@@ -1,0 +1,86 @@
+name: Historical firmware backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      family:
+        description: "Internal firmware family (for example sapphire)"
+        required: true
+        default: "sapphire"
+      template:
+        description: "Direct firmware URL template"
+        required: true
+        default: "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+      scheme:
+        description: "Version-number scheme"
+        type: choice
+        options: [classic, semantic]
+        default: classic
+      year_start:
+        description: "Classic scheme first YY"
+        default: "17"
+      year_end:
+        description: "Classic scheme last YY"
+        default: "26"
+      patch_max:
+        description: "Highest patch number to probe"
+        default: "15"
+      max_probes:
+        description: "Safety cap; 0 means no cap"
+        default: "5000"
+      archive_found:
+        description: "Also download/analyze/upload found packages"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: firmware-catalog
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y squashfs-tools
+          python -m pip install -e .
+      - name: Probe historical objects
+        shell: bash
+        run: |
+          cap="${{ inputs.max_probes }}"
+          extra=()
+          if [[ "$cap" != "0" ]]; then extra+=(--max-probes "$cap"); fi
+          irobot-fw backfill \
+            --family "${{ inputs.family }}" \
+            --template '${{ inputs.template }}' \
+            --scheme "${{ inputs.scheme }}" \
+            --year-start "${{ inputs.year_start }}" \
+            --year-end "${{ inputs.year_end }}" \
+            --patch-max "${{ inputs.patch_max }}" \
+            --workers 4 --pause 0.02 "${extra[@]}"
+      - name: Archive newly found packages
+        if: ${{ inputs.archive_found == true }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: irobot-fw archive --repo "$GITHUB_REPOSITORY" --family "${{ inputs.family }}" --limit 10
+      - name: Commit results
+        run: |
+          git config user.name "irobot-firmware-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog.json data/firmware
+          if ! git diff --cached --quiet; then
+            git commit -m "archive: backfill ${{ inputs.family }} firmware"
+            git push
+          fi

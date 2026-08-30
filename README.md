@@ -1,0 +1,89 @@
+# iRobot Firmware Archive
+
+An unofficial, reproducible archive/index for publicly reachable iRobot firmware. It is designed to discover firmware, preserve the original signed package, fingerprint and inspect it, and publish a static site that can diff any two analyzed builds.
+
+## Why it is split this way
+
+A single modern Roomba OTA can be **~250 MiB**. Putting those blobs directly in Git would make the repository unusable and hit GitHub's normal file/repository limits quickly.
+
+So the project uses:
+
+- **Git:** discovery catalog, hashes, package/component metadata, filesystem manifests, site code.
+- **GitHub Releases:** the original unmodified `.signed` firmware blobs.
+- **GitHub Pages:** searchable firmware catalog and build-to-build diff UI.
+- **Actions:** daily discovery plus optional automatic archive/upload.
+
+The Pages diff does not need to download two 250 MiB packages. The archive action extracts a compact file manifest (path/type/size/SHA-256) from SquashFS components once, and the browser compares those manifests client-side.
+
+## Current discovery sources
+
+The tool supports two complementary mechanisms:
+
+1. iRobot's content firmware API (`content-prod.iot.irobotapi.com/v2/firmware`) using known/synthetic SKU probes.
+2. Direct 1-byte probes of known OTA naming schemes such as `prod-ota-firmware.iot.irobotapi.com/sapphire-24.29.03.signed`.
+
+There does not appear to be a public "list every object/version" endpoint, so **exhaustive historical coverage is a backfill/search problem rather than a single API call**. `irobot-fw backfill` exists specifically for that. The classic scanner generates padded and unpadded `YY.WW.patch` variants and can be chunked in Actions.
+
+## Local setup
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e .
+irobot-fw discover
+irobot-fw archive --dry-run
+python scripts/build_site.py
+python -m http.server -d _dist 8000
+```
+
+`archive --dry-run` is intentionally the safe first step. Actual archive mode downloads large files.
+
+## Automatic updates
+
+`.github/workflows/check-firmware.yml` runs daily. It always refreshes discovery metadata. Binary archiving is gated by the repository variable:
+
+`IROBOT_ARCHIVE_ENABLED=true`
+
+Until that variable is set, scheduled checks **do not bulk-download firmware**. A manual workflow dispatch can also archive a run immediately.
+
+When archiving is enabled, each pending build is:
+
+1. downloaded from the original iRobot URL;
+2. SHA-256 hashed;
+3. parsed for signed `Otps`/`Otie` components;
+4. checked against component hashes embedded in the package where available;
+5. SquashFS components are extracted and file-hashed;
+6. the original package is uploaded as a GitHub Release asset;
+7. the compact manifest is committed to `data/firmware/`.
+
+The daily job processes at most six pending builds per run to keep Actions/runtime/storage bursts under control.
+
+## Historical backfill
+
+The **Historical firmware backfill** workflow is manual on purpose. It lets you scan one family/range at a time before deciding how much storage to consume. The default safety cap is 5,000 object probes per invocation, and `archive_found` defaults to false.
+
+Example local dry discovery of the classic `sapphire` naming space:
+
+```sh
+irobot-fw backfill \
+  --family sapphire \
+  --template 'https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed' \
+  --scheme classic \
+  --year-start 23 --year-end 24 \
+  --patch-max 10 --max-probes 5000
+```
+
+## Repository layout
+
+```text
+config/discovery.json       recurring API/direct probes
+data/catalog.json           canonical firmware catalog
+data/firmware/...           analyzed build manifests
+src/irobot_firmware/        discovery/downloader/analyzer CLI
+site/                       static comparison site
+.github/workflows/          daily check, backfill, Pages deployment
+```
+
+## Firmware ownership / preservation note
+
+This repository's MIT license applies to the **tooling**, not to iRobot firmware. iRobot firmware, certificates, trademarks, and other proprietary material remain the property of their respective owners. The archive records source URLs and hashes so packages can be verified as unmodified.

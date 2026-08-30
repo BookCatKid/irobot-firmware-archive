@@ -1,0 +1,154 @@
+{
+  "api_probes": [
+    {
+      "sku": "i800000",
+      "software_versions": [
+        "0.0.0",
+        "22.29.3",
+        "22.52.08"
+      ],
+      "track": "prod"
+    },
+    {
+      "sku": "j900000",
+      "software_versions": [
+        "0.0.0",
+        "0.7.11",
+        "0.7.12"
+      ],
+      "track": "prod"
+    },
+    {
+      "sku": "g100000",
+      "software_versions": [
+        "0.0.0",
+        "9.2.0",
+        "9.3.0"
+      ],
+      "track": "prod"
+    },
+    {
+      "sku": "n100000",
+      "software_versions": [
+        "0.0.0",
+        "8.5.0",
+        "8.6.2"
+      ],
+      "track": "prod"
+    },
+    {
+      "sku": "w100000",
+      "software_versions": [
+        "0.0.0",
+        "8.5.0",
+        "8.6.2"
+      ],
+      "track": "prod"
+    },
+    {
+      "sku": "j715020",
+      "software_versions": [
+        "23.37.5",
+        "24.29.2",
+        "24.29.3"
+      ],
+      "track": "prod"
+    },
+    {
+      "sku": "s955800",
+      "software_versions": [
+        "22.29.10"
+      ],
+      "track": "prod"
+    },
+    {
+      "sku": "m613200",
+      "software_versions": [
+        "22.29.6"
+      ],
+      "track": "prod"
+    }
+  ],
+  "direct_families": [
+    {
+      "family": "sapphire",
+      "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed",
+      "versions": [
+        "23.37.05",
+        "24.29.02",
+        "24.29.03",
+        "24.29.05",
+        "24.29.06"
+      ]
+    },
+    {
+      "family": "stingray",
+      "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed",
+      "versions": [
+        "24.29.05",
+        "24.29.5"
+      ]
+    },
+    {
+      "family": "soho",
+      "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed",
+      "versions": [
+        "22.29.10"
+      ]
+    },
+    {
+      "family": "sanmarino",
+      "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed",
+      "versions": [
+        "22.29.06",
+        "22.29.6"
+      ]
+    }
+  ],
+  "release_note_probes": [
+    {
+      "name": "j-series",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/32666",
+      "families": [
+        {
+          "family": "sapphire",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        },
+        {
+          "family": "stingray",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        }
+      ]
+    },
+    {
+      "name": "s-series",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/26887",
+      "families": [
+        {
+          "family": "soho",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        }
+      ]
+    },
+    {
+      "name": "i-series",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/19549",
+      "families": [
+        {
+          "family": "lewis",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        }
+      ]
+    },
+    {
+      "name": "braava-m-series",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/26888",
+      "families": [
+        {
+          "family": "sanmarino",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
+        }
+      ]
+    }
+  ]
+}

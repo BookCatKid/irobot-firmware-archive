@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "irobot-firmware-archive"
+version = "0.1.0"
+description = "Discover, archive, fingerprint, and compare publicly available iRobot firmware packages"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "BookCatKid"}]
+dependencies = []
+
+[project.scripts]
+irobot-fw = "irobot_firmware.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,52 @@
+name: Check for iRobot firmware
+
+on:
+  schedule:
+    - cron: "17 7 * * *"
+  workflow_dispatch:
+    inputs:
+      archive_now:
+        description: "Archive newly discovered/pending packages during this run"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: firmware-catalog
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+      - name: Install extractor
+        run: sudo apt-get update && sudo apt-get install -y squashfs-tools
+      - name: Install archive CLI
+        run: python -m pip install -e .
+      - name: Discover currently exposed firmware
+        run: irobot-fw discover
+      - name: Archive pending firmware
+        if: ${{ vars.IROBOT_ARCHIVE_ENABLED == 'true' || inputs.archive_now == true }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: irobot-fw archive --repo "$GITHUB_REPOSITORY" --limit 6
+      - name: Commit catalog and manifests
+        run: |
+          git config user.name "irobot-firmware-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog.json data/firmware
+          if git diff --cached --quiet; then
+            echo "No catalog changes"
+          else
+            git commit -m "archive: update firmware catalog"
+            git push
+          fi
