@@ -372,6 +372,114 @@
           "resource": "store_altadena_series_name"
         }
       ]
+    },
+    "daredevil": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Daredevil",
+      "description": "Internal firmware platform tied by iRobot Classic backend data to i115020 and i310020. Exact retail-model coverage is intentionally left broad.",
+      "models": [
+        "Roomba i-series hardware (coverage incomplete)"
+      ],
+      "known_skus": [
+        "i115020",
+        "i310020"
+      ],
+      "confidence": "confirmed-backend",
+      "evidence": [
+        {
+          "kind": "android-app-default-sku",
+          "sku": "i310020",
+          "sku_type": "Daredevil",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "legacy-v1-api",
+          "sku": "i310020",
+          "deployment_family": "daredevil",
+          "version": "v2.4.7"
+        },
+        {
+          "kind": "legacy-v1-api",
+          "sku": "i115020",
+          "deployment_family": "daredevil",
+          "version": "v2.4.7",
+          "note": "i115020 is separately labelled Eva by SkuUtils; backend nevertheless offers the same Daredevil deployment, so the relationship is preserved rather than collapsed."
+        }
+      ]
+    },
+    "wichita": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Wichita",
+      "description": "Internal firmware platform associated by the official Classic app and V1 firmware catalog with SKU t721820. Retail-model naming remains incomplete.",
+      "models": [],
+      "known_skus": [
+        "t721820"
+      ],
+      "confidence": "confirmed-backend",
+      "evidence": [
+        {
+          "kind": "android-app-default-sku",
+          "sku": "t721820",
+          "sku_type": "Wichita",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "legacy-v1-api",
+          "sku": "t721820",
+          "deployment_family": "T72/Wichita",
+          "version": "v0.8.5",
+          "note": "The legacy catalog row references a Wichita beta OTA deployment."
+        },
+        {
+          "kind": "public-ota-object-sweep",
+          "note": "Evidence-version cross-family probes recovered live Wichita 1.2.4, 1.2.6, and 1.2.10 OTA objects on the iRobot production OTA CDN."
+        }
+      ]
+    },
+    "roomba9xx": {
+      "type": "legacy OTA firmware family identifier",
+      "display_name": "Roomba 9xx",
+      "description": "Legacy OTA filename family used for Roomba 960/980-class firmware packages.",
+      "models": [
+        "Roomba 960 / 980 family"
+      ],
+      "known_skus": [
+        "R980020"
+      ],
+      "confidence": "confirmed-backend",
+      "evidence": [
+        {
+          "kind": "legacy-v1-api",
+          "sku": "R980020",
+          "deployment_family": "R980R960",
+          "note": "Official V1 firmware catalog exposes roomba9xx deployment filenames for R980020."
+        },
+        {
+          "kind": "android-native-constant",
+          "symbol": "core::util::Constants::kRoomba9xxFirmwareFilename",
+          "app": "com.irobot.home 7.18.0"
+        }
+      ]
+    },
+    "marconi": {
+      "type": "legacy OTA firmware family identifier",
+      "display_name": "Marconi",
+      "description": "Legacy firmware family recovered from hard-coded official-app OTA constants and still-live iRobot production OTA objects. Exact retail-model coverage is incomplete.",
+      "models": [],
+      "known_skus": [],
+      "confidence": "confirmed-app+cdn",
+      "evidence": [
+        {
+          "kind": "android-native-constant",
+          "symbol": "core::util::Constants::kMarconiFirmwareFilename",
+          "value": "marconiv327.signed",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "public-ota-object-sweep",
+          "note": "Multiple Marconi numeric-token OTA objects remain publicly retrievable from iRobot production infrastructure."
+        }
+      ]
     }
   }
 }

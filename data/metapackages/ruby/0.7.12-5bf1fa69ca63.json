@@ -1,0 +1,18 @@
+{
+  "components": [],
+  "filename": "ruby-00.07.12-prod.meta.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [],
+    "entry_count": 0,
+    "header_u32_08": 1541,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "ruby0712-prod.meta",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "5bf1fa69ca6313cfcdd7e801a40afa11b6588cadba8625b2f2491ee85332732e",
+  "size": 1845
+}

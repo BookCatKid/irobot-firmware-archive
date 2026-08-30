@@ -1,0 +1,27 @@
+{
+  "components": [],
+  "filename": "C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": false,
+        "id": 128,
+        "label": "s://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-",
+        "offset": 1469,
+        "ordinal": 0,
+        "size": 1886680168
+      }
+    ],
+    "entry_count": 1,
+    "header_u32_08": 1653,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "C11e_505_OTA1_MxEmmc-KEY_sdk-v8.",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "657dc7f010574ecfa52c174ed5741bb18740ae82d7b496a4b1343dacb08bc027",
+  "size": 1957
+}

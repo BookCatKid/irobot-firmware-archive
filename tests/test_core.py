@@ -8,7 +8,7 @@ from pathlib import Path
 
 from irobot_firmware.analyze import analyze, _extract_reported_identity
 from irobot_firmware.backfill import classic_versions, numeric_versions
-from irobot_firmware.discover import api_probe, api_probe_response, direct_probe
+from irobot_firmware.discover import api_probe, api_probe_response, direct_probe, extract_metapackage_urls
 from irobot_firmware.catalog import empty_catalog, merge_records
 from irobot_firmware.release_notes import render_release_notes
 
@@ -32,6 +32,24 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(added, 0)
         self.assertEqual(merged["firmwares"][0]["archive"]["sha256"], "abc")
         self.assertEqual(merged["firmwares"][0]["size"], 12)
+
+    def test_merge_same_url_keeps_one_artifact_and_tracks_version_alias(self):
+        catalog = empty_catalog()
+        catalog["firmwares"] = [{
+            "family": "lewis", "version": "22.7.2",
+            "url": "https://example.invalid/lewis220702.signed",
+            "archive": {"sha256": "abc"},
+        }]
+        merged, added = merge_records(catalog, [{
+            "family": "lewis", "version": "22.07.02",
+            "url": "https://example.invalid/lewis220702.signed",
+            "source": "release-notes-probe",
+        }])
+        self.assertEqual(added, 0)
+        self.assertEqual(len(merged["firmwares"]), 1)
+        self.assertEqual(merged["firmwares"][0]["version"], "22.7.2")
+        self.assertEqual(merged["firmwares"][0]["version_aliases"], ["22.07.02"])
+        self.assertEqual(merged["firmwares"][0]["archive"]["sha256"], "abc")
 
     def test_merge_refresh_is_stable_and_only_enriches_missing_fields(self):
         catalog = empty_catalog()
@@ -130,6 +148,41 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(rows[0]["filename_token"], "v327")
             self.assertEqual(rows[0]["release_notes_version"], "3.2.7")
 
+    def test_swupdate_cpio_identity(self):
+        def entry(name: str, payload: bytes, mode: int = 0o100644, magic: bytes = b"070702") -> bytes:
+            names = name.encode() + b"\0"
+            fields = [1, mode, 0, 0, 1, 0, len(payload), 0, 0, 0, 0, len(names), sum(payload) & 0xFFFFFFFF]
+            header = magic + b"".join(f"{v:08X}".encode() for v in fields)
+            out = header + names
+            out += b"\0" * ((-len(out)) % 4)
+            out += payload
+            out += b"\0" * ((-len(out)) % 4)
+            return out
+
+        body = entry("sw-description", b'software : { version = "daredevil+2.4.7+daredevil-release+150"; };')
+        body += entry("TRAILER!!!", b"")
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            src = root / "daredevil247.signed"
+            src.write_bytes(body)
+            result = analyze(src, root / "manifest.json", root / "work", deep=False)
+        self.assertEqual(result["format"], "swupdate-cpio")
+        self.assertTrue(result["cpio"]["trailer_found"])
+        self.assertEqual(result["cpio"]["entries"][0]["path"], "sw-description")
+        self.assertEqual(result["reported_identity"]["model"], "daredevil")
+        self.assertEqual(result["reported_identity"]["version"], "2.4.7")
+
+    def test_swupdate_identity_prefers_explicit_robot_field(self):
+        from irobot_firmware.analyze import _swupdate_identity
+        cpio = {"text_snapshots": {"sw-description": (
+            'software : { version = "23.53.04+2024-02-21-deadbeef+Firmware-Production+197"; '
+            'osversion = "linux+flint-1.23.0_release+Firmware-Production+197"; robot = "ruby"; };'
+        )}}
+        identity = _swupdate_identity(cpio)
+        self.assertEqual(identity["model"], "ruby")
+        self.assertEqual(identity["version"], "23.53.04")
+        self.assertEqual(identity["os_version"], "linux+flint-1.23.0_release+Firmware-Production+197")
+
     def test_release_notes_include_provenance(self):
         record = {
             "family": "sapphire", "version": "24.29.03",
@@ -173,6 +226,34 @@ class CatalogTests(unittest.TestCase):
         self.assertIn("dockFwVerSec=7.8.9", seen["url"])
         self.assertIn("dockHwRev=2", seen["url"])
         self.assertNotIn("track=", seen["url"])
+
+    def test_metapackage_url_extraction_is_deduplicated_and_binary_safe(self):
+        body = (
+            b"aPKG\x01\x00\x00\x00"
+            b"https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed\x00"
+            b"junk\xff\x00"
+            b"https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed\x00"
+            b"https://example.invalid/other.bin\x00"
+        )
+        self.assertEqual(extract_metapackage_urls(body), [
+            "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed",
+            "https://example.invalid/other.bin",
+        ])
+
+    def test_api_probe_preserves_metapackage_embedded_urls(self):
+        response = {
+            "firmware": [{
+                "version": "22.52.08",
+                "downloadUrl": "https://content.example/fw.signed",
+                "metapackageUrl": "https://content.example/meta.signed",
+                "deploymentMpkg": "lewis/fw.signed",
+                "track": "prod",
+            }]
+        }
+        with patch("irobot_firmware.discover.api_probe_response", return_value=response), \
+             patch("irobot_firmware.discover.metapackage_embedded_urls", return_value=["https://legacy.example/fw.signed"]):
+            records = api_probe("i800000", "22.29.3")
+        self.assertEqual(records[0]["metapackage_embedded_urls"], ["https://legacy.example/fw.signed"])
 
     def test_api_probe_preserves_dock_recommendation_metadata(self):
         response = {

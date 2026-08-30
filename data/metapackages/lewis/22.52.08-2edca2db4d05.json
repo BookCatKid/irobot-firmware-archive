@@ -1,0 +1,18 @@
+{
+  "components": [],
+  "filename": "lewis-22.52.08-prod.meta.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [],
+    "entry_count": 0,
+    "header_u32_08": 1547,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "lewis-22.52.08-prod.meta",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "2edca2db4d05dfc40f85e2ddebdc1978db3a516a061cccb9a55689417e07e5be",
+  "size": 1851
+}

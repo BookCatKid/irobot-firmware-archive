@@ -1,0 +1,27 @@
+{
+  "components": [],
+  "filename": "C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": false,
+        "id": 128,
+        "label": "s://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-",
+        "offset": 1189,
+        "ordinal": 0,
+        "size": 1886680168
+      }
+    ],
+    "entry_count": 1,
+    "header_u32_08": 1373,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "C11m_705_OTA1_MxEmmc-KEY_sdk-v9.",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "da94b1e2f8424ff269f01c564992631d603e652dc0a9c5f2a3242b5013ebf39f",
+  "size": 1677
+}

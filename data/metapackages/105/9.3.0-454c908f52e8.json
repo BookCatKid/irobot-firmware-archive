@@ -1,0 +1,27 @@
+{
+  "components": [],
+  "filename": "C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": false,
+        "id": 113,
+        "label": "s://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-",
+        "offset": 1189,
+        "ordinal": 0,
+        "size": 1886680168
+      }
+    ],
+    "entry_count": 1,
+    "header_u32_08": 1358,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "C3_105_OTA1-KEY_sdk-v9.3.0-ssc92",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "454c908f52e87cc4df2f179cb3f84c7f2bcc018db2834d6a3a5338096fe49d88",
+  "size": 1662
+}

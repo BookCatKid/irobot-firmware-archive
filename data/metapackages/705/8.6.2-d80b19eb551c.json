@@ -1,0 +1,27 @@
+{
+  "components": [],
+  "filename": "V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "entries": [
+      {
+        "bounds_valid": false,
+        "id": 127,
+        "label": "s://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-s",
+        "offset": 1469,
+        "ordinal": 0,
+        "size": 1886680168
+      }
+    ],
+    "entry_count": 1,
+    "header_u32_08": 1652,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "V11_705_OTA1_MxEmmc-KEY_sdk-v8.6",
+    "trailing_bytes_after_header_u32_08": 304
+  },
+  "schema": 1,
+  "sha256": "d80b19eb551ca2f72af3e401dfd8291ae846fa6749c2b15db445722a9e893bcd",
+  "size": 1956
+}

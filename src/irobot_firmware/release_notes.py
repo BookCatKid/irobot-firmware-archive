@@ -87,6 +87,30 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
         f"| Source Last-Modified | {_value(record.get('last_modified'))} |",
         f"| First discovered by archive | {_value(record.get('discovered_at'))} |",
         "",
+    ]
+
+    meta_archive = (record.get("archive") or {}).get("metapackage") or {}
+    if meta_archive:
+        embedded = meta_archive.get("embedded_urls") or []
+        lines += [
+            "## Signed metapackage",
+            "",
+            "| Field | Value |",
+            "| --- | --- |",
+            f"| Archived asset | {_link('download metapackage', meta_archive.get('asset_url'))} |",
+            f"| Filename | {_code(meta_archive.get('filename'))} |",
+            f"| Size | **{int(meta_archive.get('size') or 0):,} bytes** |",
+            f"| SHA-256 | {_code(meta_archive.get('sha256'))} |",
+            f"| Parsed format | {_code(meta_archive.get('format'))} |",
+            f"| Analysis manifest | {_link('download manifest', meta_archive.get('manifest_asset_url'))} |",
+            "",
+        ]
+        if embedded:
+            lines += ["Embedded absolute URLs:", ""]
+            lines += [f"- `{url}`" for url in embedded]
+            lines.append("")
+
+    lines += [
         "## Archived file",
         "",
         "| Field | Value |",
@@ -134,6 +158,39 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
                 if snapshots.get(key):
                     lines += ["", f"**`/{key}`**", "", "```text", snapshots[key].rstrip(), "```"]
             lines.append("")
+
+    cpio = analysis.get("cpio") or {}
+    if cpio:
+        lines += [
+            "## SWUpdate / CPIO contents",
+            "",
+            f"- CPIO variant: {_code(cpio.get('variant'))}",
+            f"- Entries: **{int(cpio.get('entry_count') or 0):,}**",
+            f"- Trailer found: **{bool(cpio.get('trailer_found'))}**",
+            "",
+            "| Path | Type | Size | SHA-256 |",
+            "| --- | --- | ---: | --- |",
+        ]
+        for entry in cpio.get("entries") or []:
+            lines.append(
+                f"| `{entry.get('path', '')}` | {_code(entry.get('type'))} | {int(entry.get('size') or 0):,} | "
+                f"`{str(entry.get('sha256') or '')}` |"
+            )
+        lines.append("")
+        snapshots = cpio.get("text_snapshots") or {}
+        if snapshots.get("sw-description"):
+            lines += ["**`sw-description`**", "", "```text", snapshots["sw-description"].rstrip(), "```", ""]
+        for embedded_fs in cpio.get("embedded_filesystems") or []:
+            fs = embedded_fs.get("analysis") or {}
+            lines += [
+                f"### Embedded filesystem: `{embedded_fs.get('path', '')}`",
+                "",
+                f"- Filesystem: {_code(fs.get('filesystem'))}",
+                f"- Extractable: **{bool(fs.get('extractable'))}**",
+                f"- Regular files: **{int(fs.get('file_count') or 0):,}**",
+                f"- Manifest entries: **{int(fs.get('entry_count') or 0):,}**",
+                "",
+            ]
 
     evidence = platform.get("evidence") or []
     if evidence:

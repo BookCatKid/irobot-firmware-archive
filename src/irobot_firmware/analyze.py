@@ -6,6 +6,7 @@ import os
 import re
 import shutil
 import struct
+import stat
 import subprocess
 from pathlib import Path
 from typing import Any
@@ -245,6 +246,165 @@ def _analyze_apkg_header(mm: mmap.mmap) -> dict[str, Any]:
         "trailing_bytes_after_header_u32_08": trailer,
     }
 
+
+def _align4(value: int) -> int:
+    return (value + 3) & ~3
+
+
+def _hash_mmap_range(mm: mmap.mmap, start: int, end: int, chunk_size: int = 4 * 1024 * 1024) -> str:
+    """SHA-256 an mmap range without exporting a long-lived memoryview."""
+    digest = hashlib.sha256()
+    pos = start
+    while pos < end:
+        nxt = min(end, pos + chunk_size)
+        digest.update(mm[pos:nxt])
+        pos = nxt
+    return digest.hexdigest()
+
+
+def _write_mmap_range(mm: mmap.mmap, start: int, end: int, path: Path, chunk_size: int = 4 * 1024 * 1024) -> None:
+    """Copy an mmap range to disk in bounded chunks.
+
+    Using mmap slices here rather than a memoryview is deliberate: if an I/O
+    exception occurs (for example ENOSPC), no exported pointer survives and the
+    parent mmap can still close cleanly.
+    """
+    with path.open("wb") as out:
+        pos = start
+        while pos < end:
+            nxt = min(end, pos + chunk_size)
+            out.write(mm[pos:nxt])
+            pos = nxt
+
+
+def _parse_newc_cpio(mm: mmap.mmap, work_dir: Path, deep: bool) -> dict[str, Any]:
+    """Parse SVR4 newc/CRC CPIO used by SWUpdate-based iRobot firmware.
+
+    Daredevil OTA packages use ASCII CPIO (magic 070702) with a signed
+    ``sw-description`` plus kernel/rootfs payloads.  Parsing the format directly
+    keeps analysis reproducible and avoids depending on a platform cpio binary.
+    """
+    entries: list[dict[str, Any]] = []
+    snapshots: dict[str, str] = {}
+    embedded_filesystems: list[dict[str, Any]] = []
+    pos = 0
+    ordinal = 0
+    total = len(mm)
+    field_names = (
+        "ino", "mode", "uid", "gid", "nlink", "mtime", "filesize",
+        "devmajor", "devminor", "rdevmajor", "rdevminor", "namesize", "check",
+    )
+    while pos + 110 <= total:
+        magic = bytes(mm[pos : pos + 6])
+        if magic not in (b"070701", b"070702"):
+            break
+        try:
+            values = [int(bytes(mm[pos + 6 + i * 8 : pos + 14 + i * 8]), 16) for i in range(13)]
+        except ValueError:
+            break
+        hdr = dict(zip(field_names, values))
+        name_start = pos + 110
+        name_end = name_start + hdr["namesize"]
+        if hdr["namesize"] <= 0 or name_end > total:
+            break
+        name_bytes = bytes(mm[name_start:name_end])
+        if name_bytes.endswith(b"\0"):
+            name_bytes = name_bytes[:-1]
+        name = name_bytes.decode("utf-8", "replace")
+        data_start = _align4(name_end)
+        data_end = data_start + hdr["filesize"]
+        if data_end > total:
+            break
+        if name == "TRAILER!!!":
+            return {
+                "variant": "crc" if magic == b"070702" else "newc",
+                "entry_count": len(entries),
+                "entries": entries,
+                "text_snapshots": snapshots,
+                "embedded_filesystems": embedded_filesystems,
+                "trailer_found": True,
+                "parsed_bytes": _align4(data_end),
+            }
+
+        mode = hdr["mode"]
+        kind = "other"
+        file_type = stat.S_IFMT(mode)
+        if file_type == stat.S_IFREG:
+            kind = "file"
+        elif file_type == stat.S_IFDIR:
+            kind = "dir"
+        elif file_type == stat.S_IFLNK:
+            kind = "symlink"
+        entry: dict[str, Any] = {
+            "ordinal": ordinal,
+            "path": name,
+            "type": kind,
+            "mode": oct(mode & 0o7777),
+            "size": hdr["filesize"],
+            "mtime": hdr["mtime"],
+            "offset": data_start,
+        }
+        if kind in ("file", "symlink"):
+            entry["sha256"] = _hash_mmap_range(mm, data_start, data_end)
+        if kind == "symlink":
+            entry["target"] = bytes(mm[data_start:data_end]).decode("utf-8", "replace")
+        if kind == "file" and hdr["filesize"] <= 256 * 1024 and (
+            name == "sw-description" or name.endswith(".sh") or name.endswith(".conf") or name.endswith(".env")
+        ):
+            snapshots[name] = bytes(mm[data_start:data_end]).decode("utf-8", "replace")
+        if kind == "file" and deep and bytes(mm[data_start:min(data_start + 4, data_end)]) == b"hsqs":
+            fs_path = work_dir / f"cpio-{ordinal:02d}-{Path(name).name}.squashfs"
+            fs_path.parent.mkdir(parents=True, exist_ok=True)
+            _write_mmap_range(mm, data_start, data_end, fs_path)
+            fs_info = _analyze_squashfs(fs_path, work_dir / f"cpio-{ordinal:02d}-fs")
+            embedded_filesystems.append({
+                "path": name,
+                "sha256": entry["sha256"],
+                "size": hdr["filesize"],
+                "analysis": fs_info,
+            })
+        entries.append(entry)
+        ordinal += 1
+        pos = _align4(data_end)
+
+    return {
+        "variant": "crc" if bytes(mm[:6]) == b"070702" else "newc",
+        "entry_count": len(entries),
+        "entries": entries,
+        "text_snapshots": snapshots,
+        "embedded_filesystems": embedded_filesystems,
+        "trailer_found": False,
+        "parsed_bytes": pos,
+    }
+
+
+def _swupdate_identity(cpio: dict[str, Any]) -> dict[str, Any]:
+    desc = (cpio.get("text_snapshots") or {}).get("sw-description", "")
+    match = re.search(r'\bversion\s*=\s*"([^"]+)"', desc)
+    if not match:
+        return {}
+    software = match.group(1)
+    result: dict[str, Any] = {"software_version": software, "evidence": "sw-description"}
+    robot_match = re.search(r'\brobot\s*=\s*"([^"]+)"', desc)
+    if robot_match:
+        result["model"] = robot_match.group(1)
+    os_match = re.search(r'\bosversion\s*=\s*"([^"]+)"', desc)
+    if os_match:
+        result["os_version"] = os_match.group(1)
+    parts = software.split("+")
+    dotted = re.compile(r"\d+(?:\.\d+){1,3}")
+    if parts and dotted.fullmatch(parts[0]):
+        # Newer SWUpdate packages (for example ruby) put the user-visible
+        # version first and carry the platform separately in `robot = ...`.
+        result["version"] = parts[0]
+    elif parts:
+        # Older packages may use model+version+... directly in the version field.
+        result.setdefault("model", parts[0])
+        if len(parts) > 1 and dotted.fullmatch(parts[1]):
+            result["version"] = parts[1]
+    return result
+
+
 def _file_manifest(root: Path) -> tuple[list[dict[str, Any]], dict[str, str]]:
     files: list[dict[str, Any]] = []
     snapshots: dict[str, str] = {}
@@ -316,6 +476,12 @@ def analyze(path: Path, output: Path, work_dir: Path, deep: bool = True) -> dict
         elif mm[:4] == b"aPKG":
             result["format"] = "irobot-apkg"
             result["legacy_container"] = _analyze_apkg_header(mm)
+        elif mm[:6] in (b"070701", b"070702"):
+            result["format"] = "swupdate-cpio"
+            result["cpio"] = _parse_newc_cpio(mm, work_dir / "cpio", deep=deep)
+            identity = _swupdate_identity(result["cpio"])
+            if identity:
+                result["reported_identity"] = identity
         items = _find_otie_items(mm)
         if items:
             result["format"] = "irobot-otps"

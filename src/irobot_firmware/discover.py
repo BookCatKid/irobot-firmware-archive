@@ -14,6 +14,7 @@ from typing import Any, Iterable
 from .util import load_json
 
 CONTENT_API = "https://content-prod.iot.irobotapi.com/v2/firmware"
+LEGACY_CONTENT_V1 = "https://content-prod.iot.irobotapi.com/v1/app/"
 DEFAULT_UA = "irobot-firmware-archive/0.1 (+https://github.com/BookCatKid/irobot-firmware-archive)"
 
 
@@ -23,15 +24,202 @@ def _request_json(url: str, timeout: int = 20) -> dict[str, Any]:
         return json.loads(resp.read().decode("utf-8"))
 
 
+def extract_metapackage_urls(body: bytes) -> list[str]:
+    """Extract unique absolute URLs from a signed iRobot metapackage body.
+
+    Older aPKG metapackages carry the canonical OTA URL as a NUL-terminated
+    string.  We intentionally do not guess undocumented aPKG field offsets:
+    an absolute URL is self-describing evidence and is safe to preserve as
+    provenance.
+    """
+    urls = [
+        m.group().decode("ascii")
+        for m in re.finditer(rb"https?://[^\x00\s\"<>]{5,500}", body)
+    ]
+    return list(dict.fromkeys(urls))
+
+
+def metapackage_embedded_urls(url: str, timeout: int = 20) -> list[str]:
+    """Fetch a small signed iRobot metapackage and return embedded URLs."""
+    req = urllib.request.Request(url, headers={"User-Agent": DEFAULT_UA})
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        body = resp.read(1024 * 1024 + 1)
+    if len(body) > 1024 * 1024:
+        # Metapackages observed in production are tiny. Refuse to silently scan
+        # an unexpectedly large response as though it were the same format.
+        return []
+    return extract_metapackage_urls(body)
+
+
 def _exists(url: str, timeout: int = 20) -> tuple[bool, dict[str, str]]:
     # iRobot/S3 endpoints reliably support a 1-byte Range GET even when HEAD semantics vary.
+    # Some legacy CloudFront/S3 paths return HTTP 200 with a tiny XML NoSuchKey body,
+    # so status alone is not sufficient evidence that a firmware object exists.
     req = urllib.request.Request(url, headers={"User-Agent": DEFAULT_UA, "Range": "bytes=0-0"})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             headers = {k.lower(): v for k, v in resp.headers.items()}
+            content_type = headers.get("content-type", "").lower()
+            if "xml" in content_type:
+                return False, headers
+            body = resp.read(1024)
+            stripped = body.lstrip()
+            if stripped.startswith(b"<?xml") and b"<Error>" in stripped and any(
+                marker in stripped for marker in (b"<Code>NoSuchKey</Code>", b"<Code>AccessDenied</Code>")
+            ):
+                return False, headers
+            # A legacy CloudFront edge can range a cached 292-byte NoSuchKey XML as
+            # a 1-byte binary response.  For genuinely tiny objects (metapackages
+            # are ~2 KiB), fetch the full body once and reject explicit S3 errors.
+            content_range = headers.get("content-range", "")
+            total_size = None
+            if "/" in content_range:
+                try:
+                    total_size = int(content_range.rsplit("/", 1)[1])
+                except ValueError:
+                    pass
+            if total_size is not None and total_size <= 4096:
+                verify_req = urllib.request.Request(url, headers={"User-Agent": DEFAULT_UA})
+                with urllib.request.urlopen(verify_req, timeout=timeout) as verify_resp:
+                    verify_body = verify_resp.read(4097).lstrip()
+                if verify_body.startswith(b"<?xml") and b"<Error>" in verify_body and any(
+                    marker in verify_body for marker in (b"<Code>NoSuchKey</Code>", b"<Code>AccessDenied</Code>")
+                ):
+                    return False, headers
             return resp.status in (200, 206), headers
     except urllib.error.HTTPError as exc:
         return False, {k.lower(): v for k, v in exc.headers.items()}
+
+
+
+def legacy_v1_response(sku: str) -> dict[str, Any]:
+    """Return the Classic-app V1 firmware catalog for an evidence-backed SKU."""
+    return _request_json(LEGACY_CONTENT_V1 + "firmware/" + urllib.parse.quote(sku, safe=""))
+
+
+def _legacy_item_family(item: dict[str, Any]) -> str | None:
+    deployment = str(item.get("deploymentMpkg") or "")
+    filename = deployment.rsplit("/", 1)[-1].lower()
+    for family in ("roomba9xx", "marconi", "daredevil", "elpaso", "lewis", "sanmarino", "soho", "wichita", "altadena"):
+        if family in filename:
+            return family
+    prefix = deployment.split("/", 1)[0].lower() if "/" in deployment else ""
+    aliases = {"r980r960": "roomba9xx", "i7": "lewis", "m6": "sanmarino", "s9": "soho", "t72": "wichita"}
+    if prefix in aliases:
+        return aliases[prefix]
+    return prefix or None
+
+
+def _legacy_dotted_version(value: Any) -> str | None:
+    raw = str(value or "").lstrip("vV")
+    match = re.match(r"(\d+\.\d+\.\d+)", raw)
+    return match.group(1) if match else None
+
+
+def _legacy_identity_from_url(item: dict[str, Any], url: str) -> tuple[str | None, str | None]:
+    name = urllib.parse.urlsplit(url).path.rsplit("/", 1)[-1]
+    lower = name.lower()
+    match = re.fullmatch(r"(roomba9xx|marconi)v(\d+)\.signed", lower)
+    if match:
+        return match.group(1), "v" + match.group(2)
+    if re.fullmatch(r"altadenad\d+\.enc", lower):
+        return "altadena", _legacy_dotted_version(item.get("version")) or str(item.get("version") or "unknown")
+    match = re.fullmatch(r"([a-z][a-z0-9_-]*?)(\d+)\.signed", lower)
+    if match:
+        family = match.group(1).rstrip("-_v")
+        expected = _legacy_item_family(item)
+        if family == expected:
+            return family, _legacy_dotted_version(item.get("version")) or ("v" + match.group(2))
+        return family, "v" + match.group(2)
+    return _legacy_item_family(item), _legacy_dotted_version(item.get("version"))
+
+
+def _legacy_recovery_urls(item: dict[str, Any]) -> list[str]:
+    family = _legacy_item_family(item)
+    if not family:
+        return []
+    raw = str(item.get("version") or "").lstrip("vV")
+    dotted = _legacy_dotted_version(raw)
+    compact = "".join(dotted.split(".")) if dotted else ""
+    all_digits = re.sub(r"\D", "", raw)
+    tokens = [x for x in dict.fromkeys((compact, all_digits)) if x]
+    return [f"https://prod-ota-firmware.iot.irobotapi.com/{family}{token}.signed" for token in tokens]
+
+
+def legacy_v1_probe(sku: str) -> list[dict[str, Any]]:
+    """Recover downloadable firmware referenced by the Classic app's V1 catalog.
+
+    The old endpoint often leaves historical rows in place after replacing their
+    download URL with www.irobot.com/google.com.  For those rows we only accept a
+    compact prod-ota-firmware candidate when a live range probe proves the object
+    exists.  No placeholder is promoted to a firmware record on naming alone.
+    """
+    data = legacy_v1_response(sku)
+    now = datetime.now(timezone.utc).isoformat()
+    records: list[dict[str, Any]] = []
+    for item in data.get("firmwareUpdateItems", []):
+        original_url = str(item.get("downloadUrl") or "")
+        chosen_url: str | None = None
+        if "irobotapi.com" in original_url:
+            try:
+                if _exists(original_url)[0]:
+                    chosen_url = original_url
+            except Exception:
+                pass
+        if chosen_url is None:
+            for candidate in _legacy_recovery_urls(item):
+                try:
+                    if _exists(candidate)[0]:
+                        chosen_url = candidate
+                        break
+                except Exception:
+                    continue
+        if chosen_url is None:
+            continue
+        family, version = _legacy_identity_from_url(item, chosen_url)
+        if not family or not version:
+            continue
+        # ContentStack sometimes mirrors the exact legacy artifact under a SKU path.
+        # Prefer the canonical prod-ota-firmware object when the same basename is
+        # independently live; this avoids duplicate catalog rows for byte aliases.
+        filename = urllib.parse.urlsplit(chosen_url).path.rsplit("/", 1)[-1]
+        if filename and (family in {"roomba9xx", "marconi"}):
+            canonical = "https://prod-ota-firmware.iot.irobotapi.com/" + filename
+            try:
+                if _exists(canonical)[0]:
+                    chosen_url = canonical
+            except Exception:
+                pass
+        meta_original = str(item.get("metapackageUrl") or "")
+        meta_url = None
+        if "irobotapi.com" in meta_original:
+            try:
+                if _exists(meta_original)[0]:
+                    meta_url = meta_original
+            except Exception:
+                pass
+        record: dict[str, Any] = {
+            "family": family,
+            "version": version,
+            "url": chosen_url,
+            "source": "legacy-v1-api",
+            "source_sku": sku,
+            "track": "prod",
+            "release_date": item.get("releaseDate"),
+            "deployment_mpkg": item.get("deploymentMpkg"),
+            "legacy_v1_catalog_version": item.get("version"),
+            "legacy_v1_original_download_url": item.get("downloadUrl"),
+            "legacy_v1_original_metapackage_url": item.get("metapackageUrl"),
+            "discovered_at": now,
+        }
+        if item.get("notes") not in (None, "", " "):
+            record["legacy_v1_notes"] = item.get("notes")
+        if meta_url:
+            record["metapackage_url"] = meta_url
+        if chosen_url != original_url:
+            record["legacy_v1_recovered_from_deployment_metadata"] = True
+        records.append(record)
+    return records
 
 
 def api_probe_response(
@@ -112,6 +300,13 @@ def api_probe(
             record["dock_firmware_recommendation"] = dock
         if request_dock_state:
             record["source_dock_state"] = request_dock_state
+        if record.get("metapackage_url"):
+            try:
+                aliases = metapackage_embedded_urls(str(record["metapackage_url"]))
+            except Exception:
+                aliases = []
+            if aliases:
+                record["metapackage_embedded_urls"] = aliases
         result.append(record)
     return result
 
@@ -209,6 +404,12 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
     cfg = load_json(config_path, {})
     records: list[dict[str, Any]] = []
     errors: list[str] = []
+
+    for sku in cfg.get("legacy_v1_skus", []):
+        try:
+            records.extend(legacy_v1_probe(str(sku)))
+        except Exception as exc:
+            errors.append(f"legacy-v1 {sku}: {exc}")
 
     for probe in cfg.get("api_probes", []):
         for software_ver in probe.get("software_versions", ["0.0.0"]):
