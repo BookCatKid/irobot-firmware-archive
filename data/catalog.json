@@ -422,6 +422,21 @@
       "version": "1.1.18"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-1.2.7-aa4cfd856c25/daredevil127.signed",
+        "component_count": 0,
+        "format": "swupdate-cpio",
+        "manifest": "firmware/daredevil/1.2.7-aa4cfd856c25.json",
+        "release_tag": "firmware-daredevil-1.2.7-aa4cfd856c25",
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "daredevil",
+          "software_version": "daredevil+1.2.7+daredevil-release+31",
+          "version": "1.2.7"
+        },
+        "sha256": "aa4cfd856c25f46c93d0f5063d901056381d2745825d1bd87822fe22986af4f0",
+        "size": 20081228
+      },
       "discovered_at": "2026-08-30T05:39:07.005197+00:00",
       "discovery_research": "research/cross-family-object-sweep-2026-08-29.json",
       "etag": "d735b92c747e82d2c99be17135247bd3-2",
@@ -466,6 +481,21 @@
       "version": "2.4.7"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.6.6-b52dcff5ccfa/daredevil-2.6.6.signed",
+        "component_count": 0,
+        "format": "swupdate-cpio",
+        "manifest": "firmware/daredevil/2.6.6-b52dcff5ccfa.json",
+        "release_tag": "firmware-daredevil-2.6.6-b52dcff5ccfa",
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "daredevil",
+          "software_version": "daredevil+2.6.6+daredevil-release+171",
+          "version": "2.6.6"
+        },
+        "sha256": "b52dcff5ccfa51873ad524495f6b4fc2ede0a02529c3705111f0a4eb1fa51af8",
+        "size": 25312220
+      },
       "discovered_at": "2026-08-30T05:39:07.005197+00:00",
       "discovery_research": "research/cross-family-object-sweep-2026-08-29.json",
       "etag": "73ab3b86e455d35256714110ecba838e-2",
@@ -3179,6 +3209,22 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.53.03-95a85ad569e4/ruby-23.53.03.signed",
+        "component_count": 0,
+        "format": "swupdate-cpio",
+        "manifest": "firmware/ruby/23.53.03-95a85ad569e4.json",
+        "release_tag": "firmware-ruby-23.53.03-95a85ad569e4",
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.23.0_release+Firmware-Production+187",
+          "software_version": "23.53.03+2024-02-14-414b11078bb+Firmware-Production+187",
+          "version": "23.53.03"
+        },
+        "sha256": "95a85ad569e4ba0a3ca9f520aa664d072a5bd8710ee8c0de83ff81a336131c36",
+        "size": 181483744
+      },
       "discovered_at": "2026-08-30T05:39:07.005197+00:00",
       "discovery_research": "research/cross-family-object-sweep-2026-08-29.json",
       "etag": "012a35d686a80595b079c217c036e4e8-11",
@@ -3293,6 +3339,22 @@
       "version": "24.29.03"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-24.29.06-a4a3a9ca52e4/ruby-24.29.06.signed",
+        "component_count": 0,
+        "format": "swupdate-cpio",
+        "manifest": "firmware/ruby/24.29.06-a4a3a9ca52e4.json",
+        "release_tag": "firmware-ruby-24.29.06-a4a3a9ca52e4",
+        "reported_identity": {
+          "evidence": "sw-description",
+          "model": "ruby",
+          "os_version": "linux+flint-1.30.0_release+Firmware-Production+253",
+          "software_version": "24.29.6+2025-02-24-59acd3e7a05+Firmware-Production+253",
+          "version": "24.29.6"
+        },
+        "sha256": "a4a3a9ca52e4e41013d3f38acda58a07ad97be8b2ce41b56f193d5dc73d4c625",
+        "size": 184418016
+      },
       "discovered_at": "2026-08-30T05:21:56.290048+00:00",
       "etag": "b18d35f442ca989ec3875af692e5163c-11",
       "family": "ruby",
@@ -7934,6 +7996,27 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-wichita-1.2.10-66504054d799/wichita1210.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/wichita/1.2.10-66504054d799.json",
+        "release_tag": "firmware-wichita-1.2.10-66504054d799",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "wichita",
+          "os_version": "linux+2.1.7+wichita-rt119+17",
+          "product_version": "1.2.10-rt119+wichita-rt119+17",
+          "software_version": "wichita+1.2.10-rt119+wichita-rt119+17"
+        },
+        "sha256": "66504054d799ddf18a49e0e49763e7d58bb4016edde95d167805388f6916397b",
+        "size": 153753255
+      },
       "discovered_at": "2026-08-30T05:39:07.005197+00:00",
       "discovery_research": "research/cross-family-object-sweep-2026-08-29.json",
       "etag": "90f6b761f3562003eca0087e1e41da78-9",
@@ -7947,6 +8030,27 @@
       "version": "1.2.10"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-wichita-1.2.4-6e2470857b7f/wichita124.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/wichita/1.2.4-6e2470857b7f.json",
+        "release_tag": "firmware-wichita-1.2.4-6e2470857b7f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "wichita",
+          "os_version": "linux+2.1.6+wichita-rt119+7",
+          "product_version": "1.2.4-rt119+wichita-rt119+7",
+          "software_version": "wichita+1.2.4-rt119+wichita-rt119+7"
+        },
+        "sha256": "6e2470857b7f510241b157e3faa532ccc2635b1a917470a4f0cf87cf3bcc56b8",
+        "size": 153732768
+      },
       "discovered_at": "2026-08-30T05:39:07.005197+00:00",
       "discovery_research": "research/cross-family-object-sweep-2026-08-29.json",
       "etag": "7cc5c4f97e7ed709d99690622401f4d0-9",
@@ -7960,6 +8064,27 @@
       "version": "1.2.4"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-wichita-1.2.6-0852f1a80d31/wichitav126.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/wichita/1.2.6-0852f1a80d31.json",
+        "release_tag": "firmware-wichita-1.2.6-0852f1a80d31",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "wichita",
+          "os_version": "linux+2.1.10+wichita-rt119+12",
+          "product_version": "1.2.6-rt119+wichita-rt119+12",
+          "software_version": "wichita+1.2.6-rt119+wichita-rt119+12"
+        },
+        "sha256": "0852f1a80d31053205c17cc1bef1c083eb1c1f93e469d1ab8dd6d0300131cf7e",
+        "size": 153708198
+      },
       "discovered_at": "2026-08-30T05:39:07.005197+00:00",
       "discovery_research": "research/cross-family-object-sweep-2026-08-29.json",
       "etag": "3622f80d81babbed2366d3961746f39f-9",
