@@ -371,6 +371,42 @@
     "version_delta": {
       "prime_1_7_2_605": "Prime 1.7.2 resources contain prime_roomba_605_card_title = Roomba Plus 600 Series Combo robot.",
       "prime_3_1_0_605": "No 605 model-subtitle key or 605 text was found in en_US.odt in Prime 3.1.0; do not treat 605 as current without independent evidence."
+    },
+    "firmware_request": {
+      "source_class": "com.irobot.irobotdata.robot.internal.firmware.FirmwareRequest",
+      "path": "/v2/firmware",
+      "production_host": "content-prod.iot.irobotapi.com",
+      "domain": "Domain.ContentStack / ContentStackHost",
+      "required_query_parameters": [
+        "sku",
+        "softwareVer"
+      ],
+      "optional_query_parameters": [
+        "track",
+        "dockFwVer",
+        "dockFwVerSec",
+        "dockHwRev"
+      ],
+      "response_shape": {
+        "firmware": "downloadable robot firmware item array",
+        "dock": "dock update recommendation metadata only (version, provisioningPriority, otaPriority, track, expectedInstallationTime); no download URL in the 3.1.0 DTO"
+      },
+      "authentication": "ContentStackHost implements UnauthenticatedAPIHost. FirmwareRequest uses the default empty injectionSites list. Although FirmwareRepository receives AuthHTTPClient, BaseHttpWrapper resolves this request to ContentStackHost and IRobotHttpManager only SigV4-signs AuthenticatedAPIHost requests; therefore the production firmware fetch is not account-signed.",
+      "evidence_files": [
+        "FirmwareRequest.java",
+        "ContentStackHost.java",
+        "EnvironmentResolvable.java",
+        "BaseHttpWrapper.java",
+        "IRobotHttpManager.java",
+        "DockFirmwareDto.java"
+      ]
+    },
+    "live_api_validation": {
+      "N186020": "Plus 507: content API returned family 505 version 8.6.2 during 2026-08-29 validation.",
+      "X186020": "Max 707: content API returned family 705 version 9.3.6 when softwareVer=7.3.1; 0.0.0 returned no offer.",
+      "G185220": "Plus 405 white retail variant: family 405 version 9.3.0.",
+      "W155220": "Max 705 white retail variant: family 705 version 8.6.2.",
+      "new_2026_revision_note": "G285020/N285020/R285020/R285220/W255020/X285020 returned no robot firmware in the tested current-version candidates. This is an observed empty eligibility response, not evidence that the SKUs are unsupported."
     }
   }
 }

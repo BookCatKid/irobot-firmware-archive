@@ -34,18 +34,64 @@ def _exists(url: str, timeout: int = 20) -> tuple[bool, dict[str, str]]:
         return False, {k.lower(): v for k, v in exc.headers.items()}
 
 
-def api_probe(sku: str, software_ver: str, track: str = "prod") -> list[dict[str, Any]]:
-    query = urllib.parse.urlencode({"sku": sku, "softwareVer": software_ver, "track": track})
-    data = _request_json(f"{CONTENT_API}?{query}")
+def api_probe_response(
+    sku: str,
+    software_ver: str,
+    track: str | None = "prod",
+    *,
+    dock_fw_ver: str | None = None,
+    dock_fw_ver_sec: str | None = None,
+    dock_hw_rev: str | None = None,
+) -> dict[str, Any]:
+    """Return the raw v2 firmware response using the query shape from Roomba Home 3.1.0."""
+    params: dict[str, str] = {"sku": sku, "softwareVer": software_ver}
+    for key, value in (
+        ("track", track),
+        ("dockFwVer", dock_fw_ver),
+        ("dockFwVerSec", dock_fw_ver_sec),
+        ("dockHwRev", dock_hw_rev),
+    ):
+        if value is not None:
+            params[key] = value
+    return _request_json(f"{CONTENT_API}?{urllib.parse.urlencode(params)}")
+
+
+def api_probe(
+    sku: str,
+    software_ver: str,
+    track: str | None = "prod",
+    *,
+    dock_fw_ver: str | None = None,
+    dock_fw_ver_sec: str | None = None,
+    dock_hw_rev: str | None = None,
+) -> list[dict[str, Any]]:
+    data = api_probe_response(
+        sku,
+        software_ver,
+        track,
+        dock_fw_ver=dock_fw_ver,
+        dock_fw_ver_sec=dock_fw_ver_sec,
+        dock_hw_rev=dock_hw_rev,
+    )
     now = datetime.now(timezone.utc).isoformat()
     result = []
+    dock = data.get("dock")
+    request_dock_state = {
+        key: value
+        for key, value in {
+            "dockFwVer": dock_fw_ver,
+            "dockFwVerSec": dock_fw_ver_sec,
+            "dockHwRev": dock_hw_rev,
+        }.items()
+        if value is not None
+    }
     for item in data.get("firmware", []):
         url = item.get("downloadUrl") or item.get("metapackageUrl")
         if not url:
             continue
         deployment = item.get("deploymentMpkg") or ""
         family = deployment.split("/", 1)[0] if "/" in deployment else _family_from_url(url)
-        result.append({
+        record = {
             "family": family or "unknown",
             "version": str(item.get("version") or "unknown"),
             "url": url,
@@ -59,7 +105,14 @@ def api_probe(sku: str, software_ver: str, track: str = "prod") -> list[dict[str
             "fused": item.get("fused"),
             "deployment_mpkg": item.get("deploymentMpkg"),
             "discovered_at": now,
-        })
+        }
+        # Prime 3.1.0 also decodes a top-level `dock` recommendation. It is metadata
+        # (version/priorities/track/install time), not a downloadable firmware package.
+        if isinstance(dock, dict) and dock:
+            record["dock_firmware_recommendation"] = dock
+        if request_dock_state:
+            record["source_dock_state"] = request_dock_state
+        result.append(record)
     return result
 
 
@@ -139,7 +192,14 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
     for probe in cfg.get("api_probes", []):
         for software_ver in probe.get("software_versions", ["0.0.0"]):
             try:
-                records.extend(api_probe(probe["sku"], software_ver, probe.get("track", "prod")))
+                records.extend(api_probe(
+                    probe["sku"],
+                    software_ver,
+                    probe.get("track", "prod"),
+                    dock_fw_ver=probe.get("dockFwVer"),
+                    dock_fw_ver_sec=probe.get("dockFwVerSec"),
+                    dock_hw_rev=probe.get("dockHwRev"),
+                ))
             except Exception as exc:  # Discovery is best-effort; one family should not stop the rest.
                 errors.append(f"api {probe.get('sku')} {software_ver}: {exc}")
 

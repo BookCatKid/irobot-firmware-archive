@@ -3,10 +3,12 @@ import json
 import struct
 import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 from irobot_firmware.analyze import analyze
 from irobot_firmware.backfill import classic_versions
+from irobot_firmware.discover import api_probe, api_probe_response
 from irobot_firmware.catalog import empty_catalog, merge_records
 from irobot_firmware.release_notes import render_release_notes
 
@@ -55,6 +57,49 @@ class CatalogTests(unittest.TestCase):
         self.assertIn("Roomba j7", notes)
         self.assertIn("SYSTEM", notes)
         self.assertIn("https://example.invalid/sapphire-24.29.03.signed", notes)
+
+
+    def test_api_probe_matches_prime_310_dock_query_shape(self):
+        seen = {}
+
+        def fake_request(url):
+            seen["url"] = url
+            return {"firmware": [], "dock": {"version": "1.2.3", "track": "prod"}}
+
+        with patch("irobot_firmware.discover._request_json", side_effect=fake_request):
+            raw = api_probe_response(
+                "X186020", "7.3.1", None,
+                dock_fw_ver="4.5.6", dock_fw_ver_sec="7.8.9", dock_hw_rev="2",
+            )
+        self.assertEqual(raw["dock"]["version"], "1.2.3")
+        self.assertIn("sku=X186020", seen["url"])
+        self.assertIn("softwareVer=7.3.1", seen["url"])
+        self.assertIn("dockFwVer=4.5.6", seen["url"])
+        self.assertIn("dockFwVerSec=7.8.9", seen["url"])
+        self.assertIn("dockHwRev=2", seen["url"])
+        self.assertNotIn("track=", seen["url"])
+
+    def test_api_probe_preserves_dock_recommendation_metadata(self):
+        response = {
+            "firmware": [{
+                "version": "9.3.6",
+                "sku": "X186020",
+                "downloadUrl": "https://example.invalid/fw.signed",
+                "deploymentMpkg": "705/fw.signed",
+                "track": "prod",
+            }],
+            "dock": {
+                "version": "2.0.1",
+                "provisioningPriority": 1,
+                "otaPriority": 2,
+                "track": "prod",
+                "expectedInstallationTime": 5,
+            },
+        }
+        with patch("irobot_firmware.discover.api_probe_response", return_value=response):
+            records = api_probe("X186020", "7.3.1", "prod", dock_fw_ver="1.0.0")
+        self.assertEqual(records[0]["dock_firmware_recommendation"]["version"], "2.0.1")
+        self.assertEqual(records[0]["source_dock_state"], {"dockFwVer": "1.0.0"})
 
     def test_synthetic_otps_component(self):
         payload = b"hello firmware"
