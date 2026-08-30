@@ -16,6 +16,25 @@ def release_tag(record: dict[str, Any], sha256: str) -> str:
     return f"firmware-{slug(record['family'])}-{slug(record['version'])}-{sha256[:12]}"
 
 
+def metapackage_asset_name(source_filename: str, archive_data: dict[str, Any]) -> str:
+    """Return a Release-safe filename for a metapackage asset.
+
+    ContentStack commonly serves the large firmware package and its tiny signed
+    metapackage from different URLs with the *same* basename. GitHub Releases
+    require asset names to be unique, and ``gh release upload --clobber`` would
+    otherwise replace the preserved firmware bytes with the metapackage. Keep
+    the source filename in metadata, but namespace only the Release asset when
+    it would collide with the firmware asset name.
+    """
+    firmware_asset_url = str(archive_data.get("asset_url") or "")
+    firmware_asset_name = urllib.parse.unquote(
+        Path(urllib.parse.urlsplit(firmware_asset_url).path).name
+    )
+    if firmware_asset_name and firmware_asset_name == source_filename:
+        return f"metapackage-{source_filename}"
+    return source_filename
+
+
 def archive_blob(
     record: dict[str, Any],
     blob: Path,
@@ -160,11 +179,16 @@ def archive_metapackage(
     asset_url = None
     manifest_asset_url = None
     if upload_release and tag:
+        upload_blob = blob
+        release_asset_name = metapackage_asset_name(blob.name, archive_data)
+        if release_asset_name != blob.name:
+            upload_blob = work / release_asset_name
+            upload_blob.write_bytes(blob.read_bytes())
         subprocess.run(
-            ["gh", "release", "upload", str(tag), str(blob), str(manifest_path), "--repo", repo, "--clobber"],
+            ["gh", "release", "upload", str(tag), str(upload_blob), str(manifest_path), "--repo", repo, "--clobber"],
             check=True,
         )
-        asset_url = base + urllib.parse.quote(blob.name)
+        asset_url = base + urllib.parse.quote(release_asset_name)
         manifest_asset_url = base + urllib.parse.quote(manifest_path.name)
     return {
         "role": "signed-metapackage",

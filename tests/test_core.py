@@ -15,9 +15,27 @@ from irobot_firmware.discover import (
 )
 from irobot_firmware.catalog import empty_catalog, merge_records
 from irobot_firmware.release_notes import render_release_notes
+from irobot_firmware.archive import metapackage_asset_name
 
 
 class CatalogTests(unittest.TestCase):
+    def test_metapackage_release_asset_name_avoids_firmware_collision(self):
+        archive = {
+            "asset_url": (
+                "https://github.com/example/repo/releases/download/tag/"
+                "same-name-prod.meta.signed"
+            )
+        }
+        self.assertEqual(
+            metapackage_asset_name("same-name-prod.meta.signed", archive),
+            "metapackage-same-name-prod.meta.signed",
+        )
+        self.assertEqual(
+            metapackage_asset_name("different.meta.signed", archive),
+            "different.meta.signed",
+        )
+
+
     def test_repository_catalog_json_is_valid(self):
         # This specifically guards the machine-readable catalog against an accidental
         # unresolved Git merge being committed by either a human or an Action run.

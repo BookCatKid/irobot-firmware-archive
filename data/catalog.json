@@ -8,7 +8,7 @@
         "format": "unknown",
         "manifest": "firmware/105/9.3.0-870b20b4fba8.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.3.0-870b20b4fba8/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.3.0-870b20b4fba8/metapackage-C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137.signed"
           ],
@@ -56,7 +56,7 @@
         "format": "unknown",
         "manifest": "firmware/105v/9.3.0-3b2b7f5296d3.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.3.0-3b2b7f5296d3/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.3.0-3b2b7f5296d3/metapackage-V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137.signed"
           ],
@@ -104,7 +104,7 @@
         "format": "unknown",
         "manifest": "firmware/205/9.3.0-73d30de4c331.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.0-73d30de4c331/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.0-73d30de4c331/metapackage-CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137.signed"
           ],
@@ -152,7 +152,7 @@
         "format": "unknown",
         "manifest": "firmware/405/9.3.0-8f1d7fd48467.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.0-8f1d7fd48467/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.0-8f1d7fd48467/metapackage-C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137.signed"
           ],
@@ -204,7 +204,7 @@
         "format": "unknown",
         "manifest": "firmware/505/8.6.2-7ea399e73628.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-8.6.2-7ea399e73628/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-8.6.2-7ea399e73628/metapackage-C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126.signed"
           ],
@@ -257,7 +257,7 @@
         "format": "unknown",
         "manifest": "firmware/705/8.6.2-432492ac01ca.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-8.6.2-432492ac01ca/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-8.6.2-432492ac01ca/metapackage-V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126.signed"
           ],
@@ -311,7 +311,7 @@
         "format": "unknown",
         "manifest": "firmware/705/9.3.6-06074402987a.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.6-06074402987a/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.6-06074402987a/metapackage-C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149.signed"
           ],
@@ -574,7 +574,7 @@
         "format": "unknown",
         "manifest": "firmware/congo/1.1.18-9a40cbfdc6b2.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/congo-01.01.18-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/metapackage-congo-01.01.18-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/congo-1.1.18.signed"
           ],
@@ -1542,7 +1542,7 @@
         "format": "irobot-otps",
         "manifest": "firmware/lewis/22.52.08-81b1ddf542d4.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.08-81b1ddf542d4/lewis-22.52.08-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.08-81b1ddf542d4/metapackage-lewis-22.52.08-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/lewis-22.52.08.signed"
           ],
@@ -3966,7 +3966,7 @@
         "format": "unknown",
         "manifest": "firmware/ruby/0.7.12-eda059be52f6.json",
         "metapackage": {
-          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-0.7.12-eda059be52f6/ruby-00.07.12-prod.meta.signed",
+          "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-0.7.12-eda059be52f6/metapackage-ruby-00.07.12-prod.meta.signed",
           "embedded_urls": [
             "https://prod-ota-firmware.iot.irobotapi.com/ruby0712.signed"
           ],
