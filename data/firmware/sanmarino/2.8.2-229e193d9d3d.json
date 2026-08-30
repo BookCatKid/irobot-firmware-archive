@@ -79516,6 +79516,186 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 19,
+              "format": "tar",
+              "member_count": 26,
+              "members": [
+                {
+                  "path": ".",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "path": "./packages",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/sanmarino_mob.pkg.enc",
+                  "sha256": "00847cfcdcf779b0d9f5f16742975a7120c8344036224af878d3b94cb37558e3",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/sanmarino_sft.pkg.enc",
+                  "sha256": "2ef14e289469a69e25f3f00ed1655d916d68199968624bc83896b82bbfca8bee",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/EP2",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2sanmarino_pwr.pkg.enc",
+                  "sha256": "8e966c1a79764311160a6ccbb90cdcb1cf703dd375c5a206d17816e96a83f65e",
+                  "size": 24440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2sanmarino_mob_bmp_pwr.pkg.enc",
+                  "sha256": "e3ee80e53c9a3d863c36713dee34eed7e11b6123c852bccae64861f93bdc60b2",
+                  "size": 529208,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2sanmarino_mob_pwr.pkg.enc",
+                  "sha256": "091bca332bf71411561bc03ae99e17eb8fe5d108077ec4ae5ed7edbb84dea9c2",
+                  "size": 507800,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2sanmarino_mob_bmp_sft_pwr.pkg.enc",
+                  "sha256": "d9ab1d8eee4e20828416457851f23dabe854dc5314d0d61b488bdefc4eeb057d",
+                  "size": 593720,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/sanmarino_bmp.pkg.enc",
+                  "sha256": "2e7572d6934c16cc11d7c2f8a215ae6f59732e3c2e44e6ef65c83d1d2c4506eb",
+                  "size": 21432,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/EP4",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP4/EP4sanmarino_mob_pwr.pkg.enc",
+                  "sha256": "e2fca482bb8a62cd80c397aea0459bb30c5530197c6aa91f071fa2642d3fe517",
+                  "size": 507928,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP4/EP4sanmarino_pwr.pkg.enc",
+                  "sha256": "43c99594252bd590b4194499eac0c9e9743c28863c33fa361c2411793363e615",
+                  "size": 24568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP4/EP4sanmarino_mob_sft_pwr.pkg.enc",
+                  "sha256": "2a4e8ddcba06577e8384533e5e7c1af75a60e007c5e964fe9c8fc631ba60abf1",
+                  "size": 572440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/sanmarino_nonavwatchdogmob.pkg.enc",
+                  "sha256": "b07d6dbc37631c7aca8fdb17860946bc9a23baed5c8c68e38a7f866d2e3570e8",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/sanmarino_mob_sft.pkg.enc",
+                  "sha256": "753a52d122b145f4c4b5033418c15d12d69ea9297c74b0e5ef68679dd04f9c35",
+                  "size": 547928,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3sanmarino_pwr.pkg.enc",
+                  "sha256": "43c99594252bd590b4194499eac0c9e9743c28863c33fa361c2411793363e615",
+                  "size": 24568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3sanmarino_mob_sft_pwr.pkg.enc",
+                  "sha256": "f5d7c0c8572f4604ead5d678ccbd1801a8e5f6d44e1308dd1de117083db2b8e0",
+                  "size": 572440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3sanmarino_mob_pwr.pkg.enc",
+                  "sha256": "e2fca482bb8a62cd80c397aea0459bb30c5530197c6aa91f071fa2642d3fe517",
+                  "size": 507928,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/V3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/V3/sanmarino_pwr.pkg.enc",
+                  "sha256": "25ffbaa21d4aa5ddf8cdaa1745a9816380a8847ca98dd3bfc01fc4ebc8fafc92",
+                  "size": 24568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/V3/sanmarino_mob_sft_pwr.pkg.enc",
+                  "sha256": "5e866e16088314f615d4ed9c5cbaff63afb096513a90c910e9c75b369dfc69aa",
+                  "size": 572440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/V3/sanmarino_mob_pwr.pkg.enc",
+                  "sha256": "086153060f5b8c1730321f3cd01c32cbc183ec77d5fccfd4be789cc3eb2ed384",
+                  "size": 507928,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/no_full_batt",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/no_full_batt/sanmarino_mob_sft_nofullchargepwr.pkg.enc",
+                  "sha256": "5e866e16088314f615d4ed9c5cbaff63afb096513a90c910e9c75b369dfc69aa",
+                  "size": 572440,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-2.8.2-229e193d9d3d/sanmarino282.signed",
+              "bundle_sha256": "4a06fd732d3121d252cefb16a73cfbce2fe5ccf5a0796de373f99b126b400016",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_sanmarino_r0.sanmarino-3ba7d4653f7b31ddf7cb8c6c552ad5729e664ea3-3.tar.gz",
             "sha256": "4a06fd732d3121d252cefb16a73cfbce2fe5ccf5a0796de373f99b126b400016",
             "size": 6678074,

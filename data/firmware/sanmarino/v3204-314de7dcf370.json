@@ -84936,6 +84936,177 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 3,
+              "format": "tar",
+              "member_count": 6,
+              "members": [
+                {
+                  "path": "packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "04367912b061eaded50a4724d7c69ddb07f90eea9fe40a3f96622b329714985d",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP3.bin.enc",
+                        "sha256": "c959e4211aa4898a24947d9436c9ef64a22505a4ec69b917bf7360b149b2a212",
+                        "size": 25272,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "683f19563b01019a81ad1ddbbb384b0b64aa08594b2b02659f5d940fa9b1fe41",
+                        "size": 379,
+                        "text": "# Mobility system download manifest using product id 23\nIMAGE 1 sanmarino_mob.pkg.enc 3.20.4+ubuntu-HEAD-f3653d9be42+8\nIMAGE 2 safety_d.bin.enc 1.4.0+ubuntu-HEAD-9a9a5d0c891+29\nIMAGE 3 power_d_EP3.bin.enc 0.3.0+ubuntu-HEAD-f3653d9be42+8\n# result of 'cat sanmarino_mob.pkg.enc safety_d.bin.enc power_d_EP3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 6e06723afa31014758f9c955d7fec0e0\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./sanmarino_mob.pkg.enc",
+                        "sha256": "b113d2f11521f92da3177c2bed3f42a66d40d8c5abadc905f31d923f6f3e1b8f",
+                        "size": 483416,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP3/EP3sanmarino_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "c0af0115280059c43b384738cdffc44bb031b1509b45f93eae3abf4f857329a2",
+                  "size": 520448,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/EP4",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "04367912b061eaded50a4724d7c69ddb07f90eea9fe40a3f96622b329714985d",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "455738a10c65504b04fda230c5c6430180e6cc03083e3af68c8a4603d3393582",
+                        "size": 379,
+                        "text": "# Mobility system download manifest using product id 23\nIMAGE 1 sanmarino_mob.pkg.enc 3.20.4+ubuntu-HEAD-f3653d9be42+8\nIMAGE 2 safety_d.bin.enc 1.4.0+ubuntu-HEAD-9a9a5d0c891+29\nIMAGE 3 power_d_EP4.bin.enc 0.3.0+ubuntu-HEAD-f3653d9be42+8\n# result of 'cat sanmarino_mob.pkg.enc safety_d.bin.enc power_d_EP4.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 6e06723afa31014758f9c955d7fec0e0\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP4.bin.enc",
+                        "sha256": "c959e4211aa4898a24947d9436c9ef64a22505a4ec69b917bf7360b149b2a212",
+                        "size": 25272,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./sanmarino_mob.pkg.enc",
+                        "sha256": "b113d2f11521f92da3177c2bed3f42a66d40d8c5abadc905f31d923f6f3e1b8f",
+                        "size": 483416,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP4/EP4sanmarino_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "9539010944b9bc66acbb206c7633ecc05bd666bf9752a00c9a9728d8b3230115",
+                  "size": 520434,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/V2",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "04367912b061eaded50a4724d7c69ddb07f90eea9fe40a3f96622b329714985d",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "0744af07c189d5d4de130981f899fe298241ed7c90450646aa4d010a427a71c3",
+                        "size": 383,
+                        "text": "# Mobility system download manifest using product id 23\nIMAGE 1 sanmarino_mobility_d.enc 3.20.4+ubuntu-HEAD-f3653d9be42+8\nIMAGE 2 safety_d.bin.enc 1.4.0+ubuntu-HEAD-9a9a5d0c891+29\nIMAGE 3 power_d_V2.bin.enc 0.3.0+ubuntu-HEAD-f3653d9be42+8\n# result of 'cat sanmarino_mobility_d.enc safety_d.bin.enc power_d_V2.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 835adccfef167573d4b2b9790c38392b\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_V2.bin.enc",
+                        "sha256": "d6e3134ecbab36a49754e185376e3067d6daea5ec2dc9f09c90a226d84341a70",
+                        "size": 25272,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./sanmarino_mobility_d.enc",
+                        "sha256": "8375c0e54a67d9dcadfff017e1511c435ef10df0c8d7657a819027d1e8856075",
+                        "size": 483352,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/V2/V2sanmarino_mob_sft_pwr.tar.gz",
+                  "sha256": "5c3e2b227ee140f3399407f2026da4b29a8b9ba77445c4d8031ef5f74fff277e",
+                  "size": 520409,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3204-314de7dcf370/sanmarino3204.signed",
+              "bundle_sha256": "3733ed10d2959781745efd2c48162c76638142e2e16e4979ae6d8ae3836d1cc5",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_sanmarino_r0.sanmarino-f3653d9be42c32c5b53600d63d0ced1396ff0f61-8.tar.gz",
             "sha256": "3733ed10d2959781745efd2c48162c76638142e2e16e4979ae6d8ae3836d1cc5",
             "size": 1561571,

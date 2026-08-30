@@ -80577,6 +80577,306 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 24,
+              "format": "tar",
+              "member_count": 31,
+              "members": [
+                {
+                  "path": ".",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "path": "./dock",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "./dock/dock_hw1.txt",
+                  "sha256": "11f44a9b5b3ed53238e0a670eff7959d7c10fb3162f8273fdc54cbd8112ed9b1",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 2, 1, 3 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "./dock/dock_hw40.txt",
+                  "sha256": "569da1f277083c44d0d83e3a88045366592b02c556721b878a4148c40f6a7abd",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 2, 1, 5 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "./dock/dock_hw27.txt",
+                  "sha256": "569da1f277083c44d0d83e3a88045366592b02c556721b878a4148c40f6a7abd",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 2, 1, 5 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./dock/dock_hw40.pkg.enc",
+                  "sha256": "9dcd26e9937b220cdeefea842185bccb38c7aa052e1bbb4e8f436a88e0d072bb",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./dock/dock_hw1.pkg.enc",
+                  "sha256": "2834de1daf962e9757fbc7941936a6dc66a63a75f5d772bf9daf384aa125e2a2",
+                  "size": 114776,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./dock/dock_hw27.pkg.enc",
+                  "sha256": "9aa6892e8a8287f6206c28219af21ab8301bed61bd52f96be3b3693b91f63791",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_sft.pkg.enc",
+                  "sha256": "74846063d9baeb48ad37ee6b8faca252d7f54c086febd3caba24cd6220a7474b",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/gen3cliff",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/gen3cliff/lewis_gen3cliff.pkg.enc",
+                  "sha256": "3b331ccb6275d06ba8d145eef4c3f0f1dab04524f2707eed06e6b6810f68d4af",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_norearcliffmob_norearcliffsft.pkg.enc",
+                  "sha256": "f33da2b746faf09dd33c831a5302095c88c69bda4a2234aa6ea3e950fe7021cc",
+                  "size": 547928,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": "EP3lewis_mob_sft_pwr",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "EP3lewis_mob_sft_pwr/power_d_EP3.bin.enc",
+                        "sha256": "1578fae67b54187a91988d64c68d8414f495d0840e9766285024e115872e866f",
+                        "size": 27672,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "EP3lewis_mob_sft_pwr/safety_d.bin.enc",
+                        "sha256": "37f40265679a13cd3457752694497b79f8fbc57b440d3641c72e8e79f72b4a4e",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "EP3lewis_mob_sft_pwr/download-manifest.cfg",
+                        "sha256": "975b52de1792fff2981f2e1fb64d7dfe8c741bc25b56dbbc4943ffaf0eee1d3a",
+                        "size": 279,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 lewis_mob.pkg.enc 7\nIMAGE 6 safety_d.bin.enc 0\nIMAGE 7 power_d_EP3.bin.enc 0\n# result of 'cat lewis_mob.pkg.enc safety_d.bin.enc power_d_EP3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM cb73e56259e836ddfb1b1daa34180528\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "EP3lewis_mob_sft_pwr/lewis_mob.pkg.enc",
+                        "sha256": "a29a72ea96d7316804db9a37a0ac405e3607f569d7dd0807ab788fa607a10f03",
+                        "size": 483416,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "./packages/EP3/EP3lewis_mob_sft_pwr.tar.gz",
+                  "sha256": "dd7b9a4d436c47e35eb7b82b70e252cc1166b04b86224c4a8ca11391566952ea",
+                  "size": 523991,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3lewis_mob_sft_pwr.pkg.enc",
+                  "sha256": "0aa9525adeb3cb0ffaafbb281191ad7b959fa445c57988aadcf7d28e9a0b7eba",
+                  "size": 575608,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3lewis_pwr.pkg.enc",
+                  "sha256": "d174501a0dbae09151eb07d4d5d62fd7e30105458277e3aec8d3f36d87e3dcbd",
+                  "size": 27704,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3lewis_mob_pwr.pkg.enc",
+                  "sha256": "0f6956ed05d7490c52e9695c1502c0c70c8a8fe6ec8ca519ef3b6f4ca84aef8f",
+                  "size": 511064,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/V3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/V3/V3lewis_mob_sft_pwr.pkg.enc",
+                  "sha256": "1ab7fd933554fe8cd7fe54e3ed8b4d3745cfaa29ab554a4fba94cd88743b353b",
+                  "size": 575608,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/V3/V3lewis_nonavwatchdogmob.pkg.enc",
+                  "sha256": "5a3778ec989a1b63c072d88aa67f4b92ff6da9ae3635a5a008f282a0a382d311",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/V3/V3lewis_pwr.pkg.enc",
+                  "sha256": "d174501a0dbae09151eb07d4d5d62fd7e30105458277e3aec8d3f36d87e3dcbd",
+                  "size": 27704,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/V3/V3lewis_mob.pkg.enc",
+                  "sha256": "66f26c669f91decebd8a54341c5f61789d033e02bb6b52513e0bf345aa34d717",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_mob_sft.pkg.enc",
+                  "sha256": "f495a0c7e646a98b674dec8197c261d7af6beb4e71f8ba9b4c5352a6f48925d1",
+                  "size": 547928,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_mob.pkg.enc",
+                  "sha256": "a29a72ea96d7316804db9a37a0ac405e3607f569d7dd0807ab788fa607a10f03",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_nonavwatchdogmob.pkg.enc",
+                  "sha256": "9ab36051a76da4df674f88492eb6dc6a9f97bd062b00e005522c3e04e0248ea9",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/P6",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P6/P6lewis_mob_sft_pwr.pkg.enc",
+                  "sha256": "9d5e947ceeed8bf199a86b2ee2a7aba90b0bbc3125ba8bee187729201ba8f103",
+                  "size": 575544,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P6/P6lewis_pwr.pkg.enc",
+                  "sha256": "2bff6d32e002a051d1d51582faa8f1ed22497281b5a952cda92af10f69969303",
+                  "size": 27672,
+                  "type": "file"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": "P6lewis_mob_sft_pwr",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "P6lewis_mob_sft_pwr/safety_d.bin.enc",
+                        "sha256": "37f40265679a13cd3457752694497b79f8fbc57b440d3641c72e8e79f72b4a4e",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "P6lewis_mob_sft_pwr/power_d_P6.bin.enc",
+                        "sha256": "061376f4efe4d69f0c9c598bd7cf1f702da906e29efd00876d550063e3dcc158",
+                        "size": 27624,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "P6lewis_mob_sft_pwr/download-manifest.cfg",
+                        "sha256": "8c34ae262fa9440c32401e75e1864545777f562f227a318a2ae2227f6bfb6c1a",
+                        "size": 277,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 lewis_mob.pkg.enc 7\nIMAGE 6 safety_d.bin.enc 0\nIMAGE 7 power_d_P6.bin.enc 0\n# result of 'cat lewis_mob.pkg.enc safety_d.bin.enc power_d_P6.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 0e70f2723352b358d1dd65cb57c9f838\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "P6lewis_mob_sft_pwr/lewis_mob.pkg.enc",
+                        "sha256": "a29a72ea96d7316804db9a37a0ac405e3607f569d7dd0807ab788fa607a10f03",
+                        "size": 483416,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "./packages/P6/P6lewis_mob_sft_pwr.tar.gz",
+                  "sha256": "6197ea1d00b4f9d0c0ee019de73b4b7f16a5c3ae5b8305c0550718f339b081e4",
+                  "size": 524903,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P6/P6lewis_mob_pwr.pkg.enc",
+                  "sha256": "1fb73c327d07cb2a717f380ddaba0e2566218d359e3747b3f47a5192bb019614",
+                  "size": 511032,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.2.4-d6f9ab6e5118/lewis324.signed",
+              "bundle_sha256": "db859b2671c45c121be842541ac4616491942e189890f7bd4f1f1a51c5fcec7c",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_lewis_r0.lewis-7834b6087971752aa81a44c3881cecdfa142f675-7.tar.gz",
             "sha256": "db859b2671c45c121be842541ac4616491942e189890f7bd4f1f1a51c5fcec7c",
             "size": 7215941,

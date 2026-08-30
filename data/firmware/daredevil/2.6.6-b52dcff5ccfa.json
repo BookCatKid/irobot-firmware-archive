@@ -4763,6 +4763,467 @@
               "type": "dir"
             },
             {
+              "auxiliary_firmware": {
+                "file_count": 18,
+                "format": "tar",
+                "member_count": 25,
+                "members": [
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./daredevil_mobilityG4_d.enc",
+                          "sha256": "48ab6b797bda7cf153d463478334259c0c3da3c13386a9b9eccbb676025117af",
+                          "size": 483352,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "963522fae40116fb8f7689d20f3480fd74ada657279f38be7319b4854c3dc4c1",
+                          "size": 235,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 1 daredevil_mobilityG4_d.enc 2.6.6+ubuntu-HEAD-fa2a382a593+171\n# result of 'cat daredevil_mobilityG4_d.enc | md5sum | cut -d' ' -f1'\nMD5SUM 9c097da8bbefa2cc8e4c35abca7a1ea8\n",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/daredevil_mobG4.tar.gz",
+                    "sha256": "859dfae96fcce9fb855863a1999f3e056acd66876facbb8e7a67cd1fb1fed75d",
+                    "size": 484108,
+                    "type": "file"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "863a1cdd1b67d43395716871e8b1e43b3e8997cb225b7255f191b67667d77596",
+                          "size": 231,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 1 daredevil_mobility_d.enc 2.6.6+ubuntu-HEAD-fa2a382a593+171\n# result of 'cat daredevil_mobility_d.enc | md5sum | cut -d' ' -f1'\nMD5SUM 6470838743b52f27cb57d1ed65293347\n",
+                          "type": "file"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./daredevil_mobility_d.enc",
+                          "sha256": "ba3be1ae4efc333be056f4a9f2f260b5328f4570bbadd5e4cddeb8fe139ac1d2",
+                          "size": 483352,
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/daredevil_mob.tar.gz",
+                    "sha256": "1b8015de137f2d4b6a8fd3c222bd1134fb90b7dcf6139a89d4c51657871f87f3",
+                    "size": 484017,
+                    "type": "file"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./safety_d.bin.enc",
+                          "sha256": "6c771e8548abe8bf60da8a093bde23cd179d5e580cf49b9a73390fb48957c1ce",
+                          "size": 64536,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "30b530fea10573c44a68429098bf83815a92b23cc82205dfbbea75bbd8ee96a2",
+                          "size": 262,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 2 safety_d.bin.enc 1.1.0+Daredevil-Builds/Daredevil-Certified-Safety/daredevil-safety-71fa0661da6+6\n# result of 'cat safety_d.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 843ddc8b375a891cb29b4a867967a7fc\n",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/daredevil_sft.tar.gz",
+                    "sha256": "1e72acfc4b1bb86987c775bcc74010752031a7420798c1630e464c8f1f698c34",
+                    "size": 20879,
+                    "type": "file"
+                  },
+                  {
+                    "path": "packages/DDEP1",
+                    "size": 0,
+                    "type": "dir"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "35ab81629ce06e57e266238db1d5a532845ebb49eeb057bd08f61f2b0e8017fb",
+                          "size": 225,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 3 power_d_DDEP1.bin.enc 0.6.3+ubuntu-HEAD-fa2a382a593+171\n# result of 'cat power_d_DDEP1.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 600a6a93a83354b510abc70f337dd1f4\n",
+                          "type": "file"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./power_d_DDEP1.bin.enc",
+                          "sha256": "ec394c929c2bc2d0bbfc75e9851de59dea8f4b8083cabd3eeebbdeb23f72f851",
+                          "size": 28568,
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/DDEP1/DDEP1daredevil_pwr.tar.gz",
+                    "sha256": "7aa3c6e944d009cb044da04400ef7c44a87239f6da86fe3ccf22de4b1a8bf04a",
+                    "size": 20815,
+                    "type": "file"
+                  },
+                  {
+                    "path": "packages/DDG4G0PF",
+                    "size": 0,
+                    "type": "dir"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./power_d_DDGEN3PF.bin.enc",
+                          "sha256": "02c7ae11ddfa74fe5967fce97664c0832005ecbea30dad36cbc7537622b874f4",
+                          "size": 29784,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "453bb7f2acf0124c63aabb239c1442b4410b09a3acc363b36d30194055ef961f",
+                          "size": 231,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 3 power_d_DDGEN3PF.bin.enc 0.6.3+ubuntu-HEAD-fa2a382a593+171\n# result of 'cat power_d_DDGEN3PF.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 210f6c8f5b473cc05895696ceca7f555\n",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/DDG4G0PF/DDG4G0PFdaredevil_pwr.tar.gz",
+                    "sha256": "6f8958d93bd3e8a8ff53f690844e3d795c3dc5eb0ebd585600cd9a1ce8fb0250",
+                    "size": 21288,
+                    "type": "file"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 4,
+                      "format": "tar",
+                      "member_count": 5,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./safety_d_DDGEN3.bin.enc",
+                          "sha256": "46c79c4df31b56f73e4690886cde88d4ffc09208d6b46ab0a2c7920bb58917f0",
+                          "size": 63512,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./daredevil_mobilityG4_d.enc",
+                          "sha256": "48ab6b797bda7cf153d463478334259c0c3da3c13386a9b9eccbb676025117af",
+                          "size": 483352,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./power_d_DDGEN3PF.bin.enc",
+                          "sha256": "02c7ae11ddfa74fe5967fce97664c0832005ecbea30dad36cbc7537622b874f4",
+                          "size": 29784,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "5acaa47cb74f13a854787e5724e04b9d809022d03d8b102c03131fd295fc4580",
+                          "size": 416,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 1 daredevil_mobilityG4_d.enc 2.6.6+ubuntu-HEAD-fa2a382a593+171\nIMAGE 2 safety_d_DDGEN3.bin.enc 1.4.0+ubuntu-HEAD-9bb75ae2197+26\nIMAGE 3 power_d_DDGEN3PF.bin.enc 0.6.3+ubuntu-HEAD-fa2a382a593+171\n# result of 'cat daredevil_mobilityG4_d.enc safety_d_DDGEN3.bin.enc power_d_DDGEN3PF.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 7df5cef2a833457a806220c7dc900479\n",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/DDG4G0PF/DDG4G0PFdaredevil_mobG4_sft_pwr.tar.gz",
+                    "sha256": "53e0a6eb384205a2d2b0e4bab5b14161357e300faea4cb129e9d4a27d86d30ca",
+                    "size": 527928,
+                    "type": "file"
+                  },
+                  {
+                    "path": "packages/DDGEN1PF",
+                    "size": 0,
+                    "type": "dir"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "f6a6c6d139add6ec3fe4d9560a80607f13a974ac04b19ed01498de53ab72f1d5",
+                          "size": 231,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 3 power_d_DDGEN1PF.bin.enc 0.6.3+ubuntu-HEAD-fa2a382a593+171\n# result of 'cat power_d_DDGEN1PF.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM b8009f9fd6459f5447592198231eceab\n",
+                          "type": "file"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./power_d_DDGEN1PF.bin.enc",
+                          "sha256": "2c7a8ca27507de5d8f9ddfa0934df31355e0d549bd17e0160d9d97dfc4ea5666",
+                          "size": 28440,
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/DDGEN1PF/DDGEN1PFdaredevil_pwr.tar.gz",
+                    "sha256": "3fdf7d03a580581ce7e294889fd23eeb16b619c0a2c4de4f4e6af1f7b2b91dd1",
+                    "size": 20721,
+                    "type": "file"
+                  },
+                  {
+                    "path": "packages/DDGEN3P",
+                    "size": 0,
+                    "type": "dir"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./power_d_DDGEN3.bin.enc",
+                          "sha256": "5c22dc14523a3b1d1a666359703a83ca7669b47c7e9c2ec1f7e130c4975b8490",
+                          "size": 29912,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "3ddaf1c8304d5a9e98c026e55aa69cb3d53eec5d2469d98bac9c549e3c5a150d",
+                          "size": 227,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 3 power_d_DDGEN3.bin.enc 0.6.3+ubuntu-HEAD-fa2a382a593+171\n# result of 'cat power_d_DDGEN3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 0db5623cbac9796892dcf0bed22beb8c\n",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/DDGEN3P/DDGEN3Pdaredevil_pwr.tar.gz",
+                    "sha256": "67c904b3a8927ab62b03420dc6389922f2ddb3d1a099e8f087fc83d6aad7f58e",
+                    "size": 21353,
+                    "type": "file"
+                  },
+                  {
+                    "path": "packages/DDGEN3PF",
+                    "size": 0,
+                    "type": "dir"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./power_d_DDGEN3PF.bin.enc",
+                          "sha256": "02c7ae11ddfa74fe5967fce97664c0832005ecbea30dad36cbc7537622b874f4",
+                          "size": 29784,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "453bb7f2acf0124c63aabb239c1442b4410b09a3acc363b36d30194055ef961f",
+                          "size": 231,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 3 power_d_DDGEN3PF.bin.enc 0.6.3+ubuntu-HEAD-fa2a382a593+171\n# result of 'cat power_d_DDGEN3PF.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 210f6c8f5b473cc05895696ceca7f555\n",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/DDGEN3PF/DDGEN3PFdaredevil_pwr.tar.gz",
+                    "sha256": "369ab4cba2cdfae53bcc9c1d3cf87cbfc394affeaa5b29ef46c3dfeef86ba89f",
+                    "size": 21289,
+                    "type": "file"
+                  },
+                  {
+                    "path": "packages/DDGEN3S",
+                    "size": 0,
+                    "type": "dir"
+                  },
+                  {
+                    "kind": "tar",
+                    "nested": {
+                      "file_count": 2,
+                      "format": "tar",
+                      "member_count": 3,
+                      "members": [
+                        {
+                          "path": ".",
+                          "size": 0,
+                          "type": "dir"
+                        },
+                        {
+                          "kind": "encrypted-firmware",
+                          "path": "./safety_d_DDGEN3.bin.enc",
+                          "sha256": "46c79c4df31b56f73e4690886cde88d4ffc09208d6b46ab0a2c7920bb58917f0",
+                          "size": 63512,
+                          "type": "file"
+                        },
+                        {
+                          "kind": "descriptor",
+                          "path": "./download-manifest.cfg",
+                          "sha256": "dba2af0b3195bf509f2d4754ac673134b93a1ae84ba6c1c3605b4246e6fba5b1",
+                          "size": 228,
+                          "text": "# Mobility system download manifest using product id 32\nIMAGE 2 safety_d_DDGEN3.bin.enc 1.4.0+ubuntu-HEAD-9bb75ae2197+26\n# result of 'cat safety_d_DDGEN3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 88ed5715f0f8e148ee87cb5138450e98\n",
+                          "type": "file"
+                        }
+                      ]
+                    },
+                    "path": "packages/DDGEN3S/daredevil_sft.tar.gz",
+                    "sha256": "e51bd98d0e93a6d9f3f7b745b89a9eb4d6c73e60ae8613323657076ef7568c8f",
+                    "size": 22493,
+                    "type": "file"
+                  },
+                  {
+                    "path": "packages/dock",
+                    "size": 0,
+                    "type": "dir"
+                  },
+                  {
+                    "kind": "descriptor",
+                    "path": "packages/dock/dock_hw22_var9.txt",
+                    "sha256": "5ab96214224196c8288b8d7d7e52872c7822e679457f13124566de81cb68ddd9",
+                    "size": 57,
+                    "text": "# This file is auto-generated - do not edit\n[ 4, 8, 14 ]\n",
+                    "type": "file"
+                  },
+                  {
+                    "kind": "descriptor",
+                    "path": "packages/dock/dock_hw21_var9.txt",
+                    "sha256": "5ab96214224196c8288b8d7d7e52872c7822e679457f13124566de81cb68ddd9",
+                    "size": 57,
+                    "text": "# This file is auto-generated - do not edit\n[ 4, 8, 14 ]\n",
+                    "type": "file"
+                  },
+                  {
+                    "kind": "encrypted-firmware",
+                    "path": "packages/dock/dock_hw12_var9.pkg.enc",
+                    "sha256": "86b0ae6930babde21ce49ff498d66d721f45edbb99b57970bbeed9aa9cf595b3",
+                    "size": 118872,
+                    "type": "file"
+                  },
+                  {
+                    "kind": "encrypted-firmware",
+                    "path": "packages/dock/dock_hw22_var9.pkg.enc",
+                    "sha256": "199786d99f614f9908ebd2de1422e189527b081e5b7cd58736a3a0778f791dfe",
+                    "size": 118872,
+                    "type": "file"
+                  },
+                  {
+                    "kind": "encrypted-firmware",
+                    "path": "packages/dock/dock_hw13_var9.pkg.enc",
+                    "sha256": "2fba624b9ff1b875e7d8ac0fd335491b6d145a546620f9145983336b8ce24d09",
+                    "size": 118872,
+                    "type": "file"
+                  },
+                  {
+                    "kind": "encrypted-firmware",
+                    "path": "packages/dock/dock_hw21_var9.pkg.enc",
+                    "sha256": "eb6eba5bc640d6b7b73ab37af29999bc4d2df6b935ef16772f87bdf24a4899cc",
+                    "size": 118872,
+                    "type": "file"
+                  },
+                  {
+                    "kind": "descriptor",
+                    "path": "packages/dock/dock_hw13_var9.txt",
+                    "sha256": "5ab96214224196c8288b8d7d7e52872c7822e679457f13124566de81cb68ddd9",
+                    "size": 57,
+                    "text": "# This file is auto-generated - do not edit\n[ 4, 8, 14 ]\n",
+                    "type": "file"
+                  },
+                  {
+                    "kind": "descriptor",
+                    "path": "packages/dock/dock_hw12_var9.txt",
+                    "sha256": "5ab96214224196c8288b8d7d7e52872c7822e679457f13124566de81cb68ddd9",
+                    "size": 57,
+                    "text": "# This file is auto-generated - do not edit\n[ 4, 8, 14 ]\n",
+                    "type": "file"
+                  }
+                ]
+              },
+              "auxiliary_firmware_provenance": {
+                "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-daredevil-2.6.6-b52dcff5ccfa/daredevil-2.6.6.signed",
+                "bundle_sha256": "2aeabc35b1c1d648688dd558c7210fd5f2191bbc6dad11beff05f35f34054c31",
+                "method": "reanalyzed-archived-parent-release"
+              },
               "path": "opt/irobot/firmware/auxboard_firmware_daredevil_r0.daredevil-daredevil-v2.6.6-171.tar.gz",
               "sha256": "2aeabc35b1c1d648688dd558c7210fd5f2191bbc6dad11beff05f35f34054c31",
               "size": 2121976,

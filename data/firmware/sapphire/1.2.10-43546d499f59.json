@@ -31541,6 +31541,183 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 6,
+              "format": "tar",
+              "member_count": 13,
+              "members": [
+                {
+                  "path": "packages/dock",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "path": "packages/dock/dock_hw0.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw0_var6.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw27.txt",
+                  "size": 0,
+                  "target": "dock_hw27_var3.txt",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw27_var3.txt",
+                  "sha256": "ae12b7c8f3076f993b598d05dcd1a081149ba6cdd270cf42802ec31b02201f00",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 2, 8 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw0_var6.pkg.enc",
+                  "sha256": "5dea86c22a3481763fa64d1e67052e691efcb2c71cac0963fd58c38a43a8f80c",
+                  "size": 114776,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw27_var3.pkg.enc",
+                  "sha256": "d1925f584d6204d0c2d1d2213e0c99af17f6f8927ba8f2bb792861b2f7052e90",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw0.txt",
+                  "size": 0,
+                  "target": "dock_hw0_var6.txt",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw0_var6.txt",
+                  "sha256": "b2f46211eca81404632acefb844d6b0d9dfc30df3bdab1ad34d03ee3f658e4ab",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 2, 5 ]\n",
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw27.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw27_var3.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/EP1",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./sapphire_mobility_EP1_d.enc",
+                        "sha256": "04bc146d6ae7f6cbc59db2ffc401bc7a51b4bea5f658c202565b5168575f7334",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "7bd95d84ade5a3f06d845781d61208250eec3c92eed0dbc271fcef0c60eefdcc",
+                        "size": 399,
+                        "text": "# Mobility system download manifest using product id 34\nIMAGE 1 sapphire_mobility_EP1_d.enc 1.2.10+ubuntu-HEAD-dee078e15ac+0\nIMAGE 2 safety_d_EP1.bin.enc 1.3.1+ubuntu-HEAD-5dc7afa7447+21\nIMAGE 3 power_d_EP1.bin.enc 0.2.6+ubuntu-HEAD-dee078e15ac+0\n# result of 'cat sapphire_mobility_EP1_d.enc safety_d_EP1.bin.enc power_d_EP1.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM bd0c2fe5a1c07cec2c2e4bb00cfaba7c\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP1.bin.enc",
+                        "sha256": "e58215b751200886280e491629c05fe8f18cac6d94e07ce843ca0c32d2fb82b0",
+                        "size": 28440,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_EP1.bin.enc",
+                        "sha256": "957601ba581cbdbe80025131269b24e998d4f6518f4bd1fa085451276fe662a2",
+                        "size": 64536,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP1/EP1sapphire_mob_sft_pwr.tar.gz",
+                  "sha256": "180a4dc4b2f1fea48724714d467724346ff364fa21edd0efc53e3bfe9c1d3a5d",
+                  "size": 522901,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/PP_EP2",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./sapphire_mobility_PP_EP2_d.enc",
+                        "sha256": "30ab4e840e1e4626f067b3a1e883ecd38e47ae7a7b33fa8c37b40aa786479dfb",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "c4c970c7cc232812230a5ae106c558d35663bd596bc630340ae4a6e9fe529e5f",
+                        "size": 405,
+                        "text": "# Mobility system download manifest using product id 34\nIMAGE 1 sapphire_mobility_PP_EP2_d.enc 1.2.10+ubuntu-HEAD-dee078e15ac+0\nIMAGE 2 safety_d_EP1.bin.enc 1.3.1+ubuntu-HEAD-5dc7afa7447+21\nIMAGE 3 power_d_EP1.bin.enc 0.2.6+ubuntu-HEAD-dee078e15ac+0\n# result of 'cat sapphire_mobility_PP_EP2_d.enc safety_d_EP1.bin.enc power_d_EP1.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM b5e635d1f6bcf8c7ce220f4d02bb4bd8\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP1.bin.enc",
+                        "sha256": "e58215b751200886280e491629c05fe8f18cac6d94e07ce843ca0c32d2fb82b0",
+                        "size": 28440,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_EP1.bin.enc",
+                        "sha256": "957601ba581cbdbe80025131269b24e998d4f6518f4bd1fa085451276fe662a2",
+                        "size": 64536,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/PP_EP2/PP_EP2sapphire_mob_sft_pwr.tar.gz",
+                  "sha256": "80b69f7789811d0c33584487eefe54ed42574076d9a31725b34b05ffdac99bbd",
+                  "size": 522930,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-1.2.10-43546d499f59/sapphire1210.signed",
+              "bundle_sha256": "fabe9390bdaeaeb2509f3ef77f07259599df9d93a45aa607343ba627b3d3b174",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_sapphire_r10.3.tar.gz",
             "sha256": "fabe9390bdaeaeb2509f3ef77f07259599df9d93a45aa607343ba627b3d3b174",
             "size": 1391083,

@@ -86225,6 +86225,425 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 21,
+              "format": "tar",
+              "member_count": 43,
+              "members": [
+                {
+                  "path": "packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "6521182f59c6eabc0088c9f1b3dcdc47b463fc6f038ece350ce815a404cfb310",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./lewis_mob.pkg.enc",
+                        "sha256": "9ab59e3b07e7f0b6b78914944b3903f9f79c22c405fcbc01eb2c641e13a632e4",
+                        "size": 483416,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP3.bin.enc",
+                        "sha256": "9092e15921742dc79d2a36a8a25b053fa98beb7bec4672b389499ecb8a1e3695",
+                        "size": 28600,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "9fc3ad766f9fba22b1fb6ab8b15e70d0c9bba832d9e15b4088b65d4c09cebc35",
+                        "size": 377,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 lewis_mob.pkg.enc 22.7.2+ubuntu-HEAD-a17befa402d+1084\nIMAGE 2 safety_d.bin.enc 1.4.0+ubuntu-HEAD-9a9a5d0c891+36\nIMAGE 3 power_d_EP3.bin.enc 0.6.0+ubuntu-HEAD-a17befa402d+1084\n# result of 'cat lewis_mob.pkg.enc safety_d.bin.enc power_d_EP3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 2ea388917756bf05d7e47ba848f50b21\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP3/EP3lewis_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "4394b6ebef8c5af4693323f9dae0f5503b4b599c34b388dabee441a532bb2343",
+                  "size": 526392,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/P6",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "6521182f59c6eabc0088c9f1b3dcdc47b463fc6f038ece350ce815a404cfb310",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./lewis_mob.pkg.enc",
+                        "sha256": "9ab59e3b07e7f0b6b78914944b3903f9f79c22c405fcbc01eb2c641e13a632e4",
+                        "size": 483416,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "e49f0f7d7f586392ad14599422b6bc347b997ec5ad4a54effc82d543539f1c6e",
+                        "size": 375,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 lewis_mob.pkg.enc 22.7.2+ubuntu-HEAD-a17befa402d+1084\nIMAGE 2 safety_d.bin.enc 1.4.0+ubuntu-HEAD-9a9a5d0c891+36\nIMAGE 3 power_d_P6.bin.enc 0.6.0+ubuntu-HEAD-a17befa402d+1084\n# result of 'cat lewis_mob.pkg.enc safety_d.bin.enc power_d_P6.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 9f3b87ea245ebdd188f5eb689c764030\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P6.bin.enc",
+                        "sha256": "c7a124ea51518a2e9c75b9d46e998e3affcc88ab8e0bcc734a8505eb02436d4c",
+                        "size": 28152,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P6/P6lewis_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "c2a7368acb66953fec17593d316caf39d29618799e490315d74b2d39f38bec06",
+                  "size": 526065,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/V3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "6521182f59c6eabc0088c9f1b3dcdc47b463fc6f038ece350ce815a404cfb310",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./V3lewis_mob.pkg.enc",
+                        "sha256": "e51e0f06c5bdcdeac116bbed759fd481441d54a56d31de5d4ffa32615d55d41f",
+                        "size": 483416,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP3.bin.enc",
+                        "sha256": "9092e15921742dc79d2a36a8a25b053fa98beb7bec4672b389499ecb8a1e3695",
+                        "size": 28600,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "5ce6f495759fad1e6f27687542d0af6c25b4dd08b1604933fdebb07f2036b899",
+                        "size": 381,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 V3lewis_mob.pkg.enc 22.7.2+ubuntu-HEAD-a17befa402d+1084\nIMAGE 2 safety_d.bin.enc 1.4.0+ubuntu-HEAD-9a9a5d0c891+36\nIMAGE 3 power_d_EP3.bin.enc 0.6.0+ubuntu-HEAD-a17befa402d+1084\n# result of 'cat V3lewis_mob.pkg.enc safety_d.bin.enc power_d_EP3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM a414ef3804fbf8850e081e5e1dcba4e9\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/V3/V3lewis_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "340eb3236f928e42117cd8e9db0b6e4714b6836afbaa84676733cbb47f89000e",
+                  "size": 526393,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "path": "packages/dock/dock_hw2.txt",
+                  "size": 0,
+                  "target": "dock_hw2_var5.txt",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw3_var4.pkg.enc",
+                  "sha256": "a27d1f3dd191820bdf8efb506417bc08e58acc51cc4258ab853e41ba0f54afec",
+                  "size": 114776,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw27_var3.txt",
+                  "sha256": "6a0918479d66f46ef4f0c456f0fab3c21b7a22f865b4a53e16f62bc28285cb9e",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 8 ]\n",
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw1.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw1_var4.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw6_var8.txt",
+                  "sha256": "0ea62299e1495defe13155b3f4c37fcc236f2fd3140abf6f87984826a8f4f5b9",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 2 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw4_var5.pkg.enc",
+                  "sha256": "6232b1f22e24fc7e0d1773c781e047788c47acfabf56c8bdb30b09bea9713655",
+                  "size": 114776,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw3.txt",
+                  "size": 0,
+                  "target": "dock_hw3_var4.txt",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw4.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw4_var5.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw1.txt",
+                  "size": 0,
+                  "target": "dock_hw1_var4.txt",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw27_var3.pkg.enc",
+                  "sha256": "1e6f0ce12b15406c830f8912c84955771676b87e4496a3251b952346625d2109",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw40.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw40_var3.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw27.txt",
+                  "size": 0,
+                  "target": "dock_hw27_var3.txt",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw40_var3.pkg.enc",
+                  "sha256": "c21d818d927dbfa69b038deab18652e5b2918fc0c23e13b15938c43c61650ae8",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw6.txt",
+                  "size": 0,
+                  "target": "dock_hw6_var8.txt",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw3_var4.txt",
+                  "sha256": "4f2cc9f2709a60f0fbee0668ee5bf8169c40ecd605d63bdccb8b6087f7dc5cf3",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 3 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw0_var9.txt",
+                  "sha256": "92610d2e8d91771ff9f30559ccc75251b3a60dc782f6a4f029c17a755cfd9936",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 0 ]\n",
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw3.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw3_var4.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw4.txt",
+                  "size": 0,
+                  "target": "dock_hw4_var5.txt",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw27.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw27_var3.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw1_var4.txt",
+                  "sha256": "4f2cc9f2709a60f0fbee0668ee5bf8169c40ecd605d63bdccb8b6087f7dc5cf3",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 3 ]\n",
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw2.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw2_var5.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw5.txt",
+                  "size": 0,
+                  "target": "dock_hw5_var8.txt",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw5.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw5_var8.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw2_var5.txt",
+                  "sha256": "2f3f2ffefdd986880909cf5027eb39ec07dc7f2f84cd12fc1d4a9ccc9b7ae938",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 1 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw0_var9.pkg.enc",
+                  "sha256": "1a0adeea5b4cb05a13ee8095a2631d64a07c981077f1b5b1861f9272cfe75449",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw2_var5.pkg.enc",
+                  "sha256": "da72f56e13d3ea76b895928863528a17f5a0ca682beda3b8a50dc7b1560bf1d2",
+                  "size": 114776,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw6.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw6_var8.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw6_var8.pkg.enc",
+                  "sha256": "d7d98a40c1b3de943f2f7b6709864f2e9a06a4f93a37be1a4d4f22b0118bcb5b",
+                  "size": 245848,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw40_var3.txt",
+                  "sha256": "6a0918479d66f46ef4f0c456f0fab3c21b7a22f865b4a53e16f62bc28285cb9e",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 8 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw4_var5.txt",
+                  "sha256": "2f3f2ffefdd986880909cf5027eb39ec07dc7f2f84cd12fc1d4a9ccc9b7ae938",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 1 ]\n",
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw0.txt",
+                  "size": 0,
+                  "target": "dock_hw0_var9.txt",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw5_var8.txt",
+                  "sha256": "0ea62299e1495defe13155b3f4c37fcc236f2fd3140abf6f87984826a8f4f5b9",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 6, 2 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw5_var8.pkg.enc",
+                  "sha256": "16070c42ddf2dce969f6103a5645e547228e376ce9d73268c02346077f0173ba",
+                  "size": 245848,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw40.txt",
+                  "size": 0,
+                  "target": "dock_hw40_var3.txt",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw0.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw0_var9.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw1_var4.pkg.enc",
+                  "sha256": "b03e4ad329a7e958ed834e05dae5138ed1c471fce826bd09e2b5f58e70709269",
+                  "size": 114776,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.7.2-069a746201d9/lewis220702.signed",
+              "bundle_sha256": "cf7b33c13ab716af3dab773db50ae5fe498cebf8555f72c8bbd4bf9c254568a9",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_lewis_r0.lewis-a17befa402d3d5be6a415396261b79fc0671205d-1084.tar.gz",
             "sha256": "cf7b33c13ab716af3dab773db50ae5fe498cebf8555f72c8bbd4bf9c254568a9",
             "size": 3110464,

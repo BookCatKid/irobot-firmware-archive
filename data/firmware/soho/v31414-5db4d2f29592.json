@@ -82299,6 +82299,233 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 7,
+              "format": "tar",
+              "member_count": 11,
+              "members": [
+                {
+                  "path": "packages/EP1",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 5,
+                    "format": "tar",
+                    "member_count": 6,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./bumper_d.bin.enc",
+                        "sha256": "1f2fc5256f82a0ff4ee2aad16c4b14f8fbf53ceca52da29ebf3db991bcafaae2",
+                        "size": 41656,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "1c3c789c8ca5fcbe5fef07068fa145ebcee921f49d47aa3448e1fdefd3d3f468",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./soho_mob.pkg.enc",
+                        "sha256": "c287d1517cba35d4b78f39c8670d9a519ec7008a4788ceb1fcaffe923500edc7",
+                        "size": 483416,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP1.bin.enc",
+                        "sha256": "c7ff9776c1fc25487169f66514f6deb4229ecc24d0755b22f1e0d49f89db6f1b",
+                        "size": 29112,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "656afd9c795ede00029bdaa7afce7b1d517034d92fb87ceda26c13f68fcc8f52",
+                        "size": 483,
+                        "text": "# Mobility system download manifest using product id 13\nIMAGE 1 soho_mob.pkg.enc 3.14.14+ubuntu-HEAD-a5436e9ae5e+20\nIMAGE 4 bumper_d.bin.enc 2.0.1+ubuntu-HEAD-a5436e9ae5e+20\nIMAGE 2 safety_d.bin.enc 1.2.0+Soho-Builds/Soho-Certified-Safety/soho-safety-ca6f27d09c6+27\nIMAGE 3 power_d_EP1.bin.enc 1.14.27+ubuntu-HEAD-a5436e9ae5e+20\n# result of 'cat soho_mob.pkg.enc bumper_d.bin.enc safety_d.bin.enc power_d_EP1.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM a65c9008fa63079854f090c5d17638af\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP1/EP1soho_mobpkg_bmp_sft_pwr.tar.gz",
+                  "sha256": "b98ea0957ff74c2207f6e4c2a50499efa8a1bc3260285b282c17a02440824485",
+                  "size": 554941,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 5,
+                    "format": "tar",
+                    "member_count": 6,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./bumper_d.bin.enc",
+                        "sha256": "1f2fc5256f82a0ff4ee2aad16c4b14f8fbf53ceca52da29ebf3db991bcafaae2",
+                        "size": 41656,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP3.bin.enc",
+                        "sha256": "6e14688738841289c29a69637ec566b268a8fa7c63fdb499c1d1876c292f3641",
+                        "size": 30648,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "1c3c789c8ca5fcbe5fef07068fa145ebcee921f49d47aa3448e1fdefd3d3f468",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./soho_mob.pkg.enc",
+                        "sha256": "c287d1517cba35d4b78f39c8670d9a519ec7008a4788ceb1fcaffe923500edc7",
+                        "size": 483416,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "5f859d6d0b9256044386b70062b491b9466d184d56d7600131849f0f79a83ef6",
+                        "size": 483,
+                        "text": "# Mobility system download manifest using product id 13\nIMAGE 1 soho_mob.pkg.enc 3.14.14+ubuntu-HEAD-a5436e9ae5e+20\nIMAGE 4 bumper_d.bin.enc 2.0.1+ubuntu-HEAD-a5436e9ae5e+20\nIMAGE 2 safety_d.bin.enc 1.2.0+Soho-Builds/Soho-Certified-Safety/soho-safety-ca6f27d09c6+27\nIMAGE 3 power_d_EP3.bin.enc 1.14.27+ubuntu-HEAD-a5436e9ae5e+20\n# result of 'cat soho_mob.pkg.enc bumper_d.bin.enc safety_d.bin.enc power_d_EP3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 82d230779ec2a906b9daa6fe5d38f184\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP3/EP3soho_mobpkg_bmp_sft_pwr.tar.gz",
+                  "sha256": "b88c81bf35a3e6118bcdd2367f3f580fe78334fe8770f68dc9445c701c8205b4",
+                  "size": 554184,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/V2",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 5,
+                    "format": "tar",
+                    "member_count": 6,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./bumper_d.bin.enc",
+                        "sha256": "1f2fc5256f82a0ff4ee2aad16c4b14f8fbf53ceca52da29ebf3db991bcafaae2",
+                        "size": 41656,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "1c3c789c8ca5fcbe5fef07068fa145ebcee921f49d47aa3448e1fdefd3d3f468",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./soho_mobility_d.enc",
+                        "sha256": "e30cff43e433abebfeefecbebdae94c7a9f0160e58b8d69569d827c49b86443f",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_V2.bin.enc",
+                        "sha256": "fcb3c1314c4cbbc4e2299fe7bc8958f65772008dcb61976e5335bac6f17e92a5",
+                        "size": 30648,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "c4eba1fd23a8e767b329fbcc51c4a1b742e696c3d66f022cb781e83fa6483b5c",
+                        "size": 487,
+                        "text": "# Mobility system download manifest using product id 13\nIMAGE 1 soho_mobility_d.enc 3.14.14+ubuntu-HEAD-a5436e9ae5e+20\nIMAGE 4 bumper_d.bin.enc 2.0.1+ubuntu-HEAD-a5436e9ae5e+20\nIMAGE 2 safety_d.bin.enc 1.2.0+Soho-Builds/Soho-Certified-Safety/soho-safety-ca6f27d09c6+27\nIMAGE 3 power_d_V2.bin.enc 1.14.27+ubuntu-HEAD-a5436e9ae5e+20\n# result of 'cat soho_mobility_d.enc bumper_d.bin.enc safety_d.bin.enc power_d_V2.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 06732dfe8b1668ee2c1e5a88e54ea858\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/V2/V2soho_mob_bmp_sft_pwr.tar.gz",
+                  "sha256": "09efec6a792aa138b7cbc0aa544a1c4bcd94dc085fcee2a39e58e55e80c587c6",
+                  "size": 556141,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw45.pkg.enc",
+                  "sha256": "857e11ec1f87d45241a8e0baef8c17145243fe4fb2aa64205a4dfc129f4ec356",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw0.txt",
+                  "sha256": "bba017537860854f41bdcc3de034449d456d8a26781f694fb0bb2afe55a7fc9c",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 0, 1 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw45.txt",
+                  "sha256": "4c1e693462f838eed7ee11dd29ccc50494f9b4a18e72690bab455630772e1ba3",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 0, 6 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw0.pkg.enc",
+                  "sha256": "620bf4ebdb34360f8972183026954207184fa1511c5dd753494c11c65d5617f4",
+                  "size": 114776,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31414-5db4d2f29592/soho31414.signed",
+              "bundle_sha256": "758e6ead794672337db9e7d3f3091c2aa5d4c6453c24d3634d000bc899231220",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_soho_r0.soho-a5436e9ae5e69a41a7bcc4ac07b99e5929f5bf3a-20.tar.gz",
             "sha256": "758e6ead794672337db9e7d3f3091c2aa5d4c6453c24d3634d000bc899231220",
             "size": 2010384,

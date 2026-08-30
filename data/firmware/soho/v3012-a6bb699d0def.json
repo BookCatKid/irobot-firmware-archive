@@ -80571,6 +80571,171 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 18,
+              "format": "tar",
+              "member_count": 23,
+              "members": [
+                {
+                  "path": ".",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "path": "./dock",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "./dock/dock_hw0.txt",
+                  "sha256": "4679fe1263369a2a421c124b42389283ec2901779cdfb597c73ed01a96050264",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 2, 1, 0 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./dock/dock_hw45.pkg.enc",
+                  "sha256": "55311145fc39408be82c425136e9f511a590b2931c8bf9b0275964b04f811422",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "./dock/dock_hw45.txt",
+                  "sha256": "eef9f0bec0638f1d3522b19e541df6d79a790fc94ef54c1674f1a1173da171cf",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 2, 1, 6 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./dock/dock_hw0.pkg.enc",
+                  "sha256": "80099bc8117985fb4aeae605154f1211989795af7447db01bcd0cf19be3cffc4",
+                  "size": 114776,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "path": "./packages/EP1",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP1/EP1soho_pwr.pkg.enc",
+                  "sha256": "0a06acb84ff509d61e073c726c0e05f9d8c132aa0eb6c9d89239e634588ccd0d",
+                  "size": 28088,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP1/EP1soho_mob_bmp_pwr.pkg.enc",
+                  "sha256": "7f6de5834077d72939109c79e3169afb694618f47d4a527e1ddb5cdd22a0b17e",
+                  "size": 564472,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP1/EP1soho_mob_pwr.pkg.enc",
+                  "sha256": "87bb501fe833cfc4ff1015bbcb96af263757337ab7b829404108c75d9c9f7054",
+                  "size": 511448,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP1/EP1soho_mob_bmp_sft_pwr.pkg.enc",
+                  "sha256": "543083c358aae12cc27440d6c6539f002ff8f4023a3dc9c7d557d011ce80550d",
+                  "size": 629016,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/soho_dock_irda_tester.pkg.enc",
+                  "sha256": "23d509e80c2b50c2b2f190d9808678e99386b160c0caa89aff2bdb3cd0357fba",
+                  "size": 18520,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/soho_mob_bmp.pkg.enc",
+                  "sha256": "15144c3d2c123cc9ceb4a2ae013d31f34f5b1b2f08360ea02072c8104e778773",
+                  "size": 536440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/soho_sft.pkg.enc",
+                  "sha256": "fdde3e0b2afa45128b7390c89160a1e51677820f2c91f46138185df171686a08",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/soho_mob_sft.pkg.enc",
+                  "sha256": "2c402b7b8743c9339b93c5cdc30c6f0a04f91a4096269b53a37ff6a3ef995e70",
+                  "size": 547928,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3soho_mob_bmp_sft_pwr.pkg.enc",
+                  "sha256": "376942424b020d9d76f7d3074ee8bf9ea59ece0b4b14c5c0c37ab16922ddc390",
+                  "size": 629368,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3soho_mob_pwr.pkg.enc",
+                  "sha256": "d5edfbfe13313668c06fa8568aca41c7d7eb067adde974aa1cfe098dde7145c7",
+                  "size": 511832,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3soho_mob_bmp_pwr.pkg.enc",
+                  "sha256": "663107b3bea7d85f1e1d160fbee80b74f0e52c7c301f6971e2a891275febf08b",
+                  "size": 564856,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3soho_pwr.pkg.enc",
+                  "sha256": "a7d01a0dbfbcbeceb9e375f63c57ca81bf84db1b8cf3f5ed9e09e5f09f3985a6",
+                  "size": 28472,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/soho_mob.pkg.enc",
+                  "sha256": "d18742f9391d3b1306758424aff5a8c0ea17111b1fb6ef137a075b1c02d8957a",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/soho_nonavwatchdogmob.pkg.enc",
+                  "sha256": "be22da386019be7d2e4ee9490472788e44215758229f6da492b9aeb6f624e6d9",
+                  "size": 483416,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3012-a6bb699d0def/soho3012.signed",
+              "bundle_sha256": "c3149f56d2771b22fe2be350d845cea03c49ef4a886edb32679384abd27aa78b",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_soho_r0.soho-57eff5e1a36d2751ccbb2684008e0a83e1646478-14.tar.gz",
             "sha256": "c3149f56d2771b22fe2be350d845cea03c49ef4a886edb32679384abd27aa78b",
             "size": 5599676,

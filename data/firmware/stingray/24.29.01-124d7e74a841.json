@@ -60639,6 +60639,642 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 62,
+              "format": "tar",
+              "member_count": 62,
+              "members": [
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 2,
+                    "format": "tar",
+                    "member_count": 3,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "be6730a3e9d7377d861c7dd4e73500d5cbc52998342b2c673dd21a7635a0a966",
+                        "size": 221,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 2 safety_d_EP1.bin.enc 1.5.3+ubuntu-HEAD-385cf521b43+6\n# result of 'cat safety_d_EP1.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 14caebf7e4ae21ada3ee032c36786135\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_EP1.bin.enc",
+                        "sha256": "beb219591d47591f9dca940a8d72f1d5e3e0fd40ac7e74a92edc37ea5eab73e9",
+                        "size": 63512,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP1/EP1stingray_sft.tar.gz",
+                  "sha256": "f13535777f725536b4d3d70a8096bab5227dcb91156759fa080551bdacf7f318",
+                  "size": 21961,
+                  "type": "file"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 2,
+                    "format": "tar",
+                    "member_count": 3,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "1dca0e5f83ba1b896c0695f38a6244b0c99f3e1cee561e2fcfc4bab086ffc1a0",
+                        "size": 241,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 3 power_d_P3.bin.enc 0.1.6+Brewst-Builds/Alpha-release-builder-9510a0d1e65+0\n# result of 'cat power_d_P3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 14f6f2177dc29220286a064764c159be\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P3.bin.enc",
+                        "sha256": "f6e4a9722cb63694648197646596e353aad4e26104569125075599e4020fe7bb",
+                        "size": 49624,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P3/P3stingray_pwr.tar.gz",
+                  "sha256": "c661f088435b8e3580b8cce3a70e8b1892295cdd8e5011a133ab36102b8984a6",
+                  "size": 35467,
+                  "type": "file"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 2,
+                    "format": "tar",
+                    "member_count": 3,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "950d6f201d77e8ec6f7cf7f857c065c42a14d5e2246f4ac13476d2c1387eefc7",
+                        "size": 243,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 2 safety_d_P3.bin.enc 1.5.3+Brewst-Builds/Alpha-release-builder-9510a0d1e65+0\n# result of 'cat safety_d_P3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 5073f8f2a37dffc8eb42aa37193ad16a\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_P3.bin.enc",
+                        "sha256": "2dfae7d0f6d9a557f1a3725a65fadb7a2f488a1f36cd9bd22ae510073763da0a",
+                        "size": 63512,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P3/P3stingray_sft.tar.gz",
+                  "sha256": "6cb1fd7990895b9745d7a16d6e69a6f8b349a3e787f8dd3a736dc168daa79b76",
+                  "size": 21592,
+                  "type": "file"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 2,
+                    "format": "tar",
+                    "member_count": 3,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "29f5267320dcc7d48b78192cf78309eef917a4597d00397bd5c3fd61af70c81d",
+                        "size": 243,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 2 safety_d_P4.bin.enc 1.5.3+Brewst-Builds/Alpha-release-builder-9510a0d1e65+0\n# result of 'cat safety_d_P4.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM daafb5e107c70dbe4fb75a353bf4d887\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_P4.bin.enc",
+                        "sha256": "e684e77687a5d7043da35b94878651bce6308d79f891ad0f4ac7b0200189b10f",
+                        "size": 63512,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P4/P4stingray_sft.tar.gz",
+                  "sha256": "77bdaf9c0462eafedacec8276889ed931944c7cd52c9d464d84780a8d19c1b88",
+                  "size": 21604,
+                  "type": "file"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 2,
+                    "format": "tar",
+                    "member_count": 3,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "dafb6c10deebfff96e1af5b62ddcc996091c660f866a9c6f95d37ea5c6a7a5b9",
+                        "size": 243,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 3 power_d_P4B.bin.enc 0.1.6+Brewst-Builds/Alpha-release-builder-9510a0d1e65+0\n# result of 'cat power_d_P4B.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 235e84ade0b8f6679ecef4f40a20061b\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P4B.bin.enc",
+                        "sha256": "321c9db3a1e9854dba130ccba384ab13d9b56790ea61dc9645d5480dbb34f02d",
+                        "size": 49624,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P4B/P4Bstingray_pwr.tar.gz",
+                  "sha256": "cceef2cbcad437eb28eab47a741a169859003b5b9c790446c0744201f4249dca",
+                  "size": 35473,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw0_var9.pkg.enc",
+                  "sha256": "6b8b1efbc496f96170c7e5d7a617b8778a83549e16b9012ce619ba8ec0281500",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw0_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw12_var10.pkg.enc",
+                  "sha256": "b02d5f144d2bd658b634431b972a9be2915c3775b4b43380f33bcea90e943166",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw12_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw12_var9.pkg.enc",
+                  "sha256": "696bf83ac0e6d43be6940a0315e1072f02133ac30116291d766ebd9a95cfdc5d",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw12_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw13_var10.pkg.enc",
+                  "sha256": "814a00e246b3a68fd8474c5663c01eb0db10d3a71dbf061fdbe9788ea245ff63",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw13_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw13_var9.pkg.enc",
+                  "sha256": "ce4b080abe42fbe4cd82bb00ccc6e57de50228efdf819803bbbe97f0d7e6cfc9",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw13_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw14_var10.pkg.enc",
+                  "sha256": "3420a2ebe73cb6c0c3b8109eb83a28de6232f1fad0eb037638c4c8447f475875",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw14_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw15_var10.pkg.enc",
+                  "sha256": "94681eda8a49533469161cb5935af49643c30c477fca09147e800c9a949c03c0",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw15_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw16_var10.pkg.enc",
+                  "sha256": "d2aadb52b025a93d5aa3ab934d8c936501d6af02a070453f8230c354b254f799",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw16_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw18_var9.pkg.enc",
+                  "sha256": "3b1c8e1462413f06eb3fd38685d91b6e7f87ba3631c2938ac3b19e4e73cacf97",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw18_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw1_var9.pkg.enc",
+                  "sha256": "066c3f0ff31ee5227f5a10dfab3e6cff7bbf3175f683f85a24121bd39f7f0888",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw1_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw21_var9.pkg.enc",
+                  "sha256": "585ebe4b1f860586636626f2fe6aaf7129b31b0a185c729441505280716caab1",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw21_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw22_var9.pkg.enc",
+                  "sha256": "d9d2b69661a35c0fdb79d104a9be55ce58d3e94825031c8f2662a5e5b6520559",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw22_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw2_var10.pkg.enc",
+                  "sha256": "abeef61941cecc6344b2bdac562449446119da038abe5383d58cf0f6e49d7f74",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw2_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw2_var12.pkg.enc",
+                  "sha256": "0cddb9e3060f77bececc52ace39ff046bd10c5ee4a4d8de3a2da8591dbd80bf7",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw2_var12.txt",
+                  "sha256": "9a220d5214e03f9c38536e0d2157fcdedb3b69e7d9c9b2ac3c771718eb673c57",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 28 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw3_var10.pkg.enc",
+                  "sha256": "f060b1b18f42a024c1c3cadbc82dc73d45d345e3e314919dd433e219bb1b19e0",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw3_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw3_var12.pkg.enc",
+                  "sha256": "469e1a7eab3dd2047f90b32ff901ab2c68d7474e6b6660adf9d7b78610765c65",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw3_var12.txt",
+                  "sha256": "9a220d5214e03f9c38536e0d2157fcdedb3b69e7d9c9b2ac3c771718eb673c57",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 28 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw4_var10.pkg.enc",
+                  "sha256": "4bc3324a57e2ffc0d23691d2b6b182963922824d56a419b537a20ea669fc5792",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw4_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw5_var10.pkg.enc",
+                  "sha256": "56e4b69b39dc9965cc7b1c678ed3d3aa2306b7bac535f9b6f34f4b8e2fdbc3cb",
+                  "size": 442456,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw5_var10.txt",
+                  "sha256": "8bc2b60603ee1bcfc8b076e17bc7739bc6f43678eca9148ed387a20d902708a6",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw7_var9.pkg.enc",
+                  "sha256": "3f89e760e7b76e63a8a982af443a8923c765d96b3d60de850ccf28e7bd0a14fa",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw7_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw8_var9.pkg.enc",
+                  "sha256": "813f9f1279cbfaff9300eac76751a2972837d6b80219c6209594b3238aec745a",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw8_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw9_var9.pkg.enc",
+                  "sha256": "80bb5cb3ad07dff428d51cba1e14c507f7d661440dfe74f626147ed95fbe88a8",
+                  "size": 118872,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw9_var9.txt",
+                  "sha256": "40bcc23d18c8af38475250b3c78f4ac90d3be2f30279e32adeed5ae8bab0eb41",
+                  "size": 57,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 15 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "packages/dock/esp32-hw12-var10.bin",
+                  "sha256": "592cfb0b8f3c6532d0d9755068f2bd58ba64055632d92b5e0801a623191b4691",
+                  "size": 502768,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/esp32-hw12-var10.txt",
+                  "sha256": "0582d2c0527970cb28993ab005840ba67ff3773eb16d06ff056469f4b7ee7945",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]",
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "packages/dock/esp32-hw13-var10.bin",
+                  "sha256": "592cfb0b8f3c6532d0d9755068f2bd58ba64055632d92b5e0801a623191b4691",
+                  "size": 502768,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/esp32-hw13-var10.txt",
+                  "sha256": "0582d2c0527970cb28993ab005840ba67ff3773eb16d06ff056469f4b7ee7945",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]",
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "packages/dock/esp32-hw14-var10.bin",
+                  "sha256": "592cfb0b8f3c6532d0d9755068f2bd58ba64055632d92b5e0801a623191b4691",
+                  "size": 502768,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/esp32-hw14-var10.txt",
+                  "sha256": "0582d2c0527970cb28993ab005840ba67ff3773eb16d06ff056469f4b7ee7945",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]",
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "packages/dock/esp32-hw2-var10.bin",
+                  "sha256": "592cfb0b8f3c6532d0d9755068f2bd58ba64055632d92b5e0801a623191b4691",
+                  "size": 502768,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/esp32-hw2-var10.txt",
+                  "sha256": "0582d2c0527970cb28993ab005840ba67ff3773eb16d06ff056469f4b7ee7945",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]",
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "packages/dock/esp32-hw3-var10.bin",
+                  "sha256": "592cfb0b8f3c6532d0d9755068f2bd58ba64055632d92b5e0801a623191b4691",
+                  "size": 502768,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/esp32-hw3-var10.txt",
+                  "sha256": "0582d2c0527970cb28993ab005840ba67ff3773eb16d06ff056469f4b7ee7945",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]",
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "packages/dock/esp32-hw4-var10.bin",
+                  "sha256": "592cfb0b8f3c6532d0d9755068f2bd58ba64055632d92b5e0801a623191b4691",
+                  "size": 502768,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/esp32-hw4-var10.txt",
+                  "sha256": "0582d2c0527970cb28993ab005840ba67ff3773eb16d06ff056469f4b7ee7945",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]",
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "packages/dock/esp32-hw5-var10.bin",
+                  "sha256": "592cfb0b8f3c6532d0d9755068f2bd58ba64055632d92b5e0801a623191b4691",
+                  "size": 502768,
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/esp32-hw5-var10.txt",
+                  "sha256": "0582d2c0527970cb28993ab005840ba67ff3773eb16d06ff056469f4b7ee7945",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 8, 30 ]",
+                  "type": "file"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 2,
+                    "format": "tar",
+                    "member_count": 3,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "897a476193dc5e5860feb4daf52786d9e768064c9acae54a0e986fed5b355d81",
+                        "size": 253,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 1 stingray_mobility_d.enc 24.29.1+Brewst-Builds/Alpha-release-builder-9510a0d1e65+0\n# result of 'cat stingray_mobility_d.enc | md5sum | cut -d' ' -f1'\nMD5SUM 6635194a6ed16416496fbbb228a4034d\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./stingray_mobility_d.enc",
+                        "sha256": "8ce6ea06f3a018bd458ab44a11dfe6088dee69866d37025ae2f698d5f8faf569",
+                        "size": 483352,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/stingray_mob.tar.gz",
+                  "sha256": "398d5a8a7c120a91d2414efc1105b34ea21a2ad64f273a58fb811243dab99a9a",
+                  "size": 484125,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-24.29.01-124d7e74a841/stingray-24.29.01.signed",
+              "bundle_sha256": "87457445ac9ebb270761b68aed76cc91ce0b6a121141c4e5b9065c1b96a36b65",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/cleantrack/firmware/auxboard_firmware_stingray.tar.gz",
             "sha256": "87457445ac9ebb270761b68aed76cc91ce0b6a121141c4e5b9065c1b96a36b65",
             "size": 8626839,

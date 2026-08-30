@@ -80613,6 +80613,280 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 10,
+              "format": "tar",
+              "member_count": 15,
+              "members": [
+                {
+                  "path": "packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP3.bin.enc",
+                        "sha256": "86a940ec25e315564a2deeae3b41095dd9da7cbf6555c2f5df675a124d97b6cf",
+                        "size": 28456,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "37f40265679a13cd3457752694497b79f8fbc57b440d3641c72e8e79f72b4a4e",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "e9bbd53c79e27cf6bb24224bf34baf65ea8b71205092dad4a5d28efd1733929b",
+                        "size": 405,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 lewis_mob.pkg.enc 3.6.6+build-HEAD-e574f708a66+8\nIMAGE 2 safety_d.bin.enc 0.0.0+Lewis-Builds/Lewis-Certified-Safety/lewis-safety-bbbe81f2c82+21\nIMAGE 3 power_d_EP3.bin.enc 0.5.2+build-HEAD-e574f708a66+8\n# result of 'cat lewis_mob.pkg.enc safety_d.bin.enc power_d_EP3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 87e2541d8b9c64093a495612de65985b\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./lewis_mob.pkg.enc",
+                        "sha256": "3815f49fb54fadcd1798d16f8cc12e8ab1e96ac61367a2154fc909198e667c59",
+                        "size": 483416,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP3/EP3lewis_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "36f06b30891718a61da263313704b6e7c81e00c00b51a3273331361ec079a1c3",
+                  "size": 524965,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/P6",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "37f40265679a13cd3457752694497b79f8fbc57b440d3641c72e8e79f72b4a4e",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P6.bin.enc",
+                        "sha256": "36e0938606d4679f0389d128a206ba2ab71ae27c981281549e914a68d130f7a4",
+                        "size": 28168,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "9a4a5e9b2bf8d9dc57da64a4c1e5f739cf6c5bddaad997e0a0358981db21d83b",
+                        "size": 403,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 lewis_mob.pkg.enc 3.6.6+build-HEAD-e574f708a66+8\nIMAGE 2 safety_d.bin.enc 0.0.0+Lewis-Builds/Lewis-Certified-Safety/lewis-safety-bbbe81f2c82+21\nIMAGE 3 power_d_P6.bin.enc 0.5.2+build-HEAD-e574f708a66+8\n# result of 'cat lewis_mob.pkg.enc safety_d.bin.enc power_d_P6.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 1a19396efcc525178df7e6cf00ac3960\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./lewis_mob.pkg.enc",
+                        "sha256": "3815f49fb54fadcd1798d16f8cc12e8ab1e96ac61367a2154fc909198e667c59",
+                        "size": 483416,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P6/P6lewis_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "2d8f0adcb55797d66577f62310dc6c239a6815491abc548d18b3c788c503fffe",
+                  "size": 525127,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/V3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP3.bin.enc",
+                        "sha256": "86a940ec25e315564a2deeae3b41095dd9da7cbf6555c2f5df675a124d97b6cf",
+                        "size": 28456,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "37f40265679a13cd3457752694497b79f8fbc57b440d3641c72e8e79f72b4a4e",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "c4550987ee72b8f7bcda6743e77f18cd46444bd42143f9182597e3bb0ca04113",
+                        "size": 409,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 V3lewis_mob.pkg.enc 3.6.6+build-HEAD-e574f708a66+8\nIMAGE 2 safety_d.bin.enc 0.0.0+Lewis-Builds/Lewis-Certified-Safety/lewis-safety-bbbe81f2c82+21\nIMAGE 3 power_d_EP3.bin.enc 0.5.2+build-HEAD-e574f708a66+8\n# result of 'cat V3lewis_mob.pkg.enc safety_d.bin.enc power_d_EP3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 3bd93c72e9a4993fae93e2c330daa9c6\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./V3lewis_mob.pkg.enc",
+                        "sha256": "0282a3dcae86747088b0e88b33f9516d7ba8116e42c938189bff305f0df5b7f2",
+                        "size": 483416,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/V3/V3lewis_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "1993f9f7eb007cee9fa638476970b6c7d63108c3135f8531871051c1c7d875d6",
+                  "size": 524959,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/V4",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_EP3.bin.enc",
+                        "sha256": "86a940ec25e315564a2deeae3b41095dd9da7cbf6555c2f5df675a124d97b6cf",
+                        "size": 28456,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d.bin.enc",
+                        "sha256": "b51ff09073d4638f17a5036a4573ff0a4e1ba055f31384e1ef82f47d32eb8e3e",
+                        "size": 64536,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "b767c1596263adccd8c5898dd6314d4dae2fe2dd6dbc487cdd573ebdc7cd6f61",
+                        "size": 409,
+                        "text": "# Mobility system download manifest using product id 24\nIMAGE 1 V4lewis_mob.pkg.enc 3.6.6+build-HEAD-e574f708a66+8\nIMAGE 2 safety_d.bin.enc 1.1.0+Lewis-Builds/Lewis-Certified-Safety/lewis-safety-70fb5eea4d6+26\nIMAGE 3 power_d_EP3.bin.enc 0.5.2+build-HEAD-e574f708a66+8\n# result of 'cat V4lewis_mob.pkg.enc safety_d.bin.enc power_d_EP3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 89eba9383933738bdc5a96b754418187\n",
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./V4lewis_mob.pkg.enc",
+                        "sha256": "ebc2c45eb3c7c1ec9a52a51a37576ba9bb6f0457feb24b527e1669dc709007a9",
+                        "size": 483416,
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/V4/V4lewis_mobpkg_sft_pwr.tar.gz",
+                  "sha256": "e1052cfc3537c8f68ffe6d4da91fb27ed78125af8a42ce3be5ad8cb0dd61eea5",
+                  "size": 525017,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw1.txt",
+                  "sha256": "c7137f96bb862bb5a01ce4d44eedc5a37658f0972f4e45336e3924848fc13a2a",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 2, 3, 3 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw40.txt",
+                  "sha256": "a4eb724260a394524eb44385dbcd5c21878c03fb7421252e38b800728dfdc33d",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 2, 3, 5 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw27.txt",
+                  "sha256": "a4eb724260a394524eb44385dbcd5c21878c03fb7421252e38b800728dfdc33d",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 2, 3, 5 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw40.pkg.enc",
+                  "sha256": "8ec79d9f3bbda4fc6394a62760eda828171557149d58ebb6e5b41bb1ae5e9aa1",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw1.pkg.enc",
+                  "sha256": "0cfa66f1f5bab5e07a2494bfd7026fd9c9d9d0c0f81c393f404ea2263e301793",
+                  "size": 114776,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw27.pkg.enc",
+                  "sha256": "370ee02f93dfba5c3bec23a0c46363fc2d2af74e97316c76deef09210ab14f32",
+                  "size": 229464,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v366-310a4aeda699/lewis366.signed",
+              "bundle_sha256": "38efd7e9c2c9951fd0fb585fe98f20c17465e1deaf4c11236e8626958f74cf0b",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_lewis_r0.lewis-e574f708a664605adb2da81da00597cd6c9ef229-8.tar.gz",
             "sha256": "38efd7e9c2c9951fd0fb585fe98f20c17465e1deaf4c11236e8626958f74cf0b",
             "size": 2674971,

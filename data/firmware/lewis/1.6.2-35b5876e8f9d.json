@@ -80336,6 +80336,674 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 88,
+              "format": "tar",
+              "member_count": 96,
+              "members": [
+                {
+                  "path": ".",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "file",
+                  "path": "./power_d_EP3.size",
+                  "sha256": "ecc6401148ebc09cd3b4a032f5ddd8f19190cc9174d5c669c0e98232212bfe3c",
+                  "size": 105,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./lewis_mobility_d.enc",
+                  "sha256": "3c4f4a970f7a39831308c9288f11033aec7ea47c33ae9359042c5cdb4407fcc3",
+                  "size": 483352,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nofault_safety_d.size",
+                  "sha256": "417dd9d5d164adfafcb65359a001ff4c3e7a921a317ebcddb1559477e6a48f3a",
+                  "size": 106,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./errorinject_safety_d.elf",
+                  "sha256": "cce57ce60ef645ae3b9072bf04701c4ed4ab8fa44af7712299614ecf24563f67",
+                  "size": 978592,
+                  "type": "file"
+                },
+                {
+                  "path": "./dock",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "file",
+                  "path": "./dock/tianjin_d_TJ2.elf",
+                  "sha256": "f88e6426860aba5d01a584949d3a3d557165a975f4eb9ba6185f5d0ea8e0e3a7",
+                  "size": 4088258,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./dock/tianjin_d_TJ2.size",
+                  "sha256": "b5279ec6a99c79a4374ba34e0ad899f21d46eca33817c317160beb3ebca84d9b",
+                  "size": 115,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./dock/tianjin_TJ2.pkg.enc",
+                  "sha256": "9b894b9552c391becbf14d657e8e5e1f3c493eaafd183a88a1a37debc4af7485",
+                  "size": 229464,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./dock/tianjin_d_TJ2.map",
+                  "sha256": "3fa1a59cea2dc48cd353403ea3e119e0e4b1a7f49f6cdd92f1f71c61b87b35aa",
+                  "size": 3566564,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./dock/tianjin_d_TJ2.bin",
+                  "sha256": "3471c42c352205d1040f1bd7c335a5051cea16d0f04347908e89e3ac05b5e887",
+                  "size": 262144,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./errorinject_safety_d.size",
+                  "sha256": "9e29844b1044d74b82a33d2f1127acba5c2f565ec1d56811e05710f6801d5068",
+                  "size": 106,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_sft.pkg.enc",
+                  "sha256": "de15fe375979c2bae8c429ada84a6c004fc1af5ed92959a54805a1c056306f9d",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/test_build_EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/test_build_EP3/test_build_EP3lewis_nonavwatchdogmob_dogsft_vactestpwr.pkg.enc",
+                  "sha256": "30f36346c1181816315f6b316fb31dace120c69389d3284857b949b3f0714f3c",
+                  "size": 575864,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/test_build_EP3/test_build_EP3lewis_nonavwatchdogmob_dogsft_nobackemfchkpwr.pkg.enc",
+                  "sha256": "7a2daf58c2b917aa291cd3dbccc1f4c211c188ac33fc7ab62664bd4f258c2f31",
+                  "size": 575896,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3lewis_mob_sft_pwr.pkg.enc",
+                  "sha256": "02bae68ebe7a0e246dc4a138c7271a0d589ae5a40eb3118513c9293b6f12ac88",
+                  "size": 575928,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3lewis_pwr.pkg.enc",
+                  "sha256": "7e2dfa88b338bc26316e67b988d5d98be4a815d8fc9d15e0e5c08279973cbe56",
+                  "size": 28056,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3lewis_mob_pwr.pkg.enc",
+                  "sha256": "8e133e963a0391dbb6f8b8fd1b5ec3e7245f7f43e769b75d8cd1900405289308",
+                  "size": 511416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_mob_sft.pkg.enc",
+                  "sha256": "1c91d501f242398d9a0bc52b3ca55fe802cc027a7b47a174b51cce4c8561a28a",
+                  "size": 547928,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/special_safety",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/special_safety/lewis_mob_errsft.pkg.enc",
+                  "sha256": "28fc3a7e53450573681680a792168f5fb0b85456c52552c1a3fd7ff183f8b5ca",
+                  "size": 547928,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/special_safety/lewis_mob_nfsft.pkg.enc",
+                  "sha256": "d5162b52a2d1abfcd10674c8739e65925e3cca1959eb25c51cbe36dbf1534df7",
+                  "size": 547928,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/special_safety/lewis_mob_dogsft.pkg.enc",
+                  "sha256": "284677e9c043af044b07cc995083c2352e4de5e1fc3ef2e5cd8e62f7d3f28615",
+                  "size": 547928,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/special_safety/lewis_errsft.pkg.enc",
+                  "sha256": "5b7362249a08d12543dca1970223466ded865e94032090a9c9a3cbb6a926174d",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/special_safety/lewis_dogsft.pkg.enc",
+                  "sha256": "d4638dc946f896f503f6ea771e7831d02e675d241e2c706a6f2ffd76dbfa9110",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/special_safety/lewis_nwterrsft.pkg.enc",
+                  "sha256": "869e656e0c1aea7ff7f57637bff70ed566bb9f9e9c92863ef31ca4419113639f",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/special_safety/lewis_nfsft.pkg.enc",
+                  "sha256": "56d6e16542bc7cb8235931af53a45366d5fff3203b6eff23dca0332937f10300",
+                  "size": 64568,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_mob.pkg.enc",
+                  "sha256": "b74a50f6165e2b293b7e97682c2f045f3b4aa09fbeea1f1859e8ecf716394325",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/test_build_P6",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/test_build_P6/test_build_P6lewis_nonavwatchdogmob_dogsft_vactestpwr.pkg.enc",
+                  "sha256": "5cbaa30be37c36632788b22202ccd9af2d4a952f4c4e9accbf5cabfedfa1b4f1",
+                  "size": 575768,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/lewis_nonavwatchdogmob.pkg.enc",
+                  "sha256": "416626d3c2e08a4a6c5af32dfea479624827acc2e2e52f0a0c7d685b1e1a3ea6",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/P6",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P6/P6lewis_mob_sft_pwr.pkg.enc",
+                  "sha256": "240f642fc8a1ae73285917487149a19eb6b74431cd197b90bf79befaa7f79460",
+                  "size": 575800,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P6/P6lewis_pwr.pkg.enc",
+                  "sha256": "68821b81c6f773f1ec2e738359e4334c7caafc49067aab29ecb9f2e2f3defc70",
+                  "size": 27896,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P6/P6lewis_mob_pwr.pkg.enc",
+                  "sha256": "413db08f77e2582442e56b6735bf7d3e9a8dd538f0e0a1f054a9c9a72a8a779c",
+                  "size": 511256,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./lewis_nonavwatchdog_mobility_d.enc",
+                  "sha256": "ced02bdd1208758e378d125fedd2998acf84a6b82e9c8db07f7b485f92a53b3b",
+                  "size": 483352,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./power_d_EP3.elf",
+                  "sha256": "b90137153c2f932a6f347f24b06564c37a120d4129a29ce460d8504dc1c165d7",
+                  "size": 998086,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./nobackemfchk_power_d_P6.bin",
+                  "sha256": "e83ba8107141bd85e01f2ad4102e5d7d092339194b23138300d028216a3b7fc7",
+                  "size": 27840,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_nonavwatchdog_mobility_d.map",
+                  "sha256": "5e27db98e6ddcb54b9733e3a10c43e3a16b13a66f18d679a90ed2f6a346ef70e",
+                  "size": 12569692,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./vactest_power_d_P6.elf",
+                  "sha256": "76b2d334a4ae3a537c4683ded47c401d735fcd714dd25649239820d26c3e959e",
+                  "size": 997147,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./nofault_safety_d.bin",
+                  "sha256": "bf74a79a67bc0b60e294a24e8862bcbbae4f26c1c3e13eaa7078ed88c183cfb5",
+                  "size": 64512,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./iroboot_d_lewis.bin",
+                  "sha256": "1ba25fe7cecf8fa91247a738dec430a61ce099399c6d0242d451dbacabecd862",
+                  "size": 24984,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./iroboot_d_lewis.size",
+                  "sha256": "44d339ff1f18edd0ec45c013b00053aa47df6b88f75834b67b5fd47e5a335eb2",
+                  "size": 110,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_mobility_d.size",
+                  "sha256": "53d083ef6dce891a19da723b164a0d6cc4bc900f4a592251fb8b581115d64040",
+                  "size": 115,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_nonavwatchdog_mobility_d_nobl.elf",
+                  "sha256": "263a0665c11d4a359e2a1358006729c8243c54981e73053e87c02b2650deef14",
+                  "size": 10800438,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./vactest_power_d_P6.map",
+                  "sha256": "fe3010b4fee2ec01096f2acb85fbc4efe2f8797068737413c3e4fe8831cef545",
+                  "size": 1093410,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nowheelstesterror_safety_d.size",
+                  "sha256": "417dd9d5d164adfafcb65359a001ff4c3e7a921a317ebcddb1559477e6a48f3a",
+                  "size": 106,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./safety_d.elf",
+                  "sha256": "657393f0870cc9ddb065d05e8449ac8582940eede721889dcb288a35884ad654",
+                  "size": 967119,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./power_d_P6.bin",
+                  "sha256": "e83ba8107141bd85e01f2ad4102e5d7d092339194b23138300d028216a3b7fc7",
+                  "size": 27840,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./vactest_power_d_EP3.bin",
+                  "sha256": "0323edb9133d33bee05b7432ac0b46b84ec7443c5fcc69b864455e1284e18e73",
+                  "size": 27904,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nobackemfchk_power_d_EP3.elf",
+                  "sha256": "5d86570490a647ac9392ba379f125035d758fc61486439dc83f4d242a401ac65",
+                  "size": 997874,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./vactest_power_d_P6.size",
+                  "sha256": "2031850afb4edc4502248884656d4df509a19d1c0f66a3bd017b6ebbde3cb1ea",
+                  "size": 105,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./nobackemfchk_power_d_EP3.bin",
+                  "sha256": "77baaec433d54a6256199ad10017662124e45ab831076ef8627f4af40a4a28ab",
+                  "size": 27936,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./safety_d.bin",
+                  "sha256": "b381f24fb201ef1ec2232956c18422b66deddb7f7554adc172bd5e88f6b68787",
+                  "size": 64512,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_mobility_d_nobl.map",
+                  "sha256": "f187f2d1619369ead192a858a06b6418557e6fd0c468ad8c2eeb2fdea8834b39",
+                  "size": 11429576,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./power_d_EP3.map",
+                  "sha256": "df9ca023c34750f2f5df71e06d6504a8d0dd477ca1801f415c29e703f8cf83e0",
+                  "size": 1044201,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./iroboot_d_lewis.elf",
+                  "sha256": "af62d9da7612ffb06b63bf0232065a98e9d4ee073abc150b0aa46d4eb9bd412c",
+                  "size": 865247,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./vactest_power_d_EP3.map",
+                  "sha256": "49e8b1a1d210c41ae170f786ae5b85b837b81331f76c2b6a09f2a8583ccaeaa5",
+                  "size": 1100920,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./errorinject_safety_d.bin",
+                  "sha256": "ff1b6529116a67ecf11b454ee172f429b03f3f138fea19a431bb1bcacccd0df8",
+                  "size": 64512,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./forcedog_safety_d.map",
+                  "sha256": "e326853fb6a420d83defc9feee11d21e6db39db808d6febbb1087ff1e8c4c82b",
+                  "size": 1231583,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./lewis_mobility_d.bin",
+                  "sha256": "9299f57c37f2940529e03c598055ac0242bf6db506ffd9775067ba1b709f0a8e",
+                  "size": 520192,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./forcedog_safety_d.elf",
+                  "sha256": "4316163100750089d7035f5d4c8bc9af92a3aec41261b8643838511d9c4bfa29",
+                  "size": 958605,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./iroboot_d_lewis.map",
+                  "sha256": "e850921dbfe9bec65056254d2c7abfc9c227f8449a49c6568dd09e25b8b15c09",
+                  "size": 380814,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nobackemfchk_power_d_P6.elf",
+                  "sha256": "e55b9cdf313974e4e2f8305310dddc60b2db18a71b0d7ac617c42e2ad9a7f9ce",
+                  "size": 997249,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./safety_d.map",
+                  "sha256": "bb22b84f9d66b43c80fe782e061d28a077a8bd7e099ca8be270c6e726377f78e",
+                  "size": 1222729,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nofault_safety_d.map",
+                  "sha256": "6dfc8ae989598d5e3439e6c935baa17e7de483db8861e5c4b15b1fe187c1c19a",
+                  "size": 1236840,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nowheelstesterror_safety_d.map",
+                  "sha256": "005c1034f35867ed6ebea6e18f780df1dfdfbbcb8f9219b14ffcde7a4e60d5e6",
+                  "size": 1308486,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./power_d_P6.elf",
+                  "sha256": "06534eeb6d9f530c117686d6a93352ff498bc080b64333baaafc036dbe4c89a7",
+                  "size": 997260,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_mobility_d.elf",
+                  "sha256": "0bb44d5f8ca3a0ee5df897216353c6ce7fe7a21ba4d612336e351914b107ab41",
+                  "size": 11014878,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_nonavwatchdog_mobility_d.size",
+                  "sha256": "aeb41823a00bb1f1c43cb17d4156079c1c60c3ea6adedca8934dc295e0245788",
+                  "size": 115,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nofault_safety_d.elf",
+                  "sha256": "9209da4dc95012065914829531bdc0b2e631952173ce6cb70110768eaadf15ed",
+                  "size": 966897,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./forcedog_safety_d.bin",
+                  "sha256": "c2c920515a52db0e35970d20fd1665a2ec8376553a6f28879bd4480afdb5823e",
+                  "size": 64512,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_mobility_d_nobl.elf",
+                  "sha256": "7bd0bbfbc9ed4563cf528c6398dfd2cab95abcdbdd9d9b05131a4442ca96f5d6",
+                  "size": 10796165,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./power_d_P6.size",
+                  "sha256": "79c827148c9e135f75210359fc47213a467b7c14262483d4f9ebaf9632cc588a",
+                  "size": 105,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./power_d_EP3.bin",
+                  "sha256": "0047fcfc01fc2f80a026f6810144fb496114224a30594d34fd1fd63358c22d78",
+                  "size": 27976,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./vactest_power_d_EP3.elf",
+                  "sha256": "a3fb09c35bf30d340f14e3a18e4e508db5405902feed81a6376c523a6953c3eb",
+                  "size": 997772,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./power_d_P6.map",
+                  "sha256": "b76eaa2d1138964a7f9333d9d922ccac0731813f283ae6516bee13c9ff49602a",
+                  "size": 1036683,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./vactest_power_d_EP3.size",
+                  "sha256": "50300bbb2e2b054d4133c3b04101477eec3585b6198447c6dab28bdfebc7794e",
+                  "size": 105,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./vactest_power_d_P6.bin",
+                  "sha256": "6c925223a3f3ecab135083c91e5af3d443a32904a6401ea670565cba3a257057",
+                  "size": 27808,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nobackemfchk_power_d_EP3.map",
+                  "sha256": "614461d64713ac0a9ed1b929cc58f4330bf06dbe445758e46e0978f9759001db",
+                  "size": 1136594,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_nonavwatchdog_mobility_d_nobl.map",
+                  "sha256": "cce1045336191ecab85e531c7bf298ea79de39c72051b692f9d8d816258f5de1",
+                  "size": 12567906,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nobackemfchk_power_d_EP3.size",
+                  "sha256": "ec3cfec03c22dcee4b1c2ccee43865bed49db0aae0f1e208553f12478c4c141b",
+                  "size": 105,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./nowheelstesterror_safety_d.bin",
+                  "sha256": "db18c3ce1ccff9c9d0f664c3e5b981d8edf51aaeb90441fd60d5bda7b8972321",
+                  "size": 64512,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./errorinject_safety_d.map",
+                  "sha256": "c45587d2564f1b122400b3e95efd3852f324e36ce172cf6cec265c84779b89ad",
+                  "size": 1289516,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_mobility_d.map",
+                  "sha256": "b95cb51a40f85f9fea33699d5c133b0ae71b346093ce5168e294bc857594b19c",
+                  "size": 11431278,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_sim_d",
+                  "sha256": "01e60ab844118e7d912098c4bcdb58643a1bbfb2b650f2e8a2a7b6db14b1740a",
+                  "size": 13312048,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./lewis_nonavwatchdog_mobility_d.elf",
+                  "sha256": "2d4973c806f9e947e22f2e9d1095ff176ae5bdecdbe03a48e015174fcee42a98",
+                  "size": 11019165,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nobackemfchk_power_d_P6.size",
+                  "sha256": "79c827148c9e135f75210359fc47213a467b7c14262483d4f9ebaf9632cc588a",
+                  "size": 105,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./forcedog_safety_d.size",
+                  "sha256": "6281eb142fcfddc4931b4f7f9b94894bebd35ae04f8a522059e12f23baf6f961",
+                  "size": 106,
+                  "type": "file"
+                },
+                {
+                  "kind": "firmware-image",
+                  "path": "./lewis_nonavwatchdog_mobility_d.bin",
+                  "sha256": "cb9265aeef0fcb9e78e38c987fec3a7136c8d9250d48e5133cbc93cb37aa5d5e",
+                  "size": 520192,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./safety_d.size",
+                  "sha256": "f3fb3c68fb1a717790ca3f2f8a4cf71600d18ad033e49c3df94f2ed1c8fa3260",
+                  "size": 106,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nowheelstesterror_safety_d.elf",
+                  "sha256": "a6d1fd55520d919ffbb39c80bb4f57577ed26a44cd2fcbd7b0a48aa4914ed70e",
+                  "size": 967179,
+                  "type": "file"
+                },
+                {
+                  "kind": "file",
+                  "path": "./nobackemfchk_power_d_P6.map",
+                  "sha256": "581a8619ee3510ad1772e709ab007d4ccfeac750a06b586437f71c8f0c07455d",
+                  "size": 1129074,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-1.6.2-35b5876e8f9d/lewis-1.6.2.signed",
+              "bundle_sha256": "3d32130f5646264fa728c7cf346a2b60385fb4207aa00fb60462cdccfdb2f725",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_lewis_r0.lewis-lewis-1.6.2-24.tar.gz",
             "sha256": "3d32130f5646264fa728c7cf346a2b60385fb4207aa00fb60462cdccfdb2f725",
             "size": 30722303,

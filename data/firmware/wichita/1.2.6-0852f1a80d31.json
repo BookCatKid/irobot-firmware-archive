@@ -64167,6 +64167,365 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 46,
+              "format": "tar",
+              "member_count": 51,
+              "members": [
+                {
+                  "path": ".",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "path": "./packages",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/wb_confinement_mower_bearing.enc",
+                  "sha256": "4d355f8bc4fa40048acd1e8887de8729d21c3d5222a35247445a8460e6f73e16",
+                  "size": 57368,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/wb_confinement_mower_range.enc",
+                  "sha256": "d5f0de7d140e3620804e072a04499d77d2a968758ac3b0f26c6ee97e201415f2",
+                  "size": 57368,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/EP2",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob_lgr.pkg.enc",
+                  "sha256": "7b912936d5904ee2ad6ddfcc35c6c52db29ebfbe278e235aba011ab058d49c2c",
+                  "size": 1302552,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob_pwr.pkg.enc",
+                  "sha256": "19a3d7535a2be780bddb9a59800ca4213f214096cb5f61a0f96cae6e4c89ab99",
+                  "size": 512280,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob_sft.pkg.enc",
+                  "sha256": "78e778e0c433a415f3b9c6c30353cf841b4b91efb3e813f91cf2b8440d1b6c83",
+                  "size": 755800,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob.pkg.enc",
+                  "sha256": "493dfef3c379ae28feab9311416be5db7240b0d6bfd6c188ec108d76b4f1a72c",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob_sft_lgr_pwr.pkg.enc",
+                  "sha256": "161fa31a07c21b8250587870828628f605a7ea09f44cbdff90f29689edda6749",
+                  "size": 1603832,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob_errsft_pwr.pkg.enc",
+                  "sha256": "d977307a063cf70eab1a4e5a3aad9c60eda6fd7f1d6bdbb9fb41d67858d54f2a",
+                  "size": 784696,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob_opsft_pwr.pkg.enc",
+                  "sha256": "6e3c59bab5310b38a38cee61bcec8e7c42c9df454e02b97f5acc4a54c754d27a",
+                  "size": 784696,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob_sft_pwr.pkg.enc",
+                  "sha256": "5fe782b9f692d955e3a6674d8bbb2074b9dced370e0859447b5e3adcb0fdc8fa",
+                  "size": 784696,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_sft.pkg.enc",
+                  "sha256": "b7abe5ebbd4a68cff484c1ce20faeb883054ae7256eb7100b3cd04c3732989f0",
+                  "size": 272440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_pwr.pkg.enc",
+                  "sha256": "bfc07db2b6b5f04591e03d12d4276016ad2c0ff518be757d1db6cbd9fcc8fd44",
+                  "size": 28920,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP2/EP2wichita_mob_nlcsft_pwr.pkg.enc",
+                  "sha256": "961bc32e8541554a96b0cd1870acfe01cc5f214d98a1fdf0cd3e0a096acbde7b",
+                  "size": 784696,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/wb_confinement_mower_bearing_rev5_old.enc",
+                  "sha256": "70c8220fbf5d0267a7ccf0949592db7c5c88737c7e7ff83c4865103c44d5981b",
+                  "size": 57368,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/wb_confinement_mower_bearing_rev5_new.enc",
+                  "sha256": "8786afa172df73605b97a81348625cc7704aca73c6f8659d18bf9aee2ded4a75",
+                  "size": 57368,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/wb_confinement_beacon_bearing.enc",
+                  "sha256": "3db5fa5a1e7db521d7966bb1d7319a706b7bc22643469807b42ca1ca7d6ac2d3",
+                  "size": 57368,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/wb_confinement_beacon_range.enc",
+                  "sha256": "a5d4422f9222669fc8f8e1528139b11e8e09fecdacf49456c85e75f0b526f9a8",
+                  "size": 57368,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/EP3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_opsft.pkg.enc",
+                  "sha256": "933a70290fa4d8b0c25f1ace1b401fd1fba72ac199e461eee85f4f6a9f1921c8",
+                  "size": 755800,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_pwr.pkg.enc",
+                  "sha256": "ab7ce43cd88797879f4106008d4326f859cac64cb621ecb5f0810b64ffa57def",
+                  "size": 28920,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_errsft.pkg.enc",
+                  "sha256": "6a4507664d7e74f99a3234d506bd8fab6cbe1b17d2de31afffb966da4f1fe81e",
+                  "size": 755800,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_sft.pkg.enc",
+                  "sha256": "f62d945338848cc45b9f29a9ad2a1eaf92c4a9175b2b6444ef7556877816637d",
+                  "size": 755800,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_sft.pkg.enc",
+                  "sha256": "77005fe3e44ef66171c8c653b6fc9d71f4119b8e4a569cc3b15576c2d94804e0",
+                  "size": 272440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_sft_lgr_pwr.pkg.enc",
+                  "sha256": "70ce2b46080863dd24107f8be3ba279d9f82f36952d9ab70673f902fc9a6b8d8",
+                  "size": 1603832,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_opsft_pwr.pkg.enc",
+                  "sha256": "7c64db5091cc44fcee4093bb0410e6dd488cc7ba1e8b478ad3650591ed93cbb3",
+                  "size": 784696,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_errsft_pwr.pkg.enc",
+                  "sha256": "39d0120fdf97dada68d66e35d0fecc551e64fdd3d684a8cfb6203facdcbab2dc",
+                  "size": 784696,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_nlcsft_pwr.pkg.enc",
+                  "sha256": "ca9345781ce7cd0adabeecc831fde743a4dbc5ca7525233655787dbdf1acb61f",
+                  "size": 784696,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_pwr.pkg.enc",
+                  "sha256": "530a1701a3e5b67da50388ba50c17eb1d8eb8fbe8f035a6b49b126ad6343482e",
+                  "size": 512280,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_nlcsft.pkg.enc",
+                  "sha256": "56e69e194d84c9479c85c461cd96bc22d30de117f9dad3c8ecf39b0bee7ce06e",
+                  "size": 755800,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_nlcsft.pkg.enc",
+                  "sha256": "2a53d22725bdc9a966a0896e9b161d3933c0bdc9d56819012a6c46afa8b863f0",
+                  "size": 272440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob.pkg.enc",
+                  "sha256": "38389673c45ea499f7f6b24a0d3b6426f658efe8ac10637b005ce6d3f76b163a",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_opsft.pkg.enc",
+                  "sha256": "182911b9553835781b8d16f98d3a4d741ce8be2b0158128865e76e28c3cc3094",
+                  "size": 272440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_errsft.pkg.enc",
+                  "sha256": "a2da93046212f4baf15b82ba25e4b48fa8b084188ad404e1032b297c6d3c0ceb",
+                  "size": 272440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/EP3/EP3wichita_mob_sft_pwr.pkg.enc",
+                  "sha256": "60cf6f8c7f106e491d1f5759a0ab3981e7627862ce3a67985339d6e0a743649c",
+                  "size": 784696,
+                  "type": "file"
+                },
+                {
+                  "path": "./packages/P5C",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob_sft_lgr_pwr.pkg.enc",
+                  "sha256": "ddd632a4e8cc7a8eb9f77747d1444a17a4b0312b742bb8b0e97c3d0665942f8f",
+                  "size": 1603128,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob_pwr.pkg.enc",
+                  "sha256": "844c22d34f2264d1c309b2ee12058dc6052c6e23f15ab5974386a073e412fdce",
+                  "size": 511576,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob_sft_pwr.pkg.enc",
+                  "sha256": "6d9398e8480868dcfdb0d05bbad1d0bc198702b1b7e01095e046adf9b1edc5f5",
+                  "size": 783992,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_pwr.pkg.enc",
+                  "sha256": "47dcee2a8584fccb88a1669151c32bd1bc25a80a02ffbf3b187490e2a25bace8",
+                  "size": 28216,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob_nlcsft_pwr.pkg.enc",
+                  "sha256": "842399e35d94f5664e6046628b052a069b4034c6bad3af2fd3e1564121b9bf48",
+                  "size": 783992,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob_errsft_pwr.pkg.enc",
+                  "sha256": "e61d7ea4b963f7a5d5bd1ecd8c753bb75d8c0fff90ef71762337aa056b6b1f9a",
+                  "size": 783992,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob_lgr.pkg.enc",
+                  "sha256": "7b912936d5904ee2ad6ddfcc35c6c52db29ebfbe278e235aba011ab058d49c2c",
+                  "size": 1302552,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob_sft.pkg.enc",
+                  "sha256": "78e778e0c433a415f3b9c6c30353cf841b4b91efb3e813f91cf2b8440d1b6c83",
+                  "size": 755800,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob.pkg.enc",
+                  "sha256": "493dfef3c379ae28feab9311416be5db7240b0d6bfd6c188ec108d76b4f1a72c",
+                  "size": 483416,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_sft.pkg.enc",
+                  "sha256": "b7abe5ebbd4a68cff484c1ce20faeb883054ae7256eb7100b3cd04c3732989f0",
+                  "size": 272440,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/P5C/P5Cwichita_mob_opsft_pwr.pkg.enc",
+                  "sha256": "6068ce685a98ad81e13971afc1de9f21fc79e08caae7895de5b00f0f3c41f290",
+                  "size": 783992,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./packages/wichita_lgr.pkg.enc",
+                  "sha256": "6ff6353c73d9d36a72697629e929e575f25b480d088d7c75e52ddb66f489e0a5",
+                  "size": 819192,
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "./wichita_test_uart_d_secure.enc",
+                  "sha256": "96aa10331f78f0463bf702b1988fc79f7513f9f69537c12f7d980af52b09ad67",
+                  "size": 483352,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-wichita-1.2.6-0852f1a80d31/wichitav126.signed",
+              "bundle_sha256": "1ebe83bc6e3d3f2008f98c32f985a8deb8334bdbfb7374346dd7655eda0d4641",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_wichita_r0.wichita-092482cac6b2cdf755b98ea3c6a424155bf4f305-12.tar.gz",
             "sha256": "1ebe83bc6e3d3f2008f98c32f985a8deb8334bdbfb7374346dd7655eda0d4641",
             "size": 23616450,

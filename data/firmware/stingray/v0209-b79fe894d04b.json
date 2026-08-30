@@ -31958,6 +31958,368 @@
             "type": "dir"
           },
           {
+            "auxiliary_firmware": {
+              "file_count": 8,
+              "format": "tar",
+              "member_count": 17,
+              "members": [
+                {
+                  "path": "packages/dock",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "descriptor",
+                  "path": "packages/dock/dock_hw0_var6.txt",
+                  "sha256": "0778bfc2723398199d2b3fcf01ce7021e74a86c3f68afad8b90c7a67bd1b32da",
+                  "size": 56,
+                  "text": "# This file is auto-generated - do not edit\n[ 4, 7, 6 ]\n",
+                  "type": "file"
+                },
+                {
+                  "kind": "encrypted-firmware",
+                  "path": "packages/dock/dock_hw0_var6.pkg.enc",
+                  "sha256": "9184af78f0fd5e9008c043e7f94803511073c8e589d4a545ef0b4e16c891eb7b",
+                  "size": 114776,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/dock/dock_hw0.txt",
+                  "size": 0,
+                  "target": "dock_hw0_var6.txt",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/dock/dock_hw0.pkg.enc",
+                  "size": 0,
+                  "target": "dock_hw0_var6.pkg.enc",
+                  "type": "symlink"
+                },
+                {
+                  "path": "packages/EP1",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./stingray_mobility_d.enc",
+                        "sha256": "8c1b22a53a5516c015703d1470d023a7522ae7bf3c347cdff540d7d3bc310de9",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P3.bin.enc",
+                        "sha256": "7a008e091582b8f277cda9b62e80de2450bb9b9939aa1dce8d493619ddcde214",
+                        "size": 40728,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_EP1.bin.enc",
+                        "sha256": "07370830a76942819bec0bb396871704d47a0902209d1fb2d4af379ee0042f35",
+                        "size": 63512,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "5b4071af16196b274360433043c0da882b407ddda45d92bca05ddd816a7ab902",
+                        "size": 388,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 1 stingray_mobility_d.enc 0.20.9+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 2 safety_d_EP1.bin.enc 1.4.0+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 3 power_d_P3.bin.enc 0.1.0+ubuntu-HEAD-256fd5dd4c5+0\n# result of 'cat stingray_mobility_d.enc safety_d_EP1.bin.enc power_d_P3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM a575aaa10af216581776e58345ba241b\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP1/EP1stingray_mob_sft_pwr.tar.gz",
+                  "sha256": "df4d1e608009702278a0752e355be67fb23b3227cf402270d362e56be974d212",
+                  "size": 534859,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/EP2",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P4B.bin.enc",
+                        "sha256": "28ea4184da74a684725f2e701fa1cd2ced66d787968a8a331fa2fa55d377a3e7",
+                        "size": 40696,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./stingray_mobility_d.enc",
+                        "sha256": "8c1b22a53a5516c015703d1470d023a7522ae7bf3c347cdff540d7d3bc310de9",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_EP1.bin.enc",
+                        "sha256": "07370830a76942819bec0bb396871704d47a0902209d1fb2d4af379ee0042f35",
+                        "size": 63512,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "c2f38b62fc9b2822dcb0c5e558a3ee2546c98dab6b0cc7001c0c4b95cb156d86",
+                        "size": 390,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 1 stingray_mobility_d.enc 0.20.9+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 2 safety_d_EP1.bin.enc 1.4.0+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 3 power_d_P4B.bin.enc 0.1.0+ubuntu-HEAD-256fd5dd4c5+0\n# result of 'cat stingray_mobility_d.enc safety_d_EP1.bin.enc power_d_P4B.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 010e6d80e1a5c1622201e0c188a99201\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/EP2/EP2stingray_mob_sft_pwr.tar.gz",
+                  "sha256": "745307efd05dee8f34aeea716cdba960eed7723da89d30fab3beeebdec377aa3",
+                  "size": 535265,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/P2",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P2.bin.enc",
+                        "sha256": "a940c094344f540fab649fb08c7d018cb74ce436eaf9bca53d0d5dd300d041ff",
+                        "size": 40728,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./stingray_mobility_P2_d.enc",
+                        "sha256": "6af9d928fe5ccc2b2d8d0a4456348454c24b110530b8a573dd146ca7a3e8f276",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_P2.bin.enc",
+                        "sha256": "5ff5a110452700ad9b2432105c580335d25660312220001e830c202a51001bd6",
+                        "size": 63512,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "510724c01ad1b99455fdc04e752495f7fcf48398b49d70192d0a098401c15853",
+                        "size": 392,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 1 stingray_mobility_P2_d.enc 0.20.9+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 2 safety_d_P2.bin.enc 1.4.0+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 3 power_d_P2.bin.enc 0.1.0+ubuntu-HEAD-256fd5dd4c5+0\n# result of 'cat stingray_mobility_P2_d.enc safety_d_P2.bin.enc power_d_P2.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 343f8cefbd3fab4dcddfe9a8f956026e\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P2/P2stingray_mob_sft_pwr.tar.gz",
+                  "sha256": "e225097b03743159e201793c550a25199d02f6f7ff7c71762d8a58d624806ed9",
+                  "size": 534880,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/P3",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./stingray_mobility_d.enc",
+                        "sha256": "8c1b22a53a5516c015703d1470d023a7522ae7bf3c347cdff540d7d3bc310de9",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_P3.bin.enc",
+                        "sha256": "86f768865858bc18186aa3f2c5ec9fa9916a5f717847de255757ab904ee1a60c",
+                        "size": 63512,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P3.bin.enc",
+                        "sha256": "7a008e091582b8f277cda9b62e80de2450bb9b9939aa1dce8d493619ddcde214",
+                        "size": 40728,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "0e01c03789dcd3045b9986d8a760aa3d81fcbd5067f6bf15a6b3080132b00d01",
+                        "size": 386,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 1 stingray_mobility_d.enc 0.20.9+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 2 safety_d_P3.bin.enc 1.4.0+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 3 power_d_P3.bin.enc 0.1.0+ubuntu-HEAD-256fd5dd4c5+0\n# result of 'cat stingray_mobility_d.enc safety_d_P3.bin.enc power_d_P3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM daf48122fe10558b3af0ee766203477e\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P3/P3stingray_mob_sft_pwr.tar.gz",
+                  "sha256": "6cce3635b3df03e244ec7df359b36c7c4dc7531086f0aeee51d0c70fabb9def7",
+                  "size": 534959,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/P4",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./stingray_mobility_d.enc",
+                        "sha256": "8c1b22a53a5516c015703d1470d023a7522ae7bf3c347cdff540d7d3bc310de9",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_P4.bin.enc",
+                        "sha256": "894a810d1b2b0ce9382cbdb3c0ddb6f0e831a599b19658661eb47a3c59c47bcd",
+                        "size": 63512,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P3.bin.enc",
+                        "sha256": "7a008e091582b8f277cda9b62e80de2450bb9b9939aa1dce8d493619ddcde214",
+                        "size": 40728,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "00ec295ee1ce4e07d240425fcde525cc89e06415476c20436fc3009298f61394",
+                        "size": 386,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 1 stingray_mobility_d.enc 0.20.9+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 2 safety_d_P4.bin.enc 1.4.0+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 3 power_d_P3.bin.enc 0.1.0+ubuntu-HEAD-256fd5dd4c5+0\n# result of 'cat stingray_mobility_d.enc safety_d_P4.bin.enc power_d_P3.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM 7074756dc615be6de68a1ab4c54a92a7\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P4/P4stingray_mob_sft_pwr.tar.gz",
+                  "sha256": "3ab28f4bd2dd61cbfe632ccc11d74a997cab46dd3351ab8217015ed2f3440f86",
+                  "size": 534968,
+                  "type": "file"
+                },
+                {
+                  "path": "packages/P4B",
+                  "size": 0,
+                  "type": "dir"
+                },
+                {
+                  "kind": "tar",
+                  "nested": {
+                    "file_count": 4,
+                    "format": "tar",
+                    "member_count": 5,
+                    "members": [
+                      {
+                        "path": ".",
+                        "size": 0,
+                        "type": "dir"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./power_d_P4B.bin.enc",
+                        "sha256": "28ea4184da74a684725f2e701fa1cd2ced66d787968a8a331fa2fa55d377a3e7",
+                        "size": 40696,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./stingray_mobility_d.enc",
+                        "sha256": "8c1b22a53a5516c015703d1470d023a7522ae7bf3c347cdff540d7d3bc310de9",
+                        "size": 483352,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "encrypted-firmware",
+                        "path": "./safety_d_P4.bin.enc",
+                        "sha256": "894a810d1b2b0ce9382cbdb3c0ddb6f0e831a599b19658661eb47a3c59c47bcd",
+                        "size": 63512,
+                        "type": "file"
+                      },
+                      {
+                        "kind": "descriptor",
+                        "path": "./download-manifest.cfg",
+                        "sha256": "1a25aca81a6948dde921af218e7a98a4543a08e18fa02b4bd61f03b880f7fb91",
+                        "size": 388,
+                        "text": "# Mobility system download manifest using product id 38\nIMAGE 1 stingray_mobility_d.enc 0.20.9+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 2 safety_d_P4.bin.enc 1.4.0+ubuntu-HEAD-256fd5dd4c5+0\nIMAGE 3 power_d_P4B.bin.enc 0.1.0+ubuntu-HEAD-256fd5dd4c5+0\n# result of 'cat stingray_mobility_d.enc safety_d_P4.bin.enc power_d_P4B.bin.enc | md5sum | cut -d' ' -f1'\nMD5SUM d27e0045197d29bb37c2997834577dd9\n",
+                        "type": "file"
+                      }
+                    ]
+                  },
+                  "path": "packages/P4B/P4Bstingray_mob_sft_pwr.tar.gz",
+                  "sha256": "ee6d59f0ca78f01b915d95acb35488694e1cb486956b47760a665f0519f16909",
+                  "size": 534898,
+                  "type": "file"
+                }
+              ]
+            },
+            "auxiliary_firmware_provenance": {
+              "archive_asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-v0209-b79fe894d04b/stingray0209.signed",
+              "bundle_sha256": "8a51bfed4245f5e51e152402c9aba0a6dfba704abdda8e330be145e2fc3854d6",
+              "method": "reanalyzed-archived-parent-release"
+            },
             "path": "opt/irobot/firmware/auxboard_firmware_stingray_r11.3.tar.gz",
             "sha256": "8a51bfed4245f5e51e152402c9aba0a6dfba704abdda8e330be145e2fc3854d6",
             "size": 3325775,
