@@ -101,6 +101,27 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(records[0]["dock_firmware_recommendation"]["version"], "2.0.1")
         self.assertEqual(records[0]["source_dock_state"], {"dockFwVer": "1.0.0"})
 
+
+    def test_legacy_apkg_header_is_recognized_without_guessing_fields(self):
+        name = b"marconiv327.bin"
+        payload = bytearray(400)
+        payload[:4] = b"aPKG"
+        struct.pack_into("<I", payload, 4, 1)
+        struct.pack_into("<I", payload, 8, 96)
+        struct.pack_into("<I", payload, 12, 256)
+        payload[16:16 + len(name)] = name
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            src = root / "legacy.signed"
+            out = root / "manifest.json"
+            src.write_bytes(payload)
+            result = analyze(src, out, root / "work", deep=False)
+            self.assertEqual(result["format"], "irobot-apkg")
+            self.assertEqual(result["legacy_container"]["container_version"], 1)
+            self.assertEqual(result["legacy_container"]["name_hint"], "marconiv327.bin")
+            self.assertEqual(result["legacy_container"]["header_u32_08"], 96)
+            self.assertEqual(result["legacy_container"]["header_u32_0c"], 256)
+
     def test_synthetic_otps_component(self):
         payload = b"hello firmware"
         digest = hashlib.sha256(payload).digest()

@@ -373,7 +373,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v327-658060c2ff16/marconiv327.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/marconi/v327-658060c2ff16.json",
         "release_tag": "firmware-marconi-v327-658060c2ff16",
         "sha256": "658060c2ff16d0e0ac539410ad1ab92231336ac65d532e094ed413120927ec9d",
@@ -393,7 +393,7 @@
       "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2444-286848c17ef5/roomba9xxv2444.signed",
         "component_count": 0,
-        "format": "unknown",
+        "format": "irobot-apkg",
         "manifest": "firmware/roomba9xx/v2444-286848c17ef5.json",
         "release_tag": "firmware-roomba9xx-v2444-286848c17ef5",
         "sha256": "286848c17ef5d19a2b98b14b11442f0408ca9eec7fc9c4a8e1e47295a5e21797",

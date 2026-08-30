@@ -115,6 +115,24 @@ def _find_otie_items(mm: mmap.mmap) -> list[dict[str, Any]]:
     return items
 
 
+
+def _analyze_apkg_header(mm: mmap.mmap) -> dict[str, Any]:
+    """Extract conservative header facts from the legacy iRobot aPKG container.
+
+    Field semantics beyond the magic/version/name are intentionally not guessed.  The raw
+    little-endian integers are preserved so later samples can establish their meaning.
+    """
+    if len(mm) < 48 or mm[:4] != b"aPKG":
+        return {}
+    name_raw = bytes(mm[16:48]).split(b"\0", 1)[0]
+    return {
+        "magic": "aPKG",
+        "container_version": struct.unpack_from("<I", mm, 4)[0],
+        "header_u32_08": struct.unpack_from("<I", mm, 8)[0],
+        "header_u32_0c": struct.unpack_from("<I", mm, 12)[0],
+        "name_hint": name_raw.decode("ascii", "replace"),
+    }
+
 def _file_manifest(root: Path) -> tuple[list[dict[str, Any]], dict[str, str]]:
     files: list[dict[str, Any]] = []
     snapshots: dict[str, str] = {}
@@ -183,6 +201,9 @@ def analyze(path: Path, output: Path, work_dir: Path, deep: bool = True) -> dict
     with path.open("rb") as f, mmap.mmap(f.fileno(), 0, access=mmap.ACCESS_READ) as mm:
         if mm[:4] == b"Otps":
             result["format"] = "irobot-otps"
+        elif mm[:4] == b"aPKG":
+            result["format"] = "irobot-apkg"
+            result["legacy_container"] = _analyze_apkg_header(mm)
         items = _find_otie_items(mm)
         if items:
             result["format"] = "irobot-otps"

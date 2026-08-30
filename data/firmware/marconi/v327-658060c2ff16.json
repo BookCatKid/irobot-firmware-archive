@@ -1,7 +1,14 @@
 {
   "components": [],
   "filename": "marconiv327.signed",
-  "format": "unknown",
+  "format": "irobot-apkg",
+  "legacy_container": {
+    "container_version": 1,
+    "header_u32_08": 922512,
+    "header_u32_0c": 256,
+    "magic": "aPKG",
+    "name_hint": "marconiv327.bin"
+  },
   "schema": 1,
   "sha256": "658060c2ff16d0e0ac539410ad1ab92231336ac65d532e094ed413120927ec9d",
   "size": 922816
