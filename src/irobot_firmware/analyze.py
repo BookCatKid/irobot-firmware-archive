@@ -117,20 +117,55 @@ def _find_otie_items(mm: mmap.mmap) -> list[dict[str, Any]]:
 
 
 def _analyze_apkg_header(mm: mmap.mmap) -> dict[str, Any]:
-    """Extract conservative header facts from the legacy iRobot aPKG container.
+    """Parse the legacy iRobot ``aPKG`` container header conservatively.
 
-    Field semantics beyond the magic/version/name are intentionally not guessed.  The raw
-    little-endian integers are preserved so later samples can establish their meaning.
+    Multiple real Marconi samples show a fixed 0x58-byte table entry beginning at
+    0x34.  Each entry contains an integer id, an absolute payload offset, a payload
+    size, and a NUL-padded ASCII label.  We expose only fields that are validated
+    against the file bounds; unknown top-level integers remain named as raw header
+    values rather than assigning undocumented semantics.
     """
-    if len(mm) < 48 or mm[:4] != b"aPKG":
+    if len(mm) < 0x34 or mm[:4] != b"aPKG":
         return {}
+
     name_raw = bytes(mm[16:48]).split(b"\0", 1)[0]
+    entry_count = struct.unpack_from("<I", mm, 0x30)[0]
+    entries: list[dict[str, Any]] = []
+    entry_size = 0x58
+    table_start = 0x34
+
+    # Bound the count so malformed input cannot turn into a huge parse loop.
+    if entry_count <= 64 and table_start + entry_count * entry_size <= len(mm):
+        for ordinal in range(entry_count):
+            pos = table_start + ordinal * entry_size
+            entry_id, offset, size = struct.unpack_from("<III", mm, pos)
+            label_raw = bytes(mm[pos + 12 : pos + entry_size]).split(b"\0", 1)[0]
+            valid = size > 0 and offset >= table_start + entry_count * entry_size and offset + size <= len(mm)
+            item: dict[str, Any] = {
+                "ordinal": ordinal,
+                "id": entry_id,
+                "offset": offset,
+                "size": size,
+                "label": label_raw.decode("ascii", "replace"),
+                "bounds_valid": valid,
+            }
+            if valid:
+                payload = memoryview(mm)[offset : offset + size]
+                item["sha256"] = hashlib.sha256(payload).hexdigest()
+                item["magic"] = bytes(payload[:16]).hex()
+            entries.append(item)
+
+    raw_end = struct.unpack_from("<I", mm, 8)[0]
+    trailer = len(mm) - raw_end if 0 <= raw_end <= len(mm) else None
     return {
         "magic": "aPKG",
         "container_version": struct.unpack_from("<I", mm, 4)[0],
-        "header_u32_08": struct.unpack_from("<I", mm, 8)[0],
+        "header_u32_08": raw_end,
         "header_u32_0c": struct.unpack_from("<I", mm, 12)[0],
         "name_hint": name_raw.decode("ascii", "replace"),
+        "entry_count": entry_count,
+        "entries": entries,
+        "trailing_bytes_after_header_u32_08": trailer,
     }
 
 def _file_manifest(root: Path) -> tuple[list[dict[str, Any]], dict[str, str]]:

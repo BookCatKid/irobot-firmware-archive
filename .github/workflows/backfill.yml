@@ -14,7 +14,7 @@ on:
       scheme:
         description: "Version-number scheme"
         type: choice
-        options: [classic, semantic]
+        options: [classic, semantic, numeric]
         default: classic
       year_start:
         description: "Classic scheme first YY"
@@ -31,6 +31,18 @@ on:
       patch_max:
         description: "Highest patch number to probe"
         default: "15"
+      numeric_start:
+        description: "Numeric scheme first token"
+        default: "0"
+      numeric_end:
+        description: "Numeric scheme last token"
+        default: "9999"
+      numeric_width:
+        description: "Numeric scheme zero-pad width; 0 means no padding"
+        default: "0"
+      version_prefix:
+        description: "Optional catalog version prefix for numeric tokens (for example v)"
+        default: ""
       max_probes:
         description: "Maximum object probes; 0 means unlimited"
         default: "0"
@@ -79,6 +91,10 @@ jobs:
             --major-max "${{ inputs.major_max }}" \
             --minor-max "${{ inputs.minor_max }}" \
             --patch-max "${{ inputs.patch_max }}" \
+            --numeric-start "${{ inputs.numeric_start }}" \
+            --numeric-end "${{ inputs.numeric_end }}" \
+            --numeric-width "${{ inputs.numeric_width }}" \
+            --version-prefix "${{ inputs.version_prefix }}" \
             --workers 4 --pause 0.02 "${extra[@]}"
       - name: Archive newly found packages
         if: ${{ inputs.archive_found == true }}

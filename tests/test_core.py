@@ -7,7 +7,7 @@ from unittest.mock import patch
 from pathlib import Path
 
 from irobot_firmware.analyze import analyze
-from irobot_firmware.backfill import classic_versions
+from irobot_firmware.backfill import classic_versions, numeric_versions
 from irobot_firmware.discover import api_probe, api_probe_response
 from irobot_firmware.catalog import empty_catalog, merge_records
 from irobot_firmware.release_notes import render_release_notes
@@ -68,6 +68,37 @@ class CatalogTests(unittest.TestCase):
         values = set(classic_versions(24, 24, 0))
         self.assertIn("24.1.0", values)
         self.assertIn("24.01.00", values)
+
+    def test_numeric_versions_supports_legacy_tokens(self):
+        self.assertEqual(list(numeric_versions(326, 328)), ["326", "327", "328"])
+        self.assertEqual(list(numeric_versions(7, 9, 4)), ["0007", "0008", "0009"])
+
+    def test_release_note_legacy_catalog_token_uses_vcompact(self):
+        from unittest.mock import patch
+        from irobot_firmware.discover import discover_from_config
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            cfg = root / "discovery.json"
+            cfg.write_text(json.dumps({
+                "release_note_probes": [{
+                    "url": "https://example.invalid/notes",
+                    "families": [{
+                        "family": "marconi",
+                        "template": "https://example.invalid/marconiv{compact}.signed",
+                        "catalog_version": "vcompact"
+                    }]
+                }]
+            }))
+            with patch("irobot_firmware.discover.release_note_versions", return_value=["3.2.7"]), \
+                 patch("irobot_firmware.discover.direct_probe", return_value={
+                     "family": "marconi", "version": "3.2.7",
+                     "url": "https://example.invalid/marconiv327.signed", "source": "direct-probe"
+                 }):
+                rows, errors = discover_from_config(cfg)
+            self.assertFalse(errors)
+            self.assertEqual(rows[0]["version"], "v327")
+            self.assertEqual(rows[0]["filename_token"], "v327")
+            self.assertEqual(rows[0]["release_notes_version"], "3.2.7")
 
     def test_release_notes_include_provenance(self):
         record = {
@@ -152,6 +183,31 @@ class CatalogTests(unittest.TestCase):
             self.assertEqual(result["legacy_container"]["name_hint"], "marconiv327.bin")
             self.assertEqual(result["legacy_container"]["header_u32_08"], 96)
             self.assertEqual(result["legacy_container"]["header_u32_0c"], 256)
+
+    def test_legacy_apkg_entries_are_exposed_when_bounds_validate(self):
+        payload = bytearray(0x500)
+        payload[:4] = b"aPKG"
+        struct.pack_into("<I", payload, 4, 1)
+        struct.pack_into("<I", payload, 8, 0x480)
+        struct.pack_into("<I", payload, 12, 0x100)
+        payload[16:16 + len(b"marconiv327.bin")] = b"marconiv327.bin"
+        struct.pack_into("<I", payload, 0x30, 1)
+        struct.pack_into("<III", payload, 0x34, 7, 0x400, 16)
+        payload[0x40:0x40 + len(b"version1")] = b"version1"
+        payload[0x400:0x410] = b"0123456789abcdef"
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            src = root / "legacy.signed"
+            out = root / "manifest.json"
+            src.write_bytes(payload)
+            result = analyze(src, out, root / "work", deep=False)
+            legacy = result["legacy_container"]
+            self.assertEqual(legacy["entry_count"], 1)
+            self.assertEqual(legacy["entries"][0]["id"], 7)
+            self.assertEqual(legacy["entries"][0]["label"], "version1")
+            self.assertTrue(legacy["entries"][0]["bounds_valid"])
+            self.assertEqual(legacy["entries"][0]["sha256"], hashlib.sha256(b"0123456789abcdef").hexdigest())
+            self.assertEqual(legacy["trailing_bytes_after_header_u32_08"], 0x80)
 
     def test_synthetic_otps_component(self):
         payload = b"hello firmware"

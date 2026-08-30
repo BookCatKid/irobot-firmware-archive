@@ -481,6 +481,17 @@
         "Q012020",
         "Y014020"
       ]
+    },
+    {
+      "name": "wifi-600-800-series",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/541",
+      "families": [
+        {
+          "family": "marconi",
+          "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{compact}.signed",
+          "catalog_version": "vcompact"
+        }
+      ]
     }
   ]
 }

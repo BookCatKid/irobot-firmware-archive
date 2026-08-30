@@ -24,6 +24,19 @@ def semantic_versions(major_max: int, minor_max: int, patch_max: int) -> Iterabl
         yield f"{major}.{minor}.{patch}"
 
 
+def numeric_versions(start: int, end: int, width: int = 0) -> Iterable[str]:
+    """Generate an inclusive integer token range used by legacy OTA filenames.
+
+    Old iRobot packages such as ``marconiv327.signed`` and
+    ``roomba9xxv2444.signed`` use opaque numeric filename tokens that are not
+    reliably derivable from the user-visible release version.
+    """
+    if end < start:
+        return
+    for value in range(start, end + 1):
+        yield f"{value:0{width}d}" if width else str(value)
+
+
 def scan_direct(
     family: str,
     template: str,

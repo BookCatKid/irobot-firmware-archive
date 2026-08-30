@@ -592,6 +592,168 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3210-f48dee1dcb5e/marconiv3210.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v3210-f48dee1dcb5e.json",
+        "release_tag": "firmware-marconi-v3210-f48dee1dcb5e",
+        "sha256": "f48dee1dcb5ea0c63b493f80ad73e0ee7f041f41e91a838665370af6d42f1129",
+        "size": 924864
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "7ea37c248da8dd227b4a8e3e8e808c59",
+      "family": "marconi",
+      "filename_token": "v3210",
+      "last_modified": "Fri, 10 Nov 2017 14:08:05 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 924864,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3210.signed",
+      "version": "v3210"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v323-a1ba42105bde/marconiv323.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v323-a1ba42105bde.json",
+        "release_tag": "firmware-marconi-v323-a1ba42105bde",
+        "sha256": "a1ba42105bde76e6488e9d765f7cf0f2486aeee96ea2caea1f66f220a82010f4",
+        "size": 921792
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "e28817dc65d93f3da7327570f344db13",
+      "family": "marconi",
+      "filename_token": "v323",
+      "last_modified": "Tue, 02 May 2017 19:07:54 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 921792,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv323.signed",
+      "version": "v323"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3232-422c58bde6c2/marconiv3232.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v3232-422c58bde6c2.json",
+        "release_tag": "firmware-marconi-v3232-422c58bde6c2",
+        "sha256": "422c58bde6c2f9f0696d162fd654e009425d881717ad4dd06055a3dcedd66690",
+        "size": 934080
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "f3fc094cfb860899653b5c484862a03e",
+      "family": "marconi",
+      "filename_token": "v3232",
+      "last_modified": "Mon, 02 Jul 2018 18:10:57 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 934080,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3232.signed",
+      "version": "v3232"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3247-c27139406dfa/marconiv3247.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v3247-c27139406dfa.json",
+        "release_tag": "firmware-marconi-v3247-c27139406dfa",
+        "sha256": "c27139406dfa41511500ea99f698a72762e374a193b6547cb95360c3bd6d25b5",
+        "size": 970944
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "4efcf65e0a98671d02b564a6efdab269",
+      "family": "marconi",
+      "filename_token": "v3247",
+      "last_modified": "Thu, 12 Sep 2019 21:35:18 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 970944,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3247.signed",
+      "version": "v3247"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3248-532674fbda38/marconiv3248.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v3248-532674fbda38.json",
+        "release_tag": "firmware-marconi-v3248-532674fbda38",
+        "sha256": "532674fbda3898672de541422dfe8f15fdd7e75f213b151cb9afe8322c8ae51a",
+        "size": 970944
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "2b7901e77d31a1501c928b1ea8869ad1",
+      "family": "marconi",
+      "filename_token": "v3248",
+      "last_modified": "Tue, 01 Oct 2019 20:27:37 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 970944,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3248.signed",
+      "version": "v3248"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v326-0b1560ea24e6/marconiv326.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v326-0b1560ea24e6.json",
+        "release_tag": "firmware-marconi-v326-0b1560ea24e6",
+        "sha256": "0b1560ea24e6c2998ad64d1d12945b267332a7f489556bd21841b5f8ec3806fb",
+        "size": 921792
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "a0a626589b5fa44217891ae030c09643",
+      "family": "marconi",
+      "filename_token": "v326",
+      "last_modified": "Thu, 18 May 2017 20:07:15 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 921792,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv326.signed",
+      "version": "v326"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v327-658060c2ff16/marconiv327.signed",
         "component_count": 0,
         "format": "irobot-apkg",
@@ -612,6 +774,276 @@
     },
     {
       "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v329-881df6614e49/marconiv329.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v329-881df6614e49.json",
+        "release_tag": "firmware-marconi-v329-881df6614e49",
+        "sha256": "881df6614e490d1e8c2f87f274432144b35536fb15947ee062f90f4a5ab86f9d",
+        "size": 923840
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "db3a0c56f04da6d7265c894292e412b5",
+      "family": "marconi",
+      "filename_token": "v329",
+      "last_modified": "Thu, 17 Aug 2017 14:18:15 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 923840,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv329.signed",
+      "version": "v329"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3343-3a5350eaf788/marconiv3343.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v3343-3a5350eaf788.json",
+        "release_tag": "firmware-marconi-v3343-3a5350eaf788",
+        "sha256": "3a5350eaf7889283741698b540ee0a910d3a0fd388fb0a64da9cad935ec8b554",
+        "size": 936128
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "e1006d59749110acff71616708082711",
+      "family": "marconi",
+      "filename_token": "v3343",
+      "last_modified": "Thu, 17 Jan 2019 20:46:01 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 936128,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3343.signed",
+      "version": "v3343"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-marconi-v3552-88bcefc9e3a7/marconiv3552.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/marconi/v3552-88bcefc9e3a7.json",
+        "release_tag": "firmware-marconi-v3552-88bcefc9e3a7",
+        "sha256": "88bcefc9e3a7008669cbad2a7f2064aab6517aff910b88a740f8d273664181b1",
+        "size": 970944
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "3549a498304448f0ee9056e558611524",
+      "family": "marconi",
+      "filename_token": "v3552",
+      "last_modified": "Mon, 28 Oct 2019 19:00:20 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/marconiv{token}.signed"
+      },
+      "size": 970944,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/marconiv3552.signed",
+      "version": "v3552"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2291-304e69cf124b/roomba9xxv2291.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/roomba9xx/v2291-304e69cf124b.json",
+        "release_tag": "firmware-roomba9xx-v2291-304e69cf124b",
+        "sha256": "304e69cf124bb053cafe17ae2b3e7c0245cba952932058c037901063ec8ebfbc",
+        "size": 2829800
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "baaf34c2a4adb12ab3b6182c465ec6b2",
+      "family": "roomba9xx",
+      "filename_token": "v2291",
+      "last_modified": "Thu, 18 May 2017 20:07:26 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv{token}.signed"
+      },
+      "size": 2829800,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2291.signed",
+      "version": "v2291"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2410-f1dd6e0d77cf/roomba9xxv2410.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/roomba9xx/v2410-f1dd6e0d77cf.json",
+        "release_tag": "firmware-roomba9xx-v2410-f1dd6e0d77cf",
+        "sha256": "f1dd6e0d77cf1d8ed5dd7dd9267e8738f13fdb1b213d3a8c713684e0a92100cd",
+        "size": 2856680
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "109fbc6e00ebf3f76a699cdd26855c9e",
+      "family": "roomba9xx",
+      "filename_token": "v2410",
+      "last_modified": "Thu, 26 Sep 2019 19:42:37 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv{token}.signed"
+      },
+      "size": 2856680,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2410.signed",
+      "version": "v2410"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2411-e1e7cb238dc2/roomba9xxv2411.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/roomba9xx/v2411-e1e7cb238dc2.json",
+        "release_tag": "firmware-roomba9xx-v2411-e1e7cb238dc2",
+        "sha256": "e1e7cb238dc2747fd2ca5fae543ee2bb8adc8d291842b941f449e9f2d665d798",
+        "size": 2856680
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "c63414fa020ba88c216d6db06a7368bb",
+      "family": "roomba9xx",
+      "filename_token": "v2411",
+      "last_modified": "Thu, 03 Oct 2019 17:47:31 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv{token}.signed"
+      },
+      "size": 2856680,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2411.signed",
+      "version": "v2411"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2413-3803e0c622a1/roomba9xxv2413.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/roomba9xx/v2413-3803e0c622a1.json",
+        "release_tag": "firmware-roomba9xx-v2413-3803e0c622a1",
+        "sha256": "3803e0c622a1c371d11c64809847829d791a627aa8c33db2692433961f23e0a6",
+        "size": 2857064
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "b2e200d14780525a9c35b2ec86ee20f2",
+      "family": "roomba9xx",
+      "filename_token": "v2413",
+      "last_modified": "Mon, 28 Oct 2019 19:00:29 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv{token}.signed"
+      },
+      "size": 2857064,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2413.signed",
+      "version": "v2413"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2415-f4f4712f6e77/roomba9xxv2415.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/roomba9xx/v2415-f4f4712f6e77.json",
+        "release_tag": "firmware-roomba9xx-v2415-f4f4712f6e77",
+        "sha256": "f4f4712f6e77a328ba607a2fff50016d2e0206be0eb3c35d95b98b37a9e6cdcd",
+        "size": 2826856
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "e1fde41855611b4fba8959a6516e8ae0",
+      "family": "roomba9xx",
+      "filename_token": "v2415",
+      "last_modified": "Tue, 11 Aug 2020 20:37:40 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv{token}.signed"
+      },
+      "size": 2826856,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2415.signed",
+      "version": "v2415"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2416-5fd8b21b3390/roomba9xxv2416.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/roomba9xx/v2416-5fd8b21b3390.json",
+        "release_tag": "firmware-roomba9xx-v2416-5fd8b21b3390",
+        "sha256": "5fd8b21b3390d5bfd474af08b779a93b200f876e0563eba99f1010afb4656101",
+        "size": 2826856
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "d96bbf1afc6a8be3cc93165090659b2d",
+      "family": "roomba9xx",
+      "filename_token": "v2416",
+      "last_modified": "Mon, 04 Jan 2021 17:20:54 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv{token}.signed"
+      },
+      "size": 2826856,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2416.signed",
+      "version": "v2416"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2439-2b7707ca856e/roomba9xxv2439.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/roomba9xx/v2439-2b7707ca856e.json",
+        "release_tag": "firmware-roomba9xx-v2439-2b7707ca856e",
+        "sha256": "2b7707ca856e80a1f7c8c172ad28cbb32a6925cc7fd481dc82090cb187860682",
+        "size": 2865768
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "fe889250e70e41d30b726747c330304f",
+      "family": "roomba9xx",
+      "filename_token": "v2439",
+      "last_modified": "Tue, 24 Oct 2017 15:38:09 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv{token}.signed"
+      },
+      "size": 2865768,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2439.signed",
+      "version": "v2439"
+    },
+    {
+      "archive": {
         "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2444-286848c17ef5/roomba9xxv2444.signed",
         "component_count": 0,
         "format": "irobot-apkg",
@@ -629,6 +1061,33 @@
       "track": "prod",
       "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2444.signed",
       "version": "v2444"
+    },
+    {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-roomba9xx-v2463-b8b394832d61/roomba9xxv2463.signed",
+        "component_count": 0,
+        "format": "irobot-apkg",
+        "manifest": "firmware/roomba9xx/v2463-b8b394832d61.json",
+        "release_tag": "firmware-roomba9xx-v2463-b8b394832d61",
+        "sha256": "b8b394832d6114343bad08986b12e4fc07dc379645110d92a6777d1eeab972f9",
+        "size": 2865992
+      },
+      "discovered_at": "2026-08-30T04:07:17.771417+00:00",
+      "etag": "18f90f5a5e5d822853774a2cf63a09d2",
+      "family": "roomba9xx",
+      "filename_token": "v2463",
+      "last_modified": "Tue, 05 Jun 2018 14:20:07 GMT",
+      "namespace_scan": {
+        "range_complete": true,
+        "range_end": 9999,
+        "range_start": 0,
+        "template": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv{token}.signed"
+      },
+      "size": 2865992,
+      "source": "exhaustive-numeric-backfill",
+      "track": "legacy-public-cdn",
+      "url": "https://prod-ota-firmware.iot.irobotapi.com/roomba9xxv2463.signed",
+      "version": "v2463"
     },
     {
       "archive": {
@@ -1453,5 +1912,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T04:23:27.888792+00:00"
+  "updated_at": "2026-08-30T04:30:27.066784+00:00"
 }

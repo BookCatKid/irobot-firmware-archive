@@ -126,7 +126,16 @@ def _family_from_url(url: str) -> str:
 
 
 def direct_probe(family: str, version: str, template: str) -> dict[str, Any] | None:
-    url = template.format(family=family, version=version)
+    # Legacy iRobot firmware names use more than one version encoding.  Modern
+    # packages generally preserve dots (``sapphire-24.29.03.signed``), while
+    # older families such as Marconi embed a compact dotted release version
+    # (``marconiv327.signed`` for 3.2.7).  Templates may opt into either form.
+    url = template.format(
+        family=family,
+        version=version,
+        compact=version.replace(".", ""),
+        version_compact=version.replace(".", ""),
+    )
     exists, headers = _exists(url)
     if not exists:
         return None
@@ -255,21 +264,25 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
             template = family["template"]
             for release_version in versions:
                 for candidate in version_filename_candidates(release_version):
-                    direct_tasks.append((family["family"], template, release_version, candidate))
+                    direct_tasks.append((family["family"], template, release_version, candidate, family.get("catalog_version")))
         if direct_tasks:
             def _notes_direct_task(task):
-                family_name, template, release_version, candidate = task
+                family_name, template, release_version, candidate, catalog_version = task
                 return task, direct_probe(family_name, candidate, template)
             with concurrent.futures.ThreadPoolExecutor(max_workers=min(16, len(direct_tasks))) as pool:
                 futures = {pool.submit(_notes_direct_task, task): task for task in direct_tasks}
                 for future in concurrent.futures.as_completed(futures):
-                    family_name, template, release_version, candidate = futures[future]
+                    family_name, template, release_version, candidate, catalog_version = futures[future]
                     try:
                         _, hit = future.result()
                         if hit:
                             hit["source"] = "release-notes-probe"
                             hit["release_notes_url"] = notes["url"]
                             hit["release_notes_version"] = release_version
+                            if catalog_version == "vcompact":
+                                token = release_version.replace(".", "")
+                                hit["filename_token"] = f"v{token}"
+                                hit["version"] = f"v{token}"
                             records.append(hit)
                     except Exception as exc:
                         errors.append(f"notes direct {family_name} {candidate}: {exc}")

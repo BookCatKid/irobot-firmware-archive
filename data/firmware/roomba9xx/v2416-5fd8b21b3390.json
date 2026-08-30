@@ -1,18 +1,18 @@
 {
   "components": [],
-  "filename": "roomba9xxv2444.signed",
+  "filename": "roomba9xxv2416.signed",
   "format": "irobot-apkg",
   "legacy_container": {
     "container_version": 1,
     "entries": [],
-    "entry_count": 2865688,
-    "header_u32_08": 2865688,
+    "entry_count": 2826552,
+    "header_u32_08": 2826552,
     "header_u32_0c": 256,
     "magic": "aPKG",
-    "name_hint": "roomba9xx",
+    "name_hint": "roomba9xx.2.pkg.enc",
     "trailing_bytes_after_header_u32_08": 304
   },
   "schema": 1,
-  "sha256": "286848c17ef5d19a2b98b14b11442f0408ca9eec7fc9c4a8e1e47295a5e21797",
-  "size": 2865992
+  "sha256": "5fd8b21b3390d5bfd474af08b779a93b200f876e0563eba99f1010afb4656101",
+  "size": 2826856
 }

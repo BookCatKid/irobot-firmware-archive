@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 
 from .archive import archive_blob, archive_one
-from .backfill import classic_versions, scan_direct, semantic_versions
+from .backfill import classic_versions, numeric_versions, scan_direct, semantic_versions
 from .catalog import load_catalog, merge_records, write_catalog
 from .discover import discover_from_config
 from .util import load_json
@@ -28,9 +28,16 @@ def cmd_discover(args: argparse.Namespace) -> int:
 def cmd_backfill(args: argparse.Namespace) -> int:
     if args.scheme == "classic":
         versions = classic_versions(args.year_start, args.year_end, args.patch_max)
-    else:
+    elif args.scheme == "semantic":
         versions = semantic_versions(args.major_max, args.minor_max, args.patch_max)
+    else:
+        versions = numeric_versions(args.numeric_start, args.numeric_end, args.numeric_width)
     hits = scan_direct(args.family, args.template, versions, args.workers, args.max_probes, args.pause)
+    if args.scheme == "numeric" and args.version_prefix:
+        for hit in hits:
+            token = hit["version"]
+            hit["filename_token"] = f"{args.version_prefix}{token}"
+            hit["version"] = f"{args.version_prefix}{token}"
     catalog = load_catalog(args.catalog)
     catalog, added = merge_records(catalog, hits)
     write_catalog(args.catalog, catalog)
@@ -114,12 +121,16 @@ def build_parser() -> argparse.ArgumentParser:
     backfill = sub.add_parser("backfill", help="probe historical version space; intentionally manual")
     backfill.add_argument("--family", required=True)
     backfill.add_argument("--template", required=True, help="URL template containing {family} and {version}")
-    backfill.add_argument("--scheme", choices=["classic", "semantic"], default="classic")
+    backfill.add_argument("--scheme", choices=["classic", "semantic", "numeric"], default="classic")
     backfill.add_argument("--year-start", type=int, default=17)
     backfill.add_argument("--year-end", type=int, default=26)
     backfill.add_argument("--major-max", type=int, default=15)
     backfill.add_argument("--minor-max", type=int, default=60)
     backfill.add_argument("--patch-max", type=int, default=15)
+    backfill.add_argument("--numeric-start", type=int, default=0)
+    backfill.add_argument("--numeric-end", type=int, default=9999)
+    backfill.add_argument("--numeric-width", type=int, default=0)
+    backfill.add_argument("--version-prefix", default="", help="prefix numeric catalog versions, e.g. v -> v2444")
     backfill.add_argument("--workers", type=int, default=4)
     backfill.add_argument("--pause", type=float, default=0.0)
     backfill.add_argument("--max-probes", type=int)
