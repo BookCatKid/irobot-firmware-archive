@@ -7,7 +7,7 @@ from typing import Any
 
 from .analyze import analyze
 from .download import download
-from .util import slug
+from .util import sha256_file, slug
 from .release_notes import render_release_notes
 
 
@@ -15,30 +15,42 @@ def release_tag(record: dict[str, Any], sha256: str) -> str:
     return f"firmware-{slug(record['family'])}-{slug(record['version'])}-{sha256[:12]}"
 
 
-def archive_one(
+def archive_blob(
     record: dict[str, Any],
+    blob: Path,
     repo: str,
     data_root: Path,
     work_root: Path,
     upload_release: bool = True,
     deep: bool = True,
+    existing_by_sha: dict[str, dict[str, Any]] | None = None,
 ) -> dict[str, Any]:
     family = slug(record["family"])
     version = slug(record["version"])
-    url_name = Path(urllib.parse.urlsplit(record["url"]).path).name or f"{family}-{version}.signed"
     work = work_root / f"{family}-{version}"
     work.mkdir(parents=True, exist_ok=True)
-    blob = work / url_name
-    dl = download(record["url"], blob, record.get("size"))
-    sha = str(dl["sha256"])
+    sha = sha256_file(blob)
+    size = blob.stat().st_size
     manifest_rel = Path("firmware") / family / f"{version}-{sha[:12]}.json"
     manifest_path = data_root / manifest_rel
     analysis = analyze(blob, manifest_path, work / "analysis", deep=deep)
     tag = release_tag(record, sha)
     archive_url = None
+    existing = (existing_by_sha or {}).get(sha)
+    if existing:
+        return {
+            "sha256": sha,
+            "size": size,
+            "release_tag": existing.get("release_tag"),
+            "asset_url": existing.get("asset_url"),
+            "manifest": manifest_rel.as_posix(),
+            "format": analysis.get("format"),
+            "component_count": len(analysis.get("components", [])),
+            "deduplicated": True,
+        }
     if upload_release:
         title = f"{record['family']} {record['version']} · iRobot firmware"
-        notes = render_release_notes(record, analysis, sha, int(dl["size"]), data_root)
+        notes = render_release_notes(record, analysis, sha, size, data_root)
         release_notes_path = work / "RELEASE_NOTES.md"
         release_notes_path.write_text(notes)
         check = subprocess.run(["gh", "release", "view", tag, "--repo", repo], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
@@ -50,10 +62,29 @@ def archive_one(
         archive_url = f"https://github.com/{repo}/releases/download/{tag}/{urllib.parse.quote(blob.name)}"
     return {
         "sha256": sha,
-        "size": dl["size"],
+        "size": size,
         "release_tag": tag if upload_release else None,
         "asset_url": archive_url,
         "manifest": manifest_rel.as_posix(),
         "format": analysis.get("format"),
         "component_count": len(analysis.get("components", [])),
     }
+
+
+def archive_one(
+    record: dict[str, Any],
+    repo: str,
+    data_root: Path,
+    work_root: Path,
+    upload_release: bool = True,
+    deep: bool = True,
+    existing_by_sha: dict[str, dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    family = slug(record["family"])
+    version = slug(record["version"])
+    url_name = Path(urllib.parse.urlsplit(record["url"]).path).name or f"{family}-{version}.signed"
+    work = work_root / f"{family}-{version}"
+    work.mkdir(parents=True, exist_ok=True)
+    blob = work / url_name
+    download(record["url"], blob, record.get("size"))
+    return archive_blob(record, blob, repo, data_root, work_root, upload_release=upload_release, deep=deep, existing_by_sha=existing_by_sha)

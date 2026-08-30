@@ -103,7 +103,7 @@ function showDetail(f, row) {
         <p class="sub">${esc(deviceTitle(f))}${skusFor(f).length ? ` · ${esc(skusFor(f).join(', '))}` : ''}</p>
       </div>
       <div class="detail-actions">
-        <a class="small-button" href="${esc(f.url)}">Original OTA ↗</a>
+        <a class="small-button" href="${esc(f.url)}">${f.source === 'app-embedded' ? 'Source app' : 'Original OTA'} ↗</a>
         ${f.metapackage_url ? `<a class="small-button" href="${esc(f.metapackage_url)}">Metapackage ↗</a>` : ''}
         ${releaseUrl ? `<a class="small-button" href="${esc(releaseUrl)}">GitHub release ↗</a>` : ''}
         ${archive.asset_url ? `<a class="small-button" href="${esc(archive.asset_url)}">Archived file ↓</a>` : ''}

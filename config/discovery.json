@@ -67,6 +67,258 @@
         "22.29.6"
       ],
       "track": "prod"
+    },
+    {
+      "sku": "a211620",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "p111620",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "R111840",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "B240080",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "Y014020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "Q012020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "i310020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "i115020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "i710020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "j915020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "m610820",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "R980020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "s915820",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "t721820",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "x010020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "R185020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "N285020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "N185020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "W155020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "K155020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "L124020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "G285020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "G185020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "Y414020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "Y351020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "Q352020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "X185020",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
+    },
+    {
+      "sku": "F155040",
+      "software_versions": [
+        "0.0.0",
+        "24.29.3"
+      ],
+      "track": "prod",
+      "evidence": "iRobot Android app SkuUtils default SKU"
     }
   ],
   "direct_families": [
@@ -102,6 +354,13 @@
       "versions": [
         "22.29.06",
         "22.29.6"
+      ]
+    },
+    {
+      "family": "congo",
+      "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed",
+      "versions": [
+        "1.1.18"
       ]
     }
   ],
@@ -148,6 +407,56 @@
           "family": "sanmarino",
           "template": "https://prod-ota-firmware.iot.irobotapi.com/{family}-{version}.signed"
         }
+      ]
+    },
+    {
+      "name": "roomba-100",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
+      "api_skus": [
+        "Q352020",
+        "Y351020"
+      ]
+    },
+    {
+      "name": "roomba-200",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
+      "api_skus": [
+        "L124020",
+        "F155040"
+      ]
+    },
+    {
+      "name": "roomba-plus-400",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
+      "api_skus": [
+        "G185020",
+        "G285020"
+      ]
+    },
+    {
+      "name": "roomba-plus-500",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/50550",
+      "api_skus": [
+        "N185020",
+        "N285020",
+        "R185020"
+      ]
+    },
+    {
+      "name": "roomba-max-700",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/70550",
+      "api_skus": [
+        "K155020",
+        "W155020",
+        "X185020"
+      ]
+    },
+    {
+      "name": "roomba-essential",
+      "url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
+      "api_skus": [
+        "Q012020",
+        "Y014020"
       ]
     }
   ]

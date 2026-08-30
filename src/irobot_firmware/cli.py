@@ -5,11 +5,12 @@ import json
 import os
 from pathlib import Path
 
-from .archive import archive_one
+from .archive import archive_blob, archive_one
 from .backfill import classic_versions, scan_direct, semantic_versions
 from .catalog import load_catalog, merge_records, write_catalog
 from .discover import discover_from_config
 from .util import load_json
+from datetime import datetime, timezone
 
 ROOT = Path.cwd()
 DEFAULT_CATALOG = Path("data/catalog.json")
@@ -47,6 +48,11 @@ def cmd_archive(args: argparse.Namespace) -> int:
     if args.limit:
         pending = pending[: args.limit]
     print(f"pending: {len(pending)}")
+    existing_by_sha = {
+        x.get("archive", {}).get("sha256"): x.get("archive")
+        for x in catalog.get("firmwares", [])
+        if x.get("archive", {}).get("sha256")
+    }
     if args.dry_run:
         for item in pending:
             print(f"DRY {item['family']} {item['version']} {item['url']}")
@@ -62,8 +68,37 @@ def cmd_archive(args: argparse.Namespace) -> int:
             args.work_dir,
             upload_release=not args.no_upload,
             deep=not args.shallow,
+            existing_by_sha=existing_by_sha,
         )
+        if item.get("archive", {}).get("sha256"):
+            existing_by_sha[item["archive"]["sha256"]] = item["archive"]
         write_catalog(args.catalog, catalog)
+    return 0
+
+
+def cmd_import_file(args: argparse.Namespace) -> int:
+    if not args.path.is_file():
+        raise SystemExit(f"file not found: {args.path}")
+    if not args.repo and not args.no_upload:
+        raise SystemExit("--repo OWNER/REPO is required unless --no-upload")
+    source_url = args.source_url or f"app-embedded://{args.source_package or 'unknown'}/{args.source_app_version or 'unknown'}/{args.source_resource or args.path.name}"
+    record = {
+        "family": args.family,
+        "version": args.version,
+        "url": source_url,
+        "source": args.source,
+        "source_package": args.source_package,
+        "source_app_version": args.source_app_version,
+        "source_resource": args.source_resource,
+        "discovered_at": datetime.now(timezone.utc).isoformat(),
+        "track": args.track,
+    }
+    catalog = load_catalog(args.catalog)
+    catalog, _ = merge_records(catalog, [record])
+    item = next(x for x in catalog["firmwares"] if x.get("family") == args.family and x.get("version") == args.version and x.get("url") == source_url)
+    item["archive"] = archive_blob(item, args.path, args.repo or "local/no-upload", Path("data"), args.work_dir, upload_release=not args.no_upload, deep=not args.shallow)
+    write_catalog(args.catalog, catalog)
+    print(json.dumps(item, indent=2))
     return 0
 
 
@@ -100,6 +135,22 @@ def build_parser() -> argparse.ArgumentParser:
     archive.add_argument("--shallow", action="store_true", help="skip SquashFS extraction/file hashing")
     archive.add_argument("--work-dir", type=Path, default=Path("work"))
     archive.set_defaults(func=cmd_archive)
+
+    imp = sub.add_parser("import-file", help="archive a firmware payload obtained outside the OTA downloader (for example embedded in an official app)")
+    imp.add_argument("path", type=Path)
+    imp.add_argument("--family", required=True)
+    imp.add_argument("--version", required=True)
+    imp.add_argument("--repo", default=os.getenv("GITHUB_REPOSITORY"))
+    imp.add_argument("--source", default="app-embedded")
+    imp.add_argument("--source-package")
+    imp.add_argument("--source-app-version")
+    imp.add_argument("--source-resource")
+    imp.add_argument("--source-url")
+    imp.add_argument("--track", default="app-bundled")
+    imp.add_argument("--no-upload", action="store_true")
+    imp.add_argument("--shallow", action="store_true")
+    imp.add_argument("--work-dir", type=Path, default=Path("work"))
+    imp.set_defaults(func=cmd_import_file)
     return parser
 
 

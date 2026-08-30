@@ -34,8 +34,15 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
     platform = platform_metadata(record, data_root)
     models = platform.get("models") or []
     skus = sorted(set((platform.get("known_skus") or []) + ([record["source_sku"]] if record.get("source_sku") else [])))
+    origin_blurb = (
+        "This release preserves an **unmodified iRobot firmware payload embedded in an official iRobot app**."
+        if record.get("source") == "app-embedded"
+        else "This release preserves an **unmodified iRobot OTA package** exactly as it was retrieved from iRobot infrastructure."
+    )
+    source_heading = "Original app source" if record.get("source") == "app-embedded" else "Original OTA source"
+    source_link_label = "source app" if record.get("source") == "app-embedded" else "original iRobot package"
     lines = [
-        "This release preserves an **unmodified iRobot OTA package** exactly as it was retrieved from iRobot infrastructure.",
+        origin_blurb,
         "",
         "## Identity",
         "",
@@ -57,11 +64,14 @@ def render_release_notes(record: dict[str, Any], analysis: dict[str, Any], sha25
         lines += [f"> {platform['description']}", ""]
 
     lines += [
-        "## Original OTA source",
+        f"## {source_heading}",
         "",
         "| Field | Value |",
         "| --- | --- |",
-        f"| Package URL | {_link('original iRobot package', record.get('url'))} |",
+        f"| Package / source URL | {_link(source_link_label, record.get('url'))} |",
+        f"| Source app package | {_code(record.get('source_package'))} |",
+        f"| Source app version | {_code(record.get('source_app_version'))} |",
+        f"| Embedded resource | {_code(record.get('source_resource'))} |",
         f"| Metapackage URL | {_link('iRobot metapackage', record.get('metapackage_url'))} |",
         f"| Deployment package | {_code(record.get('deployment_mpkg'))} |",
         f"| Discovery method | {_code(record.get('source'))} |",

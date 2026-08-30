@@ -30,6 +30,10 @@ The archive keeps these concepts separate:
 
 `config/platforms.json` records known associations and their confidence. The site intentionally says when a mapping is incomplete instead of guessing.
 
+## Android app intelligence
+
+The archive also statically analyzes official iRobot Android apps to recover product/SKU intelligence that is not exposed as a public model list. The derived, provenance-labelled data lives in `data/app-product-intelligence.json` and is used to expand recurring API probes without pretending internal codenames are retail model names. App-bundled firmware payloads can be archived with `irobot-fw import-file` and are stored in Releases just like cloud OTA images.
+
 ## Current discovery sources
 
 The tool supports two complementary mechanisms:

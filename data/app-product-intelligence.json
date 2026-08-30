@@ -1,0 +1,173 @@
+{
+  "schema": 1,
+  "sources": [
+    {
+      "package": "com.irobot.home",
+      "version": "7.18.0",
+      "method": "JADX 1.5.6",
+      "source_file": "com/irobot/core/SkuUtils.java"
+    },
+    {
+      "package": "com.irobot.home.prime",
+      "version": "1.7.2",
+      "method": "JADX 1.5.6",
+      "source_file": "com/irobot/core/SkuUtils.java",
+      "note": "Newest Prime build retrievable from APKPure via apkeep during analysis; newer 3.x exists publicly but was unavailable as a mirror binary."
+    }
+  ],
+  "sku_types_classic": [
+    "Unknown",
+    "China",
+    "Japan",
+    "ElPaso",
+    "Laredo",
+    "Marconi",
+    "Hertz",
+    "Series900",
+    "Altadena",
+    "Ningbo",
+    "Aero",
+    "Lewis",
+    "SanMarino",
+    "Soho",
+    "Wichita",
+    "Atlantis",
+    "Trident",
+    "Daredevil",
+    "Elektra",
+    "Sapphire",
+    "Eva",
+    "Stingray",
+    "OOB",
+    "Airbender",
+    "AirbenderLite",
+    "AirbenderPro",
+    "Lapis",
+    "Aurora",
+    "Placeholder",
+    "Ruby",
+    "CongoVacuum",
+    "CongoCombo",
+    "Boulder"
+  ],
+  "sku_types_prime_added": [
+    "Essential",
+    "EssentialCombo",
+    "EssentialComboPlus",
+    "EssentialComboMini",
+    "EssentialComboNext",
+    "EssentialComboNextPlus",
+    "Enhanced",
+    "EnhancedCombo",
+    "EnhancedComboPlus",
+    "EnhancedComboNextPlus",
+    "EnhancedMaxVac",
+    "MaxCombo",
+    "MiniCombo"
+  ],
+  "default_skus": {
+    "AirbenderLite": "a211620",
+    "AirbenderPro": "p111620",
+    "Atlantis": "R111840",
+    "Braava": "B240080",
+    "CongoCombo": "Y014020",
+    "CongoVacuum": "Q012020",
+    "Daredevil": "i310020",
+    "Eva": "i115020",
+    "Lewis": "i710020",
+    "Ruby": "j915020",
+    "SanMarino": "m610820",
+    "Sapphire": "j715020",
+    "Series900": "R980020",
+    "Soho": "s915820",
+    "Wichita": "t721820",
+    "Stingray": "x010020",
+    "EnhancedComboNextPlus": "R185020",
+    "EnhancedComboPlus": "N285020",
+    "EnhancedCombo": "N185020",
+    "EnhancedMaxVac": "W155020",
+    "Enhanced": "K155020",
+    "EssentialComboMini": "L124020",
+    "EssentialComboNextPlus": "G285020",
+    "EssentialComboNext": "G185020",
+    "EssentialComboPlus": "Y414020",
+    "EssentialCombo": "Y351020",
+    "Essential": "Q352020",
+    "MaxCombo": "X185020",
+    "MiniCombo": "F155040"
+  },
+  "app_resource_model_names": {
+    "Airbender": "Klaara a7",
+    "AirbenderPro": "Klaara p7",
+    "Altadena": "Braava jet 240",
+    "SanMarino": "Braava jet m6",
+    "Prime105": "Roomba 100 (1000) Series Vac/Combo robot",
+    "Prime205": "Roomba 200 (2000) Series DustCompactor robot",
+    "Prime405": "Roomba Plus 400 Series Combo robot",
+    "Prime504": "Roomba Plus 500 Series Vac robot",
+    "Prime505": "Roomba Plus 500 Series Combo robot",
+    "Prime705": "Roomba Max 700 Series Vac robot",
+    "Prime705Combo": "Roomba Max 700 Series Combo robot",
+    "PrimeMini": "Roomba Mini"
+  },
+  "software_evidence": [
+    {
+      "sku": "i710020",
+      "softwareVer": "lewis+3.0.11+lewis-release-rt319+14",
+      "source": "app simulator"
+    },
+    {
+      "sku": "j915020",
+      "softwareVer": "ruby+1.2.12+Firmware-Production+57",
+      "source": "app simulator"
+    },
+    {
+      "sku": "j755840",
+      "softwareVer": "sapphire+1.2.12+Firmware-Production+57",
+      "source": "app simulator"
+    },
+    {
+      "sku": "m611020",
+      "softwareVer": "sanmarino+3.0.10+sanmarino-release-rt319+11",
+      "source": "app simulator"
+    },
+    {
+      "sku": "s910020",
+      "softwareVer": "soho+1.14.17+soho-releases+98",
+      "source": "app simulator"
+    },
+    {
+      "sku": "s955020",
+      "softwareVer": "soho+22.52.0-2023-01-04-8b9f05286f3+PR-43265+1",
+      "source": "app simulator"
+    },
+    {
+      "sku": "xst0020",
+      "softwareVer": "stingray+0.10.6-20210826+stingray-release+54",
+      "source": "app simulator"
+    },
+    {
+      "sku": "x010020",
+      "softwareVer": "topaz+1.6.9-topaz-v1.6.9+Firmware-Build+67607",
+      "source": "app simulator",
+      "note": "Conflicts with Prime SkuUtils DEFAULT_STINGRAY_SKU=x010020; retained as separate evidence rather than merged."
+    },
+    {
+      "sku": "R111840",
+      "softwareVer": "3.2.10+32",
+      "source": "app simulator"
+    }
+  ],
+  "embedded_firmware": [
+    {
+      "platform": "altadena",
+      "version": "4.60.0",
+      "resource": "res/raw/altadena_d_4_60_0.enc",
+      "source_package": "com.irobot.home",
+      "source_version": "7.18.0",
+      "sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
+      "size": 245784,
+      "note": "Braava jet 240 update payload embedded in the Classic Android app; filename supplies version."
+    }
+  ]
+}

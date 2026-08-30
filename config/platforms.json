@@ -5,74 +5,185 @@
       "type": "internal firmware platform/codename",
       "display_name": "Sapphire",
       "description": "Internal firmware platform identifier observed in Roomba j7-series softwareVer strings and OTA filenames.",
-      "models": ["Roomba j7", "Roomba j7+"],
-      "known_skus": ["j715020", "j755020"],
+      "models": [
+        "Roomba j7",
+        "Roomba j7+"
+      ],
+      "known_skus": [
+        "j715020",
+        "j755020",
+        "j755840"
+      ],
       "confidence": "confirmed",
       "evidence": [
-        {"kind": "robot-report", "sku": "j715020", "software_prefix": "sapphire", "note": "Observed directly from a j715020 robot during archive development."},
-        {"kind": "public-report", "sku": "j755020", "software_prefix": "sapphire", "url": "https://github.com/home-assistant/core/issues/111599"}
+        {
+          "kind": "robot-report",
+          "sku": "j715020",
+          "software_prefix": "sapphire",
+          "note": "Observed directly from a j715020 robot during archive development."
+        },
+        {
+          "kind": "public-report",
+          "sku": "j755020",
+          "software_prefix": "sapphire",
+          "url": "https://github.com/home-assistant/core/issues/111599"
+        },
+        {
+          "kind": "android-app-default-sku",
+          "sku": "j715020",
+          "sku_type": "Sapphire",
+          "app": "com.irobot.home 7.18.0"
+        }
       ]
     },
     "lewis": {
       "type": "internal firmware platform/codename",
       "display_name": "Lewis",
       "description": "Internal firmware platform identifier used by multiple i-series Roombas across several software generations.",
-      "models": ["Roomba i-series"],
-      "known_skus": ["i715020", "i715840"],
+      "models": [
+        "Roomba i-series"
+      ],
+      "known_skus": [
+        "i710020",
+        "i715020",
+        "i715840"
+      ],
       "confidence": "confirmed",
       "evidence": [
-        {"kind": "public-report", "sku": "i715020", "software_prefix": "lewis", "url": "https://github.com/NickWaterton/Roomba980-Python/issues/80"},
-        {"kind": "public-report", "sku": "i715840", "software_prefix": "lewis", "url": "https://github.com/homebridge-plugins/homebridge-gsh/issues/19"}
+        {
+          "kind": "public-report",
+          "sku": "i715020",
+          "software_prefix": "lewis",
+          "url": "https://github.com/NickWaterton/Roomba980-Python/issues/80"
+        },
+        {
+          "kind": "public-report",
+          "sku": "i715840",
+          "software_prefix": "lewis",
+          "url": "https://github.com/homebridge-plugins/homebridge-gsh/issues/19"
+        },
+        {
+          "kind": "android-app-simulator",
+          "sku": "i710020",
+          "software_prefix": "lewis",
+          "app": "com.irobot.home 7.18.0"
+        }
       ]
     },
     "sanmarino": {
       "type": "internal firmware platform/codename",
       "display_name": "Sanmarino",
       "description": "Internal firmware platform identifier observed on Braava jet m6 robots.",
-      "models": ["Braava jet m6"],
-      "known_skus": ["m611020", "m611320", "m613440"],
+      "models": [
+        "Braava jet m6"
+      ],
+      "known_skus": [
+        "m610820",
+        "m611020",
+        "m611320",
+        "m613440"
+      ],
       "confidence": "confirmed",
       "evidence": [
-        {"kind": "public-report", "sku": "m611020", "software_prefix": "sanmarino", "url": "https://github.com/koalazak/dorita980/issues/208"}
+        {
+          "kind": "public-report",
+          "sku": "m611020",
+          "software_prefix": "sanmarino",
+          "url": "https://github.com/koalazak/dorita980/issues/208"
+        }
       ]
     },
     "soho": {
       "type": "internal firmware platform/codename",
       "display_name": "Soho",
       "description": "Internal firmware platform identifier observed on Roomba s9-series robots.",
-      "models": ["Roomba s9", "Roomba s9+"],
-      "known_skus": ["s955800"],
+      "models": [
+        "Roomba s9",
+        "Roomba s9+"
+      ],
+      "known_skus": [
+        "s910020",
+        "s915820",
+        "s955020",
+        "s955800"
+      ],
       "confidence": "confirmed",
       "evidence": [
-        {"kind": "public-report", "model": "Roomba s9+", "software_prefix": "soho", "url": "https://github.com/home-assistant/core/issues/108169"}
+        {
+          "kind": "public-report",
+          "model": "Roomba s9+",
+          "software_prefix": "soho",
+          "url": "https://github.com/home-assistant/core/issues/108169"
+        }
       ]
     },
     "ruby": {
       "type": "internal firmware platform/codename",
       "display_name": "Ruby",
       "description": "Internal firmware platform identifier observed on j9-class SKU j955020. Exact retail-model coverage is intentionally left broader until more reports are collected.",
-      "models": ["Roomba j9-series hardware (coverage incomplete)"],
-      "known_skus": ["j955020"],
+      "models": [
+        "Roomba j9-series hardware (coverage incomplete)"
+      ],
+      "known_skus": [
+        "j915020",
+        "j955020"
+      ],
       "confidence": "partial",
       "evidence": [
-        {"kind": "public-report", "sku": "j955020", "software_prefix": "ruby", "url": "https://github.com/home-assistant/core/issues/112544"}
+        {
+          "kind": "public-report",
+          "sku": "j955020",
+          "software_prefix": "ruby",
+          "url": "https://github.com/home-assistant/core/issues/112544"
+        },
+        {
+          "kind": "android-app-default-sku",
+          "sku": "j915020",
+          "sku_type": "Ruby",
+          "app": "com.irobot.home 7.18.0"
+        }
       ]
     },
     "stingray": {
       "type": "internal firmware platform/codename",
       "display_name": "Stingray",
       "description": "Internal firmware platform identifier observed on j9-series software. Retail-model coverage is still being mapped.",
-      "models": ["Roomba j9-series hardware (coverage incomplete)"],
-      "known_skus": [],
+      "models": [
+        "Roomba j9-series hardware (coverage incomplete)"
+      ],
+      "known_skus": [
+        "x010020",
+        "xst0020"
+      ],
       "confidence": "partial",
-      "evidence": []
+      "evidence": [
+        {
+          "kind": "android-app-simulator",
+          "sku": "xst0020",
+          "software_prefix": "stingray",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "android-app-default-sku",
+          "sku": "x010020",
+          "sku_type": "Stingray",
+          "app": "com.irobot.home.prime 1.7.2",
+          "note": "Same SKU appears as topaz in simulator data; mapping intentionally flagged as conflicting."
+        }
+      ]
     },
     "405": {
       "type": "OTA deployment family identifier",
       "display_name": "405",
       "description": "Directory/deployment identifier returned by iRobot's firmware API. It should not be treated as a retail model name.",
-      "models": [],
-      "known_skus": ["g100000"],
+      "models": [
+        "Roomba Plus 400 Series Combo family"
+      ],
+      "known_skus": [
+        "G185020",
+        "G285020",
+        "g100000"
+      ],
       "confidence": "backend-only",
       "evidence": []
     },
@@ -80,8 +191,15 @@
       "type": "OTA deployment family identifier",
       "display_name": "505",
       "description": "Directory/deployment identifier returned by iRobot's firmware API. It should not be treated as a retail model name.",
-      "models": [],
-      "known_skus": ["n100000"],
+      "models": [
+        "Roomba Plus 500 Series family"
+      ],
+      "known_skus": [
+        "N185020",
+        "N285020",
+        "R185020",
+        "n100000"
+      ],
       "confidence": "backend-only",
       "evidence": []
     },
@@ -89,10 +207,171 @@
       "type": "OTA deployment family identifier",
       "display_name": "705",
       "description": "Directory/deployment identifier returned by iRobot's firmware API. It should not be treated as a retail model name.",
-      "models": [],
-      "known_skus": ["w100000"],
+      "models": [
+        "Roomba Max 700 Series family"
+      ],
+      "known_skus": [
+        "K155020",
+        "W155020",
+        "X185020",
+        "w100000"
+      ],
       "confidence": "backend-only",
       "evidence": []
+    },
+    "congo": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Congo",
+      "description": "Firmware platform returned by the iRobot API for original Roomba Essential vacuum/combo default SKUs.",
+      "models": [
+        "Roomba Vac Essential",
+        "Roomba Combo Essential"
+      ],
+      "known_skus": [
+        "Q012020",
+        "Y014020"
+      ],
+      "confidence": "confirmed",
+      "evidence": [
+        {
+          "kind": "android-app-default-sku",
+          "sku": "Q012020",
+          "sku_type": "CongoVacuum",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "android-app-default-sku",
+          "sku": "Y014020",
+          "sku_type": "CongoCombo",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "content-api",
+          "note": "Both SKUs return congo 1.1.18."
+        }
+      ]
+    },
+    "topaz": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Topaz",
+      "description": "Firmware prefix present in Android app simulator data for x010020; the same SKU is also labelled Stingray by a newer SkuUtils table, so this relationship is unresolved.",
+      "models": [],
+      "known_skus": [
+        "x010020"
+      ],
+      "confidence": "conflicting",
+      "evidence": [
+        {
+          "kind": "android-app-simulator",
+          "sku": "x010020",
+          "software_prefix": "topaz",
+          "software_version": "1.6.9",
+          "app": "com.irobot.home 7.18.0"
+        }
+      ]
+    },
+    "105v": {
+      "type": "OTA deployment family identifier",
+      "display_name": "105V",
+      "description": "Backend deployment family returned for app-derived Essential SKU Q352020.",
+      "models": [
+        "Roomba 100 (1000) Series vacuum family"
+      ],
+      "known_skus": [
+        "Q352020"
+      ],
+      "confidence": "app+backend",
+      "evidence": [
+        {
+          "kind": "android-app-default-sku",
+          "sku": "Q352020",
+          "sku_type": "Essential"
+        },
+        {
+          "kind": "content-api",
+          "sku": "Q352020",
+          "deployment_family": "105v"
+        }
+      ]
+    },
+    "105": {
+      "type": "OTA deployment family identifier",
+      "display_name": "105",
+      "description": "Backend deployment family returned for app-derived Essential Combo SKU Y351020.",
+      "models": [
+        "Roomba 100 (1000) Series combo family"
+      ],
+      "known_skus": [
+        "Y351020"
+      ],
+      "confidence": "app+backend",
+      "evidence": [
+        {
+          "kind": "android-app-default-sku",
+          "sku": "Y351020",
+          "sku_type": "EssentialCombo"
+        },
+        {
+          "kind": "content-api",
+          "sku": "Y351020",
+          "deployment_family": "105"
+        }
+      ]
+    },
+    "205": {
+      "type": "OTA deployment family identifier",
+      "display_name": "205",
+      "description": "Backend deployment family returned for app-derived Essential Combo Mini SKU L124020.",
+      "models": [
+        "Roomba 200 (2000) Series / related compact combo hardware"
+      ],
+      "known_skus": [
+        "L124020"
+      ],
+      "confidence": "app+backend",
+      "evidence": [
+        {
+          "kind": "android-app-default-sku",
+          "sku": "L124020",
+          "sku_type": "EssentialComboMini"
+        },
+        {
+          "kind": "content-api",
+          "sku": "L124020",
+          "deployment_family": "205"
+        }
+      ]
+    },
+    "altadena": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Altadena",
+      "description": "Braava jet 200-series platform. Classic iRobot Home includes a versioned Altadena firmware payload and a dedicated BLE update library.",
+      "models": [
+        "Braava jet 240"
+      ],
+      "known_skus": [
+        "B240080"
+      ],
+      "confidence": "confirmed-app",
+      "evidence": [
+        {
+          "kind": "android-app-default-sku",
+          "sku": "B240080",
+          "sku_type": "Braava/Altadena",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "android-app-resource",
+          "resource": "res/raw/altadena_d_4_60_0.enc",
+          "version": "4.60.0",
+          "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "android-app-resource-string",
+          "model": "Braava jet 240",
+          "resource": "store_altadena_series_name"
+        }
+      ]
     }
   }
 }

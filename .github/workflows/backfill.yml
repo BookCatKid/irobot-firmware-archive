@@ -22,6 +22,12 @@ on:
       year_end:
         description: "Classic scheme last YY"
         default: "26"
+      major_max:
+        description: "Semantic scheme highest major version"
+        default: "15"
+      minor_max:
+        description: "Semantic scheme highest minor version"
+        default: "60"
       patch_max:
         description: "Highest patch number to probe"
         default: "15"
@@ -67,6 +73,8 @@ jobs:
             --scheme "${{ inputs.scheme }}" \
             --year-start "${{ inputs.year_start }}" \
             --year-end "${{ inputs.year_end }}" \
+            --major-max "${{ inputs.major_max }}" \
+            --minor-max "${{ inputs.minor_max }}" \
             --patch-max "${{ inputs.patch_max }}" \
             --workers 4 --pause 0.02 "${extra[@]}"
       - name: Archive newly found packages

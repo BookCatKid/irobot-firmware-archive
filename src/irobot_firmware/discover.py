@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import concurrent.futures
 import json
 import re
 import urllib.error
@@ -161,19 +162,57 @@ def discover_from_config(config_path: Path) -> tuple[list[dict[str, Any]], list[
         except Exception as exc:
             errors.append(f"release notes {notes.get('url')}: {exc}")
             continue
+        # Some newer products do not expose a guessable direct-object filename.  The app
+        # contains default SKUs for those product families, so feed every version mentioned
+        # in the corresponding official release notes back through the content API.  The API
+        # can return different target packages depending on the supplied current version.
+        api_tasks = []
+        for sku in notes.get("api_skus", []):
+            for release_version in versions:
+                for candidate in version_filename_candidates(release_version):
+                    api_tasks.append((sku, release_version, candidate))
+        if api_tasks:
+            def _notes_api_task(task):
+                sku, release_version, candidate = task
+                return task, api_probe(sku, candidate, notes.get("track", "prod"))
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(10, len(api_tasks))) as pool:
+                futures = {pool.submit(_notes_api_task, task): task for task in api_tasks}
+                for future in concurrent.futures.as_completed(futures):
+                    sku, release_version, candidate = futures[future]
+                    try:
+                        _, api_hits = future.result()
+                        for hit in api_hits:
+                            hit["source"] = "release-notes-api"
+                            hit["release_notes_url"] = notes["url"]
+                            hit["release_notes_version"] = release_version
+                            hit["app_derived_sku"] = True
+                            records.append(hit)
+                    except Exception as exc:
+                        errors.append(f"notes api {sku} {candidate}: {exc}")
+
+        direct_tasks = []
         for family in notes.get("families", []):
             template = family["template"]
             for release_version in versions:
                 for candidate in version_filename_candidates(release_version):
+                    direct_tasks.append((family["family"], template, release_version, candidate))
+        if direct_tasks:
+            def _notes_direct_task(task):
+                family_name, template, release_version, candidate = task
+                return task, direct_probe(family_name, candidate, template)
+            with concurrent.futures.ThreadPoolExecutor(max_workers=min(16, len(direct_tasks))) as pool:
+                futures = {pool.submit(_notes_direct_task, task): task for task in direct_tasks}
+                for future in concurrent.futures.as_completed(futures):
+                    family_name, template, release_version, candidate = futures[future]
                     try:
-                        hit = direct_probe(family["family"], candidate, template)
+                        _, hit = future.result()
                         if hit:
                             hit["source"] = "release-notes-probe"
                             hit["release_notes_url"] = notes["url"]
                             hit["release_notes_version"] = release_version
                             records.append(hit)
                     except Exception as exc:
-                        errors.append(f"notes direct {family.get('family')} {candidate}: {exc}")
+                        errors.append(f"notes direct {family_name} {candidate}: {exc}")
 
     # De-duplicate exact packages found through multiple probes while retaining the richer record.
     merged: dict[tuple[str, str, str], dict[str, Any]] = {}
