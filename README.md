@@ -2,7 +2,7 @@
 
 **Website:** [smrff.dev/irobot-firmware-archive](https://smrff.dev/irobot-firmware-archive/)
 
-An unofficial, reproducible archive/index for publicly reachable iRobot firmware. It is designed to discover firmware, preserve the original signed package, fingerprint and inspect it, and publish a static site that can diff any two analyzed builds.
+An unofficial, reproducible archive/index for publicly reachable iRobot firmware. It discovers firmware, preserves the original signed package, fingerprints and inspects it, maps internal firmware platforms to observed retail hardware, and publishes a static site that can diff any two analyzed builds.
 
 ## Why it is split this way
 
@@ -16,6 +16,19 @@ So the project uses:
 - **Actions:** daily discovery plus optional automatic archive/upload.
 
 The Pages diff does not need to download two 250 MiB packages. The archive action extracts a compact file manifest (path/type/size/SHA-256) from SquashFS components once, and the browser compares those manifests client-side.
+
+## Firmware platform names vs retail models
+
+Names such as `sapphire`, `lewis`, `sanmarino`, `soho`, `ruby`, and `stingray` are **internal firmware/platform identifiers observed in iRobot software strings and OTA packages**. They are not retail model names. Newer API results can also expose deployment identifiers such as `405`, `505`, and `705`; those are treated as backend/OTA family identifiers rather than consumer models.
+
+The archive keeps these concepts separate:
+
+- **Retail model / SKU:** e.g. Roomba j7, SKU `j715020`.
+- **Firmware platform:** e.g. `sapphire`.
+- **Firmware version:** e.g. `24.29.03`.
+- **Evidence:** public or directly observed reports tying a SKU/model to a platform.
+
+`config/platforms.json` records known associations and their confidence. The site intentionally says when a mapping is incomplete instead of guessing.
 
 ## Current discovery sources
 
@@ -55,8 +68,10 @@ When archiving is enabled, each pending build is:
 3. parsed for signed `Otps`/`Otie` components;
 4. checked against component hashes embedded in the package where available;
 5. SquashFS components are extracted and file-hashed;
-6. the original package is uploaded as a GitHub Release asset;
+6. the original package **and its machine-readable analysis manifest** are uploaded as GitHub Release assets;
 7. the compact manifest is committed to `data/firmware/`.
+
+Every GitHub Release body is generated from the catalog + parsed package and includes the firmware platform, associated retail models/SKUs and mapping confidence, version/release date, original package URL, metapackage URL, discovery method and probe SKU, track/signing/fused fields, ETag/Last-Modified, archive SHA-256/size/format, a complete top-level signed-component table with integrity results, SquashFS file counts and key identity/version files, platform↔hardware evidence, and the raw discovery JSON.
 
 The daily job processes at most six pending builds per run to keep Actions/runtime/storage bursts under control.
 

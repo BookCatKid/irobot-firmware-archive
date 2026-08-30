@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "platforms": {
+    "sapphire": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Sapphire",
+      "description": "Internal firmware platform identifier observed in Roomba j7-series softwareVer strings and OTA filenames.",
+      "models": ["Roomba j7", "Roomba j7+"],
+      "known_skus": ["j715020", "j755020"],
+      "confidence": "confirmed",
+      "evidence": [
+        {"kind": "robot-report", "sku": "j715020", "software_prefix": "sapphire", "note": "Observed directly from a j715020 robot during archive development."},
+        {"kind": "public-report", "sku": "j755020", "software_prefix": "sapphire", "url": "https://github.com/home-assistant/core/issues/111599"}
+      ]
+    },
+    "lewis": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Lewis",
+      "description": "Internal firmware platform identifier used by multiple i-series Roombas across several software generations.",
+      "models": ["Roomba i-series"],
+      "known_skus": ["i715020", "i715840"],
+      "confidence": "confirmed",
+      "evidence": [
+        {"kind": "public-report", "sku": "i715020", "software_prefix": "lewis", "url": "https://github.com/NickWaterton/Roomba980-Python/issues/80"},
+        {"kind": "public-report", "sku": "i715840", "software_prefix": "lewis", "url": "https://github.com/homebridge-plugins/homebridge-gsh/issues/19"}
+      ]
+    },
+    "sanmarino": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Sanmarino",
+      "description": "Internal firmware platform identifier observed on Braava jet m6 robots.",
+      "models": ["Braava jet m6"],
+      "known_skus": ["m611020", "m611320", "m613440"],
+      "confidence": "confirmed",
+      "evidence": [
+        {"kind": "public-report", "sku": "m611020", "software_prefix": "sanmarino", "url": "https://github.com/koalazak/dorita980/issues/208"}
+      ]
+    },
+    "soho": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Soho",
+      "description": "Internal firmware platform identifier observed on Roomba s9-series robots.",
+      "models": ["Roomba s9", "Roomba s9+"],
+      "known_skus": ["s955800"],
+      "confidence": "confirmed",
+      "evidence": [
+        {"kind": "public-report", "model": "Roomba s9+", "software_prefix": "soho", "url": "https://github.com/home-assistant/core/issues/108169"}
+      ]
+    },
+    "ruby": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Ruby",
+      "description": "Internal firmware platform identifier observed on j9-class SKU j955020. Exact retail-model coverage is intentionally left broader until more reports are collected.",
+      "models": ["Roomba j9-series hardware (coverage incomplete)"],
+      "known_skus": ["j955020"],
+      "confidence": "partial",
+      "evidence": [
+        {"kind": "public-report", "sku": "j955020", "software_prefix": "ruby", "url": "https://github.com/home-assistant/core/issues/112544"}
+      ]
+    },
+    "stingray": {
+      "type": "internal firmware platform/codename",
+      "display_name": "Stingray",
+      "description": "Internal firmware platform identifier observed on j9-series software. Retail-model coverage is still being mapped.",
+      "models": ["Roomba j9-series hardware (coverage incomplete)"],
+      "known_skus": [],
+      "confidence": "partial",
+      "evidence": []
+    },
+    "405": {
+      "type": "OTA deployment family identifier",
+      "display_name": "405",
+      "description": "Directory/deployment identifier returned by iRobot's firmware API. It should not be treated as a retail model name.",
+      "models": [],
+      "known_skus": ["g100000"],
+      "confidence": "backend-only",
+      "evidence": []
+    },
+    "505": {
+      "type": "OTA deployment family identifier",
+      "display_name": "505",
+      "description": "Directory/deployment identifier returned by iRobot's firmware API. It should not be treated as a retail model name.",
+      "models": [],
+      "known_skus": ["n100000"],
+      "confidence": "backend-only",
+      "evidence": []
+    },
+    "705": {
+      "type": "OTA deployment family identifier",
+      "display_name": "705",
+      "description": "Directory/deployment identifier returned by iRobot's firmware API. It should not be treated as a retail model name.",
+      "models": [],
+      "known_skus": ["w100000"],
+      "confidence": "backend-only",
+      "evidence": []
+    }
+  }
+}

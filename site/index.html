@@ -4,47 +4,90 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark">
+  <meta name="description" content="An unofficial archive and diff browser for publicly reachable iRobot firmware packages.">
   <title>iRobot Firmware Archive</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="topbar">
+    <a class="brand" href="./">iRobot Firmware Archive</a>
+    <nav>
+      <a href="#catalog-section">Catalog</a>
+      <a href="#compare-section">Compare</a>
+      <a href="https://github.com/BookCatKid/irobot-firmware-archive">GitHub ↗</a>
+    </nav>
+  </header>
+
   <main>
-    <header>
+    <section class="intro">
       <div>
-        <p class="eyebrow">COMMUNITY ARCHIVE</p>
-        <h1>iRobot Firmware Archive</h1>
-        <p class="lede">Publicly discoverable iRobot firmware packages, fingerprints, extracted metadata, and filesystem-level comparisons.</p>
+        <h1>Firmware, preserved.</h1>
+        <p>Original signed iRobot OTA packages, technical metadata, hardware associations, and filesystem-level diffs.</p>
       </div>
-      <div class="header-actions">
-        <a id="repoLink" class="button secondary" href="https://github.com/BookCatKid/irobot-firmware-archive">GitHub</a>
-      </div>
-    </header>
+      <div id="summary" class="summary-line">Loading catalog…</div>
+    </section>
 
-    <section id="stats" class="stats"></section>
-
-    <section class="panel compare">
-      <div class="section-title">
-        <div><p class="eyebrow">COMPARE</p><h2>Diff two firmware builds</h2></div>
-        <button id="swap" class="button secondary">Swap</button>
+    <section id="catalog-section">
+      <div class="section-head">
+        <div>
+          <h2>Firmware catalog</h2>
+          <p>“Platform” is iRobot's internal firmware identifier, not necessarily a retail model name.</p>
+        </div>
       </div>
+
+      <div class="toolbar">
+        <input id="search" type="search" autocomplete="off" placeholder="Search model, SKU, platform, version…">
+        <select id="platformFilter" aria-label="Filter by firmware platform"><option value="">All platforms</option></select>
+        <select id="statusFilter" aria-label="Filter by archive status">
+          <option value="">All states</option>
+          <option value="archived">Archived</option>
+          <option value="discovered">Discovered only</option>
+        </select>
+        <span id="resultCount" class="result-count"></span>
+      </div>
+
+      <div class="table-wrap">
+        <table class="firmware-table">
+          <thead>
+            <tr>
+              <th>Model / hardware</th>
+              <th>Firmware platform</th>
+              <th>Version</th>
+              <th>Released</th>
+              <th>Size</th>
+              <th>State</th>
+            </tr>
+          </thead>
+          <tbody id="catalog"></tbody>
+        </table>
+      </div>
+
+      <aside id="detail" class="detail" hidden></aside>
+    </section>
+
+    <section id="compare-section" class="compare-section">
+      <div class="section-head compare-head">
+        <div>
+          <h2>Compare builds</h2>
+          <p>Archived builds can be compared down to signed components and individual root-filesystem files.</p>
+        </div>
+        <button id="swap" class="quiet-button" type="button">Swap A / B</button>
+      </div>
+
       <div class="compare-controls">
         <label>Build A<select id="leftSelect"></select></label>
         <label>Build B<select id="rightSelect"></select></label>
-        <button id="compareButton" class="button">Compare</button>
+        <button id="compareButton" class="primary-button" type="button">Compare</button>
       </div>
-      <div id="diffResult" class="diff-result muted">Choose two builds. Archived builds get component and root-filesystem diffs.</div>
+      <div id="diffResult" class="diff-result empty-state">Select two builds to compare.</div>
     </section>
-
-    <section class="panel">
-      <div class="section-title">
-        <div><p class="eyebrow">CATALOG</p><h2>Known firmware</h2></div>
-        <input id="search" type="search" placeholder="Filter family, version, SKU…">
-      </div>
-      <div id="catalog" class="catalog"></div>
-    </section>
-
-    <footer>Unofficial community project. Firmware copyrights and trademarks belong to their respective owners.</footer>
   </main>
+
+  <footer>
+    <span>Unofficial community archive. Firmware remains the property of its respective copyright holders.</span>
+    <a href="https://github.com/BookCatKid/irobot-firmware-archive">Source</a>
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>

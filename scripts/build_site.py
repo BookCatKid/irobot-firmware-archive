@@ -7,4 +7,5 @@ if out.exists():
     shutil.rmtree(out)
 shutil.copytree(root / "site", out)
 shutil.copytree(root / "data", out / "data")
+shutil.copy2(root / "config" / "platforms.json", out / "data" / "platforms.json")
 print(out)

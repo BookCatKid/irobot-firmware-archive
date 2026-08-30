@@ -8,6 +8,7 @@ from pathlib import Path
 from irobot_firmware.analyze import analyze
 from irobot_firmware.backfill import classic_versions
 from irobot_firmware.catalog import empty_catalog, merge_records
+from irobot_firmware.release_notes import render_release_notes
 
 
 class CatalogTests(unittest.TestCase):
@@ -24,6 +25,26 @@ class CatalogTests(unittest.TestCase):
         values = set(classic_versions(24, 24, 0))
         self.assertIn("24.1.0", values)
         self.assertIn("24.01.00", values)
+
+    def test_release_notes_include_provenance(self):
+        record = {
+            "family": "sapphire", "version": "24.29.03",
+            "url": "https://example.invalid/sapphire-24.29.03.signed",
+            "source": "direct-probe", "source_sku": "j715020", "track": "prod",
+        }
+        analysis = {
+            "filename": "sapphire-24.29.03.signed", "format": "irobot-otps",
+            "components": [{
+                "name": "SYSTEM", "kind": "squashfs", "size": 42,
+                "sha256": "a" * 64, "metadata_hash_verified": True,
+            }],
+        }
+        notes = render_release_notes(record, analysis, "b" * 64, 123, Path("data"))
+        self.assertIn("Original OTA source", notes)
+        self.assertIn("Raw discovery metadata", notes)
+        self.assertIn("Roomba j7", notes)
+        self.assertIn("SYSTEM", notes)
+        self.assertIn("https://example.invalid/sapphire-24.29.03.signed", notes)
 
     def test_synthetic_otps_component(self):
         payload = b"hello firmware"

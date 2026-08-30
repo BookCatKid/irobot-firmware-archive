@@ -8,6 +8,7 @@ from typing import Any
 from .analyze import analyze
 from .download import download
 from .util import slug
+from .release_notes import render_release_notes
 
 
 def release_tag(record: dict[str, Any], sha256: str) -> str:
@@ -36,17 +37,16 @@ def archive_one(
     tag = release_tag(record, sha)
     archive_url = None
     if upload_release:
-        title = f"{record['family']} {record['version']}"
-        notes = (
-            f"Unmodified firmware package discovered from iRobot infrastructure.\n\n"
-            f"Source: {record['url']}\n"
-            f"SHA-256: `{sha}`\n"
-            f"Size: {dl['size']} bytes\n"
-        )
+        title = f"{record['family']} {record['version']} · iRobot firmware"
+        notes = render_release_notes(record, analysis, sha, int(dl["size"]), data_root)
+        release_notes_path = work / "RELEASE_NOTES.md"
+        release_notes_path.write_text(notes)
         check = subprocess.run(["gh", "release", "view", tag, "--repo", repo], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         if check.returncode != 0:
-            subprocess.run(["gh", "release", "create", tag, "--repo", repo, "--title", title, "--notes", notes], check=True)
-        subprocess.run(["gh", "release", "upload", tag, str(blob), "--repo", repo, "--clobber"], check=True)
+            subprocess.run(["gh", "release", "create", tag, "--repo", repo, "--title", title, "--notes-file", str(release_notes_path)], check=True)
+        else:
+            subprocess.run(["gh", "release", "edit", tag, "--repo", repo, "--title", title, "--notes-file", str(release_notes_path)], check=True)
+        subprocess.run(["gh", "release", "upload", tag, str(blob), str(manifest_path), "--repo", repo, "--clobber"], check=True)
         archive_url = f"https://github.com/{repo}/releases/download/{tag}/{urllib.parse.quote(blob.name)}"
     return {
         "sha256": sha,
