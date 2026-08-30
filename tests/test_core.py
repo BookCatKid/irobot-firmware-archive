@@ -33,6 +33,37 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(merged["firmwares"][0]["archive"]["sha256"], "abc")
         self.assertEqual(merged["firmwares"][0]["size"], 12)
 
+    def test_merge_refresh_is_stable_and_only_enriches_missing_fields(self):
+        catalog = empty_catalog()
+        catalog["updated_at"] = "original-update"
+        catalog["firmwares"] = [{
+            "family": "705", "version": "8.6.2", "url": "u",
+            "source": "content-api", "source_software_ver": "3.1.23",
+            "discovered_at": "first-seen", "release_date": None,
+            "archive": {"sha256": "abc"},
+        }]
+        merged, added = merge_records(catalog, [{
+            "family": "705", "version": "8.6.2", "url": "u",
+            "source": "release-notes-api", "source_software_ver": "6.4.3",
+            "discovered_at": "later", "release_date": "2025-08-28",
+        }])
+        item = merged["firmwares"][0]
+        self.assertEqual(added, 0)
+        self.assertEqual(item["source"], "content-api")
+        self.assertEqual(item["source_software_ver"], "3.1.23")
+        self.assertEqual(item["discovered_at"], "first-seen")
+        self.assertEqual(item["release_date"], "2025-08-28")
+        self.assertEqual(item["archive"]["sha256"], "abc")
+        self.assertNotEqual(merged["updated_at"], "original-update")
+
+        stable_stamp = merged["updated_at"]
+        merged, added = merge_records(merged, [{
+            "family": "705", "version": "8.6.2", "url": "u",
+            "source": "other", "discovered_at": "even-later",
+        }])
+        self.assertEqual(added, 0)
+        self.assertEqual(merged["updated_at"], stable_stamp)
+
     def test_classic_versions_has_padded_form(self):
         values = set(classic_versions(24, 24, 0))
         self.assertIn("24.1.0", values)
