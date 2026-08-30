@@ -2,8 +2,17 @@
   "firmwares": [
     {
       "app_derived_sku": true,
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.3.0-870b20b4fba8/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/105/9.3.0-870b20b4fba8.json",
+        "release_tag": "firmware-105-9.3.0-870b20b4fba8",
+        "sha256": "870b20b4fba8a7b9eb2343122fd37b70ae293769a912ce3f698db1485ff3e0c4",
+        "size": 38353579
+      },
       "deployment_mpkg": "105/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:28.135274+00:00",
+      "discovered_at": "2026-08-30T01:37:36.226183+00:00",
       "family": "105",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-y31-y35/metapackage/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
@@ -13,43 +22,61 @@
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "Y351020",
-      "source_software_ver": "3.1.16",
+      "source_software_ver": "3.01.16",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-y31-y35/package/C3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.7.137-prod.meta.signed",
       "version": "9.3.0"
     },
     {
       "app_derived_sku": true,
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.3.0-3b2b7f5296d3/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/105v/9.3.0-3b2b7f5296d3.json",
+        "release_tag": "firmware-105v-9.3.0-3b2b7f5296d3",
+        "sha256": "3b2b7f5296d35a467385015935fd1da4264089562784c05fc2bf140bd70d579d",
+        "size": 38363998
+      },
       "deployment_mpkg": "105v/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:27.128919+00:00",
+      "discovered_at": "2026-08-30T01:37:34.692045+00:00",
       "family": "105v",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-q31-q35/metapackage/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
       "release_date": "2025-10-14",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/10550",
-      "release_notes_version": "3.1.16",
+      "release_notes_version": "6.3.1",
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "Q352020",
-      "source_software_ver": "3.1.16",
+      "source_software_ver": "6.3.1",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-q31-q35/package/V3_105_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32-ota-release-3.6.137-prod.meta.signed",
       "version": "9.3.0"
     },
     {
       "app_derived_sku": true,
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.0-73d30de4c331/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/205/9.3.0-73d30de4c331.json",
+        "release_tag": "firmware-205-9.3.0-73d30de4c331",
+        "sha256": "73d30de4c331e026ec0d0b1b6d4721ab7d149bb2f0aaaf651b7a6552671fcd97",
+        "size": 39864856
+      },
       "deployment_mpkg": "205/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:28.943067+00:00",
+      "discovered_at": "2026-08-30T01:37:40.986005+00:00",
       "family": "205",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-l11-l12-u11/metapackage/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
       "release_date": "2025-10-14",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/20550",
-      "release_notes_version": "6.2.5",
+      "release_notes_version": "6.3.1",
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "L124020",
-      "source_software_ver": "6.2.5",
+      "source_software_ver": "6.3.1",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-l11-l12-u11/package/CC_205_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu27-ota-release-4.6.137-prod.meta.signed",
       "version": "9.3.0"
@@ -66,17 +93,17 @@
         "size": 38824489
       },
       "deployment_mpkg": "405/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:30.707698+00:00",
+      "discovered_at": "2026-08-30T01:37:44.732080+00:00",
       "family": "405",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-g10-g18/metapackage/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
       "release_date": "2025-10-14",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/40550",
-      "release_notes_version": "6.2.5",
+      "release_notes_version": "6.3.1",
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "G185020",
-      "source_software_ver": "6.2.5",
+      "source_software_ver": "6.3.01",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.0-g10-g18/package/C4_405_OTA1-KEY_sdk-v9.3.0-ssc9211d-mcu32_base20-ota-release-4.6.137-prod.meta.signed",
       "version": "9.3.0"
@@ -93,7 +120,7 @@
         "size": 159504617
       },
       "deployment_mpkg": "505/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:32.262404+00:00",
+      "discovered_at": "2026-08-30T01:37:47.578744+00:00",
       "family": "505",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-n10-n18/metapackage/C11e_505_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu35_base23-ota-release-3.8.126-prod.meta.signed",
@@ -120,7 +147,7 @@
         "size": 154677454
       },
       "deployment_mpkg": "705/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:39.299813+00:00",
+      "discovered_at": "2026-08-30T01:37:52.082644+00:00",
       "family": "705",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/metapackage/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
@@ -130,15 +157,24 @@
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "K155020",
-      "source_software_ver": "6.4.3",
+      "source_software_ver": "6.04.03",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/8.6.2-w10-w15-k15/package/V11_705_OTA1_MxEmmc-KEY_sdk-v8.6.2-ssu9383-mcu34_base12-ota-release-3.8.126-prod.meta.signed",
       "version": "8.6.2"
     },
     {
       "app_derived_sku": true,
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.6-06074402987a/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/705/9.3.6-06074402987a.json",
+        "release_tag": "firmware-705-9.3.6-06074402987a",
+        "sha256": "06074402987a9f6e43cbba34225eb05fa749918d8e1bb86eb3af3ddb6557a576",
+        "size": 156551786
+      },
       "deployment_mpkg": "705/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:43.670967+00:00",
+      "discovered_at": "2026-08-30T01:37:55.182419+00:00",
       "family": "705",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/9.3.6-x1/metapackage/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu20_base42-ota-release-5.3.149-prod.meta.signed",
@@ -175,24 +211,43 @@
     },
     {
       "app_derived_sku": true,
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/congo-01.01.18-prod.meta.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/congo/1.1.18-9a40cbfdc6b2.json",
+        "release_tag": "firmware-congo-1.1.18-9a40cbfdc6b2",
+        "sha256": "9a40cbfdc6b24fe32df2a1e0abdec3e727f1fe5bf53fe71c07b01ac198f61303",
+        "size": 1748240
+      },
       "deployment_mpkg": "congo/congo-01.01.18-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:47.528119+00:00",
+      "discovered_at": "2026-08-30T01:37:59.221018+00:00",
       "family": "congo",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/1.1.18-congo/metapackage/congo-01.01.18-prod.meta.signed",
       "release_date": "2024-05-03",
       "release_notes_url": "https://homesupport.irobot.com/articles/en_US/Knowledge/80052",
-      "release_notes_version": "1.1.22",
+      "release_notes_version": "1.2.2",
       "signing": "production",
       "source": "release-notes-api",
       "source_sku": "Q012020",
-      "source_software_ver": "1.1.22",
+      "source_software_ver": "1.2.2",
       "track": "prod",
       "url": "https://content-prod.iot.irobotapi.com/media/files/firmware/1.1.18-congo/package/congo-01.01.18-prod.meta.signed",
       "version": "1.1.18"
     },
     {
-      "discovered_at": "2026-08-30T01:33:18.955679+00:00",
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-congo-1.1.18-9a40cbfdc6b2/congo-01.01.18-prod.meta.signed",
+        "component_count": 0,
+        "deduplicated": true,
+        "format": "unknown",
+        "manifest": "firmware/congo/1.1.18-9a40cbfdc6b2.json",
+        "release_tag": "firmware-congo-1.1.18-9a40cbfdc6b2",
+        "sha256": "9a40cbfdc6b24fe32df2a1e0abdec3e727f1fe5bf53fe71c07b01ac198f61303",
+        "size": 1748240
+      },
+      "discovered_at": "2026-08-30T01:37:29.603723+00:00",
       "etag": "a7d0cc7c8212ae8e6b356cf694550392",
       "family": "congo",
       "last_modified": "Fri, 03 May 2024 11:43:34 GMT",
@@ -212,7 +267,7 @@
         "sha256": "ee62b87fe0451538b10cebabaeed7410916cbc1411385a9c7f7937ff8a314750",
         "size": 144331351
       },
-      "discovered_at": "2026-08-30T01:33:23.518231+00:00",
+      "discovered_at": "2026-08-30T01:37:32.724523+00:00",
       "etag": "7a0b3ec16715b132faf342855b669717-18",
       "family": "lewis",
       "last_modified": "Fri, 07 Sep 2018 16:16:45 GMT",
@@ -234,7 +289,7 @@
         "sha256": "44f7bad36e3899fbea2ca72cbd22663dc8f58475590751719dfbbd317bc1e857",
         "size": 151716440
       },
-      "discovered_at": "2026-08-30T01:33:23.502939+00:00",
+      "discovered_at": "2026-08-30T01:37:32.736905+00:00",
       "etag": "3751c47492381417f5f3e9572e8b545f-10",
       "family": "lewis",
       "last_modified": "Tue, 13 Nov 2018 19:08:03 GMT",
@@ -256,7 +311,7 @@
         "sha256": "23985f330e9ac989add820fb495d774fd4e39b2564d08d133c175c9e8722055c",
         "size": 151704153
       },
-      "discovered_at": "2026-08-30T01:33:23.518537+00:00",
+      "discovered_at": "2026-08-30T01:37:32.761444+00:00",
       "etag": "7093502a727d2696260665e5938217b2-19",
       "family": "lewis",
       "last_modified": "Wed, 13 Feb 2019 21:26:54 GMT",
@@ -278,7 +333,7 @@
         "sha256": "8b9149a01e01600b8eb062023b4ed4c8243f29c28aa56d9f0482f48649bd4a59",
         "size": 158499273
       },
-      "discovered_at": "2026-08-30T01:33:23.518771+00:00",
+      "discovered_at": "2026-08-30T01:37:32.784176+00:00",
       "etag": "7a9fe6ac5e5c5391ed2d2dd7890a213c-19",
       "family": "lewis",
       "last_modified": "Mon, 15 Apr 2019 14:26:47 GMT",
@@ -301,7 +356,7 @@
         "size": 237519274
       },
       "deployment_mpkg": "lewis/lewis-22.52.08-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:03.462262+00:00",
+      "discovered_at": "2026-08-30T01:37:04.251403+00:00",
       "family": "lewis",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/22.52.08-lewis/metapackage/lewis-22.52.08-prod.meta.signed",
@@ -325,7 +380,7 @@
         "size": 165524132
       },
       "deployment_mpkg": "ruby/ruby-00.07.12-prod.meta.signed",
-      "discovered_at": "2026-08-30T01:33:03.752019+00:00",
+      "discovered_at": "2026-08-30T01:37:05.505671+00:00",
       "family": "ruby",
       "fused": 3,
       "metapackage_url": "https://content-prod.iot.irobotapi.com/media/files/firmware/0.7.12-j9/metapackage/ruby-00.07.12-prod.meta.signed",
@@ -348,7 +403,7 @@
         "sha256": "47d9041d8f4b40b20b1770856885deec573fb9bdf9a06815c3416a89dc964958",
         "size": 246933285
       },
-      "discovered_at": "2026-08-30T01:33:20.052284+00:00",
+      "discovered_at": "2026-08-30T01:37:30.439668+00:00",
       "etag": "acd2d807ce25b6ac9a04ec36b82ecffa-15",
       "family": "sapphire",
       "last_modified": "Fri, 27 Oct 2023 13:40:09 GMT",
@@ -370,7 +425,7 @@
         "sha256": "cdb0024891d028f7041d6b7e190c5c85f54aba50206f3b0b1e873820645365ad",
         "size": 250308390
       },
-      "discovered_at": "2026-08-30T01:33:20.030715+00:00",
+      "discovered_at": "2026-08-30T01:37:30.701074+00:00",
       "etag": "222932c998a81eaba31e9113453b077d-15",
       "family": "sapphire",
       "last_modified": "Thu, 22 Feb 2024 22:15:39 GMT",
@@ -392,7 +447,7 @@
         "sha256": "e069b1a65d413dd9dbf8d60bc1e1fd14d8e323438be10265b9b86cb0cd4cc668",
         "size": 250332939
       },
-      "discovered_at": "2026-08-30T01:33:19.907539+00:00",
+      "discovered_at": "2026-08-30T01:37:30.628395+00:00",
       "etag": "10672e8d88b09fc3c7a35fe915cb6898-15",
       "family": "sapphire",
       "last_modified": "Tue, 02 Apr 2024 15:58:25 GMT",
@@ -414,7 +469,7 @@
         "sha256": "f6da51da305b3cc4f6e964fbf51c3805a1e3d0591c7cf0a3986ffebf1cd0261b",
         "size": 253662995
       },
-      "discovered_at": "2026-08-30T01:33:20.076255+00:00",
+      "discovered_at": "2026-08-30T01:37:30.726196+00:00",
       "etag": "614dc8c20b2d62a3ecf186b0a39d801c-15",
       "family": "sapphire",
       "last_modified": "Fri, 09 Aug 2024 14:38:51 GMT",
@@ -436,7 +491,7 @@
         "sha256": "d4feb7ab543346dcfebb98f9191d7bec2994cd928e6abb431df5a3eb63021960",
         "size": 253687571
       },
-      "discovered_at": "2026-08-30T01:33:20.133527+00:00",
+      "discovered_at": "2026-08-30T01:37:30.539528+00:00",
       "etag": "d29872a8838254963b6943df48213866-15",
       "family": "sapphire",
       "last_modified": "Thu, 05 Sep 2024 09:50:12 GMT",
@@ -458,7 +513,7 @@
         "sha256": "017dbfa4578541228c3503348e8d13920c3bf93351373d49faa087fe4ae43e0a",
         "size": 253699885
       },
-      "discovered_at": "2026-08-30T01:33:20.103539+00:00",
+      "discovered_at": "2026-08-30T01:37:30.533163+00:00",
       "etag": "d8b50a123b1bed1b2961290fb95f2518",
       "family": "sapphire",
       "last_modified": "Tue, 17 Dec 2024 13:19:34 GMT",
@@ -480,7 +535,7 @@
         "sha256": "7400bfa1b23769a9b37daa2f4ee676a972ede62d24ea801ce12675b1a0d42286",
         "size": 250210085
       },
-      "discovered_at": "2026-08-30T01:33:20.720216+00:00",
+      "discovered_at": "2026-08-30T01:37:31.169975+00:00",
       "etag": "b00cfea26bd388866376bb9fd77e2b2b-15",
       "family": "stingray",
       "last_modified": "Fri, 27 Oct 2023 13:40:09 GMT",
@@ -502,7 +557,7 @@
         "sha256": "0199658c9054c235a9a8f261f8ce3a5dcde376ed14afd8d2e13493db6fa119b3",
         "size": 250287910
       },
-      "discovered_at": "2026-08-30T01:33:20.638041+00:00",
+      "discovered_at": "2026-08-30T01:37:31.127107+00:00",
       "etag": "ad502f223977be87665249a2b7a67d02-15",
       "family": "stingray",
       "last_modified": "Thu, 30 Nov 2023 14:02:56 GMT",
@@ -524,7 +579,7 @@
         "sha256": "d7389e6443b950e4344e618bdb2177186c2085829c5ba80f3f83c2f40306388c",
         "size": 250287910
       },
-      "discovered_at": "2026-08-30T01:33:20.664450+00:00",
+      "discovered_at": "2026-08-30T01:37:31.167950+00:00",
       "etag": "2d85a757cc506a015a91e1c03118277a-15",
       "family": "stingray",
       "last_modified": "Thu, 01 Feb 2024 21:48:36 GMT",
@@ -546,7 +601,7 @@
         "sha256": "7d6f2ab040e15c1a77b52064964583d0b93ee6eb45a1bb5ca8190c52e6af78f6",
         "size": 250287910
       },
-      "discovered_at": "2026-08-30T01:33:20.692420+00:00",
+      "discovered_at": "2026-08-30T01:37:31.171634+00:00",
       "etag": "8c21dc66e62a1d7a4589b55008412257-15",
       "family": "stingray",
       "last_modified": "Thu, 01 Feb 2024 21:48:36 GMT",
@@ -568,7 +623,7 @@
         "sha256": "d3f45ea42fbab53d92b5e60d340764ad1c9aaef467e1660851a87a907197a775",
         "size": 250287910
       },
-      "discovered_at": "2026-08-30T01:33:20.723141+00:00",
+      "discovered_at": "2026-08-30T01:37:31.207583+00:00",
       "etag": "9f29dd7a0a8a2df192c540afcb46df02-15",
       "family": "stingray",
       "last_modified": "Tue, 06 Feb 2024 17:44:55 GMT",
@@ -590,7 +645,7 @@
         "sha256": "2ecf62cd2c7555aca80e5fb4af49cedf2bee11c4abae549c9c8ee7e01a173c48",
         "size": 254015270
       },
-      "discovered_at": "2026-08-30T01:33:20.744488+00:00",
+      "discovered_at": "2026-08-30T01:37:31.280033+00:00",
       "etag": "9b014fc06f50f8be637e46726a4c8d4d-15",
       "family": "stingray",
       "last_modified": "Thu, 22 Feb 2024 22:15:39 GMT",
@@ -612,7 +667,7 @@
         "sha256": "a3af213e0cea015576751161c8eeea00bd85a0949a83848f0da0b4e8a751534f",
         "size": 254007051
       },
-      "discovered_at": "2026-08-30T01:33:20.741241+00:00",
+      "discovered_at": "2026-08-30T01:37:31.164376+00:00",
       "etag": "87ca47c9d0dcef977c21c92c2c068976-15",
       "family": "stingray",
       "last_modified": "Tue, 02 Apr 2024 15:58:25 GMT",
@@ -634,7 +689,7 @@
         "sha256": "7d46d09ad6452e65a74a2aa774fef8c1250f8bfde08d45bf0e0ce1a34844f1c1",
         "size": 254002981
       },
-      "discovered_at": "2026-08-30T01:33:20.763115+00:00",
+      "discovered_at": "2026-08-30T01:37:31.285102+00:00",
       "etag": "b648b6781c68ed97b343f2e53f657a56-15",
       "family": "stingray",
       "last_modified": "Mon, 23 Sep 2024 14:00:10 GMT",
@@ -656,7 +711,7 @@
         "sha256": "ba523b78d6ec242f4dccbe391969ae4a9d32faa3add830ff781c4976897cca9e",
         "size": 254007077
       },
-      "discovered_at": "2026-08-30T01:33:20.734575+00:00",
+      "discovered_at": "2026-08-30T01:37:31.293683+00:00",
       "etag": "231c4b0b346f93fed434373dd03cf39d-15",
       "family": "stingray",
       "last_modified": "Fri, 18 Oct 2024 07:30:29 GMT",
@@ -678,7 +733,7 @@
         "sha256": "124d7e74a8419de5f9fe3ec01550848f28762ebab0835bdf59af75c2a431a1de",
         "size": 259663635
       },
-      "discovered_at": "2026-08-30T01:33:20.787377+00:00",
+      "discovered_at": "2026-08-30T01:37:31.270885+00:00",
       "etag": "026f881a9f07e1a753f3bf09cf533fc0-16",
       "family": "stingray",
       "last_modified": "Mon, 21 Oct 2024 08:23:03 GMT",
@@ -700,7 +755,7 @@
         "sha256": "5785dc6a5820bdd532a0fde674173f4ef0c0a8c4f49d9a62a2ff243cc577c766",
         "size": 259692307
       },
-      "discovered_at": "2026-08-30T01:33:20.795150+00:00",
+      "discovered_at": "2026-08-30T01:37:31.306064+00:00",
       "etag": "12ab0b37456f08fa9803ff35652d2a68-16",
       "family": "stingray",
       "last_modified": "Thu, 05 Sep 2024 10:03:57 GMT",
@@ -722,7 +777,7 @@
         "sha256": "5e258f35a202fb6752e004eba4b3f0c2d0d39cd254db6e8a93668cd796b9799a",
         "size": 259696429
       },
-      "discovered_at": "2026-08-30T01:33:20.796739+00:00",
+      "discovered_at": "2026-08-30T01:37:31.266813+00:00",
       "etag": "2f9dd6ee42330c2ca0d376c744bb5538-16",
       "family": "stingray",
       "last_modified": "Mon, 21 Oct 2024 08:50:53 GMT",
@@ -744,7 +799,7 @@
         "sha256": "fa399823e00954342d887974faf284adaccf382ea00edaafcd86416ec1f26a1c",
         "size": 259733293
       },
-      "discovered_at": "2026-08-30T01:33:20.816814+00:00",
+      "discovered_at": "2026-08-30T01:37:31.092178+00:00",
       "etag": "da847252ca6e355a7bae632c6cca1336-16",
       "family": "stingray",
       "last_modified": "Tue, 03 Dec 2024 14:44:34 GMT",
@@ -766,7 +821,7 @@
         "sha256": "424a61e90e9fefd1fa6a3971fa541fecf3a2b98acd73f5f18bdb11e18d620fd6",
         "size": 259733293
       },
-      "discovered_at": "2026-08-30T01:33:20.811448+00:00",
+      "discovered_at": "2026-08-30T01:37:31.357788+00:00",
       "etag": "88fce6ed7235105ef2ec30dc69e3ff68-16",
       "family": "stingray",
       "last_modified": "Sat, 08 Mar 2025 17:23:11 GMT",
@@ -780,5 +835,5 @@
     }
   ],
   "schema": 1,
-  "updated_at": "2026-08-30T01:36:24.357837+00:00"
+  "updated_at": "2026-08-30T01:38:01.803907+00:00"
 }
