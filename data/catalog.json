@@ -526,6 +526,28 @@
       "version": "2.0.6"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-2.6.13-774e84ee8b10/lewis2613.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/2.6.13-774e84ee8b10.json",
+        "release_tag": "firmware-lewis-2.6.13-774e84ee8b10",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.0.10+lewis-q22019-release-branch+14",
+          "product_version": "2.6.13+lewis-q22019-release-branch+14",
+          "software_version": "lewis+2.6.13+lewis-q22019-release-branch+14",
+          "version": "2.6.13"
+        },
+        "sha256": "774e84ee8b1019de994d1ea5179dc16a87a0fa0bf66cf79adf4165b7c2186e59",
+        "size": 164442587
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "d8161a3a9fd2aa8be0f7031d2c5b35c0-20",
@@ -544,6 +566,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.21.01-d7b31a2deda4/lewis222101.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/22.21.01-d7b31a2deda4.json",
+        "release_tag": "firmware-lewis-22.21.01-d7b31a2deda4",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+4.15.0+Firmware-Build+1339",
+          "product_version": "22.21.1+2022-06-02-570490a425b+Firmware-Build+1339",
+          "software_version": "lewis+22.21.1+2022-06-02-570490a425b+Firmware-Build+1339",
+          "version": "22.21.1"
+        },
+        "sha256": "d7b31a2deda465f61af35c94a9b2838b4e3c7ccc2451178cedea0bc5150c5f9e",
+        "size": 231223723
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "ee8372db639ccaf41a31016c07fed917-14",
@@ -558,6 +602,28 @@
       "version": "22.21.01"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.29.3-35779c441650/lewis222903.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/22.29.3-35779c441650.json",
+        "release_tag": "firmware-lewis-22.29.3-35779c441650",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+4.20.0+Firmware-Build+1832",
+          "product_version": "22.29.3+2022-08-23-eb90240ea48+Firmware-Build+1832",
+          "software_version": "lewis+22.29.3+2022-08-23-eb90240ea48+Firmware-Build+1832",
+          "version": "22.29.3"
+        },
+        "sha256": "35779c441650b46498418a0535dbda3e6a0fb38d1f8f62b250a791c9db07a3ed",
+        "size": 301138347
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "60a653da7b629c6bbe7e7e4308be070d-18",
@@ -572,6 +638,28 @@
       "version": "22.29.3"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.37.1-e8a9faf1a32a/lewis223701.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/22.37.1-e8a9faf1a32a.json",
+        "release_tag": "firmware-lewis-22.37.1-e8a9faf1a32a",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+5.0.0+Firmware-Build+1998",
+          "product_version": "22.37.1+2022-10-04-b8a50ae973e+Firmware-Build+1998",
+          "software_version": "lewis+22.37.1+2022-10-04-b8a50ae973e+Firmware-Build+1998",
+          "version": "22.37.1"
+        },
+        "sha256": "e8a9faf1a32a2699fc9070f587c53f1f040acacac655631aeb05cee6e81095ec",
+        "size": 301191594
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "ddd01080e8110b07e98450dd5ffc7ce1-18",
@@ -651,6 +739,28 @@
       "version": "22.52.08"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.52.10-a609b7646017/lewis225210.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/22.52.10-a609b7646017.json",
+        "release_tag": "firmware-lewis-22.52.10-a609b7646017",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+5.2.0+Firmware-Build+4820",
+          "product_version": "22.52.10+2023-10-03-e032ab4903c+Firmware-Build+4820",
+          "software_version": "lewis+22.52.10+2023-10-03-e032ab4903c+Firmware-Build+4820",
+          "version": "22.52.10"
+        },
+        "sha256": "a609b76460171966cf5aebd5d0549543f4223dee230b0d95c8b8d63adf2e6097",
+        "size": 237511082
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "d6dde39a309d7d87d55c0c8691ccfcad-14",
@@ -665,6 +775,27 @@
       "version": "22.52.10"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-22.7.2-069a746201d9/lewis220702.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/22.7.2-069a746201d9.json",
+        "release_tag": "firmware-lewis-22.7.2-069a746201d9",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+4.9.0+Firmware-Build+1084",
+          "product_version": "22.7.2-2022-03-29-a17befa402d+Firmware-Build+1084",
+          "software_version": "lewis+22.7.2-2022-03-29-a17befa402d+Firmware-Build+1084"
+        },
+        "sha256": "069a746201d947e64080a8a335379a9a39f45c34ebe8f9fc39fe4e296e72c717",
+        "size": 205636010
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "b66632e5f718fd78fdbbf04b8e6eee1a-12",
@@ -679,6 +810,28 @@
       "version": "22.7.2"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.0.11-d2ed5709cf48/lewis3011.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.0.11-d2ed5709cf48.json",
+        "release_tag": "firmware-lewis-3.0.11-d2ed5709cf48",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.1.2+lewis-release-rt319+14",
+          "product_version": "3.0.11+lewis-release-rt319+14",
+          "software_version": "lewis+3.0.11+lewis-release-rt319+14",
+          "version": "3.0.11"
+        },
+        "sha256": "d2ed5709cf4808cbab0d88ba1d9b8509c383d66864bb9bb4a810deb114e48ea5",
+        "size": 161948114
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "457acea0a0b9dfc3936dcfdcc0289634-10",
@@ -697,6 +850,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.10.7-6be30ffab555/lewis3107.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.10.7-6be30ffab555.json",
+        "release_tag": "firmware-lewis-3.10.7-6be30ffab555",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.4.2+lewis-release-rt320+12",
+          "product_version": "3.10.7+lewis-release-rt320+12",
+          "software_version": "lewis+3.10.7+lewis-release-rt320+12",
+          "version": "3.10.7"
+        },
+        "sha256": "6be30ffab555802377c3c618c7e390e6bbda018f02c2e87d5453c8b7832d5e3b",
+        "size": 162816466
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "93973154415a9a06bc68e04a61617224-10",
@@ -715,6 +890,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.10.8-53d3f79948b5/lewis3108.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.10.8-53d3f79948b5.json",
+        "release_tag": "firmware-lewis-3.10.8-53d3f79948b5",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.4.2+lewis-release-rt320+13",
+          "product_version": "3.10.8+lewis-release-rt320+13",
+          "software_version": "lewis+3.10.8+lewis-release-rt320+13",
+          "version": "3.10.8"
+        },
+        "sha256": "53d3f79948b5af318b9191500c3cbb690ca64c80296795442a434e6c2c7613a7",
+        "size": 162820562
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "c45eddd8b18a216a8347e988bec11791-10",
@@ -733,6 +930,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.12.8-572e134498a5/lewis3128.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.12.8-572e134498a5.json",
+        "release_tag": "firmware-lewis-3.12.8-572e134498a5",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.0.2+lewis-release-420+10",
+          "product_version": "3.12.8+lewis-release-420+10",
+          "software_version": "lewis+3.12.8+lewis-release-420+10",
+          "version": "3.12.8"
+        },
+        "sha256": "572e134498a5ebf37ec44943f823872e26e40fb24f034eacabf8b186df1c0e54",
+        "size": 163541458
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "81900c386a1a464952dce74eb50264ee-10",
@@ -752,6 +971,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.14.16-9aee28435848/lewis31416.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.14.16-9aee28435848.json",
+        "release_tag": "firmware-lewis-3.14.16-9aee28435848",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.6.1+lewis-release-121+21",
+          "product_version": "3.14.16+lewis-release-121+21",
+          "software_version": "lewis+3.14.16+lewis-release-121+21",
+          "version": "3.14.16"
+        },
+        "sha256": "9aee28435848c7d8381e5bba682684895376d1132fec08a2c38b66d2c98d0587",
+        "size": 168919489
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "1f2722d287282732726a34cbbd121e0d-10",
@@ -770,6 +1011,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.18.11-55ef24fa7664/lewis31811.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.18.11-55ef24fa7664.json",
+        "release_tag": "firmware-lewis-3.18.11-55ef24fa7664",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.9.8.2-adb-hf+lewis-release-rt321+13",
+          "product_version": "3.18.11+lewis-release-rt321+13",
+          "software_version": "lewis+3.18.11+lewis-release-rt321+13",
+          "version": "3.18.11"
+        },
+        "sha256": "55ef24fa766455d7c1ceeb337bf6f1e590ff8708e86318cb25a12fccdcf0ef85",
+        "size": 196653514
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "0943ce2da719700a6d4554f6cf1848f7-12",
@@ -788,6 +1051,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.2.4-d6f9ab6e5118/lewis324.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.2.4-d6f9ab6e5118.json",
+        "release_tag": "firmware-lewis-3.2.4-d6f9ab6e5118",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.1.6+lewis-release-rt419+7",
+          "product_version": "3.2.4+lewis-release-rt419+7",
+          "software_version": "lewis+3.2.4+lewis-release-rt419+7",
+          "version": "3.2.4"
+        },
+        "sha256": "d6f9ab6e5118a40102f077c2988aac66bf71ffd73d2c1cf3e5bf246bc831464a",
+        "size": 160129489
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "d65b20fc93bcd0a578b65c57f849e8e1-10",
@@ -806,6 +1091,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.2.9-98bee009e760/lewis329.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.2.9-98bee009e760.json",
+        "release_tag": "firmware-lewis-3.2.9-98bee009e760",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.1.6_lock-1+lewis-release-rt419+12",
+          "product_version": "3.2.9+lewis-release-rt419+12",
+          "software_version": "lewis+3.2.9+lewis-release-rt419+12",
+          "version": "3.2.9"
+        },
+        "sha256": "98bee009e7601d2ff8ab5d4bf9c6e10c2fe453cafe51a22923467d0c731d39d4",
+        "size": 160129497
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "9a42357e71a343e1608b00dc588331ab-10",
@@ -824,6 +1131,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.20.7-857de53d7246/lewis3207.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.20.7-857de53d7246.json",
+        "release_tag": "firmware-lewis-3.20.7-857de53d7246",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+4.0.3.4+lewis-release-rt421+11",
+          "product_version": "3.20.7+lewis-release-rt421+11",
+          "software_version": "lewis+3.20.7+lewis-release-rt421+11",
+          "version": "3.20.7"
+        },
+        "sha256": "857de53d72461274f6f41174f6d2930ba588594c08599ddc8f89e9a163288ebe",
+        "size": 206856643
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "017b578e710ca2cd6ff5a4d1982722a0-13",
@@ -842,6 +1171,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-3.8.3-b016ee8fc5f3/lewis383.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/3.8.3-b016ee8fc5f3.json",
+        "release_tag": "firmware-lewis-3.8.3-b016ee8fc5f3",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.2.2+lewis-release-rt220+4",
+          "product_version": "3.8.3+lewis-release-rt220+4",
+          "software_version": "lewis+3.8.3+lewis-release-rt220+4",
+          "version": "3.8.3"
+        },
+        "sha256": "b016ee8fc5f350b1f4719ae863cb91423112d1339583bfb543bea9dcb29391f2",
+        "size": 160821713
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "22a823c87127049a4f9840257357645f-10",
@@ -860,6 +1211,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v209-cb45645ceb0b/lewis209.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v209-cb45645ceb0b.json",
+        "release_tag": "firmware-lewis-v209-cb45645ceb0b",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.0.9+lewis-ota3+22",
+          "product_version": "2.0.9+lewis-ota3+22",
+          "software_version": "lewis+2.0.9+lewis-ota3+22",
+          "version": "2.0.9"
+        },
+        "sha256": "cb45645ceb0b1682363343baea69169bfaf08af7f9444e56ebf671caca5bb9f1",
+        "size": 158499273
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "962a6a9f33598eeae54bbbce97ad116e-19",
@@ -876,6 +1249,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3010-70227f5f42aa/lewis3010.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3010-70227f5f42aa.json",
+        "release_tag": "firmware-lewis-v3010-70227f5f42aa",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.1.2+lewis-release-rt319+13",
+          "product_version": "3.0.10+lewis-release-rt319+13",
+          "software_version": "lewis+3.0.10+lewis-release-rt319+13",
+          "version": "3.0.10"
+        },
+        "sha256": "70227f5f42aa4d8f29e18191c2e0de94c488d2fe7f22fbaf2d7a1b7402a00408",
+        "size": 161952210
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "9c99e5122f8b09ca576256fc819e0bd0-10",
@@ -892,6 +1287,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3126-55cc3741fa50/lewis3126.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3126-55cc3741fa50.json",
+        "release_tag": "firmware-lewis-v3126-55cc3741fa50",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.0+lewis-release-420+7",
+          "product_version": "3.12.6+lewis-release-420+7",
+          "software_version": "lewis+3.12.6+lewis-release-420+7",
+          "version": "3.12.6"
+        },
+        "sha256": "55cc3741fa5052c8da414d09f95f2eb65922ef4702fca27c0fd07fccbb7dc6ef",
+        "size": 163545551
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "cee4690cd1c281f14115c4b489fbad07-10",
@@ -909,6 +1326,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3127-ac5ef37b91ee/lewis3127.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3127-ac5ef37b91ee.json",
+        "release_tag": "firmware-lewis-v3127-ac5ef37b91ee",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.0+lewis-release-420+8",
+          "product_version": "3.12.7+lewis-release-420+8",
+          "software_version": "lewis+3.12.7+lewis-release-420+8",
+          "version": "3.12.7"
+        },
+        "sha256": "ac5ef37b91eea9cfb1dfae2479634c8e890a7c4b73577e2567341f5f42ba9831",
+        "size": 163545551
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "fc7b768213eab38c619714d2d9096658-10",
@@ -926,6 +1365,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31411-1670e26b5554/lewis31411.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v31411-1670e26b5554.json",
+        "release_tag": "firmware-lewis-v31411-1670e26b5554",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.6.1+lewis-release-121+16",
+          "product_version": "3.14.11+lewis-release-121+16",
+          "software_version": "lewis+3.14.11+lewis-release-121+16",
+          "version": "3.14.11"
+        },
+        "sha256": "1670e26b5554d6ed4475b31c8da80e6ba5b8597007813b2bd380ea3a6b3cab41",
+        "size": 168915393
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "ef58292667b778f0e54881f1e550244f-10",
@@ -942,6 +1403,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31412-671e440e227f/lewis31412.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v31412-671e440e227f.json",
+        "release_tag": "firmware-lewis-v31412-671e440e227f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.6.1+lewis-release-121+17",
+          "product_version": "3.14.12+lewis-release-121+17",
+          "software_version": "lewis+3.14.12+lewis-release-121+17",
+          "version": "3.14.12"
+        },
+        "sha256": "671e440e227fbdca101cc04d5c8cccc23a5beed7c6a328011a140570c6582bfc",
+        "size": 168919489
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "53094b778dc615d4d0692cbbe8a852b5-10",
@@ -958,6 +1441,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31414-58f750cc6b81/lewis31414.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v31414-58f750cc6b81.json",
+        "release_tag": "firmware-lewis-v31414-58f750cc6b81",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.6.1+lewis-release-121+19",
+          "product_version": "3.14.14+lewis-release-121+19",
+          "software_version": "lewis+3.14.14+lewis-release-121+19",
+          "version": "3.14.14"
+        },
+        "sha256": "58f750cc6b8169b8885fa52ba03976bf5efd47c7e36ebe95ad3d2087b7b0d0b5",
+        "size": 168919489
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "6779a8d5290c1bdf339b4dade96f16b9-10",
@@ -974,6 +1479,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31429-428f890afe3a/lewis31429.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v31429-428f890afe3a.json",
+        "release_tag": "firmware-lewis-v31429-428f890afe3a",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.6.1+lewis-release-rt121+13",
+          "product_version": "3.14.29+lewis-release-rt121+13",
+          "software_version": "lewis+3.14.29+lewis-release-rt121+13",
+          "version": "3.14.29"
+        },
+        "sha256": "428f890afe3af39b45984c3a0fe18a1d021a029fd561c235ec73258c1d542e11",
+        "size": 168931779
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "6181c8f566c60b511331fabedfb0d90c-10",
@@ -990,6 +1517,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3148-b51c07266bb4/lewis3148.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3148-b51c07266bb4.json",
+        "release_tag": "firmware-lewis-v3148-b51c07266bb4",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.8.6.1+lewis-release-121+13",
+          "product_version": "3.14.8+lewis-release-121+13",
+          "software_version": "lewis+3.14.8+lewis-release-121+13",
+          "version": "3.14.8"
+        },
+        "sha256": "b51c07266bb4f04f2c835e2f57c3dfc0392c4a984819b3c70a4b2cc63d752ffe",
+        "size": 168911297
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a4019b0eac9b35e34d51ac28ced59b53-10",
@@ -1006,6 +1555,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31610-c8ab0f9d289e/lewis31610.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v31610-c8ab0f9d289e.json",
+        "release_tag": "firmware-lewis-v31610-c8ab0f9d289e",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.9.4.1+lewis-release-rt221+9",
+          "product_version": "3.16.10+lewis-release-rt221+9",
+          "software_version": "lewis+3.16.10+lewis-release-rt221+9",
+          "version": "3.16.10"
+        },
+        "sha256": "c8ab0f9d289e029666cc06c6ac9cd8e41886fbc5fb3965049653784b2ac9bd9a",
+        "size": 203010498
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "b652e4c0110b3913c78e4bd89446430f-12",
@@ -1022,6 +1593,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3169-9a3b2cf2e075/lewis3169.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3169-9a3b2cf2e075.json",
+        "release_tag": "firmware-lewis-v3169-9a3b2cf2e075",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.9.4+lewis-release-rt221+8",
+          "product_version": "3.16.9+lewis-release-rt221+8",
+          "software_version": "lewis+3.16.9+lewis-release-rt221+8",
+          "version": "3.16.9"
+        },
+        "sha256": "9a3b2cf2e0753dd5c5a646f2ae339c6567722009fde7fbce5e622ac86a3d9d27",
+        "size": 203010496
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "e1e3d0292ececb2120b2f130abc5e6c6-12",
@@ -1038,6 +1631,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31810-2a73c43f5e6d/lewis31810.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v31810-2a73c43f5e6d.json",
+        "release_tag": "firmware-lewis-v31810-2a73c43f5e6d",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.9.8.2-adb-hf+lewis-release-rt321+12",
+          "product_version": "3.18.10+lewis-release-rt321+12",
+          "software_version": "lewis+3.18.10+lewis-release-rt321+12",
+          "version": "3.18.10"
+        },
+        "sha256": "2a73c43f5e6d310c445826ac89ced0400e09a1aea39a21327b88006296dd74de",
+        "size": 196645322
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "51bcee95bba45883b6e19457fb4f405e-12",
@@ -1054,6 +1669,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31812-25f469cb388f/lewis31812.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v31812-25f469cb388f.json",
+        "release_tag": "firmware-lewis-v31812-25f469cb388f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.9.8.2-smarthome-firewall-hf+lewis-release-rt321+14",
+          "product_version": "3.18.12+lewis-release-rt321+14",
+          "software_version": "lewis+3.18.12+lewis-release-rt321+14",
+          "version": "3.18.12"
+        },
+        "sha256": "25f469cb388f920131782b889ef1333b9bc7e8dd64d3e2f30732570c94e12d72",
+        "size": 196649433
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "ff9a4fcb9e7d71085cd56d324277ea99-12",
@@ -1070,6 +1707,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v31813-0b6bf14903e7/lewis31813.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v31813-0b6bf14903e7.json",
+        "release_tag": "firmware-lewis-v31813-0b6bf14903e7",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.9.8.2-smarthome-firewall-hf+lewis-release-rt321+15",
+          "product_version": "3.18.13+lewis-release-rt321+15",
+          "software_version": "lewis+3.18.13+lewis-release-rt321+15",
+          "version": "3.18.13"
+        },
+        "sha256": "0b6bf14903e7e844d860cb59caed19bba514f6ce652940d05d47420366f55b14",
+        "size": 196653529
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "6ee4ad1d26fd596d2ee6f4843432c0a9-12",
@@ -1086,6 +1745,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3187-e253f722ac96/lewis3187.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3187-e253f722ac96.json",
+        "release_tag": "firmware-lewis-v3187-e253f722ac96",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+3.9.8.2+lewis-release-rt321+9",
+          "product_version": "3.18.7+lewis-release-rt321+9",
+          "software_version": "lewis+3.18.7+lewis-release-rt321+9",
+          "version": "3.18.7"
+        },
+        "sha256": "e253f722ac963bcd72235a221c5329961d485833e4ee7f905ee57a648f6e05f2",
+        "size": 196649410
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "e6f185a5f0eaa111082ebc811f52ca0c-12",
@@ -1102,6 +1783,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3204-bed45c0137af/lewis3204.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3204-bed45c0137af.json",
+        "release_tag": "firmware-lewis-v3204-bed45c0137af",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+4.0.3-remove-caps-log-hf+lewis-release-rt421+8",
+          "product_version": "3.20.4+lewis-release-rt421+8",
+          "software_version": "lewis+3.20.4+lewis-release-rt421+8",
+          "version": "3.20.4"
+        },
+        "sha256": "bed45c0137afea1b07fb88ca99e5d9de064e85a819808f723871a97326b93fcd",
+        "size": 206713299
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "3eb040439a540ff91893c5c333991a59-13",
@@ -1118,6 +1821,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3206-c384bdc09faf/lewis3206.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3206-c384bdc09faf.json",
+        "release_tag": "firmware-lewis-v3206-c384bdc09faf",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+4.0.3-remove-caps-log-hf+lewis-release-rt421+10",
+          "product_version": "3.20.6+lewis-release-rt421+10",
+          "software_version": "lewis+3.20.6+lewis-release-rt421+10",
+          "version": "3.20.6"
+        },
+        "sha256": "c384bdc09faf1ed10a2e33564cd66d5f704250f7e4a839e643b1ede7d37cd181",
+        "size": 206733780
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a19bef58ec188dc5a06c6a0b1f1c9299-13",
@@ -1134,6 +1859,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3225-0133ade04a38/lewis3225.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3225-0133ade04a38.json",
+        "release_tag": "firmware-lewis-v3225-0133ade04a38",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+4.3.0+lewis-release-rt122+6",
+          "product_version": "3.22.5+lewis-release-rt122+6",
+          "software_version": "lewis+3.22.5+lewis-release-rt122+6",
+          "version": "3.22.5"
+        },
+        "sha256": "0133ade04a3851a493e9ee5a9978801e980a23208fa864515cde44a37c6282d0",
+        "size": 200593856
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "cfbb8850accba86766dade9ceb063fb8-12",
@@ -1151,6 +1898,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3226-cc0f4ab6eecf/lewis3226.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3226-cc0f4ab6eecf.json",
+        "release_tag": "firmware-lewis-v3226-cc0f4ab6eecf",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+4.3.0+lewis-release-rt122+7",
+          "product_version": "3.22.6+lewis-release-rt122+7",
+          "software_version": "lewis+3.22.6+lewis-release-rt122+7",
+          "version": "3.22.6"
+        },
+        "sha256": "cc0f4ab6eecf1311de6e7b3b31722124745672fddb3707150aa9f41ad8eea618",
+        "size": 199643584
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "c67ad25ff281bfc254501b1d02d4301b-12",
@@ -1168,6 +1937,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v323-7fdb9b42f886/lewis323.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v323-7fdb9b42f886.json",
+        "release_tag": "firmware-lewis-v323-7fdb9b42f886",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.1.6+lewis-release-rt419+5",
+          "product_version": "3.2.3+lewis-release-rt419+5",
+          "software_version": "lewis+3.2.3+lewis-release-rt419+5",
+          "version": "3.2.3"
+        },
+        "sha256": "7fdb9b42f886d9bf6bdf5fb77c21b39b2cb8a63ac8727c588779f85551d22774",
+        "size": 160113105
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a3b77a4cf7da1e17c3e49aefd70f1163-10",
@@ -1184,6 +1975,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v3612-4e089459e7e5/lewis3612.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v3612-4e089459e7e5.json",
+        "release_tag": "firmware-lewis-v3612-4e089459e7e5",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.2.2+lewis-release-rt120+13",
+          "product_version": "3.6.12+lewis-release-rt120+13",
+          "software_version": "lewis+3.6.12+lewis-release-rt120+13",
+          "version": "3.6.12"
+        },
+        "sha256": "4e089459e7e573557bc33874ceb60f421494c44c5a412b5c8ee27aada09adb3b",
+        "size": 160092626
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "2ac68dc3533ec83b422040053b620b36-10",
@@ -1200,6 +2013,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v366-310a4aeda699/lewis366.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v366-310a4aeda699.json",
+        "release_tag": "firmware-lewis-v366-310a4aeda699",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.2.2+lewis-release-rt120+8",
+          "product_version": "3.6.6+lewis-release-rt120+8",
+          "software_version": "lewis+3.6.6+lewis-release-rt120+8",
+          "version": "3.6.6"
+        },
+        "sha256": "310a4aeda699568a288eab03bbd8c073aceb2a18e4f0cad3c4504f5b82453a63",
+        "size": 160092625
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "2b791f5a3a3e6fe450cea5ea7135c7f2-10",
@@ -1216,6 +2051,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v368-5106a493bbdc/lewis368.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v368-5106a493bbdc.json",
+        "release_tag": "firmware-lewis-v368-5106a493bbdc",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.2.2+lewis-release-rt120+10",
+          "product_version": "3.6.8+lewis-release-rt120+10",
+          "software_version": "lewis+3.6.8+lewis-release-rt120+10",
+          "version": "3.6.8"
+        },
+        "sha256": "5106a493bbdc1525591c2f5bf38208a62900d8377f25089ae4d4bca55c9b5ea3",
+        "size": 160088530
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "7cc5874d0d0f61f6b10ec0f487d1fd73-10",
@@ -1232,6 +2089,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v384-45484129251b/lewis384.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v384-45484129251b.json",
+        "release_tag": "firmware-lewis-v384-45484129251b",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.4.1+lewis-release-rt220+8",
+          "product_version": "3.8.4+lewis-release-rt220+8",
+          "software_version": "lewis+3.8.4+lewis-release-rt220+8",
+          "version": "3.8.4"
+        },
+        "sha256": "45484129251ba455f7d59407850f25953620a5b31945e847babf6a2c0d356ced",
+        "size": 162533841
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "4e2e92d2ac9f18e27e1eb39450433e4c-10",
@@ -1248,6 +2127,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-lewis-v386-de0d271f5c2e/lewis386.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/lewis/v386-de0d271f5c2e.json",
+        "release_tag": "firmware-lewis-v386-de0d271f5c2e",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "lewis",
+          "os_version": "linux+2.4.1_trident_test_CORESW-2360+lewis-release-rt220+10",
+          "product_version": "3.8.6+lewis-release-rt220+10",
+          "software_version": "lewis+3.8.6+lewis-release-rt220+10",
+          "version": "3.8.6"
+        },
+        "sha256": "de0d271f5c2ec206bbe9a323c2949e5a0a2e729dc8ee85ef9cbe3d5fa6115b54",
+        "size": 162537963
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "153a047fb2d8426e0d69b8809e2bdc6c-10",
@@ -1787,6 +2688,16 @@
       "version": "0.7.12"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.37.5-ee3689994c25/ruby-23.37.05.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/23.37.5-ee3689994c25.json",
+        "release_tag": "firmware-ruby-23.37.5-ee3689994c25",
+        "reported_identity": null,
+        "sha256": "ee3689994c257ac7a930d6ff60e4e911b2b00dff0a514373b1db8a299e9d5485",
+        "size": 179536608
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "5051df65bddf3e3397a9b7ca8827de0c-11",
@@ -1801,6 +2712,16 @@
       "version": "23.37.5"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-23.53.06-ff93c3932e1e/ruby-23.53.06.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/23.53.06-ff93c3932e1e.json",
+        "release_tag": "firmware-ruby-23.53.06-ff93c3932e1e",
+        "reported_identity": null,
+        "sha256": "ff93c3932e1e93dbb625e5579d0062c134bef91b51f6da1a54709b967f038e42",
+        "size": 181516472
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "80da21a11dde3659b54a9ca5d5030181-11",
@@ -1815,6 +2736,16 @@
       "version": "23.53.06"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-24.29.01-12b7f9517018/ruby-24.29.01.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/24.29.01-12b7f9517018.json",
+        "release_tag": "firmware-ruby-24.29.01-12b7f9517018",
+        "reported_identity": null,
+        "sha256": "12b7f9517018fa0837d63ac17f0ba43e82d438efbdf593ab6bb3d2cdbdc1a8ac",
+        "size": 184397496
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "feff66e75855ddd3a4f21092fbb89708-11",
@@ -1829,6 +2760,16 @@
       "version": "24.29.01"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-24.29.03-65cc657f29e7/ruby-24.29.03.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/24.29.03-65cc657f29e7.json",
+        "release_tag": "firmware-ruby-24.29.03-65cc657f29e7",
+        "reported_identity": null,
+        "sha256": "65cc657f29e7b6fc6eb0c72b220c9bd690c561209956dcf8a3932037b5deb71b",
+        "size": 184389344
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "4346ac4cc029400622e944a2260556ef-11",
@@ -1843,6 +2784,17 @@
       "version": "24.29.03"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-0.7.12-eda059be52f6/ruby-00.07.12-prod.meta.signed",
+        "component_count": 0,
+        "deduplicated": true,
+        "format": "unknown",
+        "manifest": "firmware/ruby/v0712-eda059be52f6.json",
+        "release_tag": "firmware-ruby-0.7.12-eda059be52f6",
+        "reported_identity": null,
+        "sha256": "eda059be52f6e03d6692cf91f1ee6693024e67c7a71b908a826d61db62e0d5e9",
+        "size": 165524132
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "6fd2dacdacb1bddd85dc27e848269a36-10",
@@ -1859,6 +2811,16 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v0713-be30d64a6531/ruby0713.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/v0713-be30d64a6531.json",
+        "release_tag": "firmware-ruby-v0713-be30d64a6531",
+        "reported_identity": null,
+        "sha256": "be30d64a6531dc7e7d8da17a16a741e1fdb44418e28bd56140adfbe8a25c8a16",
+        "size": 165524132
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "47347ed35de34233cc53738869d05853-10",
@@ -1875,6 +2837,16 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v0714-b9e31dd2d1cd/ruby0714.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/v0714-b9e31dd2d1cd.json",
+        "release_tag": "firmware-ruby-v0714-b9e31dd2d1cd",
+        "reported_identity": null,
+        "sha256": "b9e31dd2d1cd58b221bcc2a4e1633d4373b762301bf12262fad574020e0acba4",
+        "size": 165532324
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "0642ae48a22f853dabdb9bec6f5e5df7-10",
@@ -1891,6 +2863,16 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v089-f5a3a6a46b27/ruby089.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/v089-f5a3a6a46b27.json",
+        "release_tag": "firmware-ruby-v089-f5a3a6a46b27",
+        "reported_identity": null,
+        "sha256": "f5a3a6a46b27c288354fd591b2f9e897c4a403b7f2e10e10e43a7c3807255023",
+        "size": 171282080
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "4a6457997195b5ef94a9ac58911c9fc4-10",
@@ -1907,6 +2889,16 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v098-8c21eb2d4914/ruby098.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/v098-8c21eb2d4914.json",
+        "release_tag": "firmware-ruby-v098-8c21eb2d4914",
+        "reported_identity": null,
+        "sha256": "8c21eb2d491408415965be496677c46b68aa7dce38f8e195fd420618ddddebde",
+        "size": 176795296
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "5915ef391f7e784c30fdc6cf0e81acdf-11",
@@ -1923,6 +2915,16 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-ruby-v099-24db34566534/ruby099.signed",
+        "component_count": 0,
+        "format": "unknown",
+        "manifest": "firmware/ruby/v099-24db34566534.json",
+        "release_tag": "firmware-ruby-v099-24db34566534",
+        "reported_identity": null,
+        "sha256": "24db34566534525a95362a526b7070869eec54d18562864b56c7957eb878b6aa",
+        "size": 176894624
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "f4b98c3156599e7bcd5b575c18d5d9cf-11",
@@ -1939,6 +2941,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-2.8.1-779be24dfefa/sanmarino281.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/2.8.1-779be24dfefa.json",
+        "release_tag": "firmware-sanmarino-2.8.1-779be24dfefa",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.0.10+sanmarino-ota-1+2",
+          "product_version": "2.8.1+sanmarino-ota-1+2",
+          "software_version": "sanmarino+2.8.1+sanmarino-ota-1+2",
+          "version": "2.8.1"
+        },
+        "sha256": "779be24dfefaaaa5b578424bb31fad7c3a8e11b210017ccbb40cd07d326798d4",
+        "size": 156041682
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "f634b8e448afd956ce59e8fdcb1709f4-19",
@@ -1957,6 +2981,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-2.8.2-229e193d9d3d/sanmarino282.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/2.8.2-229e193d9d3d.json",
+        "release_tag": "firmware-sanmarino-2.8.2-229e193d9d3d",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.0.10+sanmarino-ota-1+3",
+          "product_version": "2.8.2+sanmarino-ota-1+3",
+          "software_version": "sanmarino+2.8.2+sanmarino-ota-1+3",
+          "version": "2.8.2"
+        },
+        "sha256": "229e193d9d3d179f38e831ae525088d6e583debd7080bfede76e6fe807e7ddc5",
+        "size": 156037586
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "b9cd048a743d800eba271c29731dda95-19",
@@ -1975,6 +3021,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-2.8.3-194889238a0b/sanmarino283.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/2.8.3-194889238a0b.json",
+        "release_tag": "firmware-sanmarino-2.8.3-194889238a0b",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.1.0+sanmarino-ota-1+4",
+          "product_version": "2.8.3+sanmarino-ota-1+4",
+          "software_version": "sanmarino+2.8.3+sanmarino-ota-1+4",
+          "version": "2.8.3"
+        },
+        "sha256": "194889238a0b272f0c571c33b67fcce26e80fc558a37a877f287d54bb29867b1",
+        "size": 156070353
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "75f84e1b2ca471c3d4553bff48e55117-19",
@@ -1993,6 +3061,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.21.01-0d06e1548819/sanmarino222101.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/22.21.01-0d06e1548819.json",
+        "release_tag": "firmware-sanmarino-22.21.01-0d06e1548819",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.15.0+Firmware-Build+1339",
+          "product_version": "22.21.1+2022-06-02-570490a425b+Firmware-Build+1339",
+          "software_version": "sanmarino+22.21.1+2022-06-02-570490a425b+Firmware-Build+1339",
+          "version": "22.21.1"
+        },
+        "sha256": "0d06e1548819483857f071e2ed2ab9466a145720a46b8efe3c95de0d397ec895",
+        "size": 211534255
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "2f0dc559f851aa9b19f4cbeee9314067-13",
@@ -2007,6 +3097,28 @@
       "version": "22.21.01"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.29.3-2184461d4946/sanmarino222903.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/22.29.3-2184461d4946.json",
+        "release_tag": "firmware-sanmarino-22.29.3-2184461d4946",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.20.0+Firmware-Build+1832",
+          "product_version": "22.29.3+2022-08-23-eb90240ea48+Firmware-Build+1832",
+          "software_version": "sanmarino+22.29.3+2022-08-23-eb90240ea48+Firmware-Build+1832",
+          "version": "22.29.3"
+        },
+        "sha256": "2184461d494607dc5d0c23a276e1b209378a5c36a983cb784c9f92e9ed863bb3",
+        "size": 291557807
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "76f5b9d320220c82fa590dd9e32702f7-17",
@@ -2021,6 +3133,28 @@
       "version": "22.29.3"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.29.5-5f26fa8ae8e2/sanmarino222905.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/22.29.5-5f26fa8ae8e2.json",
+        "release_tag": "firmware-sanmarino-22.29.5-5f26fa8ae8e2",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.20.0+Firmware-Build+1990",
+          "product_version": "22.29.5+2022-09-29-c7d212a8ae8+Firmware-Build+1990",
+          "software_version": "sanmarino+22.29.5+2022-09-29-c7d212a8ae8+Firmware-Build+1990",
+          "version": "22.29.5"
+        },
+        "sha256": "5f26fa8ae8e2671f3bada25f90a06a877772bf36010c0b3490e75583b489d2f9",
+        "size": 252076463
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "91aa3dbb0c9ece5455b89d64ae19233b-15",
@@ -2035,6 +3169,28 @@
       "version": "22.29.5"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.29.6-a21a460698d4/sanmarino222906.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/22.29.6-a21a460698d4.json",
+        "release_tag": "firmware-sanmarino-22.29.6-a21a460698d4",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.20.0+Firmware-Build+2321",
+          "product_version": "22.29.6+2022-12-01-82f3372a65c+Firmware-Build+2321",
+          "software_version": "sanmarino+22.29.6+2022-12-01-82f3372a65c+Firmware-Build+2321",
+          "version": "22.29.6"
+        },
+        "sha256": "a21a460698d4b2cb9d2ac8e2103054fe0bd7e983e172441f351f3e85b060fe06",
+        "size": 252076463
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a7f915f7319b05e974e96aadc934a486-15",
@@ -2049,6 +3205,27 @@
       "version": "22.29.6"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-22.7.2-4797f22515bb/sanmarino220702.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/22.7.2-4797f22515bb.json",
+        "release_tag": "firmware-sanmarino-22.7.2-4797f22515bb",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.9.0+Firmware-Build+1084",
+          "product_version": "22.7.2-2022-03-29-a17befa402d+Firmware-Build+1084",
+          "software_version": "sanmarino+22.7.2-2022-03-29-a17befa402d+Firmware-Build+1084"
+        },
+        "sha256": "4797f22515bb8bc72b07b25b17fe004d084a69515275af3835b53373db669808",
+        "size": 185495982
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "eb86a7b348dcffd36c8e112e9f673369-11",
@@ -2063,6 +3240,28 @@
       "version": "22.7.2"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.0.11-1463ce908f73/sanmarino3011.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.0.11-1463ce908f73.json",
+        "release_tag": "firmware-sanmarino-3.0.11-1463ce908f73",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.1.2+sanmarino-release-rt319+12",
+          "product_version": "3.0.11+sanmarino-release-rt319+12",
+          "software_version": "sanmarino+3.0.11+sanmarino-release-rt319+12",
+          "version": "3.0.11"
+        },
+        "sha256": "1463ce908f7382ec6d0c186af2821e864a5444e859e548b1326ea62af3d1c10d",
+        "size": 156815834
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "5b49a44977af1fd09de714ff32ee7166-10",
@@ -2081,6 +3280,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.10.7-3037e0c60f72/sanmarino3107.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.10.7-3037e0c60f72.json",
+        "release_tag": "firmware-sanmarino-3.10.7-3037e0c60f72",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.4.2+sanmarino-release-rt320+10",
+          "product_version": "3.10.7+sanmarino-release-rt320+10",
+          "software_version": "sanmarino+3.10.7+sanmarino-release-rt320+10",
+          "version": "3.10.7"
+        },
+        "sha256": "3037e0c60f72da81eda97d15f3d055b19884adb24b77efd1726029c629c99c19",
+        "size": 159490522
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "3edd84b79677d23b2b0cc71c81b140c7-10",
@@ -2099,6 +3320,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.10.8-f41b6f2357a0/sanmarino3108.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.10.8-f41b6f2357a0.json",
+        "release_tag": "firmware-sanmarino-3.10.8-f41b6f2357a0",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.4.2+sanmarino-release-rt320+11",
+          "product_version": "3.10.8+sanmarino-release-rt320+11",
+          "software_version": "sanmarino+3.10.8+sanmarino-release-rt320+11",
+          "version": "3.10.8"
+        },
+        "sha256": "f41b6f2357a0e6578a1518e4f4f9dc9870f6910aff02674cf8a0e7276506cd69",
+        "size": 159486426
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "39c1411c60bd88eb57de0b011ff63dce-10",
@@ -2117,6 +3360,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.12.8-d75ab45ad60d/sanmarino3128.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.12.8-d75ab45ad60d.json",
+        "release_tag": "firmware-sanmarino-3.12.8-d75ab45ad60d",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.8.0.2+sanmarino-release-420+12",
+          "product_version": "3.12.8+sanmarino-release-420+12",
+          "software_version": "sanmarino+3.12.8+sanmarino-release-420+12",
+          "version": "3.12.8"
+        },
+        "sha256": "d75ab45ad60d2c712f09c81e906dd8f43ee91b57b1872ddd3d387a3b87212028",
+        "size": 160244186
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "753c41724ae3d9739c9888ee29b17dab-10",
@@ -2135,6 +3400,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.14.16-17dcdc7e14fc/sanmarino31416.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.14.16-17dcdc7e14fc.json",
+        "release_tag": "firmware-sanmarino-3.14.16-17dcdc7e14fc",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.8.6.1+sanmarino-release-121+20",
+          "product_version": "3.14.16+sanmarino-release-121+20",
+          "software_version": "sanmarino+3.14.16+sanmarino-release-121+20",
+          "version": "3.14.16"
+        },
+        "sha256": "17dcdc7e14fc385c9992d0b024876bdf0fe29e0b2a56ce7851154f316680c67f",
+        "size": 165609929
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "8e588dcc74e447b7273480c855b58e25-10",
@@ -2153,6 +3440,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.18.11-6d2e0e313bba/sanmarino31811.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.18.11-6d2e0e313bba.json",
+        "release_tag": "firmware-sanmarino-3.18.11-6d2e0e313bba",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.9.8.2-adb-hf+sanmarino-release-rt321+12",
+          "product_version": "3.18.11+sanmarino-release-rt321+12",
+          "software_version": "sanmarino+3.18.11+sanmarino-release-rt321+12",
+          "version": "3.18.11"
+        },
+        "sha256": "6d2e0e313bbabafd60f638a2136797262c3085e2a6e3fac6ebfa5d7c8d6b8c9d",
+        "size": 181645778
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "cf6ffff417b1ae17a100cb36012989dc-11",
@@ -2171,6 +3480,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.2.5-1067b4ef49ef/sanmarino325.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.2.5-1067b4ef49ef.json",
+        "release_tag": "firmware-sanmarino-3.2.5-1067b4ef49ef",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.1.6+sanmarino-release-rt419+8",
+          "product_version": "3.2.5+sanmarino-release-rt419+8",
+          "software_version": "sanmarino+3.2.5+sanmarino-release-rt419+8",
+          "version": "3.2.5"
+        },
+        "sha256": "1067b4ef49efd09f92cca0064f8a6a3fda555bb41510b3d0c1b61ddb81f47e9e",
+        "size": 156926425
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "e17742e79cae62dfeda6f7a0b33f8e8c-10",
@@ -2189,6 +3520,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.2.9-23a5301c95a1/sanmarino329.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.2.9-23a5301c95a1.json",
+        "release_tag": "firmware-sanmarino-3.2.9-23a5301c95a1",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.1.6_lock-1+sanmarino-release-rt419+10",
+          "product_version": "3.2.9+sanmarino-release-rt419+10",
+          "software_version": "sanmarino+3.2.9+sanmarino-release-rt419+10",
+          "version": "3.2.9"
+        },
+        "sha256": "23a5301c95a1b2816048e6d2fdcb7388f4342a912696e9013959221c85faa8f2",
+        "size": 156922337
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "87cde7ca9501c82d5d80ab2427fd8831-10",
@@ -2207,6 +3560,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.20.7-62e567598a3b/sanmarino3207.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.20.7-62e567598a3b.json",
+        "release_tag": "firmware-sanmarino-3.20.7-62e567598a3b",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.0.3.4+sanmarino-release-rt421+11",
+          "product_version": "3.20.7+sanmarino-release-rt421+11",
+          "software_version": "sanmarino+3.20.7+sanmarino-release-rt421+11",
+          "version": "3.20.7"
+        },
+        "sha256": "62e567598a3be9ac9c151a4befe27f82264f44a2846fe35d609a853ac8d1576e",
+        "size": 188375499
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "50f6d08267c1cf1097b5df1f4fbafa53-11",
@@ -2225,6 +3600,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.6.6-f86a182eb62e/sanmarino366.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.6.6-f86a182eb62e.json",
+        "release_tag": "firmware-sanmarino-3.6.6-f86a182eb62e",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.2.2+sanmarino-release-rt120+8",
+          "product_version": "3.6.6+sanmarino-release-rt120+8",
+          "software_version": "sanmarino+3.6.6+sanmarino-release-rt120+8",
+          "version": "3.6.6"
+        },
+        "sha256": "f86a182eb62e56fc7400d541c876b8fc9ead46bfaf573df304386f2a6ff4e68a",
+        "size": 156844505
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "bf8cd694a8389c2f5b446e54ce9bfdf1-10",
@@ -2243,6 +3640,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-3.8.3-601fd578124c/sanmarino383.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/3.8.3-601fd578124c.json",
+        "release_tag": "firmware-sanmarino-3.8.3-601fd578124c",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.2.2+sanmarino-release-rt220+11",
+          "product_version": "3.8.3+sanmarino-release-rt220+11",
+          "software_version": "sanmarino+3.8.3+sanmarino-release-rt220+11",
+          "version": "3.8.3"
+        },
+        "sha256": "601fd578124c78cac568521fe80f10f7c9d69d25bd2e745646ec5671e5da7453",
+        "size": 157532634
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "2fa61bb95ccd36a4c494b1596bd62709-10",
@@ -2261,6 +3680,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3010-49b38fea2fb8/sanmarino3010.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v3010-49b38fea2fb8.json",
+        "release_tag": "firmware-sanmarino-v3010-49b38fea2fb8",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.1.2+sanmarino-release-rt319+11",
+          "product_version": "3.0.10+sanmarino-release-rt319+11",
+          "software_version": "sanmarino+3.0.10+sanmarino-release-rt319+11",
+          "version": "3.0.10"
+        },
+        "sha256": "49b38fea2fb893e6a41419f828baee1f844426fa71e30a6ece1b7f8c690666a1",
+        "size": 156815834
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "92dc07f2cc35afddab874d00d1c1bdc6-10",
@@ -2277,6 +3718,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3126-c86a1375d574/sanmarino3126.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v3126-c86a1375d574.json",
+        "release_tag": "firmware-sanmarino-v3126-c86a1375d574",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.8.0+sanmarino-release-420+7",
+          "product_version": "3.12.6+sanmarino-release-420+7",
+          "software_version": "sanmarino+3.12.6+sanmarino-release-420+7",
+          "version": "3.12.6"
+        },
+        "sha256": "c86a1375d574d8aa79dcafad3578d7899a73ebfedd6c728136926a3dac4c579a",
+        "size": 160260567
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a88451f59ae3d83c031f4b09e444d352-10",
@@ -2293,6 +3756,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3127-e1f8f77909ed/sanmarino3127.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v3127-e1f8f77909ed.json",
+        "release_tag": "firmware-sanmarino-v3127-e1f8f77909ed",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.8.0+sanmarino-release-420+10",
+          "product_version": "3.12.7+sanmarino-release-420+10",
+          "software_version": "sanmarino+3.12.7+sanmarino-release-420+10",
+          "version": "3.12.7"
+        },
+        "sha256": "e1f8f77909ed82ec810f389b2a1c387d3a6d4028b53422f5b1d3417c7922d6db",
+        "size": 160244184
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a4b3115d3302fb3c948b9ea45dba4906-10",
@@ -2309,6 +3794,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31411-62b21dabf517/sanmarino31411.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v31411-62b21dabf517.json",
+        "release_tag": "firmware-sanmarino-v31411-62b21dabf517",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.8.6.1+sanmarino-release-121+15",
+          "product_version": "3.14.11+sanmarino-release-121+15",
+          "software_version": "sanmarino+3.14.11+sanmarino-release-121+15",
+          "version": "3.14.11"
+        },
+        "sha256": "62b21dabf517a03000a1b3fd4885ad69391f8567248b4418620836ab9f67d4bd",
+        "size": 165605833
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "c79e170044c3ec8682f204f6cf3bfb7a-10",
@@ -2325,6 +3832,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31412-c71f8fab9b7f/sanmarino31412.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v31412-c71f8fab9b7f.json",
+        "release_tag": "firmware-sanmarino-v31412-c71f8fab9b7f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.8.6.1+sanmarino-release-121+16",
+          "product_version": "3.14.12+sanmarino-release-121+16",
+          "software_version": "sanmarino+3.14.12+sanmarino-release-121+16",
+          "version": "3.14.12"
+        },
+        "sha256": "c71f8fab9b7f75dc1653f0d2e7bfa8ab2a11d4c07d8e59f87eb236d1f9c84c8e",
+        "size": 165609929
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "90f3468e2281e6837947cb786a463e38-10",
@@ -2341,6 +3870,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31414-d5f413d062a2/sanmarino31414.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v31414-d5f413d062a2.json",
+        "release_tag": "firmware-sanmarino-v31414-d5f413d062a2",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.8.6.1+sanmarino-release-121+18",
+          "product_version": "3.14.14+sanmarino-release-121+18",
+          "software_version": "sanmarino+3.14.14+sanmarino-release-121+18",
+          "version": "3.14.14"
+        },
+        "sha256": "d5f413d062a293444109a617d3418de8fedbb2acea11a7ead70c441b125c117e",
+        "size": 165605833
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "8ba7d8541f04b7c370030b22cc2b0075-10",
@@ -2357,6 +3908,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3148-3016d7dd3cac/sanmarino3148.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v3148-3016d7dd3cac.json",
+        "release_tag": "firmware-sanmarino-v3148-3016d7dd3cac",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.8.6.1+sanmarino-release-121+12",
+          "product_version": "3.14.8+sanmarino-release-121+12",
+          "software_version": "sanmarino+3.14.8+sanmarino-release-121+12",
+          "version": "3.14.8"
+        },
+        "sha256": "3016d7dd3cacfd204fda054ab2e90abb22393acda53fc4195dada64f6fc87478",
+        "size": 165605833
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "f38471e37eae34e35bd9a56f2222805f-10",
@@ -2373,6 +3946,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31610-22992f11a82d/sanmarino31610.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v31610-22992f11a82d.json",
+        "release_tag": "firmware-sanmarino-v31610-22992f11a82d",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.9.4.1+sanmarino-release-rt221+8",
+          "product_version": "3.16.10+sanmarino-release-rt221+8",
+          "software_version": "sanmarino+3.16.10+sanmarino-release-rt221+8",
+          "version": "3.16.10"
+        },
+        "sha256": "22992f11a82d592e3368b9457cc02d89f6b07d7f24e419b46e98c05e7014e52a",
+        "size": 176452042
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "7fe7058bfbfe07c04685c1c1a0277eb9-11",
@@ -2389,6 +3984,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v31810-1cbf3bb3213f/sanmarino31810.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v31810-1cbf3bb3213f.json",
+        "release_tag": "firmware-sanmarino-v31810-1cbf3bb3213f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.9.8.2-adb-hf+sanmarino-release-rt321+11",
+          "product_version": "3.18.10+sanmarino-release-rt321+11",
+          "software_version": "sanmarino+3.18.10+sanmarino-release-rt321+11",
+          "version": "3.18.10"
+        },
+        "sha256": "1cbf3bb3213f2eedd9c644df373fac184a671e5e3cc2fa446a4347f3ee469ff1",
+        "size": 181645778
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "ea30a3b999969f7cd620c7e745122caf-11",
@@ -2405,6 +4022,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3187-a06d9cd7b9b7/sanmarino3187.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v3187-a06d9cd7b9b7.json",
+        "release_tag": "firmware-sanmarino-v3187-a06d9cd7b9b7",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+3.9.8.2+sanmarino-release-rt321+8",
+          "product_version": "3.18.7+sanmarino-release-rt321+8",
+          "software_version": "sanmarino+3.18.7+sanmarino-release-rt321+8",
+          "version": "3.18.7"
+        },
+        "sha256": "a06d9cd7b9b763739b71b2a7f4db4ae5e386af4a3be369799dfd42afca3e94c3",
+        "size": 181645770
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "b31e506aff07bc1d1bf8735e94c6785d-11",
@@ -2421,6 +4060,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3204-314de7dcf370/sanmarino3204.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v3204-314de7dcf370.json",
+        "release_tag": "firmware-sanmarino-v3204-314de7dcf370",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.0.3-remove-caps-log-hf+sanmarino-release-rt421+8",
+          "product_version": "3.20.4+sanmarino-release-rt421+8",
+          "software_version": "sanmarino+3.20.4+sanmarino-release-rt421+8",
+          "version": "3.20.4"
+        },
+        "sha256": "314de7dcf3705c5923a92f27ce2f77e174e0911d72d01a097207d41cc0e43e1b",
+        "size": 188309979
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "8643d6abc72a36430c9212a1620738e3-11",
@@ -2437,6 +4098,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3206-6e1ac29a212f/sanmarino3206.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v3206-6e1ac29a212f.json",
+        "release_tag": "firmware-sanmarino-v3206-6e1ac29a212f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.0.3-remove-caps-log-hf+sanmarino-release-rt421+10",
+          "product_version": "3.20.6+sanmarino-release-rt421+10",
+          "software_version": "sanmarino+3.20.6+sanmarino-release-rt421+10",
+          "version": "3.20.6"
+        },
+        "sha256": "6e1ac29a212f883becd5622712928498361db3ca00bd8923fa99b01dc041f3eb",
+        "size": 188322268
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "09ec9c82bfe6067622c70a6f36aa3379-11",
@@ -2453,6 +4136,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v3225-671bb2f7c7fd/sanmarino3225.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v3225-671bb2f7c7fd.json",
+        "release_tag": "firmware-sanmarino-v3225-671bb2f7c7fd",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+4.3.0+sanmarino-release-rt122+6",
+          "product_version": "3.22.5+sanmarino-release-rt122+6",
+          "software_version": "sanmarino+3.22.5+sanmarino-release-rt122+6",
+          "version": "3.22.5"
+        },
+        "sha256": "671bb2f7c7fd2915a397add8aecc3a7ef8b1ae94f1a8855f3926b2deb7891a2d",
+        "size": 182034888
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "d969e5d946a1c3ea8e6cd315540ff175-11",
@@ -2469,6 +4174,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v323-457b88919c01/sanmarino323.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v323-457b88919c01.json",
+        "release_tag": "firmware-sanmarino-v323-457b88919c01",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.1.6+sanmarino-release-rt419+6",
+          "product_version": "3.2.3+sanmarino-release-rt419+6",
+          "software_version": "sanmarino+3.2.3+sanmarino-release-rt419+6",
+          "version": "3.2.3"
+        },
+        "sha256": "457b88919c01566aecbfe246586801e2a5fa3ac6e90774b88a7cd468a77a1132",
+        "size": 156922329
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "143f989652fa15ca05ae452930de7d66-10",
@@ -2485,6 +4212,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sanmarino-v324-41b2e3ad33b0/sanmarino324.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/sanmarino/v324-41b2e3ad33b0.json",
+        "release_tag": "firmware-sanmarino-v324-41b2e3ad33b0",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sanmarino",
+          "os_version": "linux+2.1.6+sanmarino-release-rt419+7",
+          "product_version": "3.2.4+sanmarino-release-rt419+7",
+          "software_version": "sanmarino+3.2.4+sanmarino-release-rt419+7",
+          "version": "3.2.4"
+        },
+        "sha256": "41b2e3ad33b003187387a97b7f8c26032e57d09f08aa6bbb129811cfa70e33d0",
+        "size": 156922329
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "0db9f1b99671580ca72f60aa785a56e1-10",
@@ -2501,6 +4250,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-0.8.16-08d8d2e8de99/sapphire0816.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/0.8.16-08d8d2e8de99.json",
+        "release_tag": "firmware-sapphire-0.8.16-08d8d2e8de99",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-5.6.4_release+Firmware-Production+41",
+          "product_version": "0.8.16+Firmware-Production+41",
+          "software_version": "202105142107",
+          "version": "0.8.16"
+        },
+        "sha256": "08d8d2e8de999bf363465df7823f595d409a9357bf5111423a1cb11c80964635",
+        "size": 170288666
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "e9e84807a3abe0fe06281bd1ee5d68d0-10",
@@ -2519,6 +4290,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-1.0.17-dd6d85f29df8/sapphire1017.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/1.0.17-dd6d85f29df8.json",
+        "release_tag": "firmware-sapphire-1.0.17-dd6d85f29df8",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-5.8.8_release+Firmware-Production+52",
+          "product_version": "1.0.17+Firmware-Production+52",
+          "software_version": "202108110446",
+          "version": "1.0.17"
+        },
+        "sha256": "dd6d85f29df89373cbe043b86f2ff446508ed91b559ef07f9b251488e82f5ab5",
+        "size": 152229434
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "7475ee6662f4f28cccbbe2e12b7b4e3f-9",
@@ -2537,6 +4330,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-1.2.10-43546d499f59/sapphire1210.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/1.2.10-43546d499f59.json",
+        "release_tag": "firmware-sapphire-1.2.10-43546d499f59",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-5.18.4_release+Firmware-Production+55",
+          "product_version": "1.2.10+Firmware-Production+55",
+          "software_version": "202111012059",
+          "version": "1.2.10"
+        },
+        "sha256": "43546d499f59597f9c0fec851eabbefa10c7a1716d839589eeea444d8c31c4d8",
+        "size": 161326619
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "6ea4cb430037bc192dcb42a6363b3afc-10",
@@ -2556,6 +4371,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-1.2.12-0d2ed0351390/sapphire1212.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/1.2.12-0d2ed0351390.json",
+        "release_tag": "firmware-sapphire-1.2.12-0d2ed0351390",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-5.18.8_release+Firmware-Production+57",
+          "product_version": "1.2.12+Firmware-Production+57",
+          "software_version": "202112061935",
+          "version": "1.2.12"
+        },
+        "sha256": "0d2ed03513900ce1127f70d13411389600e0124c5fde355c7710e1b6f769ddfa",
+        "size": 161465883
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a14c3d70725a42be629a9f1cdfa728f2-10",
@@ -2575,6 +4412,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.21.01-7bdd59f5f7f7/sapphire222101.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/22.21.01-7bdd59f5f7f7.json",
+        "release_tag": "firmware-sapphire-22.21.01-7bdd59f5f7f7",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-6.9.1_release+Firmware-Production+70",
+          "product_version": "22.21.1+2022-06-02-570490a425b+Firmware-Production+70",
+          "software_version": "202206031911",
+          "version": "22.21.1"
+        },
+        "sha256": "7bdd59f5f7f7596df472306578513fd2f2d678a96d639d274009f2e604a0bf16",
+        "size": 218126114
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "40858527a3393b05f66eb978c2810ff2-13",
@@ -2589,6 +4448,28 @@
       "version": "22.21.01"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.29.3-351223bc841c/sapphire222903.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/22.29.3-351223bc841c.json",
+        "release_tag": "firmware-sapphire-22.29.3-351223bc841c",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-6.16.0_release+Firmware-Production+96",
+          "product_version": "22.29.3+2022-08-23-eb90240ea48+Firmware-Production+96",
+          "software_version": "202208232228",
+          "version": "22.29.3"
+        },
+        "sha256": "351223bc841ce62076416aa31f4e6a92114ca1f6ac320b7923b49b5d0f7c2c71",
+        "size": 300451619
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a988c32dc06a6538e608db7ddb1975d2-18",
@@ -2603,6 +4484,28 @@
       "version": "22.29.3"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.37.1-b58258e55cf1/sapphire223701.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/22.37.1-b58258e55cf1.json",
+        "release_tag": "firmware-sapphire-22.37.1-b58258e55cf1",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-7.1.0_release+Firmware-Production+101",
+          "product_version": "22.37.1+2022-10-04-b8a50ae973e+Firmware-Production+101",
+          "software_version": "202210042045",
+          "version": "22.37.1"
+        },
+        "sha256": "b58258e55cf12bd34227dd31480edf10a6cccb7f4accfc9276354ff142b682c3",
+        "size": 222246692
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "eacd2ddaf2f5e065ce09b4a645781215-13",
@@ -2617,6 +4520,28 @@
       "version": "22.37.1"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.37.2-2150e7d51dab/sapphire223702.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/22.37.2-2150e7d51dab.json",
+        "release_tag": "firmware-sapphire-22.37.2-2150e7d51dab",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-7.1.1_release+Firmware-Production+106",
+          "product_version": "22.37.2+2022-10-18-2947a3fc826+Firmware-Production+106",
+          "software_version": "202210191636",
+          "version": "22.37.2"
+        },
+        "sha256": "2150e7d51dab6057d30a08e6fa8f43001af2d26cb639db2896162ee9d6c8546e",
+        "size": 222246692
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "1235c8ec3291b130c5d2dedf1cb6ab87-13",
@@ -2694,6 +4619,27 @@
       "version": "22.52.07"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-22.7.2-fee7830b4d99/sapphire220702.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/22.7.2-fee7830b4d99.json",
+        "release_tag": "firmware-sapphire-22.7.2-fee7830b4d99",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-6.3.0_release+Firmware-Production+62",
+          "product_version": "22.7.2-2022-03-29-a17befa402d+Firmware-Production+62",
+          "software_version": "202203291357"
+        },
+        "sha256": "fee7830b4d996ee6c84971332c1c8b670867793407d4788109802259828a5303",
+        "size": 176310049
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "4eeb3c24ed27940629fa3ee90f2f2880-11",
@@ -2945,6 +4891,28 @@
       "version": "24.29.03"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-v1020-77fcea6af825/sapphire1020.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/v1020-77fcea6af825.json",
+        "release_tag": "firmware-sapphire-v1020-77fcea6af825",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-5.8.8_release+Firmware-Production+54",
+          "product_version": "1.0.20+Firmware-Production+54",
+          "software_version": "202110051908",
+          "version": "1.0.20"
+        },
+        "sha256": "77fcea6af82510ec395034cb94437e77916c6bc71050bfdb141ace38e273a09b",
+        "size": 151184954
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "cfbc83fad431c27f1f2ae49a083ba1fd-9",
@@ -2961,6 +4929,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-sapphire-v108-ee4acaddac5f/sapphire108.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/sapphire/v108-ee4acaddac5f.json",
+        "release_tag": "firmware-sapphire-v108-ee4acaddac5f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "sapphire",
+          "os_version": "linux+sextant-5.8.4_release+Firmware-Production+44",
+          "product_version": "1.0.8+Firmware-Production+44",
+          "software_version": "202106242223",
+          "version": "1.0.8"
+        },
+        "sha256": "ee4acaddac5f1ac36d5dccc1b364501ace2ab7b202fec4826cea7c62594b6ed7",
+        "size": 151586361
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "f19fb85c258329f6da1c659de4c6b05c-9",
@@ -2977,6 +4967,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-1.14.17-305de955b900/soho11417.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/1.14.17-305de955b900.json",
+        "release_tag": "firmware-soho-1.14.17-305de955b900",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.0.10+soho-releases+98",
+          "product_version": "1.14.17+soho-releases+98",
+          "software_version": "soho+1.14.17+soho-releases+98",
+          "version": "1.14.17"
+        },
+        "sha256": "305de955b9000191b1e70a45e2338b341175cf1be7f52e2c3606cd9caf5c97f4",
+        "size": 156520908
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "02e2f1207ccc88cf7ad621e2473d5fb7-19",
@@ -2995,6 +5007,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-1.14.19-4c425c8127b3/soho11419.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/1.14.19-4c425c8127b3.json",
+        "release_tag": "firmware-soho-1.14.19-4c425c8127b3",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.0.10+soho-releases+102",
+          "product_version": "1.14.19+soho-releases+102",
+          "software_version": "soho+1.14.19+soho-releases+102",
+          "version": "1.14.19"
+        },
+        "sha256": "4c425c8127b3ba84a74a6a819dc9d74be0440dde792cb22ddbf7797f103ffe7f",
+        "size": 156520909
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "b7001087af9bda33b038e65397f40c33-19",
@@ -3013,6 +5047,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-1.14.22-a82d8b6d610b/soho11422.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/1.14.22-a82d8b6d610b.json",
+        "release_tag": "firmware-soho-1.14.22-a82d8b6d610b",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.0.10+soho-releases+105",
+          "product_version": "1.14.22+soho-releases+105",
+          "software_version": "soho+1.14.22+soho-releases+105",
+          "version": "1.14.22"
+        },
+        "sha256": "a82d8b6d610b9bceb9766b7328ca8b061f387d82e5588b9384e0168e658acfcf",
+        "size": 156520909
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "edb9acf575b2f3f6bd61fe152aac1c4b-10",
@@ -3031,6 +5087,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.21.01-d84afb15fd0d/soho222101.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/22.21.01-d84afb15fd0d.json",
+        "release_tag": "firmware-soho-22.21.01-d84afb15fd0d",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.15.0+Firmware-Build+1339",
+          "product_version": "22.21.1+2022-06-02-570490a425b+Firmware-Build+1339",
+          "software_version": "soho+22.21.1+2022-06-02-570490a425b+Firmware-Build+1339",
+          "version": "22.21.1"
+        },
+        "sha256": "d84afb15fd0d0a2a82a34fa98025db2a137fcda05b12b7f10ae51e261c59d2f4",
+        "size": 218419626
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "9ea9c7b91eff703e3948c024bb929c96-13",
@@ -3045,6 +5123,28 @@
       "version": "22.21.01"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.10-56d4c99aa4ad/soho222910.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/22.29.10-56d4c99aa4ad.json",
+        "release_tag": "firmware-soho-22.29.10-56d4c99aa4ad",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.20.0+Firmware-Build+4863",
+          "product_version": "22.29.10+2023-10-09-2b3f87f75e8+Firmware-Build+4863",
+          "software_version": "soho+22.29.10+2023-10-09-2b3f87f75e8+Firmware-Build+4863",
+          "version": "22.29.10"
+        },
+        "sha256": "56d4c99aa4ad7854f0726c2d1b61ad5fbfad6c1f7a3a8d5db26a124279dbadf8",
+        "size": 259375530
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a1dcccfc0caa3b859eea80c44a722601-16",
@@ -3059,6 +5159,28 @@
       "version": "22.29.10"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.3-d8d40d0aa81c/soho222903.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/22.29.3-d8d40d0aa81c.json",
+        "release_tag": "firmware-soho-22.29.3-d8d40d0aa81c",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.20.0+Firmware-Build+1832",
+          "product_version": "22.29.3+2022-08-23-eb90240ea48+Firmware-Build+1832",
+          "software_version": "soho+22.29.3+2022-08-23-eb90240ea48+Firmware-Build+1832",
+          "version": "22.29.3"
+        },
+        "sha256": "d8d40d0aa81c3da9b856da29b04c0e855dfe5d191111aa4c51f1725e1fb9e3be",
+        "size": 299053482
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "7105323202a525c1245890f065cfc69f-18",
@@ -3073,6 +5195,28 @@
       "version": "22.29.3"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.5-2dd99b7f3e10/soho222905.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/22.29.5-2dd99b7f3e10.json",
+        "release_tag": "firmware-soho-22.29.5-2dd99b7f3e10",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.20.0+Firmware-Build+1990",
+          "product_version": "22.29.5+2022-09-29-c7d212a8ae8+Firmware-Build+1990",
+          "software_version": "soho+22.29.5+2022-09-29-c7d212a8ae8+Firmware-Build+1990",
+          "version": "22.29.5"
+        },
+        "sha256": "2dd99b7f3e1048f443299ec7399c2e8159270ba93234c33cacd2187d1c136e77",
+        "size": 259387818
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "0b0aa75150064c2f28b2c8ff90f555e6-16",
@@ -3087,6 +5231,28 @@
       "version": "22.29.5"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.6-a2f64b0a5063/soho222906.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/22.29.6-a2f64b0a5063.json",
+        "release_tag": "firmware-soho-22.29.6-a2f64b0a5063",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.20.0+Firmware-Build+2321",
+          "product_version": "22.29.6+2022-12-01-82f3372a65c+Firmware-Build+2321",
+          "software_version": "soho+22.29.6+2022-12-01-82f3372a65c+Firmware-Build+2321",
+          "version": "22.29.6"
+        },
+        "sha256": "a2f64b0a5063ca2ed72578a73de4455723d780fb0b8b76307b1ed6f5456b0c18",
+        "size": 259387818
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "0b4ae95af700c27530bb7ddd634eb388-16",
@@ -3101,6 +5267,28 @@
       "version": "22.29.6"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.29.8-ab14a6e3fd54/soho22298.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/22.29.8-ab14a6e3fd54.json",
+        "release_tag": "firmware-soho-22.29.8-ab14a6e3fd54",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.20.0+Firmware-Build+4610",
+          "product_version": "22.29.8+2023-09-07-baa2b24737e+Firmware-Build+4610",
+          "software_version": "soho+22.29.8+2023-09-07-baa2b24737e+Firmware-Build+4610",
+          "version": "22.29.8"
+        },
+        "sha256": "ab14a6e3fd5482d7e9fddb8dce7b25c17ac3a000b02f4d9b4191e1320ec3a54c",
+        "size": 259391914
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "dd66e2a0b18eae7eda8062b2ce020c70-16",
@@ -3115,6 +5303,27 @@
       "version": "22.29.8"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-22.7.2-913bdbd614fd/soho220702.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/22.7.2-913bdbd614fd.json",
+        "release_tag": "firmware-soho-22.7.2-913bdbd614fd",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.9.0+Firmware-Build+1084",
+          "product_version": "22.7.2-2022-03-29-a17befa402d+Firmware-Build+1084",
+          "software_version": "soho+22.7.2-2022-03-29-a17befa402d+Firmware-Build+1084"
+        },
+        "sha256": "913bdbd614fd658534a11d0ee8f1ee2226eb04db5bf776ab0c25cd8a892fe8e7",
+        "size": 191902121
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "aab35bc9de970c9c2024b74f8c96dd6a-12",
@@ -3129,6 +5338,28 @@
       "version": "22.7.2"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.0.11-8aa4fe901b20/soho3011.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.0.11-8aa4fe901b20.json",
+        "release_tag": "firmware-soho-3.0.11-8aa4fe901b20",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.1.2+soho-release-rt319+13",
+          "product_version": "3.0.11+soho-release-rt319+13",
+          "software_version": "soho+3.0.11+soho-release-rt319+13",
+          "version": "3.0.11"
+        },
+        "sha256": "8aa4fe901b2046c4288f49bf9e57b5500c323be6fa8307e0eac66a1473d81ff7",
+        "size": 157991376
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "63255e7d34bc7a32d0bf6c5826f8d02b-10",
@@ -3147,6 +5378,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.10.7-999f5c03e9a9/soho3107.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.10.7-999f5c03e9a9.json",
+        "release_tag": "firmware-soho-3.10.7-999f5c03e9a9",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.4.2+soho-release-rt320+10",
+          "product_version": "3.10.7+soho-release-rt320+10",
+          "software_version": "soho+3.10.7+soho-release-rt320+10",
+          "version": "3.10.7"
+        },
+        "sha256": "999f5c03e9a9ad60f3dae4aa667b0a16f92f42114d4517c075447bfd9fdf0d2c",
+        "size": 162292176
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "7c3d5931cdaf3515106e8c38911ac8c1-10",
@@ -3165,6 +5418,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.10.8-73288abe0396/soho3108.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.10.8-73288abe0396.json",
+        "release_tag": "firmware-soho-3.10.8-73288abe0396",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.4.2+soho-release-rt320+11",
+          "product_version": "3.10.8+soho-release-rt320+11",
+          "software_version": "soho+3.10.8+soho-release-rt320+11",
+          "version": "3.10.8"
+        },
+        "sha256": "73288abe039672bfc6bf834263e1d5facd6210fa9d6eab1f7bd7984a6d018c61",
+        "size": 162296272
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "facb6f122594f889fd62282621650560-10",
@@ -3183,6 +5458,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.12.8-b22657ff5668/soho3128.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.12.8-b22657ff5668.json",
+        "release_tag": "firmware-soho-3.12.8-b22657ff5668",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.8.0.2+soho-release-420+12",
+          "product_version": "3.12.8+soho-release-420+12",
+          "software_version": "soho+3.12.8+soho-release-420+12",
+          "version": "3.12.8"
+        },
+        "sha256": "b22657ff566837f5de26404c769e1cfba240823a93683ddcd0f66677f4be8d79",
+        "size": 162513360
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "b454c2e34ccf7c56eaa05494e4cdbf1a-10",
@@ -3201,6 +5498,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.14.16-179333aa75fc/soho31416.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.14.16-179333aa75fc.json",
+        "release_tag": "firmware-soho-3.14.16-179333aa75fc",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.8.6.1+soho-release-121+22",
+          "product_version": "3.14.16+soho-release-121+22",
+          "software_version": "soho+3.14.16+soho-release-121+22",
+          "version": "3.14.16"
+        },
+        "sha256": "179333aa75fc27bd689370da11412a8a0d5881c7fab61d1f42f9b11ee93748fd",
+        "size": 167870911
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "0e29ff54793b12428507799134c72439-10",
@@ -3219,6 +5538,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.18.11-c8573875ed3f/soho31811.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.18.11-c8573875ed3f.json",
+        "release_tag": "firmware-soho-3.18.11-c8573875ed3f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.9.8.2-adb-hf+soho-release-rt321+12",
+          "product_version": "3.18.11+soho-release-rt321+12",
+          "software_version": "soho+3.18.11+soho-release-rt321+12",
+          "version": "3.18.11"
+        },
+        "sha256": "c8573875ed3f2b7f55a1a3d6d88925133410553bbcb1de787fa95d4b6d21484c",
+        "size": 184177096
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "1d3209a00e5827c97da7cbc0e24cce0f-11",
@@ -3237,6 +5578,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.2.4-35f925143ca4/soho324.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.2.4-35f925143ca4.json",
+        "release_tag": "firmware-soho-3.2.4-35f925143ca4",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.1.6+soho-release-rt419+7",
+          "product_version": "3.2.4+soho-release-rt419+7",
+          "software_version": "soho+3.2.4+soho-release-rt419+7",
+          "version": "3.2.4"
+        },
+        "sha256": "35f925143ca41c3531041bdf6097aed3e88a7bcf9cf937e22b158b36cbcf557b",
+        "size": 159695311
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "14794b0e03306cba0bb09e79774ba2ea-10",
@@ -3255,6 +5618,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.2.9-0a0eadaa54b3/soho329.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.2.9-0a0eadaa54b3.json",
+        "release_tag": "firmware-soho-3.2.9-0a0eadaa54b3",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.1.6_lock-1+soho-release-rt419+11",
+          "product_version": "3.2.9+soho-release-rt419+11",
+          "software_version": "soho+3.2.9+soho-release-rt419+11",
+          "version": "3.2.9"
+        },
+        "sha256": "0a0eadaa54b3284a7cb729162c0c2d4eea2c5fe8fbb48212559777a051380427",
+        "size": 159691223
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "d06eaf5714cf7c61b4020ed9fba43a1e-10",
@@ -3273,6 +5658,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.20.7-06635d7be86f/soho3207.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.20.7-06635d7be86f.json",
+        "release_tag": "firmware-soho-3.20.7-06635d7be86f",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.0.3.4+soho-release-rt421+11",
+          "product_version": "3.20.7+soho-release-rt421+11",
+          "software_version": "soho+3.20.7+soho-release-rt421+11",
+          "version": "3.20.7"
+        },
+        "sha256": "06635d7be86fac2c22cb532cb5791af89f6900d14a8845021e43143354d20e0e",
+        "size": 190898625
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "2b475c723f29663d0e9d656eb9021182-12",
@@ -3291,6 +5698,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.6.8-1b96b63640ff/soho368.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.6.8-1b96b63640ff.json",
+        "release_tag": "firmware-soho-3.6.8-1b96b63640ff",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.2.2+soho-release-rt120+10",
+          "product_version": "3.6.8+soho-release-rt120+10",
+          "software_version": "soho+3.6.8+soho-release-rt120+10",
+          "version": "3.6.8"
+        },
+        "sha256": "1b96b63640ff687b48b22c3d5be6b0c48789f3143e0de03f2e289ab33662667c",
+        "size": 159588816
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "fe8680f52af4d382aa2e09330232c1f3-10",
@@ -3309,6 +5738,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-3.8.5-ff6e8df70000/soho385.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/3.8.5-ff6e8df70000.json",
+        "release_tag": "firmware-soho-3.8.5-ff6e8df70000",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.2.2+soho-release-rt220+13",
+          "product_version": "3.8.5+soho-release-rt220+13",
+          "software_version": "soho+3.8.5+soho-release-rt220+13",
+          "version": "3.8.5"
+        },
+        "sha256": "ff6e8df70000376d4b5b0304da911c2123c201cb62b4f8a50d46769c40db55fc",
+        "size": 160297424
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "0801e03260567034bf78e0e028c1544d-10",
@@ -3327,6 +5778,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v11418-c8178c1a9723/soho11418.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v11418-c8178c1a9723.json",
+        "release_tag": "firmware-soho-v11418-c8178c1a9723",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.0.10+soho-releases+99",
+          "product_version": "1.14.18+soho-releases+99",
+          "software_version": "soho+1.14.18+soho-releases+99",
+          "version": "1.14.18"
+        },
+        "sha256": "c8178c1a9723f7ebb9b25b39d76f83b0f38bb9763c134e1e6c9cd86ca5485251",
+        "size": 156520908
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "c73ebd8f598e0aa6b52abd0d326b5d80-19",
@@ -3343,6 +5816,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3010-b8f3935d4f38/soho3010.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3010-b8f3935d4f38.json",
+        "release_tag": "firmware-soho-v3010-b8f3935d4f38",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.1.2+soho-release-rt319+12",
+          "product_version": "3.0.10+soho-release-rt319+12",
+          "software_version": "soho+3.0.10+soho-release-rt319+12",
+          "version": "3.0.10"
+        },
+        "sha256": "b8f3935d4f38508584b9d4ed70b2befc9c3d007a4d96292247cbc7cbe35fbda0",
+        "size": 157987280
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "91602edd5c1f88bd5070607e306c1ba2-10",
@@ -3359,6 +5854,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3012-a6bb699d0def/soho3012.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3012-a6bb699d0def.json",
+        "release_tag": "firmware-soho-v3012-a6bb699d0def",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.1.2+soho-release-rt319+14",
+          "product_version": "3.0.12+soho-release-rt319+14",
+          "software_version": "soho+3.0.12+soho-release-rt319+14",
+          "version": "3.0.12"
+        },
+        "sha256": "a6bb699d0defb538ee828dbae8ce15699f2f81ab197ea9e1759898944f28f60a",
+        "size": 157987280
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "8f569793709825d9242dc332d3955f0c-10",
@@ -3375,6 +5892,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3126-e8a0630ad21a/soho3126.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3126-e8a0630ad21a.json",
+        "release_tag": "firmware-soho-v3126-e8a0630ad21a",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.8.0+soho-release-420+7",
+          "product_version": "3.12.6+soho-release-420+7",
+          "software_version": "soho+3.12.6+soho-release-420+7",
+          "version": "3.12.6"
+        },
+        "sha256": "e8a0630ad21ac83cfeafb08858ca8ef52ac5b91ab9160f8d2b4de42830036ff6",
+        "size": 162525645
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a4d004ef4f831239b16c248fb3f85e2d-10",
@@ -3391,6 +5930,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3127-26c7a72fdca1/soho3127.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3127-26c7a72fdca1.json",
+        "release_tag": "firmware-soho-v3127-26c7a72fdca1",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.8.0+soho-release-420+10",
+          "product_version": "3.12.7+soho-release-420+10",
+          "software_version": "soho+3.12.7+soho-release-420+10",
+          "version": "3.12.7"
+        },
+        "sha256": "26c7a72fdca1d63e3be1ee251f41f11043b80efd6edc796bb571bae0ef1315d7",
+        "size": 162505166
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "d19a18f043bf2da0176368fbae93c6aa-10",
@@ -3407,6 +5968,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31411-c1202558ec91/soho31411.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v31411-c1202558ec91.json",
+        "release_tag": "firmware-soho-v31411-c1202558ec91",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.8.6.1+soho-release-121+17",
+          "product_version": "3.14.11+soho-release-121+17",
+          "software_version": "soho+3.14.11+soho-release-121+17",
+          "version": "3.14.11"
+        },
+        "sha256": "c1202558ec91c0caaba494bcbf23aa1ae3dd2bcb002818ae4ad87722cf808b81",
+        "size": 167854527
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "d75d117ee167a991930a20a8d2f776d2-10",
@@ -3423,6 +6006,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31412-41a490c5756c/soho31412.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v31412-41a490c5756c.json",
+        "release_tag": "firmware-soho-v31412-41a490c5756c",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.8.6.1+soho-release-121+18",
+          "product_version": "3.14.12+soho-release-121+18",
+          "software_version": "soho+3.14.12+soho-release-121+18",
+          "version": "3.14.12"
+        },
+        "sha256": "41a490c5756cd8eca9a66f02c2c5ba87c7b92796ceee6fef3b23f6594dbf34fc",
+        "size": 167858623
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "c0308052516b206425c59e100f83fba7-10",
@@ -3439,6 +6044,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31414-5db4d2f29592/soho31414.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v31414-5db4d2f29592.json",
+        "release_tag": "firmware-soho-v31414-5db4d2f29592",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.8.6.1+soho-release-121+20",
+          "product_version": "3.14.14+soho-release-121+20",
+          "software_version": "soho+3.14.14+soho-release-121+20",
+          "version": "3.14.14"
+        },
+        "sha256": "5db4d2f295923170aa7a4880f6fc5e5308e68c3fe6cd8ab3bc30d93045153005",
+        "size": 167850431
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "ae8c6c694d8cc345759475c1e02f55c5-10",
@@ -3455,6 +6082,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3148-d4306294aaca/soho3148.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3148-d4306294aaca.json",
+        "release_tag": "firmware-soho-v3148-d4306294aaca",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.8.6.1+soho-release-121+13",
+          "product_version": "3.14.8+soho-release-121+13",
+          "software_version": "soho+3.14.8+soho-release-121+13",
+          "version": "3.14.8"
+        },
+        "sha256": "d4306294aaca6144866100dc475f0a0a50d4beea4f0d0b5c8ce7c3e688fbdf20",
+        "size": 167846335
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "12fc604e42359500eafc58c9dd951c2c-10",
@@ -3471,6 +6120,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31610-420cf93eef4d/soho31610.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v31610-420cf93eef4d.json",
+        "release_tag": "firmware-soho-v31610-420cf93eef4d",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.9.4.1+soho-release-rt221+8",
+          "product_version": "3.16.10+soho-release-rt221+8",
+          "software_version": "soho+3.16.10+soho-release-rt221+8",
+          "version": "3.16.10"
+        },
+        "sha256": "420cf93eef4d854b87a31b59bf45631da405f5998ca36d35ff2cb98a4617fcb4",
+        "size": 178721216
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "6b70483966519fc5ecbebca80e6196fd-11",
@@ -3487,6 +6158,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v31810-a7900b55c6d5/soho31810.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v31810-a7900b55c6d5.json",
+        "release_tag": "firmware-soho-v31810-a7900b55c6d5",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.9.8.2-adb-hf+soho-release-rt321+11",
+          "product_version": "3.18.10+soho-release-rt321+11",
+          "software_version": "soho+3.18.10+soho-release-rt321+11",
+          "version": "3.18.10"
+        },
+        "sha256": "a7900b55c6d521a97ef7823dc8b171e93ceaba866f2f561824fd0cd426991afe",
+        "size": 184185288
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "8dc7c7bb8cfe5d67e34d32e6c723fac3-11",
@@ -3503,6 +6196,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3187-e9bc5e93f5ee/soho3187.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3187-e9bc5e93f5ee.json",
+        "release_tag": "firmware-soho-v3187-e9bc5e93f5ee",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+3.9.8.2+soho-release-rt321+8",
+          "product_version": "3.18.7+soho-release-rt321+8",
+          "software_version": "soho+3.18.7+soho-release-rt321+8",
+          "version": "3.18.7"
+        },
+        "sha256": "e9bc5e93f5ee4d9d76ddb853e10da842373f619b79fa468a9b911f550f4fd9a8",
+        "size": 184181184
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "04b46349476da889f7c56d0e7f625d4e-11",
@@ -3519,6 +6234,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3204-73c72dc029f4/soho3204.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3204-73c72dc029f4.json",
+        "release_tag": "firmware-soho-v3204-73c72dc029f4",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.0.3-remove-caps-log-hf+soho-release-rt421+8",
+          "product_version": "3.20.4+soho-release-rt421+8",
+          "software_version": "soho+3.20.4+soho-release-rt421+8",
+          "version": "3.20.4"
+        },
+        "sha256": "73c72dc029f498b9c8095edb7c9d69c182de491130e26cb7684f49c2a99db5c3",
+        "size": 190849489
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "7697ff1145daa961f8c89f4c17eb478f-12",
@@ -3535,6 +6272,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3206-0f5731ded34c/soho3206.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3206-0f5731ded34c.json",
+        "release_tag": "firmware-soho-v3206-0f5731ded34c",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.0.3-remove-caps-log-hf+soho-release-rt421+10",
+          "product_version": "3.20.6+soho-release-rt421+10",
+          "software_version": "soho+3.20.6+soho-release-rt421+10",
+          "version": "3.20.6"
+        },
+        "sha256": "0f5731ded34c40fc925579554003842876e7a273fd8c34c8d4bc98bb973b6ea4",
+        "size": 190861778
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "a4096eb0b843b804310e1fb2e8668a28-12",
@@ -3551,6 +6310,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3225-15e3e93db141/soho3225.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3225-15e3e93db141.json",
+        "release_tag": "firmware-soho-v3225-15e3e93db141",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.3.0+soho-release-rt122+6",
+          "product_version": "3.22.5+soho-release-rt122+6",
+          "software_version": "soho+3.22.5+soho-release-rt122+6",
+          "version": "3.22.5"
+        },
+        "sha256": "15e3e93db141d7f6cd6e7f31bf77b0bd539a238ed6170d799dd2cc369db85f00",
+        "size": 188416446
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "f98217f8ea1485ed9c961622bdb021c6-11",
@@ -3568,6 +6349,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v3226-097dafb00c4d/soho3226.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v3226-097dafb00c4d.json",
+        "release_tag": "firmware-soho-v3226-097dafb00c4d",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+4.3.0+soho-release-rt122+7",
+          "product_version": "3.22.6+soho-release-rt122+7",
+          "software_version": "soho+3.22.6+soho-release-rt122+7",
+          "version": "3.22.6"
+        },
+        "sha256": "097dafb00c4d343b0a531ad59de2fdf74bdc1156aadab6c1b67d2e4037540f35",
+        "size": 187470270
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "9beed9e25e05a777b590f26e575d24cc-11",
@@ -3584,6 +6387,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v323-05907449ea06/soho323.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v323-05907449ea06.json",
+        "release_tag": "firmware-soho-v323-05907449ea06",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.1.6+soho-release-rt419+6",
+          "product_version": "3.2.3+soho-release-rt419+6",
+          "software_version": "soho+3.2.3+soho-release-rt419+6",
+          "version": "3.2.3"
+        },
+        "sha256": "05907449ea06c0520e643fc1345870fd8c6e9e25f726aab186110fe06e8720be",
+        "size": 159695311
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "7a5c1ea045244432ae82ad6de47353bf-10",
@@ -3600,6 +6425,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v366-c064c87b3c91/soho366.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v366-c064c87b3c91.json",
+        "release_tag": "firmware-soho-v366-c064c87b3c91",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.2.2+soho-release-rt120+8",
+          "product_version": "3.6.6+soho-release-rt120+8",
+          "software_version": "soho+3.6.6+soho-release-rt120+8",
+          "version": "3.6.6"
+        },
+        "sha256": "c064c87b3c91fcb0e038fde5c4711f5a4818b04bea0eb2bb56e7c2e0c51ffaf9",
+        "size": 159584719
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "1d62b2dc11ebde45a21091b7be126f6e-10",
@@ -3616,6 +6463,28 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-soho-v383-69a4bc47f857/soho383.signed",
+        "component_count": 7,
+        "format": "irobot-otps",
+        "manifest": "firmware/soho/v383-69a4bc47f857.json",
+        "release_tag": "firmware-soho-v383-69a4bc47f857",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/os-release": "SYSTEM",
+            "opt/irobot/identity.env": "CMNLIB",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "soho",
+          "os_version": "linux+2.2.2+soho-release-rt220+7",
+          "product_version": "3.8.3+soho-release-rt220+7",
+          "software_version": "soho+3.8.3+soho-release-rt220+7",
+          "version": "3.8.3"
+        },
+        "sha256": "69a4bc47f85738b80d6a53e0dfbd47e292149403cc88b62f65a6612d3c7e6fe3",
+        "size": 160297423
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "6f4942b2cc05d098b090a022e996474e-10",
@@ -3632,6 +6501,27 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-1.2.8-bb36998bd4d6/stingray128.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/stingray/1.2.8-bb36998bd4d6.json",
+        "release_tag": "firmware-stingray-1.2.8-bb36998bd4d6",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "stingray",
+          "os_version": "linux+sextant-6.11.0_release+Firmware-Production+99",
+          "product_version": "1.2.8-20220926+Firmware-Production+99",
+          "software_version": "202209262055"
+        },
+        "sha256": "bb36998bd4d6f06f5ff19f0c8c15a8ca5eb8b4d0ee090f8b7892856b9023213e",
+        "size": 201287443
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "dab90434c6a22e91d592fa3acd1039f5-12",
@@ -4147,6 +7037,27 @@
       "version": "24.29.06"
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-v0209-b79fe894d04b/stingray0209.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/stingray/v0209-b79fe894d04b.json",
+        "release_tag": "firmware-stingray-v0209-b79fe894d04b",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "stingray",
+          "os_version": "linux+sextant-6.7.1_release+stingray-release+142",
+          "product_version": "0.20.9-20220425+stingray-release+142",
+          "software_version": "202204252337"
+        },
+        "sha256": "b79fe894d04b67d739db2ed21f95d527ca71cf66bcee65de4c72eb8c00cc32ee",
+        "size": 207877959
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "eb1bcbaa4ba21618317af5c8d43ce99e-13",
@@ -4163,6 +7074,27 @@
       ]
     },
     {
+      "archive": {
+        "asset_url": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-stingray-v129-f72613273e0a/stingray129.signed",
+        "component_count": 13,
+        "format": "irobot-otps",
+        "manifest": "firmware/stingray/v129-f72613273e0a.json",
+        "release_tag": "firmware-stingray-v129-f72613273e0a",
+        "reported_identity": {
+          "evidence": {
+            "build.prop": "SYSTEM",
+            "etc/build.prop": "SYSTEM",
+            "opt/irobot/identity.env": "SYSTEM",
+            "opt/irobot/version.env": "SYSTEM"
+          },
+          "model": "stingray",
+          "os_version": "linux+sextant-6.11.0_release+Firmware-Production+100",
+          "product_version": "1.2.9-20220929+Firmware-Production+100",
+          "software_version": "202209292002"
+        },
+        "sha256": "f72613273e0aa68534af1e2226932f60e3cab39f0a0bef72923b635b66661b51",
+        "size": 201287445
+      },
       "discovered_at": "2026-08-30T04:41:47.155112+00:00",
       "discovery_evidence": "data/research/compact-object-sweep-2026-08-29.json",
       "etag": "79b66d2aabbdb255a7bf108feab960fd-12",
