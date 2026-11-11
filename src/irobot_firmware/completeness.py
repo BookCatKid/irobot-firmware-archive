@@ -122,7 +122,7 @@ def build_completeness_ledger(
     for family, info in sorted(platform_rows.items()):
         models = info.get("models") or []
         confidence = info.get("confidence") or "unknown"
-        if not models or confidence not in {"confirmed", "confirmed-app", "confirmed-app+backend+cdn", "confirmed-app+cdn"}:
+        if not models or confidence not in {"confirmed", "confirmed-app", "confirmed-app+backend+cdn", "confirmed-app+cdn", "confirmed-app+backend+firmware", "confirmed-backend+firmware"}:
             mapping_gaps.append({
                 "family": family,
                 "confidence": confidence,

@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-10",
+  "method": "Download archived signed aPKG bytes, verify SHA-256 against catalog; gzip-decompress embedded SStarOta.bin; locate SquashFS magic and extract oem/sysconf/sysVersion.ini, oem/sysconf/product_sku.ini, and oem/irobot/conf/sdk_version.ini with unsquashfs at the observed superblock offset.",
+  "schema": 1,
+  "scope": "SKU-template association only; not exhaustive retail SKU mapping or evidence of older unrecovered OTA artifacts.",
+  "shared_sys_product_warning": "CRL330LC is identically embedded in 105, 105v, 205, and 405 images; it is not a unique discriminator for any one OTA family. The per-firmware SDK version, SKU template, and catalog family must be examined together.",
+  "verified_images": [
+    {
+      "corroborating_known_sku": "Y351020",
+      "embedded_product_sku_template": "Y3510PPKEY",
+      "embedded_sdk_version": "v9.4.8",
+      "embedded_sys_product": "CRL330LC",
+      "embedded_sys_version": "3.7.152",
+      "family": "105",
+      "files": [
+        "oem/sysconf/sysVersion.ini",
+        "oem/sysconf/product_sku.ini",
+        "oem/irobot/conf/sdk_version.ini"
+      ],
+      "firmware_sha256": "a24f1c9469098509850777a020bd3b89cf28420c48a88718cf940bfa162ce300",
+      "firmware_version": "9.4.8",
+      "inner_squashfs_offset": 5703356,
+      "kind": "archived-firmware-embedded-sku-template",
+      "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.4.8-a24f1c946909/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.7.152.signed",
+      "template_prefix": "Y3510"
+    },
+    {
+      "corroborating_known_sku": "Q352020",
+      "embedded_product_sku_template": "Q3520PPKEY",
+      "embedded_sdk_version": "v9.4.8",
+      "embedded_sys_product": "CRL330LC",
+      "embedded_sys_version": "3.6.152",
+      "family": "105v",
+      "files": [
+        "oem/sysconf/sysVersion.ini",
+        "oem/sysconf/product_sku.ini",
+        "oem/irobot/conf/sdk_version.ini"
+      ],
+      "firmware_sha256": "f56b4f9b5eadfcd6eb87fafbb4b0cd6796ec1af83ef4d8ba2b0790751e94c778",
+      "firmware_version": "9.4.8",
+      "inner_squashfs_offset": 5704572,
+      "kind": "archived-firmware-embedded-sku-template",
+      "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.4.8-f56b4f9b5ead/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.6.152.signed",
+      "template_prefix": "Q3520"
+    },
+    {
+      "corroborating_known_sku": "L124020",
+      "embedded_product_sku_template": "L1240PPKEY",
+      "embedded_sdk_version": "v9.3.7",
+      "embedded_sys_product": "CRL330LC",
+      "embedded_sys_version": "4.6.150",
+      "family": "205",
+      "files": [
+        "oem/sysconf/sysVersion.ini",
+        "oem/sysconf/product_sku.ini",
+        "oem/irobot/conf/sdk_version.ini"
+      ],
+      "firmware_sha256": "8e890bd4dc3a2b1015e04f11326db2bc39f60d93477325d90e45d501c70bdd0f",
+      "firmware_version": "9.3.7",
+      "inner_squashfs_offset": 5705708,
+      "kind": "archived-firmware-embedded-sku-template",
+      "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.7-8e890bd4dc3a/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-4.6.150.signed",
+      "template_prefix": "L1240"
+    },
+    {
+      "corroborating_known_sku": "G185020",
+      "embedded_product_sku_template": "G1850PPKEY",
+      "embedded_sdk_version": "v9.3.7",
+      "embedded_sys_product": "CRL330LC",
+      "embedded_sys_version": "4.6.150",
+      "family": "405",
+      "files": [
+        "oem/sysconf/sysVersion.ini",
+        "oem/sysconf/product_sku.ini",
+        "oem/irobot/conf/sdk_version.ini"
+      ],
+      "firmware_sha256": "503d4bc4024e6515aa27b805bb369b49f1b5c3a2a2507d592a17f837dca00f03",
+      "firmware_version": "9.3.7",
+      "inner_squashfs_offset": 5704164,
+      "kind": "archived-firmware-embedded-sku-template",
+      "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.7-503d4bc4024e/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-4.6.150.signed",
+      "template_prefix": "G1850"
+    }
+  ]
+}

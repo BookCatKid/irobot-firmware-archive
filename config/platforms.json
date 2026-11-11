@@ -201,8 +201,21 @@
         "G285020",
         "g100000"
       ],
-      "confidence": "backend-only",
-      "evidence": []
+      "confidence": "confirmed-backend+firmware",
+      "evidence": [
+        {
+          "kind": "archived-firmware-embedded-sku-template",
+          "firmware_version": "9.3.7",
+          "firmware_sha256": "503d4bc4024e6515aa27b805bb369b49f1b5c3a2a2507d592a17f837dca00f03",
+          "embedded_sys_product": "CRL330LC",
+          "embedded_sys_version": "4.6.150",
+          "embedded_sdk_version": "v9.3.7",
+          "embedded_product_sku_template": "G1850PPKEY",
+          "template_prefix": "G1850",
+          "corroborating_known_sku": "G185020",
+          "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-405-9.3.7-503d4bc4024e/C4_405_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu32_base20-ota-release-4.6.150.signed"
+        }
+      ]
     },
     "505": {
       "type": "OTA deployment family identifier",
@@ -313,7 +326,7 @@
       "known_skus": [
         "Q352020"
       ],
-      "confidence": "app+backend",
+      "confidence": "confirmed-app+backend+firmware",
       "evidence": [
         {
           "kind": "android-app-default-sku",
@@ -324,6 +337,18 @@
           "kind": "content-api",
           "sku": "Q352020",
           "deployment_family": "105v"
+        },
+        {
+          "kind": "archived-firmware-embedded-sku-template",
+          "firmware_version": "9.4.8",
+          "firmware_sha256": "f56b4f9b5eadfcd6eb87fafbb4b0cd6796ec1af83ef4d8ba2b0790751e94c778",
+          "embedded_sys_product": "CRL330LC",
+          "embedded_sys_version": "3.6.152",
+          "embedded_sdk_version": "v9.4.8",
+          "embedded_product_sku_template": "Q3520PPKEY",
+          "template_prefix": "Q3520",
+          "corroborating_known_sku": "Q352020",
+          "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105v-9.4.8-f56b4f9b5ead/V3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.6.152.signed"
         }
       ]
     },
@@ -338,7 +363,7 @@
         "Y351020",
         "Y311240"
       ],
-      "confidence": "app+backend",
+      "confidence": "confirmed-app+backend+firmware",
       "evidence": [
         {
           "kind": "android-app-default-sku",
@@ -355,6 +380,18 @@
           "sku": "Y311240",
           "softwareVer": "p25-105+9.3.6+I3.7.149",
           "source": "https://community.jeedom.com/t/roomba-105-bien-vu-par-le-plugin-mais-nest-pas-cree/148506"
+        },
+        {
+          "kind": "archived-firmware-embedded-sku-template",
+          "firmware_version": "9.4.8",
+          "firmware_sha256": "a24f1c9469098509850777a020bd3b89cf28420c48a88718cf940bfa162ce300",
+          "embedded_sys_product": "CRL330LC",
+          "embedded_sys_version": "3.7.152",
+          "embedded_sdk_version": "v9.4.8",
+          "embedded_product_sku_template": "Y3510PPKEY",
+          "template_prefix": "Y3510",
+          "corroborating_known_sku": "Y351020",
+          "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-105-9.4.8-a24f1c946909/C3_105_OTA1-KEY_sdk-v9.4.8-ssc9211d-mcu32-ota-release-3.7.152.signed"
         }
       ]
     },
@@ -368,7 +405,7 @@
       "known_skus": [
         "L124020"
       ],
-      "confidence": "app+backend",
+      "confidence": "confirmed-app+backend+firmware",
       "evidence": [
         {
           "kind": "android-app-default-sku",
@@ -379,6 +416,18 @@
           "kind": "content-api",
           "sku": "L124020",
           "deployment_family": "205"
+        },
+        {
+          "kind": "archived-firmware-embedded-sku-template",
+          "firmware_version": "9.3.7",
+          "firmware_sha256": "8e890bd4dc3a2b1015e04f11326db2bc39f60d93477325d90e45d501c70bdd0f",
+          "embedded_sys_product": "CRL330LC",
+          "embedded_sys_version": "4.6.150",
+          "embedded_sdk_version": "v9.3.7",
+          "embedded_product_sku_template": "L1240PPKEY",
+          "template_prefix": "L1240",
+          "corroborating_known_sku": "L124020",
+          "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-205-9.3.7-8e890bd4dc3a/CC_205_OTA1-KEY_sdk-v9.3.7-ssc9211d-mcu27-ota-release-4.6.150.signed"
         }
       ]
     },

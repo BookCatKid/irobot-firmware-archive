@@ -967,5 +967,54 @@ class CatalogTests(unittest.TestCase):
             self.assertTrue(result["components"][0]["metadata_hash_verified"])
 
 
+class SigmastarSkuEvidenceTests(unittest.TestCase):
+    def test_preserved_firmware_sku_templates_agree_with_catalog_and_backend_skus(self):
+        root = Path(__file__).resolve().parents[1]
+        catalog = json.loads((root / "data/catalog.json").read_text())
+        platforms = json.loads((root / "config/platforms.json").read_text())["platforms"]
+        research = json.loads(
+            (root / "data/research/sigmastar-embedded-sku-evidence-2026-11-10.json").read_text()
+        )
+        images = research["verified_images"]
+        self.assertEqual({image["family"] for image in images}, {"105", "105v", "205", "405"})
+        # This sysProduct value is shared among four independently signed OTA
+        # families; it cannot identify the retail model on its own.
+        self.assertEqual({image["embedded_sys_product"] for image in images}, {"CRL330LC"})
+        self.assertEqual(len({image["embedded_product_sku_template"] for image in images}), 4)
+        for image in images:
+            family = image["family"]
+            rows = [
+                row for row in catalog["firmwares"]
+                if row["family"] == family
+                and row["version"] == image["firmware_version"]
+                and row.get("archive", {}).get("sha256") == image["firmware_sha256"]
+            ]
+            self.assertEqual(len(rows), 1, family)
+            self.assertEqual(rows[0]["archive"]["asset_url"], image["source"])
+            template = image["embedded_product_sku_template"]
+            self.assertTrue(template.endswith("PPKEY"))
+            self.assertEqual(template.removesuffix("PPKEY"), image["template_prefix"])
+            self.assertIn(image["corroborating_known_sku"], platforms[family]["known_skus"])
+            self.assertTrue(image["corroborating_known_sku"].startswith(image["template_prefix"]))
+            self.assertTrue(platforms[family]["confidence"].endswith("+firmware"))
+            evidence = [
+                item for item in platforms[family]["evidence"]
+                if item.get("kind") == "archived-firmware-embedded-sku-template"
+            ]
+            self.assertEqual(len(evidence), 1)
+            self.assertEqual(evidence[0]["firmware_sha256"], image["firmware_sha256"])
+
+    def test_supported_evidence_changes_mapping_count_not_missing_firmware_count(self):
+        root = Path(__file__).resolve().parents[1]
+        catalog = json.loads((root / "data/catalog.json").read_text())
+        platforms = json.loads((root / "config/platforms.json").read_text())
+        ledger = build_completeness_ledger(catalog, platforms, root / "data/research")
+        self.assertEqual(ledger["summary"]["platform_mapping_gap_count"], 11)
+        self.assertEqual(ledger["summary"]["official_release_evidence_gap_count"], 48)
+        self.assertEqual(ledger["summary"]["official_release_unresolved_family_count"], 3)
+        self.assertFalse({"105", "105v", "205", "405"} &
+                         {item["family"] for item in ledger["platform_mapping_gaps"]})
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1529,38 +1529,6 @@
   ],
   "platform_mapping_gaps": [
     {
-      "confidence": "app+backend",
-      "family": "105",
-      "known_sku_count": 2,
-      "models": [
-        "Roomba 100 (1000) Series combo family"
-      ]
-    },
-    {
-      "confidence": "app+backend",
-      "family": "105v",
-      "known_sku_count": 1,
-      "models": [
-        "Roomba 100 (1000) Series vacuum family"
-      ]
-    },
-    {
-      "confidence": "app+backend",
-      "family": "205",
-      "known_sku_count": 1,
-      "models": [
-        "Roomba 200 (2000) Series / related compact combo hardware"
-      ]
-    },
-    {
-      "confidence": "backend-only",
-      "family": "405",
-      "known_sku_count": 3,
-      "models": [
-        "Roomba Plus 400 Series Combo family"
-      ]
-    },
-    {
       "confidence": "backend-only",
       "family": "505",
       "known_sku_count": 5,
@@ -5682,6 +5650,9 @@
       "file": "platform-sku-mapping-audit-2026-08-30.json"
     },
     {
+      "file": "sigmastar-embedded-sku-evidence-2026-11-10.json"
+    },
+    {
       "file": "sigmastar-sstarota-structure-2026-08-30.json"
     },
     {
@@ -5723,7 +5694,7 @@
     "official_gap_undispositioned_count": 0,
     "official_release_evidence_gap_count": 48,
     "official_release_unresolved_family_count": 3,
-    "platform_mapping_gap_count": 15,
+    "platform_mapping_gap_count": 11,
     "recorded_negative_probe_count": 104670,
     "unarchived_catalog_record_count": 0,
     "unique_recovered_artifact_sha256_count": 278
