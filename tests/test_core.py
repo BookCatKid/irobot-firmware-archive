@@ -1009,7 +1009,7 @@ class SigmastarSkuEvidenceTests(unittest.TestCase):
         catalog = json.loads((root / "data/catalog.json").read_text())
         platforms = json.loads((root / "config/platforms.json").read_text())
         ledger = build_completeness_ledger(catalog, platforms, root / "data/research")
-        self.assertEqual(ledger["summary"]["platform_mapping_gap_count"], 11)
+        self.assertEqual(ledger["summary"]["platform_mapping_gap_count"], 8)
         self.assertEqual(ledger["summary"]["official_release_evidence_gap_count"], 48)
         self.assertEqual(ledger["summary"]["official_release_unresolved_family_count"], 3)
         self.assertFalse({"105", "105v", "205", "405"} &

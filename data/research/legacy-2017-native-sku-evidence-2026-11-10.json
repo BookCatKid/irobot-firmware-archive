@@ -1,0 +1,111 @@
+{
+  "analysis_method": "Inspect ELF dynamic symbols and AArch64 functions with readelf/aarch64-linux-gnu-objdump, follow ADRP+ADD references into .rodata, verify literal comparisons and that functions check for prefixes at the beginning of the SKU string. No upload or execution of the APK was necessary.",
+  "deployment_corroboration": [
+    {
+      "catalog_family": "marconi",
+      "deploymentMpkg": "R890R690/marconiv3247-prod.meta.signed",
+      "sku": "R690020",
+      "source": "data/legacy-v1-firmware-catalog.json"
+    },
+    {
+      "catalog_family": "marconi",
+      "deploymentMpkg": "R890R690/marconiv3247-prod.meta.signed",
+      "sku": "R890020",
+      "source": "data/legacy-v1-firmware-catalog.json"
+    },
+    {
+      "catalog_family": "roomba9xx",
+      "deploymentMpkg": "R980R960/roomba9xxv2444-prod.meta.signed",
+      "sku": "R980020",
+      "source": "data/legacy-v1-firmware-catalog.json"
+    }
+  ],
+  "embedded_firmware": {
+    "apk_path": "res/raw/altadena_d_4_60_0.enc",
+    "disposition": "already-archived-byte-identical: altadena 4.60.0",
+    "sha256": "e1fde01f2db78944c5ecd37426d38fb1b3e13aed15b3f778f0793ed52b456b90",
+    "size": 245784
+  },
+  "investigated_at": "2026-11-10",
+  "native_classifiers": [
+    {
+      "function": "core::SkuUtils::isMarconiSku",
+      "function_va": 3803896,
+      "literal_va": 5795064,
+      "prefix": "R69",
+      "supports_model_family": "Roomba 690",
+      "v1_api_skus": [
+        "R690020"
+      ]
+    },
+    {
+      "function": "core::SkuUtils::isHertzSku",
+      "function_va": 3804052,
+      "literal_va": 5795068,
+      "prefix": "R89",
+      "supports_model_family": "Roomba 890",
+      "v1_api_skus": [
+        "R890020"
+      ]
+    },
+    {
+      "function": "core::SkuUtils::is900SeriesSku",
+      "function_va": 3804208,
+      "literal_va": 5795072,
+      "prefix": "R9",
+      "supports_model_family": "Roomba 900 series",
+      "v1_api_skus": [
+        "R980020"
+      ]
+    }
+  ],
+  "official_retail_identity": [
+    {
+      "model": "Roomba 690",
+      "retail_confirmation": "https://www.bestbuy.com/site/irobot-roomba-690-app-controlled-robot-vacuum-black-silver/5802801.p",
+      "sku": "R690020",
+      "url": "https://www.irobot.com/en_US/accessories.html"
+    },
+    {
+      "model": "Roomba 890",
+      "retail_confirmation": "https://www.homedepot.com/p/301888300",
+      "sku": "R890020",
+      "url": "https://www.irobot.com/en_US/accessories.html"
+    },
+    {
+      "model": "Roomba 980",
+      "sku": "R980020",
+      "url": "https://www.irobot.com/en_US/accessories.html"
+    },
+    {
+      "model": "Roomba 671",
+      "sku": "R671020",
+      "url": "https://www.irobot.com/en_US/roomba-vacuuming/robot-vacuum-irobot-roomba-671/R671020.html"
+    },
+    {
+      "model": "Roomba 675",
+      "sku": "R675020",
+      "url": "https://www.irobot.com/en_US/roomba-vacuuming/robot-vacuum-irobot-roomba-675/R675020.html"
+    },
+    {
+      "model": "Roomba 677",
+      "sku": "R677020",
+      "url": "https://www.irobot.com/en_US/wi-fi--connected-roomba-677-robot-vacuum/R677020.html"
+    }
+  ],
+  "release_gap_conclusion": "No new 3.1.0 or 3.2.0 Marconi package bytes or exact missing OTA URL were present. No historical release-evidence gap can be closed on this evidence alone.",
+  "schema": 1,
+  "source": {
+    "apk_bytes": 77899569,
+    "apk_md5": "8368feffd70a727836c2760d900d33bf",
+    "apk_sha256": "de4a6a84d9c2f4b5cc813871f6db79e8e2e50699900f13c5d1c859e1b6377af8",
+    "app_package": "com.irobot.home",
+    "app_version": "2.1.4",
+    "archive_page": "https://apk.gold/download?file_id=96269/irobot-home",
+    "certificate_sha1": "a14183156bb2d57857469384bf1e002ee1c40196",
+    "native_library": "lib/arm64-v8a/libcore_jni.so",
+    "native_library_sha256": "f350d2d38646d9e97cf467db08a81bbf53fd566aea89304dc5524569bff22960",
+    "note": "APK certificate fingerprint matches the third-party distributor listing; this does not independently establish the vendor identity of that signing certificate.",
+    "release_date": "2017-07-01"
+  }
+}

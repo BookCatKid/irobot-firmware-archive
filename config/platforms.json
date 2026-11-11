@@ -535,7 +535,7 @@
       "known_skus": [
         "R980020"
       ],
-      "confidence": "confirmed-backend",
+      "confidence": "confirmed-app-binary+backend",
       "evidence": [
         {
           "kind": "legacy-v1-api",
@@ -547,6 +547,14 @@
           "kind": "android-native-constant",
           "symbol": "core::util::Constants::kRoomba9xxFirmwareFilename",
           "app": "com.irobot.home 7.18.0"
+        },
+        {
+          "kind": "official-app-native-sku-classifier",
+          "app": "com.irobot.home 2.1.4",
+          "symbol": "core::SkuUtils::is900SeriesSku",
+          "observed_sku_prefix": "R9",
+          "corroborating_sku": "R980020",
+          "source": "data/research/legacy-2017-native-sku-evidence-2026-11-10.json"
         }
       ]
     },
@@ -554,9 +562,14 @@
       "type": "legacy OTA firmware family identifier",
       "display_name": "Marconi",
       "description": "Legacy firmware family recovered from hard-coded official-app OTA constants and still-live iRobot production OTA objects. Exact retail-model coverage is incomplete.",
-      "models": [],
-      "known_skus": [],
-      "confidence": "confirmed-app+cdn",
+      "models": [
+        "Roomba 690 / 890 series Wi-Fi hardware"
+      ],
+      "known_skus": [
+        "R690020",
+        "R890020"
+      ],
+      "confidence": "confirmed-app-binary+backend+retail",
       "evidence": [
         {
           "kind": "android-native-constant",
@@ -567,6 +580,30 @@
         {
           "kind": "public-ota-object-sweep",
           "note": "Multiple Marconi numeric-token OTA objects remain publicly retrievable from iRobot production infrastructure."
+        },
+        {
+          "kind": "official-app-native-sku-classifier",
+          "app": "com.irobot.home 2.1.4",
+          "symbols": [
+            "core::SkuUtils::isMarconiSku",
+            "core::SkuUtils::isHertzSku"
+          ],
+          "observed_sku_prefixes": [
+            "R69",
+            "R89"
+          ],
+          "source": "data/research/legacy-2017-native-sku-evidence-2026-11-10.json",
+          "note": "R89 is classified Hertz by the app; the legacy V1 backend groups R890020 with R690020 for the Marconi OTA deployment. Do not conflate these SDK classifiers with an exhaustive physical-hardware identification."
+        },
+        {
+          "kind": "legacy-v1-api+retail-model-skus",
+          "skus": [
+            "R690020",
+            "R890020"
+          ],
+          "deployment_family": "R890R690",
+          "source": "data/legacy-v1-firmware-catalog.json",
+          "retail_reference": "https://www.irobot.com/en_US/accessories.html"
         }
       ]
     },
@@ -574,13 +611,15 @@
       "type": "internal firmware platform/codename",
       "display_name": "Ningbo",
       "description": "Ningbo is present in the official Classic app SkuType enum and in the legacy v1 firmware catalog for several 600-series SKUs. Public Ningbo OTA objects remain live; at least one historical Ningbo object is byte-identical to a Marconi-named object, so the names are retained as separate provenance labels rather than treated as equivalent platforms.",
-      "models": [],
+      "models": [
+        "Roomba 671 / 675 / 677 Wi-Fi hardware"
+      ],
       "known_skus": [
         "R671020",
         "R675020",
         "R677020"
       ],
-      "confidence": "confirmed-app+backend+cdn",
+      "confidence": "confirmed-app+backend+cdn+retail",
       "evidence": [
         {
           "kind": "android-app-sku-type",
@@ -609,6 +648,17 @@
           "version": "3.3.47",
           "url": "https://prod-ota-firmware.iot.irobotapi.com/ningbov3347.signed",
           "note": "Byte-identical to marconiv3247.signed; separate family provenance intentionally preserved."
+        },
+        {
+          "kind": "official-retail-sku-model-mapping",
+          "model_skus": {
+            "Roomba 671": "R671020",
+            "Roomba 675": "R675020",
+            "Roomba 677": "R677020"
+          },
+          "source": "https://www.irobot.com/en_US/accessories.html",
+          "corroboration": "data/research/legacy-2017-native-sku-evidence-2026-11-10.json",
+          "note": "Official retail listings confirm names of SKUs already returned as Ningbo by the legacy V1 deployment API."
         }
       ]
     },
