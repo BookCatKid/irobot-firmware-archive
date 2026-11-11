@@ -231,13 +231,27 @@
         "n100000",
         "N185040"
       ],
-      "confidence": "backend-only",
+      "confidence": "confirmed-backend+firmware",
       "evidence": [
         {
           "kind": "real-device-discovery-log",
           "sku": "N185040",
           "softwareVer": "p25-505+9.3.6+I3.8.149",
           "source": "https://community.jeedom.com/t/fresh-install-erreur-lors-de-lajout-du-robot/146507"
+        },
+        {
+          "kind": "unblob-extracted-firmware-sku",
+          "firmware_version": "9.3.6",
+          "firmware_sha256": "414a62446f87ee6fb3a4140be2951e8c7cebdcedbc33e982f244a5836aef2feb",
+          "embedded_sys_product": "3IROBOTDM2",
+          "embedded_sys_version": "3.8.149",
+          "embedded_sdk_version": "v9.3.6",
+          "metadata_sku": "N1850PP",
+          "embedded_backup_sku": "N1850PPKEY",
+          "corroborating_known_sku": "N185020",
+          "filesystem": "ext4",
+          "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-505-9.3.6-414a62446f87/C11e_505_OTA1_MxEmmc-KEY_sdk-v9.3.6-ssu9383-mcu35_base24-ota-release-3.8.149.signed",
+          "research_file": "data/research/unblob-sigmastar-sku-evidence-2026-11-10.json"
         }
       ]
     },
@@ -255,13 +269,41 @@
         "w100000",
         "X185240"
       ],
-      "confidence": "backend-only",
+      "confidence": "confirmed-backend+firmware",
       "evidence": [
         {
           "kind": "real-device-discovery-log",
           "sku": "X185240",
           "softwareVer": "p25-705+9.3.6+I5.3.149",
           "source": "https://community.jeedom.com/t/decouverte-qui-echoue-a-chaque-fois/146889"
+        },
+        {
+          "kind": "unblob-extracted-firmware-sku",
+          "firmware_version": "9.3.5",
+          "firmware_sha256": "5eadf5d91ce4647bbd0b8f4538d00d7129163f6947b99e91152206537d16a7df",
+          "embedded_sys_product": "3IROBOTDM2",
+          "embedded_sys_version": "5.3.148",
+          "embedded_sdk_version": "v9.3.5",
+          "metadata_sku": "X1850PPKEY",
+          "embedded_backup_sku": "X1850PPKEY",
+          "corroborating_known_sku": "X185020",
+          "filesystem": "ext4",
+          "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-9.3.5-5eadf5d91ce4/C11m_705_OTA1_MxEmmc-KEY_sdk-v9.3.5-ssu9383-mcu20_base42-ota-release-5.3.148.signed",
+          "research_file": "data/research/unblob-sigmastar-sku-evidence-2026-11-10.json"
+        },
+        {
+          "kind": "unblob-extracted-firmware-sku",
+          "firmware_version": "7.5.2",
+          "firmware_sha256": "ccd0d0d79ea1a0b72fd1fdfae5e3201e99f5db5f4199c5b0c1ddb8dee1281d73",
+          "embedded_sys_product": "3IROBOTDM2",
+          "embedded_sys_version": "3.8.113",
+          "embedded_sdk_version": "v7.5.2",
+          "metadata_sku": "K1550PP",
+          "embedded_backup_sku": "K1550PPKEY",
+          "corroborating_known_sku": "K155020",
+          "filesystem": "ext4",
+          "source": "https://github.com/BookCatKid/irobot-firmware-archive/releases/download/firmware-705-7.5.2-ccd0d0d79ea1/V11_705_OTA1_MxEmmc-KEY_sdk-v7.5.2-ssu9383-mcu34_base12-ota-release-3.8.113.signed",
+          "research_file": "data/research/unblob-sigmastar-sku-evidence-2026-11-10.json"
         }
       ]
     },

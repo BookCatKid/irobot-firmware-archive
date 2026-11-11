@@ -79,7 +79,7 @@ class LegacyClassifierEvidenceTests(unittest.TestCase):
             self.config,
             ROOT / "data/research",
         )
-        self.assertEqual(ledger["summary"]["platform_mapping_gap_count"], 8)
+        self.assertEqual(ledger["summary"]["platform_mapping_gap_count"], 6)
         self.assertEqual(ledger["summary"]["official_release_evidence_gap_count"], 48)
         self.assertEqual(ledger["summary"]["official_release_unresolved_family_count"], 3)
         remaining = {entry["family"] for entry in ledger["platform_mapping_gaps"]}
