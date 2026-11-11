@@ -1559,26 +1559,6 @@
       ]
     },
     {
-      "confidence": "confirmed-app+cdn",
-      "family": "marconi",
-      "known_sku_count": 0,
-      "models": []
-    },
-    {
-      "confidence": "confirmed-app+backend+cdn",
-      "family": "ningbo",
-      "known_sku_count": 3,
-      "models": []
-    },
-    {
-      "confidence": "confirmed-backend",
-      "family": "roomba9xx",
-      "known_sku_count": 1,
-      "models": [
-        "Roomba 960 / 980 family"
-      ]
-    },
-    {
       "confidence": "partial",
       "family": "ruby",
       "known_sku_count": 2,
@@ -5611,6 +5591,9 @@
       "probe_count": 502
     },
     {
+      "file": "legacy-2017-native-sku-evidence-2026-11-10.json"
+    },
+    {
       "file": "legacy-v1-deployment-object-probe-2026-08-29.json",
       "hit_count": 2,
       "negative_probe_count": 0,
@@ -5694,7 +5677,7 @@
     "official_gap_undispositioned_count": 0,
     "official_release_evidence_gap_count": 48,
     "official_release_unresolved_family_count": 3,
-    "platform_mapping_gap_count": 11,
+    "platform_mapping_gap_count": 8,
     "recorded_negative_probe_count": 104670,
     "unarchived_catalog_record_count": 0,
     "unique_recovered_artifact_sha256_count": 278
