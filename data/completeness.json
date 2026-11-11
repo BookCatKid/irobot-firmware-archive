@@ -1529,22 +1529,6 @@
   ],
   "platform_mapping_gaps": [
     {
-      "confidence": "backend-only",
-      "family": "505",
-      "known_sku_count": 5,
-      "models": [
-        "Roomba Plus 500 Series family"
-      ]
-    },
-    {
-      "confidence": "backend-only",
-      "family": "705",
-      "known_sku_count": 5,
-      "models": [
-        "Roomba Max 700 Series family"
-      ]
-    },
-    {
       "confidence": "confirmed-app+backend+cdn",
       "family": "aero",
       "known_sku_count": 1,
@@ -5639,6 +5623,10 @@
       "file": "sigmastar-sstarota-structure-2026-08-30.json"
     },
     {
+      "file": "unblob-sigmastar-sku-evidence-2026-11-10.json",
+      "record_count": 3
+    },
+    {
       "file": "wichita-daredevil-cancelled-backfill-recovery-2026-08-29.json",
       "hit_count": 12,
       "negative_probe_count": 41334,
@@ -5677,7 +5665,7 @@
     "official_gap_undispositioned_count": 0,
     "official_release_evidence_gap_count": 48,
     "official_release_unresolved_family_count": 3,
-    "platform_mapping_gap_count": 8,
+    "platform_mapping_gap_count": 6,
     "recorded_negative_probe_count": 104670,
     "unarchived_catalog_record_count": 0,
     "unique_recovered_artifact_sha256_count": 278
